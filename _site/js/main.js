@@ -91,36 +91,139 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /**
-     * Initializes the mobile Table of Contents toggle on the Ranking System page.
+     * Initializes the interactive Table of Contents for the Ranking System page.
      */
     function initRankingSystemTOC() {
         if (!document.body.classList.contains('page-ranking-system')) {
             return;
         }
 
-        const toggleBtn = document.querySelector('.toc-toggle-btn');
-        const tocList = document.querySelector('.toc-list');
-        const mobileHeader = document.querySelector('.mobile-header');
+        const tocWrapper = document.querySelector('.page-ranking-system__toc-wrapper');
+        const tocToggleBtn = document.querySelector('.toc-toggle-btn');
+        const tocNav = document.querySelector('#toc-nav');
+        const tocLinks = document.querySelectorAll('.toc-list ul li a');
+        
+        let isClickScrolling = false;
+        let scrollTimeout;
 
-        if (toggleBtn && tocList) {
-            toggleBtn.addEventListener('click', function() {
-                const isActive = this.classList.toggle('is-active');
-                tocList.classList.toggle('is-active');
-                this.setAttribute('aria-expanded', isActive);
+        const activateLink = (id) => {
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${id}`) {
+                    link.classList.add('active');
+                }
+            });
+        };
+
+        if (tocWrapper && tocToggleBtn && tocNav) {
+            tocToggleBtn.addEventListener('click', () => {
+                const isExpanded = tocToggleBtn.getAttribute('aria-expanded') === 'true';
+                tocToggleBtn.setAttribute('aria-expanded', !isExpanded);
+                tocWrapper.classList.toggle('is-open');
             });
         }
         
-        const tocLinks = document.querySelectorAll('.page-ranking-system .toc a[href^="#"]');
-        if(tocLinks.length > 0 && mobileHeader) {
+        if (tocLinks.length > 0) {
             tocLinks.forEach(link => {
                 link.addEventListener('click', function(event) {
                     event.preventDefault();
-                    const targetElement = document.querySelector(this.getAttribute('href'));
-                    if (targetElement) {
-                        const headerHeight = mobileHeader.offsetHeight;
-                        const offsetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight - 20;
-                        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+
+                    if (!targetElement) return;
+
+                    // Activate link style immediately for better UX
+                    activateLink(targetId.substring(1));
+                    isClickScrolling = true;
+
+                    const isMobile = window.innerWidth < 769;
+
+                    const calculateAndScroll = () => {
+                        const topOffset = isMobile ? 70 : 30; // 60px header + 10px padding
+                        const elementPosition = targetElement.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.scrollY - topOffset;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                        
+                        clearTimeout(scrollTimeout);
+                        scrollTimeout = setTimeout(() => {
+                            isClickScrolling = false;
+                        }, 1000); // Wait for smooth scroll to likely finish
+                    };
+
+                    // On mobile, if the menu is open, we must close it FIRST, then wait for the
+                    // animation to finish before calculating the scroll position.
+                    if (isMobile && tocWrapper.classList.contains('is-open')) {
+                        tocToggleBtn.setAttribute('aria-expanded', 'false');
+                        tocWrapper.classList.remove('is-open');
+
+                        // Wait for CSS transition (400ms) to finish before scrolling
+                        setTimeout(calculateAndScroll, 450); 
+                    } else {
+                        // On desktop, or if the mobile menu is already closed, scroll immediately
+                        calculateAndScroll();
                     }
+                });
+            });
+        }
+
+        // --- Scroll-Spy Logic ---
+        const targetsToObserve = document.querySelectorAll('.page-ranking-system__main-content section[id], .page-ranking-system__main-content h3[id]');
+
+        if (tocLinks.length > 0 && targetsToObserve.length > 0) {
+            const isMobile = window.innerWidth < 769;
+            const observerMarginTop = isMobile ? 80 : 30;
+
+            const observer = new IntersectionObserver((entries) => {
+                if (isClickScrolling) {
+                    return;
+                }
+                
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        activateLink(entry.target.id);
+                    }
+                });
+            }, {
+                rootMargin: `-${observerMarginTop}px 0px -${window.innerHeight - observerMarginTop - 50}px 0px`
+            });
+
+            targetsToObserve.forEach(target => {
+                observer.observe(target);
+            });
+        }
+
+        // --- FAQ Link Smooth Scroll Handler ---
+        // Handles the in-page links that jump to a specific FAQ question
+        const faqInternalLinks = document.querySelectorAll('.page-ranking-system__main-content a[href^="#faq-"]');
+        
+        if (faqInternalLinks.length > 0) {
+            faqInternalLinks.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    // Prevent the default anchor jump which scrolls too far
+                    event.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+
+                    if (!targetElement) return;
+
+                    // Check for mobile view to apply the correct offset
+                    const isMobile = window.innerWidth < 769;
+                    // Use a 70px offset on mobile (60px header + 10px padding) and 30px on desktop
+                    const headerOffset = isMobile ? 70 : 30;
+                    
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+                    // Scroll smoothly to the calculated position
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
                 });
             });
         }
@@ -154,7 +257,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function initEventPageScripts() {
         if (!document.body.classList.contains('page-event')) return;
 
-        // Blurry background for event images
         document.querySelectorAll('.event-image-container').forEach(container => {
             const img = container.querySelector('img');
             if (img && img.src) {
@@ -169,7 +271,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // Infinite Scroll for Event Results
         const resultsGrid = document.getElementById('results-grid');
         if (resultsGrid) {
             const sentinel = document.getElementById('sentinel');
@@ -348,30 +449,26 @@ document.addEventListener('DOMContentLoaded', () => {
             } catch (error) {
                 console.error("Failed to fetch live rankings:", error);
                 
-                // --- FALLBACK LOGIC ---
                 if (window.cachedRankingsData && window.cachedRankingsData.length > 0) {
                     console.log("Live fetch failed. Using cached data as a fallback.");
                     
-                    // Add a warning message to the user
                     const title = document.querySelector('.page-rankings h1');
                     if(title) {
                         const warningEl = document.createElement('p');
                         warningEl.innerHTML = '⚠️ Could not load live data. Showing last saved rankings.';
-                        warningEl.style.color = '#f39c12'; // A nice warning color
+                        warningEl.style.color = '#f39c12';
                         warningEl.style.textAlign = 'center';
                         warningEl.style.fontSize = '1rem';
                         warningEl.style.marginTop = '-0.5rem';
                         title.after(warningEl);
                     }
                     
-                    allPlayers = window.cachedRankingsData; // Use the cached data
+                    allPlayers = window.cachedRankingsData;
                     
-                    // Render the table with the fallback data
                     refreshTable();
                     updateSortUI();
                     setupSorting();
                 } else {
-                    // Original error message if no fallback is available
                     rankingsTableBody.innerHTML = '<tr><td colspan="6" style="text-align: center; color: red;">Failed to load data. No cache available.</td></tr>';
                 }
             }
@@ -417,7 +514,6 @@ document.addEventListener('DOMContentLoaded', () => {
             
             filteredItems.slice(0, visibleItemCount).forEach(data => {
                 data.element.style.display = 'flex';
-                // Highlighting
                 data.element.querySelectorAll('.js-searchable-text').forEach(textNode => {
                     const originalText = textNode.textContent;
                     textNode.innerHTML = searchTerm 
@@ -451,7 +547,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (sentinel) observer.observe(sentinel);
         searchInput.addEventListener('input', debounce(applySearch, 300));
-        updateVisibility(); // Initial call
+        updateVisibility();
     }
 
     // Initialize all site scripts

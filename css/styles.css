@@ -741,7 +741,7 @@ th.sorted.desc .sort-icon,
   border: 7px solid rgba(255, 255, 255, 0.2) !important;
   border-radius: 4px !important;
   object-fit: cover;
-  margin: 1rem auto 2rem;
+  margin: 1rem auto 1rem;
 }
 .toc {
   font-size: 1.2rem;
@@ -754,7 +754,7 @@ th.sorted.desc .sort-icon,
   color: #ccc;
 }
 .toc ul {
-  list-style: disc inside;
+  list-style: disc outside;
   padding-left: 1rem;
   margin: 0;
 }
@@ -1046,6 +1046,9 @@ th.sorted.desc .sort-icon,
     height: calc(100vh - 40px);
     overflow-y: auto;
   }
+  .toc {
+    font-size: 1.1rem;
+}
 }
 
 @media (max-width: 768px) {
@@ -1259,4 +1262,101 @@ th.sorted.desc .sort-icon,
   text-align: center;
   padding: 1.5rem 1rem;
 }
+.toc-list ul li a.active {
+    color: #FF5E13 !important; /* Forces the color to stay orange */
+    padding-left: 0;           /* Resets the desktop indent */
+    margin-left: 0;            /* Resets the desktop indent */
+}
+}
+
+/* ==========================================================================
+   6. NEW STYLES FOR RANKING SYSTEM PAGE
+   ========================================================================== */
+
+/* --- CTA Button Styles --- */
+.cta-container {
+    margin: 1rem 0; /* CHANGED: Reduced vertical margin from 2rem to 1rem */
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.button--primary {
+    background-color: #FF5E13;
+    color: #222;
+    font-family: 'Permanent Marker', cursive; /* ADDED: Font changed */
+    text-transform: uppercase;               /* ADDED: For style consistency */
+}
+
+.button--primary:hover {
+    background-color: #ff854d;
+    transform: translateY(-2px);
+}
+
+
+/* --- Table of Contents (TOC) Enhancements --- */
+
+/* Overwrite existing mobile styles for a smoother transition */
+.toc-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    opacity: 1; /* Ensure it's not hidden by opacity */
+}
+
+/* Style for when the TOC is open on mobile */
+.page-ranking-system__toc-wrapper.is-open .toc-list {
+    max-height: 500px; /* Adjust if your TOC is taller */
+}
+
+/* Style for the icon rotation on mobile */
+.toc-toggle-btn .fas {
+    transition: transform 0.3s ease;
+}
+.page-ranking-system__toc-wrapper.is-open .toc-toggle-btn .fas {
+    transform: rotate(180deg);
+}
+
+/* Desktop Styles (for screens wider than 992px) */
+@media (min-width: 992px) {
+    /* Hide the mobile toggle button on desktop */
+    .toc-toggle-btn {
+        display: none;
+    }
+
+    /* Make the TOC always visible on desktop */
+    .toc-list {
+        max-height: none;
+        overflow: visible;
+    }
+
+    /* Make the TOC wrapper sticky */
+    .page-ranking-system__toc-wrapper {
+        position: sticky;
+        top: 2rem; /* Adjust the distance from the top */
+        align-self: start; /* Prevents stretching in a flex/grid container */
+    }
+}
+
+/* --- Scroll-Spy Active State --- */
+.toc-list ul li a {
+    display: inline-block; /* Required for padding and borders to work correctly */
+    padding-left: 0;
+    margin-left: 0;
+    border-left: 3px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.toc-list ul li a.active {
+    color: #FFEE58; /* Using theme highlight color */
+    padding-left: 10px;
+    margin-left: -13px;
 }
