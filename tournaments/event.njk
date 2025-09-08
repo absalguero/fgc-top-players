@@ -15,24 +15,28 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
 {% endblock %}
 
 {% block content %}
-<div class="header-sticky-container">
+<div class="event-header-group">
     <div class="back-button-container">
         <a href="/tournament-results/" class="btn btn--primary">
             <i class="fas fa-arrow-left"></i> Back to Tournament Results
         </a>
     </div>
-    <div class="event-header">
-        <img
-            src="/images/events/{{ tournamentData.slug }}.png"
-            alt="{{ tournamentData.name }}"
-            class="event-header__image"
-            onerror="this.style.display='none';"
-        >
-        <div class="event-header__details">
-            <h1>{{ tournamentData.name }}</h1>
-            <div class="event-header__meta">
-                <span><i class="fas fa-calendar-alt"></i> {{ tournamentData.date | readableDate }}</span>
-                <span><i class="fas fa-users"></i> {{ tournamentData.results[0].Entrants }} Entrants</span>
+    <div class="header-sticky-container">
+        <div class="event-header">
+            <div class="event-image-container">
+                <img
+                    src="/images/events/{{ tournamentData.slug }}.png"
+                    alt="{{ tournamentData.name }}"
+                    class="event-header__image"
+                    onerror="this.style.display='none';"
+                >
+            </div>
+            <div class="event-header__details">
+                <h1>{{ tournamentData.name }}</h1>
+                <div class="event-header__meta">
+                    <span><i class="fas fa-calendar-alt"></i> {{ tournamentData.date | readableDate }}</span>
+                    <span><i class="fas fa-users"></i> {{ tournamentData.results[0].Entrants }} Entrants</span>
+                </div>
             </div>
         </div>
     </div>
@@ -42,12 +46,10 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
     {% if tournamentData.results and tournamentData.results.length > 0 %}
         <div class="results-grid" id="results-grid">
             {% for result in tournamentData.results | sortByFinish %}
-                {# Get player's global rank and tournament finish #}
                 {% set player_data = rankings.players | find("Player", result.Player) %}
                 {% set rank = player_data.Rank | int if player_data else 0 %}
                 {% set finish = result.Finish | int %}
 
-                {# RULE 1: Determine color styling based on GLOBAL RANK #}
                 {% set card_class = "" %}
                 {% if rank >= 1 and rank <= 4 %}
                     {% set card_class = "rank-" + rank %}
@@ -55,27 +57,25 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
                     {% set card_class = "ranked-6-40" %}
                 {% endif %}
 
-                {# Add a class to hide results after the first 16 #}
-                {% set load_more_class = "is-hidden" if loop.index > 16 else "" %}
                 {% set show_photo = player_data and rank > 0 and rank <= 40 and player_data['Player Icon'] %}
 
-                <div class="result-card {{ card_class }} {{ load_more_class }}">
+                <div class="result-card {{ card_class }} {% if finish >= 1 and finish <= 4 %}finish-style-{{ finish }}{% endif %}">
                     <div class="result-card__finish">
-                        {% set finish_num = result.Finish | int %}
-                        {% if finish_num >= 11 and finish_num <= 13 %}
+                        {%- set finish_num = result.Finish | int -%}
+                        {%- if finish_num >= 11 and finish_num <= 13 -%}
                             {{ finish_num }}th
-                        {% else %}
-                            {% set last_digit = finish_num % 10 %}
-                            {% if last_digit == 1 %}
+                        {%- else -%}
+                            {%- set last_digit = finish_num % 10 -%}
+                            {%- if last_digit == 1 -%}
                                 {{ finish_num }}st
-                            {% elif last_digit == 2 %}
+                            {%- elif last_digit == 2 -%}
                                 {{ finish_num }}nd
-                            {% elif last_digit == 3 %}
+                            {%- elif last_digit == 3 -%}
                                 {{ finish_num }}rd
-                            {% else %}
+                            {%- else -%}
                                 {{ finish_num }}th
-                            {% endif %}
-                        {% endif %}
+                            {%- endif -%}
+                        {%- endif -%}
                     </div>
                     <div class="result-card__player">
                         {% if show_photo %}
@@ -92,23 +92,14 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
                                     </span>
                                 {% endif %}
                             </div>
-                            {# RULE 2: Determine trophy/medal icon based on TOURNAMENT FINISH #}
                             {% if finish == 1 %}
-                                <span class="trophy-badge-icon">
-                                    <i class="fas fa-trophy trophy-1"></i>
-                                </span>
+                                <span class="trophy-badge-icon"><i class="fas fa-trophy trophy-1"></i></span>
                             {% elseif finish == 2 %}
-                                <span class="trophy-badge-icon">
-                                    <i class="fas fa-trophy trophy-2"></i>
-                                </span>
+                                <span class="trophy-badge-icon"><i class="fas fa-trophy trophy-2"></i></span>
                             {% elseif finish == 3 %}
-                                <span class="trophy-badge-icon">
-                                    <i class="fas fa-trophy trophy-3"></i>
-                                </span>
+                                <span class="trophy-badge-icon"><i class="fas fa-trophy trophy-3"></i></span>
                             {% elseif finish == 4 %}
-                                <span class="medal-badge-icon">
-                                    <i class="fas fa-medal medal-4"></i>
-                                </span>
+                                <span class="medal-badge-icon"><i class="fas fa-medal medal-4"></i></span>
                             {% endif %}
                         </div>
                     </div>
@@ -116,10 +107,9 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
             {% endfor %}
         </div>
         
+        {# --- CORRECTED: Replaced button with sentinel for infinite scroll --- #}
         {% if tournamentData.results.length > 16 %}
-            <div class="load-more-container">
-                <button id="load-more-btn" class="btn btn--primary">Load More Results</button>
-            </div>
+            <div id="sentinel" style="height: 1px;"></div>
         {% endif %}
 
     {% else %}

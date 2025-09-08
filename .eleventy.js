@@ -6,6 +6,7 @@ module.exports = function(eleventyConfig) {
   // Pass through the images, css, and js folders to the output directory
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy("styles.css");
   eleventyConfig.addPassthroughCopy("js");
 
   eleventyConfig.watchIgnores.add("_data/tournaments_archive.json");

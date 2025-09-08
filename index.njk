@@ -11,53 +11,56 @@ pageClass: "page-rankings"
 {% endblock %}
 
 {% block head %}
+
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Event",
-  "name": "Street Fighter 6 Global Player Rankings",
-  "description": "A continuously updated ranking of the top professional Street Fighter 6 players.",
-  "eventStatus": "https://schema.org/EventScheduled",
-  "location": {
-    "@type": "VirtualLocation",
-    "url": "https://fgc-player-rankings.netlify.app/"
-  },
-  "subjectOf": {
-    "@type": "ItemList",
-    "name": "Top Players Ranked",
-    "itemListElement": [
-      {% for player in rankings.players %}
-      {
-        "@type": "ListItem",
-        "position": {{ loop.index }},
-        "item": {
-          "@type": "Person",
-          "name": "{{ player.Player }}"
-        }
-      }{% if not loop.last %},{% endif %}
-      {% endfor %}
-    ]
-  }
+"@context": "https://schema.org",
+"@type": "Event",
+"name": "Street Fighter 6 Global Player Rankings",
+"description": "A continuously updated ranking of the top professional Street Fighter 6 players.",
+"eventStatus": "https://schema.org/EventScheduled",
+"location": {
+"@type": "VirtualLocation",
+"url": "https://fgc-player-rankings.netlify.app/"
+},
+"subjectOf": {
+"@type": "ItemList",
+"name": "Top Players Ranked",
+"itemListElement": [
+{% for player in rankings.players %}
+{
+"@type": "ListItem",
+"position": {{ loop.index }},
+"item": {
+"@type": "Person",
+"name": "{{ player.Player }}"
+}
+}{% if not loop.last %},{% endif %}
+{% endfor %}
+]
+}
 }
 </script>
+
 {% endblock %}
 
 {% block content %}
-<div class="content-container content-container--wide">
-    {% include "banner.njk" %}
-    <h1>Street Fighter 6 Global Rankings</h1>
-    <h2>Last Updated {{ rankings.lastUpdated }}</h2>
 
-    <div class="controls-container">
+<div class="content-container content-container--wide">
+{% include "banner.njk" %}
+<h1>Street Fighter 6 Global Rankings</h1>
+<h2>Last Updated {{ rankings.lastUpdated }}</h2>
+
+<div class="controls-container">
     <div class="search-wrapper">
-        <input type="text" id="player-search-input" class="search-form__input" placeholder="Filter by Player, Character, or Country...">
+        <input type="text" id="player-search-input" class="search-form__input" placeholder="Filter by Player, Character, or Country..." autocomplete="off">
         <button class="search-clear-btn" id="player-search-clear-btn" aria-label="Clear search">
             <i class="fas fa-times"></i>
         </button>
     </div>
 </div>
 
-    <div class="mobile-sort-controls" id="rankings-mobile-sort">
+<div class="mobile-sort-controls" id="rankings-mobile-sort">
     <button class="btn btn--primary sorted asc" data-column-index="0" data-type="number">
         Rank
         <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -77,38 +80,47 @@ pageClass: "page-rankings"
         </svg>
     </button>
 </div>
-    
-    <div class="table-wrapper">
-        <table class="data-table" id="rankings-table">
-            <thead>
-                <tr>
-                    <th data-column-index="0" data-type="number" class="sorted desc">
-                        <span>Rank <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg></span>
-                    </th>
-                    <th data-column-index="1" data-type="number">
-                        <span>Change <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg></span>
-                    </th>
-                    <th data-column-index="2" data-type="string">
-                        <span>Player <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg></span>
-                    </th>
-                    <th data-column-index="3" data-type="string" class="col-character">
-                        <span>Main<br>Character <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg></span>
-                    </th>
-                    <th data-column-index="4" data-type="string">
-                        <span>Country <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg></span>
-                    </th>
-                    <th data-column-index="5" data-type="number">
-                        <span>Rating <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg></span>
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
-    </div>
 
-    <div class="load-more-container">
-        <button id="load-more-btn" class="btn btn--primary" style="display:none;">Load More</button>
-    </div>
+<div class="table-wrapper">
+    <table class="data-table" id="rankings-table">
+        <thead>
+            <tr>
+                <th data-column-index="0" data-type="number" class="sorted asc">
+                    <span>Rank <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg></span>
+                </th>
+                <th data-column-index="1" data-type="number">
+                    <span>Change <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg></span>
+                </th>
+                <th data-column-index="2" data-type="string">
+                    <span>Player <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg></span>
+                </th>
+                <th data-column-index="3" data-type="string" class="col-character">
+                    <span>Main<br>Character <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg></span>
+                </th>
+                <th data-column-index="4" data-type="string">
+                    <span>Country <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg></span>
+                </th>
+                <th data-column-index="5" data-type="number">
+                    <span>Rating <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg></span>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            </tbody>
+    </table>
 </div>
+
+<div id="sentinel" style="height: 1px;"></div>
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+
+<script>
+// Embed the rankings data from build time into the page
+// The 'dump' filter safely converts the Nunjucks object to a JSON string
+window.cachedRankingsData = {{ rankings.players | dump | safe }};
+</script>
+
 {% endblock %}

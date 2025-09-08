@@ -1,0 +1,17 @@
+{% set navItems = [
+    { "url": "/", "text": "SF6 Rankings", "icon": "fa-trophy" },
+    { "url": "/tournament-results/", "text": "Tournament Results", "icon": "fa-sitemap" },
+    { "url": "/ranking-system/", "text": "Ranking System", "icon": "fa-scale-balanced" }
+] %}
+{% set currentPath = page.url | default('/') %}
+
+<ul class="{{ listClass }}">
+    {% for item in navItems %}
+        <li>
+            <a href="{{ item.url }}" class="nav-menu__link {% if item.url in currentPath and item.url != '/' or currentPath == item.url %}is-active{% endif %}">
+                {% if item.icon %}<i class="fas {{ item.icon }}"></i>{% endif %}
+                {{ item.text }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>

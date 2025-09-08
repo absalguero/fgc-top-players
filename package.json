@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "dev": "eleventy --config=.eleventy.js --serve --watch --port=8080 --input=./ --output=_site",
-  "build": "eleventy --config=.eleventy.js"
-},
+    "dev": "eleventy --config=.eleventy.js --serve --watch --port=8080 --input=./ --output=_site",
+    "build": "eleventy --config=.eleventy.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/absalguero/fgc-rankings.git"
@@ -20,7 +20,8 @@
   "homepage": "https://github.com/absalguero/fgc-rankings#readme",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
-    "@11ty/eleventy-fetch": "^5.1.0"
+    "@11ty/eleventy-fetch": "^5.1.0",
+    "luxon": "^3.7.2"
   },
   "dependencies": {
     "csv-parse": "^6.1.0",

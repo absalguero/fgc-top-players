@@ -12,19 +12,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{% block title %}FGC Top Players{% endblock %}</title>
     {% block meta_description %}
-<meta name="description" content="The definitive player rankings for top competitive fighting games. Track pro players across Street Fighter, Tekken, and more." />
-{% endblock %}
+    <meta name="description" content="The definitive player rankings for top competitive fighting games. Track pro players across Street Fighter, Tekken, and more." />
+    {% endblock %}
     <meta property="og:type" content="website">
-<meta property="og:url" content="https://fgc-player-rankings.netlify.app{{ page.url }}">
-<meta property="og:title" content="{% block og_title %}{{ title or 'FGC Top Players' }}{% endblock %}">
-<meta property="og:description" content="{% block og_description %}The definitive ranking of the top professional SF6 players. See who's on top and track the rise and fall of your favorite pros.{% endblock %}">
-<meta property="og:image" content="https://fgc-player-rankings.netlify.app/images/fgc-rankings-social-card.png">
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://fgc-player-rankings.netlify.app{{ page.url }}">
-<meta property="twitter:title" content="{% block twitter_title %}{{ title or 'Street Fighter 6 Global Player Rankings' }}{% endblock %}">
-<meta property="twitter:description" content="{% block twitter_description %}The definitive ranking of the top professional SF6 players. See who's on top and track the rise and fall of your favorite pros.{% endblock %}">
-<meta property="twitter:image" content="https://fgc-player-rankings.netlify.app/images/fgc-rankings-social-card.png">
-    <link rel="canonical" href="https://fgc-player-rankings.netlify.app/" />
+    <meta property="og:url" content="https://fgc-player-rankings.netlify.app{{ page.url }}">
+    <meta property="og:title" content="{% block og_title %}{{ title or 'FGC Top Players' }}{% endblock %}">
+    <meta property="og:description" content="{% block og_description %}The definitive ranking of the top professional SF6 players. See who's on top and track the rise and fall of your favorite pros.{% endblock %}">
+    <meta property="og:image" content="https://fgc-player-rankings.netlify.app/images/fgc-rankings-social-card.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://fgc-player-rankings.netlify.app{{ page.url }}">
+    <meta property="twitter:title" content="{% block twitter_title %}{{ title or 'Street Fighter 6 Global Player Rankings' }}{% endblock %}">
+    <meta property="twitter:description" content="{% block twitter_description %}The definitive ranking of the top professional SF6 players. See who's on top and track the rise and fall of your favorite pros.{% endblock %}">
+    <meta property="twitter:image" content="https://fgc-player-rankings.netlify.app/images/fgc-rankings-social-card.png">
+    <link rel="canonical" href="https://fgc-player-rankings.netlify.app{{ page.url }}" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="/css/styles.css">
     {% css %}{% block head %}{% endblock %}
 </head>
-<body class="{{ pageClass }}">
+<body class="{{ bodyClass }}">
 
     <header class="mobile-header">
         <button class="nav-toggle" aria-label="Toggle Navigation">
@@ -48,39 +48,29 @@
             </svg>
         </button>
         <div class="mobile-search">
-            <form role="search" class="search-form">
-                <input type="search" id="mobile-search-input" class="search-form__input" placeholder="Search site..." aria-label="Search site">
-                <button type="submit" class="search-form__button" aria-label="Search">
-                    <i class="fas fa-search"></i>
-                </button>
-            </form>
+            {# --- CORRECTED: Use `set` before `include` for robust data passing --- #}
+            {% set inputId = "mobile-search-input" %}
+            {% include "partials/_search-form.njk" %}
         </div>
     </header>
 
-{% block page_header %}
-{% endblock %}
+    {% block page_header %}{% endblock %}
 
     <div class="page-wrapper">
         <nav class="sidebar nav-sidebar" aria-label="Main menu" role="navigation">
             <h2 class="sidebar__label">Navigation</h2>
             <div class="sidebar-search">
-                <form role="search" class="search-form">
-                    <input type="search" id="sidebar-search-input" class="search-form__input" placeholder="Search site..." aria-label="Search site">
-                    <button type="submit" class="search-form__button" aria-label="Search">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </form>
+                {# --- CORRECTED: Use `set` before `include` --- #}
+                {% set inputId = "sidebar-search-input" %}
+                {% include "partials/_search-form.njk" %}
             </div>
-            <ul class="nav-menu">
-                {% set currentPath = page.url | default('/') %}
-                <li><a href="/" class="nav-menu__link {% if currentPath === '/' %}is-active{% endif %}"><i class="fas fa-trophy"></i>SF6 Rankings</a></li>
-                <li><a href="/tournament-results/" class="nav-menu__link {% if '/tournament-results/' in currentPath %}is-active{% endif %}"><i class="fas fa-sitemap"></i>Tournament Results</a></li>
-                <li><a href="/ranking-system/" class="nav-menu__link {% if '/ranking-system/' in currentPath %}is-active{% endif %}"><i class="fas fa-scale-balanced"></i>Ranking System</a></li>
-            </ul>
+            {# --- CORRECTED: Use `set` before `include` --- #}
+            {% set listClass = "nav-menu" %}
+            {% include "partials/_navigation.njk" %}
         </nav>
 
         <main class="content">
-            <div role="main" id="maincontent" tabindex="-1">   
+            <div role="main" id="maincontent" tabindex="-1">
                 {% block content %}{% endblock %}
             </div>
 
@@ -88,11 +78,9 @@
                 <div class="footer-columns">
                     <div class="footer-column">
                         <h3>Navigation</h3>
-                        <ul class="footer-links">
-                            <li><a href="/">SF6 Rankings</a></li>
-                            <li><a href="/tournament-results/">Tournament Results</a></li>
-                            <li><a href="/ranking-system/">Ranking System</a></li>
-                        </ul>
+                        {# --- CORRECTED: Use `set` before `include` --- #}
+                        {% set listClass = "footer-links" %}
+                        {% include "partials/_navigation.njk" %}
                     </div>
                     <div class="footer-column">
                         <h3>Community</h3>
@@ -121,21 +109,13 @@
             </footer>
         </main>
 
-        <aside class="sidebar right-sidebar" aria-label="Upcoming Rated Events">
-            <h2 class="sidebar__label">Upcoming Rated Events</h2>
-            
+        <aside class="sidebar right-sidebar" aria-label="Upcoming Rated Tournaments">
+            <h2 class="sidebar__label">Upcoming Rated Tournaments</h2>
             {% for sidebarEvent in events %}
                 <a href="{{ sidebarEvent.url }}" target="_blank" rel="noopener noreferrer" class="event-card-link">
                     <div class="event-card">
                         <span class="event-card__name">{{ sidebarEvent.name }}</span>
-                        <img 
-                            src="/images/events/{{ sidebarEvent.slug }}.png" 
-                            alt="{{ sidebarEvent.name }}" 
-                            loading="lazy" 
-                            class="event-card__image"
-                            onerror="this.style.display='none';"
-                        />
-                        
+                        <img src="/images/events/{{ sidebarEvent.slug }}.png" alt="{{ sidebarEvent.name }}" loading="lazy" class="event-card__image" onerror="this.style.display='none';">
                         <div class="event-card__date">{{ sidebarEvent.date }}</div>
                         <span class="btn btn--secondary btn--small">More Info</span>
                     </div>
@@ -151,45 +131,13 @@
             JavaScript is disabled. Some interactive features may not work correctly.
         </p>
     </noscript>
-    
-    <script src="/js/main.js" defer></script>
-    {% block scripts %}{% endblock %}
 
     <button id="back-to-top-btn" class="back-to-top-btn" title="Go to top" aria-label="Go to top">
         <i class="fas fa-chevron-up"></i>
     </button>
-<script>
-  function handleResponsiveLayout() {
-    const isMobile = window.matchMedia('(max-width: 768px)').matches;
-    const pageWrapper = document.querySelector('.page-wrapper');
-    const mobileHeader = document.querySelector('.mobile-header');
-    const tournamentNav = document.querySelector('.tournament-nav');
-    const pageTitle = document.querySelector('.page-tournament-results h1');
+    
+    <script src="/js/main.js" defer></script>
+    {% block scripts %}{% endblock %}
 
-    if (!pageWrapper || !mobileHeader) return;
-
-    // --- 1. Handle Content Padding ---
-    if (isMobile) {
-      pageWrapper.style.paddingTop = `${mobileHeader.offsetHeight}px`;
-    } else {
-      pageWrapper.style.paddingTop = '0';
-    }
-
-    // --- 2. Handle Tournament Nav Position ---
-    if (tournamentNav && pageTitle) {
-      if (isMobile) {
-        // On mobile, move nav to be after the main site header
-        mobileHeader.after(tournamentNav);
-      } else {
-        // On desktop, move nav back to be after the H1 title
-        pageTitle.after(tournamentNav);
-      }
-    }
-  }
-
-  // Run on page load and on resize
-  document.addEventListener('DOMContentLoaded', handleResponsiveLayout);
-  window.addEventListener('resize', handleResponsiveLayout);
-</script>
 </body>
 </html>

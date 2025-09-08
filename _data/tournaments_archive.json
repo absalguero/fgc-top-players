@@ -1333,7 +1333,7 @@
         "Entrants": "450"
       },
       {
-        "Player": "Akainu",
+        "Player": "AKAINU",
         "Player ID": "16494378",
         "Event": "Ultimate Fighting Arena 2024",
         "Event ID": "3/29/3675",
@@ -22835,7 +22835,7 @@
         "Entrants": "144"
       },
       {
-        "Player": "Akainu",
+        "Player": "AKAINU",
         "Player ID": "20539682",
         "Event": "The MIXUP 2025 - Round 7",
         "Event ID": "8/28/3954",
@@ -30115,6 +30115,1073 @@
         "Date": "2025-08-31",
         "Finish": "49",
         "Entrants": "189"
+      }
+    ]
+  },
+  "winter-clash-2025-10th-anniversary": {
+    "name": "Winter Clash 2025 (10th Anniversary)",
+    "date": "2025-03-15T00:00:00.000Z",
+    "slug": "winter-clash-2025-10th-anniversary",
+    "results": [
+      {
+        "Player": "LuiMan20",
+        "Player ID": "19454872",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "1",
+        "Entrants": "53"
+      },
+      {
+        "Player": "Ajax Fidelity",
+        "Player ID": "19063993",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "2",
+        "Entrants": "53"
+      },
+      {
+        "Player": "xSicko",
+        "Player ID": "19400215",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "3",
+        "Entrants": "53"
+      },
+      {
+        "Player": "Mono",
+        "Player ID": "19078127",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "4",
+        "Entrants": "53"
+      },
+      {
+        "Player": "Mockingbird",
+        "Player ID": "19104359",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "5",
+        "Entrants": "53"
+      },
+      {
+        "Player": "Xavi",
+        "Player ID": "19063952",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "5",
+        "Entrants": "53"
+      },
+      {
+        "Player": "akkerfire",
+        "Player ID": "19263066",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "7",
+        "Entrants": "53"
+      },
+      {
+        "Player": "HD-CM",
+        "Player ID": "19053366",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "7",
+        "Entrants": "53"
+      },
+      {
+        "Player": "Dekar",
+        "Player ID": "19065288",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "9",
+        "Entrants": "53"
+      },
+      {
+        "Player": "NeuralArch",
+        "Player ID": "18855987",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "9",
+        "Entrants": "53"
+      },
+      {
+        "Player": "Rudy",
+        "Player ID": "19408602",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "9",
+        "Entrants": "53"
+      },
+      {
+        "Player": "Wincho",
+        "Player ID": "19311055",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "9",
+        "Entrants": "53"
+      },
+      {
+        "Player": "BigButtJacksonPR",
+        "Player ID": "19064018",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "13",
+        "Entrants": "53"
+      },
+      {
+        "Player": "Gil The 3rd",
+        "Player ID": "19194550",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "13",
+        "Entrants": "53"
+      },
+      {
+        "Player": "Rompecuello",
+        "Player ID": "19400222",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "13",
+        "Entrants": "53"
+      },
+      {
+        "Player": "Threeyes",
+        "Player ID": "19079737",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "13",
+        "Entrants": "53"
+      },
+      {
+        "Player": "AJMartinez",
+        "Player ID": "19371915",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "17",
+        "Entrants": "53"
+      },
+      {
+        "Player": "Crankganggod",
+        "Player ID": "18967855",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "17",
+        "Entrants": "53"
+      },
+      {
+        "Player": "El Marcianho",
+        "Player ID": "19058374",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "17",
+        "Entrants": "53"
+      },
+      {
+        "Player": "Freenix Wright",
+        "Player ID": "19147256",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "17",
+        "Entrants": "53"
+      },
+      {
+        "Player": "LSD-Abduction",
+        "Player ID": "19459918",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "17",
+        "Entrants": "53"
+      },
+      {
+        "Player": "Orbital",
+        "Player ID": "19472625",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "17",
+        "Entrants": "53"
+      },
+      {
+        "Player": "SEVENTH",
+        "Player ID": "19046788",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "17",
+        "Entrants": "53"
+      },
+      {
+        "Player": "Xandydiu",
+        "Player ID": "18997849",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "17",
+        "Entrants": "53"
+      },
+      {
+        "Player": "Aldebaran",
+        "Player ID": "19071217",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "25",
+        "Entrants": "53"
+      },
+      {
+        "Player": "AngelitoMan",
+        "Player ID": "19356973",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "25",
+        "Entrants": "53"
+      },
+      {
+        "Player": "Gandido",
+        "Player ID": "19071159",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "25",
+        "Entrants": "53"
+      },
+      {
+        "Player": "Mico",
+        "Player ID": "19067329",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "25",
+        "Entrants": "53"
+      },
+      {
+        "Player": "Shaide",
+        "Player ID": "19066459",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "25",
+        "Entrants": "53"
+      },
+      {
+        "Player": "Shylee",
+        "Player ID": "19069509",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "25",
+        "Entrants": "53"
+      },
+      {
+        "Player": "Volcanickenneth",
+        "Player ID": "19055768",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "25",
+        "Entrants": "53"
+      },
+      {
+        "Player": "Xrossfist",
+        "Player ID": "19073301",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "25",
+        "Entrants": "53"
+      },
+      {
+        "Player": "DBX",
+        "Player ID": "18642115",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "33",
+        "Entrants": "53"
+      },
+      {
+        "Player": "Drake Von Duke",
+        "Player ID": "19233503",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "33",
+        "Entrants": "53"
+      },
+      {
+        "Player": "EMP_Spookys_Fav",
+        "Player ID": "19297724",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "33",
+        "Entrants": "53"
+      },
+      {
+        "Player": "kuku",
+        "Player ID": "19357433",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "33",
+        "Entrants": "53"
+      },
+      {
+        "Player": "Mr.Freejos",
+        "Player ID": "18955052",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "33",
+        "Entrants": "53"
+      },
+      {
+        "Player": "MrLams_",
+        "Player ID": "18821777",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "33",
+        "Entrants": "53"
+      },
+      {
+        "Player": "MrNeme",
+        "Player ID": "19279926",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "33",
+        "Entrants": "53"
+      },
+      {
+        "Player": "NanDont",
+        "Player ID": "19279925",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "33",
+        "Entrants": "53"
+      },
+      {
+        "Player": "NoahTheProdigy",
+        "Player ID": "19472415",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "33",
+        "Entrants": "53"
+      },
+      {
+        "Player": "Olivo",
+        "Player ID": "19064020",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "33",
+        "Entrants": "53"
+      },
+      {
+        "Player": "PRCROC27",
+        "Player ID": "18813338",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "33",
+        "Entrants": "53"
+      },
+      {
+        "Player": "SnowCrota",
+        "Player ID": "19357508",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "33",
+        "Entrants": "53"
+      },
+      {
+        "Player": "spacejíbaro",
+        "Player ID": "19419861",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "33",
+        "Entrants": "53"
+      },
+      {
+        "Player": "tinter",
+        "Player ID": "19072451",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "33",
+        "Entrants": "53"
+      },
+      {
+        "Player": "tucapuyo",
+        "Player ID": "18995778",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "33",
+        "Entrants": "53"
+      },
+      {
+        "Player": "ZarathustraX",
+        "Player ID": "18790724",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "33",
+        "Entrants": "53"
+      },
+      {
+        "Player": "AxelKalo",
+        "Player ID": "19455948",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "49",
+        "Entrants": "53"
+      },
+      {
+        "Player": "Du's Emptychair",
+        "Player ID": "19079685",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "49",
+        "Entrants": "53"
+      },
+      {
+        "Player": "Red Rooster Boss",
+        "Player ID": "19078120",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "49",
+        "Entrants": "53"
+      },
+      {
+        "Player": "Solid PajaHands",
+        "Player ID": "19064226",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "49",
+        "Entrants": "53"
+      },
+      {
+        "Player": "supergompi",
+        "Player ID": "19416109",
+        "Event": "Winter Clash 2025 (10th Anniversary)",
+        "Event ID": "4/29/3921",
+        "Date": "2025-03-15",
+        "Finish": "49",
+        "Entrants": "53"
+      }
+    ]
+  },
+  "ozhadou-nationals-19": {
+    "name": "OzHadou Nationals 19",
+    "date": "2025-09-07T00:00:00.000Z",
+    "slug": "ozhadou-nationals-19",
+    "results": [
+      {
+        "Player": "elieatscrayons",
+        "Player ID": "20864443",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "1",
+        "Entrants": "104"
+      },
+      {
+        "Player": "Koopa",
+        "Player ID": "20973007",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "2",
+        "Entrants": "104"
+      },
+      {
+        "Player": "Rumours",
+        "Player ID": "20936415",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "3",
+        "Entrants": "104"
+      },
+      {
+        "Player": "Sam White",
+        "Player ID": "20548284",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "4",
+        "Entrants": "104"
+      },
+      {
+        "Player": "Xave",
+        "Player ID": "20537048",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "5",
+        "Entrants": "104"
+      },
+      {
+        "Player": "chipotle",
+        "Player ID": "21099066",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "5",
+        "Entrants": "104"
+      },
+      {
+        "Player": "Saku",
+        "Player ID": "20584478",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "7",
+        "Entrants": "104"
+      },
+      {
+        "Player": "Teq",
+        "Player ID": "20546340",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "7",
+        "Entrants": "104"
+      },
+      {
+        "Player": "PokkeDex",
+        "Player ID": "20753662",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "9",
+        "Entrants": "104"
+      },
+      {
+        "Player": "Kingmudcrab",
+        "Player ID": "20904682",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "9",
+        "Entrants": "104"
+      },
+      {
+        "Player": "Vollian",
+        "Player ID": "20537706",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "9",
+        "Entrants": "104"
+      },
+      {
+        "Player": "PugBizcuit",
+        "Player ID": "20668093",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "9",
+        "Entrants": "104"
+      },
+      {
+        "Player": "Antwerp",
+        "Player ID": "20878237",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "13",
+        "Entrants": "104"
+      },
+      {
+        "Player": "Riku",
+        "Player ID": "21050411",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "13",
+        "Entrants": "104"
+      },
+      {
+        "Player": "AfterDeath",
+        "Player ID": "20918671",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "13",
+        "Entrants": "104"
+      },
+      {
+        "Player": "Suzu520",
+        "Player ID": "21065049",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "13",
+        "Entrants": "104"
+      },
+      {
+        "Player": "John Isekai",
+        "Player ID": "20965613",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "17",
+        "Entrants": "104"
+      },
+      {
+        "Player": "Zonatte",
+        "Player ID": "20992952",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "17",
+        "Entrants": "104"
+      },
+      {
+        "Player": "MiamiSynth",
+        "Player ID": "21052350",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "17",
+        "Entrants": "104"
+      },
+      {
+        "Player": "Bug",
+        "Player ID": "20537700",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "17",
+        "Entrants": "104"
+      },
+      {
+        "Player": "ddmaruu",
+        "Player ID": "20539733",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "17",
+        "Entrants": "104"
+      },
+      {
+        "Player": "Valerie",
+        "Player ID": "20565819",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "17",
+        "Entrants": "104"
+      },
+      {
+        "Player": "TrashTierHuman",
+        "Player ID": "21056901",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "17",
+        "Entrants": "104"
+      },
+      {
+        "Player": "InstantCoffee",
+        "Player ID": "21051832",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "17",
+        "Entrants": "104"
+      },
+      {
+        "Player": "Takechanman57",
+        "Player ID": "21058403",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "25",
+        "Entrants": "104"
+      },
+      {
+        "Player": "JustABen",
+        "Player ID": "20904360",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "25",
+        "Entrants": "104"
+      },
+      {
+        "Player": "Julian",
+        "Player ID": "20902415",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "25",
+        "Entrants": "104"
+      },
+      {
+        "Player": "Chandarin",
+        "Player ID": "20536581",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "25",
+        "Entrants": "104"
+      },
+      {
+        "Player": "NEXTDOOR",
+        "Player ID": "21118490",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "25",
+        "Entrants": "104"
+      },
+      {
+        "Player": "gugubird",
+        "Player ID": "21076260",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "25",
+        "Entrants": "104"
+      },
+      {
+        "Player": "Shiro",
+        "Player ID": "21104037",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "25",
+        "Entrants": "104"
+      },
+      {
+        "Player": "June Meline",
+        "Player ID": "20537671",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "25",
+        "Entrants": "104"
+      },
+      {
+        "Player": "Cora",
+        "Player ID": "20726109",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "33",
+        "Entrants": "104"
+      },
+      {
+        "Player": "Jarop",
+        "Player ID": "20536660",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "33",
+        "Entrants": "104"
+      },
+      {
+        "Player": "AfroBear",
+        "Player ID": "20885748",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "33",
+        "Entrants": "104"
+      },
+      {
+        "Player": "Boxxheadx",
+        "Player ID": "20906065",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "33",
+        "Entrants": "104"
+      },
+      {
+        "Player": "WHH",
+        "Player ID": "20851226",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "33",
+        "Entrants": "104"
+      },
+      {
+        "Player": "Nedjoe",
+        "Player ID": "21154246",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "33",
+        "Entrants": "104"
+      },
+      {
+        "Player": "WhyZee",
+        "Player ID": "20860206",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "33",
+        "Entrants": "104"
+      },
+      {
+        "Player": "In4war",
+        "Player ID": "21050427",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "33",
+        "Entrants": "104"
+      },
+      {
+        "Player": "gLass",
+        "Player ID": "20871413",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "33",
+        "Entrants": "104"
+      },
+      {
+        "Player": "Peacehaxor",
+        "Player ID": "20803962",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "33",
+        "Entrants": "104"
+      },
+      {
+        "Player": "AwildLLAMA",
+        "Player ID": "20618677",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "33",
+        "Entrants": "104"
+      },
+      {
+        "Player": "shaze",
+        "Player ID": "21060002",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "33",
+        "Entrants": "104"
+      },
+      {
+        "Player": "Willo",
+        "Player ID": "20537182",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "33",
+        "Entrants": "104"
+      },
+      {
+        "Player": "Infernal",
+        "Player ID": "21125740",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "33",
+        "Entrants": "104"
+      },
+      {
+        "Player": "Jfizzman",
+        "Player ID": "20546853",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "33",
+        "Entrants": "104"
+      },
+      {
+        "Player": "FlameRoastToast",
+        "Player ID": "20536605",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "33",
+        "Entrants": "104"
+      },
+      {
+        "Player": "zhenigma",
+        "Player ID": "20877163",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "49",
+        "Entrants": "104"
+      },
+      {
+        "Player": "Mr. RiceGuy",
+        "Player ID": "20537961",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "49",
+        "Entrants": "104"
+      },
+      {
+        "Player": "Jfkirby",
+        "Player ID": "20637130",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "49",
+        "Entrants": "104"
+      },
+      {
+        "Player": "Not an Alien",
+        "Player ID": "20903295",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "49",
+        "Entrants": "104"
+      },
+      {
+        "Player": "SaltyParis",
+        "Player ID": "20555232",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "49",
+        "Entrants": "104"
+      },
+      {
+        "Player": "Danish Koo",
+        "Player ID": "21048022",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "49",
+        "Entrants": "104"
+      },
+      {
+        "Player": "MajinBeng",
+        "Player ID": "20993928",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "49",
+        "Entrants": "104"
+      },
+      {
+        "Player": "monty488",
+        "Player ID": "21029299",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "49",
+        "Entrants": "104"
+      },
+      {
+        "Player": "MidnightAus",
+        "Player ID": "20992555",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "49",
+        "Entrants": "104"
+      },
+      {
+        "Player": "kastle09",
+        "Player ID": "20584475",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "49",
+        "Entrants": "104"
+      },
+      {
+        "Player": "BBragi",
+        "Player ID": "20538492",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "49",
+        "Entrants": "104"
+      },
+      {
+        "Player": "Ker",
+        "Player ID": "20766274",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "49",
+        "Entrants": "104"
+      },
+      {
+        "Player": "IceBurgy",
+        "Player ID": "21059866",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "49",
+        "Entrants": "104"
+      },
+      {
+        "Player": "DrHealmore",
+        "Player ID": "21117820",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "49",
+        "Entrants": "104"
+      },
+      {
+        "Player": "GLPhoenix",
+        "Player ID": "20762853",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "49",
+        "Entrants": "104"
+      },
+      {
+        "Player": "ratard",
+        "Player ID": "20536575",
+        "Event": "OzHadou Nationals 19",
+        "Event ID": "11/21/4044",
+        "Date": "2025-09-07",
+        "Finish": "49",
+        "Entrants": "104"
       }
     ]
   }
