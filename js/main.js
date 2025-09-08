@@ -161,40 +161,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 container.style.setProperty('--bg-image-url', `url(${img.src})`);
             }
         });
-
-        // Mobile-Only Shrinking Header Script
-        const stickyHeader = document.querySelector('.header-sticky-container');
-        if (stickyHeader) {
-             const h1 = stickyHeader.querySelector('h1');
-             const meta = stickyHeader.querySelector('.event-header__meta');
-             const imageContainer = stickyHeader.querySelector('.event-image-container');
- 
-             const scrollHandler = () => {
-                 const isMobile = window.matchMedia('(max-width: 768px)').matches;
-                 if (!isMobile) {
-                     h1.style.cssText = '';
-                     imageContainer.style.cssText = '';
-                     meta.style.cssText = '';
-                     stickyHeader.classList.remove('is-shrunk');
-                     return;
-                 }
-                 const transitionEnd = 150;
-                 const progress = Math.min(1, window.scrollY / transitionEnd);
-                 const h1Start = 2.2, h1End = 1.5;
-                 const imgStart = stickyHeader.offsetWidth * 0.8, imgEnd = 70;
-                 const newH1Size = h1Start - (h1Start - h1End) * progress;
-                 const newImgWidth = imgStart - (imgStart - imgEnd) * progress;
- 
-                 h1.style.fontSize = `${newH1Size}rem`;
-                 imageContainer.style.maxWidth = `${newImgWidth}px`;
-                 meta.style.opacity = 1 - progress;
-                 
-                 stickyHeader.classList.toggle('is-shrunk', progress === 1);
-             };
-             
-             window.addEventListener('scroll', scrollHandler, { passive: true });
-             window.addEventListener('resize', scrollHandler, { passive: true });
-        }
         
         const eventHeaderGroup = document.querySelector('.event-header-group');
         if (eventHeaderGroup) {

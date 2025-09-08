@@ -8,8 +8,8 @@
 <ul class="{{ listClass }}">
     {% for item in navItems %}
         <li>
-            <a href="{{ item.url }}" class="nav-menu__link {% if item.url in currentPath and item.url != '/' or currentPath == item.url %}is-active{% endif %}">
-                {% if item.icon %}<i class="fas {{ item.icon }}"></i>{% endif %}
+            <a href="{{ item.url }}" class="{% if listClass == 'nav-menu' %}nav-menu__link{% endif %} {% if item.url in currentPath and item.url != '/' or currentPath == item.url %}is-active{% endif %}">
+                {% if item.icon and listClass == 'nav-menu' %}<i class="fas {{ item.icon }}"></i>{% endif %}
                 {{ item.text }}
             </a>
         </li>
