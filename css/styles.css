@@ -1049,6 +1049,20 @@ th.sorted.desc .sort-icon,
   .toc {
     font-size: 1.1rem;
 }
+/* Add these styles inside your @media (min-width: 769px) block */
+
+.data-table {
+  width: auto; /* Removes the 100% width, allowing the table to shrink to fit its content */
+}
+
+.data-table td {
+  white-space: nowrap; /* Prevents text inside data cells from wrapping to a new line */
+}
+
+/* Optional: If you also want to prevent headers from wrapping */
+.data-table th {
+  white-space: nowrap;
+}
 }
 
 @media (max-width: 768px) {

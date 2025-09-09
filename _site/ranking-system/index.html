@@ -10,18 +10,18 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ranking System Explained | FGC Top Players</title>
+    <title>How Our FGC Ranking System Works (for Street Fighter 6) | FGC Top Players</title>
     
     <meta name="description" content="The definitive player rankings for top competitive fighting games. Track pro players across Street Fighter, Tekken, and more." />
     
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://fgc-player-rankings.netlify.app/ranking-system/">
-    <meta property="og:title" content="Ranking System Explained | FGC Top Players">
+    <meta property="og:title" content="How Our FGC Ranking System Works (for Street Fighter 6) | FGC Top Players">
     <meta property="og:description" content="The definitive ranking of the top professional SF6 players. See who's on top and track the rise and fall of your favorite pros.">
     <meta property="og:image" content="https://fgc-player-rankings.netlify.app/images/fgc-rankings-social-card.png">
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://fgc-player-rankings.netlify.app/ranking-system/">
-    <meta property="twitter:title" content="Ranking System Explained | FGC Top Players">
+    <meta property="twitter:title" content="How Our FGC Ranking System Works (for Street Fighter 6) | FGC Top Players">
     <meta property="twitter:description" content="The definitive ranking of the top professional SF6 players. See who's on top and track the rise and fall of your favorite pros.">
     <meta property="twitter:image" content="https://fgc-player-rankings.netlify.app/images/fgc-rankings-social-card.png">
     <link rel="canonical" href="https://fgc-player-rankings.netlify.app/ranking-system/" />
@@ -44,7 +44,12 @@
         {
             "@type": "Question",
             "name": "How are player rankings calculated?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Rankings are calculated based on a player’s top five performances at sanctioned offline tournaments, factoring in placing, event value, and recency to reflect current competitive form." }
+            "acceptedAnswer": { "@type": "Answer", "text": "Rankings are calculated based on a player's top five performances at sanctioned offline tournaments, factoring in placing, event value, and recency to reflect current competitive form." }
+        },
+        {
+            "@type": "Question",
+            "name": "How do these rankings differ from a game's built-in online ladder or ranked mode?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Our system is based exclusively on performance in high-stakes, offline tournaments, which test a player's ability under pressure. An in-game ranked mode is an excellent measure of a player's online consistency over a high volume of matches. Our system focuses on identifying the world's best tournament performers." }
         },
         {
             "@type": "Question",
@@ -53,8 +58,43 @@
         },
         {
             "@type": "Question",
+            "name": "Can a player’s ranking change if they attend fewer events?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Because the system emphasizes recent and top performances, players who compete less frequently can still maintain or improve their ranking by performing well in high-value tournaments." }
+        },
+        {
+            "@type": "Question",
             "name": "How often are rankings updated?",
             "acceptedAnswer": { "@type": "Answer", "text": "Rankings are updated regularly following major offline events to ensure they reflect the latest competitive results." }
+        },
+        {
+            "@type": "Question",
+            "name": "What games are covered by this ranking system?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Currently, the ranking system covers Street Fighter 6 (SF6) exclusively." }
+        },
+        {
+            "@type": "Question",
+            "name": "How can I get my tournament included?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Tournament organizers can contact us at fgcprankings@gmail.com to request evaluation and inclusion of their events in the ranking system." }
+        },
+        {
+            "@type": "Question",
+            "name": "How can players submit their tournament results?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Players should work with tournament organizers who submit official results to us. If you notice a tournament result missing or incorrect, please reach out via email." }
+        },
+        {
+            "@type": "Question",
+            "name": "How are disputes or errors handled?",
+            "acceptedAnswer": { "@type": "Answer", "text": "We review all reported discrepancies carefully and update rankings accordingly to ensure accuracy. If you find an error, please contact us at fgcprankings@gmail.com." }
+        },
+        {
+            "@type": "Question",
+            "name": "How can I suggest improvements or report errors in the rankings?",
+            "acceptedAnswer": { "@type": "Answer", "text": "We welcome feedback and encourage you to contact us via fgcprankings@gmail.com with any suggestions or corrections." }
+        },
+        {
+            "@type": "Question",
+            "name": "What regions or countries are most represented?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Our rankings reflect a global player base, with events and competitors from multiple regions around the world." }
         }
     ]
 }
@@ -136,7 +176,7 @@
 <div class="content-container page-ranking-system">
     <article>
         <img class="banner" src="/images/banner.png" alt="FGC Player Rankings official logo" loading="lazy"/>
-        <h1>Ranking System Explained</h1>
+        <h1>How the FGC Ranking System Works</h1>
 
         <div class="page-ranking-system__layout">
             <div class="page-ranking-system__toc-wrapper">
@@ -148,7 +188,7 @@
                     <ul>
                         <li><a href="#overview">Overview</a></li>
                         <li><a href="#how-ranking-works">How the Ranking System Works</a></li>
-                        <li><a href="#placing-scoring">Placing-Based Scoring</a></li>
+                        <li><a href="#results-scoring">Results-Based Scoring</a></li>
                         <li><a href="#best-performances">Best Performances</a></li>
                         <li><a href="#event-valuation">Event Weighting</a></li>
                         <li><a href="#recency-bias">Recency Bias</a></li>
@@ -156,6 +196,7 @@
                         <li><a href="#data-sources">Data Sources & Verification</a></li>
                         <li><a href="#global-recognition">Global Recognition</a></li>
                         <li><a href="#updates-transparency">Regular Updates & Transparency</a></li>
+                        <li><a href="#example-calculation">A Player's Journey (Example)</a></li>
                         <li><a href="#faq">Frequently Asked Questions (FAQ)</a></li>
                         <li><a href="#contact-feedback">Contact & Feedback</a></li>
                     </ul>
@@ -163,7 +204,7 @@
             </div>
 
             <div class="page-ranking-system__main-content">
-                <img src="/images/fgc-ranking-system-explained.png" alt="Crowd cheering at a fighting game event" loading="lazy" class="page-ranking-system__image" />
+                <img src="/images/fgc-ranking-system-explained.png" alt="Graphical representation of the FGC ranking system components" loading="lazy" class="page-ranking-system__image" />
                 
                 <div class="cta-container">
                     <a href="/" class="button button--primary">View Current Street Fighter 6 Rankings</a>
@@ -178,9 +219,9 @@
 
                 <section id="how-ranking-works">
                     <h2>How the Ranking System Works</h2>
-                    <p>Our system is designed to fairly evaluate player performance by focusing on meaningful tournament results and ongoing competitive form.</p>
+                    <p>Our system is designed to fairly evaluate player performance by focusing on meaningful <a href="/tournament-results/">tournament results</a> and ongoing competitive form.</p>
 
-                    <h3 id="placing-scoring"><i class="fas fa-medal"></i> Placing-Based Scoring</h3>
+                    <h3 id="results-scoring"><i class="fas fa-medal"></i> Results-Based Scoring</h3>
                     <p>Players earn points according to their final placing at offline tournaments. Higher placings receive significantly more points, ensuring that top finishes have the greatest impact on rankings.</p>
 
                     <h3 id="best-performances"><i class="fas fa-chart-bar"></i> Best Performances</h3>
@@ -190,19 +231,32 @@
                     <p>Each tournament's value is dynamically calculated based on multiple factors, including the prestige and history of the tournament, the strength of competition, and the prize money offered. Larger, more prestigious tournaments with stronger player fields and higher stakes carry greater weight in the ranking system.</p>
 
                     <h3 id="recency-bias"><i class="fas fa-history"></i> Recency Bias</h3>
-                    <p>The system emphasizes recent tournament results to ensure the rankings accurately represent who is performing best right now. Older results gradually have less influence, keeping the leaderboard fresh and relevant.</p>
+                    <p>The system emphasizes recent <a href="/tournament-results/">tournament results</a> to ensure the rankings accurately represent who is performing best right now. Older results gradually have less influence, keeping the leaderboard fresh and relevant.</p>
 
                     <h3 id="offline-events"><i class="fas fa-users"></i> In-Person Events Only</h3>
                     <p>Rankings are based exclusively on sanctioned offline tournaments. Sanctioned tournaments are offline events that meet specific standards for fairness and competitive integrity. <a href="#faq-online-events" onclick="document.getElementById('faq-online-events').open = true;">(Why not online events?)</a></p>
 
-                    <h3 id="data-sources">Data Sources &amp; Verification</h3>
+                    <h3 id="data-sources"><i class="fas fa-clipboard-check"></i> Data Sources &amp; Verification</h3>
                     <p>We prioritize accurate and reliable data collection from trusted tournament organizers and verified results to maintain the integrity of the rankings. Our commitment ensures that player standings reflect genuine competitive performance.</p>
 
                     <h3 id="global-recognition"><i class="fas fa-globe"></i> Global Recognition</h3>
                     <p>Our ranking system recognizes offline fighting game tournaments from around the world, promoting a diverse and comprehensive competitive landscape. Tournament organizers interested in having their events evaluated are encouraged to contact us. <a href="#faq-inclusion" onclick="document.getElementById('faq-inclusion').open = true;">(How do I get a tournament included?)</a></p>
 
                     <h3 id="updates-transparency"><i class="fas fa-sync-alt"></i> Regular Updates & Transparency</h3>
-                    <p>Rankings are updated regularly to incorporate the latest tournament results. Developed by and for the fighting game community, our ranking algorithms and weighting factors are designed to fairly recognize performance, consistency, and current competitive form. <a href="#faq-updates" onclick="document.getElementById('faq-updates').open = true;">(How often are rankings updated?)</a></p>
+                    <p>Rankings are updated regularly to incorporate the latest <a href="/tournament-results/">tournament results</a>. Developed by and for the fighting game community, our ranking algorithms and weighting factors are designed to fairly recognize performance, consistency, and current competitive form. <a href="#faq-updates" onclick="document.getElementById('faq-updates').open = true;">(How often are rankings updated?)</a></p>
+                </section>
+
+                <section id="example-calculation">
+                    <h2>Putting It All Together: A Player's Journey</h2>
+                    <p>Let's illustrate how the system works with a hypothetical player, "Player X":</p>
+                    <ol>
+                        <li><strong>Event 1 (Premier Tier):</strong> Player X places 3rd, earning 800 rating points.</li>
+                        <li><strong>Event 2 (Major Tier):</strong> Player X places 1st, earning 650 rating points.</li>
+                        <li><strong>Event 3 (A Regional Event - Standard Tier):</strong> Player X places 1st, earning 300 rating points.</li>
+                        <li><strong>Event 4 (Last Year's Premier):</strong> Player X placed 5th. This result is now a year old, so its value decays and no longer earns full rating points.</li>
+                        <li><strong>Event 5 & 6 (Two other events):</strong> Player X also placed well in two other events, earning 400 and 350 ratings points respectively.</li>
+                    </ol>
+                    <p>The system takes Player X's <strong>top five</strong> performances, factoring in recency. Their total score would be calculated from the results of Event 1, 2, 3, 5, and 6, while the decayed result from Event 4 would be dropped in favor of a more recent, higher-scoring performance. This ensures the ranking reflects their current form.</p>
                 </section>
 
                 <section id="faq" class="faq-accordion">
