@@ -222,18 +222,27 @@ mark, .archive-item-card mark {
   padding: 0;
   margin: 0;
 }
+/* UPDATED RULE */
 .nav-menu__link {
-  position: relative;
+  position: relative; /* This is crucial for positioning the icon */
+  display: block;     /* Change from flex to block */
   box-sizing: border-box;
   width: 100%;
-  display: flex;
-  align-items: center;
-  padding: 0.5rem 1rem 0.5rem 0.75rem;
+  /* Create the "icon zone" on the left with padding */
+  padding: 0.7rem 1rem 0.7rem 3.25rem; 
   color: #ddd;
   font-family: 'Permanent Marker', cursive;
   font-size: 1.4rem;
   transition: background-color 0.2s, color 0.2s;
-  gap: 0.75rem;
+}
+/* NEW RULE FOR THE ICON */
+.nav-menu__link .fas {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.25em; /* Defines the icon's own width */
+  text-align: center; /* Centers the icon within its width */
 }
 .nav-menu__link:hover {
   background-color: #333;
@@ -1915,6 +1924,7 @@ body.page-tournament-detail .overview-meta {
 .description-content {
   border-bottom: 2px solid #FF5E13;
   padding-bottom: 1.5rem;
+  margin-top: -1rem;
 }
 .description-content h3 {
   font-family: 'Permanent Marker', cursive;
@@ -1957,7 +1967,7 @@ body.page-tournament-detail .overview-meta {
   padding-bottom: 1.5rem;
   margin-bottom: 0.25rem;
   /* MODIFIED: Added 1.25rem of space above the header */
-  margin-top: 1.25rem;
+  margin-top: 1.75rem;
 }
 
 /* This rule for the name text is unchanged */
@@ -2171,4 +2181,39 @@ body.page-tournament-detail .overview-meta {
 .page-ranking-system .cta-container {
   margin-top: 0%;   /* Adjust this value for the margin above the button */
   margin-bottom: 0.75rem; /* Adjust this value for the margin below the button */
+}
+
+/* ==========================================================================
+   13. MAIN ACTION HUB
+   ========================================================================== */
+
+/* --- DESKTOP STYLES (Default) --- */
+.main-action-hub {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  /* Adjust desktop margins here: top, right, bottom, left */
+  margin: -0.75rem 0 2rem 0;
+}
+
+/* --- MOBILE STYLES (Screens 768px and smaller) --- */
+@media (max-width: 768px) {
+  .main-action-hub {
+    /* Stack the buttons vertically */
+    flex-direction: column;
+    /* Center the stacked buttons */
+    align-items: center;
+    /* Adjust mobile margins here: top, right, bottom, left */
+    margin: 0rem 0 1rem 0;
+  }
+}
+
+.overview-content > div:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.notable-players-section .section-banner {
+  margin-bottom: 1rem;
 }

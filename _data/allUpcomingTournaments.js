@@ -13,6 +13,8 @@ const newTournaments = {
     prizes: "€9,324 Pot",
     game: "Street Fighter 6",
     slug: "ultimate-fighting-arena-2025-3",
+    streamLink: "https://www.twitch.tv/capcomfighters",
+    scheduleLink: "https://x.com/UFA_Gaming/status/1966184965449842863",
     description: `Ultimate Fighting Arena (UFA) is Europe’s biggest festival dedicated to fighting games, held over three days from September 12-14, 2025 at Docks de Paris, Aubervilliers, Grand Paris.
 
 At UFA, top players, fans, and newcomers come together not only to compete in high-stakes tournaments, but also to dive into a full cultural celebration of the fighting game community. Attendees can play in the Arcade Zone, enjoy world-class exhibitions, shop at merchandise booths, sample food from a variety of food trucks, and explore the artist alley.
@@ -46,6 +48,8 @@ UFA 2025 is organized by Gozulting together with community partners and powered 
     prizes: "$1,000 Pot Bonus",
     game: "Street Fighter 6",
     slug: "roundhouse-2025",
+    streamLink: "",
+    scheduleLink: "",
     description: `Get ready for Roundhouse 2025, the Midwest’s premier fighting game showdown. From September 26-28, 2025, competitors, fans, and newcomers converge on Chicago’s Glenview area for three full days of tournaments, side-events, exhibitions, and nonstop action.
 
 Held in the luxurious Renaissance Chicago Glenview Suites Hotel—just 20 minutes from O’Hare with free parking, EV charging, and transit access via the Jefferson Park CTA hub—Roundhouse 2025 delivers premium fighting game culture in comfort.

@@ -75,13 +75,30 @@ permalink: "/upcoming-tournaments/{{ tournament.slug }}/"
     </div>
   </div>
 
-  <article style="line-height: 1.6;">
+  {# Main Action Hub for primary buttons #}
+  <div class="main-action-hub">
+    <a href="{{ tournament.url }}" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+      <i class="fas fa-external-link-alt"></i> Visit Official Site & Register
+    </a>
+    {% if tournament.streamLink %}
+      <a href="{{ tournament.streamLink }}" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-twitch"></i> Watch Live Stream
+      </a>
+    {% endif %}
+    {% if tournament.scheduleLink %}
+      <a href="{{ tournament.scheduleLink }}" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-clock"></i> View Full Schedule
+      </a>
+    {% endif %}
+  </div>
 
+  {# ✅ This new container wraps the banner and content to enforce consistent width #}
+  <div class="overview-container overview-container--{{ tournament.tier | lower }}">
     <div class="section-banner">
       <h2>Tournament Overview</h2>
     </div>
 
-    <div class="overview-meta overview-meta--{{ tournament.tier | lower }}">
+    <article class="overview-content">
       <div class="meta-grid">
         <div class="meta-column">
           <h3>Event Details</h3>
@@ -104,7 +121,7 @@ permalink: "/upcoming-tournaments/{{ tournament.slug }}/"
           <h3>Plan Your Trip</h3>
           <ul class="travel-links">
             <li>
-              <a href="https://www.google.com/maps/search/{{ (tournament.venueName or '') + ' ' + tournament.location | url_encode }}" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.google.com/maps/search/?api=1&query={{ tournament.location | url_encode }}" target="_blank" rel="noopener noreferrer">
                 <i class="fas fa-map-marked-alt"></i> View Venue Map
               </a>
             </li>
@@ -114,7 +131,7 @@ permalink: "/upcoming-tournaments/{{ tournament.slug }}/"
               </a>
             </li>
             <li>
-              <a href="https://www.google.com/search?q=hotels+near+{{ (tournament.venueName or '') + ' ' + tournament.location | url_encode }}" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.google.com/search?q=hotels+near+{{ tournament.location | url_encode }}" target="_blank" rel="noopener noreferrer">
                 <i class="fas fa-bed"></i> Find Hotels
               </a>
             </li>
@@ -132,8 +149,6 @@ permalink: "/upcoming-tournaments/{{ tournament.slug }}/"
           <div class="section-banner">
             <h2>Top Players to Watch</h2>
           </div>
-          <p>
-          
           <div class="notable-players-grid">
             {% for player_name in tournament.notablePlayers %}
               {% set player_data = rankings.players | find("Player", player_name) %}
@@ -142,11 +157,6 @@ permalink: "/upcoming-tournaments/{{ tournament.slug }}/"
               {% if rank >= 1 and rank <= 4 %}{% set card_class = "rank-" + rank %}{% endif %}
               {% if rank >= 5 and rank <= 40 %}{% set card_class = "ranked-6-40" %}{% endif %}
               {% set show_photo = player_data and rank > 0 and rank <= 40 and player_data['Player Icon'] %}
-
-              {#
-                This is the NEW, self-contained player card.
-                It uses unique "np-" (Notable Player) class names to avoid all CSS conflicts.
-              #}
               <div class="np-card {{ card_class }}">
                 <div class="np-icon-wrapper">
                   {% if show_photo %}
@@ -155,7 +165,6 @@ permalink: "/upcoming-tournaments/{{ tournament.slug }}/"
                     <div class="np-icon-placeholder"><i class="fas fa-user"></i></div>
                   {% endif %}
                 </div>
-              
                 <div class="np-content">
                   <span class="np-name">{{ player_name }}</span>
                   {% if rank > 0 and rank <= 40 %}
@@ -169,14 +178,7 @@ permalink: "/upcoming-tournaments/{{ tournament.slug }}/"
           </div>
         </div>
       {% endif %}
-
-      <div class="cta-container">
-        <a href="{{ tournament.url }}" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
-          <i class="fas fa-ticket-alt"></i> Register / Official Site
-        </a>
-      </div>
-    </div>
-  </article>
-
+    </article>
+  </div>
 </div>
 {% endblock %}
