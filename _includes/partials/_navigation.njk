@@ -1,17 +1,18 @@
 {% set navItems = [
-    { "url": "/", "text": "SF6 Rankings", "icon": "fa-trophy" },
-    { "url": "/tournament-results/", "text": "Tournament Results", "icon": "fa-sitemap" },
-    { "url": "/ranking-system/", "text": "Ranking System", "icon": "fa-scale-balanced" }
+{ "url": "/", "text": "SF6 Rankings", "icon": "fa-trophy" },
+{ "url": "/tournament-results/", "text": "Tournament Results", "icon": "fa-sitemap" },
+{ "url": "/upcoming-rated-tournaments/", "text": "Upcoming Tournaments", "icon": "fa-calendar-alt" },
+{ "url": "/ranking-system/", "text": "Ranking System", "icon": "fa-scale-balanced" }
 ] %}
 {% set currentPath = page.url | default('/') %}
 
 <ul class="{{ listClass }}">
-    {% for item in navItems %}
-        <li>
-            <a href="{{ item.url }}" class="{% if listClass == 'nav-menu' %}nav-menu__link{% endif %} {% if item.url in currentPath and item.url != '/' or currentPath == item.url %}is-active{% endif %}">
-                {% if item.icon and listClass == 'nav-menu' %}<i class="fas {{ item.icon }}"></i>{% endif %}
-                {{ item.text }}
-            </a>
-        </li>
-    {% endfor %}
+{% for item in navItems %}
+<li>
+<a href="{{ item.url }}" class="{% if listClass == 'nav-menu' %}nav-menu__link{% endif %} {% if item.url in currentPath and item.url != '/' or currentPath == item.url %}is-active{% endif %}">
+{% if item.icon and listClass == 'nav-menu' %}<i class="fas {{ item.icon }}"></i>{% endif %}
+{{ item.text }}
+</a>
+</li>
+{% endfor %}
 </ul>

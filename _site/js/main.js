@@ -132,14 +132,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     if (!targetElement) return;
 
-                    // Activate link style immediately for better UX
                     activateLink(targetId.substring(1));
                     isClickScrolling = true;
 
                     const isMobile = window.innerWidth < 769;
 
                     const calculateAndScroll = () => {
-                        const topOffset = isMobile ? 70 : 30; // 60px header + 10px padding
+                        const topOffset = isMobile ? 70 : 30;
                         const elementPosition = targetElement.getBoundingClientRect().top;
                         const offsetPosition = elementPosition + window.scrollY - topOffset;
 
@@ -151,26 +150,20 @@ document.addEventListener('DOMContentLoaded', () => {
                         clearTimeout(scrollTimeout);
                         scrollTimeout = setTimeout(() => {
                             isClickScrolling = false;
-                        }, 1000); // Wait for smooth scroll to likely finish
+                        }, 1000);
                     };
 
-                    // On mobile, if the menu is open, we must close it FIRST, then wait for the
-                    // animation to finish before calculating the scroll position.
                     if (isMobile && tocWrapper.classList.contains('is-open')) {
                         tocToggleBtn.setAttribute('aria-expanded', 'false');
                         tocWrapper.classList.remove('is-open');
-
-                        // Wait for CSS transition (400ms) to finish before scrolling
                         setTimeout(calculateAndScroll, 450); 
                     } else {
-                        // On desktop, or if the mobile menu is already closed, scroll immediately
                         calculateAndScroll();
                     }
                 });
             });
         }
 
-        // --- Scroll-Spy Logic ---
         const targetsToObserve = document.querySelectorAll('.page-ranking-system__main-content section[id], .page-ranking-system__main-content h3[id]');
 
         if (tocLinks.length > 0 && targetsToObserve.length > 0) {
@@ -196,14 +189,11 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // --- FAQ Link Smooth Scroll Handler ---
-        // Handles the in-page links that jump to a specific FAQ question
         const faqInternalLinks = document.querySelectorAll('.page-ranking-system__main-content a[href^="#faq-"]');
         
         if (faqInternalLinks.length > 0) {
             faqInternalLinks.forEach(link => {
                 link.addEventListener('click', function(event) {
-                    // Prevent the default anchor jump which scrolls too far
                     event.preventDefault();
                     
                     const targetId = this.getAttribute('href');
@@ -211,15 +201,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     if (!targetElement) return;
 
-                    // Check for mobile view to apply the correct offset
                     const isMobile = window.innerWidth < 769;
-                    // Use a 70px offset on mobile (60px header + 10px padding) and 30px on desktop
                     const headerOffset = isMobile ? 70 : 30;
                     
                     const elementPosition = targetElement.getBoundingClientRect().top;
                     const offsetPosition = elementPosition + window.scrollY - headerOffset;
 
-                    // Scroll smoothly to the calculated position
                     window.scrollTo({
                         top: offsetPosition,
                         behavior: 'smooth'
@@ -486,69 +473,84 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     /**
-     * Initializes the tournament archive search with infinite scroll.
+     * Initializes the tournament archive/upcoming search with infinite scroll.
+     * This function now handles both the results archive and upcoming tournaments pages.
      */
-    function initTournamentSearch() {
-        const searchInput = document.getElementById('search-input');
-        if (!searchInput) return;
+    /**
+ * Initializes the tournament archive/upcoming search with infinite scroll.
+ * This function now handles both the results archive and upcoming tournaments pages.
+ */
+function initTournamentSearch() {
+  const searchInput = document.getElementById('search-input');
+  // Exit if there's no search input on the page
+  if (!searchInput) return;
 
-        const resultsCountEl = document.getElementById('results-count');
-        const noResultsEl = document.getElementById('no-results-message');
-        const sentinel = document.querySelector('.sentinel');
-        const allItems = Array.from(document.querySelectorAll('.js-load-more-item'));
-        const itemsPerLoad = 18;
+  const resultsCountEl = document.getElementById('results-count');
+  const noResultsEl = document.getElementById('no-results-message');
+  const sentinel = document.querySelector('.sentinel');
+  // Note: This now finds cards on both pages, as long as they have the correct class.
+  const allItems = Array.from(document.querySelectorAll('.js-load-more-item'));
+  const itemsPerLoad = 18;
 
-        const allTournamentData = allItems.map(item => ({
-            element: item,
-            name: item.dataset.name.toLowerCase(),
-            date: item.dataset.dateReadable.toLowerCase()
-        }));
+  // A more robust way to gather searchable text from a single data attribute.
+  const allTournamentData = allItems.map(item => ({
+      element: item,
+      searchText: (item.dataset.searchText || '').toLowerCase()
+  }));
 
-        let visibleItemCount = itemsPerLoad;
-        let filteredItems = allTournamentData;
+  let visibleItemCount = itemsPerLoad;
+  let filteredItems = allTournamentData;
 
-        const updateVisibility = () => {
-            const searchTerm = searchInput.value.trim().toLowerCase();
-            noResultsEl.style.display = filteredItems.length === 0 ? 'block' : 'none';
-            allItems.forEach(item => item.style.display = 'none');
+  const updateVisibility = () => {
+    const searchTerm = searchInput.value.trim().toLowerCase();
+    noResultsEl.style.display = filteredItems.length === 0 ? 'block' : 'none';
+    allItems.forEach(item => item.style.display = 'none');
+    
+    filteredItems.slice(0, visibleItemCount).forEach(data => {
+        data.element.style.display = 'flex';
+        // Find all text nodes within the card to apply highlighting
+        data.element.querySelectorAll('.js-searchable-text').forEach(textNode => {
+            const originalText = textNode.dataset.originalText || textNode.textContent;
+            textNode.dataset.originalText = originalText; // Store original text if not already stored
             
-            filteredItems.slice(0, visibleItemCount).forEach(data => {
-                data.element.style.display = 'flex';
-                data.element.querySelectorAll('.js-searchable-text').forEach(textNode => {
-                    const originalText = textNode.textContent;
-                    textNode.innerHTML = searchTerm 
-                        ? originalText.replace(new RegExp(`(${searchTerm.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi'), `<mark>$1</mark>`)
-                        : originalText;
-                });
-            });
-
-            if(resultsCountEl) {
-                resultsCountEl.textContent = searchTerm
-                    ? `Showing ${Math.min(visibleItemCount, filteredItems.length)} of ${filteredItems.length} results`
-                    : `${allTournamentData.length} total tournaments`;
-            }
-        };
-
-        const applySearch = () => {
-            const searchTerm = searchInput.value.trim().toLowerCase();
-            filteredItems = searchTerm
-                ? allTournamentData.filter(data => data.name.includes(searchTerm) || data.date.includes(searchTerm))
-                : allTournamentData;
-            visibleItemCount = itemsPerLoad;
-            updateVisibility();
-        };
-
-        const observer = new IntersectionObserver(entries => {
-            if (entries[0].isIntersecting && visibleItemCount < filteredItems.length) {
-                visibleItemCount += itemsPerLoad;
-                updateVisibility();
-            }
-        }, { threshold: 1.0 });
-
-        if (sentinel) observer.observe(sentinel);
-        searchInput.addEventListener('input', debounce(applySearch, 300));
-        updateVisibility();
+            textNode.innerHTML = searchTerm 
+                ? originalText.replace(new RegExp(`(${searchTerm.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi'), `<mark>$1</mark>`)
+                : originalText;
+        });
+    });
+    
+    if (sentinel) {
+        sentinel.style.display = visibleItemCount >= filteredItems.length ? 'none' : 'block';
     }
+
+    if(resultsCountEl) {
+        resultsCountEl.textContent = searchTerm
+            ? `Showing ${Math.min(visibleItemCount, filteredItems.length)} of ${filteredItems.length} results`
+            : `${allTournamentData.length} total tournaments`;
+    }
+  };
+
+  const applySearch = () => {
+    const searchTerm = searchInput.value.trim().toLowerCase();
+    filteredItems = searchTerm
+        ? allTournamentData.filter(data => data.searchText.includes(searchTerm))
+        : allTournamentData;
+    visibleItemCount = itemsPerLoad;
+    updateVisibility();
+  };
+
+  const observer = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting && visibleItemCount < filteredItems.length) {
+          visibleItemCount += itemsPerLoad;
+          updateVisibility();
+      }
+  }, { threshold: 1.0 });
+
+  if (sentinel) observer.observe(sentinel);
+  searchInput.addEventListener('input', debounce(applySearch, 300));
+  
+  updateVisibility();
+}
 
     // Initialize all site scripts
     initHamburgerMenu();

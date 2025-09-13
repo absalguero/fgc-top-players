@@ -34,72 +34,6 @@
     <meta name="theme-color" content="#FF5E13" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="/css/styles.css">
-    <style>.intro-text{text-align:center;font-size:1.1rem;color:#ccc;}.archive-list{margin-top:2rem;display:grid;gap:0.5rem;}.archive-item{display:flex;justify-content:space-between;align-items:center;padding:1rem;background-color:#1a1a1a;border-radius:6px;text-decoration:none;transition:background-color 0.2s;}.archive-item:hover{background-color:#2a2a2a;text-decoration:none;}.archive-item__name{font-weight:bold;color:#f0f0f0;}.archive-item__date{color:#999;font-size:0.9rem;}.h2-subtle{font-size:1.5rem;color:#999;text-align:center;margin-top:-0.5rem;margin-bottom:1.5rem;}</style>
-<meta name="description" content="Learn how the FGC Ranking System for Street Fighter 6 works. Our official rankings are calculated based on top offline tournament placings, event value, and recency to reflect current competitive form.">
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-        {
-            "@type": "Question",
-            "name": "How are player rankings calculated?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Rankings are calculated based on a player's top five performances at sanctioned offline tournaments, factoring in placing, event value, and recency to reflect current competitive form." }
-        },
-        {
-            "@type": "Question",
-            "name": "How do these rankings differ from a game's built-in online ladder or ranked mode?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Our system is based exclusively on performance in high-stakes, offline tournaments, which test a player's ability under pressure. An in-game ranked mode is an excellent measure of a player's online consistency over a high volume of matches. Our system focuses on identifying the world's best tournament performers." }
-        },
-        {
-            "@type": "Question",
-            "name": "Why aren’t online tournaments included?",
-            "acceptedAnswer": { "@type": "Answer", "text": "To maintain competitive integrity and fairness, only offline tournaments are considered, as online results can be affected by connectivity and other factors." }
-        },
-        {
-            "@type": "Question",
-            "name": "Can a player’s ranking change if they attend fewer events?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Because the system emphasizes recent and top performances, players who compete less frequently can still maintain or improve their ranking by performing well in high-value tournaments." }
-        },
-        {
-            "@type": "Question",
-            "name": "How often are rankings updated?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Rankings are updated regularly following major offline events to ensure they reflect the latest competitive results." }
-        },
-        {
-            "@type": "Question",
-            "name": "What games are covered by this ranking system?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Currently, the ranking system covers Street Fighter 6 (SF6) exclusively." }
-        },
-        {
-            "@type": "Question",
-            "name": "How can I get my tournament included?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Tournament organizers can contact us at fgcprankings@gmail.com to request evaluation and inclusion of their events in the ranking system." }
-        },
-        {
-            "@type": "Question",
-            "name": "How can players submit their tournament results?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Players should work with tournament organizers who submit official results to us. If you notice a tournament result missing or incorrect, please reach out via email." }
-        },
-        {
-            "@type": "Question",
-            "name": "How are disputes or errors handled?",
-            "acceptedAnswer": { "@type": "Answer", "text": "We review all reported discrepancies carefully and update rankings accordingly to ensure accuracy. If you find an error, please contact us at fgcprankings@gmail.com." }
-        },
-        {
-            "@type": "Question",
-            "name": "How can I suggest improvements or report errors in the rankings?",
-            "acceptedAnswer": { "@type": "Answer", "text": "We welcome feedback and encourage you to contact us via fgcprankings@gmail.com with any suggestions or corrections." }
-        },
-        {
-            "@type": "Question",
-            "name": "What regions or countries are most represented?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Our rankings reflect a global player base, with events and competitors from multiple regions around the world." }
-        }
-    ]
-}
-</script>
-
 </head>
 <body class="page-ranking-system">
 
@@ -114,9 +48,8 @@
         </button>
         <div class="mobile-search">
             
-            
             <form role="search" class="search-form">
-    <input type="search" id="mobile-search-input" class="search-form__input" placeholder="Search site..." aria-label="Search site">
+    <input type="search" id="mobile-search-input" class="search-form__input" placeholder="Search Site..." aria-label="Search site">
     <button type="submit" class="search-form__button" aria-label="Search">
         <i class="fas fa-search"></i>
     </button>
@@ -124,16 +57,14 @@
         </div>
     </header>
 
-    
-
     <div class="page-wrapper">
+        
         <nav class="sidebar nav-sidebar" aria-label="Main menu" role="navigation">
             <h2 class="sidebar__label">Navigation</h2>
             <div class="sidebar-search">
                 
-                
                 <form role="search" class="search-form">
-    <input type="search" id="sidebar-search-input" class="search-form__input" placeholder="Search site..." aria-label="Search site">
+    <input type="search" id="sidebar-search-input" class="search-form__input" placeholder="Search Site..." aria-label="Search site">
     <button type="submit" class="search-form__button" aria-label="Search">
         <i class="fas fa-search"></i>
     </button>
@@ -141,32 +72,38 @@
             </div>
             
             
-            
 
 
 <ul class="nav-menu">
-    
-        <li>
-            <a href="/" class="nav-menu__link ">
-                <i class="fas fa-trophy"></i>
-                SF6 Rankings
-            </a>
-        </li>
-    
-        <li>
-            <a href="/tournament-results/" class="nav-menu__link ">
-                <i class="fas fa-sitemap"></i>
-                Tournament Results
-            </a>
-        </li>
-    
-        <li>
-            <a href="/ranking-system/" class="nav-menu__link is-active">
-                <i class="fas fa-scale-balanced"></i>
-                Ranking System
-            </a>
-        </li>
-    
+
+<li>
+<a href="/" class="nav-menu__link ">
+<i class="fas fa-trophy"></i>
+SF6 Rankings
+</a>
+</li>
+
+<li>
+<a href="/tournament-results/" class="nav-menu__link ">
+<i class="fas fa-sitemap"></i>
+Tournament Results
+</a>
+</li>
+
+<li>
+<a href="/upcoming-rated-tournaments/" class="nav-menu__link ">
+<i class="fas fa-calendar-alt"></i>
+Upcoming Tournaments
+</a>
+</li>
+
+<li>
+<a href="/ranking-system/" class="nav-menu__link is-active">
+<i class="fas fa-scale-balanced"></i>
+Ranking System
+</a>
+</li>
+
 </ul>
         </nav>
 
@@ -175,7 +112,7 @@
                 
 <div class="content-container page-ranking-system">
     <article>
-        <img class="banner" src="/images/banner.png" alt="FGC Player Rankings official logo" loading="lazy"/>
+        <img class="banner" src="/images/banner.png" alt="FGC Top Players official logo" loading="lazy"/>
         <h1>How the FGC Ranking System Works</h1>
 
         <div class="page-ranking-system__layout">
@@ -207,8 +144,8 @@
                 <img src="/images/fgc-ranking-system-explained.png" alt="Graphical representation of the FGC ranking system components" loading="lazy" class="page-ranking-system__image" />
                 
                 <div class="cta-container">
-                    <a href="/" class="button button--primary">View Current Street Fighter 6 Rankings</a>
-                </div>
+    <a href="/" class="btn btn--primary">View Current Street Fighter 6 Rankings</a>
+</div>
 
                 <section id="overview">
                     <h2>Overview: Accurate &amp; Fair Player Rankings for Street Fighter 6</h2>
@@ -324,32 +261,38 @@
                         <h3>Navigation</h3>
                         
                         
-                        
 
 
 <ul class="footer-links">
-    
-        <li>
-            <a href="/" class=" ">
-                
-                SF6 Rankings
-            </a>
-        </li>
-    
-        <li>
-            <a href="/tournament-results/" class=" ">
-                
-                Tournament Results
-            </a>
-        </li>
-    
-        <li>
-            <a href="/ranking-system/" class=" is-active">
-                
-                Ranking System
-            </a>
-        </li>
-    
+
+<li>
+<a href="/" class=" ">
+
+SF6 Rankings
+</a>
+</li>
+
+<li>
+<a href="/tournament-results/" class=" ">
+
+Tournament Results
+</a>
+</li>
+
+<li>
+<a href="/upcoming-rated-tournaments/" class=" ">
+
+Upcoming Tournaments
+</a>
+</li>
+
+<li>
+<a href="/ranking-system/" class=" is-active">
+
+Ranking System
+</a>
+</li>
+
 </ul>
                     </div>
                     <div class="footer-column">
@@ -379,28 +322,40 @@
             </footer>
         </main>
 
-        <aside class="sidebar right-sidebar" aria-label="Upcoming Rated Tournaments">
-            <h2 class="sidebar__label">Upcoming Rated Tournaments</h2>
+        <aside class="sidebar right-sidebar" aria-label="Contextual Information">
+    
+        <h2 class="sidebar__label">Upcoming Rated Tournaments</h2>
+        
+        
             
-                <a href="https://www.start.gg/tournament/ultimate-fighting-arena-2025-3/details" target="_blank" rel="noopener noreferrer" class="event-card-link">
-                    <div class="event-card">
-                        <span class="event-card__name">Ultimate Fighting Arena 2025</span>
-                        <img src="/images/events/ultimate-fighting-arena-2025.png" alt="Ultimate Fighting Arena 2025" loading="lazy" class="event-card__image" onerror="this.style.display='none';">
-                        <div class="event-card__date">September 12-14, 2025</div>
-                        <span class="btn btn--secondary btn--small">More Info</span>
-                    </div>
-                </a>
             
-                <a href="https://www.lowkickesports.com/roundhouse" target="_blank" rel="noopener noreferrer" class="event-card-link">
-                    <div class="event-card">
-                        <span class="event-card__name">Roundhouse 2025</span>
-                        <img src="/images/events/roundhouse-2025.png" alt="Roundhouse 2025" loading="lazy" class="event-card__image" onerror="this.style.display='none';">
-                        <div class="event-card__date">September 26-28, 2025</div>
-                        <span class="btn btn--secondary btn--small">More Info</span>
-                    </div>
-                </a>
+                
+                    
+                        <a href="https://www.ufa.gg/" target="_blank" rel="noopener noreferrer" class="event-card-link">
+                            <div class="event-card">
+                                <span class="event-card__name">Ultimate Fighting Arena 2025</span>
+                                <img src="/images/events/ultimate-fighting-arena-2025-3.png" alt="Ultimate Fighting Arena 2025" loading="lazy" class="event-card__image" onerror="this.style.display='none';">
+                                <div class="event-card__date">Sep 12-14, 2025</div>
+                                <span class="btn btn--secondary btn--small">More Info</span>
+                            </div>
+                        </a>
+                    
+                
+                    
+                        <a href="http://lowkickesports.com/" target="_blank" rel="noopener noreferrer" class="event-card-link">
+                            <div class="event-card">
+                                <span class="event-card__name">Roundhouse 2025</span>
+                                <img src="/images/events/roundhouse-2025.png" alt="Roundhouse 2025" loading="lazy" class="event-card__image" onerror="this.style.display='none';">
+                                <div class="event-card__date">Sep 26-28, 2025</div>
+                                <span class="btn btn--secondary btn--small">More Info</span>
+                            </div>
+                        </a>
+                    
+                
             
-        </aside>
+        
+    
+</aside>
     </div>
 
     <noscript>

@@ -3,9 +3,9 @@ const EleventyFetch = require("@11ty/eleventy-fetch");
 const slugify = require("slugify");
 const fs = require("fs");
 const path = require("path");
+const { DateTime } = require("luxon");
 
 function parseCSV(text) {
-    // This check prevents the "text.trim is not a function" error
     if (typeof text !== 'string' || !text) return [];
 
     const rows = text.trim().split('\n');
@@ -35,16 +35,32 @@ module.exports = async function() {
         }
         const googleSheetURL = "https://docs.google.com/spreadsheets/d/1otrfs8HN3Shq6U2-qrc4GDxTI4ragnqwbTjweecE12Q/gviz/tq?tqx=out:csv&gid=1021048964";
         try {
-            const csvData = await EleventyFetch(googleSheetURL, { duration: "1d", type: "text" });
-            const liveResults = parseCSV(csvData);
+            const csvData = await EleventyFetch(googleSheetURL, {
+                duration: "1d",
+                type: "text",
+                fetchOptions: {
+                    headers: {
+                        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+                    }
+                }
+            });
+            
+            // --- ✅ FINAL FIX: Convert the Buffer to a String ---
+            const csvString = csvData.toString();
+            const liveResults = parseCSV(csvString);
+            // ----------------------------------------------------
+
             const newEventsGrouped = {};
             liveResults.forEach(row => {
                 const eventName = row.Event;
                 if (!eventName) return;
+
                 if (!newEventsGrouped[eventName]) {
+                    const eventDate = DateTime.fromFormat(row.Date, "yyyy-MM-dd").toJSDate();
+
                     newEventsGrouped[eventName] = {
                         name: eventName,
-                        date: new Date(row.Date),
+                        date: eventDate,
                         slug: slugify(eventName, { lower: true, strict: true }),
                         results: []
                     };

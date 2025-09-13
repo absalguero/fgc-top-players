@@ -275,6 +275,7 @@ mark, .archive-item-card mark {
   background-color: #333;
   color: #fff;
   outline: none;
+  text-align: center;
 }
 .search-form__input:focus {
   border-color: #FF5E13;
@@ -297,12 +298,8 @@ mark, .archive-item-card mark {
 .search-wrapper {
   position: relative;
   width: 100%;
-  max-width: 400px;
+  max-width: 500px; /* New site-wide width */
   margin: 0 auto;
-}
-.controls-container--archive .search-wrapper {
-  max-width: 400px;
-  text-align: center;
 }
 .search-clear-btn {
   position: absolute;
@@ -368,16 +365,11 @@ mark, .archive-item-card mark {
   background-color: transparent;
   padding: 0;
 }
-.controls-container .search-form__input {
-  width: 100%;
-  max-width: 400px;
-  text-align: center;
-}
 .results-count {
   font-size: 1.05rem !important;
   color: #aaa;
   margin-top: -0.4rem !important;
-  margin-bottom: -0.5rem !important;
+  margin-bottom: 0.75rem !important;
   text-align: center;
 }
 
@@ -427,7 +419,7 @@ mark, .archive-item-card mark {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 1000;
+  z-index: 1600;
   width: 50px;
   height: 50px;
   background-color: #FF5E13;
@@ -581,6 +573,7 @@ mark, .archive-item-card mark {
 .change-cell.no-change { color: #6c757d; }
 
 /* Rank-Specific Highlighting */
+/* These !important rules are necessary to override base table styles */
 .data-table tr.rank-1 td, .results-grid .result-card.rank-1 { background-color: #ffd70030 !important; color: #FFD700 !important; }
 .data-table tr.rank-2 td, .results-grid .result-card.rank-2 { background-color: #c0c0c030 !important; color: #C0C0C0 !important; }
 .data-table tr.rank-3 td, .results-grid .result-card.rank-3 { background-color: #cd7f3230 !important; color: #cd7f32 !important; }
@@ -712,6 +705,18 @@ th.sorted.desc .sort-icon,
 /* ==========================================================================
    4. Page-Specific Styles
    ========================================================================== */
+
+/*
+ * This single rule now controls the layout for both the
+ * tournament results and the "notable players" sections,
+ * ensuring they behave identically and are fully responsive.
+ */
+.results-grid,
+.notable-players-grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
 /* Ranking System Page */
 .page-ranking-system .content-container {
   max-width: 1100px;
@@ -843,13 +848,14 @@ th.sorted.desc .sort-icon,
 .back-button-container {
   display: flex;
   justify-content: center;
-  padding: 0.75rem 0.75rem;
+  padding-bottom: 0.75rem;
 }
 .event-header-group {
   position: sticky;
   top: 0;
   z-index: 1100;
-  transition: background-color 0.3s ease-in-out;
+  background: transparent;
+  padding: 1rem 0;   /* Use padding for vertical spacing */
 }
 .event-header-group.is-scrolled {
   background-color: transparent;
@@ -863,7 +869,7 @@ th.sorted.desc .sort-icon,
   align-items: center;
   gap: 1.5rem;
   padding: 1rem 1.5rem;
-  margin: 0 auto;
+  margin: 0;
   max-width: 1100px;
   border-radius: 12px;
   background: linear-gradient(145deg, #222, #1a1a1a);
@@ -923,11 +929,7 @@ th.sorted.desc .sort-icon,
 }
 .results-container {
   max-width: 1000px;
-  margin: 0 auto;
-}
-.results-grid {
-  display: grid;
-  gap: 0.5rem;
+  margin: 0;
 }
 .result-card {
   display: flex;
@@ -950,13 +952,11 @@ th.sorted.desc .sort-icon,
 .result-card.finish-style-3 .result-card__finish { font-family: 'Permanent Marker', cursive; color: #cd7f32; }
 .result-card.finish-style-4 .result-card__finish { font-family: 'Permanent Marker', cursive; color: #b0c4de; }
 .result-card__player {
+  flex-grow: 1;
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  border-left: 1px solid #444;
-  padding-left: 1rem;
-  flex-grow: 1;
-  min-width: 0;
+  gap: 0.75rem; /* Gap between icon and player info */
+  padding-left: 1rem; /* Add this line to shift it right */
 }
 .result-card__player-info {
   display: flex;
@@ -990,6 +990,53 @@ th.sorted.desc .sort-icon,
 /* ==========================================================================
    5. Media Queries (Responsive)
    ========================================================================== */
+/* Replace with these corrected rules */
+@media (max-width: 768px) {
+  .is-hidden-desktop {
+    display: flex !important; /* Ensures the top button is visible */
+  }
+  .is-hidden-mobile {
+    display: none !important; /* Ensures the bottom button is hidden */
+  }
+  .back-button-container {
+    margin-top: -0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .page-ranking-system .cta-container {
+    margin-top: 0.25rem !important;   /* Set the top margin to match the new desktop value */
+    margin-bottom: 0.75rem !important;   /* Set the bottom margin to 0 */
+  }
+}
+
+@media (min-width: 769px) {
+  .is-hidden-desktop {
+    display: none !important; /* Hides the top button */
+  }
+  .is-hidden-mobile {
+    display: flex !important; /* Shows the bottom button */
+  }
+  .content-container {
+    /* Set a min-width for the entire content area */
+    min-width: 700px;
+    /* Re-apply the max-width to prevent it from getting too wide */
+    max-width: 900px;
+    /* Center the container */
+    margin: 0 auto;
+    /* Add some top margin if you want space below the banner */
+    margin-top: 1rem;
+  }
+  .page-wrapper {
+    display: grid !important;
+    grid-template-columns: 240px 1fr 240px;
+    max-width: none;
+    padding: 0;
+    gap: 0;
+    overflow-x: hidden;
+    /* Add this line to set the overall minimum width */
+    min-width: 1380px; 
+  }
+}
+
 @media (min-width: 769px) {
   .page-wrapper {
     display: grid !important;
@@ -997,6 +1044,7 @@ th.sorted.desc .sort-icon,
     max-width: none;
     padding: 0;
     gap: 0;
+    overflow-x: hidden;
   }
   .content {
     max-width: 1200px;
@@ -1025,12 +1073,9 @@ th.sorted.desc .sort-icon,
   .controls-container {
     top: 0;
   }
-  .results-grid {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 0.75rem;
-  }
   .event-header-group {
-    margin-bottom: 1rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
   }
   .event-header {
     flex-direction: row;
@@ -1047,7 +1092,7 @@ th.sorted.desc .sort-icon,
     overflow-y: auto;
   }
   .toc {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 /* Add these styles inside your @media (min-width: 769px) block */
 
@@ -1063,12 +1108,15 @@ th.sorted.desc .sort-icon,
 .data-table th {
   white-space: nowrap;
 }
+
+.event-header-group {
+    grid-column: 1 / -1; /* This makes it span all columns */
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+  }
 }
 
 @media (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
   main.content {
     padding-top: 60px;
   }
@@ -1208,7 +1256,6 @@ th.sorted.desc .sort-icon,
   /* --- CORRECTED: Final Mobile Event Header Layout --- */
   .event-header-group {
     top: 60px;
-    margin-bottom: 0.5rem; /* Added breathing room */
   }
 
   .event-header,
@@ -1225,6 +1272,9 @@ th.sorted.desc .sort-icon,
     gap: 1rem;
     padding: 0.5rem 1rem;
   }
+  .content-container {
+  padding-top: 0rem !important;
+}
   .header-sticky-container .event-image-container {
     max-width: 70px;
     aspect-ratio: 1 / 1;
@@ -1278,8 +1328,11 @@ th.sorted.desc .sort-icon,
 }
 .toc-list ul li a.active {
     color: #FF5E13 !important; /* Forces the color to stay orange */
-    padding-left: 0;           /* Resets the desktop indent */
-    margin-left: 0;            /* Resets the desktop indent */
+    padding-left: 0;                          /* Resets the desktop indent */
+    margin-left: 0;                           /* Resets the desktop indent */
+}
+body.page-tournament-detail .overview-meta {
+  min-width: 0 !important;
 }
 }
 
@@ -1307,7 +1360,7 @@ th.sorted.desc .sort-icon,
     background-color: #FF5E13;
     color: #222;
     font-family: 'Permanent Marker', cursive; /* ADDED: Font changed */
-    text-transform: uppercase;               /* ADDED: For style consistency */
+    text-transform: uppercase;                /* ADDED: For style consistency */
 }
 
 .button--primary:hover {
@@ -1373,4 +1426,749 @@ th.sorted.desc .sort-icon,
     color: #FFEE58; /* Using theme highlight color */
     padding-left: 10px;
     margin-left: -13px;
+}
+
+/* ==========================================================================
+   7. UPCOMING TOURNAMENTS & SHARED STYLES
+   ========================================================================== */
+
+/* --- Filter Bar --- */
+.filters-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  position: sticky;
+  top: 60px; /* Height of mobile header */
+  z-index: 1200;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filter-group label {
+  font-weight: bold;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.filters-bar .search-form__input,
+.filters-bar select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #666;
+  background-color: #333;
+  color: #fff;
+  outline: none;
+}
+
+.filters-bar select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ccc' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1em;
+  padding-right: 2.5rem;
+}
+.tournaments-list {
+  display: grid;
+  gap: 1rem;
+}
+/* --- External Link Indicator for Cards --- */
+
+/* Make the heading a flex container to robustly align the text and icon */
+.simple-card__name {
+  display: flex;
+  align-items: center; /* Changed from flex-start to center for vertical alignment */
+  gap: 0.5rem;           /* Creates consistent space between the name and icon */
+}
+
+/* Prevents long tournament names from wrapping awkwardly */
+.simple-card__name .js-searchable-text {
+  word-break: break-word;
+}
+
+/* Style the external link icon itself */
+.simple-card__name .fa-external-link-alt {
+  font-size: 0.6em;   /* Makes the icon small and subtle */
+  color: #aaa;
+  /* Removed margin-top, as align-items: center handles vertical positioning */
+  flex-shrink: 0;     /* Prevents the icon from shrinking if the name is long */
+  transition: color 0.2s ease-in-out;
+}
+
+/* Add a hover effect that lights up the icon */
+.simple-card__click-wrapper:hover .simple-card__name .fa-external-link-alt {
+  color: #FFEE58; /* Use the theme's yellow highlight color */
+}
+
+/*
+=====================================================
+  FINAL, PRODUCTION-READY CARD STYLES
+=====================================================
+*/
+.simple-card {
+  padding: 1rem;
+  border-radius: 8px;
+  min-height: 80px;
+}
+
+/* Final gradients with adjusted opacity */
+.simple-card--s-plus {
+  background: linear-gradient(to right, rgba(255, 215, 0, 0.45), transparent 80%);
+  /* The first shadow is the inset bar. The second is the new, stronger outer glow. */
+  box-shadow: inset 5px 0 0 0 #FFD700;
+}
+.simple-card--s {
+  background: linear-gradient(to right, rgba(192, 192, 192, 0.45), transparent 80%);
+  box-shadow: inset 5px 0 0 0 #C0C0C0;
+}
+.simple-card--a {
+  background: linear-gradient(to right, rgba(205, 127, 50, 0.45), transparent 80%);
+  box-shadow: inset 5px 0 0 0 #CD7F32;
+}
+.simple-card--b {
+  background: linear-gradient(to right, rgba(176, 196, 222, 0.45), transparent 80%);
+  box-shadow: inset 5px 0 0 0 #B0C4DE;
+}
+
+/* Add these styles to make the full card content look right */
+.simple-card {
+  display: flex; /* This is now needed for the inner content */
+  padding: 0; /* Padding will be handled by the content wrapper now */
+}
+.simple-card__click-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  padding: 1rem;
+  gap: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+.simple-card__image-wrapper {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+}
+.simple-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.simple-card__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 0.75rem;
+}
+.simple-card__header {
+  position: relative;
+  padding-right: 90px;
+}
+.simple-card__name {
+  font-weight: bold;
+  color: #f0f0f0;
+  font-size: 1.25rem;
+  margin: 0;
+}
+.simple-card__game-logo {
+  width: 80px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.simple-card__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+.simple-card__meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* --- S+ Card "Breathing" Glow Effect --- */
+
+/* This applies the animation to the S+ card */
+.simple-card--s-plus {
+  animation: breathing-glow 3s ease-in-out infinite;
+}
+
+/* This defines the animation itself */
+@keyframes breathing-glow {
+  0% {
+    /* Starts with the stronger glow */
+    box-shadow: inset 5px 0 0 0 #FFD700, 0 0 30px 0px rgba(255, 199, 0, 0.75);
+  }
+  50% {
+    /* Fades to a more subtle glow */
+    box-shadow: inset 5px 0 0 0 #FFD700, 0 0 20px -5px rgba(255, 199, 0, 0.4);
+  }
+  100% {
+    /* Returns to the stronger glow to create a seamless loop */
+    box-shadow: inset 5px 0 0 0 #FFD700, 0 0 30px 0px rgba(255, 199, 0, 0.75);
+  }
+}
+
+/* --- S-Tier Static Glow --- */
+.simple-card--s {
+  /* This glow is always on, but doesn't animate */
+  box-shadow: inset 5px 0 0 0 #C0C0C0, 0 0 20px 0px rgba(192, 192, 192, 0.6);
+}
+
+/* --- A-Tier Edge Highlight --- */
+.simple-card--a {
+  /* The second shadow creates a crisp 1px outline */
+  box-shadow: inset 5px 0 0 0 #CD7F32, 0 0 0 1px #CD7F32;
+}
+
+@media (min-width: 769px) {
+  .filters-bar {
+    flex-direction: row;
+    align-items: flex-end;
+    top: 0;
+  }
+  .filter-group {
+    flex-grow: 1;
+  }
+  .filter-group.search-group {
+    max-width: 350px;
+  }
+}
+
+/* Make the wrapper a positioning context */
+.simple-card__click-wrapper {
+  position: relative;
+}
+
+/* Final style for the clickable card icon */
+.simple-card__chevron {
+  /* Positioning */
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+
+  /* NEW - Circle Shape & Size */
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.1); /* A subtle, semi-transparent background */
+  border-radius: 50%; /* This makes it a perfect circle */
+  
+  /* NEW - Centering the icon inside the circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Icon Fix */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900; 
+
+  /* Styling */
+  font-size: 1rem; /* Adjusted size for the circle */
+  color: #ccc;    /* A brighter color for the icon itself */
+  transition: all 0.2s ease-in-out; /* Transition all properties */
+}
+
+/* Optional but recommended: Add a hover effect */
+.simple-card__click-wrapper:hover .simple-card__chevron {
+  background-color: #FFEE58; /* Your theme's yellow highlight color */
+  color: #222; /* A dark color for contrast */
+}
+
+/* Optional: Make the chevron light up when hovered/pressed */
+.simple-card__click-wrapper:hover .simple-card__chevron {
+  color: #FFEE58;
+}
+
+/* ==========================================================================
+   8. TOURNAMENT DETAIL PAGE HEADER STYLES
+   ========================================================================== */
+
+/* Default Layout (for screens wider than 768px) */
+.event-header__meta {
+  display: flex;
+  flex-wrap: nowrap; /* This forces all items onto one line */
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.meta-item--date {
+  white-space: nowrap; /* Prevents the date text itself from wrapping */
+  flex-shrink: 0; /* Prevents this item from shrinking */
+}
+
+.meta-item--location {
+  text-align: center;
+}
+
+.event-header__game-logo {
+  max-height: 80px;
+  width: auto;
+  flex-shrink: 0; /* Prevents the logo from shrinking */
+}
+
+/* Responsive Layout (for screens 768px and smaller) */
+@media (max-width: 768px) {
+  .event-header__meta {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    gap: 0.75rem; /* Reduce the gap for a tighter vertical look */
+  }
+  .cta-container {
+    /* Existing desktop styles you might want to override */
+    margin: 1.25rem 0 0 !important; /* Add this line to set the top margin */
+    text-align: center;
+  }
+}
+
+/* --- Tier-Specific Header Glows/Borders --- */
+
+/* S+ Tier: Re-uses the breathing glow animation you already have */
+.event-header--s-plus {
+  animation: breathing-glow 3s ease-in-out infinite;
+}
+
+/* S Tier: Adds a static outer glow */
+.event-header--s {
+  box-shadow: 0 0 20px 0px rgba(192, 192, 192, 0.6);
+}
+
+/* A Tier: Adds a crisp outer border */
+.event-header--a {
+  box-shadow: 0 0 0 1px #CD7F32;
+}
+
+/* --- Integrated Site Logo in Event Header --- */
+.event-header {
+  /* This ensures all items in the header are aligned */
+  align-items: center;
+}
+
+/* ==========================================================================
+   9. SECTION BANNER & HEADER IMAGE BLUR
+   ========================================================================== */
+
+.event-image-container::before {
+  content: '';
+  position: absolute;
+  inset: -20px;
+  background-image: var(--bg-image-url);
+  background-size: cover;
+  background-position: center;
+  filter: blur(15px) brightness(0.6);
+  z-index: 1;
+}
+.event-image-container img {
+  position: relative;
+  z-index: 2;
+}
+
+.section-banner {
+  background: linear-gradient(90deg, rgba(30,30,30,0.8), rgba(50,50,50,0.8));
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border-left: 4px solid #FF5E13;
+  border-right: 4px solid #FF5E13;
+  margin-top: 0rem;
+}
+.section-banner h2 {
+  color: #fff;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+/* ==========================================================================
+   10. UNIFIED OVERVIEW HUB
+   ========================================================================== */
+
+.overview-meta {
+  display: flex;
+  flex-direction: column;
+  /* MODIFIED: Removed the 'gap' property to allow for custom spacing */
+  max-width: 800px;
+  min-width: 700px;
+  margin: 1.25rem auto 0;
+  padding: 1.5rem;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  border: 1px solid #333;
+  border-top-width: 4px;
+  border-top-color: #444;
+}
+
+.meta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem 2rem;
+  border-bottom: 2px solid #FF5E13;
+  padding-bottom: 1.5rem;
+  justify-items: center;
+}
+
+/* Tier-specific top border colors */
+.overview-meta--s-plus { border-top-color: #FFD700; }
+.overview-meta--s { border-top-color: #C0C0C0; }
+.overview-meta--a { border-top-color: #CD7F32; }
+.overview-meta--b { border-top-color: #B0C4DE; }
+
+.meta-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.meta-grid > .meta-column:first-child {
+  padding-left: 3rem;
+}
+.meta-grid > .meta-column:nth-child(2) {
+  align-items: center;
+}
+
+.meta-column h3 {
+  margin: 0;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.5rem;
+  color: #f0f0f0;
+  border-bottom: none;
+  padding-bottom: 0;
+  width: 100%; 
+  text-align: center;
+}
+
+.meta-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  width: 100%; 
+  text-decoration: none;
+}
+.meta-item .fas {
+  flex-shrink: 0;
+  font-size: 1.5rem;
+  color: #FF5E13;
+  width: 25px;
+  text-align: center;
+  padding-top: 0.1em;
+}
+
+.meta-item-content {
+  text-align: left;
+}
+
+.meta-item strong { 
+  color: #FF5E13;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase; 
+}
+.meta-item span { 
+  font-size: 1.1rem; 
+  font-weight: bold; 
+  color: #f0f0f0;
+  margin-left: 0.5rem;
+}
+
+.travel-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  width: fit-content;
+}
+.travel-links a {
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: color 0.2s ease;
+  color: #FFEE58;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.travel-links a:hover {
+  text-decoration: underline;
+}
+.travel-links a .fas {
+  color: #FF5E13;
+  width: 25px;
+  text-align: center;
+}
+
+.description-content {
+  border-bottom: 2px solid #FF5E13;
+  padding-bottom: 1.5rem;
+}
+.description-content h3 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.description-content > p:last-child {
+  margin-bottom: 0;
+}
+
+
+.cta-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  margin-bottom: 0rem;
+}
+
+@media (max-width: 768px) {
+  .meta-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .meta-column,
+  .meta-grid > .meta-column:first-child,
+  .meta-grid > .meta-column:nth-child(2) {
+    align-items: center;
+    padding-left: 0;
+  }
+}
+
+/* ==========================================================================
+   11. NOTABLE PLAYERS SECTION (TOURNAMENT DETAIL PAGE)
+   ========================================================================== */
+
+.notable-players-section {
+  /* Adds a border and padding to visually separate this section */
+  border-bottom: 2px solid #FF5E13;
+  padding-bottom: 1.5rem;
+  margin-bottom: 0.25rem;
+  /* MODIFIED: Added 1.25rem of space above the header */
+  margin-top: 1.25rem;
+}
+
+/* This rule for the name text is unchanged */
+.notable-player__name-text {
+  font-weight: bold;
+  word-break: break-word;
+  text-align: left;
+}
+
+/* ==========================================================================
+   12. DEFINITIVE NOTABLE PLAYER CARD (CONFLICT-FREE STYLES)
+   ========================================================================== */
+
+/* The main card container */
+.np-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  /* Re-apply basic card styles */
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+}
+
+/* Wrapper for the icon to maintain its size */
+.np-icon-wrapper {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+}
+
+/* The icon itself */
+.np-icon {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* The placeholder icon */
+.np-icon-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #2a2a2a;
+  font-size: 1.2rem;
+  color: #aaa;
+  border: 2px solid #444;
+}
+
+/*
+ * This is the key: A flex container for the name and badge.
+ * It will grow to fill available space but keeps its own items
+ * locked to the left.
+*/
+.np-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  min-width: 0; /* Prevents overflow issues */
+}
+
+/* The player name */
+.np-name {
+  font-weight: bold;
+  word-break: break-word;
+  text-align: left;
+  min-width: 0;
+}
+
+/* The rank badge */
+.np-rank {
+  flex-shrink: 0; /* Prevents the badge from shrinking */
+  white-space: nowrap; /* Prevents rank number from wrapping */
+}
+
+/* Keeps the tournament results page responsive */
+.results-grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* Layout for the "Top Players to Watch" section */
+
+/* Default to 1 column on mobile */
+.notable-players-grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: 1fr;
+}
+
+/* Switch to 2 columns on tablets */
+@media (min-width: 550px) {
+  .notable-players-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Switch to 3 columns on desktops */
+@media (min-width: 992px) {
+  .notable-players-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .section-banner {
+    margin-top: -0.75rem !important;
+  }
+}
+
+  /* ==========================================================================
+      FINAL & UNIFIED NOTABLE PLAYER CARD STYLES
+     ========================================================================== */
+
+  /* --- Base Card Layout --- */
+  .np-card {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    justify-content: flex-start !important; /* Forces all content to the left */
+    /* Base card appearance */
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    color: #f0f0f0; /* Default text color */
+  }
+  .np-icon-wrapper {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+  }
+  .np-icon,
+  .np-icon-placeholder {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid transparent; /* Prepare for rank glow */
+  }
+  .np-icon-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2a2a2a;
+    font-size: 1.2rem;
+    color: #aaa;
+  }
+  .np-content {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    min-width: 0;
+  }
+  .np-name {
+    font-weight: bold;
+    text-align: left;
+    min-width: 0;
+    overflow-wrap: normal; /* Prevents words from breaking in the middle */
+    word-break: normal;   /* Ensures standard word break behavior */
+  }
+  .np-rank {
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  /* --- Rank-Based Highlighting --- */
+
+  /* Top 4: Background and Lettering Color */
+  .np-card.rank-1 { background-color: #ffd70030; color: #FFD700; }
+  .np-card.rank-2 { background-color: #c0c0c030; color: #C0C0C0; }
+  .np-card.rank-3 { background-color: #cd7f3230; color: #cd7f32; }
+  .np-card.rank-4 { background-color: #36454F30; color: #b0c4de; }
+  
+  /* Ranks 5-40: Background and Lettering Color */
+  .np-card.ranked-6-40 { background-color: rgba(144, 238, 144, 0.1); color: #90ee90; }
+
+  /* Top 4: Icon Box-Shadow "Glow" */
+  .np-card.rank-1 .np-icon, .np-card.rank-1 .np-icon-placeholder { box-shadow: 0 0 8px 2px #FFD700; border-color: #FFD700; }
+  .np-card.rank-2 .np-icon, .np-card.rank-2 .np-icon-placeholder { box-shadow: 0 0 8px 2px #C0C0C0; border-color: #C0C0C0; }
+  .np-card.rank-3 .np-icon, .np-card.rank-3 .np-icon-placeholder { box-shadow: 0 0 8px 2px #cd7f32; border-color: #cd7f32; }
+  .np-card.rank-4 .np-icon, .np-card.rank-4 .np-icon-placeholder { box-shadow: 0 0 8px 2px #b0c4de; border-color: #b0c4de; }
+  
+  /* Ranks 5-40: Icon Box-Shadow "Glow" */
+  .np-card.ranked-6-40 .np-icon, .np-card.ranked-6-40 .np-icon-placeholder { box-shadow: 0 0 8px 2px #90ee90; border-color: #90ee90; }
+
+  @media (min-width: 992px) {
+  .page-event .results-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.btn--transparent {
+  background: none;
+  box-shadow: none;
+  color: #FFEE58; /* Use a bright color for visibility */
+  border: 1px solid #444;
+}
+.btn--transparent:hover {
+  background: rgba(255, 238, 88, 0.1);
+  border-color: #FFEE58;
+}
+
+/* You can place this at the bottom of your styles.css file */
+
+.page-ranking-system .cta-container {
+  margin-top: 0%;   /* Adjust this value for the margin above the button */
+  margin-bottom: 0.75rem; /* Adjust this value for the margin below the button */
 }

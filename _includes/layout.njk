@@ -34,9 +34,8 @@
     <meta name="theme-color" content="#FF5E13" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="/css/styles.css">
-    {% css %}{% block head %}{% endblock %}
 </head>
-<body class="{{ bodyClass }}">
+<body class="{{ bodyClass or '' }}">
 
     <header class="mobile-header">
         <button class="nav-toggle" aria-label="Toggle Navigation">
@@ -48,23 +47,19 @@
             </svg>
         </button>
         <div class="mobile-search">
-            {# --- CORRECTED: Use `set` before `include` for robust data passing --- #}
             {% set inputId = "mobile-search-input" %}
             {% include "partials/_search-form.njk" %}
         </div>
     </header>
 
-    {% block page_header %}{% endblock %}
-
     <div class="page-wrapper">
+        {% block page_header %}{% endblock %}
         <nav class="sidebar nav-sidebar" aria-label="Main menu" role="navigation">
             <h2 class="sidebar__label">Navigation</h2>
             <div class="sidebar-search">
-                {# --- CORRECTED: Use `set` before `include` --- #}
                 {% set inputId = "sidebar-search-input" %}
                 {% include "partials/_search-form.njk" %}
             </div>
-            {# --- CORRECTED: Use `set` before `include` --- #}
             {% set listClass = "nav-menu" %}
             {% include "partials/_navigation.njk" %}
         </nav>
@@ -78,7 +73,6 @@
                 <div class="footer-columns">
                     <div class="footer-column">
                         <h3>Navigation</h3>
-                        {# --- CORRECTED: Use `set` before `include` --- #}
                         {% set listClass = "footer-links" %}
                         {% include "partials/_navigation.njk" %}
                     </div>
@@ -109,21 +103,39 @@
             </footer>
         </main>
 
-        <aside class="sidebar right-sidebar" aria-label="Upcoming Rated Tournaments">
-            <h2 class="sidebar__label">Upcoming Rated Tournaments</h2>
-            {% for sidebarEvent in events %}
-                <a href="{{ sidebarEvent.url }}" target="_blank" rel="noopener noreferrer" class="event-card-link">
-                    <div class="event-card">
-                        <span class="event-card__name">{{ sidebarEvent.name }}</span>
-                        <img src="/images/events/{{ sidebarEvent.slug }}.png" alt="{{ sidebarEvent.name }}" loading="lazy" class="event-card__image" onerror="this.style.display='none';">
-                        <div class="event-card__date">{{ sidebarEvent.date }}</div>
-                        <span class="btn btn--secondary btn--small">More Info</span>
-                    </div>
-                </a>
+        <aside class="sidebar right-sidebar" aria-label="Contextual Information">
+    {% if page.url == '/upcoming-rated-tournaments/' %}
+        <h2 class="sidebar__label">Latest News</h2>
+        <div style="padding: 0 1rem;">
+            <p><strong>Site Update:</strong> New tournament page is live!</p>
+            <p>Stay tuned for more updates and features coming soon.</p>
+        </div>
+    {% else %}
+        <h2 class="sidebar__label">Upcoming Rated Tournaments</h2>
+        {# CORRECTED: Variable name is now "allUpcomingTournaments" #}
+        {% if allUpcomingTournaments %}
+            {% set events = allUpcomingTournaments | values %}
+            {% if events and events.length > 0 %}
+                {% for sidebarEvent in events %}
+                    {% if loop.index <= 4 %}
+                        <a href="{{ sidebarEvent.url }}" target="_blank" rel="noopener noreferrer" class="event-card-link">
+                            <div class="event-card">
+                                <span class="event-card__name">{{ sidebarEvent.name }}</span>
+                                <img src="/images/events/{{ sidebarEvent.slug }}.png" alt="{{ sidebarEvent.name }}" loading="lazy" class="event-card__image" onerror="this.style.display='none';">
+                                <div class="event-card__date">{{ sidebarEvent.dates }}</div>
+                                <span class="btn btn--secondary btn--small">More Info</span>
+                            </div>
+                        </a>
+                    {% endif %}
+                {% endfor %}
             {% else %}
                 <p>No upcoming events at this time.</p>
-            {% endfor %}
-        </aside>
+            {% endif %}
+        {% else %}
+            <p>No upcoming events at this time.</p>
+        {% endif %}
+    {% endif %}
+</aside>
     </div>
 
     <noscript>

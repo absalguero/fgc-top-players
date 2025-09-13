@@ -1,0 +1,1 @@
+{"errors":[{"message":"Variable \"$countries\" is never used in operation \"UpcomingTournaments\".","extensions":{"category":"graphql"},"locations":[{"line":2,"column":51}],"errorId":"fefa00"}],"extensions":{"cacheControl":{"version":1,"hints":null},"queryComplexity":0},"actionRecords":[]}

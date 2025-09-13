@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isolation Test</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- Basic Body Styles --- */
+        body {
+            background-color: #1a1a1a;
+            font-family: Arial, sans-serif;
+            color: #f0f0f0;
+            padding: 2rem;
+        }
+
+        /* --- Copied CSS for the Component --- */
+        .overview-meta {
+            display: flex;
+            flex-direction: column;
+            max-width: 800px;
+            margin: 1rem auto 0;
+            padding: 1.5rem 1.5rem 1.25rem;
+            background-color: #1a1a1a;
+            border-radius: 8px;
+            border: 1px solid #333;
+            border-top-width: 4px;
+            border-top-color: #444;
+        }
+        .meta-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem 2rem;
+            padding-bottom: 1.25rem;
+        }
+        .meta-column {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center; 
+        }
+        .meta-column h3 {
+            margin: 0;
+            font-family: 'Permanent Marker', cursive;
+            font-size: 1.5rem;
+            color: #f0f0f0;
+            border-bottom: 2px solid #FF5E13;
+            padding-bottom: 0.5rem;
+            width: 100%; 
+            text-align: center;
+        }
+        .meta-item, .travel-links a {
+            position: relative;
+            padding-left: 35px;
+            width: fit-content;
+            text-decoration: none;
+        }
+        .meta-item .fas, .travel-links a .fas {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            color: #FF5E13;
+            width: 25px;
+            text-align: center;
+        }
+        .meta-item-content {
+            text-align: left;
+        }
+        .meta-item strong { 
+            color: #FF5E13;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-transform: uppercase; 
+        }
+        .meta-item span { 
+            font-size: 1.1rem; 
+            font-weight: bold; 
+            color: #f0f0f0;
+            margin-left: 0.5rem;
+        }
+        .travel-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: flex-start;
+            width: fit-content;
+        }
+        .travel-links a {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #FFEE58;
+        }
+        .description-content {
+            grid-column: 1 / -1; 
+            border-top: 1px solid #444;
+            padding-top: 0;
+        }
+        
+        /* NEW RULE: Manually nudge the trophy icon down by 2 pixels for perfect optical alignment */
+        .icon-nudge {
+            top: calc(50% + 2px);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="overview-meta">
+        <div class="meta-grid">
+            <div class="meta-column">
+                <h3>Event Details</h3>
+                <div class="meta-item">
+                    <i class="fas fa-trophy icon-nudge"></i>
+                    <div class="meta-item-content">
+                        <strong>Prize Pool</strong>
+                        <span>$10,000</span>
+                    </div>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-landmark"></i>
+                    <div class="meta-item-content">
+                        <strong>Venue</strong>
+                        <span>Convention Center</span>
+                    </div>
+                </div>
+            </div>
+            <div class="meta-column">
+                <h3>Plan Your Trip</h3>
+                <ul class="travel-links">
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-map-marked-alt"></i> View Venue Map
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-plane-departure"></i> Find Flights
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="description-content">
+                This is the description text. The space below this should be minimal.
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

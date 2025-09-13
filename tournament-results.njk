@@ -25,7 +25,8 @@
            class="archive-item-card js-load-more-item"
            data-name="{{ event.name | lower }}"
            data-date-readable="{{ event.date | readableDate | lower }}"
-           data-slug="{{ event.slug }}">
+           data-slug="{{ event.slug }}"
+           data-search-text="{{ (event.name | lower) + ' ' + (event.date | readableDate | lower) }}">
 
             <div class="event-image-container">
                 <img

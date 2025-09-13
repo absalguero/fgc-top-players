@@ -15,8 +15,10 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
 {% endblock %}
 
 {% block content %}
+{% include "banner.njk" %}
 <div class="event-header-group">
-    <div class="back-button-container">
+    {# This top button shows on mobile and is hidden on desktop #}
+    <div class="back-button-container is-hidden-desktop">
         <a href="/tournament-results/" class="btn btn--primary">
             <i class="fas fa-arrow-left"></i> Back to Tournament Results
         </a>
@@ -34,8 +36,13 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
             <div class="event-header__details">
                 <h1>{{ tournamentData.name }}</h1>
                 <div class="event-header__meta">
+                    {% if tournamentData.date %}
                     <span><i class="fas fa-calendar-alt"></i> {{ tournamentData.date | readableDate }}</span>
+                    {% endif %}
+
+                    {% if tournamentData.results and tournamentData.results.length > 0 and tournamentData.results[0].Entrants %}
                     <span><i class="fas fa-users"></i> {{ tournamentData.results[0].Entrants }} Entrants</span>
+                    {% endif %}
                 </div>
             </div>
         </div>
@@ -46,6 +53,7 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
     {% if tournamentData.results and tournamentData.results.length > 0 %}
         <div class="results-grid" id="results-grid">
             {% for result in tournamentData.results | sortByFinish %}
+                {# ... (card content remains the same) ... #}
                 {% set player_data = rankings.players | find("Player", result.Player) %}
                 {% set rank = player_data.Rank | int if player_data else 0 %}
                 {% set finish = result.Finish | int %}
@@ -107,10 +115,16 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
             {% endfor %}
         </div>
         
-        {# --- CORRECTED: Replaced button with sentinel for infinite scroll --- #}
         {% if tournamentData.results.length > 16 %}
             <div id="sentinel" style="height: 1px;"></div>
         {% endif %}
+
+        {# This bottom button shows on desktop and is hidden on mobile #}
+        <div class="back-button-container is-hidden-mobile" style="margin-top: 2rem;">
+            <a href="/tournament-results/" class="btn btn--primary">
+                <i class="fas fa-arrow-left"></i> Back to Tournament Results
+            </a>
+        </div>
 
     {% else %}
         <p style="text-align: center; margin-top: 2rem;">No results are currently available for this event.</p>

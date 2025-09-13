@@ -34,7 +34,6 @@
     <meta name="theme-color" content="#FF5E13" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="/css/styles.css">
-    <style>.intro-text{text-align:center;font-size:1.1rem;color:#ccc;}.archive-list{margin-top:2rem;display:grid;gap:0.5rem;}.archive-item{display:flex;justify-content:space-between;align-items:center;padding:1rem;background-color:#1a1a1a;border-radius:6px;text-decoration:none;transition:background-color 0.2s;}.archive-item:hover{background-color:#2a2a2a;text-decoration:none;}.archive-item__name{font-weight:bold;color:#f0f0f0;}.archive-item__date{color:#999;font-size:0.9rem;}.h2-subtle{font-size:1.5rem;color:#999;text-align:center;margin-top:-0.5rem;margin-bottom:1.5rem;}</style>
 </head>
 <body class="">
 
@@ -49,9 +48,8 @@
         </button>
         <div class="mobile-search">
             
-            
             <form role="search" class="search-form">
-    <input type="search" id="mobile-search-input" class="search-form__input" placeholder="Search site..." aria-label="Search site">
+    <input type="search" id="mobile-search-input" class="search-form__input" placeholder="Search Site..." aria-label="Search site">
     <button type="submit" class="search-form__button" aria-label="Search">
         <i class="fas fa-search"></i>
     </button>
@@ -59,16 +57,14 @@
         </div>
     </header>
 
-    
-
     <div class="page-wrapper">
+        
         <nav class="sidebar nav-sidebar" aria-label="Main menu" role="navigation">
             <h2 class="sidebar__label">Navigation</h2>
             <div class="sidebar-search">
                 
-                
                 <form role="search" class="search-form">
-    <input type="search" id="sidebar-search-input" class="search-form__input" placeholder="Search site..." aria-label="Search site">
+    <input type="search" id="sidebar-search-input" class="search-form__input" placeholder="Search Site..." aria-label="Search site">
     <button type="submit" class="search-form__button" aria-label="Search">
         <i class="fas fa-search"></i>
     </button>
@@ -76,32 +72,38 @@
             </div>
             
             
-            
 
 
 <ul class="nav-menu">
-    
-        <li>
-            <a href="/" class="nav-menu__link ">
-                <i class="fas fa-trophy"></i>
-                SF6 Rankings
-            </a>
-        </li>
-    
-        <li>
-            <a href="/tournament-results/" class="nav-menu__link is-active">
-                <i class="fas fa-sitemap"></i>
-                Tournament Results
-            </a>
-        </li>
-    
-        <li>
-            <a href="/ranking-system/" class="nav-menu__link ">
-                <i class="fas fa-scale-balanced"></i>
-                Ranking System
-            </a>
-        </li>
-    
+
+<li>
+<a href="/" class="nav-menu__link ">
+<i class="fas fa-trophy"></i>
+SF6 Rankings
+</a>
+</li>
+
+<li>
+<a href="/tournament-results/" class="nav-menu__link is-active">
+<i class="fas fa-sitemap"></i>
+Tournament Results
+</a>
+</li>
+
+<li>
+<a href="/upcoming-rated-tournaments/" class="nav-menu__link ">
+<i class="fas fa-calendar-alt"></i>
+Upcoming Tournaments
+</a>
+</li>
+
+<li>
+<a href="/ranking-system/" class="nav-menu__link ">
+<i class="fas fa-scale-balanced"></i>
+Ranking System
+</a>
+</li>
+
 </ul>
         </nav>
 
@@ -109,7 +111,7 @@
             <div role="main" id="maincontent" tabindex="-1">
                 
 <div class="content-container">
-    <img class="banner" src="/images/banner.png" alt="FGC Player Rankings official logo" loading="lazy"/>
+    <img class="banner" src="/images/banner.png" alt="FGC Top Players official logo" loading="lazy"/>
     <h1>Tournament Results Archive</h1>
     <p class="intro-text">Dive into the definitive archive of competitive Street Fighter 6 tournament results. Explore official standings, player placings, and final brackets from major events around the world, including Evo, Combo Breaker, and the Capcom Pro Tour.</p>
 
@@ -130,7 +132,8 @@
            class="archive-item-card js-load-more-item"
            data-name="ozhadou nationals 19"
            data-date-readable="september 7, 2025"
-           data-slug="ozhadou-nationals-19">
+           data-slug="ozhadou-nationals-19"
+           data-search-text="ozhadou nationals 19 september 7, 2025">
 
             <div class="event-image-container">
                 <img
@@ -152,7 +155,8 @@
            class="archive-item-card js-load-more-item"
            data-name="comitê arena 2025"
            data-date-readable="august 31, 2025"
-           data-slug="comite-arena-2025">
+           data-slug="comite-arena-2025"
+           data-search-text="comitê arena 2025 august 31, 2025">
 
             <div class="event-image-container">
                 <img
@@ -174,7 +178,8 @@
            class="archive-item-card js-load-more-item"
            data-name="cream city convergence 2025"
            data-date-readable="august 30, 2025"
-           data-slug="cream-city-convergence-2025">
+           data-slug="cream-city-convergence-2025"
+           data-search-text="cream city convergence 2025 august 30, 2025">
 
             <div class="event-image-container">
                 <img
@@ -196,7 +201,8 @@
            class="archive-item-card js-load-more-item"
            data-name="beast in the east 8"
            data-date-readable="august 23, 2025"
-           data-slug="beast-in-the-east-8">
+           data-slug="beast-in-the-east-8"
+           data-search-text="beast in the east 8 august 23, 2025">
 
             <div class="event-image-container">
                 <img
@@ -218,7 +224,8 @@
            class="archive-item-card js-load-more-item"
            data-name="esports world cup 2025"
            data-date-readable="august 23, 2025"
-           data-slug="esports-world-cup-2025">
+           data-slug="esports-world-cup-2025"
+           data-search-text="esports world cup 2025 august 23, 2025">
 
             <div class="event-image-container">
                 <img
@@ -240,7 +247,8 @@
            class="archive-item-card js-load-more-item"
            data-name="vsfighting xiii"
            data-date-readable="august 15, 2025"
-           data-slug="vsfighting-xiii">
+           data-slug="vsfighting-xiii"
+           data-search-text="vsfighting xiii august 15, 2025">
 
             <div class="event-image-container">
                 <img
@@ -262,7 +270,8 @@
            class="archive-item-card js-load-more-item"
            data-name="esports world cup 2025 last change qualifier (lcq)"
            data-date-readable="august 14, 2025"
-           data-slug="esports-world-cup-2025-last-change-qualifier-lcq">
+           data-slug="esports-world-cup-2025-last-change-qualifier-lcq"
+           data-search-text="esports world cup 2025 last change qualifier (lcq) august 14, 2025">
 
             <div class="event-image-container">
                 <img
@@ -284,7 +293,8 @@
            class="archive-item-card js-load-more-item"
            data-name="saudi eleague season 3 championship"
            data-date-readable="august 11, 2025"
-           data-slug="saudi-eleague-season-3-championship">
+           data-slug="saudi-eleague-season-3-championship"
+           data-search-text="saudi eleague season 3 championship august 11, 2025">
 
             <div class="event-image-container">
                 <img
@@ -306,7 +316,8 @@
            class="archive-item-card js-load-more-item"
            data-name="crossover 2025"
            data-date-readable="august 8, 2025"
-           data-slug="crossover-2025">
+           data-slug="crossover-2025"
+           data-search-text="crossover 2025 august 8, 2025">
 
             <div class="event-image-container">
                 <img
@@ -328,7 +339,8 @@
            class="archive-item-card js-load-more-item"
            data-name="evo vegas 2025"
            data-date-readable="august 1, 2025"
-           data-slug="evo-vegas-2025">
+           data-slug="evo-vegas-2025"
+           data-search-text="evo vegas 2025 august 1, 2025">
 
             <div class="event-image-container">
                 <img
@@ -350,7 +362,8 @@
            class="archive-item-card js-load-more-item"
            data-name="s factor 12"
            data-date-readable="july 26, 2025"
-           data-slug="s-factor-12">
+           data-slug="s-factor-12"
+           data-search-text="s factor 12 july 26, 2025">
 
             <div class="event-image-container">
                 <img
@@ -372,7 +385,8 @@
            class="archive-item-card js-load-more-item"
            data-name="blink respawn 2025"
            data-date-readable="july 18, 2025"
-           data-slug="blink-respawn-2025">
+           data-slug="blink-respawn-2025"
+           data-search-text="blink respawn 2025 july 18, 2025">
 
             <div class="event-image-container">
                 <img
@@ -394,7 +408,8 @@
            class="archive-item-card js-load-more-item"
            data-name="topanga championship 6"
            data-date-readable="july 13, 2025"
-           data-slug="topanga-championship-6">
+           data-slug="topanga-championship-6"
+           data-search-text="topanga championship 6 july 13, 2025">
 
             <div class="event-image-container">
                 <img
@@ -416,7 +431,8 @@
            class="archive-item-card js-load-more-item"
            data-name="only the best 2025"
            data-date-readable="july 12, 2025"
-           data-slug="only-the-best-2025">
+           data-slug="only-the-best-2025"
+           data-search-text="only the best 2025 july 12, 2025">
 
             <div class="event-image-container">
                 <img
@@ -438,7 +454,8 @@
            class="archive-item-card js-load-more-item"
            data-name="get on my level: forever - canadian fighting game championships"
            data-date-readable="july 5, 2025"
-           data-slug="get-on-my-level-forever-canadian-fighting-game-championships">
+           data-slug="get-on-my-level-forever-canadian-fighting-game-championships"
+           data-search-text="get on my level: forever - canadian fighting game championships july 5, 2025">
 
             <div class="event-image-container">
                 <img
@@ -460,7 +477,8 @@
            class="archive-item-card js-load-more-item"
            data-name="the mixup 2025 - round 7"
            data-date-readable="july 5, 2025"
-           data-slug="the-mixup-2025-round-7">
+           data-slug="the-mixup-2025-round-7"
+           data-search-text="the mixup 2025 - round 7 july 5, 2025">
 
             <div class="event-image-container">
                 <img
@@ -482,7 +500,8 @@
            class="archive-item-card js-load-more-item"
            data-name="ceo 2025"
            data-date-readable="june 13, 2025"
-           data-slug="ceo-2025">
+           data-slug="ceo-2025"
+           data-search-text="ceo 2025 june 13, 2025">
 
             <div class="event-image-container">
                 <img
@@ -504,7 +523,8 @@
            class="archive-item-card js-load-more-item"
            data-name="headstomper 2025"
            data-date-readable="may 31, 2025"
-           data-slug="headstomper-2025">
+           data-slug="headstomper-2025"
+           data-search-text="headstomper 2025 may 31, 2025">
 
             <div class="event-image-container">
                 <img
@@ -526,7 +546,8 @@
            class="archive-item-card js-load-more-item"
            data-name="norcal knockout 2025"
            data-date-readable="may 31, 2025"
-           data-slug="norcal-knockout-2025">
+           data-slug="norcal-knockout-2025"
+           data-search-text="norcal knockout 2025 may 31, 2025">
 
             <div class="event-image-container">
                 <img
@@ -548,7 +569,8 @@
            class="archive-item-card js-load-more-item"
            data-name="bam 15: battle arena melbourne 15"
            data-date-readable="may 29, 2025"
-           data-slug="bam-15-battle-arena-melbourne-15">
+           data-slug="bam-15-battle-arena-melbourne-15"
+           data-search-text="bam 15: battle arena melbourne 15 may 29, 2025">
 
             <div class="event-image-container">
                 <img
@@ -570,7 +592,8 @@
            class="archive-item-card js-load-more-item"
            data-name="combo breaker 2025"
            data-date-readable="may 23, 2025"
-           data-slug="combo-breaker-2025">
+           data-slug="combo-breaker-2025"
+           data-search-text="combo breaker 2025 may 23, 2025">
 
             <div class="event-image-container">
                 <img
@@ -592,7 +615,8 @@
            class="archive-item-card js-load-more-item"
            data-name="brussels challenge major edition 2025"
            data-date-readable="may 17, 2025"
-           data-slug="brussels-challenge-major-edition-2025">
+           data-slug="brussels-challenge-major-edition-2025"
+           data-search-text="brussels challenge major edition 2025 may 17, 2025">
 
             <div class="event-image-container">
                 <img
@@ -614,7 +638,8 @@
            class="archive-item-card js-load-more-item"
            data-name="hero esports asian champions league"
            data-date-readable="may 16, 2025"
-           data-slug="hero-esports-asian-champions-league">
+           data-slug="hero-esports-asian-champions-league"
+           data-search-text="hero esports asian champions league may 16, 2025">
 
             <div class="event-image-container">
                 <img
@@ -636,7 +661,8 @@
            class="archive-item-card js-load-more-item"
            data-name="evo japan 2025 presented by levtech"
            data-date-readable="may 8, 2025"
-           data-slug="evo-japan-2025-presented-by-levtech">
+           data-slug="evo-japan-2025-presented-by-levtech"
+           data-search-text="evo japan 2025 presented by levtech may 8, 2025">
 
             <div class="event-image-container">
                 <img
@@ -658,7 +684,8 @@
            class="archive-item-card js-load-more-item"
            data-name="d.i.y 2025"
            data-date-readable="may 4, 2025"
-           data-slug="diy-2025">
+           data-slug="diy-2025"
+           data-search-text="d.i.y 2025 may 4, 2025">
 
             <div class="event-image-container">
                 <img
@@ -680,7 +707,8 @@
            class="archive-item-card js-load-more-item"
            data-name="fight kingdom 2025"
            data-date-readable="may 2, 2025"
-           data-slug="fight-kingdom-2025">
+           data-slug="fight-kingdom-2025"
+           data-search-text="fight kingdom 2025 may 2, 2025">
 
             <div class="event-image-container">
                 <img
@@ -702,7 +730,8 @@
            class="archive-item-card js-load-more-item"
            data-name="lvl up expo 2025"
            data-date-readable="april 25, 2025"
-           data-slug="lvl-up-expo-2025">
+           data-slug="lvl-up-expo-2025"
+           data-search-text="lvl up expo 2025 april 25, 2025">
 
             <div class="event-image-container">
                 <img
@@ -724,7 +753,8 @@
            class="archive-item-card js-load-more-item"
            data-name="red bull kumite 2025 - last chance qualifier (lcq)"
            data-date-readable="april 5, 2025"
-           data-slug="red-bull-kumite-2025-last-chance-qualifier-lcq">
+           data-slug="red-bull-kumite-2025-last-chance-qualifier-lcq"
+           data-search-text="red bull kumite 2025 - last chance qualifier (lcq) april 5, 2025">
 
             <div class="event-image-container">
                 <img
@@ -746,7 +776,8 @@
            class="archive-item-card js-load-more-item"
            data-name="red bull kumite 2025 - paris"
            data-date-readable="april 5, 2025"
-           data-slug="red-bull-kumite-2025-paris">
+           data-slug="red-bull-kumite-2025-paris"
+           data-search-text="red bull kumite 2025 - paris april 5, 2025">
 
             <div class="event-image-container">
                 <img
@@ -768,7 +799,8 @@
            class="archive-item-card js-load-more-item"
            data-name="battle of bc 7"
            data-date-readable="march 29, 2025"
-           data-slug="battle-of-bc-7">
+           data-slug="battle-of-bc-7"
+           data-search-text="battle of bc 7 march 29, 2025">
 
             <div class="event-image-container">
                 <img
@@ -790,7 +822,8 @@
            class="archive-item-card js-load-more-item"
            data-name="texas showdown 2025"
            data-date-readable="march 28, 2025"
-           data-slug="texas-showdown-2025">
+           data-slug="texas-showdown-2025"
+           data-search-text="texas showdown 2025 march 28, 2025">
 
             <div class="event-image-container">
                 <img
@@ -812,7 +845,8 @@
            class="archive-item-card js-load-more-item"
            data-name="the wild west 2025"
            data-date-readable="march 15, 2025"
-           data-slug="the-wild-west-2025">
+           data-slug="the-wild-west-2025"
+           data-search-text="the wild west 2025 march 15, 2025">
 
             <div class="event-image-container">
                 <img
@@ -834,7 +868,8 @@
            class="archive-item-card js-load-more-item"
            data-name="winter clash 2025 (10th anniversary)"
            data-date-readable="march 15, 2025"
-           data-slug="winter-clash-2025-10th-anniversary">
+           data-slug="winter-clash-2025-10th-anniversary"
+           data-search-text="winter clash 2025 (10th anniversary) march 15, 2025">
 
             <div class="event-image-container">
                 <img
@@ -856,7 +891,8 @@
            class="archive-item-card js-load-more-item"
            data-name="capcom cup xi"
            data-date-readable="march 8, 2025"
-           data-slug="capcom-cup-xi">
+           data-slug="capcom-cup-xi"
+           data-search-text="capcom cup xi march 8, 2025">
 
             <div class="event-image-container">
                 <img
@@ -878,7 +914,8 @@
            class="archive-item-card js-load-more-item"
            data-name="genesis x2"
            data-date-readable="february 14, 2025"
-           data-slug="genesis-x2">
+           data-slug="genesis-x2"
+           data-search-text="genesis x2 february 14, 2025">
 
             <div class="event-image-container">
                 <img
@@ -900,7 +937,8 @@
            class="archive-item-card js-load-more-item"
            data-name="big bang 6"
            data-date-readable="february 1, 2025"
-           data-slug="big-bang-6">
+           data-slug="big-bang-6"
+           data-search-text="big bang 6 february 1, 2025">
 
             <div class="event-image-container">
                 <img
@@ -922,7 +960,8 @@
            class="archive-item-card js-load-more-item"
            data-name="frosty faustings xvii 2025"
            data-date-readable="january 24, 2025"
-           data-slug="frosty-faustings-xvii-2025">
+           data-slug="frosty-faustings-xvii-2025"
+           data-search-text="frosty faustings xvii 2025 january 24, 2025">
 
             <div class="event-image-container">
                 <img
@@ -944,7 +983,8 @@
            class="archive-item-card js-load-more-item"
            data-name="gtw 2024 finals"
            data-date-readable="january 12, 2025"
-           data-slug="gtw-2024-finals">
+           data-slug="gtw-2024-finals"
+           data-search-text="gtw 2024 finals january 12, 2025">
 
             <div class="event-image-container">
                 <img
@@ -966,7 +1006,8 @@
            class="archive-item-card js-load-more-item"
            data-name="the versus festival: habba edition 2024"
            data-date-readable="january 11, 2025"
-           data-slug="the-versus-festival-habba-edition-2024">
+           data-slug="the-versus-festival-habba-edition-2024"
+           data-search-text="the versus festival: habba edition 2024 january 11, 2025">
 
             <div class="event-image-container">
                 <img
@@ -988,7 +1029,8 @@
            class="archive-item-card js-load-more-item"
            data-name="beepro cup2024"
            data-date-readable="december 27, 2024"
-           data-slug="beepro-cup2024">
+           data-slug="beepro-cup2024"
+           data-search-text="beepro cup2024 december 27, 2024">
 
             <div class="event-image-container">
                 <img
@@ -1010,7 +1052,8 @@
            class="archive-item-card js-load-more-item"
            data-name="ceotaku 2024"
            data-date-readable="december 20, 2024"
-           data-slug="ceotaku-2024">
+           data-slug="ceotaku-2024"
+           data-search-text="ceotaku 2024 december 20, 2024">
 
             <div class="event-image-container">
                 <img
@@ -1032,7 +1075,8 @@
            class="archive-item-card js-load-more-item"
            data-name="kings of the world 2024"
            data-date-readable="december 14, 2024"
-           data-slug="kings-of-the-world-2024">
+           data-slug="kings-of-the-world-2024"
+           data-search-text="kings of the world 2024 december 14, 2024">
 
             <div class="event-image-container">
                 <img
@@ -1054,7 +1098,8 @@
            class="archive-item-card js-load-more-item"
            data-name="bum presents cold front 2024"
            data-date-readable="november 23, 2024"
-           data-slug="bum-presents-cold-front-2024">
+           data-slug="bum-presents-cold-front-2024"
+           data-search-text="bum presents cold front 2024 november 23, 2024">
 
             <div class="event-image-container">
                 <img
@@ -1076,7 +1121,8 @@
            class="archive-item-card js-load-more-item"
            data-name="astral finish 2024"
            data-date-readable="november 16, 2024"
-           data-slug="astral-finish-2024">
+           data-slug="astral-finish-2024"
+           data-search-text="astral finish 2024 november 16, 2024">
 
             <div class="event-image-container">
                 <img
@@ -1098,7 +1144,8 @@
            class="archive-item-card js-load-more-item"
            data-name="battle coliseum 2024"
            data-date-readable="november 16, 2024"
-           data-slug="battle-coliseum-2024">
+           data-slug="battle-coliseum-2024"
+           data-search-text="battle coliseum 2024 november 16, 2024">
 
             <div class="event-image-container">
                 <img
@@ -1120,7 +1167,8 @@
            class="archive-item-card js-load-more-item"
            data-name="blink respawn 2024"
            data-date-readable="november 8, 2024"
-           data-slug="blink-respawn-2024">
+           data-slug="blink-respawn-2024"
+           data-search-text="blink respawn 2024 november 8, 2024">
 
             <div class="event-image-container">
                 <img
@@ -1142,7 +1190,8 @@
            class="archive-item-card js-load-more-item"
            data-name="京王 presents jcg street fighter 6 capcom pro tour 2024 super premier japan"
            data-date-readable="november 1, 2024"
-           data-slug="presents-jcg-street-fighter-6-capcom-pro-tour-2024-super-premier-japan">
+           data-slug="presents-jcg-street-fighter-6-capcom-pro-tour-2024-super-premier-japan"
+           data-search-text="京王 presents jcg street fighter 6 capcom pro tour 2024 super premier japan november 1, 2024">
 
             <div class="event-image-container">
                 <img
@@ -1164,7 +1213,8 @@
            class="archive-item-card js-load-more-item"
            data-name="capcom pro tour 2024 super premier singapore"
            data-date-readable="october 17, 2024"
-           data-slug="capcom-pro-tour-2024-super-premier-singapore">
+           data-slug="capcom-pro-tour-2024-super-premier-singapore"
+           data-search-text="capcom pro tour 2024 super premier singapore october 17, 2024">
 
             <div class="event-image-container">
                 <img
@@ -1186,7 +1236,8 @@
            class="archive-item-card js-load-more-item"
            data-name="first attack 2024"
            data-date-readable="october 12, 2024"
-           data-slug="first-attack-2024">
+           data-slug="first-attack-2024"
+           data-search-text="first attack 2024 october 12, 2024">
 
             <div class="event-image-container">
                 <img
@@ -1208,7 +1259,8 @@
            class="archive-item-card js-load-more-item"
            data-name="east coast throwdown 2024"
            data-date-readable="october 11, 2024"
-           data-slug="east-coast-throwdown-2024">
+           data-slug="east-coast-throwdown-2024"
+           data-search-text="east coast throwdown 2024 october 11, 2024">
 
             <div class="event-image-container">
                 <img
@@ -1230,7 +1282,8 @@
            class="archive-item-card js-load-more-item"
            data-name="dreamhack atlanta 2024"
            data-date-readable="october 4, 2024"
-           data-slug="dreamhack-atlanta-2024">
+           data-slug="dreamhack-atlanta-2024"
+           data-search-text="dreamhack atlanta 2024 october 4, 2024">
 
             <div class="event-image-container">
                 <img
@@ -1252,7 +1305,8 @@
            class="archive-item-card js-load-more-item"
            data-name="thaiger uppercut (tgu) 2024"
            data-date-readable="october 4, 2024"
-           data-slug="thaiger-uppercut-tgu-2024">
+           data-slug="thaiger-uppercut-tgu-2024"
+           data-search-text="thaiger uppercut (tgu) 2024 october 4, 2024">
 
             <div class="event-image-container">
                 <img
@@ -1274,7 +1328,8 @@
            class="archive-item-card js-load-more-item"
            data-name="island paradise"
            data-date-readable="september 28, 2024"
-           data-slug="island-paradise">
+           data-slug="island-paradise"
+           data-search-text="island paradise september 28, 2024">
 
             <div class="event-image-container">
                 <img
@@ -1296,7 +1351,8 @@
            class="archive-item-card js-load-more-item"
            data-name="ozhadou nationals 18"
            data-date-readable="september 27, 2024"
-           data-slug="ozhadou-nationals-18">
+           data-slug="ozhadou-nationals-18"
+           data-search-text="ozhadou nationals 18 september 27, 2024">
 
             <div class="event-image-container">
                 <img
@@ -1318,7 +1374,8 @@
            class="archive-item-card js-load-more-item"
            data-name="ultimate fighting arena 2024"
            data-date-readable="september 13, 2024"
-           data-slug="ultimate-fighting-arena-2024">
+           data-slug="ultimate-fighting-arena-2024"
+           data-search-text="ultimate fighting arena 2024 september 13, 2024">
 
             <div class="event-image-container">
                 <img
@@ -1339,8 +1396,9 @@
         <a href="/tournaments/f2con-2024/"
            class="archive-item-card js-load-more-item"
            data-name="f2con 2024"
-           data-date-readable="september 8, 2024"
-           data-slug="f2con-2024">
+           data-date-readable=""
+           data-slug="f2con-2024"
+           data-search-text="f2con 2024 ">
 
             <div class="event-image-container">
                 <img
@@ -1353,7 +1411,7 @@
 
             <div class="archive-item-card__content">
                 <span class="archive-item-card__name js-searchable-text">F2CON 2024</span>
-                <span class="archive-item-card__date js-searchable-text">September 8, 2024</span>
+                <span class="archive-item-card__date js-searchable-text"></span>
             </div>
             <i class="fas fa-chevron-right archive-item-card__chevron"></i>
         </a>
@@ -1361,8 +1419,9 @@
         <a href="/tournaments/treta-championship-2024/"
            class="archive-item-card js-load-more-item"
            data-name="treta championship 2024"
-           data-date-readable="september 7, 2024"
-           data-slug="treta-championship-2024">
+           data-date-readable=""
+           data-slug="treta-championship-2024"
+           data-search-text="treta championship 2024 ">
 
             <div class="event-image-container">
                 <img
@@ -1375,7 +1434,7 @@
 
             <div class="archive-item-card__content">
                 <span class="archive-item-card__name js-searchable-text">Treta Championship 2024</span>
-                <span class="archive-item-card__date js-searchable-text">September 7, 2024</span>
+                <span class="archive-item-card__date js-searchable-text"></span>
             </div>
             <i class="fas fa-chevron-right archive-item-card__chevron"></i>
         </a>
@@ -1398,32 +1457,38 @@
                         <h3>Navigation</h3>
                         
                         
-                        
 
 
 <ul class="footer-links">
-    
-        <li>
-            <a href="/" class=" ">
-                
-                SF6 Rankings
-            </a>
-        </li>
-    
-        <li>
-            <a href="/tournament-results/" class=" is-active">
-                
-                Tournament Results
-            </a>
-        </li>
-    
-        <li>
-            <a href="/ranking-system/" class=" ">
-                
-                Ranking System
-            </a>
-        </li>
-    
+
+<li>
+<a href="/" class=" ">
+
+SF6 Rankings
+</a>
+</li>
+
+<li>
+<a href="/tournament-results/" class=" is-active">
+
+Tournament Results
+</a>
+</li>
+
+<li>
+<a href="/upcoming-rated-tournaments/" class=" ">
+
+Upcoming Tournaments
+</a>
+</li>
+
+<li>
+<a href="/ranking-system/" class=" ">
+
+Ranking System
+</a>
+</li>
+
 </ul>
                     </div>
                     <div class="footer-column">
@@ -1453,28 +1518,40 @@
             </footer>
         </main>
 
-        <aside class="sidebar right-sidebar" aria-label="Upcoming Rated Tournaments">
-            <h2 class="sidebar__label">Upcoming Rated Tournaments</h2>
+        <aside class="sidebar right-sidebar" aria-label="Contextual Information">
+    
+        <h2 class="sidebar__label">Upcoming Rated Tournaments</h2>
+        
+        
             
-                <a href="https://www.start.gg/tournament/ultimate-fighting-arena-2025-3/details" target="_blank" rel="noopener noreferrer" class="event-card-link">
-                    <div class="event-card">
-                        <span class="event-card__name">Ultimate Fighting Arena 2025</span>
-                        <img src="/images/events/ultimate-fighting-arena-2025.png" alt="Ultimate Fighting Arena 2025" loading="lazy" class="event-card__image" onerror="this.style.display='none';">
-                        <div class="event-card__date">September 12-14, 2025</div>
-                        <span class="btn btn--secondary btn--small">More Info</span>
-                    </div>
-                </a>
             
-                <a href="https://www.lowkickesports.com/roundhouse" target="_blank" rel="noopener noreferrer" class="event-card-link">
-                    <div class="event-card">
-                        <span class="event-card__name">Roundhouse 2025</span>
-                        <img src="/images/events/roundhouse-2025.png" alt="Roundhouse 2025" loading="lazy" class="event-card__image" onerror="this.style.display='none';">
-                        <div class="event-card__date">September 26-28, 2025</div>
-                        <span class="btn btn--secondary btn--small">More Info</span>
-                    </div>
-                </a>
+                
+                    
+                        <a href="https://www.ufa.gg/" target="_blank" rel="noopener noreferrer" class="event-card-link">
+                            <div class="event-card">
+                                <span class="event-card__name">Ultimate Fighting Arena 2025</span>
+                                <img src="/images/events/ultimate-fighting-arena-2025-3.png" alt="Ultimate Fighting Arena 2025" loading="lazy" class="event-card__image" onerror="this.style.display='none';">
+                                <div class="event-card__date">Sep 12-14, 2025</div>
+                                <span class="btn btn--secondary btn--small">More Info</span>
+                            </div>
+                        </a>
+                    
+                
+                    
+                        <a href="http://lowkickesports.com/" target="_blank" rel="noopener noreferrer" class="event-card-link">
+                            <div class="event-card">
+                                <span class="event-card__name">Roundhouse 2025</span>
+                                <img src="/images/events/roundhouse-2025.png" alt="Roundhouse 2025" loading="lazy" class="event-card__image" onerror="this.style.display='none';">
+                                <div class="event-card__date">Sep 26-28, 2025</div>
+                                <span class="btn btn--secondary btn--small">More Info</span>
+                            </div>
+                        </a>
+                    
+                
             
-        </aside>
+        
+    
+</aside>
     </div>
 
     <noscript>
