@@ -118,7 +118,8 @@
             {% if events and events.length > 0 %}
                 {% for sidebarEvent in events %}
                     {% if loop.index <= 4 %}
-                        <a href="{{ sidebarEvent.url }}" target="_blank" rel="noopener noreferrer" class="event-card-link">
+                        {# CORRECTED: The href now points to the internal slug. Removed target and rel attributes. #}
+                        <a href="/upcoming-tournaments/{{ sidebarEvent.slug }}/" class="event-card-link">
                             <div class="event-card">
                                 <span class="event-card__name">{{ sidebarEvent.name }}</span>
                                 <img src="/images/events/{{ sidebarEvent.slug }}.png" alt="{{ sidebarEvent.name }}" loading="lazy" class="event-card__image" onerror="this.style.display='none';">
