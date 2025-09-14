@@ -1,156 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-47ZV9G37SY"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-47ZV9G37SY');
-    </script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{% block title %}FGC Top Players{% endblock %}</title>
-    {% block meta_description %}
-    <meta name="description" content="The definitive player rankings for top competitive fighting games. Track pro players across Street Fighter, Tekken, and more." />
-    {% endblock %}
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://fgc-player-rankings.netlify.app{{ page.url }}">
-    <meta property="og:title" content="{% block og_title %}{{ title or 'FGC Top Players' }}{% endblock %}">
-    <meta property="og:description" content="{% block og_description %}The definitive ranking of the top professional SF6 players. See who's on top and track the rise and fall of your favorite pros.{% endblock %}">
-    <meta property="og:image" content="https://fgc-player-rankings.netlify.app/images/fgc-rankings-social-card.png">
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://fgc-player-rankings.netlify.app{{ page.url }}">
-    <meta property="twitter:title" content="{% block twitter_title %}{{ title or 'Street Fighter 6 Global Player Rankings' }}{% endblock %}">
-    <meta property="twitter:description" content="{% block twitter_description %}The definitive ranking of the top professional SF6 players. See who's on top and track the rise and fall of your favorite pros.{% endblock %}">
-    <meta property="twitter:image" content="https://fgc-player-rankings.netlify.app/images/fgc-rankings-social-card.png">
-    <link rel="canonical" href="https://fgc-player-rankings.netlify.app{{ page.url }}" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
-    <link rel="icon" type="image/png" href="/images/favicon.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="/images/android-chrome-192x192.png">
-    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-    <meta name="theme-color" content="#FF5E13" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="/css/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-47ZV9G37SY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-47ZV9G37SY');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% block title %}FGC Top Players{% endblock %}</title>
+  {% block meta_description %}
+  <meta name="description" content="The definitive player rankings for top competitive fighting games. Track pro players across Street Fighter, Tekken, and more." />
+  {% endblock %}
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:title" content="{% block og_title %}{{ title or 'FGC Top Players' }}{% endblock %}">
+  <meta property="og:description" content="{% block og_description %}The definitive ranking of the top professional SF6 players. See who's on top and track the rise and fall of your favorite pros.{% endblock %}">
+  <meta property="og:image" content="{{ site.url }}/images/fgc-rankings-social-card.png">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="twitter:title" content="{% block twitter_title %}{{ title or 'Street Fighter 6 Global Player Rankings' }}{% endblock %}">
+  <meta property="twitter:description" content="{% block twitter_description %}The definitive ranking of the top professional SF6 players. See who's on top and track the rise and fall of your favorite pros.{% endblock %}">
+  <meta property="twitter:image" content="{{ site.url }}/images/fgc-rankings-social-card.png">
+  
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <link rel="icon" type="image/png" href="/images/favicon.png" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <meta name="theme-color" content="#FF5E13" />
+  {% block head %}{% endblock %}
 </head>
 <body class="{{ bodyClass or '' }}">
 
-    <header class="mobile-header">
-        <button class="nav-toggle" aria-label="Toggle Navigation">
-            <svg class="hamburger-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
-                <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-            <svg class="close-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
-                <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-        </button>
-        <div class="mobile-search">
-            {% set inputId = "mobile-search-input" %}
-            {% include "partials/_search-form.njk" %}
-        </div>
-    </header>
-
-    <div class="page-wrapper">
-        {% block page_header %}{% endblock %}
-        <nav class="sidebar nav-sidebar" aria-label="Main menu" role="navigation">
-            <h2 class="sidebar__label">Navigation</h2>
-            <div class="sidebar-search">
-                {% set inputId = "sidebar-search-input" %}
-                {% include "partials/_search-form.njk" %}
-            </div>
-            {% set listClass = "nav-menu" %}
-            {% include "partials/_navigation.njk" %}
-        </nav>
-
-        <main class="content">
-            <div role="main" id="maincontent" tabindex="-1">
-                {% block content %}{% endblock %}
-            </div>
-
-            <footer class="content-footer">
-                <div class="footer-columns">
-                    <div class="footer-column">
-                        <h3>Navigation</h3>
-                        {% set listClass = "footer-links" %}
-                        {% include "partials/_navigation.njk" %}
-                    </div>
-                    <div class="footer-column">
-                        <h3>Community</h3>
-                        <ul class="footer-links">
-                            <li><a href="/about/">About Us</a></li>
-                            <li><a href="#">Become a Contributor</a></li>
-                            <li><a href="#">Support the Site</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h3>Follow Us</h3>
-                        <ul class="footer-social">
-                            <li><a href="https://x.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-legal">
-                    <p>&copy; {% year %} FGC Top Players. All rights reserved.<br>
-                    An unofficial, community-driven resource. All game and player trademarks and images are the property of their respective owners.</p>
-                    <p class="legal-links">
-                        <a href="#">Contact</a> |
-                        <a href="#">Terms of Use</a> |
-                        <a href="#">Privacy Policy</a>
-                    </p>
-                </div>
-            </footer>
-        </main>
-
-        <aside class="sidebar right-sidebar" aria-label="Contextual Information">
-    {% if page.url == '/upcoming-rated-tournaments/' %}
-        <h2 class="sidebar__label">Latest News</h2>
-        <div style="padding: 0 1rem;">
-            <p><strong>Site Update:</strong> New tournament page is live!</p>
-            <p>Stay tuned for more updates and features coming soon.</p>
-        </div>
-    {% else %}
-        <h2 class="sidebar__label">Upcoming Rated Tournaments</h2>
-        {# CORRECTED: Variable name is now "allUpcomingTournaments" #}
-        {% if allUpcomingTournaments %}
-            {% set events = allUpcomingTournaments | values %}
-            {% if events and events.length > 0 %}
-                {% for sidebarEvent in events %}
-                    {% if loop.index <= 4 %}
-                        {# CORRECTED: The href now points to the internal slug. Removed target and rel attributes. #}
-                        <a href="/upcoming-tournaments/{{ sidebarEvent.slug }}/" class="event-card-link">
-                            <div class="event-card">
-                                <span class="event-card__name">{{ sidebarEvent.name }}</span>
-                                <img src="/images/events/{{ sidebarEvent.slug }}.png" alt="{{ sidebarEvent.name }}" loading="lazy" class="event-card__image" onerror="this.style.display='none';">
-                                <div class="event-card__date">{{ sidebarEvent.dates }}</div>
-                                <span class="btn btn--secondary btn--small">More Info</span>
-                            </div>
-                        </a>
-                    {% endif %}
-                {% endfor %}
-            {% else %}
-                <p>No upcoming events at this time.</p>
-            {% endif %}
-        {% else %}
-            <p>No upcoming events at this time.</p>
-        {% endif %}
-    {% endif %}
-</aside>
-    </div>
-
-    <noscript>
-        <p style="text-align:center;padding:1rem;background:#111;color:#f00;">
-            JavaScript is disabled. Some interactive features may not work correctly.
-        </p>
-    </noscript>
-
-    <button id="back-to-top-btn" class="back-to-top-btn" title="Go to top" aria-label="Go to top">
-        <i class="fas fa-chevron-up"></i>
+  <header class="mobile-header">
+    <button class="nav-toggle" aria-label="Toggle Navigation" aria-expanded="false">
+      <svg class="hamburger-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <svg class="close-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
     </button>
-    
-    <script src="/js/main.js" defer></script>
-    {% block scripts %}{% endblock %}
+    <div class="mobile-search">
+      {% set inputId = "mobile-search-input" %}
+      {% include "partials/_search-form.njk" %}
+    </div>
+  </header>
 
+  <div class="page-wrapper">
+    <nav class="sidebar nav-sidebar" aria-label="Main menu" role="navigation">
+      <h2 class="sidebar__label">Navigation</h2>
+      <div class="sidebar-search">
+        {% set inputId = "sidebar-search-input" %}
+        {% include "partials/_search-form.njk" %}
+      </div>
+      {% set listClass = "nav-menu" %}
+      {% include "partials/_navigation.njk" %}
+    </nav>
+
+    <main class="content">
+      <div role="main" id="maincontent" tabindex="-1">
+        {% block content %}{% endblock %}
+      </div>
+
+      <footer class="content-footer">
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h3>Navigation</h3>
+            {% set listClass = "footer-links" %}
+            {% include "partials/_navigation.njk" %}
+          </div>
+          <div class="footer-column">
+            <h3>Community</h3>
+            <ul class="footer-links">
+              <li><a href="/about/">About Us</a></li>
+              <li><a href="#">Become a Contributor</a></li>
+              <li><a href="#">Support the Site</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Follow Us</h3>
+            <ul class="footer-social">
+              <li><a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="Follow on X"><i class="fab fa-x-twitter"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-legal">
+          <p>© {% year %} FGC Top Players. All rights reserved.<br>
+          An unofficial, community-driven resource. All trademarks are the property of their respective owners.</p>
+          <p class="legal-links">
+            <a href="#">Contact</a> | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a>
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <aside class="sidebar right-sidebar" aria-label="Contextual Information">
+      <h2 class="sidebar__label">Upcoming Tournaments</h2>
+      {% set events = allUpcomingTournaments | values %}
+      {% if events and events.length > 0 %}
+        {% for sidebarEvent in events %}
+          {% if loop.index <= 4 %}
+            <a href="/upcoming-tournaments/{{ sidebarEvent.slug }}/" class="event-card-link">
+              <div class="event-card">
+                <span class="event-card__name">{{ sidebarEvent.name }}</span>
+                <img src="/images/events/{{ sidebarEvent.slug }}.png" alt="{{ sidebarEvent.name }}" loading="lazy" class="event-card__image" onerror="this.style.display='none';">
+                <div class="event-card__date">{{ sidebarEvent.dates }}</div>
+                <span class="btn btn--secondary btn--small">More Info</span>
+              </div>
+            </a>
+          {% endif %}
+        {% endfor %}
+      {% else %}
+        <p style="text-align: center; padding: 0 1rem;">No upcoming events at this time.</p>
+      {% endif %}
+    </aside>
+  </div>
+
+  <noscript>
+    <p style="text-align:center;padding:1rem;background:#111;color:#f00;">
+      JavaScript is disabled. Some interactive features may not work correctly.
+    </p>
+  </noscript>
+
+  <button id="back-to-top-btn" class="back-to-top-btn" title="Go to top" aria-label="Go to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+  
+  <script src="/js/main.js" defer></script>
+  {% block scripts %}{% endblock %}
 </body>
 </html>

@@ -1,6 +1,5 @@
-// File: _data/site.js
-
+// _data/site.js
 module.exports = {
-  // Replace this with your actual, full website domain
-  url: "https://www.your-fgc-rankings-site.com"
+  // The full, correct production URL for your website
+  url: "https://fgc-player-rankings.netlify.app"
 };

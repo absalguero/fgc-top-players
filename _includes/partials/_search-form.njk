@@ -1,6 +1,7 @@
 <form role="search" class="search-form">
-    <input type="search" id="{{ inputId }}" class="search-form__input" placeholder="Search Site..." aria-label="Search site">
-    <button type="submit" class="search-form__button" aria-label="Search">
-        <i class="fas fa-search"></i>
-    </button>
+  <label for="{{ inputId }}" class="sr-only">Search Site</label>
+  <input type="search" id="{{ inputId }}" class="search-form__input" placeholder="Search Site..." aria-label="Search site">
+  <button type="submit" class="search-form__button" aria-label="Search">
+    <i class="fas fa-search"></i>
+  </button>
 </form>

@@ -1,10 +1,10 @@
-{# _includes/partials/_upcoming-card.njk #}
-
-<div class="simple-card {{ 'simple-card--' + (tournament.tier | lower | replace('+', '-plus')) }} js-load-more-item"
-     data-search-text="{{ tournament.name }} {{ tournament.dates }} {{ tournament.location }} {{ tournament.prizes }} {{ tournament.game }}">
+<div class="simple-card simple-card--{{ tournament.tier | lower | replace('+', '-plus') }}"
+     data-search-text="{{ tournament.name }} {{ tournament.dates }} {{ tournament.location }} {{ tournament.prizes }} {{ tournament.game }}"
+     data-name="{{ tournament.name }}"
+     data-start-date="{{ tournament.startDate }}"
+     data-prizes="{{ tournament.prizes }}">
   
   <a href="/upcoming-tournaments/{{ tournament.slug }}/" class="simple-card__click-wrapper">
-    
     <div class="simple-card__image-wrapper">
       <img src="/images/events/{{ tournament.slug }}.png" alt="Logo for {{ tournament.name }} Tournament" class="simple-card__image" loading="lazy">
     </div>
@@ -12,27 +12,26 @@
     <div class="simple-card__content">
       <div class="simple-card__header">
         <h3 class="simple-card__name">
-  <span class="js-searchable-text">{{ tournament.name }}</span>
-</h3>
+          <span>{{ tournament.name }}</span>
+        </h3>
         <img src="/images/games/{{ tournament.game | slugify }}.png" alt="{{ tournament.game }}" class="simple-card__game-logo">
       </div>
       <div class="simple-card__meta">
         <div class="simple-card__meta-item">
           <i class="fas fa-calendar-alt"></i>
-          <span class="js-searchable-text">{{ tournament.dates }}</span>
+          <span>{{ tournament.dates }}</span>
         </div>
         <div class="simple-card__meta-item">
           <i class="fas fa-map-marker-alt"></i>
-          <span class="js-searchable-text">{{ tournament.location }}</span>
+          <span>{{ tournament.location }}</span>
         </div>
         <div class="simple-card__meta-item">
           <i class="fas fa-trophy"></i>
-          <span class="js-searchable-text">{{ tournament.prizes }}</span>
+          <span>{{ tournament.prizes }}</span>
         </div>
       </div>
     </div>
 
     <i class="fas fa-chevron-right simple-card__chevron"></i>
-
   </a>
 </div>

@@ -1,0 +1,196 @@
+---
+pagination:
+  data: allUpcomingTournaments
+  size: 1
+  alias: tournament
+  resolve: values
+permalink: "/upcoming-tournaments/{{ tournament.slug }}/"
+---
+
+{% extends "layout.njk" %}
+
+{% set bodyClass = "page-tournament-detail page-event" %}
+
+{% block title %}{{ tournament.name }} | Details, Registration & Travel Info{% endblock %}
+
+{% block meta_description %}
+  <meta name="description" content="Get full details for {{ tournament.name }} on {{ tournament.dates }}. See which top-ranked players are attending, venue information, and travel tips for {{ tournament.location }}.">
+{% endblock %}
+
+{% block head %}
+  {# ✅ FIX: Defines variables safely before the script to prevent errors #}
+  {% set addressParts = tournament.location | split(',') %}
+  {% set locality = "" %}
+  {% if addressParts.length > 1 %}
+    {% set locality = addressParts[addressParts.length - 2] | trim %}
+  {% endif %}
+  {% set country = "" %}
+  {% if addressParts.length > 0 %}
+    {% set country = addressParts[addressParts.length - 1] | trim %}
+  {% endif %}
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "{{ tournament.name }}",
+      "startDate": "{{ tournament.startDate }}",
+      "endDate": "{{ tournament.endDate }}",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "{{ tournament.venueName or tournament.location }}",
+        "address": {
+          "@type": "PostalAddress",
+          "name": "{{ tournament.venueName or '' }}",
+          "streetAddress": "{{ tournament.location }}",
+          "addressLocality": "{{ locality }}",
+          "addressCountry": "{{ country }}"
+        }
+      },
+      "image": [
+        "{{ site.url }}/images/events/{{ tournament.slug }}.png"
+      ],
+      "description": "{{ tournament.description or 'A premier fighting game tournament.' | striptags | trim }}",
+      "organizer": {
+        "@type": "Organization",
+        "name": "{{ tournament.organizer or 'FGC Top Players' }}",
+        "url": "{{ tournament.url }}"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "{{ tournament.url }}",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "validFrom": "{{ '2025-01-01' }}"
+      },
+      {% if tournament.notablePlayers and tournament.notablePlayers.length > 0 %}
+      "performer": [
+        {% for player in tournament.notablePlayers %}
+          {
+            "@type": "Person",
+            "name": "{{ player }}"
+          }{% if not loop.last %},{% endif %}
+        {% endfor %}
+      ],
+      {% endif %}
+      "subjectOf": {
+        "@type": "WebPage",
+        "@id": "{{ site.url }}{{ page.url }}"
+      }
+    }
+  </script>
+{% endblock %}
+
+{% block content %}
+{% include "banner.njk" %}
+<div class="content-container">
+
+  <div class="event-header-group">
+    <div class="header-sticky-container">
+      <div class="event-header {% if tournament.tier %}event-header--{{ tournament.tier | lower | replace("+", "-plus") }}{% endif %}">
+        <div class="event-image-container" {% if tournament.tier %}style="--bg-image-url: url('/images/events/{{ tournament.slug }}.png');"{% endif %}>
+          <img
+            src="/images/events/{{ tournament.slug }}.png"
+            alt="{{ tournament.name }}"
+            class="event-header__image"
+            onerror="this.style.display='none';"
+          >
+        </div>
+        <div class="event-header__details">
+          <h1>{{ tournament.name }}</h1>
+
+          <div class="event-header__meta">
+            <span class="meta-item--date"><i class="fas fa-calendar-alt"></i> {{ tournament.dates }}</span>
+            <span class="meta-item--location"><i class="fas fa-map-marker-alt"></i> {{ tournament.location }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-action-hub">
+    <a href="{{ tournament.url }}" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+      <i class="fas fa-external-link-alt"></i> Visit Official Site & Register
+    </a>
+    {% if tournament.streamLink %}
+      <a href="{{ tournament.streamLink }}" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-twitch"></i> Watch Live Stream
+      </a>
+    {% endif %}
+    {% if tournament.scheduleLink %}
+      <a href="{{ tournament.scheduleLink }}" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-clock"></i> View Full Schedule
+      </a>
+    {% endif %}
+  </div>
+
+  <div class="overview-content">
+    <div class="section-banner">
+      <h2>Tournament Overview</h2>
+    </div>
+    <div class="meta-grid">
+      <div class="meta-column">
+        <h3>{{ tournament.name }} Event Details</h3>
+        <div class="meta-item">
+          <i class="fas fa-trophy"></i>
+          <div class="meta-item-content"><strong>Prize Pool</strong> <span>{{ tournament.prizes }}</span></div>
+        </div>
+        <div class="meta-item">
+          <i class="fas fa-landmark"></i>
+          <div class="meta-item-content"><strong>Venue</strong> <span>{{ tournament.venueName or "To be announced" }}</span></div>
+        </div>
+      </div>
+      <div class="meta-column">
+        <h3>Plan Your Trip to {{ tournament.name }}</h3>
+        <ul class="travel-links">
+          <li><a href="https://www.google.com/maps/search/?api=1&query={{ tournament.location | url_encode }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marked-alt"></i> View Venue Map</a></li>
+          <li><a href="https://www.google.com/flights?q=flights+to+{{ tournament.location | url_encode }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-plane-departure"></i> Find Flights</a></li>
+          <li><a href="https://www.google.com/search?q=hotels+near+{{ tournament.location | url_encode }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-bed"></i> Find Hotels</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="description-content">
+      <h3>About {{ tournament.name }}</h3>
+      {{ tournament.description | nl2p | safe }}
+    </div>
+
+    {% if tournament.notablePlayers and tournament.notablePlayers.length > 0 %}
+      <div class="notable-players-section">
+        <div class="section-banner">
+          <h2>Top Players to Watch</h2>
+        </div>
+        <p style="text-align: center; margin: 1rem 0 1.5rem;">Here is the list of top competitors registered for {{ tournament.name }}.</p>
+        <div class="notable-players-grid">
+          {% for player_name in tournament.notablePlayers %}
+            {% set player_data = rankings.players | find("Player", player_name) %}
+            {% set rank = player_data.Rank | int if player_data else 0 %}
+            {% set card_class = "" %}
+            {% if rank >= 1 and rank <= 4 %}{% set card_class = "rank-" + rank %}{% endif %}
+            {% if rank >= 5 and rank <= 40 %}{% set card_class = "ranked-6-40" %}{% endif %}
+            {% set show_photo = player_data and rank > 0 and rank <= 40 and player_data['Player Icon'] %}
+            <div class="np-card {{ card_class }}">
+              <div class="np-icon-wrapper">
+                {% if show_photo %}
+                  <img src="{{ player_data['Player Icon'] }}" alt="Photo of {{ player_name }}" class="np-icon" onerror="this.style.display='none'">
+                {% else %}
+                  <div class="np-icon-placeholder"><i class="fas fa-user"></i></div>
+                {% endif %}
+              </div>
+              <div class="np-content">
+                <span class="np-name">{{ player_name }}</span>
+                {% if rank > 0 and rank <= 40 %}
+                  <span class="rank-badge np-rank">#{{ rank }}</span>
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

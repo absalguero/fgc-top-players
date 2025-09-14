@@ -17,15 +17,9 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
 {% block content %}
 {% include "banner.njk" %}
 <div class="event-header-group">
-    {# This top button shows on mobile and is hidden on desktop #}
-    <div class="back-button-container is-hidden-desktop">
-        <a href="/tournament-results/" class="btn btn--primary">
-            <i class="fas fa-arrow-left"></i> Back to Tournament Results
-        </a>
-    </div>
     <div class="header-sticky-container">
-        <div class="event-header">
-            <div class="event-image-container">
+        <div class="event-header {% if pagination.items[0].Tier %}event-header--{{ pagination.items[0].Tier | lower | replace("+", "-plus") }}{% endif %}">
+            <div class="event-image-container" {% if pagination.items[0].Tier %}style="--bg-image-url: url('/images/events/{{ pagination.items[0].slug }}.png');"{% endif %}>
                 <img
                     src="/images/events/{{ tournamentData.slug }}.png"
                     alt="{{ tournamentData.name }}"
@@ -35,6 +29,7 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
             </div>
             <div class="event-header__details">
                 <h1>{{ tournamentData.name }}</h1>
+
                 <div class="event-header__meta">
                     {% if tournamentData.date %}
                     <span><i class="fas fa-calendar-alt"></i> {{ tournamentData.date | readableDate }}</span>
@@ -119,8 +114,7 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
             <div id="sentinel" style="height: 1px;"></div>
         {% endif %}
 
-        {# This bottom button shows on desktop and is hidden on mobile #}
-        <div class="back-button-container is-hidden-mobile" style="margin-top: 2rem;">
+        <div class="back-button-container" style="margin-top: 1.25rem;">
             <a href="/tournament-results/" class="btn btn--primary">
                 <i class="fas fa-arrow-left"></i> Back to Tournament Results
             </a>

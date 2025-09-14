@@ -3,85 +3,103 @@ title: "Upcoming Rated Tournaments"
 bodyClass: "page-upcoming-tournaments"
 permalink: /upcoming-rated-tournaments/
 ---
-
 {% extends "layout.njk" %}
 
-{# MODIFIED: Moved the meta description to its own block for correct HTML structure #}
 {% block title %}Upcoming Rated Tournaments | FGC Top Players{% endblock %}
 
 {% block meta_description %}
 <meta name="description" content="The official list of upcoming rated FGC tournaments for Street Fighter, Tekken, and more. Find event dates, locations, and prize pools to plan your competitive journey.">
 {% endblock %}
 
-
 {% block content %}
 <div class="content-container">
-    {% include "banner.njk" %}
-    <h1>Upcoming Rated Tournaments</h1>
-    <p class="intro-text">Find your next challenge. This is the official, curated list of upcoming rated tournaments. Filter by game, location, prize money, and more to plan your competitive journey.</p>
+  {% include "banner.njk" %}
+  <h1>Upcoming Rated Tournaments</h1>
+  <p class="intro-text">Find your next challenge. This is the official, curated list of upcoming rated tournaments. Filter by game, location, prize money, and more to plan your competitive journey.</p>
 
-    <div class="controls-container controls-container--archive">
-        <div class="search-wrapper">
-            <input type="text" id="search-input" class="search-form__input" placeholder="Search by Tournament, Date, Location, Game, or Prize..." autocomplete="off">
-            <button class="search-clear-btn" id="search-clear-btn" aria-label="Clear search">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
+  <div class="controls-container controls-container--archive">
+    <button id="filter-toggle-btn" class="filter-toggle-btn" aria-expanded="false" aria-controls="filter-panel">
+      <i class="fas fa-filter"></i>
+      Filter & Sort Tournaments
+      <i class="fas fa-chevron-down a-icon"></i>
+    </button>
+    <div id="filter-panel" class="filter-panel">
+      <div class="search-wrapper">
+        <label for="search-input" class="sr-only">Search Tournaments</label>
+        <input type="text" id="search-input" class="search-form__input" placeholder="Search by Tournament, Date, Location, Game, or Prize..." autocomplete="off">
+        <button class="search-clear-btn" id="search-clear-btn" aria-label="Clear search">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="filter-group">
+        <label for="sort-by" class="sr-only">Sort by</label>
+        <select id="sort-by" class="sort-select">
+          <option value="date-asc">Sort by Date (Soonest First)</option>
+          <option value="prize-desc">Sort by Prize Pool (High to Low)</option>
+          <option value="name-asc">Sort by Name (A-Z)</option>
+        </select>
+      </div>
     </div>
+  </div>
 
-    <div id="results-count" class="results-count"></div>
+  <div id="results-count" class="results-count"></div>
 
-    <div id="tournaments-list" class="tournaments-list">
-        {% if allUpcomingTournaments %}
-            {% for tournament in allUpcomingTournaments | values %}
-                {% include "partials/_upcoming-card.njk" %}
-            {% endfor %}
-        {% else %}
-            <p>No tournament data found.</p>
-        {% endif %}
-    </div>
+  <div id="tournaments-list" class="tournaments-list">
+    {% if allUpcomingTournaments %}
+      {% for tournament in allUpcomingTournaments | values %}
+        {% include "partials/_upcoming-card.njk" %}
+      {% endfor %}
+    {% else %}
+      <p>No tournament data found.</p>
+    {% endif %}
+  </div>
 
-    <div id="no-results-message" style="display: none; text-align: center; padding: 40px;">
-        <h2>No Tournaments Found</h2>
-        <p>Try adjusting your search or filter criteria.</p>
-    </div>
+  <div id="no-results-message" class="no-results-message">
+    <h2>No Tournaments Found</h2>
+    <p>Try adjusting your search or filter criteria.</p>
+    <button id="clear-filters-btn" class="btn btn--secondary">Clear All Filters</button>
+  </div>
 
-    <div class="sentinel" style="height: 50px;"></div>
+  <div class="sentinel"></div>
 </div>
+
+<script>
+  const tournamentData = {{ allUpcomingTournaments | values | dump | safe }};
+</script>
+
 <script type="application/ld+json">
 {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "itemListElement": [
-        {% for tournament in allUpcomingTournaments | values %}
-        {
-            "@type": "ListItem",
-            "position": {{ loop.index }},
-            "item": {
-                "@type": "Event",
-                "name": "{{ tournament.name }}",
-                {# MODIFIED: Use the canonical URL on your site for better SEO #}
-                "url": "{{ site.url }}/upcoming-tournaments/{{ tournament.slug }}/",
-                "startDate": "{{ tournament.startDate }}",
-                "endDate": "{{ tournament.endDate }}",
-                "location": {
-                    "@type": "Place",
-                    "name": "{{ tournament.location }}"
-                },
-                "image": [
-                    {# MODIFIED: Use a site variable instead of a hardcoded domain #}
-                    "{{ site.url }}/images/events/{{ tournament.slug }}.png"
-                   ],
-                "description": "Join the {{ tournament.name }}, a premier rated tournament for {{ tournament.game }}.",
-                "organizer": {
-                    "@type": "Organization",
-                    "name": "FGC Top Players",
-                    "url": "https://fgc-top-players.netlify.app"
-                }
-            }
-        }{{ "," if not loop.last }}
-        {% endfor %}
-    ]
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": [
+    {% for tournament in allUpcomingTournaments | values %}
+    {
+      "@type": "ListItem",
+      "position": {{ loop.index }},
+      "item": {
+        "@type": "Event",
+        "name": "{{ tournament.name }}",
+        "url": "{{ site.url }}/upcoming-tournaments/{{ tournament.slug }}/",
+        "startDate": "{{ tournament.startDate }}",
+        "endDate": "{{ tournament.endDate }}",
+        "location": {
+          "@type": "Place",
+          "name": "{{ tournament.location }}"
+        },
+        "image": [
+          "{{ site.url }}/images/events/{{ tournament.slug }}.png"
+        ],
+        "description": "Join the {{ tournament.name }}, a premier rated tournament for {{ tournament.game }}.",
+        "organizer": {
+          "@type": "Organization",
+          "name": "FGC Top Players",
+          "url": "https://fgc-player-rankings.netlify.app"
+        }
+      }
+    }{{ "," if not loop.last }}
+    {% endfor %}
+  ]
 }
 </script>
 {% endblock %}

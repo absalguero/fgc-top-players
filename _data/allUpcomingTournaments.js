@@ -1,8 +1,11 @@
-// _data/allUpcomingTournaments.js (After)
+// /_data/allUpcomingTournaments.js
+
+// This file defines upcoming tournaments that are not yet in the historical archive.
+// Once a tournament is over, its data should be moved to upcoming-tournaments_archive.json
 
 const archive = require("./upcoming-tournaments_archive.json");
 
-// ✅ Define your new or active tournaments directly in this object.
+// Define your new or active tournaments directly in this object.
 const newTournaments = {
   "ultimate-fighting-arena-2025-3": {
     name: "Ultimate Fighting Arena 2025",
@@ -22,22 +25,10 @@ At UFA, top players, fans, and newcomers come together not only to compete in hi
 UFA 2025 is organized by Gozulting together with community partners and powered by a passionate volunteer base.`,
     venueName: "Docks de Paris",
     notablePlayers: [
-  "Daigo Umehara",
-  "Tokido",
-  "GO1",
-  "Punk",
-  "NuckleDu",
-  "Riddles",
-  "Problem X",
-  "Luffy",
-  "Phenom",
-  "Itabashi Zangief",
-  "Higuchi",
-  "EndingWalker",
-  "Oil King",
-  "Blaz",
-  "Ryan Hart"
-]
+      "Daigo Umehara", "Tokido", "GO1", "Punk", "NuckleDu", "Riddles",
+      "Problem X", "Luffy", "Phenom", "Itabashi Zangief", "Higuchi",
+      "EndingWalker", "Oil King", "Blaz", "Ryan Hart"
+    ]
   },
   "roundhouse-2025": {
     name: "Roundhouse 2025",
@@ -67,7 +58,7 @@ Community favorite side events (Melty Blood, Skullgirls, Rivals of Aether, and m
   }
 };
 
-// Merge the archive with your new tournaments
+// Merge the archive with your new tournaments to create a single data source
 module.exports = {
   ...archive,
   ...newTournaments,

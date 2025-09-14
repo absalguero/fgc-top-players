@@ -1,56 +1,67 @@
+---
+bodyClass: "page-tournament-results"
+---
 {% extends "layout.njk" %}
 
 {% block title %}Tournament Results Archive | FGC Top Players{% endblock %}
 
 {% block content %}
 <div class="content-container">
-    {% include "banner.njk" %}
-    <h1>Tournament Results Archive</h1>
-    <p class="intro-text">Dive into the definitive archive of competitive Street Fighter 6 tournament results. Explore official standings, player placings, and final brackets from major events around the world, including Evo, Combo Breaker, and the Capcom Pro Tour.</p>
+  {% include "banner.njk" %}
+  <h1>Tournament Results Archive</h1>
+  <p class="intro-text">Dive into the definitive archive of competitive Street Fighter 6 tournament results. Explore official standings, player placings, and final brackets from major events around the world, including Evo, Combo Breaker, and the Capcom Pro Tour.</p>
 
-    <div class="controls-container controls-container--archive">
-        <div class="search-wrapper">
-            <input type="text" id="search-input" class="search-form__input" placeholder="Search by Tournament or Date..." autocomplete="off">
-            <button class="search-clear-btn" id="search-clear-btn" aria-label="Clear search">
-                <i class="fas fa-times"></i>
-            </button>
+  <div class="controls-container controls-container--archive">
+    <button id="filter-toggle-btn" class="filter-toggle-btn" aria-expanded="false" aria-controls="filter-panel">
+      <i class="fas fa-filter"></i>
+      Filter & Sort Results
+      <i class="fas fa-chevron-down a-icon"></i>
+    </button>
+    <div id="filter-panel" class="filter-panel">
+      <div class="filter-row filter-row--search">
+        <div class="search-wrapper filter-group">
+          <label for="search-input" class="sr-only">Search by Name</label>
+          <input type="text" id="search-input" class="search-form__input" placeholder="Search by Tournament or Date..." autocomplete="off">
+          <button class="search-clear-btn" id="search-clear-btn" aria-label="Clear search">
+            <i class="fas fa-times"></i>
+          </button>
         </div>
+      </div>
+      <div class="filter-row filter-row--filters">
+        <div class="filter-group">
+          <label for="year-filter">Filter by Year</label>
+          <select id="year-filter" class="sort-select">
+            <option value="">All Years</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="sort-by">Sort by</label>
+          <select id="sort-by" class="sort-select">
+            <option value="date-desc">Date (Newest First)</option>
+            <option value="date-asc">Date (Oldest First)</option>
+            <option value="name-asc">Name (A-Z)</option>
+          </select>
+        </div>
+        <div class="filter-group filter-group--toggle">
+          <label for="rated-only-filter">Show Rated Events Only</label>
+          <input type="checkbox" id="rated-only-filter" class="styled-checkbox">
+        </div>
+      </div>
     </div>
+  </div>
 
-    <div id="results-count" class="results-count"></div>
-
-    <div class="archive-list">
-        {% for event in tournaments.events %}
-        <a href="/tournaments/{{ event.slug }}/"
-           class="archive-item-card js-load-more-item"
-           data-name="{{ event.name | lower }}"
-           data-date-readable="{{ event.date | readableDate | lower }}"
-           data-slug="{{ event.slug }}"
-           data-search-text="{{ (event.name | lower) + ' ' + (event.date | readableDate | lower) }}">
-
-            <div class="event-image-container">
-                <img
-                    src="/images/events/{{ event.slug }}.png"
-                    alt="{{ event.name }}"
-                    class="archive-item-card__image"
-                    loading="lazy"
-                    onerror="this.style.display='none'; this.closest('.archive-item-card').classList.add('no-image');">
-            </div>
-
-            <div class="archive-item-card__content">
-                <span class="archive-item-card__name js-searchable-text">{{ event.name }}</span>
-                <span class="archive-item-card__date js-searchable-text">{{ event.date | readableDate }}</span>
-            </div>
-            <i class="fas fa-chevron-right archive-item-card__chevron"></i>
-        </a>
-        {% endfor %}
-    </div>
-
-    <div id="no-results-message" style="display: none; text-align: center; padding: 40px;">
-        <h2>No Results Found</h2>
-        <p>Try a different search term, or clear the search to see all tournaments.</p>
-    </div>
-    
-    <div class="sentinel" style="height: 1px;"></div>
+  <div id="results-count" class="results-count"></div>
+  <div id="archive-list" class="archive-list"></div>
+  <div id="no-results-message" class="no-results-message">
+      <h2>No Tournaments Found</h2>
+      <p>Try adjusting your search or filter criteria.</p>
+  </div>
+  
+  {# ✅ FIX: Added the sentinel div back for infinite scroll #}
+  <div id="sentinel" class="sentinel"></div>
 </div>
+
+<script>
+  const archiveData = {{ tournaments.events | dump | safe }};
+</script>
 {% endblock %}
