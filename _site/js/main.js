@@ -179,13 +179,14 @@ function initRankingSystemTOC() {
   }
 
   // --- RANKINGS PAGE: LIVE TABLE & INFINITE SCROLL ---
-  function initRankingsTable() {
+function initRankingsTable() {
     const rankingsTableBody = document.querySelector('#rankings-table tbody');
     if (!rankingsTableBody) return;
 
     const sheetURL = 'https://docs.google.com/spreadsheets/d/1otrfs8HN3Shq6U2-qrc4GDxTI4ragnqwbTjweecE12Q/gviz/tq?tqx=out:csv&gid=1862929315';
     const playerSearchInput = document.getElementById('player-search-input');
     const sentinel = document.getElementById('sentinel');
+    const lastUpdatedEl = document.getElementById('last-updated');
     let allPlayers = [], playersToShow = 25, searchTerm = '';
     const playersPerLoad = 25, maxPlayers = 40;
     let currentSortColumn = 0, currentSortDirection = 'asc', currentSortDataType = 'number';
@@ -308,10 +309,19 @@ function initRankingSystemTOC() {
             const response = await fetch(`${sheetURL}&cachebuster=${Date.now()}`);
             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
             const csvText = await response.text();
-            allPlayers = parseCSV(csvText).filter(p => {
+            
+            const rawPlayers = parseCSV(csvText);
+            
+            // ✅ FIX: Extract the last updated date from the first row of data
+            if (lastUpdatedEl && rawPlayers.length > 0 && rawPlayers[0]['Last Updated']) {
+              lastUpdatedEl.textContent = `Last Updated: ${rawPlayers[0]['Last Updated']}`;
+            }
+
+            allPlayers = rawPlayers.filter(p => {
                 const rank = parseInt(p['Rank'], 10);
                 return !isNaN(rank) && rank >= 1 && rank <= maxPlayers;
             });
+
             refreshTable();
             updateSortUI();
             setupSorting();
@@ -348,7 +358,7 @@ function initRankingSystemTOC() {
     }
 
     fetchData();
-  }
+}
   
   // --- UPCOMING TOURNAMENTS PAGE: FILTER & SORT ---
   function initUpcomingTournaments() {
