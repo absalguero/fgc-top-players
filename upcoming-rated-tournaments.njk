@@ -46,12 +46,13 @@ permalink: /upcoming-rated-tournaments/
   <div id="results-count" class="results-count"></div>
 
   <div id="tournaments-list" class="tournaments-list">
-    {% if allUpcomingTournaments %}
-      {% for tournament in allUpcomingTournaments | values %}
+    {% set ratedTournaments = allUpcomingTournaments | values | rejectattr("isArchived", "truthy") | selectattr('tier', 'defined') | list %}
+    {% if ratedTournaments %}
+      {% for tournament in ratedTournaments %}
         {% include "partials/_upcoming-card.njk" %}
       {% endfor %}
     {% else %}
-      <p>No tournament data found.</p>
+      <p>No rated tournament data found.</p>
     {% endif %}
   </div>
 
@@ -65,7 +66,7 @@ permalink: /upcoming-rated-tournaments/
 </div>
 
 <script>
-  const tournamentData = {{ allUpcomingTournaments | values | dump | safe }};
+  const tournamentData = {{ allUpcomingTournaments | values | rejectattr("isArchived", "truthy") | selectattr('tier', 'defined') | dump | safe }};
 </script>
 
 <script type="application/ld+json">
@@ -73,7 +74,7 @@ permalink: /upcoming-rated-tournaments/
   "@context": "https://schema.org",
   "@type": "ItemList",
   "itemListElement": [
-    {% for tournament in allUpcomingTournaments | values %}
+    {% for tournament in ratedTournaments %}
     {
       "@type": "ListItem",
       "position": {{ loop.index }},

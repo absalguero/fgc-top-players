@@ -100,12 +100,12 @@
 
     <aside class="sidebar right-sidebar" aria-label="Contextual Information">
       <h2 class="sidebar__label">Upcoming Tournaments</h2>
-      {% set events = allUpcomingTournaments | values %}
-      {% if events and events.length > 0 %}
-        {% for sidebarEvent in events %}
+      {% set upcomingEvents = allUpcomingTournaments | values | rejectattr("isArchived", "truthy") | list %}
+      {% if upcomingEvents and upcomingEvents.length > 0 %}
+        {% for sidebarEvent in upcomingEvents %}
           {% if loop.index <= 4 %}
             <a href="/upcoming-tournaments/{{ sidebarEvent.slug }}/" class="event-card-link">
-              <div class="event-card">
+              <div class="event-card event-card--{{ (sidebarEvent.tier | lower) | replace('+', '-plus') }}">
                 <span class="event-card__name">{{ sidebarEvent.name }}</span>
                 <img src="/images/events/{{ sidebarEvent.slug }}.png" alt="{{ sidebarEvent.name }}" loading="lazy" class="event-card__image" onerror="this.style.display='none';">
                 <div class="event-card__date">{{ sidebarEvent.dates }}</div>

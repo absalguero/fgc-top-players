@@ -24,7 +24,7 @@ function parseCSV(text) {
       rowData[header] = values[i] ? values[i].replace(/^"|"$/g, '').trim() : '';
     });
     return rowData;
-  }).filter(row => row.Player && row.Player.trim() !== '');
+  }); // ✅ FIX: Removed the incorrect filter that was discarding event data.
 }
 
 const ARCHIVE_PATH = path.join(__dirname, "tournaments_archive.json");
@@ -47,7 +47,7 @@ module.exports = async function() {
     try {
       // 2. Fetch the latest results from the Google Sheet.
       const csvData = await EleventyFetch(googleSheetURL, {
-        duration: "1d",
+        duration: "0",
         type: "text",
         fetchOptions: {
           headers: {
@@ -62,7 +62,8 @@ module.exports = async function() {
       const newEventsGrouped = {};
       liveResults.forEach(row => {
         const eventName = row.Event;
-        if (!eventName) return;
+        // ✅ FIX: Skip any row that is missing an event name OR a date to prevent errors.
+        if (!eventName || !row.Date) return;
 
         if (!newEventsGrouped[eventName]) {
           const eventDate = DateTime.fromFormat(row.Date, "yyyy-MM-dd").toJSDate();

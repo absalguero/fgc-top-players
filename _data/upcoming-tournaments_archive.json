@@ -1,1 +1,22 @@
-{}
+{
+  "ultimate-fighting-arena-2025-3": {
+    "name": "Ultimate Fighting Arena 2025",
+    "isArchived": true,
+    "dates": "Sep 12-14, 2025",
+    "location": "87 Avenue des Magasins Généraux, 93300 Aubervilliers, France",
+    "url": "https://www.ufa.gg/",
+    "tier": "S",
+    "prizes": "€9,324 Pot",
+    "game": "Street Fighter 6",
+    "slug": "ultimate-fighting-arena-2025-3",
+    "streamLink": "https://www.twitch.tv/capcomfighters",
+    "scheduleLink": "https://x.com/UFA_Gaming/status/1966184965449842863",
+    "description": "Ultimate Fighting Arena (UFA) is Europe’s biggest festival dedicated to fighting games, held over three days from September 12-14, 2025 at Docks de Paris, Aubervilliers, Grand Paris.\n\nAt UFA, top players, fans, and newcomers come together not only to compete in high-stakes tournaments, but also to dive into a full cultural celebration of the fighting game community. Attendees can play in the Arcade Zone, enjoy world-class exhibitions, shop at merchandise booths, sample food from a variety of food trucks, and explore the artist alley.\n\nUFA 2025 is organized by Gozulting together with community partners and powered by a passionate volunteer base.",
+    "venueName": "Docks de Paris",
+    "notablePlayers": [
+      "Daigo Umehara", "Tokido", "GO1", "Punk", "NuckleDu", "Riddles",
+      "Problem X", "Luffy", "Phenom", "Itabashi Zangief", "Higuchi",
+      "EndingWalker", "Oil King", "Blaz", "Ryan Hart"
+    ]
+  }
+}

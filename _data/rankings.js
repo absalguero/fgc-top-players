@@ -1,4 +1,4 @@
-// /_data/rankings.js
+// _data/rankings.js
 const EleventyFetch = require("@11ty/eleventy-fetch");
 const fs = require("fs");
 const path = require("path");
@@ -46,9 +46,9 @@ module.exports = async function() {
   try {
     const sheetURL = 'https://docs.google.com/spreadsheets/d/1otrfs8HN3Shq6U2-qrc4GDxTI4ragnqwbTjweecE12Q/gviz/tq?tqx=out:csv&gid=1862929315';
     
-    // Fetch CSV data from Google Sheets, caching the result.
+    // Fetch CSV data from Google Sheets.
     const csvText = await EleventyFetch(sheetURL, {
-      duration: "1d", // Cache the result for one day
+      duration: "0", // Cache the result for zero duration to force fresh fetch
       type: "text",
       directory: ".cache",
       fetchOptions: {
@@ -84,7 +84,7 @@ module.exports = async function() {
     return freshData;
 
   } catch (error) {
-    console.warn("⚠️  Eleventy fetch for rankings failed. Falling back to cached data.", error.message);
+    console.warn("⚠️ Eleventy fetch for rankings failed. Falling back to cached data.", error.message);
     return cachedData;
   }
 };
