@@ -245,7 +245,7 @@ a:hover, a:focus {
 .banner {
   display: block;
   max-width: 300px;
-  margin: 0 auto 0rem;
+  margin: 0 auto 0;
 }
 
 main.content > .content-container:first-child > .banner:first-child {
@@ -2131,6 +2131,10 @@ th.sorted.desc .sort-icon, .mobile-sort-controls .btn.sorted.desc .sort-icon {
     width: auto;
     height: auto;
     padding-top: 0;
+  }
+
+  .nav-menu__link {
+    padding: 0.35rem 1rem 0.35rem 3.25rem;
   }
 
   .mobile-header, .mobile-sort-controls, .filter-toggle-btn, .is-hidden-mobile {
