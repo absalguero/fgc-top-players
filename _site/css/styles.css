@@ -31,18 +31,19 @@
 }
 
 html {
+  height: 100%; /* 1. Set the root element's height */
   scroll-behavior: smooth;
 }
 
 body {
+  display: flex;       /* 2. Make the body a flex container */
+  flex-direction: column;
+  min-height: 100%;    /* 3. Make the body fill the full height of <html> */
   margin: 0;
   background: var(--color-background) url('/images/background.png') center/cover no-repeat fixed;
-  color: var(--color-text);
   font-family: var(--font-secondary);
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  color: var(--color-text);
+  overflow-x: hidden;
 }
 
 body.no-scroll {
@@ -2115,7 +2116,7 @@ th.sorted.desc .sort-icon, .mobile-sort-controls .btn.sorted.desc .sort-icon {
     display: grid;
     grid-template-columns: var(--sidebar-width) 1fr var(--sidebar-width);
     gap: 0;
-    align-items: start;
+    align-items: stretch;
   }
 
   .content {

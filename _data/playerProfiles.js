@@ -7,9 +7,12 @@ const getHistoricalData = require("./historical.js");
 function createSafeSlug(name) {
   const s = name || '';
   const slug = slugify(s, {
-    remove: /[<>:"/\\|?*]/g
+    // This now includes the '#' to ensure it gets removed
+    remove: /[#<>:"/\\|?*]/g,
+    lower: true,    // Ensure slugs are always lowercase
+    strict: true    // Remove any remaining invalid characters
   });
-  return slug.length > 0 ? slug : encodeURIComponent(s);
+  return slug;
 }
 
 function getStandardDeviation(arr) {
