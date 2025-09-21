@@ -53,16 +53,17 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
                 {% set rank = player_data.Rank | int if player_data else 0 %}
                 {% set finish = result.Finish | int %}
 
-                {% set card_class = "" %}
-                {% if rank >= 1 and rank <= 4 %}
-                    {% set card_class = "rank-" + rank %}
-                {% elseif rank >= 5 and rank <= 40 %}
-                    {% set card_class = "ranked-6-40" %}
-                {% endif %}
+                {% set rank_num = rank | int %}
+{% set card_class = "" %}
+{% if rank_num >= 1 and rank_num <= 4 %}
+    {% set card_class = "rank-" + rank_num %}
+{% elseif rank_num >= 5 and rank_num <= 40 %}
+    {% set card_class = "ranked-6-40" %}
+{% endif %}
 
                 {% set show_photo = player_data and rank > 0 and rank <= 40 and player_data['Player Icon'] %}
 
-                <div class="result-card {{ card_class }} {% if finish >= 1 and finish <= 4 %}finish-style-{{ finish }}{% endif %}">
+                <div class="result-card {{ card_class }} {% if finish >= 1 and finish <= 4 %}finish-style-{{ finish }}{% elseif finish >= 5 and finish <= 8 %}finish-style-top8{% endif %}">
                     <div class="result-card__finish">
                         {%- set finish_num = result.Finish | int -%}
                         {%- if finish_num >= 11 and finish_num <= 13 -%}
@@ -90,7 +91,7 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
                             <div class="player-info__text-container">
                                 <span>{{ result.Player }}</span>
                                 {% if rank > 0 and rank <= 40 %}
-                                    <span class="rank-badge {% if rank <= 4 %}rank-badge--top5{% endif %}">
+                                    <span class="rank-badge {% if rank >= 1 and rank <= 40 %}rank-badge--top5{% endif %}">
                                         #{{ rank }}
                                     </span>
                                 {% endif %}

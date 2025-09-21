@@ -1,25 +1,15 @@
-// _data/rankings.js
 const EleventyFetch = require("@11ty/eleventy-fetch");
 const fs = require("fs");
 const path = require("path");
 
 const CACHE_PATH = path.join(__dirname, "rankings_cache.json");
 
-/**
- * Parses a single row from a CSV string, handling quoted values.
- * @param {string} rowString The CSV row to parse.
- * @returns {string[]} An array of cell values.
- */
 function parseCsvRow(rowString) {
   if (!rowString) return [];
   const values = rowString.match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g) || [];
   return values.map(value => value.replace(/^"|"$/g, '').trim());
 }
 
-/**
- * Reads player ranking data from a local JSON cache file.
- * @returns {{lastUpdated: string, players: Array}} The cached data or a default object.
- */
 const readFromCache = () => {
   if (fs.existsSync(CACHE_PATH)) {
     try {
@@ -32,10 +22,6 @@ const readFromCache = () => {
   return { lastUpdated: "N/A", players: [] };
 };
 
-/**
- * Writes player ranking data to the local JSON cache file.
- * @param {object} data The data to write to the cache.
- */
 const writeToCache = (data) => {
   fs.writeFileSync(CACHE_PATH, JSON.stringify(data, null, 2));
 };
@@ -46,9 +32,8 @@ module.exports = async function() {
   try {
     const sheetURL = 'https://docs.google.com/spreadsheets/d/1otrfs8HN3Shq6U2-qrc4GDxTI4ragnqwbTjweecE12Q/gviz/tq?tqx=out:csv&gid=1862929315';
     
-    // Fetch CSV data from Google Sheets.
     const csvText = await EleventyFetch(sheetURL, {
-      duration: "0", // Cache the result for zero duration to force fresh fetch
+      duration: "0",
       type: "text",
       directory: ".cache",
       fetchOptions: {
@@ -81,10 +66,18 @@ module.exports = async function() {
 
     const freshData = { players, lastUpdated };
     writeToCache(freshData);
+    console.log("✅ Successfully fetched and filtered fresh rankings data.");
     return freshData;
 
   } catch (error) {
-    console.warn("⚠️ Eleventy fetch for rankings failed. Falling back to cached data.", error.message);
+    console.warn(`⚠️ Eleventy fetch for rankings failed: ${error.message}. Falling back to cached data.`);
+    
+    // ✅ SAFETY NET: Filter the cached data as a fallback.
+    if (cachedData && cachedData.players) {
+        console.log("Attempting to filter cached data as a fallback...");
+        cachedData.players = cachedData.players.filter(p => p.Player && p.Player.trim() !== '');
+    }
+    
     return cachedData;
   }
 };

@@ -18,7 +18,7 @@
   --color-rank-silver: #C0C0C0;
   --color-rank-bronze: #cd7f32;
   --color-rank-steel: #b0c4de;
-  --color-rank-green: #90ee90;
+  --color-rank-green: #9881b3;
   --font-primary: 'Permanent Marker', cursive;
   --font-secondary: 'Roboto', Arial, sans-serif;
   --header-height: 60px;
@@ -83,11 +83,10 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
-mark {
-  background-color: var(--color-secondary);
-  color: var(--color-surface-3);
-  padding: 0 2px;
-  border-radius: 3px;
+/* Add this to your main CSS file */
+::highlight(search-highlight) {
+  background-color: #ffcc00; /* Yellow highlight color */
+  color: #000;
 }
 
 .intro-text {
@@ -426,19 +425,20 @@ main.content > .content-container:first-child > .banner:first-child {
   gap: 1rem;
   align-items: flex-end;
   padding: 0.25rem;
-  margin: 1rem auto 1.25rem;
+  margin: 1rem auto 0rem;
   background-color: var(--color-surface-1);
   border: 1px solid var(--color-surface-4);
   border-radius: var(--border-radius);
   position: sticky;
   top: var(--header-height);
   z-index: 1250;
+  width: fit-content; /* Add this line */
 }
 
 .results-count {
   font-size: 1.05rem;
   color: var(--color-text-muted);
-  margin: -0.4rem 0 0.75rem;
+  margin: 0.5rem 0 0.75rem;
   text-align: center;
 }
 
@@ -501,7 +501,6 @@ main.content > .content-container:first-child > .banner:first-child {
   gap: 1rem;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -513,7 +512,6 @@ main.content > .content-container:first-child > .banner:first-child {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  flex-grow: 1;
 }
 
 .filter-group label {
@@ -524,10 +522,13 @@ main.content > .content-container:first-child > .banner:first-child {
 }
 
 .filter-group--toggle {
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem 0;
+}
+
+.filter-row--filters {
+  align-items: flex-start;
 }
 
 .sort-select {
@@ -704,13 +705,6 @@ main.content > .content-container:first-child > .banner:first-child {
   vertical-align: middle;
 }
 
-.data-table .loading-row td {
-  text-align: center;
-  justify-content: center;
-  padding: 2rem;
-  font-size: 1.2rem;
-}
-
 .data-table .cell-player {
   text-align: left;
 }
@@ -742,9 +736,8 @@ main.content > .content-container:first-child > .banner:first-child {
 }
 
 .rank-badge {
-  background-color: rgba(0, 100, 0, 0.4);
   color: var(--color-rank-green);
-  border: 1px solid rgba(0, 200, 0, 0.5);
+  border: #555;
   padding: 2px 6px;
   font-size: 0.875rem;
   font-weight: bold;
@@ -752,6 +745,7 @@ main.content > .content-container:first-child > .banner:first-child {
   display: inline-block;
   min-width: 35px;
   white-space: nowrap;
+  text-align: center;
 }
 
 .rank-badge--top5 {
@@ -761,18 +755,30 @@ main.content > .content-container:first-child > .banner:first-child {
 
 .rank-1 .rank-badge--top5 {
   color: var(--color-rank-gold);
+  border: 1px solid var(--color-rank-gold);
 }
 
 .rank-2 .rank-badge--top5 {
   color: var(--color-rank-silver);
+  border: 1px solid var(--color-rank-silver);
 }
 
 .rank-3 .rank-badge--top5 {
   color: var(--color-rank-bronze);
+  border: 1px solid var(--color-rank-bronze);
 }
 
 .rank-4 .rank-badge--top5 {
   color: var(--color-rank-steel);
+  border: 1px solid var(--color-rank-steel);
+}
+
+/* Make rank badges for ranks 5-40 match the dark background of ranks 1-4 */
+.ranked-6-40 .rank-badge--top5,
+.rank-5 .rank-badge--top5 {
+  background-color: var(--color-surface-2) !important;
+  border: 1px solid var(--color-rank-green) !important;
+  color: var(--color-rank-green) !important;
 }
 
 .change-cell {
@@ -840,8 +846,10 @@ th.sorted.desc .sort-icon, .mobile-sort-controls .btn.sorted.desc .sort-icon {
   color: var(--color-rank-steel) !important;
 }
 
-.page-event .result-card.ranked-6-40, .page-event .np-card.ranked-6-40 {
-  background-color: rgba(144, 238, 144, 0.1) !important;
+.page-event .result-card.ranked-6-40, 
+.page-event .np-card.ranked-6-40,
+.page-player-profiles .archive-item-card.ranked-6-40 {
+  background-color: rgba(152, 129, 179, 0.2) !important; /* Changed to subtle purple */
   color: var(--color-rank-green) !important;
 }
 
@@ -865,9 +873,19 @@ th.sorted.desc .sort-icon, .mobile-sort-controls .btn.sorted.desc .sort-icon {
   border-color: var(--color-rank-steel);
 }
 
+.rank-5 .player-icon, .rank-5 .np-icon, .rank-5 .character-icon, .rank-5 .flag-icon,
 .ranked-6-40 .player-icon, .ranked-6-40 .np-icon, .ranked-6-40 .character-icon, .ranked-6-40 .flag-icon {
   box-shadow: 0 0 8px 2px var(--color-rank-green);
   border-color: var(--color-rank-green);
+}
+
+/* /css/styles.css */
+
+/* NEW: Background and Text Color for Ranks 5-40 */
+.rank-5,
+.ranked-6-40 {
+  background-color: rgba(152, 129, 179, 0.1) !important; /* This is your new subtle purple */
+  color: var(--color-rank-green) !important;
 }
 
 /* --- Cards (Archive, Upcoming, Event, etc.) --- */
@@ -883,23 +901,77 @@ th.sorted.desc .sort-icon, .mobile-sort-controls .btn.sorted.desc .sort-icon {
 }
 
 .archive-list {
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
 }
 
 .results-grid {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
-/* Base Card */
+/* ==========================================================================
+   Definitive Tournament Card Layout
+   ========================================================================== */
+
+/* 1. Defines a clean three-column, vertically centered grid */
 .archive-item-card {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 0.75rem;
+  display: flex; /* Changed from grid to flex */
+  align-items: center; /* This will now perfectly center items vertically */
+  gap: 0.75rem; /* Simplified gap for flexbox */
+  padding: 0.5rem;
+  
+  /* --- Standard Card Styles --- */
+  position: relative;
   background-color: var(--color-surface-2);
   border: 1px solid var(--color-surface-4);
   border-radius: var(--border-radius);
   transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.archive-item-card:hover {
+  text-decoration: none;
+  transform: translateY(-4px);
+}
+
+/* 2. Ensures the text content stacks vertically */
+.archive-item-card__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.archive-item-card__name {
+  font-weight: bold;
+  color: var(--color-text);
+}
+
+.archive-item-card__date {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+/* 3. Styles the chevron as a distinct, clickable element */
+/* --- Generic Card Chevron --- */
+.archive-item-card__chevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: var(--color-surface-4);
+  border-radius: 50%;
+  color: var(--color-text);
+  font-size: 0.9rem;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s ease-out;
+}
+
+/* --- Chevron Hover Effect (Restored) --- */
+.archive-item-card:hover .archive-item-card__chevron {
+  transform: scale(1.1);
+}
+
+/* Places the event image in the first column, spanning both rows */
+.archive-item-card > .event-image-container {
+  grid-column: 1;
+  grid-row: 1 / 3;
 }
 
 .archive-item-card:hover {
@@ -924,14 +996,44 @@ th.sorted.desc .sort-icon, .mobile-sort-controls .btn.sorted.desc .sort-icon {
   font-size: 0.9rem;
 }
 
-.archive-item-card__chevron {
-  color: #555;
-  margin-left: auto;
-  transition: color 0.2s;
+/* Styling for the tournament archive card chevron */
+.page-tournament-results .archive-item-card__chevron {
+  /* Use absolute positioning to place the icon in the bottom-right corner */
+  position: absolute;
+  bottom: 0.75rem; /* Matches the vertical position from player-profiles */
+  right: 0.75rem;  /* Matches the horizontal position from player-profiles */
+
+  /* Remove the circular background and fixed dimensions */
+  background-color: transparent;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+
+  /* Reset any conflicting flexbox properties */
+  display: block;
+  margin-left: initial;
+  
+  /* Keep the other necessary styles */
+  color: var(--color-text);
+  font-size: 0.9rem;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s ease-out;
 }
 
-.archive-item-card:hover .archive-item-card__chevron {
-  color: var(--color-secondary);
+/* Apply tier-based colors to the tournament chevrons */
+.page-tournament-results .archive-item-card--s-plus .archive-item-card__chevron {
+  color: var(--color-rank-gold);
+}
+
+.page-tournament-results .archive-item-card--s .archive-item-card__chevron {
+  color: var(--color-rank-silver);
+}
+
+.page-tournament-results .archive-item-card--a .archive-item-card__chevron {
+  color: var(--color-rank-bronze);
+}
+
+.page-tournament-results .archive-item-card--b .archive-item-card__chevron {
+  color: var(--color-rank-steel);
 }
 
 /* Right Sidebar Event Card */
@@ -1063,6 +1165,7 @@ th.sorted.desc .sort-icon, .mobile-sort-controls .btn.sorted.desc .sort-icon {
   gap: 0.5rem;
 }
 
+/* --- Upcoming Card Chevron --- */
 .simple-card__chevron {
   position: absolute;
   bottom: 1rem;
@@ -1077,6 +1180,11 @@ th.sorted.desc .sort-icon, .mobile-sort-controls .btn.sorted.desc .sort-icon {
   font-size: 1rem;
   color: #ccc;
   transition: all 0.2s;
+}
+
+/* --- Chevron Hover Effect (Restored) --- */
+.simple-card:hover .simple-card__chevron {
+  transform: scale(1.1);
 }
 
 .simple-card__click-wrapper:hover .simple-card__chevron {
@@ -1406,7 +1514,7 @@ th.sorted.desc .sort-icon, .mobile-sort-controls .btn.sorted.desc .sort-icon {
 }
 
 .event-header__meta span {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .event-image-container {
@@ -1446,16 +1554,26 @@ th.sorted.desc .sort-icon, .mobile-sort-controls .btn.sorted.desc .sort-icon {
   height: 56px;
 }
 
+/* In /css/styles.css, replace the old event-header rules with these */
+
 .event-header--s-plus {
+  background: linear-gradient(to right, rgba(255, 215, 0, 0.45), transparent 80%);
   animation: breathing-glow 3s ease-in-out infinite;
 }
 
 .event-header--s {
+  background: linear-gradient(to right, rgba(192, 192, 192, 0.45), transparent 80%);
   box-shadow: 0 0 20px 0px rgba(192, 192, 192, 0.6);
 }
 
 .event-header--a {
+  background: linear-gradient(to right, rgba(205, 127, 50, 0.45), transparent 80%);
   box-shadow: 0 0 0 1px #CD7F32;
+}
+
+.event-header--b {
+  background: linear-gradient(to right, rgba(176, 196, 222, 0.45), transparent 80%);
+  box-shadow: 0 0 0 1px #B0C4DE;
 }
 
 .main-action-hub {
@@ -1506,8 +1624,10 @@ th.sorted.desc .sort-icon, .mobile-sort-controls .btn.sorted.desc .sort-icon {
 .meta-column {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  align-items: center;
+  gap: 0.75rem;
+  align-items: flex-start; /* This aligns the icons vertically */
+  width: fit-content;      /* This helps center the whole block */
+  padding-left: 1rem;
 }
 
 .meta-column h3 {
@@ -1516,24 +1636,23 @@ th.sorted.desc .sort-icon, .mobile-sort-controls .btn.sorted.desc .sort-icon {
 
 .meta-item {
   display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  width: 100%;
+  align-items: baseline; /* Aligns top of icon with top of text */
+  gap: 0.75rem;            /* This creates the consistent gap */
   text-decoration: none;
-  justify-content: center;
+  margin-left: 2rem;
 }
 
 .meta-item .fas {
   flex-shrink: 0;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   color: var(--color-primary);
-  width: 25px;
+  width: 20px;
   text-align: center;
   padding-top: 0rem;
 }
 
 .meta-item-content {
-  text-align: left;
+  text-align: center;
 }
 
 .meta-item strong {
@@ -1542,10 +1661,29 @@ th.sorted.desc .sort-icon, .mobile-sort-controls .btn.sorted.desc .sort-icon {
   text-transform: uppercase;
 }
 
+/* Base style for the text values */
 .meta-item span {
+  margin-left: 0.5rem; /* Adds a small space between the label and value */
   font-size: 1.1rem;
   color: var(--color-text);
-  margin-left: 0.5rem;
+}
+
+/* Target the text container ONLY in the second row (Venue) */
+.meta-column .meta-item:nth-of-type(2) .meta-item-content {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+/* Target the label ONLY in the second row (Venue) */
+.meta-column .meta-item:nth-of-type(2) strong {
+  flex-basis: 60px; /* Gives the 'VENUE' label a fixed width */
+  flex-shrink: 0;
+}
+
+/* Target the value ONLY in the second row (Venue) */
+.meta-column .meta-item:nth-of-type(2) span {
+  margin-left: 0; /* Remove the old margin, as the flex gap now handles it */
 }
 
 .travel-links {
@@ -1569,9 +1707,9 @@ th.sorted.desc .sort-icon, .mobile-sort-controls .btn.sorted.desc .sort-icon {
 }
 
 .description-content {
-  border-bottom: 2px solid var(--color-primary);
-  padding-bottom: 1.5rem;
-  margin-top: 1.5rem;
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: 0.5rem; /* Reduced bottom padding */
+    margin-top: 0rem; /* Reduced top margin */
 }
 
 .description-content h3 {
@@ -1651,7 +1789,7 @@ th.sorted.desc .sort-icon, .mobile-sort-controls .btn.sorted.desc .sort-icon {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 1rem;
+    margin: 0.5rem 0; /* This applies 1rem to the top and bottom */
   }
 
   .mobile-sort-controls button[data-column-index="5"] {
@@ -1659,7 +1797,11 @@ th.sorted.desc .sort-icon, .mobile-sort-controls .btn.sorted.desc .sort-icon {
   }
 
   .archive-list {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+
+  .page-tournament-results .archive-list {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .controls-container--archive {
@@ -1684,82 +1826,187 @@ th.sorted.desc .sort-icon, .mobile-sort-controls .btn.sorted.desc .sort-icon {
   }
 
   .page-ranking-system .cta-container {
-    margin: 1rem 0;
+    margin: 0 0 0.75rem;
   }
 
-  /* Responsive Data Table */
+/* ==========================================================================
+     REDESIGNED: Mobile Rankings Cards (Final Polished Version)
+     ========================================================================== */
+
+  /* 1. Hide the original table header on mobile */
   .data-table thead {
     display: none;
   }
 
-  .data-table, .data-table tbody, .data-table tr, .data-table td {
+  /* 2. Reset base table elements for a card-based layout */
+  .data-table,
+  .data-table tbody,
+  .data-table tr,
+  .data-table td {
     display: block;
     width: 100%;
   }
-
   .data-table {
     border: 0;
     min-width: unset;
-    border-spacing: 0 1rem;
+    border-spacing: 0;
   }
 
+  /* 3. Style the TR as the new card */
   .data-table tr {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1rem;
+    background-color: var(--color-surface-2);
     border: 1px solid var(--color-surface-4);
-    border-radius: 5px;
+    border-radius: var(--border-radius);
+    padding: 0.75rem 3rem 0.75rem 0.75rem; /* Space for the chevron */
+    margin-bottom: 0.25rem;
+    position: relative;
+    cursor: pointer;
     box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-    padding: 0;
   }
 
+  /* 4. Reset and style individual TDs */
   .data-table td {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    text-align: right;
-    border: 0;
-    border-bottom: 1px solid var(--color-surface-4);
-    padding: 0.75rem 1rem;
-  }
-
-  .data-table td::before {
-    content: attr(data-label);
-    font-weight: bold;
+    width: auto;
+    border: none;
+    padding: 0;
     text-align: left;
-    margin-right: 1rem;
+  }
+  .data-table td::before {
+    content: none;
   }
 
-  .data-table td:last-child {
-    border-bottom: 0;
-  }
+  /* 5. Order the VISIBLE cells */
+  .data-table td:nth-child(1) { order: 1; /* Rank */ }
+  .data-table td:nth-child(3) { order: 2; flex-grow: 1; /* Player */ }
+  .data-table td:nth-child(6) { order: 3; /* Rating */ }
+  .data-table td:nth-child(4) { order: 4; /* Character */ }
 
-  .data-table td.expandable-cell {
-    position: relative;
-    padding-right: 2.5rem;
-    cursor: pointer;
-  }
-
-  .data-table td.expandable-cell::after {
-    content: '+';
-    position: absolute;
-    top: 50%;
-    right: 1rem;
-    transform: translateY(-50%);
-    font-size: 1.5rem;
-    font-weight: bold;
-    transition: transform 0.2s;
-  }
-
-  .data-table tr.is-expanded .expandable-cell::after {
-    content: '−';
-  }
-
+  /* 6. Style the HIDDEN cells */
   .data-table td.cell-hidden-mobile {
     display: none;
+    order: 5;
+    flex-basis: 100%;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--color-surface-4);
+    justify-content: space-between;
   }
-
+  .data-table td.cell-hidden-mobile::before {
+    content: attr(data-label);
+    font-weight: bold;
+  }
   .data-table tr.is-expanded td.cell-hidden-mobile {
     display: flex;
+  }
+
+  /* 7. Chevron Indicator Styling */
+  .data-table td.expandable-cell { position: static; padding-right: 0; }
+  .data-table td.expandable-cell::after,
+  .data-table tr.is-expanded .expandable-cell::after { content: none; }
+
+  .data-table tr::after {
+    content: '\f078';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    display: inline-block;
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    transition: transform 0.3s ease, color 0.2s;
+  }
+  .data-table tr:hover::after { color: var(--color-secondary); }
+  .data-table tr.is-expanded::after { transform: translateY(-50%) rotate(180deg); }
+
+  /* Tier styling for Chevron */
+  .data-table tr.rank-1::after { color: var(--color-rank-gold); }
+  .data-table tr.rank-2::after { color: var(--color-rank-silver); }
+  .data-table tr.rank-3::after { color: var(--color-rank-bronze); }
+  .data-table tr.rank-4::after { color: var(--color-rank-steel); }
+  .data-table tr.ranked-6-40::after { color: var(--color-rank-green); }
+
+  /* 8. REVISED: Rank Number Circle Styling */
+  .data-table td:nth-child(1) {
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, var(--color-surface-3), var(--color-surface-2));
+    border: 2px solid var(--color-surface-4);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    color: var(--color-text);
+  }
+  /* Tier styling for Rank Number (Number color, border, shadow, and subtle background glow) */
+  .data-table tr.rank-1 td:nth-child(1) {
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.25) 0%, transparent 70%), linear-gradient(145deg, var(--color-surface-3), var(--color-surface-2));
+    color: var(--color-rank-gold);
+    border-color: var(--color-rank-gold);
+    box-shadow: 0 0 8px var(--color-rank-gold);
+  }
+  .data-table tr.rank-2 td:nth-child(1) {
+    background: radial-gradient(circle, rgba(192, 192, 192, 0.25) 0%, transparent 70%), linear-gradient(145deg, var(--color-surface-3), var(--color-surface-2));
+    color: var(--color-rank-silver);
+    border-color: var(--color-rank-silver);
+    box-shadow: 0 0 8px var(--color-rank-silver);
+  }
+  .data-table tr.rank-3 td:nth-child(1) {
+    background: radial-gradient(circle, rgba(205, 127, 50, 0.25) 0%, transparent 70%), linear-gradient(145deg, var(--color-surface-3), var(--color-surface-2));
+    color: var(--color-rank-bronze);
+    border-color: var(--color-rank-bronze);
+    box-shadow: 0 0 8px var(--color-rank-bronze);
+  }
+  .data-table tr.rank-4 td:nth-child(1) {
+    background: radial-gradient(circle, rgba(176, 196, 222, 0.25) 0%, transparent 70%), linear-gradient(145deg, var(--color-surface-3), var(--color-surface-2));
+    color: var(--color-rank-steel);
+    border-color: var(--color-rank-steel);
+    box-shadow: 0 0 8px var(--color-rank-steel);
+  }
+  .data-table tr.ranked-6-40 td:nth-child(1) {
+    background: radial-gradient(circle, rgba(144, 238, 144, 0.2) 0%, transparent 70%), linear-gradient(145deg, var(--color-surface-3), var(--color-surface-2));
+    color: var(--color-rank-green);
+    border-color: var(--color-rank-green);
+    box-shadow: 0 0 8px var(--color-rank-green);
+  }
+
+  /* 9. Rating Points & Header Styling */
+  .data-table td:nth-child(6) {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0.4rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  .data-table td:nth-child(6)::before {
+    content: 'Rating';
+    font-size: 0.75rem;
+    font-weight: normal;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+  }
+
+  /* 10. Fine-tune other details */
+  .data-table td:nth-child(3) .player-cell-content span {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  .data-table td:nth-child(4) .character-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  /* Ensures the search input on the mobile rankings page is wide enough for its text */
+  #player-search-input {
+    min-width: 43ch;
   }
 
   /* Event Detail Page (Mobile) */
@@ -1788,6 +2035,7 @@ th.sorted.desc .sort-icon, .mobile-sort-controls .btn.sorted.desc .sort-icon {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center; /* Add this line */
   }
 
   .event-header__details h1 {
@@ -1816,6 +2064,42 @@ th.sorted.desc .sort-icon, .mobile-sort-controls .btn.sorted.desc .sort-icon {
   .main-action-hub {
     margin: 0.75rem 0 0rem;
   }
+
+  /* Constrains the width of the search container on the mobile rankings page */
+  .page-rankings .controls-container {
+    width: fit-content;
+  }
+}
+
+/* ==========================================================================
+   Definitive Centering for Loading Row
+   ========================================================================== */
+
+#rankings-table .loading-row td {
+  /* This display property is critical for centering */
+  display: block; 
+  width: 100%;
+  text-align: center;
+  
+  /* Resetting potentially conflicting styles */
+  justify-content: unset;
+  border: none;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: var(--color-text-muted);
+}
+
+/* This resets the parent row to a simple block on mobile */
+@media (max-width: 768px) {
+  #rankings-table tr.loading-row {
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+  }
 }
 
 /* --- Tablet (for notable players grid) --- */
@@ -1831,6 +2115,7 @@ th.sorted.desc .sort-icon, .mobile-sort-controls .btn.sorted.desc .sort-icon {
     display: grid;
     grid-template-columns: var(--sidebar-width) 1fr var(--sidebar-width);
     gap: 0;
+    align-items: start;
   }
 
   .content {
@@ -1845,10 +2130,6 @@ th.sorted.desc .sort-icon, .mobile-sort-controls .btn.sorted.desc .sort-icon {
     width: auto;
     height: auto;
     padding-top: 0;
-  }
-
-  .right-sidebar {
-    margin-top: 1rem;
   }
 
   .mobile-header, .mobile-sort-controls, .filter-toggle-btn, .is-hidden-mobile {
@@ -1888,10 +2169,6 @@ th.sorted.desc .sort-icon, .mobile-sort-controls .btn.sorted.desc .sort-icon {
 
   .page-upcoming-tournaments .filter-group .sort-select {
     width: 280px;
-  }
-
-  .archive-list {
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
 
   /* Event Page */
@@ -2004,10 +2281,14 @@ th.sorted.desc .sort-icon, .mobile-sort-controls .btn.sorted.desc .sort-icon {
   border-left: 5px solid var(--color-primary);
 }
 
-.profile-header.rank-1 { border-left-color: var(--color-rank-gold); }
-.profile-header.rank-2 { border-left-color: var(--color-rank-silver); }
-.profile-header.rank-3 { border-left-color: var(--color-rank-bronze); }
-.profile-header.rank-4 { border-left-color: var(--color-rank-steel); }
+/* --- Player Profile Header: Rank Background Styling --- */
+
+/* Adds a subtle background color based on rank */
+.profile-header.rank-1 { background-color: #ffd7001a; border-left-color: var(--color-rank-gold); }
+.profile-header.rank-2 { background-color: #c0c0c01a; border-left-color: var(--color-rank-silver); }
+.profile-header.rank-3 { background-color: #cd7f321a; border-left-color: var(--color-rank-bronze); }
+.profile-header.rank-4 { background-color: #b0c4de1a; border-left-color: var(--color-rank-steel); }
+.profile-header.ranked-6-40 { background-color: rgba(144, 238, 144, 0.1); border-left-color: var(--color-rank-green); }
 
 .profile-header__photo {
   grid-area: photo;
@@ -2047,8 +2328,10 @@ th.sorted.desc .sort-icon, .mobile-sort-controls .btn.sorted.desc .sort-icon {
 .flag-icon-small, .char-icon-small {
   width: 24px;
   height: 24px;
+  min-width: 24px;
   border-radius: 50%;
   object-fit: cover;
+  vertical-align: middle;
 }
 
 .profile-header__rank {
@@ -2133,7 +2416,7 @@ th.sorted.desc .sort-icon, .mobile-sort-controls .btn.sorted.desc .sort-icon {
 .stat-item__value {
   font-size: 1.5rem;
   font-weight: bold;
-  color: var(--color-secondary);
+  color: var(--color-text);
 }
 .stat-item--gold .stat-item__value {
   color: var(--color-rank-gold);
@@ -2167,6 +2450,12 @@ th.sorted.desc .sort-icon, .mobile-sort-controls .btn.sorted.desc .sort-icon {
 .result-row.finish-style-2 { background-color: #c0c0c01a; }
 .result-row.finish-style-3 { background-color: #cd7f321a; }
 .result-row.finish-style-4 { background-color: #b0c4de1a; }
+/* New style for Top 8 finishers */
+.result-card.finish-style-top8 .result-card__finish {
+  font-family: var(--font-primary);
+  color: var(--color-rank-green); /* A nice subtle color */
+  font-weight: 700; /* Make it bold to stand out */
+}
 
 .result-row__finish {
   font-weight: bold;
@@ -2250,5 +2539,2171 @@ th.sorted.desc .sort-icon, .mobile-sort-controls .btn.sorted.desc .sort-icon {
   }
   .profile-section--stats-graph {
     grid-template-columns: 300px 1fr;
+  }
+}
+
+/* in /css/styles.css, before media queries */
+
+/* --- Player Card on Listing Page --- */
+.archive-item-card .player-card__image-container {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  /* Use the existing player-icon class for rank borders */
+}
+
+.player-card__image-container {
+    display: flex;
+    justify-content: center; /* Horizontally centers the icon */
+    align-items: center; /* Vertically centers the icon */
+}
+
+.archive-item-card .player-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: var(--color-surface-4);
+}
+
+/* ==========================================================================
+   7. Player Profiles Page - Filter Control Fixes
+   ========================================================================== */
+
+/* A generic class for all styled dropdowns, copied from .sort-select */
+.styled-select {
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ccc' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1em;
+  padding: 0.75rem 2.5rem 0.75rem 1rem; /* Adjusted padding for arrow */
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #666;
+  background-color: var(--color-surface-4);
+  color: #d4d4d4;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  width: 100%; /* Make them fill their group container by default */
+}
+
+.styled-select:focus {
+  border-color: var(--color-primary);
+}
+
+/* Styles for the static 'Game: SF6' text to make it look like a filter */
+.filter-group--static {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #666;
+  background-color: var(--color-surface-4);
+  color: #d4d4d4;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.filter-group--static .static-label {
+  color: var(--color-text-muted);
+  margin-right: 0.5rem;
+}
+
+.filter-group--static .static-value {
+  font-weight: bold;
+  color: var(--color-text);
+}
+
+
+/* ==========================================================================
+   DEFINITIVE & FINAL Player Profiles Page Layout
+   ========================================================================== */
+
+#player-card-grid.archive-list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, auto); /* Columns now size to content */
+  width: fit-content; /* Grid container shrinks to fit the columns */
+  margin-left: auto;   /* Center the newly-sized grid on the page */
+  margin-right: auto;
+}
+
+/* New CSS */
+.archive-item-card__content {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Aligns text and icon to the left */
+  gap: 0.25rem;             /* Adds a small space between all items */
+}
+
+/* You can keep this rule as is, or add a specific margin if you prefer */
+.card-character-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-surface-4);
+  flex-shrink: 0;
+  /* margin-top: 0.5rem;  <-- Optional: Use instead of gap if you want more space */
+}
+
+.card-character-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-surface-4);
+  flex-shrink: 0;
+}
+
+/* ✅ RESTORED Box Shadow Styles */
+#player-card-grid .rank-1 .card-character-icon,
+#player-card-grid .rank-1 .player-icon {
+  box-shadow: 0 0 8px 2px var(--color-rank-gold);
+  border-color: var(--color-rank-gold);
+}
+#player-card-grid .rank-2 .card-character-icon,
+#player-card-grid .rank-2 .player-icon {
+  box-shadow: 0 0 8px 2px var(--color-rank-silver);
+  border-color: var(--color-rank-silver);
+}
+#player-card-grid .rank-3 .card-character-icon,
+#player-card-grid .rank-3 .player-icon {
+  box-shadow: 0 0 8px 2px var(--color-rank-bronze);
+  border-color: var(--color-rank-bronze);
+}
+#player-card-grid .rank-4 .card-character-icon,
+#player-card-grid .rank-4 .player-icon {
+  box-shadow: 0 0 8px 2px var(--color-rank-steel);
+  border-color: var(--color-rank-steel);
+}
+#player-card-grid .ranked-6-40 .card-character-icon,
+#player-card-grid .ranked-6-40 .player-icon {
+  box-shadow: 0 0 8px 2px var(--color-rank-green);
+  border-color: var(--color-rank-green);
+}
+
+
+/* --- Responsive Card Grid for Smaller Screens --- */
+@media (max-width: 1200px) {
+  #player-card-grid.archive-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 800px) {
+  #player-card-grid.archive-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  #player-card-grid.archive-list {
+    /* This forces the grid into a single column on narrow devices */
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   8. Active Filter Pill Styles
+   ========================================================================== */
+
+.active-filters-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem; /* Space between pills */
+  margin: 0.75rem 0; /* Space above and below the container */
+  padding: 0 1rem;
+}
+
+.filter-pill {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--color-surface-3); /* A dark gray from your theme */
+  border: 1px solid var(--color-border);
+  border-radius: 999px; /* Creates the pill shape */
+  padding: 0.4rem 0.5rem 0.4rem 1rem; /* More padding on the left */
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.filter-pill strong {
+  color: var(--color-text); /* Make the selected value brighter */
+  margin-left: 0.4rem;
+}
+
+.filter-pill-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  margin-left: 0.75rem;
+  background-color: var(--color-surface-4);
+  border: none;
+  border-radius: 50%;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+.filter-pill-close:hover {
+  background-color: var(--color-primary); /* Use your brand color for hover */
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* ==========================================================================
+   10. Player Spotlight Row (Final Version)
+   ========================================================================== */
+
+/* The main flex container for the title and the card */
+.spotlight-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0.5rem 0;
+  padding: 0rem 0 0.5rem;
+  border-bottom: 1px solid var(--color-surface-4);
+}
+
+/* Container for the text on the left */
+.spotlight-title-container {
+  flex-basis: 35%;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.spotlight-heading {
+  font-family: var(--font-primary);
+  font-size: 2.5rem;
+  color: var(--color-text);
+  margin: 0 0 0.5rem;
+  line-height: 1.1;
+}
+
+.spotlight-subheading {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+/* The wrapper for the card on the right */
+.spotlight-card-wrapper {
+  width: fit-content;
+}
+
+/* A specific class to force the card's content into a single row */
+.spotlight-card--horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.25rem;
+  padding: 0.75rem 1.5rem;
+  /* The S+ styling is now applied directly via a class in the JS */
+}
+
+/* On the spotlight card, we don't need the default vertical content container or chevron */
+.spotlight-card--horizontal .archive-item-card__content,
+.spotlight-card--horizontal .archive-item-card__chevron {
+  display: none;
+}
+
+/* Ensure all direct children of the horizontal card are visible and aligned */
+.spotlight-card--horizontal > * {
+  display: flex;
+  align-items: center;
+}
+
+/* Make the name bold for better readability in the row */
+.spotlight-card--horizontal .archive-item-card__name {
+  font-weight: bold;
+}
+
+/* Styling for the "+X Ranks" stat */
+.spotlight-stat {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #3fb950;
+  white-space: nowrap;
+}
+
+.spotlight-stat i {
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   12. Final Overrides & Mobile Layouts
+   ========================================================================== */
+
+/* Accessibility: Visually hide the skip link until it's focused */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-primary);
+  color: white;
+  padding: 8px;
+  z-index: 9999;
+  transition: top 0.3s ease-in-out;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* --- Mobile-Specific Layouts --- */
+@media (max-width: 768px) {
+
+  /* Responsive adjustments for Player Spotlight on mobile */
+  .spotlight-row {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .spotlight-card-wrapper {
+    margin: 0 auto; /* Centers the card when the layout is a column */
+  }
+
+  /* Corrects the mobile player card to be a single, centered row */
+  .player-card {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .player-card .player-card__text-content,
+.spotlight-card--horizontal .spotlight-text-content {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
+  min-width: 0;
+  overflow: hidden; /* Ensures the container cuts off overflowing text */
+}
+
+.player-card .archive-item-card__name,
+.player-card .archive-item-card__date,
+.spotlight-card--horizontal .archive-item-card__name,
+.spotlight-card--horizontal .archive-item-card__date,
+.spotlight-card--horizontal .spotlight-stat {
+  width: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+  /* Hides the default content block that stacks items vertically */
+  .player-card .archive-item-card__content {
+    display: none;
+  }
+  .spotlight-card--horizontal .spotlight-text-content {
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+}
+
+/* FIX 1: Desktop Filter Layout */
+@media (min-width: 769px) {
+  .page-player-profiles .filter-panel {
+    flex-direction: column; /* Stacks search row on top of filter row */
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .page-player-profiles .filter-group {
+    flex-grow: 0; /* Prevents filter containers from stretching */
+  }
+
+  .page-player-profiles .filter-group .styled-select,
+  .page-player-profiles .filter-group #reset-filters-btn {
+    width: auto; /* Shrinks dropdowns/buttons to fit their content */
+  }
+}
+
+/* FIX 2: Player Card Layout Consistency */
+.archive-item-card__content {
+  align-items: flex-start !important; /* Aligns text to the left */
+  gap: 0.25rem; /* Creates consistent vertical spacing between lines */
+}
+
+/* This new rule prevents long names from stretching the card */
+.archive-item-card__name,
+.archive-item-card__date {
+  white-space: normal; /* Allows text to wrap between words */
+  overflow-wrap: break-word; /* Breaks long words that would overflow */
+  max-width: 100%;
+}
+
+/* Reduces the space below the filter controls on the player profiles page */
+.page-player-profiles #active-filters-container {
+  margin-bottom: -0.5rem;
+}
+
+/* This is the corrected version */
+#player-card-grid .archive-item-card__name,
+#player-card-grid .archive-item-card__date,
+#player-card-grid .card-character-icon {
+  display: block !important;
+}
+
+#player-card-grid .archive-item-card .card-character-icon {
+  grid-column: 2; /* Places the icon in column 2, row 2 */
+  justify-self: start; /* Aligns the icon to the left */
+}
+
+/* We still need this rule to stack the name and rank inside the text block */
+#player-card-grid .archive-item-card__name,
+#player-card-grid .archive-item-card__date {
+  display: block;
+}
+
+/* ADD THIS NEW RULE */
+#player-card-grid .archive-item-card .archive-item-card__chevron {
+  position: absolute;
+  bottom: -0.25rem;
+  right: 0.25rem;
+}
+
+/* Reduces the font size of player names, rank, and country on the cards */
+#player-card-grid .archive-item-card__name,
+#player-card-grid .archive-item-card__date {
+  font-size: 0.85rem;
+}
+
+@media (min-width: 769px) {
+  /* Removes the bottom padding inside the desktop filter container */
+  .page-player-profiles .controls-container {
+    padding-bottom: 0.25rem;
+  }
+}
+
+/* Adds spacing to elements within the desktop Player Spotlight card */
+@media (min-width: 769px) {
+  .spotlight-text-content .archive-item-card__name {
+    margin-right: 1rem; /* Space between name and rank */
+  }
+
+  .spotlight-text-content .archive-item-card__date {
+    margin-right: 1.5rem; /* More space between rank/country and rank change */
+  }
+}
+
+/* Improves vertical alignment in the Player Spotlight row */
+.spotlight-row {
+  padding-top: 0.5rem;
+}
+
+/* Precisely aligns all text and icons in the Player Spotlight */
+.spotlight-card--horizontal .spotlight-text-content {
+  display: flex;
+  align-items: baseline; /* Aligns name, rank, and stats on the same text line */
+}
+
+.spotlight-stat {
+  display: inline-flex; /* Makes this a container for its own items */
+  align-items: center;  /* Vertically centers the arrow with the text next to it */
+}
+
+/* --- Player Card Content Layout --- */
+
+.player-card__text-content {
+    display: flex;
+    flex-direction: column; /* Stacks the name and rank vertically */
+    justify-content: center; /* Centers items vertically inside this container */
+    gap: 0.15rem; /* A little space between the name and rank */
+}
+
+/* Mobile-only overrides */
+@media (max-width: 768px) {
+  .player-card__text-content {
+    display: block; /* Revert to a simple block container */
+    flex-direction: unset;
+    align-items: unset;
+    gap: unset;
+  }
+
+  /* Keep the name on its own line */
+  .player-card__text-content .archive-item-card__name {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+  
+  /* Allow rank/country and the icon to sit on the same line */
+  .player-card__text-content .archive-item-card__date,
+  .player-card__text-content .card-character-icon {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  /* Add a little space between the country and the icon */
+  .player-card__text-content .card-character-icon {
+    margin-left: 0.5rem;
+  }
+}
+
+/* /css/styles.css */
+
+/* --- Player Profile Disclaimer --- */
+.profile-context-note {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin: 0 auto 1.5rem auto; /* Centers the block and adds space below */
+}
+
+.profile-context-note .fas {
+  margin-right: 0.5rem;
+}
+
+/* /css/styles.css */
+
+/* --- Tooltip and Modal Fixes --- */
+.tooltip-icon {
+  cursor: help; /* Changes cursor to a question mark on hover */
+}
+
+/* --- Signature Performance Card Styling --- */
+.signature-performance__placement {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.signature-performance__details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  text-align: left;
+}
+.signature-performance__title {
+  font-family: var(--font-primary);
+  font-size: 1.2rem;
+  color: var(--color-text-muted);
+  line-height: 1;
+}
+.signature-performance__name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--color-text);
+  line-height: 1.2;
+}
+.signature-performance__stat {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+.spotlight-card--horizontal .spotlight-text-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* --- Tier Styling for Player Profile Results List --- */
+.result-row.archive-item-card--s-plus {
+  background: linear-gradient(to right, rgba(255, 215, 0, 0.15), transparent 80%);
+  border-left: 3px solid var(--color-rank-gold);
+}
+.result-row.archive-item-card--s {
+  background: linear-gradient(to right, rgba(192, 192, 192, 0.15), transparent 80%);
+  border-left: 3px solid var(--color-rank-silver);
+}
+.result-row.archive-item-card--a {
+  background: linear-gradient(to right, rgba(205, 127, 50, 0.15), transparent 80%);
+  border-left: 3px solid var(--color-rank-bronze);
+}
+.result-row.archive-item-card--b {
+  background: linear-gradient(to right, rgba(176, 196, 222, 0.15), transparent 80%);
+  border-left: 3px solid var(--color-rank-steel);
+}
+
+/* /css/styles.css */
+
+/* ==========================================================================
+   13. Player Profile Final Fixes
+   ========================================================================== */
+
+/* --- Tooltip Visibility --- */
+/* ✅ FIX: These styles make the tooltip created by main.js visible */
+.profile-tooltip {
+  display: none; /* Hidden by default */
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--color-border);
+  font-size: 0.85rem;
+  max-width: 250px;
+  text-align: center;
+  z-index: 10001; /* Ensures it's on top of everything */
+  pointer-events: none; /* Prevents the tooltip from interfering with mouse events */
+}
+
+/* --- Signature Performance Centering & Styling --- */
+/* ✅ FIX: Centers all content within the card */
+.spotlight-card--horizontal .spotlight-text-content {
+  width: 100%;
+  justify-content: center;
+}
+.signature-performance__details {
+  text-align: center;
+}
+
+/* --- Earnings Icon Styling --- */
+/* ✅ NEW: Styles the dollar sign icon in the header */
+.profile-header__meta .fa-dollar-sign {
+  color: #3fb950; /* A nice green for money */
+  font-size: 1.1rem;
+}
+
+/* /css/styles.css */
+
+/* ==========================================================================
+   14. Player Profile V2 Features
+   ========================================================================== */
+
+/* --- Unified Stat Block --- */
+.stats-grid--trophies {
+  grid-template-columns: repeat(4, 1fr); /* Force 4 columns for the trophy bar */
+  padding-bottom: 1rem;
+}
+
+.stats-divider {
+  border: none;
+  height: 1px;
+  background-color: var(--color-surface-4);
+  margin: 0 0 1rem 0;
+}
+
+/* --- Pronouns --- */
+.meta-pronouns {
+  font-style: italic;
+  font-size: 1rem;
+}
+
+/* --- Notable Wins List --- */
+.notable-wins-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.notable-wins-list li {
+  background-color: var(--color-surface-1);
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  border-left: 3px solid var(--color-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.notable-wins-list .fa-skull {
+  color: var(--color-primary);
+}
+
+/* --- Clickable Stat Items --- */
+.stat-item--clickable {
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  border: 1px solid transparent;
+}
+.stat-item--clickable:hover {
+  background-color: var(--color-surface-3);
+  border-color: var(--color-border);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+
+/* --- Profile Modal (Pop-up) --- */
+.profile-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.profile-modal.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.profile-modal__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.profile-modal__content {
+  position: relative;
+  background-color: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  transform: scale(0.9);
+  transition: transform 0.3s;
+}
+.profile-modal.is-visible .profile-modal__content {
+  transform: scale(1);
+}
+
+.profile-modal__title {
+  font-family: var(--font-primary);
+  font-size: 1.5rem;
+  padding: 1rem 1.5rem;
+  margin: 0;
+  border-bottom: 1px solid var(--color-border);
+  flex-shrink: 0;
+}
+
+.profile-modal__body {
+  padding: 1rem 1.5rem;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.profile-modal__close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 0.2s, transform 0.2s;
+}
+.profile-modal__close:hover {
+  color: var(--color-primary);
+  transform: rotate(90deg);
+}
+
+@media (max-width: 600px) {
+  .stats-grid--trophies {
+    grid-template-columns: 1fr 1fr; /* Stack trophies 2x2 on mobile */
+  }
+}
+
+/* ==========================================================================
+   Player Profile Layout Corrections
+   ========================================================================== */
+
+.profile-header__name-rank {
+  display: flex;
+  align-items: baseline;
+  /* ✅ FIX: Changed from space-between to flex-start to keep items together */
+  justify-content: flex-start; 
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.rank-socials-group {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.profile-header__socials {
+  display: flex;
+  /* ✅ FIX: Ensures icons are in a row */
+  flex-direction: row; 
+  gap: 1rem;
+  align-items: center;
+}
+
+/* ✅ FIX: Reverts the Trophy Case to a vertical column layout */
+.stats-grid--trophies {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* This ensures the individual stat items in the column stretch to the full width */
+.stats-grid--trophies .stat-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background-color: var(--color-surface-1);
+}
+
+.stats-grid--trophies .stat-item__label {
+  white-space: nowrap;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* --- Player Profile Page - Requested Fixes --- */
+
+/* 1. Aligns social media icons to the left */
+.profile-header__socials {
+  justify-content: flex-start;
+}
+
+@media (min-width: 600px) {
+  .profile-header__socials {
+    /* This changes the centered vertical alignment to left-aligned */
+    align-items: flex-start;
+    /* Optional: If you prefer a horizontal row of icons on desktop: */
+    /* flex-direction: row; */
+  }
+}
+
+/* 2. Forces the Current Snapshot section into a single row on desktop */
+@media (min-width: 900px) {
+    .profile-snapshot-row .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .profile-snapshot-row .stat-item__label {
+        font-size: 0.8rem; /* Make font smaller to prevent wrapping */
+        line-height: 1.2;
+    }
+    .profile-snapshot-row .stat-item__value {
+        font-size: 1.4rem;
+    }
+}
+
+  /* Reduces header padding to make it more compact */
+  .profile-header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    row-gap: 0.25rem;
+  }
+
+  /* Makes the earnings number green */
+  .earnings-amount, .profile-header__meta .fa-dollar-sign {
+    color: #3fb950;
+  }
+  
+  /* Reduces social icon size to better match text */
+  .profile-header__socials a {
+    font-size: 1.2rem;
+  }
+  
+  /* Horizontally centers all text/icon content in the header */
+  .profile-header__main-info {
+    text-align: center;
+  }
+  .profile-header__name-rank,
+  .profile-header__meta,
+  .profile-header__socials {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .profile-section--right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Adjust this value for more or less space between all cards */
+}
+
+  .profile-snapshot-row {
+  margin-top: 1rem;    /* Adjust this value for the space ABOVE the snapshot */
+  margin-bottom: 1rem; /* Adjust this value for the space BELOW the snapshot */
+}
+
+.profile-context-note {
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+
+.profile-header,
+.profile-card {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Add these rules to your <style> block */
+
+/* This targets each row in the trophy case */
+.stats-grid--trophies .stat-item {
+  flex-direction: row;         /* Aligns items horizontally */
+  justify-content: space-between; /* Pushes the label left and number right */
+  align-items: center;         /* Vertically centers them */
+  padding: 0.75rem 1rem;       /* Adjust padding for the new layout */
+}
+
+/* This targets the label (icon and text) on the left */
+.stats-grid--trophies .stat-item__label {
+  margin-bottom: 0;     /* Removes old spacing from vertical layout */
+  white-space: nowrap;  /* Prevents the text from wrapping */
+  font-size: 1.25rem;      /* Sets a standard size for the label */
+}
+
+/* This targets the number on the right */
+.stats-grid--trophies .stat-item__value {
+  font-size: 1.5rem;   /* Reduces the font size of the number */
+}
+
+.profile-header__name-rank .profile-header__socials a {
+  font-size: 2rem; /* <-- THIS IS THE LINE TO CHANGE */
+  line-height: 1;
+}
+
+.earnings-amount {
+  position: relative;
+  top: 1px; /* Adjust this pixel value up or down as needed */
+}
+
+/* --- Player Profile Page - Centering and Clickability Fixes --- */
+
+/* Change snapshot to use Flexbox for better centering */
+.profile-snapshot-row .stats-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.profile-snapshot-row .stats-grid .stat-item {
+  flex-basis: 150px; /* Each item will be at least 150px wide */
+  flex-grow: 1;      /* Allows items to grow to fill space */
+  max-width: 180px;  /* Prevents items from becoming too large */
+}
+
+/* Add a visual cue to clickable stat items */
+.stat-item--clickable .stat-item__label::after {
+  content: '\f00e'; /* Font Awesome "search-plus" icon */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 0.7em;
+  margin-left: 0.5em;
+  color: var(--color-text-muted);
+  opacity: 0.6;
+  transition: opacity 0.2s, color 0.2s;
+}
+
+/* Enhance the hover effect for the icon */
+.stat-item--clickable:hover .stat-item__label::after {
+  opacity: 1;
+  color: var(--color-secondary);
+}
+
+/* --- Player Profile Header: Centered Flex Layout --- */
+
+/* Replaces the original grid layout with a centered flex layout */
+.profile-header {
+  display: flex;
+  flex-direction: column; /* Stacks icon and text vertically on small screens */
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  /* Keep existing background, border, etc. */
+  background-color: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  margin-bottom: 1.5rem;
+  border-left: 5px solid var(--color-primary);
+}
+
+/* Adjusts layout for larger screens */
+@media (min-width: 769px) {
+  .profile-header {
+    flex-direction: row; /* Places icon and text side-by-side */
+    gap: 2rem;
+  }
+}
+
+/* Centers all the text content as a single block */
+.profile-header__main-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-aligns all text rows */
+  text-align: center;
+  gap: 0.75rem;
+}
+
+/* Organizes the main name/rank/socials row */
+.profile-header__name-rank,
+.profile-header__meta,
+.profile-header__socials {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  justify-content: center;
+  align-items: baseline;
+  gap: 1.5rem;
+}
+
+/* Removes old grid-specific styling */
+.profile-header h1 {
+  margin-bottom: 0;
+}
+
+.profile-header__socials {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* --- Player Profile Header: Larger Placeholder Icon --- */
+
+/* Increases the size of the Font Awesome icon within its container */
+.profile-header__photo .player-placeholder-icon .fas.fa-user {
+  font-size: 3.5rem; 
+}
+
+/* ==========================================================================
+   Player Profile Snapshot Grid (Corrected)
+   This uses display: grid to ensure the column layout works.
+   ========================================================================== */
+
+.profile-snapshot-row .stats-grid {
+  display: grid;
+  gap: 1rem;
+  /* Default to 2 columns on smaller screens */
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* On larger screens, switch to the 4-column layout */
+@media (min-width: 900px) {
+  .profile-snapshot-row .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* This part is no longer needed with a grid layout, but ensures no conflicts */
+.profile-snapshot-row .stats-grid .stat-item {
+  flex-basis: auto;
+  max-width: none;
+}
+
+/* ==========================================================================
+   DEFINITIVE & FINAL Mobile Profile Layout Fix
+   ========================================================================== */
+@media (max-width: 768px) {
+
+  /* --- 1. Signature Performance Layout Fix --- */
+
+  /* This ensures the trophy icon and text appear side-by-side */
+  .spotlight-text-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  /* Ensures the text block itself is aligned properly */
+  .signature-performance__details {
+    text-align: left;
+  }
+
+  /* --- 2. Make All Sections Flexible (The Core Fix) --- */
+
+  /* Allows text in all stat items (Snapshot & Trophy Case) to wrap */
+  .stat-item__label {
+    white-space: normal !important;
+    word-break: break-word !important;
+  }
+  
+  /* Makes the Ranking History graph container shrink with the screen */
+  .ranking-history-graph {
+    max-width: 100%;
+    overflow-x: hidden; /* Prevents the canvas from overflowing */
+  }
+
+  /* Ensures long tournament names in the results list wrap */
+  .result-row__name {
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  /* --- 3. Cleanup & Final Centering --- */
+
+  /* Center the pagination buttons at the bottom */
+  .profile-pagination {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  /* Remove the forced right-alignment on the 'next' button */
+  .profile-pagination a[style*="margin-left: auto"] {
+    margin-left: 0 !important;
+  }
+}
+
+/* ==========================================================================
+   Player Profile Mobile Layout Fix (V3 - Final)
+   ========================================================================== */
+@media (max-width: 768px) {
+
+  /* --- 1. Signature Performance Layout Fix --- */
+
+  .spotlight-card--horizontal .spotlight-text-content {
+    flex-direction: row !important;
+    align-items: center !important;
+  }
+
+  /* --- 2. Fix Horizontal Overflow in All Sections --- */
+
+  .stat-item__label {
+    white-space: normal !important;
+    word-break: break-word !important;
+  }
+  
+  .ranking-history-graph {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .result-row__name {
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  /* --- 3. Pagination Fix --- */
+
+  /* This restores the side-by-side layout for the pagination buttons,
+     ensuring "previous" is on the left and "next" is on the right. */
+  .profile-pagination {
+    display: flex;
+    gap: 1rem; /* Adds a safety gap between buttons on very small screens */
+  }
+  
+  /* This rule was removed to allow the "next" button's inline style to work again */
+
+}
+
+.profile-section--left-col {
+  grid-area: left; /* Assigns this div to the "left" area */
+}
+
+.profile-section--right-col {
+  grid-area: right; /* Assigns this div to the "right" area */
+}
+
+@media (max-width: 768px) {
+  /* This controls the space between each card in the right-hand column on mobile. */
+  .profile-section--right-col {
+    gap: 1rem; /* The original value is 1rem. Adjust as needed. */
+    margin-bottom: 1rem;
+  }
+}
+
+/* Removes old spacing from the social icons' original location */
+.profile-header__meta .profile-header__socials {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+/* Resizes the icons to better match the text in the meta row */
+.profile-header__meta .profile-header__socials a {
+  font-size: 1.8rem; 
+}
+
+/* --- Player Profile Header: Social Icon Styling --- */
+
+/* 1. Ensures all items in the meta row (text and icons) are vertically centered. */
+.profile-header__meta {
+  align-items: center;
+}
+
+/* 2. Makes the icons stand out and feel clickable. */
+.profile-header__meta .profile-header__socials a {
+  /* Make the icons slightly brighter than the surrounding text by default */
+  color: var(--color-text);
+  
+  /* Add a smooth transition for the hover effect */
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+/* Add a "pop" effect when a user hovers over an icon */
+.profile-header__meta .profile-header__socials a:hover {
+  color: var(--color-secondary); /* Change color to a bright, attention-grabbing one */
+  transform: scale(1.25);      /* Make the icon slightly larger */
+  text-decoration: none;      /* Remove the default underline on hover */
+}
+
+@media (max-width: 768px) {
+  /* --- Player Profile Header: Side-by-Side Mobile Layout (Corrected) --- */
+
+  /* Main header layout */
+  .profile-header {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  /* Main text block alignment */
+  .profile-header__main-info {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  /* Force both text rows to span the full width of their container.
+     This is the key fix that creates the space needed for centering. */
+  .profile-header__name-rank,
+  .profile-header__meta-rows {
+    width: 100%;
+  }
+
+  /* Keep the top row (Name/Rank) content aligned to the left */
+  .profile-header__name-rank {
+    justify-content: flex-start;
+  }
+  
+  /* Now that the container is full-width, this will correctly center the meta content */
+  .profile-header__meta {
+    justify-content: center;
+  }
+
+  /* Icon size adjustment */
+  .profile-header__photo .player-icon,
+  .profile-header__photo .player-placeholder-icon {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Universal button styling for improved legibility */
+.btn--primary {
+  font-family: var(--font-secondary); /* Switch to 'Roboto' */
+  text-transform: none;               /* Change from ALL-CAPS */
+  font-weight: 700;                   /* Make it bold */
+  font-size: 1rem;
+}
+
+.chart-no-data {
+  text-align: center;
+}
+
+/* --- Player Profile: Key Stat Highlights --- */
+
+/* Container for the 3 highlighted stats */
+.key-stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Special styling for the highlighted stat items to make them stand out */
+.stat-item--key {
+  background-color: var(--color-surface-3);
+  border: 1px solid var(--color-primary);
+  padding: 1.5rem 1rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+.stat-item--key .stat-item__label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.stat-item--key .stat-item__value {
+  font-size: 2.5rem;
+  margin-top: 0.5rem;
+  font-family: var(--font-secondary);
+}
+
+/* A simple divider line between the key and secondary stats */
+.stats-divider {
+  border: none;
+  height: 1px;
+  background-color: var(--color-surface-4);
+  margin: 0 0 1.5rem;
+}
+
+/* The grid for the remaining, less important stats */
+.secondary-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+/* Adds a highlight to specific stat items */
+.stat-item--highlight {
+  border: 2px solid var(--color-primary);
+  box-shadow: 0 0 8px rgba(255, 94, 19, 0.4);
+
+  /* This calculation prevents the box from changing size due to the new border */
+  padding: calc(1rem - 2px);
+}
+
+/* Add this to your styles, for example in section 14 with other Player Profile V2 features */
+
+.stat-item--leader {
+  position: relative; /* Required for the badge positioning */
+  border: 1px solid var(--color-rank-gold);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+  
+  /* Add a subtle breathing glow animation */
+  animation: leader-glow 2.5s ease-in-out infinite;
+}
+
+/* A stylish "TOP 5" badge that sits at the top of the stat block */
+.stat-item--leader::before {
+  content: '★ TOP 5';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-rank-gold);
+  color: var(--color-surface-1);
+  font-family: var(--font-secondary); /* Use a more readable font */
+  font-weight: 700;
+  font-size: 0.6rem;
+  padding: 2px 8px;
+  border-radius: 0 0 5px 5px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+/* Keyframes for the breathing glow effect */
+@keyframes leader-glow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 15px 3px rgba(255, 215, 0, 0.9);
+  }
+}
+
+/* --- Tiered Stat Highlighting --- */
+
+/* Base style for any ranked stat item */
+.stats-grid .stat-item[class*="rank-"] {
+  position: relative;
+  /* Use !important to ensure this overrides other background styles */
+  background-color: transparent !important; 
+}
+
+/* Base style for the badge */
+.stats-grid .stat-item[class*="rank-"]::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--color-surface-1);
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 0.6rem;
+  padding: 2px 8px;
+  border-radius: 0 0 5px 5px;
+  line-height: 1;
+  text-transform: uppercase;
+  z-index: 2; /* Ensure badge is on top */
+}
+
+/* Rank 1: Gold */
+.stats-grid .stat-item.rank-1 {
+  border: 1px solid var(--color-rank-gold);
+  box-shadow: 0 0 10px var(--color-rank-gold);
+}
+.stats-grid .stat-item.rank-1::before {
+  content: '#1';
+  background-color: var(--color-rank-gold);
+}
+
+/* Rank 2: Silver */
+.stats-grid .stat-item.rank-2 {
+  border: 1px solid var(--color-rank-silver);
+  box-shadow: 0 0 10px var(--color-rank-silver);
+}
+.stats-grid .stat-item.rank-2::before {
+  content: '#2';
+  background-color: var(--color-rank-silver);
+}
+
+/* Rank 3: Bronze */
+.stats-grid .stat-item.rank-3 {
+  border: 1px solid var(--color-rank-bronze);
+  box-shadow: 0 0 10px var(--color-rank-bronze);
+}
+.stats-grid .stat-item.rank-3::before {
+  content: '#3';
+  background-color: var(--color-rank-bronze);
+}
+
+/* Rank 4: Steel */
+.stats-grid .stat-item.rank-4 {
+  border: 1px solid var(--color-rank-steel);
+  box-shadow: 0 0 10px var(--color-rank-steel);
+}
+.stats-grid .stat-item.rank-4::before {
+  content: '#4';
+  background-color: var(--color-rank-steel);
+}
+
+/* Rank 5: Subtle Purple */
+.stats-grid .stat-item.rank-5 {
+  border: 1px solid #9881b3;
+  box-shadow: 0 0 10px #9881b3;
+}
+.stats-grid .stat-item.rank-5::before {
+  content: '#5';
+  background-color: #9881b3;
+  color: var(--color-background);
+}
+
+/* In /css/styles.css */
+
+/* This rule should go after the .profile-header__meta span rule */
+
+.flag-icon-small, .char-icon-small {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+/* This new, more specific rule targets BOTH icons to ensure they are identical. */
+/* It will override the base 24px size above. */
+.page-player-profile .profile-header__meta .char-icon-small,
+.page-player-profile .profile-header__meta .flag-icon-small {
+  width: 30px;
+  height: 30px;
+}
+
+/* ==========================================================================
+   Player Directory Card Layout (Corrected)
+   ========================================================================== */
+
+/* 1. Define a simple, single-row, two-column grid for the card */
+.page-player-profiles .archive-item-card {
+    display: flex; /* Use flexbox for a single row layout */
+    align-items: center; /* This is the key to vertical centering */
+    gap: 1rem; /* Adjust the spacing between items */
+    position: relative;
+    padding: 0.75rem 0.5rem; /* Reduced vertical padding */
+    /* ... other styles remain */
+}
+
+/* 2. Create a flexbox stack for the text and optional icon */
+.player-card__details-wrapper {
+    display: flex;
+    align-items: center; /* Centers the text and icon horizontally */
+    gap: 1rem; /* Space between the text block and the character icon */
+}
+/* This replaces the old conflicting rule */
+.page-player-profiles .archive-item-card__chevron {
+  position: absolute;
+  bottom: 0rem;
+  right: 0.25rem;
+}
+
+/* 3. Style the Content INSIDE the text block */
+.page-player-profiles .player-card__text-content {
+  display: block; /* Ensures it behaves predictably in the grid */
+}
+.page-player-profiles .archive-item-card__name,
+.page-player-profiles .archive-item-card__date {
+  display: block; /* This stacks the name on top of the rank/country */
+}
+.page-player-profiles .archive-item-card__name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  white-space: normal; /* Allows wrapping for long names */
+  overflow-wrap: break-word;
+}
+.page-player-profiles .archive-item-card__date {
+  font-size: 0.9rem;
+  /* The problematic color rule has been removed from here */
+}
+
+/* 4. Restore the Rank-Based Text Colors (This was accidentally removed) */
+.page-player-profiles .archive-item-card.rank-1 .archive-item-card__name,
+.page-player-profiles .archive-item-card.rank-1 .archive-item-card__date {
+  color: var(--color-rank-gold) !important;
+}
+.page-player-profiles .archive-item-card.rank-2 .archive-item-card__name,
+.page-player-profiles .archive-item-card.rank-2 .archive-item-card__date {
+  color: var(--color-rank-silver) !important;
+}
+.page-player-profiles .archive-item-card.rank-3 .archive-item-card__name,
+.page-player-profiles .archive-item-card.rank-3 .archive-item-card__date {
+  color: var(--color-rank-bronze) !important;
+}
+.page-player-profiles .archive-item-card.rank-4 .archive-item-card__name,
+.page-player-profiles .archive-item-card.rank-4 .archive-item-card__date {
+  color: var(--color-rank-steel) !important;
+}
+.page-player-profiles .archive-item-card.ranked-6-40 .archive-item-card__name,
+.page-player-profiles .archive-item-card.ranked-6-40 .archive-item-card__date {
+  color: var(--color-rank-green) !important;
+}
+
+/* Reduces the margin below the "Recent Results" list on player profiles */
+.profile-section--results {
+  margin-bottom: 0rem;
+}
+
+/* ==========================================================================
+   Player Profile Layout & Alignment (FINAL)
+   ========================================================================== */
+
+
+/* 2. Remove old flex properties to prevent conflicts with the new grid layout */
+.profile-section--left-col,
+.profile-section--right-col {
+  width: auto; /* Let the grid control the width automatically */
+}
+
+/* 3. Center the content INSIDE each "Recent Results" row */
+.profile-section--results .result-row {
+  justify-content: center;
+}
+
+/* 4. This is the key fix for centering: remove the 'flex-grow' property 
+      so the details section doesn't expand and push content to the left. */
+.profile-section--results .result-row__details {
+  flex-grow: 0;
+}
+
+/* ==========================================================================
+   Player Profile Layout & Centering Fixes
+   ========================================================================== */
+
+/* Reset properties on the columns to let the grid control them */
+.profile-section--left-col,
+.profile-section--right-col {
+  width: auto;
+  flex-shrink: initial;
+}
+
+/* 2. Center the content within the "Recent Results" rows */
+.result-row {
+  justify-content: center; /* Center the items (finish # and details) in the row */
+}
+
+.result-row__details {
+  flex-grow: 0; /* Prevent the details block from expanding */
+  text-align: center; /* Center the tournament name and date text */
+  margin-left: 1rem; /* Adds a clean space between the placement and the text */
+}
+
+/* ==========================================================================
+   Player Profile - Final & Definitive Layout
+   ========================================================================== */
+
+/* 2. Create uniform, centered result rows. */
+/* Restore the list to its default block behavior, which makes rows uniform width */
+.results-list {
+  display: block;
+  padding-left: 0;
+}
+
+/* Use flex to center the content *within* each uniform row */
+.result-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-row__details {
+  /* Give the text block a fixed width. This makes the text in each
+     row align vertically, creating a clean, centered appearance. */
+  width: 320px;
+  text-align: left;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   Player Profile - Final Alignment Fix
+   ========================================================================== */
+
+/* 1. This is the stable Flexbox layout for the two main columns. */
+.profile-main-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+/* 2. Define the behavior of the columns. */
+.profile-section--left-col {
+  flex: 1; /* The left column grows to fill available space */
+  min-width: 0;
+}
+
+.profile-section--right-col {
+  flex-basis: 300px; /* The right column is a fixed width */
+  flex-shrink: 0;
+}
+
+/* 3. Make the results list uniform and centered correctly. */
+.results-list {
+  /* This shrinks the list to the width of its widest row, making all rows uniform. */
+  width: fit-content;
+  /* This centers that uniform block within the now correctly-sized left column. */
+  margin: 0 auto;
+  /* Resets default browser styles */
+  padding-left: 0;
+}
+
+/* 4. Keep the text inside the rows readable. */
+.result-row__details {
+  text-align: left;
+}
+
+/* ==========================================================================
+   Player Profile - Trophy & Icon Alignment
+   ========================================================================== */
+
+/* 1. Align the icons and text in the "Trophy Case" section */
+/* This targets the trophy/medal icon within each label */
+.stats-grid--trophies .stat-item__label > .fas:first-child {
+  /* Give the icon a fixed width to create a consistent starting point for the text */
+  width: 28px;
+  /* Center the icon within its new fixed-width space */
+  text-align: center;
+}
+
+/* 2. Make the trophy icons in "Recent Results" match the "Trophy Case" size */
+/* This targets any Font Awesome icon that appears in the finish position */
+.result-row__finish .fas {
+  /* Set font size to match the icons in the trophy case (which is 1.25rem) */
+  font-size: 1.25rem;
+}
+
+/* ==========================================================================
+   Player Profile - Final Mobile Layout
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  /* Change the main layout to a single vertical column on mobile */
+  .profile-main-layout {
+    flex-direction: column;
+  }
+
+  /* Force both columns to take up the full width of the screen */
+  .profile-section--left-col,
+  .profile-section--right-col {
+    width: 100%;
+    flex-basis: auto; /* Reset the desktop fixed width */
+  }
+
+  /* Re-order the columns for a better mobile experience */
+  .profile-section--right-col {
+    order: 1; /* Summary content appears first */
+  }
+  .profile-section--left-col {
+    order: 2; /* Detailed results appear last */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Change the alignment inside each trophy case row to be centered */
+  .stats-grid--trophies .stat-item {
+    justify-content: center;
+    gap: 1rem; /* Adds a small, clean space between the label and the number */
+  }
+}
+
+@media (max-width: 768px) {
+  /* This keeps the content grouped together in the center */
+  .stats-grid--trophies .stat-item {
+    justify-content: center;
+  }
+
+  /* This forces the label to a fixed width and prevents wrapping */
+  .stats-grid--trophies .stat-item__label {
+    width: 170px;
+    flex-shrink: 0;
+
+    /* Force the text to stay on a single line, overriding the conflicting rule */
+    white-space: nowrap !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* This centers the "Signature Performance", tournament name, and stats text */
+  .signature-performance__details {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  /* This targets the "Recent Results" section specifically on mobile */
+  .profile-section--results {
+    /* Change the value below to increase or decrease the space above */
+    margin-top: -1.25rem;
+  }
+}
+
+/* ==========================================================================
+   Desktop Column Resize & Result Spacing
+   ========================================================================== */
+
+/* 1. Make the right column narrower on desktop */
+.profile-section--right-col {
+  flex-basis: 270px; /* This was 300px */
+}
+
+/* 2. Add a small gap between each tournament result row */
+.results-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem; /* Adjust this value for more or less space */
+}
+
+/* This rule targets both the main header and all content cards */
+.profile-header,
+.profile-card {
+  padding: 0.75rem; /* Adjust this value to add more or less space */
+}
+
+/* This targets the previous/next buttons and applies the 'Permanent Marker' font */
+.profile-pagination .btn--primary {
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  /* Keep the content grouped in the center */
+  .stats-grid--trophies .stat-item {
+    justify-content: center;
+  }
+
+  /* Use a generous fixed width and force text to never wrap */
+  .stats-grid--trophies .stat-item__label {
+    width: 200px;
+    white-space: nowrap !important;
+  }
+}
+
+/* ==========================================================================
+   Stat Title - Final Two-Row Layout
+   ========================================================================== */
+
+.stat-item__label {
+  /* Use flexbox to allow content to wrap to a new line */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the text and the icons */
+  align-items: center;
+  gap: 0rem; /* Adds a small space between the icons */
+  min-height: 3.5em; /* Keeps the box height consistent */
+  text-align: center;
+}
+
+.stat-item__title-text {
+  /* Force the text to take up the entire first line, pushing the icons down */
+  flex-basis: 100%;
+}
+
+/* This targets the individual trophy boxes */
+.stats-grid--trophies .stat-item {
+  /* Reduce the top/bottom padding (first value) to decrease the height */
+  padding: 0rem 1rem; 
+}
+
+/* ==========================================================================
+   Color-Coded Stat Values for Top Ranks
+   ========================================================================== */
+
+/* Rank 1: Gold */
+.stats-grid .stat-item.rank-1 .stat-item__value {
+  color: var(--color-rank-gold);
+}
+
+/* Rank 2: Silver */
+.stats-grid .stat-item.rank-2 .stat-item__value {
+  color: var(--color-rank-silver);
+}
+
+/* Rank 3: Bronze */
+.stats-grid .stat-item.rank-3 .stat-item__value {
+  color: var(--color-rank-bronze);
+}
+
+/* Rank 4: Steel */
+.stats-grid .stat-item.rank-4 .stat-item__value {
+  color: var(--color-rank-steel);
+}
+
+/* Rank 5: Green */
+.stats-grid .stat-item.rank-5 .stat-item__value {
+  color: var(--color-rank-green);
+}
+
+/* ==========================================================================
+   Subtle Gradient Backgrounds for Top Ranks
+   ========================================================================== */
+
+/* Rank 1: Gold Gradient (20% Opacity) */
+.stats-grid .stat-item.rank-1 {
+  background-image: linear-gradient(to right, rgba(255, 215, 0, 0.2), var(--color-surface-1) 80%);
+}
+
+/* Rank 2: Silver Gradient (20% Opacity) */
+.stats-grid .stat-item.rank-2 {
+  background-image: linear-gradient(to right, rgba(192, 192, 192, 0.2), var(--color-surface-1) 80%);
+}
+
+/* Rank 3: Bronze Gradient (20% Opacity) */
+.stats-grid .stat-item.rank-3 {
+  background-image: linear-gradient(to right, rgba(205, 127, 50, 0.2), var(--color-surface-1) 80%);
+}
+
+/* Rank 4: Steel Gradient (20% Opacity) */
+.stats-grid .stat-item.rank-4 {
+  background-image: linear-gradient(to right, rgba(176, 196, 222, 0.2), var(--color-surface-1) 80%);
+}
+
+/* Rank 5: Subtle Purple Gradient (20% Opacity) */
+.stats-grid .stat-item.rank-5 {
+  background-image: linear-gradient(to right, rgba(152, 129, 179, 0.2), var(--color-surface-1) 80%);
+}
+
+.profile-pagination .btn--primary {
+  font-size: 1.5rem; /* This was 1rem */
+}
+
+/* ==========================================================================
+   Collapsible Header: Mobile Interactive, Desktop Static
+   ========================================================================== */
+
+/* Base styles for all screen sizes */
+summary.profile-card__header {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* This ensures the text and icon are vertically centered */
+  cursor: pointer;
+  list-style: none; /* Hides default browser arrow */
+}
+
+summary.profile-card__header::-webkit-details-marker {
+  display: none;
+}
+
+/* Inherits the correct font size/weight from the .profile-card__header class */
+summary.profile-card__header > h2 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  color: white;
+}
+
+/* Styles for the chevron icon */
+.collapsible-mobile__icon {
+  display: inline-block;
+  color: white;
+  padding-left: 0.75rem;
+}
+
+.collapsible-mobile__icon .fas {
+  transition: transform 0.25s ease-in-out;
+}
+
+/* Flips chevron up when section is closed */
+.collapsible-mobile:not([open]) > summary .collapsible-mobile__icon .fas {
+  transform: rotate(180deg);
+}
+
+/* --- Desktop Styles (768px and up) --- */
+@media (min-width: 768px) {
+  /* On desktop, remove the ability to click and collapse the section */
+  summary.profile-card__header {
+    cursor: default;
+    pointer-events: none;
+  }
+
+  /* Hide the chevron icon on desktop */
+  .collapsible-mobile__icon {
+    display: none;
+  }
+}
+
+/* --- Signature Performance Typography --- */
+
+.signature-performance__details {
+  /* Aligns the text elements */
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem; /* Adds a little space between the lines */
+}
+
+/* 1. The Label: "Signature Performance" */
+.signature-performance__title {
+  font-size: 0.9rem; /* Small */
+  font-weight: 500; /* Medium */
+  color: var(--color-text-muted, #a0a0a0);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* 2. The Main Event: The Tournament Name */
+.signature-performance__name {
+  font-size: 1.35rem; /* Large and impactful */
+  font-weight: 700; /* Bold */
+  color: var(--color-text-primary, #ffffff);
+  line-height: 1.2; /* Tightens up the line height */
+}
+
+/* 3. The Supporting Stats */
+.signature-performance__stat {
+  font-size: 0.9rem; /* Clear but secondary */
+  font-weight: 400; /* Regular */
+  color: var(--color-text-secondary, #cccccc);
+}
+
+/* --- Player Profile Pagination Button Font Fix ---
+   This rule specifically targets the previous/next buttons to ensure
+   they have a consistent, modern button font style.
+*/
+.profile-pagination .btn {
+  font-family: font-secondary;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+}
+
+/* ==========================================================================
+   Skeleton Loader Styles
+   ========================================================================== */
+
+.skeleton-row td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.skeleton {
+  opacity: 0.7;
+  animation: skeleton-loading 1.5s infinite linear;
+  background: linear-gradient(90deg, var(--color-surface-3) 25%, var(--color-surface-4) 50%, var(--color-surface-3) 75%);
+  background-size: 200% 100%;
+}
+
+.skeleton-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.skeleton-text {
+  height: 20px;
+  border-radius: 4px;
+}
+
+.skeleton-text--short {
+  width: 80px;
+}
+
+.skeleton-text--medium {
+  width: 150px;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* On mobile, remove borders from skeleton rows for a cleaner look */
+@media (max-width: 768px) {
+  .data-table tr.skeleton-row {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+  }
+  .data-table tr.skeleton-row td {
+    padding: 0;
+  }
+  .page-upcoming-tournaments .controls-container {
+    width: 100%;
+  }
+  .page-player-profiles .filter-row {
+    width: auto;
+  }
+  .meta-column {
+    align-items: center;
+  }
+}
+
+/* ==========================================================================
+   Player Directory Card - Chevron Fix
+   ========================================================================== */
+
+/* 1. Position the chevron in the bottom-right corner */
+#player-card-grid .archive-item-card__chevron {
+  position: absolute;
+  bottom: 0rem;
+  right: 0.25rem;
+  /* Make the background transparent for a cleaner look */
+  background-color: transparent;
+}
+
+/* 2. Apply rank-based colors to the chevron */
+#player-card-grid .archive-item-card.rank-1 .archive-item-card__chevron {
+  color: var(--color-rank-gold);
+}
+#player-card-grid .archive-item-card.rank-2 .archive-item-card__chevron {
+  color: var(--color-rank-silver);
+}
+#player-card-grid .archive-item-card.rank-3 .archive-item-card__chevron {
+  color: var(--color-rank-bronze);
+}
+#player-card-grid .archive-item-card.rank-4 .archive-item-card__chevron {
+  color: var(--color-rank-steel);
+}
+#player-card-grid .archive-item-card.ranked-6-40 .archive-item-card__chevron {
+  color: var(--color-rank-green);
+}
+
+.reset-btn {
+    height: 40px; /* Adjust this value */
+    width: 100%;
+    min-width: 80px;
+}
+
+/* ==========================================================================
+   Upcoming Tournaments Card - Chevron Styling
+   ========================================================================== */
+
+/* 1. Base style override for the chevron on the upcoming tournaments page */
+.page-upcoming-tournaments .simple-card__chevron {
+  /* Remove the circular background and fixed dimensions */
+  background-color: transparent;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+
+  /* Adjust position to match the results page */
+  bottom: 0.75rem;
+  right: 0.75rem;
+
+  /* Ensure consistent font size */
+  font-size: 0.9rem;
+  color: var(--color-text); /* Default color for non-tiered events */
+}
+
+/* 2. Remove the hover effect that changes the background color */
+.page-upcoming-tournaments .simple-card__click-wrapper:hover .simple-card__chevron {
+  background-color: transparent;
+  color: var(--color-secondary); /* Optional: change icon color on hover */
+}
+
+/* 3. Apply tier-based colors to the chevrons */
+.page-upcoming-tournaments .simple-card--s-plus .simple-card__chevron {
+  color: var(--color-rank-gold);
+}
+
+.page-upcoming-tournaments .simple-card--s .simple-card__chevron {
+  color: var(--color-rank-silver);
+}
+
+.page-upcoming-tournaments .simple-card--a .simple-card__chevron {
+  color: var(--color-rank-bronze);
+}
+
+.page-upcoming-tournaments .simple-card--b .simple-card__chevron {
+  color: var(--color-rank-steel);
+}
+
+/* ==========================================================================
+   Upcoming Tournaments Card - DEFINITIVE Hover Effect & Chevron Fix
+   ========================================================================== */
+
+/* 1. Add a transition to the base card for a smooth animation */
+.simple-card {
+  transition: transform 0.2s ease-out;
+}
+
+/* 2. Apply the "pop up" transform on hover */
+.page-upcoming-tournaments .simple-card:hover {
+  transform: translateY(-4px);
+}
+
+/* 3. Force the chevron's color to be correct in both normal and hovered states.
+      This high-specificity rule prevents any other style from changing the color to yellow. */
+
+/* Default (non-tiered) chevron color */
+.page-upcoming-tournaments .simple-card__chevron {
+  color: var(--color-text) !important;
+  background-color: transparent !important;
+}
+
+/* Gold Tier */
+.page-upcoming-tournaments .simple-card--s-plus .simple-card__chevron {
+  color: var(--color-rank-gold) !important;
+}
+
+/* Silver Tier */
+.page-upcoming-tournaments .simple-card--s .simple-card__chevron {
+  color: var(--color-rank-silver) !important;
+}
+
+/* Bronze Tier */
+.page-upcoming-tournaments .simple-card--a .simple-card__chevron {
+  color: var(--color-rank-bronze) !important;
+}
+
+/* Steel Tier */
+.page-upcoming-tournaments .simple-card--b .simple-card__chevron {
+  color: var(--color-rank-steel) !important;
+}
+
+/* --- ADD THIS CODE TO THE END OF YOUR CSS FILE --- */
+
+@media (max-width: 768px) {
+  /* Apply a consistent flex layout to ALL meta item content blocks on mobile */
+  .meta-item-content {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+  }
+
+  /* On mobile, give ALL labels a fixed width to create a clean column */
+  .meta-item strong {
+    text-align: right;
+    flex-basis: 110px; /* Gives "PRIZE POOL" and "VENUE" a consistent width */
+    flex-shrink: 0;
+  }
+
+  /* On mobile, remove the margin from the span as the flex gap handles spacing */
+  .meta-item span {
+    margin-left: 0;
   }
 }

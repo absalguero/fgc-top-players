@@ -1,30 +1,29 @@
 // /_data/tournaments.js
 const EleventyFetch = require("@11ty/eleventy-fetch");
 const slugify = require("slugify");
-const fs = require("fs");
+const fs = require("fs").promises; // ✨ Use the modern, promise-based version of fs
 const path = require("path");
+const Papa = require("papaparse"); // ✨ NEW: Using a robust CSV parsing library
 const { DateTime } = require("luxon");
 
 /**
- * Parses a CSV string into an array of objects.
- * @param {string} text The raw CSV text.
+ * ♻️ REFACTOR: Replaced manual parser with the industry-standard papaparse library.
+ * This is more reliable and handles edge cases like commas in quotes.
+ * @param {string} csvText The raw CSV text.
  * @returns {Array<Object>} An array of objects representing the rows.
  */
-function parseCSV(text) {
-  if (typeof text !== 'string' || !text) return [];
+function parseCSV(csvText) {
+  const result = Papa.parse(csvText, {
+    header: true, // Automatically uses the first row as headers
+    skipEmptyLines: true,
+    transformHeader: header => header.trim(), // Cleans up header names
+  });
 
-  const rows = text.trim().split('\n');
-  if (rows.length <= 1) return [];
-
-  const headers = rows[0].split(',').map(h => h.trim().replace(/"/g, ''));
-  return rows.slice(1).map(rowStr => {
-    const values = rowStr.match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g) || [];
-    const rowData = {};
-    headers.forEach((header, i) => {
-      rowData[header] = values[i] ? values[i].replace(/^"|"$/g, '').trim() : '';
-    });
-    return rowData;
-  }); // ✅ FIX: Removed the incorrect filter that was discarding event data.
+  if (result.errors.length) {
+    console.warn("⚠️ CSV Parsing Errors:", result.errors);
+  }
+  
+  return result.data;
 }
 
 const ARCHIVE_PATH = path.join(__dirname, "tournaments_archive.json");
@@ -34,11 +33,14 @@ module.exports = async function() {
     console.log("Fetching and processing tournament data...");
     let archive = {};
 
-    // 1. Read the existing archive file from disk.
-    if (fs.existsSync(ARCHIVE_PATH)) {
-      const fileContents = fs.readFileSync(ARCHIVE_PATH, 'utf8');
-      if (fileContents) {
-        archive = JSON.parse(fileContents);
+    // 1. Read the existing archive file from disk (asynchronously).
+    try {
+      const fileContents = await fs.readFile(ARCHIVE_PATH, 'utf8');
+      archive = JSON.parse(fileContents);
+    } catch (error) {
+      // If the file doesn't exist, it's fine; we'll create it later.
+      if (error.code !== 'ENOENT') {
+        throw error;
       }
     }
 
@@ -56,35 +58,45 @@ module.exports = async function() {
         }
       });
       
-      const liveResults = parseCSV(csvData.toString());
+      const liveResults = parseCSV(csvData);
 
       // 3. Group the flat results list by event name.
       const newEventsGrouped = {};
       liveResults.forEach(row => {
-        const eventName = row.Event;
-        // ✅ FIX: Skip any row that is missing an event name OR a date to prevent errors.
-        if (!eventName || !row.Date) return;
+  const eventName = row.Event;
+  if (!eventName || !row.Date) return;
 
-        if (!newEventsGrouped[eventName]) {
-          const eventDate = DateTime.fromFormat(row.Date, "yyyy-MM-dd").toJSDate();
-          newEventsGrouped[eventName] = {
-            name: eventName,
-            date: eventDate,
-            slug: slugify(eventName, { lower: true, strict: true }),
-            Tier: row.Tier,
-            results: []
-          };
-        }
-        newEventsGrouped[eventName].results.push(row);
-      });
+  // ✅ Normalize the date safely
+  let normalizedDate = null;
+  try {
+    const parsed = new Date(row.Date);
+    if (!isNaN(parsed)) {
+      normalizedDate = DateTime.fromJSDate(parsed).toISODate(); // YYYY-MM-DD
+    }
+  } catch (err) {
+    console.warn(`⚠️ Could not parse date for event "${eventName}":`, row.Date);
+  }
+
+  if (!newEventsGrouped[eventName]) {
+    newEventsGrouped[eventName] = {
+      name: eventName,
+      date: normalizedDate, // always ISO format
+      slug: slugify(eventName, { lower: true, strict: true }),
+      Tier: row.Tier,
+      Entrants: row.Entrants,
+      results: []
+    };
+  }
+  newEventsGrouped[eventName].results.push(row);
+});
       
-      // 4. Merge the new data into the archive and write it back to disk.
+      // 4. Merge the new data into the archive and write it back to disk (asynchronously).
       Object.values(newEventsGrouped).forEach(event => {
         archive[event.slug] = event;
       });
 
-      fs.writeFileSync(ARCHIVE_PATH, JSON.stringify(archive, null, 2));
-      console.log("Successfully fetched and archived live data.");
+      await fs.writeFile(ARCHIVE_PATH, JSON.stringify(archive, null, 2));
+      console.log("✅ Successfully fetched and archived live data.");
 
     } catch (fetchError) {
       console.warn("⚠️ Could not fetch live tournament data, using local archive.", fetchError.message);

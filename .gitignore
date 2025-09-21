@@ -1,0 +1,11 @@
+# Eleventy/Netlify build output
+_site/
+
+# Node.js dependencies
+node_modules/
+
+# Eleventy cache folder
+.cache/
+
+# Environment variables - never commit these!
+.env

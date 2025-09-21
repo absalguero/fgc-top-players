@@ -17,27 +17,38 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:title" content="{% block og_title %}{{ title or 'FGC Top Players' }}{% endblock %}">
-  <meta property="og:description" content="{% block og_description %}The definitive ranking of the top professional SF6 players. See who's on top and track the rise and fall of your favorite pros.{% endblock %}">
+  {# ✅ CHANGED: Made the default OG description more generic #}
+  <meta property="og:description" content="{% block og_description %}The definitive ranking of top professional fighting game players. See who's on top and track your favorite pros.{% endblock %}">
   <meta property="og:image" content="{{ site.url }}/images/fgc-rankings-social-card.png">
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
-  <meta property="twitter:title" content="{% block twitter_title %}{{ title or 'Street Fighter 6 Global Player Rankings' }}{% endblock %}">
-  <meta property="twitter:description" content="{% block twitter_description %}The definitive ranking of the top professional SF6 players. See who's on top and track the rise and fall of your favorite pros.{% endblock %}">
+  <meta property="twitter:title" content="{% block twitter_title %}{{ title or 'FGC Global Player Rankings' }}{% endblock %}">
+  {# ✅ CHANGED: Made the default Twitter description more generic #}
+  <meta property="twitter:description" content="{% block twitter_description %}The definitive ranking of top professional fighting game players. See who's on top and track your favorite pros.{% endblock %}">
   <meta property="twitter:image" content="{{ site.url }}/images/fgc-rankings-social-card.png">
   
   <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  {# ✅ CHANGED: Asynchronously load Font Awesome for better performance #}
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></noscript>
+  
   <link rel="stylesheet" href="/css/styles.css">
-
   <link rel="icon" type="image/png" href="/images/favicon.png" />
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <meta name="theme-color" content="#FF5E13" />
+
+  <script src="/js/main.js" defer></script>
+  
   {% block head %}{% endblock %}
 </head>
 <body class="{{ bodyClass or '' }}">
+
+  {# ✅ ADDED: Accessibility skip link #}
+  <a href="#maincontent" class="skip-link">Skip to main content</a>
 
   <header class="mobile-header">
     <button class="nav-toggle" aria-label="Toggle Navigation" aria-expanded="false">
@@ -61,10 +72,9 @@
       {% include "partials/_navigation.njk" %}
     </nav>
 
-    <main class="content">
-      <div role="main" id="maincontent" tabindex="-1">
-        {% block content %}{% endblock %}
-      </div>
+    <main class="content" id="maincontent" tabindex="-1">
+      {# ✅ REMOVED: Redundant <div role="main"> wrapper #}
+      {% block content %}{% endblock %}
 
       <footer class="content-footer">
         <div class="footer-columns">
@@ -130,7 +140,7 @@
     <i class="fas fa-chevron-up"></i>
   </button>
   
-  <script src="/js/main.js" defer></script>
+  {# This block is now primarily for page-specific data scripts #}
   {% block scripts %}{% endblock %}
 </body>
 </html>

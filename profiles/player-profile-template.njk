@@ -1,0 +1,322 @@
+---
+pagination:
+  data: playerProfiles
+  size: 1
+  alias: player
+permalink: "/players/{{ player.slug }}/"
+eleventyExcludeFromCollections: true
+---
+
+{% extends "layout.njk" %}
+
+{% block title %}{{ player.name }} ({{ player.mainCharacter }}) - {{ player.game | default('FGC') }} Stats & Rank | FGC Top Players{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="View the latest {{ player.game | default('FGC') }} tournament results, official world ranking, and performance stats for {{ player.name }}. See key wins, peak rank, and trophy case.">
+{% endblock %}
+
+{% set bodyClass = "page-player-profile" %}
+
+{% block content %}
+<div class="profile-container">
+  {% include "banner.njk" %}
+
+  {% set rankClass = "rank-" + player.rank if player.rank and player.rank <= 4 else ("ranked-6-40" if player.rank and player.rank <= 40 else "") %}
+  <header class="profile-header {{ rankClass }}">
+    
+    <div class="profile-header__photo">
+      {% if player.photoUrl and player.photoUrl.trim() !== '' %}
+        <img src="{{ player.photoUrl }}" alt="{{ player.name }}" class="player-icon" onerror="this.onerror=null;this.src='/images/default-avatar.png';">
+      {% else %}
+        <div class="player-placeholder-icon">
+          <i class="fas fa-user"></i>
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="profile-header__main-info">
+      <div class="profile-header__name-rank">
+        <h1>{{ player.name }}</h1>
+        <div class="rank-display">
+          Rank <span class="rank-display__number">#{{ player.rank or 'N/A' }}</span>
+        </div>
+        
+      </div>
+
+      <div class="profile-header__meta-rows">
+        <div class="profile-header__meta">
+          {% if player.mainCharacter %}
+          <span><img src="/images/characters/{{ player.characterFileName }}.png" alt="{{ player.mainCharacter }}" class="char-icon-small">{{ player.mainCharacter }}</span>
+          {% endif %}
+          
+          {% if player.country and player.country != 'N/A' %}
+            <span>
+              <img src="/images/flags/{{ player.country | lower }}.png" alt="{{ player.country }}" class="flag-icon-small">
+              {{ player.country }}
+            </span>
+          {% endif %}
+          
+          {% if player.pronouns %}
+            <span class="meta-pronouns">({{ player.pronouns }})</span>
+          {% endif %}
+
+          {% if player.socials.twitter or player.socials.twitch %}
+            <div class="profile-header__socials">
+              <a href="{{ player.socials.twitter }}" target="_blank" rel="noopener noreferrer" aria-label="X.com"><i class="fab fa-x-twitter"></i></a>
+              <a href="{{ player.socials.twitch }}" target="_blank" rel="noopener noreferrer" aria-label="Twitch"><i class="fab fa-twitch"></i></a>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="profile-context-note">
+    <i class="fas fa-info-circle"></i> All stats and results on this page are based on performance in tournaments recorded within the last 12 months.
+  </div>
+
+  <div class="profile-card profile-snapshot-row">
+    <h2 class="profile-card__header">Current Performance Snapshot</h2>
+    <div class="stats-grid">
+      {% set leaderRank = player.leaderRank.avgPercentile %}
+      {% set leaderClass = "rank-" + leaderRank if leaderRank and leaderRank <= 4 else ("rank-5" if leaderRank == 5 else "") %}
+      <div class="stat-item {{ leaderClass }}">
+  <div class="stat-item__label" data-tooltip="The average percentage of competitors a player places higher than.">
+    <span class="stat-item__title-text">Avg. Placement Percentile</span> <i class="fas fa-info-circle tooltip-icon"></i>
+  </div>
+  <div class="stat-item__value">{{ player.stats_1yr.avgPercentile | round(1) }}%</div>
+</div>
+
+      {% set leaderRank = player.leaderRank.avgPercentileMajors %}
+      {% set leaderClass = "rank-" + leaderRank if leaderRank and leaderRank <= 4 else ("rank-5" if leaderRank == 5 else "") %}
+      <div class="stat-item stat-item--clickable {{ leaderClass }}" data-modal-target="majors">
+        <div class="stat-item__label" data-tooltip="The average percentage of competitors a player places higher than at Majors.">
+          <span class="stat-item__title-text">Avg. Percentile at Majors</span> <i class="fas fa-info-circle tooltip-icon"></i>
+        </div>
+        <div class="stat-item__value">{{ player.stats_1yr.avgPercentileMajors | round(1) }}%</div>
+      </div>
+
+      {% set leaderRank = player.leaderRank.avgFinish %}
+      {% set leaderClass = "rank-" + leaderRank if leaderRank and leaderRank <= 4 else ("rank-5" if leaderRank == 5 else "") %}
+      <div class="stat-item {{ leaderClass }}">
+        <div class="stat-item__label" data-tooltip="The player's average raw placement in all tournaments (lower is better).">
+          <span class="stat-item__title-text">Avg. Finish (12 mo.)</span> <i class="fas fa-info-circle tooltip-icon"></i>
+        </div>
+        <div class="stat-item__value">{{ player.stats_1yr.avgFinish | round(1) }}</div>
+      </div>
+
+      {% set leaderRank = player.leaderRank.avgFinishRecent %}
+      {% set leaderClass = "rank-" + leaderRank if leaderRank and leaderRank <= 4 else ("rank-5" if leaderRank == 5 else "") %}
+      <div class="stat-item {{ leaderClass }}">
+        <div class="stat-item__label" data-tooltip="The player's average raw placement in recent tournaments (lower is better).">
+          <span class="stat-item__title-text">Avg. Finish (6 mo.)</span> <i class="fas fa-info-circle tooltip-icon"></i>
+        </div>
+        <div class="stat-item__value">{{ player.stats_recent.avgFinish }}</div>
+      </div>
+
+      {% set leaderRank = player.leaderRank.avgFinishMajors %}
+      {% set leaderClass = "rank-" + leaderRank if leaderRank and leaderRank <= 4 else ("rank-5" if leaderRank == 5 else "") %}
+      <div class="stat-item stat-item--clickable {{ leaderClass }}" data-modal-target="majors">
+        <div class="stat-item__label" data-tooltip="The player's average raw placement at Majors (lower is better).">
+          <span class="stat-item__title-text">Avg. Finish at Majors</span> <i class="fas fa-info-circle tooltip-icon"></i>
+        </div>
+        <div class="stat-item__value">{{ player.stats_1yr.avgFinishMajors }}</div>
+      </div>
+      
+      {% set leaderRank = player.leaderRank.consistencyScore %}
+      {% set leaderClass = "rank-" + leaderRank if leaderRank and leaderRank <= 4 else ("rank-5" if leaderRank == 5 else "") %}
+      <div class="stat-item {{ leaderClass }}">
+        <div class="stat-item__label" data-tooltip="Measures how much a player's results vary from tournament to tournament. A lower score means they are more consistent.">
+          <span class="stat-item__title-text">Consistency Score</span> <i class="fas fa-info-circle tooltip-icon"></i>
+        </div>
+        <div class="stat-item__value">
+          {% if player.stats_1yr.consistencyScore === 'N/A' %} N/A {% else %} {{ player.stats_1yr.consistencyScore | round(1) }} {% endif %}
+        </div>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-item__label" data-tooltip="The highest top 40 rank the player has achieved since tracking began.">
+          <span class="stat-item__title-text">Peak Rank</span> <i class="fas fa-info-circle tooltip-icon"></i>
+        </div>
+        <div class="stat-item__value">#{{ player.stats_1yr.peakRank }}</div>
+      </div>
+
+      {% set leaderRank = player.leaderRank.weeksInTop40 %}
+      {% set leaderClass = "rank-" + leaderRank if leaderRank and leaderRank <= 4 else ("rank-5" if leaderRank == 5 else "") %}
+      <div class="stat-item {{ leaderClass }}">
+        <div class="stat-item__label" data-tooltip="The number of weeks the player has been ranked in the Top 40 since tracking began.">
+          <span class="stat-item__title-text">Top 40 Streak (Weeks)</span> <i class="fas fa-info-circle tooltip-icon"></i>
+        </div>
+        <div class="stat-item__value">{{ player.stats_recent.weeksInTop40 }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="profile-main-layout">
+    
+    <div class="profile-section profile-section--results profile-section--left-col">
+  <div class="profile-card">
+    <details class="collapsible-mobile" open>
+      <summary class="profile-card__header">
+  <h2>Rated tournament Results</h2>
+  <span class="collapsible-mobile__icon" aria-hidden="true">
+    <i class="fas fa-chevron-down"></i>
+  </span>
+</summary>
+
+      <ul class="results-list">
+        {% for result in player.results_1yr %}
+          {% set tierClass = "archive-item-card--" + result.tier | lower | replace('+', '-plus') if result.tier else "" %}
+          <li class="result-row {{ tierClass }}">
+            <div class="result-row__finish">
+              {{ result.icon | safe if result.icon else '#' + result.placement }}
+            </div>
+            <div class="result-row__details">
+              <span class="result-row__name">{{ result.tournament }}</span>
+              <span class="result-row__meta">{{ result.date | date("MMM d, yyyy") }}</span>
+            </div>
+          </li>
+        {% else %}
+          <li>No results found in the last 12 months.</li>
+        {% endfor %}
+      </ul>
+    </details>
+  </div>
+</div>
+
+    <div class="profile-section profile-section--right-col">
+      {% if player.signaturePerformance_1yr %}
+      <div class="profile-card spotlight-card--horizontal archive-item-card--s-plus">
+          <div class="spotlight-text-content">
+              <div class="signature-performance__placement">{{ player.signaturePerformance_1yr.placementIcon | safe }}</div>
+              <div class="signature-performance__details">
+                <div class="signature-performance__title">Signature Performance</div>
+                <div class="signature-performance__name">{{ player.signaturePerformance_1yr.tournamentName }}</div>
+                <div class="signature-performance__stat">
+                    {{ player.signaturePerformance_1yr.entrants }} Entrants • {{ player.signaturePerformance_1yr.tierName }} Event
+                </div>
+              </div>
+          </div>
+      </div>
+      {% endif %}
+      
+      <div class="profile-card">
+        <h2 class="profile-card__header">Trophy Case</h2>
+        <div class="stats-grid stats-grid--trophies">
+
+          {% set leaderRank = player.leaderRank.victories %}
+          {% set leaderClass = "rank-" + leaderRank if leaderRank and leaderRank <= 4 else ("rank-5" if leaderRank == 5 else "") %}
+          <div class="stat-item stat-item--clickable {{ leaderClass }}" data-modal-target="victories">
+            <div class="stat-item__label" data-tooltip="Total 1st place finishes in the last 12 months.">
+              <i class="fas fa-trophy trophy-1"></i> Victories <i class="fas fa-info-circle tooltip-icon"></i>
+            </div>
+            <div class="stat-item__value">{{ player.trophies_1yr.victories }}</div>
+          </div>
+
+          {% set leaderRank = player.leaderRank.top3 %}
+          {% set leaderClass = "rank-" + leaderRank if leaderRank and leaderRank <= 4 else ("rank-5" if leaderRank == 5 else "") %}
+          <div class="stat-item stat-item--clickable {{ leaderClass }}" data-modal-target="top3">
+            <div class="stat-item__label" data-tooltip="Total Top 3 finishes in the last 12 months.">
+              <i class="fas fa-medal trophy-2"></i> Top 3 <i class="fas fa-info-circle tooltip-icon"></i>
+            </div>
+            <div class="stat-item__value">{{ player.trophies_1yr.top3 }}</div>
+          </div>
+
+          {% set leaderRank = player.leaderRank.top8 %}
+          {% set leaderClass = "rank-" + leaderRank if leaderRank and leaderRank <= 4 else ("rank-5" if leaderRank == 5 else "") %}
+          <div class="stat-item stat-item--clickable {{ leaderClass }}" data-modal-target="top8">
+            <div class="stat-item__label" data-tooltip="Total Top 8 finishes in the last 12 months.">
+              <i class="fas fa-award trophy-3"></i> Top 8 <i class="fas fa-info-circle tooltip-icon"></i>
+            </div>
+            <div class="stat-item__value">{{ player.trophies_1yr.top8 }}</div>
+          </div>
+
+          {% set leaderRank = player.leaderRank.top16 %}
+          {% set leaderClass = "rank-" + leaderRank if leaderRank and leaderRank <= 4 else ("rank-5" if leaderRank == 5 else "") %}
+          <div class="stat-item stat-item--clickable {{ leaderClass }}" data-modal-target="top16">
+            <div class="stat-item__label" data-tooltip="Total Top 16 finishes in the last 12 months.">
+              <i class="fas fa-star trophy-4"></i> Top 16 <i class="fas fa-info-circle tooltip-icon"></i>
+            </div>
+            <div class="stat-item__value">{{ player.trophies_1yr.top16 }}</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="profile-card">
+          <h2 class="profile-card__header">Ranking History</h2>
+          <div class="ranking-history-graph">
+              <canvas id="ranking-chart"></canvas>
+          </div>
+          {% if not player.historicalData or player.historicalData.length == 0 %}
+            <p class="chart-no-data">No ranking history available.</p>
+          {% endif %}
+      </div>
+
+      {% if player.notableWins and player.notableWins.length > 0 %}
+      <div class="profile-card">
+        <h2 class="profile-card__header">Key Wins (Last 12 Months)</h2>
+        <ul class="notable-wins-list">
+        {% for win in player.notableWins %}
+          <li><i class="fas fa-skull"></i> {{ win }}</li>
+        {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="profile-pagination">
+  {% if player.previousPlayer %}
+    <a href="/players/{{ player.previousPlayer.slug }}/" class="btn btn--primary">
+      &laquo; #{{ player.previousPlayer.rank }} {{ player.previousPlayer.name }}
+    </a>
+  {% endif %}
+
+  {% if player.nextPlayer %}
+    <a href="/players/{{ player.nextPlayer.slug }}/" class="btn btn--primary" style="margin-left: auto;">
+      #{{ player.nextPlayer.rank }} {{ player.nextPlayer.name }} &raquo;
+    </a>
+  {% endif %}
+</div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script>
+  const currentPagePlayer = {{ player | dump | safe }};
+</script>
+{% set playerUrl = site.url + '/players/' + player.slug + '/' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ player.name }}",
+  "url": "{{ playerUrl }}",
+  "jobTitle": "Professional Gamer",
+  "description": "Professional {{ player.game | default('Fighting Game') }} competitor {{ player.name }}, currently ranked #{{ player.rank or 'N/A' }}. Main character: {{ player.mainCharacter }}.",
+  {% if player.photoUrl and player.photoUrl.trim() !== '' -%}
+    "image": "{{ player.photoUrl }}",
+  {%- endif %}
+  {% if player.country and player.country != 'N/A' -%}
+    "nationality": "{{ player.country }}",
+  {%- endif %}
+  {% if player.socials.twitter or player.socials.twitch -%}
+  "sameAs": [
+    {% if player.socials.twitter %}"{{ player.socials.twitter }}"{% if player.socials.twitch %},{% endif %}{% endif %}
+    {% if player.socials.twitch %}"{{ player.socials.twitch }}"{% endif %}
+  ],
+  {%- endif %}
+  {% if player.team and player.team != 'N/A' and player.team != 'Independent' -%}
+  "memberOf": {
+    "@type": "SportsTeam",
+    "name": "{{ player.team }}"
+  },
+  {%- endif %}
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ playerUrl }}"
+  }
+}
+</script>
+{% endblock %}

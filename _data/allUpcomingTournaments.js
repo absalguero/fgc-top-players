@@ -16,8 +16,8 @@ const newTournaments = {
     prizes: "TBA",
     game: "Street Fighter 6",
     slug: "umad-2025",
-    streamLink: "",
-    scheduleLink: "",
+    streamLink: "https://www.twitch.tv/woolieversus",
+    scheduleLink: "https://x.com/WoolieWoolz/status/1969113618403787067",
     description: `UMAD 2025 is set to be one of the year’s most exciting fighting game tournaments, bringing together players from all over the competitive FGC to battle for glory, recognition, and prizes. Known for its high-energy atmosphere and community-driven spirit, UMAD has built a reputation as a premier esports event where both veteran competitors and rising stars get the chance to showcase their skills on the big stage.
 
 Fans can expect fast-paced matches, unforgettable comebacks, and the kind of hype that only a top-tier fighting game event can deliver. With multiple games featured, a strong lineup of players, and an environment designed to celebrate the culture of fighting games, UMAD 2025 will be more than just a tournament—it will be a gathering place for the FGC to connect, compete, and create lasting memories.
@@ -25,7 +25,11 @@ Fans can expect fast-paced matches, unforgettable comebacks, and the kind of hyp
 For those looking to take their skills to the next level, UMAD 2025 is the perfect stage to test strategies, gain experience against high-level talent, and make a name within the competitive scene. Spectators and participants alike will enjoy the excitement of live competition, the energy of passionate fans, and the opportunity to be part of one of the standout events of the esports calendar.
 
 If you are a fighting game fan, competitor, or community supporter, UMAD 2025 is an event you won’t want to miss. Register today, train hard, and get ready to join an experience that embodies everything the Fighting Game Community stands for.`,
-    venueName: "8 Queen"
+    venueName: "8 Queen",
+    "notablePlayers": [
+  "FluxWaveZ", "googy", "Methodcobra"
+]
+
   },
   "roundhouse-2025": {
     name: "Roundhouse 2025",

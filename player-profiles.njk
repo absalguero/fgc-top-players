@@ -1,0 +1,88 @@
+---
+bodyClass: "page-player-profiles"
+---
+{% extends "layout.njk" %}
+
+{% block title %}Player Profiles | FGC Top Players{% endblock %}
+
+{% block content %}
+<div class="content-container content-container--wide">
+  {% include "banner.njk" %}
+  <h1>Player Profiles</h1>
+  <p class="intro-text">A complete, searchable directory of top Fighting Game Community players. Browse profiles, view stats, and follow your favorite competitors.</p>
+
+  <div class="controls-container controls-container--archive">
+    <button id="filter-toggle-btn" class="filter-toggle-btn" aria-expanded="false" aria-controls="filter-panel">
+      <i class="fas fa-filter"></i>
+      Filter & Sort Players
+      <i class="fas fa-chevron-down a-icon"></i>
+    </button>
+
+    <div id="filter-panel" class="filter-panel">
+      <div class="filter-row filter-row--search">
+        {# MODIFIED: Added a form element here #}
+        <form id="player-search-form" class="search-wrapper filter-group">
+          <label for="player-search-input" class="sr-only">Search by Player Name</label>
+          <input type="text" id="player-search-input" class="search-form__input" placeholder="Search by Player, Country, or Character..." autocomplete="off" name="q">
+          <button class="search-clear-btn" id="player-search-clear-btn" aria-label="Clear search">
+            <i class="fas fa-times"></i>
+          </button>
+        </form>
+      </div>
+       
+      <div class="filter-row filter-row--filters">
+        <div class="filter-group">
+          <label for="filter-game" class="sr-only">Game</label>
+          <select id="filter-game" class="styled-select">
+            <option value="all">All Games</option>
+            <option value="sf6">Street Fighter 6</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filter-country" class="sr-only">Country</label>
+          <select id="filter-country" class="styled-select">
+            <option value="all">All Countries</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filter-character" class="sr-only">Character</label>
+          <select id="filter-character" class="styled-select">
+            <option value="all">All Characters</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="sort-by" class="sr-only">Sort By</label>
+          <select id="sort-by" class="sort-select styled-select">
+            <option value="rank-asc">Sort by Rank (High to Low)</option>
+            <option value="rank-desc">Sort by Rank (Low to High)</option>
+            <option value="name-asc">Sort by Name (A-Z)</option>
+            <option value="name-desc">Sort by Name (Z-A)</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <button id="reset-filters-btn" class="btn btn--primary reset-btn">Reset</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="active-filters-container" class="active-filters-container"></div>
+  <div id="results-count" class="results-count"></div>
+  <div id="spotlight-placement-target"></div>
+  <div id="player-card-grid" class="archive-list"></div>
+
+  <div id="no-results-message" class="no-results-message" style="display: none;">
+    <h2>No Players Found</h2>
+    <p>Try adjusting your search or filter criteria.</p>
+  </div>
+   
+  <div id="sentinel" class="sentinel"></div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// This makes the player data available to main.js before it runs
+const playerProfiles = {{ playerProfiles | dump | safe }};
+</script>
+{% endblock %}

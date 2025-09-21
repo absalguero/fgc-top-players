@@ -25,10 +25,37 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
   // --- Filters ---
-  eleventyConfig.addFilter("readableDate", (dateObj) => {
-    const dt = DateTime.fromJSDate(dateObj);
+  eleventyConfig.addFilter("readableDate", (dateInput) => {
+    if (!dateInput) return "";
+    let dt;
+
+    if (typeof dateInput === "string") {
+      dt = DateTime.fromISO(dateInput, { zone: "utc" });
+    } else if (dateInput instanceof Date) {
+      dt = DateTime.fromJSDate(dateInput, { zone: "utc" });
+    } else {
+      return "";
+    }
+
     return dt.isValid ? dt.toFormat("MMMM d, yyyy") : "";
   });
+
+  eleventyConfig.addFilter("date", (dateInput, format = "LLL d, yyyy") => {
+    if (!dateInput) return "";
+    let dt;
+
+    if (typeof dateInput === "string") {
+      dt = DateTime.fromISO(dateInput, { zone: "utc" });
+    } else if (dateInput instanceof Date) {
+      dt = DateTime.fromJSDate(dateInput, { zone: "utc" });
+    } else {
+      return "";
+    }
+
+    return dt.isValid ? dt.toFormat(format) : "";
+  });
+
+  eleventyConfig.addFilter("limit", (arr, limit) => arr.slice(0, limit));
 
   eleventyConfig.addFilter("slugify", (str) => {
     if (!str) return "";
@@ -46,7 +73,6 @@ module.exports = function(eleventyConfig) {
     return paragraphs.map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('');
   });
   
-  // ✅ FIX: Added the missing split filter.
   eleventyConfig.addFilter("split", (str, separator) => {
     if (typeof str !== 'string') return [];
     return str.split(separator);
@@ -63,6 +89,17 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addFilter("values", (obj) => Object.values(obj));
+  
+  eleventyConfig.addNunjucksFilter("jsonify", function(data) {
+    return JSON.stringify(data, null, 2);
+  });
+  
+  eleventyConfig.addNunjucksFilter("ordinal", (n) => {
+    if (typeof n !== 'number') return n;
+    const s = ["th", "st", "nd", "rd"];
+    const v = n % 100;
+    return n + (s[(v - 20) % 10] || s[v] || s[0]);
+  });
 
   // --- Eleventy Directory Configuration ---
   return {

@@ -1,9 +1,499 @@
 {
+  "emirates-showdown-2024": {
+    "name": "Emirates Showdown 2024",
+    "date": "2024-08-30",
+    "slug": "emirates-showdown-2024",
+    "Tier": "B",
+    "Entrants": "48",
+    "results": [
+      {
+        "Player": "AngryBird",
+        "Player ID": "17189576",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "1",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "Big Bird",
+        "Player ID": "17529987",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "2",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "vWsym",
+        "Player ID": "17507822",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "3",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "Fruit",
+        "Player ID": "16530966",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "4",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "Abood bboy",
+        "Player ID": "17196705",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "5",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "Hamood",
+        "Player ID": "17189614",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "5",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "GTR",
+        "Player ID": "17118140",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "7",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "White-AshX",
+        "Player ID": "17436778",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "7",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "Baolaopaul",
+        "Player ID": "16819534",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "9",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "Demonicious",
+        "Player ID": "16868205",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "9",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "EvilYoshi",
+        "Player ID": "17196551",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "9",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "Zantetsu",
+        "Player ID": "17436765",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "9",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "ABR",
+        "Player ID": "17540640",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "13",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "Arsen Kamelot",
+        "Player ID": "16819585",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "13",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "DF",
+        "Player ID": "17141780",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "13",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "FlashNo47",
+        "Player ID": "16815674",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "13",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ameen",
+        "Player ID": "17522609",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "17",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "Fat_Fox",
+        "Player ID": "17190794",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "17",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kobra",
+        "Player ID": "17398973",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "17",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "Phoenix",
+        "Player ID": "17539973",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "17",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "Salem",
+        "Player ID": "17562528",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "17",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "Sultoon",
+        "Player ID": "17605124",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "17",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "The_Tormentor",
+        "Player ID": "17644030",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "17",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "Violence",
+        "Player ID": "17436769",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "17",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "6:23 in the morning",
+        "Player ID": "16811651",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "25",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "Detol+",
+        "Player ID": "17523093",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "25",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "DRAGON-SLAYER",
+        "Player ID": "17601752",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "25",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "JtwoC_",
+        "Player ID": "17436767",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "25",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "MaitrePoulet",
+        "Player ID": "16932552",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "25",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "Nerj",
+        "Player ID": "17602993",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "25",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "Thexlegend",
+        "Player ID": "16542567",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "25",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "WADE",
+        "Player ID": "17205276",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "25",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "BROOM",
+        "Player ID": "17189923",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "33",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "Camberry",
+        "Player ID": "17461857",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "33",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "Champ Loo",
+        "Player ID": "17549640",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "33",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "Doodle5",
+        "Player ID": "17528272",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "33",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "FMAB777",
+        "Player ID": "17007123",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "33",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "FrankieDeadman",
+        "Player ID": "16818722",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "33",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "Get Lost",
+        "Player ID": "17486631",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "33",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "Oniro",
+        "Player ID": "17445822",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "33",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "RAM",
+        "Player ID": "17601869",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "33",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "sephi22",
+        "Player ID": "17131956",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "33",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "Styopa",
+        "Player ID": "16736666",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "33",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "Tyrant",
+        "Player ID": "17606195",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "33",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "Uchiha_FZ",
+        "Player ID": "17412742",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "33",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "Violent ken",
+        "Player ID": "17521319",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "33",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "WhiteBl4ck",
+        "Player ID": "17603132",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "33",
+        "Entrants": "48",
+        "Tier": "B"
+      },
+      {
+        "Player": "Zaabi",
+        "Player ID": "17644021",
+        "Event": "Emirates Showdown 2024",
+        "Event ID": "1/29/3665",
+        "Date": "2024-08-31",
+        "Finish": "33",
+        "Entrants": "48",
+        "Tier": "B"
+      }
+    ]
+  },
   "treta-championship-2024": {
     "name": "Treta Championship 2024",
-    "date": "2024-09-07T07:00:00.000Z",
+    "date": "2024-09-06",
     "slug": "treta-championship-2024",
     "Tier": "B",
+    "Entrants": "121",
     "results": [
       {
         "Player": "NamikazeExTM",
@@ -649,9 +1139,10 @@
   },
   "f2con-2024": {
     "name": "F2CON 2024",
-    "date": "2024-09-08T07:00:00.000Z",
+    "date": "2024-09-07",
     "slug": "f2con-2024",
     "Tier": "B",
+    "Entrants": "50",
     "results": [
       {
         "Player": "Dual Kevin",
@@ -1157,9 +1648,10 @@
   },
   "ultimate-fighting-arena-2024": {
     "name": "Ultimate Fighting Arena 2024",
-    "date": "2024-09-13T07:00:00.000Z",
+    "date": "2024-09-12",
     "slug": "ultimate-fighting-arena-2024",
     "Tier": "S",
+    "Entrants": "450",
     "results": [
       {
         "Player": "Kusanagi (FR)",
@@ -1805,9 +2297,10 @@
   },
   "ozhadou-nationals-18": {
     "name": "OzHadou Nationals 18",
-    "date": "2024-09-27T07:00:00.000Z",
+    "date": "2024-09-26",
     "slug": "ozhadou-nationals-18",
     "Tier": "B",
+    "Entrants": "114",
     "results": [
       {
         "Player": "FREESER",
@@ -2453,9 +2946,10 @@
   },
   "island-paradise": {
     "name": "Island Paradise",
-    "date": "2024-09-28T07:00:00.000Z",
+    "date": "2024-09-27",
     "slug": "island-paradise",
     "Tier": "B",
+    "Entrants": "81",
     "results": [
       {
         "Player": "NuckleDu",
@@ -3101,9 +3595,10 @@
   },
   "dreamhack-atlanta-2024": {
     "name": "DreamHack Atlanta 2024",
-    "date": "2024-10-04T07:00:00.000Z",
+    "date": "2024-10-03",
     "slug": "dreamhack-atlanta-2024",
     "Tier": "A",
+    "Entrants": "218",
     "results": [
       {
         "Player": "Punk",
@@ -3749,9 +4244,10 @@
   },
   "thaiger-uppercut-tgu-2024": {
     "name": "Thaiger Uppercut (TGU) 2024",
-    "date": "2024-10-04T07:00:00.000Z",
+    "date": "2024-10-03",
     "slug": "thaiger-uppercut-tgu-2024",
     "Tier": "B",
+    "Entrants": "123",
     "results": [
       {
         "Player": "jojotaro",
@@ -4397,9 +4893,10 @@
   },
   "east-coast-throwdown-2024": {
     "name": "East Coast Throwdown 2024",
-    "date": "2024-10-11T07:00:00.000Z",
+    "date": "2024-10-10",
     "slug": "east-coast-throwdown-2024",
     "Tier": "S",
+    "Entrants": "621",
     "results": [
       {
         "Player": "Itabashi Zangief",
@@ -5045,9 +5542,10 @@
   },
   "first-attack-2024": {
     "name": "First Attack 2024",
-    "date": "2024-10-12T07:00:00.000Z",
+    "date": "2024-10-11",
     "slug": "first-attack-2024",
     "Tier": "A",
+    "Entrants": "89",
     "results": [
       {
         "Player": "MenaRD",
@@ -5693,9 +6191,10 @@
   },
   "capcom-pro-tour-2024-super-premier-singapore": {
     "name": "CAPCOM Pro Tour 2024 SUPER PREMIER SINGAPORE",
-    "date": "2024-10-17T07:00:00.000Z",
+    "date": "2024-10-16",
     "slug": "capcom-pro-tour-2024-super-premier-singapore",
     "Tier": "S+",
+    "Entrants": "385",
     "results": [
       {
         "Player": "Shuto",
@@ -6341,9 +6840,10 @@
   },
   "presents-jcg-street-fighter-6-capcom-pro-tour-2024-super-premier-japan": {
     "name": "京王 Presents JCG STREET FIGHTER 6 CAPCOM Pro Tour 2024 SUPER PREMIER JAPAN",
-    "date": "2024-11-01T07:00:00.000Z",
+    "date": "2024-10-31",
     "slug": "presents-jcg-street-fighter-6-capcom-pro-tour-2024-super-premier-japan",
     "Tier": "S+",
+    "Entrants": "1248",
     "results": [
       {
         "Player": "Tokido",
@@ -6989,9 +7489,10 @@
   },
   "blink-respawn-2024": {
     "name": "BLINK RESPAWN 2024",
-    "date": "2024-11-08T08:00:00.000Z",
+    "date": "2024-11-07",
     "slug": "blink-respawn-2024",
     "Tier": "S",
+    "Entrants": "162",
     "results": [
       {
         "Player": "NoahTheProdigy",
@@ -7637,9 +8138,10 @@
   },
   "astral-finish-2024": {
     "name": "Astral Finish 2024",
-    "date": "2024-11-16T08:00:00.000Z",
+    "date": "2024-11-15",
     "slug": "astral-finish-2024",
     "Tier": "B",
+    "Entrants": "91",
     "results": [
       {
         "Player": "LUGABO",
@@ -8285,9 +8787,10 @@
   },
   "battle-coliseum-2024": {
     "name": "BATTLE COLISEUM 2024",
-    "date": "2024-11-16T08:00:00.000Z",
+    "date": "2024-11-15",
     "slug": "battle-coliseum-2024",
     "Tier": "B",
+    "Entrants": "129",
     "results": [
       {
         "Player": "Broly",
@@ -8933,9 +9436,10 @@
   },
   "bum-presents-cold-front-2024": {
     "name": "Bum Presents Cold Front 2024",
-    "date": "2024-11-23T08:00:00.000Z",
+    "date": "2024-11-22",
     "slug": "bum-presents-cold-front-2024",
     "Tier": "B",
+    "Entrants": "35",
     "results": [
       {
         "Player": "NoahTheProdigy",
@@ -9291,9 +9795,10 @@
   },
   "kings-of-the-world-2024": {
     "name": "Kings of the World 2024",
-    "date": "2024-12-14T08:00:00.000Z",
+    "date": "2024-12-13",
     "slug": "kings-of-the-world-2024",
     "Tier": "S",
+    "Entrants": "200",
     "results": [
       {
         "Player": "Armperor",
@@ -9939,9 +10444,10 @@
   },
   "ceotaku-2024": {
     "name": "CEOtaku 2024",
-    "date": "2024-12-20T08:00:00.000Z",
+    "date": "2024-12-19",
     "slug": "ceotaku-2024",
     "Tier": "B",
+    "Entrants": "222",
     "results": [
       {
         "Player": "NuckleDu",
@@ -10587,9 +11093,10 @@
   },
   "beepro-cup2024": {
     "name": "BeePro Cup2024",
-    "date": "2024-12-27T08:00:00.000Z",
+    "date": "2024-12-26",
     "slug": "beepro-cup2024",
     "Tier": "B",
+    "Entrants": "446",
     "results": [
       {
         "Player": "Oil King",
@@ -11235,9 +11742,10 @@
   },
   "the-versus-festival-habba-edition-2024": {
     "name": "The Versus Festival: Habba Edition 2024",
-    "date": "2025-01-11T08:00:00.000Z",
+    "date": "2025-01-11",
     "slug": "the-versus-festival-habba-edition-2024",
     "Tier": "B",
+    "Entrants": "142",
     "results": [
       {
         "Player": "Tokido",
@@ -11360,7 +11868,7 @@
         "Tier": "B"
       },
       {
-        "Player": "\"\"Sodium \t\"\"",
+        "Player": "\"Sodium \t\"",
         "Player ID": "18879452",
         "Event": "The Versus Festival: Habba Edition 2024",
         "Event ID": "3/23/55",
@@ -11883,9 +12391,10 @@
   },
   "gtw-2024-finals": {
     "name": "GTW 2024 Finals",
-    "date": "2025-01-12T08:00:00.000Z",
+    "date": "2025-01-11",
     "slug": "gtw-2024-finals",
     "Tier": "A",
+    "Entrants": "16",
     "results": [
       {
         "Player": "xiaohai",
@@ -12051,9 +12560,10 @@
   },
   "frosty-faustings-xvii-2025": {
     "name": "Frosty Faustings XVII 2025",
-    "date": "2025-01-24T08:00:00.000Z",
+    "date": "2025-01-23",
     "slug": "frosty-faustings-xvii-2025",
     "Tier": "A",
+    "Entrants": "701",
     "results": [
       {
         "Player": "NoahTheProdigy",
@@ -12699,9 +13209,10 @@
   },
   "big-bang-6": {
     "name": "BIG BANG 6",
-    "date": "2025-02-01T08:00:00.000Z",
+    "date": "2025-01-31",
     "slug": "big-bang-6",
     "Tier": "B",
+    "Entrants": "65",
     "results": [
       {
         "Player": "LUGABO",
@@ -13347,9 +13858,10 @@
   },
   "genesis-x2": {
     "name": "Genesis X2",
-    "date": "2025-02-14T08:00:00.000Z",
+    "date": "2025-02-13",
     "slug": "genesis-x2",
     "Tier": "A",
+    "Entrants": "196",
     "results": [
       {
         "Player": "iDom",
@@ -13995,9 +14507,10 @@
   },
   "capcom-cup-xi": {
     "name": "Capcom Cup XI",
-    "date": "2025-03-08T08:00:00.000Z",
+    "date": "2025-03-07",
     "slug": "capcom-cup-xi",
     "Tier": "S+",
+    "Entrants": "48",
     "results": [
       {
         "Player": "Kakeru",
@@ -14483,9 +14996,10 @@
   },
   "the-wild-west-2025": {
     "name": "THE WILD WEST 2025",
-    "date": "2025-03-15T07:00:00.000Z",
+    "date": "2025-03-14",
     "slug": "the-wild-west-2025",
     "Tier": "B",
+    "Entrants": "34",
     "results": [
       {
         "Player": "FREESER",
@@ -14831,9 +15345,10 @@
   },
   "winter-clash-2025-10th-anniversary": {
     "name": "Winter Clash 2025 (10th Anniversary)",
-    "date": "2025-03-15T07:00:00.000Z",
+    "date": "2025-03-14",
     "slug": "winter-clash-2025-10th-anniversary",
     "Tier": "B",
+    "Entrants": "53",
     "results": [
       {
         "Player": "LuiMan20",
@@ -15369,9 +15884,10 @@
   },
   "texas-showdown-2025": {
     "name": "Texas Showdown 2025",
-    "date": "2025-03-28T07:00:00.000Z",
+    "date": "2025-03-27",
     "slug": "texas-showdown-2025",
     "Tier": "B",
+    "Entrants": "285",
     "results": [
       {
         "Player": "NoahTheProdigy",
@@ -16017,9 +16533,10 @@
   },
   "battle-of-bc-7": {
     "name": "Battle of BC 7",
-    "date": "2025-03-29T07:00:00.000Z",
+    "date": "2025-03-28",
     "slug": "battle-of-bc-7",
     "Tier": "B",
+    "Entrants": "104",
     "results": [
       {
         "Player": "Sayff",
@@ -16665,9 +17182,10 @@
   },
   "red-bull-kumite-2025-last-chance-qualifier-lcq": {
     "name": "RED BULL KUMITE 2025 - Last Chance Qualifier (LCQ)",
-    "date": "2025-04-05T07:00:00.000Z",
+    "date": "2025-04-04",
     "slug": "red-bull-kumite-2025-last-chance-qualifier-lcq",
     "Tier": "A",
+    "Entrants": "256",
     "results": [
       {
         "Player": "AKAINU",
@@ -17313,9 +17831,10 @@
   },
   "red-bull-kumite-2025-paris": {
     "name": "RED BULL KUMITE 2025 - PARIS",
-    "date": "2025-04-05T07:00:00.000Z",
+    "date": "2025-04-04",
     "slug": "red-bull-kumite-2025-paris",
     "Tier": "S",
+    "Entrants": "16",
     "results": [
       {
         "Player": "Big Bird",
@@ -17481,9 +18000,10 @@
   },
   "lvl-up-expo-2025": {
     "name": "LVL UP EXPO 2025",
-    "date": "2025-04-25T07:00:00.000Z",
+    "date": "2025-04-24",
     "slug": "lvl-up-expo-2025",
     "Tier": "A",
+    "Entrants": "150",
     "results": [
       {
         "Player": "Punk",
@@ -18129,9 +18649,10 @@
   },
   "fight-kingdom-2025": {
     "name": "Fight Kingdom 2025",
-    "date": "2025-05-02T07:00:00.000Z",
+    "date": "2025-05-01",
     "slug": "fight-kingdom-2025",
     "Tier": "B",
+    "Entrants": "88",
     "results": [
       {
         "Player": "ChrisCCH",
@@ -18777,9 +19298,10 @@
   },
   "diy-2025": {
     "name": "D.I.Y 2025",
-    "date": "2025-05-04T07:00:00.000Z",
+    "date": "2025-05-03",
     "slug": "diy-2025",
     "Tier": "B",
+    "Entrants": "65",
     "results": [
       {
         "Player": "Space Boy",
@@ -19423,659 +19945,12 @@
       }
     ]
   },
-  "evo-japan-2025-presented-by-levtech": {
-    "name": "EVO Japan 2025 presented by Levtech",
-    "date": "2025-05-08T07:00:00.000Z",
-    "slug": "evo-japan-2025-presented-by-levtech",
-    "Tier": "S+",
-    "results": [
-      {
-        "Player": "MenaRD",
-        "Player ID": "19683416",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "1",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Ryukichi",
-        "Player ID": "19693761",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "2",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "kobayan",
-        "Player ID": "18853935",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "3",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Momochi",
-        "Player ID": "19142826",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "4",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Leshar",
-        "Player ID": "19593645",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "5",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Akira",
-        "Player ID": "18991675",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "5",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Higuchi",
-        "Player ID": "19367982",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "7",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "NL",
-        "Player ID": "19594682",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "7",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Itabashi Zangief",
-        "Player ID": "19011551",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "9",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Nyanpi",
-        "Player ID": "19587478",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "9",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Xian",
-        "Player ID": "19727429",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "9",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Yanai",
-        "Player ID": "18599311",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "9",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "EndingWalker",
-        "Player ID": "19618139",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "13",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Tokido",
-        "Player ID": "18962679",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "13",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Zangief_bolado",
-        "Player ID": "19709902",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "13",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "雄次郎",
-        "Player ID": "18802425",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "13",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Axela",
-        "Player ID": "19729522",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "17",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Big Bird",
-        "Player ID": "19670302",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "17",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Caba",
-        "Player ID": "19690268",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "17",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "cosa",
-        "Player ID": "18834144",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "17",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Hikaru",
-        "Player ID": "18999266",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "17",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "moke",
-        "Player ID": "19721528",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "17",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "NARIKUN",
-        "Player ID": "19012890",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "17",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "タンタンメン",
-        "Player ID": "18778793",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "17",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "gachikun",
-        "Player ID": "19186868",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "25",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "John Takeuchi",
-        "Player ID": "19732163",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "25",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Johnny",
-        "Player ID": "19017206",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "25",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Kakeru",
-        "Player ID": "18834682",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "25",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Nauman",
-        "Player ID": "19010834",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "25",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Shuto",
-        "Player ID": "19718839",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "25",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "NuckleDu",
-        "Player ID": "19722359",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "25",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Yuto",
-        "Player ID": "19712156",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "25",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Armperor",
-        "Player ID": "18971210",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "33",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Blaz",
-        "Player ID": "19533293",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "33",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Bonchan",
-        "Player ID": "18911923",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "33",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Daigo Umehara",
-        "Player ID": "18648761",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "33",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "eda",
-        "Player ID": "18656145",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "33",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Fuudo",
-        "Player ID": "18648752",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "33",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Garu",
-        "Player ID": "18953724",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "33",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Hibiki",
-        "Player ID": "19019011",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "33",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Hope. (16)",
-        "Player ID": "19337033",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "33",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "HotDog29",
-        "Player ID": "19217939",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "33",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "kingsvega",
-        "Player ID": "18785427",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "33",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Kujou",
-        "Player ID": "19585950",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "33",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Micky",
-        "Player ID": "19143962",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "33",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "NoahTheProdigy",
-        "Player ID": "19563561",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "33",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Punk",
-        "Player ID": "19516973",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "33",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Torimeshi",
-        "Player ID": "19552613",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "33",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "AngryBird",
-        "Player ID": "19712965",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "49",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Brayan_Job",
-        "Player ID": "19709872",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "49",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "DCQ",
-        "Player ID": "19509060",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "49",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "eita",
-        "Player ID": "19694201",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "49",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Jr.",
-        "Player ID": "18862034",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "49",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "JUNINHO-RAS",
-        "Player ID": "19709976",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "49",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Lexx",
-        "Player ID": "19420567",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "49",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Nemo",
-        "Player ID": "18819366",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "49",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "pokke",
-        "Player ID": "18599940",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "49",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "SUNHUI",
-        "Player ID": "19689509",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "49",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Yamaguchi",
-        "Player ID": "19188742",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "49",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "YHC-mochi",
-        "Player ID": "19011699",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "49",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "Zhen",
-        "Player ID": "19467736",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "49",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "おーば",
-        "Player ID": "19723169",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "49",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "ぷろさん",
-        "Player ID": "19679226",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "49",
-        "Entrants": "7195",
-        "Tier": "S+"
-      },
-      {
-        "Player": "ミッセ",
-        "Player ID": "19188672",
-        "Event": "EVO Japan 2025 presented by Levtech",
-        "Event ID": "7/15/05",
-        "Date": "2025-05-08",
-        "Finish": "49",
-        "Entrants": "7195",
-        "Tier": "S+"
-      }
-    ]
-  },
   "hero-esports-asian-champions-league": {
     "name": "HERO ESPORTS Asian Champions League",
-    "date": "2025-05-16T07:00:00.000Z",
+    "date": "2025-05-15",
     "slug": "hero-esports-asian-champions-league",
     "Tier": "S+",
+    "Entrants": "772",
     "results": [
       {
         "Player": "Tokido",
@@ -20721,9 +20596,10 @@
   },
   "brussels-challenge-major-edition-2025": {
     "name": "Brussels Challenge Major Edition 2025",
-    "date": "2025-05-17T07:00:00.000Z",
+    "date": "2025-05-16",
     "slug": "brussels-challenge-major-edition-2025",
     "Tier": "S",
+    "Entrants": "152",
     "results": [
       {
         "Player": "Bonchan",
@@ -21369,9 +21245,10 @@
   },
   "combo-breaker-2025": {
     "name": "COMBO BREAKER 2025",
-    "date": "2025-05-23T07:00:00.000Z",
+    "date": "2025-05-22",
     "slug": "combo-breaker-2025",
     "Tier": "S+",
+    "Entrants": "1324",
     "results": [
       {
         "Player": "Leshar",
@@ -22017,9 +21894,10 @@
   },
   "bam-15-battle-arena-melbourne-15": {
     "name": "BAM 15: Battle Arena Melbourne 15",
-    "date": "2025-05-29T07:00:00.000Z",
+    "date": "2025-05-28",
     "slug": "bam-15-battle-arena-melbourne-15",
     "Tier": "A",
+    "Entrants": "164",
     "results": [
       {
         "Player": "NARIKUN",
@@ -22665,9 +22543,10 @@
   },
   "headstomper-2025": {
     "name": "Headstomper 2025",
-    "date": "2025-05-31T07:00:00.000Z",
+    "date": "2025-05-30",
     "slug": "headstomper-2025",
     "Tier": "B",
+    "Entrants": "116",
     "results": [
       {
         "Player": "Didimokof",
@@ -23313,9 +23192,10 @@
   },
   "norcal-knockout-2025": {
     "name": "NorCal Knockout 2025",
-    "date": "2025-05-31T07:00:00.000Z",
+    "date": "2025-05-30",
     "slug": "norcal-knockout-2025",
     "Tier": "B",
+    "Entrants": "65",
     "results": [
       {
         "Player": "TreeWiz",
@@ -23961,9 +23841,10 @@
   },
   "ceo-2025": {
     "name": "CEO 2025",
-    "date": "2025-06-13T07:00:00.000Z",
+    "date": "2025-06-12",
     "slug": "ceo-2025",
     "Tier": "S+",
+    "Entrants": "837",
     "results": [
       {
         "Player": "Leshar",
@@ -24609,9 +24490,10 @@
   },
   "get-on-my-level-forever-canadian-fighting-game-championships": {
     "name": "Get On My Level: Forever - Canadian Fighting Game Championships",
-    "date": "2025-07-05T07:00:00.000Z",
+    "date": "2025-07-04",
     "slug": "get-on-my-level-forever-canadian-fighting-game-championships",
     "Tier": "B",
+    "Entrants": "221",
     "results": [
       {
         "Player": "Riddles",
@@ -25257,9 +25139,10 @@
   },
   "the-mixup-2025-round-7": {
     "name": "The MIXUP 2025 - Round 7",
-    "date": "2025-07-05T07:00:00.000Z",
+    "date": "2025-07-04",
     "slug": "the-mixup-2025-round-7",
     "Tier": "S",
+    "Entrants": "144",
     "results": [
       {
         "Player": "Nephew",
@@ -25905,9 +25788,10 @@
   },
   "only-the-best-2025": {
     "name": "Only The Best 2025",
-    "date": "2025-07-12T07:00:00.000Z",
+    "date": "2025-07-11",
     "slug": "only-the-best-2025",
     "Tier": "B",
+    "Entrants": "62",
     "results": [
       {
         "Player": "Garnet",
@@ -26533,9 +26417,10 @@
   },
   "topanga-championship-6": {
     "name": "Topanga Championship 6",
-    "date": "2025-07-13T07:00:00.000Z",
+    "date": "2025-07-12",
     "slug": "topanga-championship-6",
     "Tier": "S+",
+    "Entrants": "29",
     "results": [
       {
         "Player": "Fuudo",
@@ -26831,9 +26716,10 @@
   },
   "blink-respawn-2025": {
     "name": "BLINK RESPAWN 2025",
-    "date": "2025-07-18T07:00:00.000Z",
+    "date": "2025-07-17",
     "slug": "blink-respawn-2025",
     "Tier": "S+",
+    "Entrants": "271",
     "results": [
       {
         "Player": "Fuudo",
@@ -27479,9 +27365,10 @@
   },
   "s-factor-12": {
     "name": "S Factor 12",
-    "date": "2025-07-26T07:00:00.000Z",
+    "date": "2025-07-25",
     "slug": "s-factor-12",
     "Tier": "A",
+    "Entrants": "215",
     "results": [
       {
         "Player": "Dual Kevin",
@@ -28127,9 +28014,10 @@
   },
   "evo-vegas-2025": {
     "name": "Evo Vegas 2025",
-    "date": "2025-08-01T07:00:00.000Z",
+    "date": "2025-07-31",
     "slug": "evo-vegas-2025",
     "Tier": "S+",
+    "Entrants": "4242",
     "results": [
       {
         "Player": "MenaRD",
@@ -28775,9 +28663,10 @@
   },
   "crossover-2025": {
     "name": "CROSSOVER 2025",
-    "date": "2025-08-08T07:00:00.000Z",
+    "date": "2025-08-07",
     "slug": "crossover-2025",
     "Tier": "B",
+    "Entrants": "61",
     "results": [
       {
         "Player": "semy28",
@@ -29393,9 +29282,10 @@
   },
   "saudi-eleague-season-3-championship": {
     "name": "Saudi eLeague Season 3 Championship",
-    "date": "2025-08-11T07:00:00.000Z",
+    "date": "2025-08-10",
     "slug": "saudi-eleague-season-3-championship",
     "Tier": "A",
+    "Entrants": "36",
     "results": [
       {
         "Player": "Latif",
@@ -29751,9 +29641,10 @@
   },
   "esports-world-cup-2025-last-change-qualifier-lcq": {
     "name": "Esports World Cup 2025 Last Change Qualifier (LCQ)",
-    "date": "2025-08-14T07:00:00.000Z",
+    "date": "2025-08-13",
     "slug": "esports-world-cup-2025-last-change-qualifier-lcq",
     "Tier": "S",
+    "Entrants": "250",
     "results": [
       {
         "Player": "GO1",
@@ -30399,9 +30290,10 @@
   },
   "vsfighting-xiii": {
     "name": "VSFighting XIII",
-    "date": "2025-08-15T07:00:00.000Z",
+    "date": "2025-08-14",
     "slug": "vsfighting-xiii",
     "Tier": "B",
+    "Entrants": "250",
     "results": [
       {
         "Player": "Shakz",
@@ -31047,9 +30939,10 @@
   },
   "beast-in-the-east-8": {
     "name": "Beast in the East 8",
-    "date": "2025-08-23T07:00:00.000Z",
+    "date": "2025-08-22",
     "slug": "beast-in-the-east-8",
     "Tier": "B",
+    "Entrants": "84",
     "results": [
       {
         "Player": "youngkenplayer69",
@@ -31695,9 +31588,10 @@
   },
   "esports-world-cup-2025": {
     "name": "Esports World Cup 2025",
-    "date": "2025-08-23T07:00:00.000Z",
+    "date": "2025-08-22",
     "slug": "esports-world-cup-2025",
     "Tier": "S+",
+    "Entrants": "48",
     "results": [
       {
         "Player": "xiaohai",
@@ -32183,9 +32077,10 @@
   },
   "cream-city-convergence-2025": {
     "name": "Cream City Convergence 2025",
-    "date": "2025-08-30T07:00:00.000Z",
+    "date": "2025-08-29",
     "slug": "cream-city-convergence-2025",
     "Tier": "B",
+    "Entrants": "146",
     "results": [
       {
         "Player": "JAK",
@@ -32831,9 +32726,10 @@
   },
   "comite-arena-2025": {
     "name": "COMITÊ ARENA 2025",
-    "date": "2025-08-31T07:00:00.000Z",
+    "date": "2025-08-30",
     "slug": "comite-arena-2025",
     "Tier": "B",
+    "Entrants": "189",
     "results": [
       {
         "Player": "Brayan_Job",
@@ -33479,9 +33375,10 @@
   },
   "ozhadou-nationals-19": {
     "name": "OzHadou Nationals 19",
-    "date": "2025-09-07T07:00:00.000Z",
+    "date": "2025-09-06",
     "slug": "ozhadou-nationals-19",
     "Tier": "B",
+    "Entrants": "104",
     "results": [
       {
         "Player": "elieatscrayons",
@@ -34125,499 +34022,12 @@
       }
     ]
   },
-  "emirates-showdown-2024": {
-    "name": "Emirates Showdown 2024",
-    "date": "2024-08-31T07:00:00.000Z",
-    "slug": "emirates-showdown-2024",
-    "Tier": "B",
-    "results": [
-      {
-        "Player": "AngryBird",
-        "Player ID": "17189576",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "1",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "Big Bird",
-        "Player ID": "17529987",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "2",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "vWsym",
-        "Player ID": "17507822",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "3",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "Fruit",
-        "Player ID": "16530966",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "4",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "Abood bboy",
-        "Player ID": "17196705",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "5",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "Hamood",
-        "Player ID": "17189614",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "5",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "GTR",
-        "Player ID": "17118140",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "7",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "White-AshX",
-        "Player ID": "17436778",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "7",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "Baolaopaul",
-        "Player ID": "16819534",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "9",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "Demonicious",
-        "Player ID": "16868205",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "9",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "EvilYoshi",
-        "Player ID": "17196551",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "9",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "Zantetsu",
-        "Player ID": "17436765",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "9",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "ABR",
-        "Player ID": "17540640",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "13",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "Arsen Kamelot",
-        "Player ID": "16819585",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "13",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "DF",
-        "Player ID": "17141780",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "13",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "FlashNo47",
-        "Player ID": "16815674",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "13",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "Ameen",
-        "Player ID": "17522609",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "17",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "Fat_Fox",
-        "Player ID": "17190794",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "17",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "Kobra",
-        "Player ID": "17398973",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "17",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "Phoenix",
-        "Player ID": "17539973",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "17",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "Salem",
-        "Player ID": "17562528",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "17",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "Sultoon",
-        "Player ID": "17605124",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "17",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "The_Tormentor",
-        "Player ID": "17644030",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "17",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "Violence",
-        "Player ID": "17436769",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "17",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "6:23 in the morning",
-        "Player ID": "16811651",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "25",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "Detol+",
-        "Player ID": "17523093",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "25",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "DRAGON-SLAYER",
-        "Player ID": "17601752",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "25",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "JtwoC_",
-        "Player ID": "17436767",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "25",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "MaitrePoulet",
-        "Player ID": "16932552",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "25",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "Nerj",
-        "Player ID": "17602993",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "25",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "Thexlegend",
-        "Player ID": "16542567",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "25",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "WADE",
-        "Player ID": "17205276",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "25",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "BROOM",
-        "Player ID": "17189923",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "33",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "Camberry",
-        "Player ID": "17461857",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "33",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "Champ Loo",
-        "Player ID": "17549640",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "33",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "Doodle5",
-        "Player ID": "17528272",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "33",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "FMAB777",
-        "Player ID": "17007123",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "33",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "FrankieDeadman",
-        "Player ID": "16818722",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "33",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "Get Lost",
-        "Player ID": "17486631",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "33",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "Oniro",
-        "Player ID": "17445822",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "33",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "RAM",
-        "Player ID": "17601869",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "33",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "sephi22",
-        "Player ID": "17131956",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "33",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "Styopa",
-        "Player ID": "16736666",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "33",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "Tyrant",
-        "Player ID": "17606195",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "33",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "Uchiha_FZ",
-        "Player ID": "17412742",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "33",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "Violent ken",
-        "Player ID": "17521319",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "33",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "WhiteBl4ck",
-        "Player ID": "17603132",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "33",
-        "Entrants": "48",
-        "Tier": "B"
-      },
-      {
-        "Player": "Zaabi",
-        "Player ID": "17644021",
-        "Event": "Emirates Showdown 2024",
-        "Event ID": "1/29/3665",
-        "Date": "2024-08-31",
-        "Finish": "33",
-        "Entrants": "48",
-        "Tier": "B"
-      }
-    ]
-  },
   "ultimate-fighting-arena-2025": {
     "name": "ULTIMATE FIGHTING ARENA 2025",
-    "date": "2025-09-13T07:00:00.000Z",
+    "date": "2025-09-12",
     "slug": "ultimate-fighting-arena-2025",
     "Tier": "S",
+    "Entrants": "393",
     "results": [
       {
         "Player": "Sahara.",
@@ -35258,6 +34668,1184 @@
         "Finish": "49",
         "Entrants": "393",
         "Tier": "S"
+      }
+    ]
+  },
+  "evo-japan-2025": {
+    "name": "EVO Japan 2025",
+    "date": "2025-05-07",
+    "slug": "evo-japan-2025",
+    "Tier": "S+",
+    "Entrants": "7195",
+    "results": [
+      {
+        "Player": "MenaRD",
+        "Player ID": "19683416",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "1",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Ryukichi",
+        "Player ID": "19693761",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "2",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "kobayan",
+        "Player ID": "18853935",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "3",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Momochi",
+        "Player ID": "19142826",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "4",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Leshar",
+        "Player ID": "19593645",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "5",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Akira",
+        "Player ID": "18991675",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "5",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Higuchi",
+        "Player ID": "19367982",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "7",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "NL",
+        "Player ID": "19594682",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "7",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Itabashi Zangief",
+        "Player ID": "19011551",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "9",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Nyanpi",
+        "Player ID": "19587478",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "9",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Xian",
+        "Player ID": "19727429",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "9",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Yanai",
+        "Player ID": "18599311",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "9",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "EndingWalker",
+        "Player ID": "19618139",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "13",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Tokido",
+        "Player ID": "18962679",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "13",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Zangief_bolado",
+        "Player ID": "19709902",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "13",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "雄次郎",
+        "Player ID": "18802425",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "13",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Axela",
+        "Player ID": "19729522",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "17",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Big Bird",
+        "Player ID": "19670302",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "17",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Caba",
+        "Player ID": "19690268",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "17",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "cosa",
+        "Player ID": "18834144",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "17",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Hikaru",
+        "Player ID": "18999266",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "17",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "moke",
+        "Player ID": "19721528",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "17",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "NARIKUN",
+        "Player ID": "19012890",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "17",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "タンタンメン",
+        "Player ID": "18778793",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "17",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "gachikun",
+        "Player ID": "19186868",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "25",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "John Takeuchi",
+        "Player ID": "19732163",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "25",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Johnny",
+        "Player ID": "19017206",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "25",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Kakeru",
+        "Player ID": "18834682",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "25",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Nauman",
+        "Player ID": "19010834",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "25",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Shuto",
+        "Player ID": "19718839",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "25",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "NuckleDu",
+        "Player ID": "19722359",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "25",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Yuto",
+        "Player ID": "19712156",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "25",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Armperor",
+        "Player ID": "18971210",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "33",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Blaz",
+        "Player ID": "19533293",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "33",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Bonchan",
+        "Player ID": "18911923",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "33",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Daigo Umehara",
+        "Player ID": "18648761",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "33",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "eda",
+        "Player ID": "18656145",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "33",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Fuudo",
+        "Player ID": "18648752",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "33",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Garu",
+        "Player ID": "18953724",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "33",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Hibiki",
+        "Player ID": "19019011",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "33",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Hope. (16)",
+        "Player ID": "19337033",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "33",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "HotDog29",
+        "Player ID": "19217939",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "33",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "kingsvega",
+        "Player ID": "18785427",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "33",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Kujou",
+        "Player ID": "19585950",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "33",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Micky",
+        "Player ID": "19143962",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "33",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "NoahTheProdigy",
+        "Player ID": "19563561",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "33",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Punk",
+        "Player ID": "19516973",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "33",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Torimeshi",
+        "Player ID": "19552613",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "33",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "AngryBird",
+        "Player ID": "19712965",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "49",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Brayan_Job",
+        "Player ID": "19709872",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "49",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "DCQ",
+        "Player ID": "19509060",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "49",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "eita",
+        "Player ID": "19694201",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "49",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Jr.",
+        "Player ID": "18862034",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "49",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "JUNINHO-RAS",
+        "Player ID": "19709976",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "49",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Lexx",
+        "Player ID": "19420567",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "49",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Nemo",
+        "Player ID": "18819366",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "49",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "pokke",
+        "Player ID": "18599940",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "49",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "SUNHUI",
+        "Player ID": "19689509",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "49",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Yamaguchi",
+        "Player ID": "19188742",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "49",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "YHC-mochi",
+        "Player ID": "19011699",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "49",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Zhen",
+        "Player ID": "19467736",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "49",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "おーば",
+        "Player ID": "19723169",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "49",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "ぷろさん",
+        "Player ID": "19679226",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "49",
+        "Entrants": "7195",
+        "Tier": "S+"
+      },
+      {
+        "Player": "ミッセ",
+        "Player ID": "19188672",
+        "Event": "EVO Japan 2025",
+        "Event ID": "7/15/05",
+        "Date": "2025-05-08",
+        "Finish": "49",
+        "Entrants": "7195",
+        "Tier": "S+"
+      }
+    ]
+  },
+  "the-versus-festival-habba-edition": {
+    "name": "The Versus Festival: Habba Edition",
+    "date": "2025-01-10",
+    "slug": "the-versus-festival-habba-edition",
+    "Tier": "B",
+    "Entrants": "142",
+    "results": [
+      {
+        "Player": "Tokido",
+        "Player ID": "18483392",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "1",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "takera",
+        "Player ID": "18464046",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "2",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "b_HAUNT",
+        "Player ID": "18083464",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "3",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "Whitey",
+        "Player ID": "18084503",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "4",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mike Ross",
+        "Player ID": "18464043",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "5",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "Prince",
+        "Player ID": "18083685",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "5",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "GupShup",
+        "Player ID": "18083473",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "7",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kairiyup",
+        "Player ID": "18517032",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "7",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ace1183",
+        "Player ID": "18349791",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "9",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "Xinigami",
+        "Player ID": "18083292",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "9",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "qlp",
+        "Player ID": "18523406",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "9",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cold-Blooded",
+        "Player ID": "18505655",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "9",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "Hearth",
+        "Player ID": "18474021",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "13",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "ChibiMax",
+        "Player ID": "18083345",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "13",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "GRASS FED GAMER",
+        "Player ID": "18505899",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "13",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "\"Sodium \t\"",
+        "Player ID": "18879452",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "13",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "Guilt Free",
+        "Player ID": "18483508",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "17",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "ACE_Holmes",
+        "Player ID": "18083460",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "17",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "thund3rcros",
+        "Player ID": "18504074",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "17",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "Magma",
+        "Player ID": "18483414",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "17",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "YokaI_Blue",
+        "Player ID": "18086339",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "17",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "Yoodie",
+        "Player ID": "18103149",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "17",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "Yolo",
+        "Player ID": "18083317",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "17",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "Skeith",
+        "Player ID": "18879304",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "17",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "LowTragic",
+        "Player ID": "18494662",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "25",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "Accorinrin",
+        "Player ID": "18748813",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "25",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "MadGenius",
+        "Player ID": "18531725",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "25",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "sonicps",
+        "Player ID": "18130866",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "25",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "{EngelTrots}",
+        "Player ID": "18736666",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "25",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "Blitzsol",
+        "Player ID": "18561420",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "25",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "Perfect knucklehead",
+        "Player ID": "18503896",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "25",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "Void",
+        "Player ID": "18143683",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "25",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "pranavstormer17",
+        "Player ID": "18802694",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "33",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "ZeroDawn0D",
+        "Player ID": "18085293",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "33",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "Abhinad",
+        "Player ID": "18879063",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "35",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "Blackwind47",
+        "Player ID": "18779984",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "35",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "aboyofculture",
+        "Player ID": "18094525",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "35",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "Olivier Armstrong",
+        "Player ID": "18826402",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "35",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "Vignesh",
+        "Player ID": "18772546",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "35",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "VenoMxSnakE",
+        "Player ID": "18083403",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "35",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "Vanshaj",
+        "Player ID": "18846022",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "35",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "Xerofore",
+        "Player ID": "18846026",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "35",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bhavesh R",
+        "Player ID": "18238016",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "35",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "Vsk",
+        "Player ID": "18103757",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "35",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "Deck52",
+        "Player ID": "18086511",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "35",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "Batrang",
+        "Player ID": "18083392",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "35",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "POKERFACE101",
+        "Player ID": "18785548",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "35",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "KAN",
+        "Player ID": "18084669",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "35",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "SRushStar",
+        "Player ID": "18493944",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "35",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dark_kni8ht",
+        "Player ID": "18503954",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "35",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kami",
+        "Player ID": "18772245",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "35",
+        "Entrants": "142",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ryan",
+        "Player ID": "18879454",
+        "Event": "The Versus Festival: Habba Edition",
+        "Event ID": "3/23/55",
+        "Date": "2025-01-11",
+        "Finish": "35",
+        "Entrants": "142",
+        "Tier": "B"
       }
     ]
   }
