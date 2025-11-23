@@ -1,0 +1,142 @@
+/* ============================================= */
+/* CONTRIBUTE PAGE                               */
+/* ============================================= */
+
+/* Scope all styles under .contributor-page to avoid conflicts */
+
+/* Button centering (matching about.njk pattern) */
+.contributor-page .home-card__content > .btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+  width: fit-content;
+  max-width: 100%;
+}
+
+/* Intro text spacing */
+.contributor-page .intro-text {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-md);
+}
+
+/* Contribution cards grid - responsive override for inline styles */
+.contributor-page .grid-gap-md {
+  display: grid;
+  gap: var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+  max-width: 100%;
+}
+
+/* Mobile first: single column */
+.contributor-page .grid-gap-md {
+  grid-template-columns: 1fr !important; /* Override inline style */
+}
+
+/* Tablet: 2 columns at 640px+ */
+@media (min-width: 640px) {
+  .contributor-page .grid-gap-md {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* Desktop: 2 columns (maintain 2-column layout for better readability) */
+@media (min-width: 1024px) {
+  .contributor-page .grid-gap-md {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* Large desktop: could optionally go to 3 or 4 columns, but 2 is more readable */
+@media (min-width: 1440px) {
+  .contributor-page .grid-gap-md {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* Profile cards responsive styling */
+.contributor-page .profile-card {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.contributor-page .profile-card__header h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.contributor-page .profile-card__header h2 i {
+  color: var(--color-accent-blue);
+  font-size: 1.1em;
+}
+
+.contributor-page .home-card__content {
+  padding: var(--spacing-md);
+  text-align: center;
+}
+
+.contributor-page .home-card__content p {
+  margin-bottom: 0;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Button rows - ensure they don't overflow */
+.contributor-page .btn-row {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.contributor-page .btn {
+  max-width: 100%;
+  text-align: center;
+}
+
+/* Mobile responsive tweaks */
+@media (max-width: 640px) {
+  .contributor-page .profile-card__header h2 {
+    font-size: 1.15rem;
+  }
+
+  .contributor-page .intro-text {
+    font-size: 1rem;
+  }
+
+  .contributor-page .home-card__content {
+    padding: var(--spacing-sm);
+  }
+
+  /* Ensure buttons fit on small screens */
+  .contributor-page .btn {
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .contributor-page .btn i {
+    font-size: 0.9rem;
+  }
+}
+
+/* Ensure content doesn't cause horizontal scroll */
+@media (max-width: 1279px) {
+  .contributor-page {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .contributor-page .grid-gap-md {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .contributor-page .profile-card {
+    overflow-x: hidden;
+  }
+}

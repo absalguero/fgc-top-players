@@ -1,0 +1,1063 @@
+/* =============================================
+   PAGE: PLAYER STATS
+   ============================================= */
+
+/* ---------------------------------------------------------
+   1. GENERAL LAYOUT & INTRO
+   --------------------------------------------------------- */
+.page-player-stats h1,
+.page-player-stats .intro-text {
+    text-align: center;
+}
+
+.page-player-stats .intro-text-container {
+    max-width: 90ch;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+.page-player-stats .content,
+.page-player-stats .container {
+    max-width: 1400px;
+}
+
+/* Mobile card container (hidden by default) */
+#stats-card-container {
+    display: none;
+}
+
+.page-player-stats .results-count {
+    font-size: 0.9rem;
+    padding: 0 var(--spacing-sm);
+    margin: var(--spacing-sm) auto;
+}
+
+/* ---------------------------------------------------------
+   2. CONTROLS (Search, Buttons, Wrapper)
+   --------------------------------------------------------- */
+.table-controls {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin: 0 0 var(--spacing-sm);
+}
+
+.table-controls .search-form {
+    min-width: 200px;
+}
+
+.page-player-stats .mobile-sort-controls {
+    display: block;
+    margin: 0.5rem auto;
+    padding: 0;
+}
+
+.page-player-stats .mobile-controls-row {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+}
+
+.page-player-stats .mobile-controls-row .how-to-use-container,
+.page-player-stats .mobile-controls-row .filter-options-container {
+    position: static;
+    flex-shrink: 0;
+}
+
+/* Trigger Buttons */
+.page-player-stats #mobile-how-to-use-btn,
+.page-player-stats #mobile-toggle-columns-btn,
+.page-player-stats #mobile-filter-options-btn {
+    width: 44px;
+    height: 44px;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-color: var(--color-bg-card-gradient-start);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    color: var(--color-text-primary);
+    font-size: 1.2rem;
+    cursor: pointer !important;
+    line-height: 1;
+    pointer-events: auto !important;
+    position: relative;
+    z-index: 1;
+}
+
+.page-player-stats #mobile-how-to-use-btn i,
+.page-player-stats #mobile-toggle-columns-btn i,
+.page-player-stats #mobile-filter-options-btn i {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-player-stats #mobile-how-to-use-btn:hover,
+.page-player-stats #mobile-toggle-columns-btn:hover,
+.page-player-stats #mobile-filter-options-btn:hover {
+    background-color: var(--color-surface-1);
+    border-color: var(--color-accent-blue);
+    color: var(--color-accent-blue);
+}
+
+.page-player-stats #mobile-how-to-use-btn:focus,
+.page-player-stats #mobile-toggle-columns-btn:focus,
+.page-player-stats #mobile-filter-options-btn:focus {
+    outline: 2px solid var(--color-accent-blue);
+    outline-offset: 2px;
+}
+
+#how-to-use-btn,
+#filter-options-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    white-space: nowrap;
+}
+
+/* Search Bar Wrapper & Input */
+.page-player-stats .mobile-search-wrapper {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.page-player-stats .mobile-search-wrapper .search-form__input {
+    width: 100%;
+    height: 44px;
+    /* Balanced padding: 2.5rem on both left and right ensures centered text */
+    padding: 0 2.5rem; 
+    background-color: var(--color-bg-card-gradient-start);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    color: var(--color-text-primary);
+    font-size: 1rem;
+}
+
+.page-player-stats .mobile-search-wrapper .search-clear-btn {
+    position: absolute;
+    right: 0.5rem;
+    width: var(--tap-target-min);
+    height: var(--tap-target-min);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    color: var(--color-text-secondary);
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+.page-player-stats .mobile-search-wrapper .search-clear-btn.visible {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.page-player-stats .mobile-search-wrapper .search-clear-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-text-primary);
+}
+
+/* ---------------------------------------------------------
+   3. POPOVERS & TABS
+   --------------------------------------------------------- */
+
+/* 1. Base styles & Centering (Hidden by default) */
+.page-player-stats .popover-panel,
+.page-player-stats #how-to-use-panel,
+.page-player-stats #filter-options-panel,
+.page-player-stats #column-controls-wrapper {
+    display: none;
+    position: fixed;
+    
+    /* Force Centering */
+    top: 50% !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: auto !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 11050;
+    
+    background-color: #2a2a2e;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-md);
+    max-width: calc(100vw - 2rem);
+    
+    /* Backdrop Overlay */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), 0 0 0 100vmax rgba(0, 0, 0, 0.6);
+}
+
+/* 2. VISIBLE STATE - Must target IDs to override the hide rule above */
+.page-player-stats .popover-panel.is-visible,
+.page-player-stats #how-to-use-panel.is-visible,
+.page-player-stats #filter-options-panel.is-visible,
+.page-player-stats #column-controls-wrapper.is-visible {
+    display: block !important;
+}
+
+/* Specific Widths */
+.page-player-stats #how-to-use-panel {
+    width: 400px;
+}
+
+.page-player-stats #filter-options-panel,
+.page-player-stats #column-controls-wrapper {
+    width: 500px;
+}
+
+.popover-panel h2 {
+    margin: 0 0 var(--spacing-md);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.popover-close-btn {
+    position: absolute;
+    top: var(--spacing-sm);
+    right: var(--spacing-sm);
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    color: var(--color-text-secondary);
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    transition: all 0.2s ease;
+    padding: 0;
+    z-index: 10;
+}
+
+.popover-close-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-text-primary);
+}
+
+.popover-close-btn:active {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Tab Navigation */
+.tab-nav {
+    display: flex;
+    border-bottom: 1px solid var(--color-border);
+    margin-bottom: var(--spacing-md);
+    background: transparent;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: transparent;
+    border: none;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+}
+
+.tab-btn:hover {
+    color: var(--color-text-primary);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.tab-btn.is-active {
+    color: var(--color-accent-blue);
+    border-bottom-color: var(--color-accent-blue);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.is-active {
+    display: block;
+}
+
+/* Background resets for tab contents */
+#filter-options-panel .tab-content,
+#filter-options-panel .tab-content-wrapper,
+#filter-options-panel #filter-tab-content,
+#filter-options-panel #display-tab-content {
+    background-color: transparent !important;
+}
+
+/* ---------------------------------------------------------
+   4. FILTERS & DISPLAY OPTIONS
+   --------------------------------------------------------- */
+
+/* Filter Controls (Tab 1) */
+#filter-options-panel .filter-controls {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    background-color: transparent !important;
+    position: relative;
+}
+
+/* 1. HIDE GLOBAL CHEVRON: prevent double/misplaced arrows */
+.page-player-stats .filter-controls::after,
+.page-player-stats .filter-group::after {
+    display: none !important;
+    content: none !important;
+}
+
+.filter-input-group {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: var(--spacing-sm);
+    align-items: center;
+    width: 100%;
+}
+
+/* General Input/Select Styling */
+.page-player-stats .filter-select,
+.page-player-stats .filter-input {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-sm) var(--spacing-md);
+    text-align: center;
+    width: 100%;
+    min-width: 0;
+    height: 44px;
+    min-height: 44px;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+.page-player-stats .filter-select:focus,
+.page-player-stats .filter-input:focus {
+    border-color: var(--color-accent-blue);
+    outline: none;
+}
+
+/* 2. STAT FILTER (The Main Dropdown) - Add Custom Chevron */
+.page-player-stats #stat-filter {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 10' fill='none'><path d='M2 2L8 8L14 2' stroke='%23A0A0A0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 12px 8px;
+    padding-right: 2.5rem; /* Space for the icon */
+    margin-bottom: 0;
+    text-align-last: center; /* Fix for Chrome centering with custom appearance */
+}
+
+/* 3. OPERATOR FILTER (>=, <=) - Add Custom Chevron */
+.filter-input-group #operator-filter {
+    width: 70px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 10' fill='none'><path d='M2 2L8 8L14 2' stroke='%23A0A0A0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center; /* Tighter positioning for small box */
+    background-size: 10px 6px;
+    padding-right: 1.5rem;
+    padding-left: 0.5rem;
+}
+
+/* Hide legacy browser arrows */
+.filter-input-group #operator-filter::-ms-expand,
+.page-player-stats #stat-filter::-ms-expand {
+    display: none;
+}
+
+.filter-input-group #value-filter {
+    width: 90px;
+    text-align: center;
+    margin: 0;
+    padding: 0.5rem var(--spacing-md);
+    color: var(--color-text-primary) !important;
+    background-color: var(--color-bg-dark) !important;
+}
+
+.filter-input-group #value-filter:focus,
+.filter-input-group #value-filter:active,
+.filter-input-group #value-filter:-webkit-autofill,
+.filter-input-group #value-filter:-webkit-autofill:hover,
+.filter-input-group #value-filter:-webkit-autofill:focus {
+    color: var(--color-text-primary) !important;
+    background-color: var(--color-bg-dark) !important;
+    -webkit-text-fill-color: var(--color-text-primary) !important;
+    -webkit-box-shadow: 0 0 0 1000px var(--color-bg-dark) inset !important;
+    box-shadow: 0 0 0 1000px var(--color-bg-dark) inset !important;
+}
+
+.filter-input-group .filter-select {
+    margin-bottom: 0;
+}
+
+.filter-actions {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#reset-filters-btn {
+    padding: 6px 12px !important;
+    font-size: 0.875rem !important;
+}
+
+.filter-select optgroup {
+    font-style: normal;
+    font-weight: 600;
+    color: var(--color-accent-blue);
+    background-color: var(--color-surface-1);
+    padding: 4px 0;
+}
+
+.filter-select option {
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-dark);
+    font-weight: 400;
+}
+
+/* Display Options (Tab 2 - Styled like Character Stats) */
+.page-player-stats #display-tab-content #column-controls-wrapper {
+    display: block;
+    position: static;
+    width: 100%;
+    transform: none !important;
+    background: transparent;
+    padding: var(--spacing-sm) 0 0 0;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+}
+
+.page-player-stats #display-tab-content .column-controls-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    padding: 0;
+    border: none;
+}
+
+.page-player-stats #column-checkboxes-tertiary {
+    margin-bottom: 0;
+}
+
+/* Styled Checkboxes */
+.page-player-stats #display-tab-content .styled-checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+    user-select: none;
+    color: var(--color-text-secondary);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: color 0.2s ease;
+}
+
+.page-player-stats #display-tab-content .styled-checkbox-label:hover {
+    color: var(--color-text-primary);
+}
+
+.page-player-stats #display-tab-content .styled-checkbox-box {
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--color-text-secondary);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.page-player-stats #display-tab-content .styled-checkbox-label input {
+    display: none;
+}
+
+.page-player-stats #display-tab-content .styled-checkbox-label input:checked + .styled-checkbox-box {
+    background-color: var(--color-accent-blue);
+    border-color: var(--color-accent-blue);
+}
+
+.page-player-stats #display-tab-content .styled-checkbox-box .fas {
+    color: #fff;
+    font-size: 0.7rem;
+    transform: scale(0);
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.page-player-stats #display-tab-content .styled-checkbox-label input:checked + .styled-checkbox-box .fas {
+    transform: scale(1);
+}
+
+.page-player-stats #display-tab-content .column-actions {
+    border-top: 1px solid var(--color-border);
+    margin-top: var(--spacing-md);
+    padding-top: var(--spacing-md);
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+}
+
+/* ---------------------------------------------------------
+   5. TABLE STYLING
+   --------------------------------------------------------- */
+.page-player-stats .table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    outline: none;
+}
+
+.page-player-stats .stats-table {
+    outline: none;
+    width: 100%;
+    min-width: 0;
+    table-layout: auto;
+}
+
+.page-player-stats .stats-table th {
+    font-size: 0.78rem;
+    padding: var(--spacing-xs) 0.4rem;
+}
+
+.page-player-stats .stats-table tbody td {
+    font-size: 0.75rem;
+    padding: calc(var(--spacing-xxs, 0.15rem)) 0.4rem;
+    white-space: nowrap;
+}
+
+/* Table Scroll Hint */
+.page-player-stats .table-scroll-hint {
+    display: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: left;
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    /* Reduced margin from 1rem to 0.5rem */
+    margin: 0.5rem auto; 
+    line-height: 1.4;
+    max-width: 720px;
+    flex-direction: row;
+}
+
+.page-player-stats .table-scroll-hint i {
+    flex-shrink: 0;
+}
+
+@media (max-width: 1200px) {
+    .page-player-stats .table-scroll-hint {
+        display: flex;
+    }
+}
+
+@media (max-width: 1024px) {
+    .page-player-stats .table-wrapper {
+        margin: 0 calc(-1 * var(--spacing-sm));
+        padding: 0 var(--spacing-sm);
+    }
+    .page-player-stats .stats-table {
+        min-width: 960px;
+    }
+}
+
+/* Column Widths */
+.stats-table th[data-key="rank"] {
+    min-width: 2.5ch;
+    width: 3ch;
+}
+
+.stats-table th[data-key="fgpi"] {
+    width: 4.75ch;
+    min-width: 4.2ch;
+}
+
+/* Grouped standard widths */
+.stats-table th[data-key="ms"],
+.stats-table th[data-key="pf"],
+.stats-table th[data-key="tdr"],
+.stats-table th[data-key="v"],
+.stats-table th[data-key="t3"],
+.stats-table th[data-key="t8"],
+.stats-table th[data-key="t16"],
+.stats-table th[data-key="app"],
+.stats-table th[data-key="apm"],
+.stats-table th[data-key="af12"],
+.stats-table th[data-key="afm12"],
+.stats-table th[data-key="af6"],
+.stats-table th[data-key="afm6"] {
+    width: 4.25ch;
+    min-width: 4ch;
+    max-width: 5ch;
+}
+
+/* Player Cell */
+.page-player-stats .stats-table td[data-key="player"] a {
+    color: var(--color-accent-blue);
+    text-decoration: none;
+}
+
+.page-player-stats .stats-table td[data-key="player"] a:hover {
+    color: var(--color-accent-blue-dark);
+    text-decoration: underline;
+}
+
+.page-player-stats .stats-table td[data-key="player"] .player-cell-content span {
+    font-size: 0.75rem;
+    color: inherit;
+}
+
+/* Player Avatar/Placeholder */
+.page-player-stats .player-placeholder-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-surface-4, var(--color-bg-card-gradient-start));
+    border: 1px solid var(--color-border);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.page-player-stats .player-placeholder-icon .fas {
+    font-size: 1.68rem;
+    line-height: 1;
+}
+
+.page-player-stats .player-cell-content.show-placeholder .player-placeholder-icon,
+.page-player-stats .spotlight-player-icon-wrapper.show-placeholder .player-placeholder-icon {
+    display: flex;
+}
+
+.page-player-stats .player-cell-content.show-image .player-placeholder-icon,
+.page-player-stats .spotlight-player-icon-wrapper.show-image .player-placeholder-icon {
+    display: none;
+}
+
+.page-player-stats .stats-table [data-key="player"] .player-icon,
+.page-player-stats .stats-table [data-key="player"] .player-placeholder-icon {
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* ---------------------------------------------------------
+   6. RANK HIGHLIGHTS & COLORS
+   --------------------------------------------------------- */
+
+/* Top 5 Ranks (Table Cells) */
+.stats-table td.rank-1,
+.stats-table td.rank-2,
+.stats-table td.rank-3,
+.stats-table td.rank-4,
+.stats-table td.rank-5 {
+    font-weight: 700;
+    position: relative;
+    border-left: 2px solid transparent;
+    padding-left: 6px;
+}
+
+.stats-table td.rank-1 {
+    color: var(--color-rank-1-gold);
+    background-color: rgba(255, 193, 7, 0.08);
+    border-left-color: var(--color-rank-1-gold);
+}
+
+.stats-table td.rank-2 {
+    color: var(--color-rank-2-silver);
+    background-color: rgba(188, 198, 204, 0.08);
+    border-left-color: var(--color-rank-2-silver);
+}
+
+.stats-table td.rank-3 {
+    color: var(--color-rank-3-bronze);
+    background-color: rgba(205, 127, 50, 0.08);
+    border-left-color: var(--color-rank-3-bronze);
+}
+
+.stats-table td.rank-4 {
+    color: var(--color-rank-4-cobalt);
+    background-color: rgba(58, 94, 141, 0.08);
+    border-left-color: var(--color-rank-4-cobalt);
+}
+
+.stats-table td.rank-5 {
+    color: var(--color-rank-5-graphite);
+    background-color: rgba(102, 114, 128, 0.08);
+    border-left-color: var(--color-rank-5-graphite);
+}
+
+.stats-table tr:hover td.rank-1,
+.stats-table tr:hover td.rank-2,
+.stats-table tr:hover td.rank-3,
+.stats-table tr:hover td.rank-4,
+.stats-table tr:hover td.rank-5 {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Ranks 6–20 */
+.page-player-stats .stats-table tr.ranked-6-20 > td {
+    background: transparent;
+    box-shadow: none;
+}
+.page-player-stats .stats-table tr.ranked-6-20:hover > td {
+    background: transparent;
+}
+
+.page-player-stats .stats-table tr.ranked-6-20 td[data-key="rank"],
+.page-player-stats .stats-table tr.ranked-6-20 td[data-key="player"],
+.page-player-stats .stats-table td.ranked-6-20[data-key="rank"],
+.page-player-stats .stats-table td.ranked-6-20[data-key="player"] {
+    background-color: rgba(155, 122, 185, 0.06);
+    color: var(--color-rank-amethyst-glow);
+}
+
+.page-player-stats .stats-table tr.ranked-6-20 td[data-key="rank"],
+.page-player-stats .stats-table td.ranked-6-20[data-key="rank"] {
+    border-left: 2px solid var(--color-rank-amethyst-glow);
+    padding-left: 6px;
+}
+
+.page-player-stats .stats-table tr.ranked-6-20:hover td[data-key="rank"],
+.page-player-stats .stats-table tr.ranked-6-20:hover td[data-key="player"] {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Shared Rank Palette for Mobile Cards */
+.player-stat-card__rank.rank-1, .player-stat-card__stat-value.rank-1 { color: var(--color-rank-1-gold); }
+.player-stat-card__rank.rank-2, .player-stat-card__stat-value.rank-2 { color: var(--color-rank-2-silver); }
+.player-stat-card__rank.rank-3, .player-stat-card__stat-value.rank-3 { color: var(--color-rank-3-bronze); }
+.player-stat-card__rank.rank-4, .player-stat-card__stat-value.rank-4 { color: var(--color-rank-4-cobalt); }
+.player-stat-card__rank.rank-5, .player-stat-card__stat-value.rank-5 { color: var(--color-rank-5-graphite); }
+
+.player-stat-card__rank.ranked-6-20 {
+    background-color: rgba(155, 122, 185, 0.06);
+    color: var(--color-rank-amethyst-glow);
+    border-color: var(--color-rank-amethyst-glow);
+}
+
+/* ---------------------------------------------------------
+   7. MOBILE CARD STYLES
+   --------------------------------------------------------- */
+.player-stat-card {
+    background: linear-gradient(135deg, rgba(0, 150, 255, 0.08), rgba(0, 150, 255, 0.02));
+    border-radius: var(--border-radius-lg, 12px);
+    border: 1px solid var(--color-border);
+    padding: var(--spacing-sm) var(--spacing-md);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Card Background Gradients */
+.player-stat-card.rank-1-card {
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.15), rgba(255, 193, 7, 0.05));
+    border-color: rgba(255, 193, 7, 0.3);
+}
+.player-stat-card.rank-2-card {
+    background: linear-gradient(135deg, rgba(192, 192, 192, 0.15), rgba(192, 192, 192, 0.05));
+    border-color: rgba(192, 192, 192, 0.3);
+}
+.player-stat-card.rank-3-card {
+    background: linear-gradient(135deg, rgba(205, 127, 50, 0.15), rgba(205, 127, 50, 0.05));
+    border-color: rgba(205, 127, 50, 0.3);
+}
+.player-stat-card.rank-4-card {
+    background: linear-gradient(135deg, rgba(58, 94, 141, 0.15), rgba(58, 94, 141, 0.05));
+    border-color: rgba(58, 94, 141, 0.3);
+}
+.player-stat-card.rank-5-card {
+    background: linear-gradient(135deg, rgba(102, 114, 128, 0.15), rgba(102, 114, 128, 0.05));
+    border-color: rgba(102, 114, 128, 0.3);
+}
+
+/* Card Layout */
+.player-stat-card__header {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: var(--spacing-sm);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--spacing-sm);
+    text-align: center;
+}
+
+.player-stat-card__rank {
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 999px;
+    border: 1px solid var(--color-border);
+    background: rgba(255, 255, 255, 0.03);
+    text-align: center;
+    min-width: 3rem;
+}
+
+.player-stat-card__name {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 0.1rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.player-stat-card__name a {
+    color: var(--color-accent-blue);
+    text-decoration: none;
+}
+.player-stat-card__name a:hover {
+    color: var(--color-accent-blue-dark);
+    text-decoration: underline;
+}
+
+.player-stat-card__meta,
+.player-stat-card__section-title {
+    color: var(--color-text-secondary);
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+.player-stat-card__section-title {
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.25rem;
+}
+
+.player-stat-card__section-title--core {
+    text-align: center;
+    font-size: 0.82rem;
+    letter-spacing: 0.1em;
+    color: var(--color-text-primary);
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.player-stat-card__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.25rem 0.75rem;
+    margin-bottom: 0.4rem;
+}
+
+/* 1. The Container Row */
+.player-stat-card__stat {
+    font-size: 0.78rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 0; /* Ensure no gap interferes with precise measurement */
+}
+
+/* 2. The Label - Give it a FIXED width */
+.player-stat-card__stat-label {
+    color: var(--color-text-secondary);
+    /* Change '60%' to a fixed 'rem' value.
+       This forces every label to be exactly this wide, creating a perfect vertical line for the values.
+       Adjust '4rem' up or down to move that line left or right.
+    */
+    flex: 0 0 4rem; 
+    text-align: left;
+    min-width: 0; /* Ensures it doesn't overflow if the container gets tiny */
+}
+
+/* 3. The Value - Takes remaining space */
+.player-stat-card__stat-value {
+    font-weight: 600;
+    flex: 1;
+    text-align: left;
+    /* Remove padding-left here so the alignment is determined purely by the label width */
+    padding-left: 0; 
+}
+
+/* Expand/Collapse logic */
+.player-stat-card__more-toggle {
+    margin: 0.4rem auto 0;
+    font-size: 0.75rem;
+    color: var(--color-accent-blue);
+    background: none;
+    border: 1px solid rgba(84, 199, 252, 0.35);
+    padding: 0.3rem 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    cursor: pointer;
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.player-stat-card__more-toggle i { font-size: 0.7rem; }
+
+.player-stat-card__more {
+    display: none;
+}
+.player-stat-card__more.is-open {
+    display: block;
+    margin-top: 0.35rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    padding-top: 0.35rem;
+}
+
+/* ---------------------------------------------------------
+   8. RESPONSIVE OVERRIDES
+   --------------------------------------------------------- */
+
+/* TABLET & DESKTOP (>768px) */
+@media (min-width: 768px) {
+    /* Constrain controls to center for large screens */
+    .page-player-stats .mobile-controls-row {
+        justify-content: center;
+        max-width: 800px; 
+    }
+
+    /* Search Wrapper: 50% width like Rankings page */
+    .page-player-stats .mobile-search-wrapper {
+        flex: 0 0 50% !important;
+        width: 50% !important;
+    }
+}
+
+/* TABLET ONLY (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .table-controls {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+        justify-items: center;
+    }
+
+    .table-controls > * {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    #how-to-use-btn, #filter-options-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Hide cards */
+    #stats-card-container { display: none; }
+
+    /* Override Rank Column Width for Tablet */
+    .page-player-stats .stats-table th[data-key="rank"] {
+        width: 50px !important;
+        min-width: 50px !important;
+        padding-left: 4px !important;
+        padding-right: 4px !important;
+    }
+    .page-player-stats .stats-table th[data-key="rank"] .header-content {
+        gap: 2px; 
+        justify-content: center;
+    }
+    .page-player-stats .stats-table td.rank-cell {
+        width: 50px !important;
+        padding-left: 4px !important;
+        padding-right: 4px !important;
+    }
+}
+
+/* MOBILE (max-width: 767px) */
+@media (max-width: 767px) {
+    .table-controls,
+    .page-player-stats .table-wrapper {
+        display: none;
+    }
+
+    /* Show Cards */
+    #stats-card-container {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        padding: 0 var(--spacing-sm) var(--spacing-md);
+    }
+
+    /* Adjust Panels for Mobile */
+    #how-to-use-panel ul { margin: 0; padding-left: var(--spacing-md); }
+    #how-to-use-panel li { margin-bottom: var(--spacing-xs); font-size: 0.85rem; }
+    
+    /* Hide Display Options Tab on Mobile */
+    .page-player-stats #filter-options-panel .tab-btn[data-tab-target="display-tab-content"],
+    .page-player-stats #filter-options-panel #display-tab-content {
+        display: none;
+    }
+
+    .filter-input-group {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+    .filter-input-group #operator-filter,
+    .filter-input-group #value-filter {
+        width: 100%;
+    }
+
+    /* Mobile Column Controls wrapping */
+    .page-player-stats #display-tab-content .column-controls-row {
+        justify-content: flex-start;
+        gap: 0.5rem;
+    }
+    .page-player-stats #display-tab-content .styled-checkbox-label {
+        font-size: 0.8rem;
+        width: 48%;
+        justify-content: flex-start;
+    }
+
+    /* Layout adjustments */
+    .page-player-stats h1 { padding: 0 var(--spacing-sm); }
+    .page-player-stats .intro-text { font-size: 0.95rem; }
+    
+    /* Allow popover triggers to be clickable */
+    .page-player-stats .how-to-use-container,
+    .page-player-stats .filter-options-container {
+        display: block !important;
+        position: static;
+        pointer-events: all;
+    }
+    
+    /* Hide desktop buttons */
+    .page-player-stats .how-to-use-container #how-to-use-btn,
+    .page-player-stats .filter-options-container #filter-options-btn {
+        display: none;
+    }
+
+    /* Search Bar fills available space */
+    .page-player-stats .mobile-search-wrapper {
+        flex: 1 !important;
+        width: auto !important;
+        margin-bottom: 0; 
+    }
+}

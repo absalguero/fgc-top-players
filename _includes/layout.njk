@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {# Google Analytics - Loaded conditionally by cookie consent manager #}
+    {# See js/cookie-consent.js for GDPR-compliant loading #}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    {# --- Canonical helpers (child pages can override `canonical` var or block below) --- #}
+    {% set canonical_path = canonical or page.url %}
+    {% set canonical_abs = (site.url or '') + canonical_path %}
+
+    <title>{% block title %}{{ title or 'FGC Top Players' }}{% endblock %}</title>
+
+    {% block meta_description %}
+    <meta name="description" content="The definitive player rankings for top competitive fighting games. Track pro players across Street Fighter, Tekken, and more." />
+    {% endblock %}
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ canonical_abs }}">
+    <meta property="og:title" content="{% block og_title %}{{ title or 'FGC Top Players' }}{% endblock %}">
+    <meta property="og:description" content="{% block og_description %}The definitive ranking of top professional fighting game players. See who's on top and track your favorite pros.{% endblock %}">
+    <meta property="og:image" content="{{ site.url }}/images/fgc-rankings-social-card.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="{{ canonical_abs }}">
+    <meta name="twitter:title" content="{% block twitter_title %}{{ title or 'FGC Global Player Rankings' }}{% endblock %}">
+    <meta name="twitter:description" content="{% block twitter_description %}The definitive ranking of top professional fighting game players. See who's on top and track your favorite pros.{% endblock %}">
+    <meta name="twitter:image" content="{{ site.url }}/images/fgc-rankings-social-card.png">
+
+    {# --- Canonical (override from child if needed) --- #}
+    {% block canonical %}
+    <link rel="canonical" href="{{ canonical_abs }}" />
+    {% endblock %}
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"></noscript>
+
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></noscript>
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/pagefind/pagefind-ui.css">
+
+    {# Favicon for browsers #}
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png" />
+    <link rel="shortcut icon" href="/images/favicon.png" />
+
+    {# Apple Touch Icon for iOS devices #}
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    {# Theme color for mobile browsers #}
+    <meta name="theme-color" content="#FF5E13" />
+
+    <script src="/js/main.js" defer></script>
+
+    {# --- Optional extra <head> tags from child templates (prev/next, RSS, etc.) --- #}
+    {% block head_extra %}{% endblock %}
+
+    {# --- Page-level JSON-LD goes here (e.g., ItemList on index) --- #}
+    {% block structured_data %}{% endblock %}
+
+    {# Legacy head block if you already use it elsewhere #}
+    {% block head %}{% endblock %}
+</head>
+<body class="{{ bodyClass or '' }}">
+
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
+
+    <header class="mobile-header">
+        <button class="nav-toggle" aria-label="Toggle Navigation" aria-expanded="false">
+            <span class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </button>
+        <div class="mobile-search">
+            {% set inputId = "mobile-search-input" %}
+            {% include "partials/_search-form.njk" %}
+        </div>
+    </header>
+
+    <nav class="mobile-nav" aria-label="Mobile menu" id="mobile-nav">
+        <div class="mobile-nav__header">
+            <h2 class="mobile-nav__title">Menu</h2>
+            <button class="mobile-nav__close" aria-label="Close navigation" id="mobile-nav-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="mobile-nav__content">
+            {% set listClass = "mobile-nav__menu" %}
+            {% set navActiveSeed = (eleventyNavigation and eleventyNavigation.key) or navHighlight %}
+            {% set navActiveTrail = [] %}
+            {% if navActiveSeed %}
+                {% set navActiveTrail = collections.all | eleventyNavigationBreadcrumb(navActiveSeed) %}
+            {% endif %}
+            {% set activeTrail = navActiveTrail %}
+            {% set navHighlightKey = navHighlight %}
+            {% include "partials/_navigation.njk" %}
+        </div>
+    </nav>
+
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+
+    <div class="page-wrapper">
+        <nav class="sidebar nav-sidebar" aria-label="Main menu" role="navigation">
+            <h2 class="sidebar__label">Navigation</h2>
+            <div class="sidebar-search">
+                {% set inputId = "sidebar-search-input" %}
+                {% include "partials/_search-form.njk" %}
+            </div>
+            {% set listClass = "nav-menu" %}
+            {% set navActiveSeed = (eleventyNavigation and eleventyNavigation.key) or navHighlight %}
+            {% set navActiveTrail = [] %}
+            {% if navActiveSeed %}
+                {% set navActiveTrail = collections.all | eleventyNavigationBreadcrumb(navActiveSeed) %}
+            {% endif %}
+            {% set activeTrail = navActiveTrail %}
+            {% set navHighlightKey = navHighlight %}
+            {% include "partials/_navigation.njk" %}
+        </nav>
+
+        <main class="content" id="maincontent" tabindex="-1" data-pagefind-body>
+        {% include "partials/breadcrumbs.njk" %}
+            {% block content %}
+    {{ content | autoLink(page, collections, playerProfiles) | safe }}
+{% endblock %}
+
+            <footer class="content-footer">
+                <div class="footer-columns">
+                    <div class="footer-column">
+    <h3>Navigation</h3>
+    <ul class="footer-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/sf6-rankings/">SF6 Rankings</a></li>
+        <li><a href="/player-profiles/">Player Profiles</a></li>
+        <li><a href="/tournaments/results/">Tournament Results</a></li>
+        <li><a href="/analysis/player-stats/">Player Stats</a></li>
+        <li><a href="/reference/ranking-system/">Ranking System</a></li>
+    </ul>
+</div>
+                    <div class="footer-column">
+                        <h3>Community</h3>
+                        <ul class="footer-links">
+                            <li><a href="/about/">About Us</a></li>
+                            <li><a href="#">Become a Contributor</a></li>
+                            <li><a href="#">Support the Site</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Follow Us</h3>
+                        <ul class="footer-social">
+                            <li><a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="Follow on X"><i class="fab fa-x-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-legal">
+                    <p>© {% year %} FGC Top Players. An independent community resource not affiliated with Capcom, Bandai Namco, or any game publisher or tournament organizer. All game titles, character names, and trademarks are property of their respective owners and used for informational purposes only. Tournament data provided by <a href="https://www.start.gg" target="_blank" rel="noopener noreferrer">start.gg</a>.</p>
+
+                    <p class="legal-links">
+                        <a href="/contact/">Contact</a> |
+                        <a href="/terms-of-use/">Terms of Use</a> |
+                        <a href="/privacy-policy/">Privacy Policy</a> |
+                        <a href="#" id="footer-cookie-settings">Cookie Settings</a>
+                    </p>
+                </div>
+            </footer>
+        </main>
+        {% set sidebarVariantValue = sidebarVariant or "events" %}
+        {% set sidebarTitleValue = sidebarTitle or "Upcoming Tournaments" %}
+        {% set sidebarCountValue = sidebarCount or 4 %}
+
+        <aside class="sidebar right-sidebar" aria-label="Contextual Information">
+            <h2 class="sidebar__label">{{ sidebarTitleValue }}</h2>
+
+            {% if sidebarVariantValue == "news" %}
+                {% set sidebarNewsItems = collections.news | default([]) | reverse %}
+                {% if sidebarNewsItems and sidebarNewsItems.length > 0 %}
+                    {% for article in sidebarNewsItems %}
+                        {% if loop.index0 < sidebarCountValue %}
+                            {% include "partials/_home_card.njk" %}
+                        {% endif %}
+                    {% endfor %}
+                {% else %}
+                    <p class="sidebar-empty-state">No news articles available right now.</p>
+                {% endif %}
+            {% else %}
+                {% set upcomingEvents = allUpcomingTournaments | values | rejectattr("isArchived", "truthy") | list %}
+                {% if upcomingEvents and upcomingEvents.length > 0 %}
+                    {% for sidebarEvent in upcomingEvents %}
+                        {% if loop.index <= sidebarCountValue %}
+                            <a class="sidebar-card-link" href="/upcoming-tournaments/{{ sidebarEvent.slug }}/">
+                                <div class="sidebar-event-card event-card--{{ (sidebarEvent.tier | lower) | replace('+', '-plus') }}">
+                                    <h3 class="sidebar-event-card__title">{{ sidebarEvent.name }}</h3>
+
+                                    <div class="sidebar-event-card__info">
+                                        {% if sidebarEvent.dates %}
+                                            <div class="sidebar-event-card__info-row">
+                                                <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                                                <span>{{ sidebarEvent.dates }}</span>
+                                            </div>
+                                        {% endif %}
+
+                                        {% if sidebarEvent.location %}
+                                            <div class="sidebar-event-card__info-row">
+                                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                                <span>{{ sidebarEvent.location }}</span>
+                                            </div>
+                                        {% endif %}
+                                    </div>
+
+                                    <span class="btn btn--primary btn--small sidebar-event-card__button">
+                                        Read More
+                                    </span>
+                                </div>
+                            </a>
+                        {% endif %}
+                    {% endfor %}
+                {% else %}
+                    <p style="text-align: center; padding: 0 1rem;">No upcoming events at this time.</p>
+                {% endif %}
+            {% endif %}
+        </aside>
+    </div>
+
+    <div id="site-search-panel" class="site-search-panel" hidden aria-hidden="true">
+        <div class="site-search-panel__inner profile-card profile-card--search" role="dialog" aria-modal="true" aria-labelledby="site-search-title">
+            <div class="site-search-panel__header profile-card__header">
+                <h2 id="site-search-title" class="site-search-panel__title">Search Results</h2>
+                <button type="button" id="site-search-close" class="site-search-panel__close" aria-label="Close search results">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="site-search-panel__results profile-card__body">
+                <form id="site-search-refine" class="site-search-refine-form" role="search" novalidate>
+                    <label class="sr-only" for="site-search-refine-input">Refine search</label>
+                    <div class="site-search-refine__controls">
+                            <div class="site-search-refine__input-wrapper">
+                                <input
+                                    id="site-search-refine-input"
+                                    class="site-search-refine__input"
+                                    type="text"
+                                    placeholder="Search"
+                                    autocomplete="off"
+                                    spellcheck="false"
+                                >
+                                <button type="button" id="site-search-clear-btn" class="search-clear-btn" aria-label="Clear search">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                            <button type="submit" class="site-search-refine__submit">
+                                Search
+                            </button>
+                        </div>
+                </form>
+                <div id="site-search-status" class="site-search-panel__status" role="status" aria-live="polite" hidden></div>
+                <div id="pagefind-search" class="site-search-panel__results-body" data-pagefind></div>
+            </div>
+        </div>
+    </div>
+
+    <noscript>
+        <p style="text-align:center;padding:1rem;background:#111;color:#f00;">
+            JavaScript is disabled. Some interactive features may not work correctly.
+        </p>
+    </noscript>
+
+    <button id="back-to-top-btn" class="back-to-top-btn" title="Go to top" aria-label="Go to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    {# Cookie Consent Banner - GDPR Compliance #}
+    {% include "partials/cookie-consent.njk" %}
+
+    <script type="module" src="/js/siteSearch.js"></script>
+    <script src="/js/cookie-consent.js"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,473 @@
+---
+title: "What is the FGPI? | Fighting Game Performance Index Explained"
+bodyClass: "page-ranking-system"
+permalink: "/fgpi/"
+eleventyNavigation:
+  key: FGPI
+  parent: Reference
+  order: 32
+  iconClass: "fas fa-question-circle"
+---
+
+{% extends "layout.njk" %}
+
+{# Page <title> includes site name for branding #}
+{% block title %}{{ title }} | {{ site.name | default('FGC Top Players') }}{% endblock %}
+
+{% block head %}
+{# Precompute dates without custom filters #}
+{% set _publishedISO = (page.date | date('yyyy-LL-dd\'T\'HH:mm:ssZZ')) %}
+{% set _modifiedISO = ((page.dateModified or page.date) | date('yyyy-LL-dd\'T\'HH:mm:ssZZ')) %}
+{% set _modifiedHuman = ((page.dateModified or page.date) | date('LLL d, yyyy')) %}
+
+<meta name="description" content="FGPI is a Street Fighter 6 performance rating that complements results-only rankings by factoring recent form, consistency, and event context.">
+<link rel="canonical" href="{{ page.url | url | absoluteUrl(site.url) }}">
+
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="google" content="notranslate">
+<meta name="theme-color" content="#0f1115">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="{{ site.name | default('FGC Top Players') }}">
+<meta property="og:title" content="What is the FGPI? | Fighting Game Performance Index">
+<meta property="og:description" content="FGPI complements rankings by summarizing player strength with recent form, consistency, and event context.">
+<meta property="og:url" content="{{ page.url | url | absoluteUrl(site.url) }}">
+<meta property="og:image" content="{{ '/images/social/fgpi-explained-card.png' | url | absoluteUrl(site.url) }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FGPI: Fighting Game Performance Index (Explained)">
+<meta name="twitter:description" content="A complementary performance rating for SF6 that goes deeper than results-only rankings.">
+<meta name="twitter:image" content="{{ '/images/social/fgpi-explained-card.png' | url | absoluteUrl(site.url) }}">
+<meta name="twitter:image:alt" content="What is the FGPI? An explainer of the Street Fighter 6 performance rating.">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebPage",
+      "@id":"{{ page.url | url | absoluteUrl(site.url) }}#webpage",
+      "name":"FGPI: Fighting Game Performance Index (Explained)",
+      "url":"{{ page.url | url | absoluteUrl(site.url) }}",
+      "description":"FGPI is a performance rating for Street Fighter 6 that complements results-based rankings with a holistic view of player strength.",
+      "isPartOf":{"@id":"{{ site.url }}/#website"},
+      "datePublished":"{{ _publishedISO }}",
+      "dateModified":"{{ _modifiedISO }}"
+    },
+    {
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {
+          "@type":"ListItem",
+          "position":1,
+          "name":"Reference",
+          "item":"{{ '/reference/' | url | absoluteUrl(site.url) }}"
+        },
+        {
+          "@type":"ListItem",
+          "position":2,
+          "name":"FGPI",
+          "item":"{{ page.url | url | absoluteUrl(site.url) }}"
+        }
+      ]
+    },
+    {
+      "@type":"DefinedTerm",
+      "name":"Fighting Game Performance Index",
+      "termCode":"FGPI",
+      "description":"A Street Fighter 6 performance rating that blends results, consistency, recency, and event context to estimate current competitive strength.",
+      "inDefinedTermSet":"{{ '/analytics-glossary/' | url | absoluteUrl(site.url) }}",
+      "url":"{{ page.url | url | absoluteUrl(site.url) }}"
+    },
+    {
+      "@type":"FAQPage",
+      "mainEntity":[
+        {
+          "@type":"Question",
+          "name":"How is FGPI different from the rankings?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Rankings are derived purely from tournament results and placings. FGPI summarizes overall competitive strength by considering results alongside factors like consistency, recent form, and event context."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Is FGPI a replacement for rankings?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"No. Rankings answer who placed where; FGPI estimates how strong a player is overall right now. They're designed to be used together."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Do you publish the exact FGPI formula?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"We share the high-level approach rather than the detailed weighting or equation."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Where can I view FGPI scores?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"See the Street Fighter 6 Player Stats Leaderboard, which lists FGPI alongside momentum, performance floor, and schedule difficulty."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"How can I send feedback about FGPI?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Use our contact form at {{ site.url }}/contact/."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"What’s the typical FGPI range?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"FGPI is a relative index centered on the active field. Top contenders cluster toward the upper band, mid-pack in the middle, and rising players trend upward as new offline results arrive."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Why might a player climb without winning?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Strong finishes against high-level fields, improved consistency, or wins over higher-rated opponents can raise FGPI even without a first place finish."
+          }
+        }
+      ]
+    },
+    {
+      "@type":"WebSite",
+      "@id":"{{ site.url }}/#website",
+      "url":"{{ site.url }}",
+      "name":"{{ site.name | default('FGC Top Players') }}"
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+{% block content %}
+<div class="content-container page-ranking-system">
+  <article>
+    {% include "banner.njk" %}
+    <h1>The Fighting Game Performance Index (FGPI)</h1>
+
+    <div class="page-ranking-system__layout">
+      <div class="page-ranking-system__toc-wrapper">
+        <button class="toc-toggle-btn" aria-expanded="false" aria-controls="toc-nav">
+          Jump to Section <i class="fas fa-chevron-down" aria-hidden="true"></i>
+        </button>
+        <nav id="toc-nav" aria-label="Table of Contents" class="toc toc-list">
+          <strong>Contents</strong>
+          <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#fgpi-vs-rankings">FGPI vs. Rankings</a></li>
+            <li><a href="#how-it-works">How FGPI Works (High Level)</a></li>
+            <li><a href="#guardrails">Guardrails and Eligibility</a></li>
+            <li><a href="#interpretation">Interpretation and Caveats</a></li>
+            <li><a href="#worked-example">Head-to-Head Illustration</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="page-ranking-system__main-content">
+        <img src="/images/fgpi-explained.png" alt="Diagram illustrating inputs that contribute to FGPI" loading="lazy" class="page-ranking-system__image" />
+
+        <section id="overview">
+          <h2>Overview</h2>
+          <p>
+            The <strong>Fighting Game Performance Index (FGPI)</strong> is a single number that summarizes a player's overall competitive strength in Street Fighter 6.
+            <em>Rankings</em> tell you <strong>who placed where</strong>. <em>FGPI</em> estimates <strong>how strong a player is right now</strong> by considering results along with
+            <a href="/analytics-glossary/#consistency">consistency</a>,
+            <a href="/analytics-glossary/#momentum">recent form</a>, and
+            <a href="/analytics-glossary/#schedule-difficulty">event context / schedule difficulty</a> (see also
+            <a href="/analytics-glossary/#t3r">T3R</a> and
+            <a href="/analytics-glossary/#performance-floor">Performance Floor</a>).
+          </p>
+        </section>
+
+        <section id="fgpi-vs-rankings">
+          <h2>FGPI vs. Rankings</h2>
+
+          <div class="table-wrapper">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Aspect</th>
+                  <th>Rankings (Results Only)</th>
+                  <th>FGPI (Performance Rating)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Primary Signal</td>
+                  <td>Final Placements in Offline Tournaments</td>
+                  <td>Holistic Performance Indicators, Including Results</td>
+                </tr>
+                <tr>
+                  <td>Goal</td>
+                  <td>Reflect Standings Based Purely on Outcomes</td>
+                  <td>Measure Overall Competitive Strength</td>
+                </tr>
+                <tr>
+                  <td>Time Sensitivity</td>
+                  <td>Recency via Results Cadence</td>
+                  <td>Responsive to Recent Form and Trend</td>
+                </tr>
+                <tr>
+                  <td>Context Awareness</td>
+                  <td>Mostly Implicit from Event Scale</td>
+                  <td>Explicitly Accounts for Context and Consistency</td>
+                </tr>
+                <tr>
+                  <td>Usage</td>
+                  <td>"Who Is Ahead on Results?"</td>
+                  <td>"How Strong Are They Right Now?"</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="note">Summary: Rankings are the scoreboard. FGPI is the scouting report. Rankings reward outcomes. FGPI estimates present strength when context and recency matter.</p>
+        </section>
+
+        <section id="how-it-works">
+          <h2>How FGPI Works (High Level)</h2>
+          <p>FGPI blends multiple signals observed over the last 12 months. The FGPI score is informed by:</p>
+          <ul>
+            <li><strong>Outcome Quality Over Time</strong>: Results matter with extra attention to major events.</li>
+            <li><strong>Consistency</strong>: Avoiding low finishes and establishing a reliable baseline are rewarded.</li>
+            <li><strong>Recent Form</strong>: The rating responds to current momentum, not only historical peaks.</li>
+            <li><strong>Competitive Environment</strong>: Event context and field strength are considered.</li>
+            <li><strong>Opponent quality and event scale</strong>: Performances against higher rated opponents and deeper fields at majors provide stronger evidence of competitive strength.</li>
+            <li><strong>Recency Weighting</strong>: Older results taper so that current performance matters more.</li>
+          </ul>
+          <p>In short, FGPI aims to answer: <em>How strong is this player right now, accounting for consistency and context, not just raw placement totals?</em></p>
+        </section>
+
+        <section id="guardrails">
+          <h2>Guardrails and Eligibility</h2>
+          <ul>
+            <li><strong>In Person Events:</strong> Inputs focus on offline competition to stay aligned with our ranking system.</li>
+            <li><strong>Sufficient Activity:</strong> A minimum level of recent participation ensures the rating is statistically meaningful.</li>
+            <li><strong>Stability Checks:</strong> Internal safeguards help prevent single outliers from overly distorting a score.</li>
+          </ul>
+        </section>
+
+        <section id="interpretation">
+          <h2>Interpretation and Caveats</h2>
+          <ul>
+            <li><strong>Direction:</strong> Higher FGPI means stronger current form. Small week-to-week moves are normal.</li>
+            <li><strong>Similar Scores:</strong> Break ties with <a href="/analytics-glossary/#t3r">T3R</a>, recent opponents, and consistency.</li>
+            <li><strong>Not a Seeding List:</strong> FGPI complements not replaces results-based seeding and rankings.</li>
+          </ul>
+        </section>
+
+        <section id="worked-example">
+          <h2>Head-to-Head Illustration</h2>
+          <p>This compact, fictional dataset shows why FGPI can differ from results-only rankings. Numbers are illustrative.</p>
+
+          <div class="table-wrapper">
+            <table class="data-table">
+              <caption class="sr-only">Event summaries for Player A and Player B</caption>
+              <thead>
+                <tr>
+                  <th>Player</th>
+                  <th>Event</th>
+                  <th>Scale</th>
+                  <th>Field Strength*</th>
+                  <th>Placement</th>
+                  <th>When</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2"><strong>A</strong></td>
+                  <td>Premier Open</td>
+                  <td>Major</td>
+                  <td>High (6 Top 20 Entrants)</td>
+                  <td>5th</td>
+                  <td>2 Weeks Ago</td>
+                </tr>
+                <tr>
+                  <td>Championship Circuit</td>
+                  <td>National</td>
+                  <td>High (3 Top 20 Entrants)</td>
+                  <td>9th</td>
+                  <td>6 Weeks Ago</td>
+                </tr>
+                <tr>
+                  <td rowspan="2"><strong>B</strong></td>
+                  <td>City Throwdown</td>
+                  <td>Regional</td>
+                  <td>Low (0 Top 50 Entrants)</td>
+                  <td>1st</td>
+                  <td>3 Weeks Ago</td>
+                </tr>
+                <tr>
+                  <td>Weekend Bracket</td>
+                  <td>Regional</td>
+                  <td>Low (0 Top 50 Entrants)</td>
+                  <td>1st</td>
+                  <td>8 Weeks Ago</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="fgpi-reasons card">
+            <h3 class="card__title"><i class="fas fa-balance-scale" aria-hidden="true"></i> Why FGPI can rate A higher than B</h3>
+            <ul class="reason-list">
+              <li><strong>Opponent quality:</strong> A earned results against several top 20 opponents while B faced mostly unranked fields.</li>
+              <li><strong>Event context:</strong> Majors and nationals tend to have deeper brackets than regionals which increases evidentiary value.</li>
+              <li><strong>Recency and trend:</strong> A’s strong major result was very recent and moves the index more than B’s older regional win.</li>
+              <li><strong>Consistency floor:</strong> A’s 5th and 9th indicate a higher floor than B’s untested record versus elite fields.</li>
+              <li><strong>Robustness:</strong> FGPI reduces volatility from softer brackets and rewards performances that generalize against stronger opponents.</li>
+            </ul>
+          </div>
+
+          <figure class="compare-box card" aria-labelledby="cmp-title">
+            <h3 id="cmp-title" class="card__title">
+              <i class="fas fa-sliders-h" aria-hidden="true"></i>
+              Illustrative Comparison (Scaled to 0–100)
+            </h3>
+
+            <div class="sr-only" id="dir-legend">
+              Legend: ▲ up, ▼ down, ▬ even.
+            </div>
+
+            <div class="compare-matrix" role="table" aria-describedby="dir-legend">
+              <div class="matrix-row matrix-row--head" role="row">
+                <div class="matrix-cell matrix-cell--label" role="columnheader">Indicator</div>
+                <div class="matrix-cell matrix-cell--a" role="columnheader">A</div>
+                <div class="matrix-cell matrix-cell--b" role="columnheader">B</div>
+              </div>
+
+              <div class="matrix-row" role="row">
+                <div class="matrix-cell matrix-cell--label" role="cell">Results Weight in Recent Window</div>
+                <div class="matrix-cell matrix-cell--a" role="cell">
+                  <span class="dir dir--up" aria-label="Up"><i class="fas fa-arrow-up" aria-hidden="true"></i></span>
+                </div>
+                <div class="matrix-cell matrix-cell--b" role="cell">
+                  <span class="dir dir--up" aria-label="Up"><i class="fas fa-arrow-up" aria-hidden="true"></i></span>
+                </div>
+              </div>
+
+              <div class="matrix-row" role="row">
+                <div class="matrix-cell matrix-cell--label" role="cell">Field Strength Adjustment</div>
+                <div class="matrix-cell matrix-cell--a" role="cell">
+                  <span class="dir dir--up-strong" aria-label="Strong up"><i class="fas fa-arrow-up" aria-hidden="true"></i></span>
+                </div>
+                <div class="matrix-cell matrix-cell--b" role="cell">
+                  <span class="dir dir--down" aria-label="Down"><i class="fas fa-arrow-down" aria-hidden="true"></i></span>
+                </div>
+              </div>
+
+              <div class="matrix-row" role="row">
+                <div class="matrix-cell matrix-cell--label" role="cell">Consistency &amp; Performance Floor</div>
+                <div class="matrix-cell matrix-cell--a" role="cell">
+                  <span class="dir dir--up" aria-label="Up"><i class="fas fa-arrow-up" aria-hidden="true"></i></span>
+                </div>
+                <div class="matrix-cell matrix-cell--b" role="cell">
+                  <span class="dir dir--even" aria-label="Even"><i class="fas fa-minus" aria-hidden="true"></i></span>
+                </div>
+              </div>
+
+              <div class="matrix-row" role="row">
+                <div class="matrix-cell matrix-cell--label" role="cell">Schedule Difficulty</div>
+                <div class="matrix-cell matrix-cell--a" role="cell">
+                  <span class="dir dir--up" aria-label="Up"><i class="fas fa-arrow-up" aria-hidden="true"></i></span>
+                </div>
+                <div class="matrix-cell matrix-cell--b" role="cell">
+                  <span class="dir dir--down" aria-label="Down"><i class="fas fa-arrow-down" aria-hidden="true"></i></span>
+                </div>
+              </div>
+
+              <div class="matrix-row" role="row">
+                <div class="matrix-cell matrix-cell--label" role="cell">Momentum in Recent Weeks</div>
+                <div class="matrix-cell matrix-cell--a" role="cell">
+                  <span class="dir dir--up" aria-label="Up"><i class="fas fa-arrow-up" aria-hidden="true"></i></span>
+                </div>
+                <div class="matrix-cell matrix-cell--b" role="cell">
+                  <span class="dir dir--even" aria-label="Even"><i class="fas fa-minus" aria-hidden="true"></i></span>
+                </div>
+              </div>
+
+              <div class="matrix-row matrix-row--total" role="row">
+                <div class="matrix-cell matrix-cell--label" role="cell"><strong>FGPI (Illustrative)</strong></div>
+                <div class="matrix-cell matrix-cell--a fgpi-winner" role="cell"><strong>A ≈ 82</strong></div>
+                <div class="matrix-cell matrix-cell--b fgpi-lower" role="cell"><strong>B ≈ 74</strong></div>
+              </div>
+            </div>
+
+            <p class="note note--disclaimer">
+              The arrows visualize direction only (
+              <span class="dir dir--up" aria-label="Up"><i class="fas fa-arrow-up" aria-hidden="true"></i></span> up,
+              <span class="dir dir--down" aria-label="Down"><i class="fas fa-arrow-down" aria-hidden="true"></i></span> down,
+              <span class="dir dir--even" aria-label="Even"><i class="fas fa-minus" aria-hidden="true"></i></span> even
+              ). These are not live calculations.
+            </p>
+          </figure>
+
+          <h3><i class="fas fa-question-circle" aria-hidden="true"></i> What-If Scenarios</h3>
+          <p class="small">How might these scores change under different conditions?</p>
+
+          <div class="faq-accordion">
+            <details>
+              <summary>What if B wins a national next month?</summary>
+              <p>FGPI would likely swing toward B. A larger scale event with a deeper field adds stronger signal and the recency weight is significant. Depending on A's results in the same window, B could pass A on FGPI and also on rankings.</p>
+            </details>
+            <details>
+              <summary>What if A exits early at a major while B keeps winning regionals?</summary>
+              <p>A's FGPI would drop due to the low finish and loss of momentum. Without tougher fields for B, the gap may narrow rather than fully invert.</p>
+            </details>
+            <details>
+              <summary>When do FGPI and rankings agree most?</summary>
+              <p>When top placements happen at majors or nationals against deep fields and recency aligns. In those cases both systems point to the same leaders.</p>
+            </details>
+          </div>
+        </section>
+
+        <section id="faq" class="faq-accordion">
+          <h2>FAQ</h2>
+
+          <details>
+            <summary>Is FGPI better than rankings?</summary>
+            <p>They answer different questions. Rankings reflect results. FGPI estimates overall strength and trend. Use both for the clearest picture.</p>
+          </details>
+          <details>
+            <summary>How often does FGPI update?</summary>
+            <p>FGPI scores update whenever new offline results are registered.</p>
+          </details>
+          <details>
+            <summary>Where do I see FGPI?</summary>
+            <p>FGPI appears on the <a href="/player-stats/">Player Stats Leaderboard</a> and on individual <a href="/player-profiles/">Player Profiles</a>.</p>
+          </details>
+          <details>
+            <summary>What is the typical FGPI range?</summary>
+            <p>Scores are on a 0 to 100 scale.</p>
+          </details>
+          <details>
+            <summary>Why might a player climb without winning?</summary>
+            <p>Strong finishes against deep fields or improved consistency can raise FGPI even without a first place finish.</p>
+          </details>
+        </section>
+
+        <section id="contact" class="contact-section contact-section--tight">
+          <h2>Contact</h2>
+          <p>Have feedback or requests related to FGPI? Reach out via our <a href="/contact/">contact form</a>. We welcome input from players, tournament organizers, and fans of the FGC.</p>
+        </section>
+      </div>
+    </div>
+  </article>
+</div>
+{% endblock %}

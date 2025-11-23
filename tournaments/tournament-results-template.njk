@@ -1,0 +1,268 @@
+---
+pagination:
+  data: tournaments.events
+  size: 1
+  alias: tournamentData
+permalink: "/tournaments/{{ tournamentData.slug }}/"
+---
+{% extends "layout.njk" %}
+{% set bodyClass = "page-event" %}
+
+{% block title %}{{ tournamentData.name }} Results | FGC Top Players{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="View the full tournament results for {{ tournamentData.name }}. See all player placings and entrants." />
+{% endblock %}
+
+{% block content %}
+{% include "banner.njk" %}
+
+{# Build the expected upcoming URL strings #}
+{% set thisSlug = (tournamentData.slug or tournamentData.Slug) | lower %}
+{% set upcomingUrl = "/upcoming-tournaments/" + thisSlug + "/" %}
+{% set upcomingUrlNoSlash = "/upcoming-tournaments/" + thisSlug %}
+
+<div class="event-header-group">
+  <div class="header-sticky-container {% if pagination.items[0].Tier %}tier-{{ pagination.items[0].Tier | lower | replace('+','-plus') }}{% endif %}" id="sticky-header-fix">
+    <div class="event-header {% if pagination.items[0].Tier %}event-header--{{ pagination.items[0].Tier | lower | replace('+', '-plus') }}{% endif %}">
+      <div class="event-header__details">
+        <h1>{{ tournamentData.name }}</h1>
+
+        <div class="event-header__meta">
+          {% if tournamentData.date %}
+            {% set dateObj = tournamentData.date | split('-') %}
+            {% set year  = dateObj[0] %}
+            {% set month = dateObj[1] %}
+            {% set day   = dateObj[2] | replace('0','') %}
+            {% set months = ['January','February','March','April','May','June','July','August','September','October','November','December'] %}
+            <span><i class="fas fa-calendar-alt"></i> {{ months[month - 1] }} {{ day }}, {{ year }}</span>
+          {% endif %}
+
+          {% if tournamentData.results and tournamentData.results.length > 0 and tournamentData.results[0].Entrants %}
+            <span><i class="fas fa-users"></i> {{ tournamentData.results[0].Entrants }} Entrants</span>
+          {% endif %}
+        </div>
+
+        {# Upcoming page CTA — initially hidden; revealed only if page exists #}
+        <div class="event-header__actions">
+          <a
+            id="upcoming-cta"
+            href="{{ upcomingUrl }}"
+            class="btn btn--primary"
+            aria-label="View tournament details for {{ tournamentData.name }}"
+            style="display:none"
+          >
+            <i class="fas fa-calendar-week"></i> View Tournament Details
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Scoped styles for this page only */
+  .page-event .event-header__actions{
+    margin-top: var(--spacing-sm);
+    display: flex;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+  }
+  .page-event .event-header__actions .btn{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  /* Keep CTA blue and static on hover/focus/active despite global hover rules */
+  .page-event .event-header__actions .btn.btn--primary,
+  .page-event .event-header__actions .btn.btn--primary:hover,
+  .page-event .event-header__actions .btn.btn--primary:focus,
+  .page-event .event-header__actions .btn.btn--primary:active {
+    background: var(--color-accent-blue) !important;
+    border-color: var(--color-accent-blue) !important;
+    color: var(--color-text-primary) !important;
+    text-decoration: none !important;
+    transform: none !important;
+    box-shadow: none !important;
+    filter: none !important;
+    transition: none !important;
+  }
+  @media (max-width: 600px){
+    .page-event .event-header__actions{ justify-content: center; }
+  }
+</style>
+
+<div class="results-container">
+  {% if tournamentData.results and tournamentData.results.length > 0 %}
+    <div class="results-grid" id="results-grid">
+
+      {# =========================================
+         RESULTS LOOP
+         ========================================= #}
+      {% for result in tournamentData.results | sortByFinish %}
+
+        {# Resolve player from collections #}
+        {% set player_entry =
+            (collections.players | find('data.Player', result.Player))
+            or (collections.players | find('data.name', result.Player))
+            or (collections.players | find('Player', result.Player))
+            or (collections.players | find('name', result.Player))
+        %}
+        {% set pdata = player_entry and (player_entry.data or player_entry) %}
+
+        {# Core fields + fallbacks #}
+        {% set player_slug = pdata and (pdata.slug or pdata.Slug) %}
+        {% set rank_val    = pdata and (pdata.rank or pdata.Rank) or 0 %}
+        {% set rank_num    = rank_val | int %}
+        {% set finish      = result.Finish | int %}
+        {% set photo       = pdata and (pdata.photoUrl or pdata.photoURL or pdata.image or pdata.headshot or pdata.avatar) %}
+
+        {# Card class by rank #}
+        {% set card_class = "" %}
+        {% if rank_num >= 1 and rank_num <= 4 %}
+          {% set card_class = "rank-" + (rank_num | string) %}
+        {% elseif rank_num == 5 %}
+          {% set card_class = "rank-5" %}
+        {% elseif rank_num >= 6 and rank_num <= 20 %}
+          {% set card_class = "rank-6-20" %}
+        {% endif %}
+
+        {# Badge class by rank #}
+        {% set rank_badge_class = "" %}
+        {% if rank_num >= 1 and rank_num <= 4 %}
+          {% set rank_badge_class = "rank-badge-" + (rank_num | string) %}
+        {% elseif rank_num == 5 %}
+          {% set rank_badge_class = "rank-badge-5" %}
+        {% elseif rank_num >= 6 and rank_num <= 20 %}
+          {% set rank_badge_class = "rank-badge-6-20" %}
+        {% endif %}
+
+        {# Name styling choice: single-word -> fade; two+ words -> clamp-wrap #}
+        {% set name_parts = result.Player | split(' ') %}
+        {% set has_space = (name_parts | length) > 1 %}
+        {% if has_space %}
+          {% set name_class = "player-name player-name--wrap2" %}
+        {% else %}
+          {% set name_class = "player-name player-name--fade" %}
+        {% endif %}
+
+        <div class="result-card {{ card_class }} {% if finish >= 1 and finish <= 4 %}finish-style-{{ finish }}{% elseif finish >= 5 and finish <= 8 %}finish-style-top8{% elseif finish >= 9 and finish <= 16 %}finish-style-top16{% endif %}">
+
+          <div class="result-card__finish">
+            {% if finish == 1 %}
+              <i class="fas fa-trophy trophy-1" aria-label="1st"></i>
+            {% elseif finish == 2 %}
+              <i class="fas fa-trophy trophy-2" aria-label="2nd"></i>
+            {% elseif finish == 3 %}
+              <i class="fas fa-trophy trophy-3" aria-label="3rd"></i>
+            {% elseif finish == 4 %}
+              <i class="fas fa-medal medal-4" aria-label="4th"></i>
+            {% else %}
+              {%- set fn = finish -%}
+              {%- if fn>=11 and fn<=13 -%}{{ fn }}th{%- else -%}
+                {%- set ld = fn % 10 -%}
+                {%- if ld==1 -%}{{ fn }}st{%- elif ld==2 -%}{{ fn }}nd{%- elif ld==3 -%}{{ fn }}rd{%- else -%}{{ fn }}th{%- endif -%}
+              {%- endif -%}
+            {% endif %}
+          </div>
+
+          {# Clickable row if we have a slug #}
+          {% if player_slug %}
+            <a href="/players/{{ player_slug }}/" class="result-card__player" aria-label="{{ result.Player }} profile">
+          {% else %}
+            <div class="result-card__player">
+          {% endif %}
+
+              <div class="result-card__player-info result-card__player-info--text-only">
+                <div class="player-info__text-container">
+                  <span class="{{ name_class }}" title="{{ result.Player }}">{{ result.Player }}{% if pdata and pdata.englishName %} ({{ pdata.englishName }}){% endif %}</span>
+
+                  {% if rank_num >= 1 and rank_num <= 20 %}
+                    <span class="rank-badge {{ rank_badge_class }}">#{{ rank_num }}</span>
+                  {% endif %}
+                </div>
+              </div>
+
+          {% if player_slug %}
+            </a>
+          {% else %}
+            </div>
+          {% endif %}
+
+        </div>
+      {% endfor %}
+    </div>
+
+    {% if tournamentData.results.length > 16 %}
+      <div id="sentinel" style="height: 1px;"></div>
+    {% endif %}
+
+    <div class="back-button-container">
+      <a href="/tournament-results/" class="btn btn--primary">
+        <i class="fas fa-arrow-left"></i> Back to Tournament Results
+      </a>
+    </div>
+
+  {% else %}
+    <p style="text-align: center; margin-top: 2rem;">No results are currently available for this event.</p>
+  {% endif %}
+</div>
+
+{# Progressive enhancement: show CTA only if upcoming page exists #}
+<script>
+  (function () {
+    var cta = document.getElementById('upcoming-cta');
+    if (!cta) return;
+
+    var urls = ["{{ upcomingUrl }}", "{{ upcomingUrlNoSlash }}"];
+
+    function tryNext(i) {
+      if (i >= urls.length) { cta.remove(); return; }
+      fetch(urls[i], { method: 'HEAD', redirect: 'follow', cache: 'no-store' })
+        .then(function (res) {
+          if (res && (res.ok || (res.status >= 200 && res.status < 400))) {
+            cta.href = urls[i].endsWith('/') ? urls[i] : (urls[i] + '/');
+            cta.style.display = 'inline-flex';
+          } else {
+            tryNext(i + 1);
+          }
+        })
+        .catch(function () { tryNext(i + 1); });
+    }
+    tryNext(0);
+  })();
+</script>
+
+{# Progressive enhancement for image fallback #}
+<script>
+  (function () {
+    function handleLoad(e) {
+      var img = e.target;
+      var ph = img.nextElementSibling;
+      if (ph && ph.classList && ph.classList.contains('js-player-placeholder')) {
+        ph.style.display = 'none';
+      }
+      img.style.display = 'block';
+    }
+    function handleError(e) {
+      var img = e.target;
+      var ph = img.nextElementSibling;
+      if (ph && ph.classList && ph.classList.contains('js-player-placeholder')) {
+        ph.style.display = 'grid';
+      }
+      try { img.remove(); } catch (_) { img.style.display = 'none'; }
+    }
+
+    var imgs = document.querySelectorAll('.result-card .js-player-photo');
+    imgs.forEach(function (img) {
+      img.addEventListener('load', handleLoad, { once: true });
+      img.addEventListener('error', handleError, { once: true });
+
+      if (img.complete && img.naturalWidth > 0) {
+        handleLoad({ target: img });
+      } else if (img.complete && img.naturalWidth === 0) {
+        handleError({ target: img });
+      }
+    });
+  })();
+</script>
+{% endblock %}

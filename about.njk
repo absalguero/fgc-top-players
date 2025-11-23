@@ -1,0 +1,139 @@
+---
+title: About FGC Top Players
+permalink: "/about/"
+bodyClass: "about-page static-page"
+eleventyNavigation:
+  key: About Us
+  parent: About & Support
+  order: 10
+  iconClass: "fas fa-building"
+---
+
+{% extends "layout.njk" %}
+
+{% block title %}About FGC Top Players | Author Background and Mission{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="About FGC Top Players. Created by a former FGC competitor active since 2001 and a B5 entrant. Learn the mission and the statistics based rankings behind the site." />
+{% endblock %}
+
+{% block head %}
+<link rel="canonical" href="{{ page.url | url | absoluteUrl(site.url) }}">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="FGC Top Players">
+<meta property="og:title" content="About FGC Top Players">
+<meta property="og:description" content="Created by a former competitor in the fighting game community. Discover the mission behind the statistics based rankings on FGC Top Players.">
+<meta property="og:url" content="{{ page.url | url | absoluteUrl(site.url) }}">
+<meta property="og:image" content="{{ '/images/og-default.png' | url | absoluteUrl(site.url) }}">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About FGC Top Players">
+<meta name="twitter:description" content="Meet the author and learn the mission behind FGC Top Players.">
+<meta name="twitter:image" content="{{ '/images/og-default.png' | url | absoluteUrl(site.url) }}">
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "@id": "{{ page.url | url | absoluteUrl(site.url) }}#about",
+      "name": "About FGC Top Players",
+      "url": "{{ page.url | url | absoluteUrl(site.url) }}",
+      "isPartOf": { "@type": "Website", "name": "FGC Top Players", "url": "{{ site.url }}" },
+      "mainEntity": { "@id": "{{ page.url | url | absoluteUrl(site.url) }}#owner" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "{{ site.url }}#org",
+      "name": "FGC Top Players",
+      "url": "{{ site.url }}",
+      "logo": { "@type": "ImageObject", "url": "{{ '/images/logo.png' | url | absoluteUrl(site.url) }}" }
+      {% if site.social %}
+      ,"sameAs": {{ site.social | dump }}
+      {% endif %}
+    },
+    {
+      "@type": "Person",
+      "@id": "{{ page.url | url | absoluteUrl(site.url) }}#owner",
+      "description": "Former FGC competitor and devoted fan active since 2001 who entered B5, the event that preceded Evo. Follows majors through live streams and in person attendance.",
+      "affiliation": { "@id": "{{ site.url }}#org" },
+      "knowsAbout": ["Fighting game community","Esports rankings","Tournament results","Player analytics","Character analytics"]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "About & Support", "item": "{{ '/about-and-support/' | url | absoluteUrl(site.url) }}" },
+        { "@type": "ListItem", "position": 2, "name": "About FGC Top Players", "item": "{{ page.url | url | absoluteUrl(site.url) }}" }
+      ]
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+{% block content %}
+
+  {% include "banner.njk" %}
+
+  <h1>About FGC Top Players</h1>
+
+  <div class="profile-card mb-md">
+    <div class="profile-card__header">
+      <h2>About the Author</h2>
+    </div>
+    <div class="home-card__content">
+      <p>
+        FGC Top Players was created by a former competitor who has been part of the fighting game community since 2001 and competed at B5, the event that came before Evo. The author remains an active supporter of the scene, watching live streams, attending events, and following brackets from pools to finals.
+      </p>
+      <p class="mb-md">
+        Years of travel, locals, and majors shaped a clear goal. Recognize great play with fair and understandable rankings that reflect real results. This site reflects that goal.
+      </p>
+    </div>
+  </div>
+
+  <div class="profile-card mb-md">
+    <div class="profile-card__header">
+      <h2>Mission and Values</h2>
+    </div>
+    <div class="home-card__content">
+      <p>
+        Competitive players want to be known as the best in the world. FGC Top Players exists to track that race with clarity. The site highlights consistent excellence, celebrates breakout runs, and documents the story of modern fighting games.
+      </p>
+      <p>
+        Learn how the ranking approach works in detail on the
+        <a href="/ranking-system/">Ranking System guide</a>.
+        Explore player metrics on the
+        <a href="/player-stats/">Player Stats Leaderboard</a> and character metrics on
+        <a href="/character-stats/">Character Stats and CPV</a>. Definitions are available in the
+        <a href="/analytics-glossary/">FGC Analytics Glossary</a>.
+      </p>
+      <p class="mb-md">
+        The mission is simple. Provide rankings and analysis that a new fan can understand and a veteran can trust. Keep the focus on community growth, tournament integrity, and respect for the grind.
+      </p>
+    </div>
+  </div>
+
+  <div class="profile-card">
+    <div class="profile-card__header">
+      <h2>Support for the Fighting Game Community</h2>
+    </div>
+    <div class="home-card__content">
+      <p>
+        The site aims to help new players, event organizers, and long time fans. Clear rankings and open explanations make tournaments easier to follow and stories easier to tell. If this project inspires a new generation of competitors and organizers, it has done its job.
+      </p>
+      <p>
+        Suggestions and corrections are welcome. If a result is missing or a definition needs clarity, please reach out.
+      </p>
+      <a href="/contact/" class="btn btn--primary mt-md">
+        <i class="fa-solid fa-envelope"></i>
+        Contact FGC Top Players
+      </a>
+    </div>
+  </div>
+
+{% endblock %}

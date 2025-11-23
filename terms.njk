@@ -1,0 +1,389 @@
+---
+title: Terms of Use
+permalink: "/terms-of-use/"
+bodyClass: "terms-page static-page"
+eleventyNavigation:
+  key: Terms of Use
+  parent: Legal
+  order: 10
+  iconClass: "fas fa-file-contract"
+lastUpdated: 2025-11-14
+---
+
+{% extends "layout.njk" %}
+
+{% block title %}Terms of Use | FGC Top Players{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="Official Terms of Use for FGC Top Players. Read the rules governing site access, proprietary rankings/data, and permitted use." />
+{% endblock %}
+
+{% block content %}
+  {% include "banner.njk" %}
+    <style>
+    .terms-page .legal-callout {
+      border-left: 4px solid var(--color-accent-blue, #0096FF);
+      background: rgba(0,0,0,.15);
+      padding: .9rem 1rem;
+      margin: .75rem 0 1rem;
+      border-radius: 6px;
+    }
+    .terms-page .legal-callout strong {
+      display: block;
+      font-weight: 800;
+      font-size: 1.02em;
+      margin-bottom: .25rem;
+    }
+    .terms-page h2[data-critical="true"] {
+      font-weight: 800;
+    }
+    .terms-page .terms-card-content {
+      max-width: 100%;
+      margin: 0;
+      padding: var(--spacing-md);
+    }
+    .terms-page .terms-card-content.text-center {
+      text-align: center;
+    }
+    .terms-page .last-updated {
+      color: var(--color-rank-1-gold);
+      text-align: center;
+      margin-top: .25rem;
+      /* margin-bottom controlled globally (0.5rem) */
+    }
+  </style>
+
+  <h1>Terms of Use</h1>
+  <p class="last-updated">Last Updated: {{ lastUpdated | date("MMMM d, yyyy") }}</p>
+
+  <p class="intro-text">
+    These Terms of Use (“<strong>Terms</strong>”) are a binding agreement between you and FGC Top Players
+    (“<strong>FGCTP</strong>,” “<strong>we</strong>,” “<strong>us</strong>,” or “<strong>our</strong>”). They govern your access to and use of our website,
+    content, rankings, calculations, datasets, and related services (collectively, the “<strong>Site</strong>”). By accessing or using the Site,
+    you agree to these Terms and to our <a href="/privacy-policy/">Privacy Policy</a>. If you do not agree, do not use the Site.
+  </p>
+  <div class="profile-card mb-md" id="acceptance">
+    <div class="profile-card__header">
+      <h2>1. Acceptance of Terms</h2>
+    </div>
+    <div class="home-card__content terms-card-content">
+      <p>
+        By accessing or using the Site, you agree to be bound by these Terms and our Privacy Policy. If you do not agree to these Terms,
+        you must not access or use the Site. If you use the Site on behalf of an organization, you represent that you are authorized to
+        bind that organization to these Terms, and “you” includes that organization.
+      </p>
+    </div>
+  </div>
+  <div class="profile-card mb-md" id="age-requirements">
+    <div class="profile-card__header">
+      <h2>1A. Age Requirements</h2>
+    </div>
+    <div class="home-card__content terms-card-content">
+      <p>
+        You must be at least 13 years old to use this Site. If you are between 13 and 18 years of age (or the age of legal majority in your jurisdiction), you may only use the Site with the permission and under the supervision of a parent or legal guardian who agrees to be bound by these Terms.
+      </p>
+      <p>
+        If you are a parent or guardian and believe your minor child is using the Site without your consent, please contact us immediately at <a href="mailto:fgcpr@gmail.com">fgcpr@gmail.com</a>.
+      </p>
+    </div>
+  </div>
+  <div class="profile-card mb-md" id="ip">
+    <div class="profile-card__header">
+      <h2>2. Intellectual Property; Ownership</h2>
+    </div>
+    <div class="home-card__content terms-card-content">
+      <p>
+        The Site and all materials created and hosted by FGCTP—including text, graphics, logos, software, compilations, datasets,
+        player rankings, ratings, calculations, algorithms, methodologies, and analytics (collectively, "<strong>FGCTP Materials</strong>"
+        and our "<strong>Proprietary Data</strong>")—are owned by FGCTP or its licensors and are protected by intellectual-property and other laws.
+        FGCTP®, our logos, and related marks are trademarks of FGCTP. All rights not expressly granted are reserved.
+      </p>
+      <h3>Third-Party Trademarks and Fair Use</h3>
+      <p>
+        All trademarks, logos, game titles, character names, and brand names referenced on the Site (including but not limited to Street Fighter, Guilty Gear, Tekken, The King of Fighters, Dragon Ball FighterZ, and other fighting game titles) are the property of their respective owners, including Capcom, Arc System Works, Bandai Namco, SNK, and other game publishers. Use of these marks is for identification and informational purposes only and does not imply endorsement by, sponsorship by, or affiliation with the trademark owners.
+      </p>
+      <h3>Right of Publicity and Factual Reporting</h3>
+      <p>
+        Player names, tournament results, biographical information, and competitive statistics are used pursuant to the First Amendment's protection of factual reporting and commentary on matters of public interest. Rankings and player statistics constitute factual compilations and editorial analysis of publicly available tournament results. No player endorsement, sponsorship, or affiliation is implied unless separately agreed in writing.
+      </p>
+    </div>
+  </div>
+  <div class="profile-card mb-md" id="license">
+    <div class="profile-card__header">
+      <h2>3. Limited License; Prohibited Activities</h2>
+    </div>
+    <div class="home-card__content terms-card-content">
+      <p>
+        Subject to your compliance with these Terms, we grant you a limited, revocable, non-exclusive, non-transferable license to access
+        and use the Site and FGCTP Materials for your personal, non-commercial use only.
+      </p>
+      <p><strong>You must not (and must not enable, permit, or assist others to):</strong></p>
+      <ul>
+        <li>Copy, download, reproduce, modify, adapt, translate, create derivative works from, publicly display, perform, or distribute any FGCTP Materials or Proprietary Data, except as expressly permitted by these Terms.</li>
+        <li>Use any automated means (robots, spiders, scrapers, crawlers, data-mining tools, or similar data-gathering or extraction methods) to access, monitor, query, or extract data from the Site, including without limitation for purposes of training artificial intelligence models, machine learning systems, large language models (LLMs), or any other automated decision-making systems.</li>
+        <li>Aggregate, scrape, or copy Proprietary Data to populate any external database, service, model, publication, or betting/gambling platform (including for AI training, model improvement, or odds calculation).</li>
+        <li>Reverse-engineer, decompile, disassemble, or attempt to discover the source code, algorithms, models, or underlying methodologies used to generate rankings or analytics.</li>
+        <li>Use the Site or FGCTP Materials for any unlawful purpose, in violation of any applicable law or regulation, to create a competing product or service, or in connection with gambling, sports betting, esports betting, or any wagering activities.</li>
+        <li>Interfere with or disrupt the operation or security of the Site, or attempt to gain unauthorized access to the Site or related systems.</li>
+      </ul>
+      <p>
+        Any use of the Site or FGCTP Materials not expressly permitted by these Terms is a breach of these Terms and may violate intellectual-property laws.
+      </p>
+    </div>
+  </div>
+  <div class="profile-card mb-md" id="user-content">
+    <div class="profile-card__header">
+      <h2>4. User Content; Feedback</h2>
+    </div>
+    <div class="home-card__content terms-card-content">
+      <p>
+        If you submit comments, feedback, suggestions, corrections, or other content (“<strong>Feedback</strong>”), you grant FGCTP a perpetual,
+        irrevocable, worldwide, royalty-free license to use, copy, modify, and create derivative works from the Feedback without compensation
+        to you, and you waive any moral rights in the Feedback to the extent permitted by law.
+      </p>
+    </div>
+  </div>
+  <div class="profile-card mb-md" id="no-advice">
+    <div class="profile-card__header">
+      <h2>5. No Professional Advice</h2>
+    </div>
+    <div class="home-card__content terms-card-content">
+      <p>
+        The Site provides rankings, analytics, and related information for informational purposes only. FGCTP does not provide professional,
+        legal, financial, or betting advice. You are solely responsible for any decisions you make based on the Site.
+      </p>
+    </div>
+  </div>
+  <div class="profile-card mb-md" id="data-accuracy">
+    <div class="profile-card__header">
+      <h2>5A. Data Accuracy; No Warranty of Results</h2>
+    </div>
+    <div class="home-card__content terms-card-content">
+      <p>
+        Rankings, statistics, performance metrics, and analytics published on the Site are based on available tournament data, publicly reported results, and our proprietary methodologies. FGCTP makes no warranty, representation, or guarantee regarding the accuracy, completeness, timeliness, or reliability of any rankings, statistics, player data, character data, tournament results, or analytics.
+      </p>
+      <p>
+        Tournament results may contain errors, omissions, or discrepancies from source data providers (including tournament organizers, brackets platforms, and third-party databases). Player names, country affiliations, character selections, and other biographical information are based on publicly available information and may be inaccurate or outdated.
+      </p>
+      <p>
+        Rankings and metrics may change at any time as new data becomes available, methodologies are refined, or errors are corrected. FGCTP is not obligated to maintain historical accuracy or notify users of data corrections.
+      </p>
+      <p>
+        Rankings and player statistics constitute FGCTP's opinions and analysis based on publicly available tournament results and do not constitute statements of fact regarding player skill, character, or reputation.
+      </p>
+    </div>
+  </div>
+  <div class="profile-card mb-md" id="no-gambling">
+    <div class="profile-card__header">
+      <h2>5B. No Gambling or Betting Advice; Compliance with Gaming Laws</h2>
+    </div>
+    <div class="home-card__content terms-card-content">
+      <p class="legal-callout" role="note">
+        <strong>Important Notice.</strong>
+        The Site is provided for informational, educational, and entertainment purposes only. Rankings, statistics, predictions, player performance data, and all other content on the Site are NOT intended to facilitate, encourage, promote, or provide advice for gambling, sports betting, esports betting, fantasy sports, or any other form of wagering.
+      </p>
+      <p>
+        FGCTP does not operate, endorse, or facilitate any gambling, betting, or wagering services. You are solely responsible for understanding and complying with all federal, state, local, and international laws and regulations regarding gambling, sports betting, and online wagering in your jurisdiction.
+      </p>
+      <p>
+        Any use of Site content for gambling or betting purposes is at your sole risk and liability. FGCTP expressly disclaims any liability arising from your use of the Site in connection with gambling or betting activities, including but not limited to financial losses, legal consequences, or harm resulting from wagering decisions.
+      </p>
+    </div>
+  </div>
+  <div class="profile-card mb-md" id="third-party">
+    <div class="profile-card__header">
+      <h2>6. Third-Party Links and Services</h2>
+    </div>
+    <div class="home-card__content terms-card-content">
+      <p>
+        The Site may contain links to third-party sites or services and uses third-party analytics services (such as Google Analytics)
+        that may use cookies and tracking technologies. We do not control and are not responsible for those third-party sites, services,
+        or their data practices. Your use of third-party sites is at your own risk and may be subject to their terms. Please see our
+        <a href="/privacy-policy/">Privacy Policy</a> for more information about cookies and third-party services.
+      </p>
+    </div>
+  </div>
+  <div class="profile-card mb-md" id="no-endorsement">
+    <div class="profile-card__header">
+      <h2>6A. No Endorsement or Affiliation</h2>
+    </div>
+    <div class="home-card__content terms-card-content">
+      <p>
+        The inclusion, mention, ranking, or statistical analysis of any player, team, organization, sponsor, tournament, event organizer, game publisher, or other third party on the Site does not constitute or imply any endorsement, sponsorship, partnership, affiliation, approval, or recommendation by FGCTP unless explicitly stated in writing.
+      </p>
+      <p>
+        References to third-party products, services, tournaments, or organizations are for informational purposes only. FGCTP does not receive compensation for rankings or statistical placement (except as disclosed for sponsored content, which will be clearly labeled).
+      </p>
+      <p>
+        Players, organizations, and tournament operators listed on the Site have not endorsed FGCTP or these Terms unless separately agreed in writing.
+      </p>
+    </div>
+  </div>
+  <div class="profile-card mb-md" id="availability">
+    <div class="profile-card__header">
+      <h2>7. Availability; Changes; Beta Features</h2>
+    </div>
+    <div class="home-card__content terms-card-content">
+      <p>
+        We may modify, suspend, or discontinue any part of the Site at any time without notice. Certain features may be identified as beta,
+        preview, or experimental; they are provided “as is” and may be changed or discontinued at any time.
+      </p>
+      <p>
+        We may update these Terms from time to time. When we do, we will revise the “Last Updated” date above. Your continued use of the Site
+        after an update constitutes acceptance of the updated Terms.
+      </p>
+    </div>
+  </div>
+  <div class="profile-card mb-md" id="dmca">
+    <div class="profile-card__header">
+      <h2>8. Copyright; DMCA</h2>
+    </div>
+    <div class="home-card__content terms-card-content">
+      <p>
+        We respect intellectual-property rights. If you believe any of the FGCTP Materials infringe your copyright, please send a notice
+        pursuant to the Digital Millennium Copyright Act (17 U.S.C. §512) to <a href="mailto:fgcpr@gmail.com">fgcpr@gmail.com</a>
+        including: your contact information, identification of the copyrighted work and the allegedly infringing material, a statement of
+        good-faith belief, a statement under penalty of perjury that the information is accurate and that you are authorized to act, and
+        your physical or electronic signature. The Site may also link to third-party content (e.g., on start.gg); we do not host this content, and any copyright claims related to it should be directed to the hosting platform.
+      </p>
+    </div>
+  </div>
+  <div class="profile-card mb-md" id="disclaimers">
+    <div class="profile-card__header">
+      <h2 data-critical="true">9. Disclaimers</h2>
+    </div>
+    <div class="home-card__content terms-card-content">
+      <p class="legal-callout" role="note">
+        <strong>Disclaimer of Warranties.</strong>
+        The Site and all FGCTP Materials are provided “as is” and “as available,” without warranties of any kind—express, implied, or statutory—
+        including warranties of accuracy, merchantability, fitness for a particular purpose, title, and non-infringement. We do not warrant that
+        the Site will be uninterrupted, secure, or error-free, or that defects will be corrected.
+      </p>
+      <p>
+        You are solely responsible for your use of the Site and for evaluating the accuracy and usefulness of any information provided.
+      </p>
+    </div>
+  </div>
+  <div class="profile-card mb-md" id="limitation">
+    <div class="profile-card__header">
+      <h2 data-critical="true">10. Limitation of Liability</h2>
+    </div>
+    <div class="home-card__content terms-card-content">
+      <p class="legal-callout" role="note">
+        <strong>Important Limitation.</strong>
+        To the fullest extent permitted by law, FGCTP and its affiliates, officers, directors, employees, agents, and licensors will not be liable
+        for any indirect, incidental, special, consequential, exemplary, or punitive damages, or any loss of profits, revenue, data, or goodwill,
+        arising out of or related to your use of or inability to use the Site, even if advised of the possibility of such damages.
+      </p>
+      <p>
+        To the fullest extent permitted by law, FGCTP’s total liability for any claims arising out of or relating to the Site or these Terms
+        will not exceed one hundred U.S. dollars (US$100).
+      </p>
+    </div>
+  </div>
+  <div class="profile-card mb-md" id="indemnity">
+    <div class="profile-card__header">
+      <h2>11. Indemnification</h2>
+    </div>
+    <div class="home-card__content terms-card-content">
+      <p>
+        You will defend, indemnify, and hold harmless FGCTP and its affiliates, licensors, and service providers from and against any claims,
+        liabilities, damages, losses, and expenses (including reasonable attorneys’ fees) arising out of or related to your violation of these
+        Terms or misuse of the Site or FGCTP Materials.
+      </p>
+    </div>
+  </div>
+  <div class="profile-card mb-md" id="termination">
+    <div class="profile-card__header">
+      <h2>12. Suspension; Termination</h2>
+    </div>
+    <div class="home-card__content terms-card-content">
+      <p>
+        We may suspend or terminate your access to the Site at any time, with or without notice, if we believe you have violated these Terms
+        or for any other reason. Upon termination, your license rights immediately cease.
+      </p>
+    </div>
+  </div>
+  <div class="profile-card mb-md" id="governing-law">
+    <div class="profile-card__header">
+      <h2 data-critical="true">13. Governing Law; Dispute Resolution</h2>
+    </div>
+    <div class="home-card__content terms-card-content">
+      <p class="legal-callout" role="note">
+        <strong>Arbitration &amp; Class-Action Waiver.</strong>
+        Except for claims for injunctive or equitable relief, any dispute will be resolved exclusively by binding arbitration administered by JAMS
+        under its Streamlined Arbitration Rules. The arbitration will be held in Los Angeles County, California, in English, before a single arbitrator.
+        You and FGCTP agree that each may bring claims only in an individual capacity and not as a plaintiff or class member in any class or representative action.
+      </p>
+      <p>
+        These Terms and any disputes arising out of or relating to them or the Site are governed by the laws of the State of California,
+        without regard to conflict-of-law principles.
+      </p>
+    </div>
+  </div>
+  <div class="profile-card mb-md" id="international">
+    <div class="profile-card__header">
+      <h2>14. International Use</h2>
+    </div>
+    <div class="home-card__content terms-card-content">
+      <p>
+        Access to the Site may not be legal by certain persons or in certain countries. You access the Site on your own initiative and are
+        responsible for compliance with local laws.
+      </p>
+    </div>
+  </div>
+  <div class="profile-card mb-md" id="force-majeure">
+    <div class="profile-card__header">
+      <h2>15. Force Majeure</h2>
+    </div>
+    <div class="home-card__content terms-card-content">
+      <p>
+        FGCTP will not be liable for any failure or delay in performance due to causes beyond its reasonable control, including but not
+        limited to: acts of God, natural disasters, war, terrorism, riots, internet or telecommunications disruptions, cyberattacks, or
+        any other force majeure event.
+      </p>
+    </div>
+  </div>
+  <div class="profile-card mb-md" id="misc">
+    <div class="profile-card__header">
+      <h2>16. Miscellaneous</h2>
+    </div>
+    <div class="home-card__content terms-card-content">
+      <p>
+        <strong>Entire Agreement.</strong> These Terms constitute the entire agreement between you and FGCTP regarding the Site and supersede all prior or contemporaneous agreements on that subject.
+      </p>
+      <p>
+        <strong>Severability.</strong> If any provision of these Terms is held unenforceable, that provision will be enforced to the maximum extent permissible and the remaining provisions will remain in full force.
+      </p>
+      <p>
+        <strong>No Waiver.</strong> Our failure to enforce any provision will not constitute a waiver.
+      </p>
+      <p>
+        <strong>Assignment.</strong> You may not assign these Terms without our prior written consent. We may assign these Terms without restriction.
+      </p>
+      <p>
+        <strong>Notices.</strong> We may provide notices by posting to the Site or by email to the address you provide (if any).
+      </p>
+      <p>
+        <strong>Survival.</strong> The following provisions survive termination of these Terms: Section 2 (Intellectual Property; Ownership), Section 4
+        (User Content; Feedback), Section 5 (No Professional Advice), Section 5A (Data Accuracy), Section 5B (No Gambling Advice), Section 8 (Copyright; DMCA), Section 9 (Disclaimers), Section 10 (Limitation of Liability),
+        Section 11 (Indemnification), Section 13 (Governing Law; Dispute Resolution), Section 15 (Force Majeure), and Section 16 (Miscellaneous).
+      </p>
+    </div>
+  </div>
+  <div class="profile-card" id="contact">
+    <div class="profile-card__header">
+      <h2>17. Contact</h2>
+    </div>
+    <div class="home-card__content terms-card-content text-center">
+      <p>
+        Questions or concerns about these Terms? Contact us:
+      </p>
+      <a href="mailto:fgcpr@gmail.com" class="btn btn--primary mt-sm">
+        <i class="fa-solid fa-envelope"></i>
+        Email Us
+      </a>
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,143 @@
+{
+  "knox-out-25": {
+    "name": "Knox Out 25",
+    "slug": "knox-out-25",
+    "startAt": 1763823600,
+    "endAt": 1763953200,
+    "startDate": "2025-11-22",
+    "endDate": "2025-11-23",
+    "dates": "Nov 22-23, 2025",
+    "location": "401 Lakeside St, Knoxville, TN 37914, USA",
+    "venueName": "Ace Miller Golden Gloves Arena",
+    "url": "https://www.start.gg/tournament/knox-out-25/details",
+    "tier": "B",
+    "prizes": "Cash Prize + Custom Golden Gloves",
+    "game": "Street Fighter 6",
+    "streamLink": "https://www.twitch.tv/scruffycityfgc",
+    "scheduleLink": "https://x.com/tenomedia/status/1991959917847044124?s=20",
+    "description": "<p>The FGC prepares for a \"Ringside Rumble\" as <strong>Knox Out 25</strong> takes over the historic <strong>Ace Miller Golden Gloves Arena</strong> in Knoxville, Tennessee.</p><p>Organized by the <strong>Scruffy City FGC</strong>, Knox Out 25 has established itself as one of the most unique esports events in the Southeast. Returning for its third iteration on <strong>November 22–23, 2025</strong>, this major regional tournament transforms a traditional boxing venue into a massive competitive gaming stage.</p><h3>Unique Event Features:</h3><ul><li><strong>Ringside Finals:</strong> Top 8 matches are broadcast live from inside authentic boxing rings.</li><li><strong>Golden Gloves Trophy:</strong> Winners take home a pair of custom Knox-Out Golden Boxing Gloves.</li><li><strong>Massive Game Lineup:</strong> Featuring <em>Street Fighter 6</em>, <em>Tekken 8</em>, <em>Guilty Gear Strive</em>, <em>Fatal Fury: City of the Wolves</em>, and many more.</li></ul><p>With over 15,000 sq ft of space, a dedicated BYOC area, and on-site food trucks, Knox Out 25 is the premier destination for fighting game fans in the region.</p>",
+    "notablePlayers": [
+      "harms",
+      "CamPaine"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
+  "fgc-teamups": {
+    "name": "FGC TEAMUPS",
+    "slug": "fgc-teamups",
+    "startAt": 1763845200,
+    "endAt": 1763877540,
+    "startDate": "2025-11-22",
+    "endDate": "2025-11-22",
+    "dates": "Nov 22, 2025",
+    "location": "8125 Skokie Blvd, Skokie, IL 60077, USA",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/fgc-teamups",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "FGC TEAMUPS is scheduled for Nov 22, 2025 in 8125 Skokie Blvd, Skokie, IL 60077, USA. Featuring Street Fighter 6. Registered top players include Zaidi.",
+    "notablePlayers": [
+      "Zaidi"
+    ],
+    "isArchived": false,
+    "excludeFromSite": true
+  },
+  "the-iron-crown-29": {
+    "name": "The Iron Crown 29",
+    "slug": "the-iron-crown-29",
+    "startAt": 1765036800,
+    "endAt": 1765072800,
+    "startDate": "2025-12-07",
+    "endDate": "2025-12-07",
+    "dates": "Dec 7, 2025",
+    "location": "1359 Albany Hwy, Cannington WA 6107, Australia",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/the-iron-crown-29",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "The Iron Crown 29 is scheduled for Dec 7, 2025 in 1359 Albany Hwy, Cannington WA 6107, Australia. Featuring Street Fighter 6. Registered top players include FREESER.",
+    "notablePlayers": [
+      "FREESER"
+    ],
+    "isArchived": false,
+    "excludeFromSite": true
+  },
+  "mindset-2025": {
+    "name": "MINDSET 2025",
+    "slug": "mindset-2025",
+    "startAt": 1764405000,
+    "endAt": 1764522000,
+    "startDate": "2025-11-29",
+    "endDate": "2025-11-30",
+    "dates": "Nov 29-30, 2025",
+    "location": "65 Rue Germaine Tillion, 92700 Colombes, France",
+    "venueName": "KOPSTER Hotel Residence Paris Ouest Colombes",
+    "url": "https://nsxc.gg/mindset/",
+    "tier": "A",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "<p>MINDSET 2025 is a two day fighting game tournament in Colombes, just outside Paris, running November 29 and 30 at KOPSTER Hotel Residence Paris Ouest Colombes, 65 Rue Germaine Tillion. The event is built as a dedicated weekend for versus fighting, inviting players from across France and beyond to compete, stay on site and make the most of a full schedule in one location.</p><p>The game lineup covers a wide range of styles: Street Fighter 6, Tekken 8, Guilty Gear Strive, Granblue Fantasy Versus Rising, Guilty Gear Xrd Rev 2, 2XKO, Fatal Fury City of the Wolves and Hunter x Hunter Nen Impact. This mix of modern flagship titles, anime fighters and new releases gives players multiple brackets to enter whether they focus on traditional 2D games, 3D fighters or team based action, with some titles also tied into official tour circuits for competitors tracking season long results.</p><p>Beyond the brackets, MINDSET 2025 is presented as an inclusive event that emphasizes accessibility, diversity and fair play, aiming to create an environment where players can challenge themselves, build confidence and connect with the wider fighting game community around shared values as well as matches.</p>",
+    "notablePlayers": [
+      "Mister Crimson",
+      "Kilzyou",
+      "Akainu"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
+  "the-noodle-fest-2025": {
+    "name": "The Noodle Fest 2025",
+    "slug": "the-noodle-fest-2025",
+    "startAt": 1764428400,
+    "endAt": 1765080000,
+    "startDate": "2025-11-29",
+    "endDate": "2025-12-06",
+    "dates": "Nov 29-Dec 6, 2025",
+    "location": "3248 Rue Jean-Yves, Kirkland, QC H9J 2R6, Canada",
+    "venueName": "Noodle Empire Esports & Game Center",
+    "url": "https://www.noodleempire.com/event-details/the-noodle-fest-2025",
+    "tier": "B",
+    "prizes": "$2,000",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "<p>The Noodle Fest 2025 is a week long fighting game and community festival in Kirkland, Quebec, running from November 29 to December 6, 2025 at Noodle Empire’s gaming and esports center on Rue Jean-Yves. Framed as a crossover celebration for Noodle Empire’s third anniversary, it brings together a full schedule of tournaments, special events and hangout time under one roof, with more than a dozen featured games and over two thousand dollars in prizes and pot bonuses across the week.</p><p>The lineup highlights both platform fighters and traditional fighting games, with brackets for Street Fighter 6, Tekken 8, Super Smash Bros Ultimate, Super Smash Bros Melee, Rivals 2, Guilty Gear Strive and 2XKO among the core competitions. Different titles are given their own dedicated day of play, supported by targeted pot bonuses such as a featured bonus for Street Fighter 6 and additional prize boosts for games like Rivals 2 and Smash Melee, so players can focus on their main game while still being part of a larger festival schedule.</p><p>Across the week, The Noodle Fest 2025 is positioned as a hub for the Montreal area fighting game community and visitors, combining structured tournaments with casual sessions, creator content and venue activities to create a sustained event that rewards both repeat attendance and focused tournament runs.</p>",
+    "notablePlayers": [
+      "Zykles"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
+  "red-line-fight-7-samurai-no-seiiki": {
+    "name": "RED LINE FIGHT 7: Samurai no Seiiki",
+    "slug": "red-line-fight-7-samurai-no-seiiki",
+    "startAt": 1764975600,
+    "endAt": 1765130400,
+    "startDate": "2025-12-06",
+    "endDate": "2025-12-07",
+    "dates": "Dec 6-7, 2025",
+    "location": "Viale Piemonte, 41, 20093 Cologno Monzese MI, Italy",
+    "venueName": "Nemiex Club",
+    "url": "https://www.start.gg/tournament/red-line-fight-7-samurai-no-seiiki",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "<p>RED LINE FIGHT 7: Samurai no Seiiki continues the long running Red Line Street Fighter series at Nemiex Club on Viale Piemonte 41 in Cologno Monzese, just outside central Milan, with the main event weekend set for December 6 and 7, 2025 and a themed pre event party on December 5.</p><p>The schedule focuses on Capcom titles, pairing a Street Fighter III Third Strike singles bracket on December 6 with Street Fighter 6 singles on December 7, plus a Saturday Night Party block that gives players additional time for matches, exhibitions and warm up sets around the main competition days.</p><p>Red Line Fight 7 is framed as a Seven Samurai themed edition of the series, bringing together Italian and visiting players who follow both classic Street Fighter and the current Street Fighter 6 era, with Nemiex Club acting as the gathering point for a full weekend built around these games.</p>",
+    "notablePlayers": [
+      "Garnet"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  }
+}

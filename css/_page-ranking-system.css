@@ -1,0 +1,806 @@
+/*
+ * Page: Ranking System (FGPI)
+ * Scope everything under .page-ranking-system to avoid cross-page conflicts.
+ */
+
+/* 1) Primary buttons (page-scoped override) */
+.page-ranking-system .btn--primary {
+  background: var(--color-accent-blue);
+  border-color: var(--color-accent-blue);
+  color: var(--color-text-primary);
+  text-decoration: none;
+}
+.page-ranking-system .btn--primary:hover {
+  background: var(--color-accent-blue-dark);
+  border-color: var(--color-accent-blue-dark);
+  color: var(--color-text-primary);
+}
+
+/* 1b) CTA Container */
+.page-ranking-system .cta-container {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* 1c) Contact & Feedback Section */
+.page-ranking-system #contact-feedback {
+  margin-bottom: 0.5rem !important;
+}
+.page-ranking-system #contact-feedback > *:last-child {
+  margin-bottom: 0;
+}
+
+/* 2) Layout */
+.page-ranking-system .page-ranking-system__layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+@media (min-width: 1280px) {
+  .page-ranking-system .page-ranking-system__layout {
+    grid-template-columns: 260px 3fr;
+    align-items: start;
+  }
+}
+
+/* 3) TOC (scoped) */
+.page-ranking-system .page-ranking-system__toc-wrapper {
+  position: sticky;
+  top: calc(1rem + 70px);
+  z-index: 100;
+  margin-bottom: 1.5rem;
+}
+.page-ranking-system .toc {
+  background-color: var(--color-bg-light);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+.page-ranking-system .toc strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-heading, 'Oswald', sans-serif);
+  font-size: 1.1rem;
+  color: var(--color-text-primary);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.25rem;
+}
+.page-ranking-system .toc-list ul { list-style: none; padding: 0; margin: 0; }
+.page-ranking-system .toc-list li { margin-bottom: 0.25rem; list-style: none; }
+.page-ranking-system .toc-list a {
+  display: block;
+  padding: 4px 0;
+  color: var(--color-text-secondary);
+  transition: color .2s ease, transform .2s ease;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+.page-ranking-system .toc-list a:hover {
+  color: var(--color-accent-blue);
+  transform: translateX(3px);
+}
+.page-ranking-system .toc-list a.is-active {
+  color: var(--color-accent-blue);
+  font-weight: 600;
+  border-left: 3px solid var(--color-accent-blue);
+  padding-left: 8px;
+  transform: translateX(3px);
+}
+
+@media (max-width: 1279px) {
+  /* Keep player + character metric groups side-by-side inside the mobile dropdown */
+  .page-ranking-system .toc-list--dual > ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+  .page-ranking-system .toc-list--dual > ul > li {
+    margin-bottom: 0;
+  }
+  .page-ranking-system .toc-list--dual > ul > li > a {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+
+/* Nested TOC items - compact styling */
+.page-ranking-system .toc-list ul ul {
+  margin-top: 0.25rem;
+  padding-left: 1rem;
+}
+.page-ranking-system .toc-list ul ul li {
+  margin-bottom: 0.15rem;
+}
+.page-ranking-system .toc-list ul ul a {
+  padding: 2px 0;
+  font-size: 0.88rem;
+}
+
+/* Two-column layout for nested items on desktop */
+@media (min-width: 1280px) {
+  .page-ranking-system .toc-list ul ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: column;
+    gap: 0 0.75rem;
+  }
+  /* Player metrics (6 items): 3-3 split */
+  .page-ranking-system .toc-list > ul > li:first-child > ul {
+    grid-template-rows: repeat(3, auto);
+  }
+  /* Character metrics (7 items): 4-3 split */
+  .page-ranking-system .toc-list > ul > li:last-child > ul {
+    grid-template-rows: repeat(4, auto);
+  }
+}
+.page-ranking-system .toc-toggle-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 1.5rem;
+  background-color: var(--color-accent-blue);
+  color: var(--color-text-primary);
+  border: none;
+  border-radius: var(--border-radius);
+  font-family: var(--font-heading, 'Oswald', sans-serif);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0,150,255,0.4);
+}
+.page-ranking-system .toc-toggle-btn i { transition: transform .3s ease; }
+.page-ranking-system .toc-toggle-btn[aria-expanded="true"] i { transform: rotate(180deg); }
+.page-ranking-system .toc-list { display: none; }
+.page-ranking-system .toc-toggle-btn[aria-expanded="true"] + .toc-list { display: block; }
+@media (min-width: 1280px) {
+  .page-ranking-system .toc-toggle-btn { display: none; }
+  .page-ranking-system .toc-list { display: block !important; }
+}
+
+/* 4) Main content */
+.page-ranking-system .page-ranking-system__image {
+  display: block;
+  width: min(100%, 405px);
+  height: auto;
+  margin: 0 auto 1rem;
+  object-fit: contain;
+}
+.page-ranking-system section {
+  padding-top: 0.75rem;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+}
+.page-ranking-system .page-ranking-system__main-content h2 {
+  font-size: 2.25rem;
+  color: var(--color-accent-blue);
+  margin-bottom: 1rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid var(--color-border);
+}
+.page-ranking-system .page-ranking-system__main-content h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--color-text-primary);
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.page-ranking-system .page-ranking-system__main-content h3 i {
+  color: var(--color-rank-1-gold, #FFC107);
+  font-size: 1.1em;
+}
+
+/* Ensure hash links land below sticky headers */
+.page-ranking-system .page-ranking-system__main-content [id] {
+  scroll-margin-top: clamp(96px, 14vh, 180px);
+}
+@media (max-width: 768px) {
+  .page-ranking-system .page-ranking-system__main-content [id] {
+    scroll-margin-top: clamp(130px, 20vh, 210px);
+  }
+}
+
+/* 5) CTA Deck */
+.page-ranking-system .cta-deck {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 1.5rem auto;
+  padding: 0;
+  width: 100%;
+  max-width: 1100px;
+}
+@media (min-width: 768px) {
+  .page-ranking-system .cta-deck {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    justify-content: center;
+  }
+}
+.page-ranking-system .cta-tile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: rgba(30,30,30,0.5);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-accent-blue);
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  color: inherit;
+  transition: all .2s ease;
+  width: 100%;
+  min-width: 280px;
+}
+.page-ranking-system .cta-tile:hover {
+  background: rgba(30,30,30,0.8);
+  border-left-color: var(--color-accent-blue-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,150,255,0.2);
+}
+.page-ranking-system .cta-tile > i {
+  font-size: 2rem;
+  color: var(--color-accent-blue);
+  flex-shrink: 0;
+  width: 48px; height: 48px;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(0,150,255,0.1);
+  border-radius: var(--border-radius);
+  transition: all .2s ease;
+}
+.page-ranking-system .cta-tile:hover > i {
+  color: var(--color-accent-blue-dark);
+  background: rgba(0,150,255,0.2);
+}
+.page-ranking-system .cta-tile > span {
+  display: flex; flex-direction: column; gap: 0.25rem; flex: 1;
+}
+.page-ranking-system .cta-tile__title {
+  font-family: var(--font-heading, 'Oswald', sans-serif);
+  font-size: 1.1rem; font-weight: 600;
+  color: var(--color-text-primary);
+  text-transform: uppercase; letter-spacing: 0.02em; line-height: 1.2;
+}
+.page-ranking-system .cta-tile__sub {
+  font-size: 0.85rem; color: var(--color-text-secondary); line-height: 1.4;
+}
+.page-ranking-system .cta-tile:hover .cta-tile__title { color: var(--color-accent-blue); }
+.page-ranking-system .cta-tile * { text-decoration: none; }
+@media (max-width: 767px) {
+  .page-ranking-system .cta-tile { flex-direction: column; text-align: center; }
+  .page-ranking-system .cta-tile > i { width: 60px; height: 60px; font-size: 2.5rem; }
+}
+
+/* 6) Workflow steps */
+.page-ranking-system .workflow-steps {
+  list-style: none; counter-reset: workflow-counter;
+  padding-left: 0; margin: 0 0 2rem 0; display: grid; gap: 1.25rem;
+}
+.page-ranking-system .workflow-steps li {
+  position: relative;
+  padding: 1.5rem 1.5rem 1.5rem 4.5rem;
+  background: linear-gradient(135deg, rgba(30,30,30,.9), rgba(30,30,30,.6));
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-accent-blue);
+  border-radius: var(--border-radius);
+  transition: all .2s ease;
+}
+.page-ranking-system .workflow-steps li:hover {
+  border-left-color: var(--color-accent-blue-dark);
+  background: linear-gradient(135deg, rgba(30,30,30,1), rgba(30,30,30,.8));
+  transform: translateX(3px);
+}
+.page-ranking-system .workflow-steps li::before {
+  counter-increment: workflow-counter; content: counter(workflow-counter);
+  position: absolute; left: 1.5rem; top: 1.5rem;
+  display: flex; align-items: center; justify-content: center;
+  width: 42px; height: 42px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-accent-blue), var(--color-accent-blue-dark));
+  color: #fff; font-family: var(--font-heading, 'Oswald', sans-serif);
+  font-weight: 700; font-size: 1.3rem;
+  box-shadow: 0 4px 12px rgba(0,150,255,.4);
+}
+.page-ranking-system .workflow-step__content { display: flex; flex-direction: column; gap: 0.5rem; }
+.page-ranking-system .workflow-step__title {
+  font-family: var(--font-heading, 'Oswald', sans-serif);
+  font-size: 1.3rem; color: var(--color-text-primary);
+  text-transform: uppercase; letter-spacing: .02em; margin: 0;
+}
+.page-ranking-system .workflow-step__description {
+  color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0 0 0.75rem 0;
+}
+.page-ranking-system .workflow-step__link {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  color: var(--color-accent-blue); font-weight: 600; font-size: 0.95rem;
+  text-decoration: none; text-transform: uppercase; letter-spacing: .03em;
+  transition: all .2s ease; width: fit-content;
+}
+.page-ranking-system .workflow-step__link i { font-size: 0.85rem; transition: transform .2s ease; }
+.page-ranking-system .workflow-step__link:hover { color: var(--color-accent-blue-dark); }
+.page-ranking-system .workflow-step__link:hover i { transform: translateX(4px); }
+.page-ranking-system .workflow-note {
+  background: rgba(255,193,7,0.1);
+  border-left: 4px solid var(--color-rank-1-gold, #FFC107);
+  padding: 1.25rem; border-radius: var(--border-radius);
+  color: var(--color-text-primary); font-size: 0.95rem; line-height: 1.6; margin-top: 2rem;
+}
+.page-ranking-system .workflow-note i { color: var(--color-rank-1-gold, #FFC107); margin-right: 0.5rem; font-size: 1.1rem; }
+.page-ranking-system .workflow-note strong {
+  color: var(--color-rank-1-gold, #FFC107);
+  text-transform: uppercase; font-size: 0.9rem; letter-spacing: .05em;
+}
+@media (max-width: 767px) {
+  .page-ranking-system .workflow-steps li { padding: 1.25rem 1rem 1.25rem 3.5rem; }
+  .page-ranking-system .workflow-steps li::before { width: 36px; height: 36px; font-size: 1.1rem; left: 1rem; top: 1.25rem; }
+  .page-ranking-system .workflow-step__title { font-size: 1.1rem; }
+}
+
+/* 7) Legacy CTA grid */
+.page-ranking-system .cta-grid {
+  display: grid; grid-template-columns: 1fr;
+  gap: 1.5rem; margin: 2rem 0; padding-left: 0; border-left: none; padding-top: 0;
+}
+@media (min-width: 768px) {
+  .page-ranking-system .cta-grid { grid-template-columns: repeat(3, 1fr); }
+}
+.page-ranking-system .cta-card {
+  background-color: var(--color-bg-light);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: 1.5rem; text-align: center;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+  min-height: 200px; justify-content: flex-start;
+}
+.page-ranking-system .cta-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  border-color: var(--color-accent-blue);
+}
+.page-ranking-system .cta-card--primary {
+  border-color: var(--color-accent-blue);
+  background: linear-gradient(135deg, var(--color-bg-light) 0%, rgba(0,150,255,0.05) 100%);
+}
+.page-ranking-system .cta-card > i { font-size: 2.5rem; color: var(--color-accent-blue); margin-bottom: 0.25rem; }
+.page-ranking-system .cta-card h3 {
+  font-family: var(--font-heading, 'Oswald', sans-serif);
+  font-size: 1.5rem; color: var(--color-text-primary);
+  margin: 0 0 0.25rem 0; border: none; padding: 0;
+}
+.page-ranking-system .cta-card p {
+  color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.5; margin: 0 0 1rem 0; flex-grow: 1;
+}
+.page-ranking-system .cta-card .btn { margin-top: auto; width: 100%; max-width: 200px; }
+
+/* 8) FAQ */
+.page-ranking-system .faq-accordion details {
+  background-color: var(--color-bg-light);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  margin-bottom: 0.5rem;
+  transition: background-color .2s ease, border-color .2s ease;
+}
+.page-ranking-system .faq-accordion details[open] { border-color: var(--color-accent-blue); }
+.page-ranking-system .faq-accordion summary {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1rem; cursor: pointer;
+  font-family: var(--font-heading, 'Oswald', sans-serif);
+  font-size: 1.15rem; color: var(--color-text-primary);
+  list-style: none;
+}
+.page-ranking-system .faq-accordion summary::after {
+  content: '\f078'; font-family: "Font Awesome 6 Free"; font-weight: 900; font-size: 0.8rem;
+  color: var(--color-accent-blue); transition: transform .2s ease;
+}
+.page-ranking-system .faq-accordion details[open] summary::after { transform: rotate(180deg); }
+.page-ranking-system .faq-accordion details[open] summary { border-bottom: 1px solid var(--color-border); }
+.page-ranking-system .faq-accordion details p {
+  padding: 0 1rem 1rem; margin-bottom: 0; color: var(--color-text-secondary);
+}
+
+/* 9) Lists */
+.page-ranking-system .page-ranking-system__main-content ol {
+  list-style: none; list-style-type: none; counter-reset: step-counter; padding-left: 0; margin-bottom: 1rem;
+}
+.page-ranking-system .page-ranking-system__main-content ol li {
+  position: relative; padding: 0.5rem 1rem 0.5rem 3rem; margin-bottom: 0.5rem;
+  background-color: var(--color-bg-light);
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-accent-blue);
+  border-radius: var(--border-radius);
+}
+.page-ranking-system .page-ranking-system__main-content ol li::marker { content: ""; }
+.page-ranking-system .page-ranking-system__main-content ol li::before {
+  counter-increment: step-counter; content: counter(step-counter);
+  position: absolute; left: 1rem; top: 50%; transform: translateY(-50%);
+  display: flex; align-items: center; justify-content: center;
+  width: 28px; height: 28px; border-radius: 50%;
+  background-color: var(--color-accent-blue); color: #121212;
+  font-family: var(--font-heading, 'Oswald', sans-serif);
+  font-weight: 700; font-size: 1rem;
+  box-shadow: 0 0 5px rgba(0,150,255,0.6);
+}
+/* ul margin controlled globally */
+
+/* 10) Controls container */
+.page-ranking-system .controls-container {
+  display: flex; justify-content: center; align-items: center;
+  gap: 1rem; flex-wrap: wrap; margin: 0.5rem 0 1.5rem 0;
+}
+
+/* 11) Notes, tables, cards */
+.page-ranking-system .note {
+  background: rgba(0,150,255,0.1);
+  border-left: 4px solid var(--color-accent-blue);
+  padding: 1rem; margin: 1.5rem 0;
+  border-radius: var(--border-radius);
+  color: var(--color-text-secondary);
+  font-size: 0.95rem; font-style: italic;
+}
+.page-ranking-system .table-wrapper {
+  overflow-x: auto; margin: 1.5rem 0; border-radius: var(--border-radius);
+}
+.page-ranking-system .card {
+  background-color: var(--color-bg-light);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: 0.5rem var(--spacing-md, 1rem);
+}
+.page-ranking-system .card__title {
+  display: flex; align-items: center; gap: var(--spacing-sm, .5rem);
+  margin: 0 0 var(--spacing-sm, .5rem) 0 !important; font-size: 1.5rem;
+}
+
+/* 12) Head-to-head comparison (matrix ensures even rows) */
+.page-ranking-system .compare-box { margin-top: var(--spacing-md, 1rem); }
+.page-ranking-system .compare-matrix {
+  display: grid;
+  grid-template-columns: 1.5fr 0.75fr 0.75fr; /* label | A | B */
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+.page-ranking-system .matrix-row { display: contents; }
+.page-ranking-system .matrix-row--head .matrix-cell {
+  background: var(--color-bg-light);
+  color: var(--color-text-secondary);
+  font-family: var(--font-heading, 'Oswald', sans-serif);
+  text-transform: uppercase; font-size: 0.9rem;
+  border-bottom: 2px solid var(--color-border);
+}
+.page-ranking-system .matrix-row--total .matrix-cell {
+  border-top: 2px solid var(--color-border);
+  font-family: var(--font-heading, 'Oswald', sans-serif);
+}
+.page-ranking-system .matrix-cell {
+  padding: var(--spacing-sm, .5rem) var(--spacing-md, 1rem);
+  border-bottom: 1px solid var(--color-border);
+  display: flex; align-items: center; min-height: 44px;
+}
+.page-ranking-system .matrix-cell--label { text-align: left; }
+.page-ranking-system .matrix-cell--a,
+.page-ranking-system .matrix-cell--b { text-align: center; justify-content: center; }
+.page-ranking-system .note--disclaimer {
+  margin-top: var(--spacing-sm, .5rem);
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  color: var(--color-text-tertiary, #7a7a7a);
+  text-align: center;
+}
+
+/* 13) FAQ adjacency & contact spacing */
+.page-ranking-system .faq-accordion details + details { margin-top: var(--spacing-sm, .5rem); }
+.page-ranking-system .faq-accordion details summary { cursor: pointer; }
+.page-ranking-system .contact-section--tight { margin-bottom: 0.5rem; }
+.page-ranking-system .contact-section--tight > *:last-child {
+  margin-bottom: 0;
+}
+
+/* 14) Metric rows (if you still use the two-column illustrative block) */
+.page-ranking-system .compare-grid {
+  display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: var(--spacing-md, 1rem);
+}
+.page-ranking-system .compare-grid__col { display: flex; flex-direction: column; gap: 0.35rem; }
+.page-ranking-system .metric-row {
+  display: flex; align-items: center; justify-content: space-between; gap: 0.75rem;
+  padding: 0.5rem 0.75rem; background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06); border-radius: var(--border-radius);
+}
+.page-ranking-system .metric-row > span { color: var(--color-text-secondary); overflow-wrap: anywhere; }
+.page-ranking-system .metric-row > strong { white-space: nowrap; }
+.page-ranking-system .metric-row--emph {
+  border-color: var(--color-accent-blue);
+  background: linear-gradient(135deg, rgba(0,150,255,0.08), rgba(255,255,255,0.03));
+}
+.page-ranking-system .compare-divider { height: 1px; background: rgba(255,255,255,0.08); margin: 0.5rem 0; }
+.page-ranking-system .muted { color: var(--color-text-tertiary, #7a7a7a); }
+.page-ranking-system .small { font-size: 0.9rem; }
+@media (max-width: 560px) {
+  .page-ranking-system .metric-row { align-items: flex-start; }
+}
+
+/* 15) Mobile tweak for matrix columns */
+@media (max-width: 640px) {
+  .page-ranking-system .compare-matrix { grid-template-columns: 1fr 0.6fr 0.6fr; }
+}
+
+/* Compact arrow indicators with A/B pill */
+.page-ranking-system .trend {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+}
+.page-ranking-system .trend__who {
+  font-weight: 700;
+  font-size: .85rem;
+  padding: .1rem .45rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  line-height: 1;
+}
+.page-ranking-system .arrow {
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: .02em;
+}
+.page-ranking-system .arrow--up   { color: var(--color-success); }
+.page-ranking-system .arrow--down { color: var(--color-danger); }
+.page-ranking-system .arrow--even { color: var(--color-text-secondary); }
+
+/* Direction indicators (for matrix arrows) */
+.page-ranking-system .dir--up,
+.page-ranking-system .dir--up-strong { color: var(--color-success); }
+.page-ranking-system .dir--down { color: var(--color-danger); }
+.page-ranking-system .dir--even { color: var(--color-text-secondary); }
+
+/* FGPI winner/loser color coding */
+.page-ranking-system .fgpi-winner { color: var(--color-success); }
+.page-ranking-system .fgpi-lower { color: var(--color-text-secondary); }
+
+/* What-If Scenarios heading within worked-example section */
+.page-ranking-system #worked-example h3 {
+  margin-top: 2rem;
+}
+
+.page-ranking-system .legend {
+  margin-top: .5rem;
+  text-align: center;
+}
+
+/* ========================================
+   MOBILE & TABLET RESPONSIVE STYLES
+   ======================================== */
+
+/* Ensure page doesn't overflow horizontally */
+@media (max-width: 1279px) {
+  .page-ranking-system {
+    max-width: 100%;
+  }
+
+  .page-ranking-system.content-container {
+    padding: 0 var(--spacing-md, 1rem);
+    max-width: 100%;
+  }
+
+  .page-ranking-system article {
+    max-width: 100%;
+  }
+
+  /* Layout stacks on tablet/mobile */
+  .page-ranking-system .page-ranking-system__layout {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+  /* Keep TOC sticky on mobile/tablet */
+  .page-ranking-system .page-ranking-system__toc-wrapper {
+    position: sticky;
+    top: 80px; /* Adjust for mobile header */
+    z-index: 1000;
+    background: transparent;
+    margin-bottom: 0;
+  }
+
+  /* Reduce button margin on mobile/tablet */
+  .page-ranking-system .toc-toggle-btn {
+    margin-bottom: 0;
+  }
+
+  /* Make TOC container transparent on mobile/tablet */
+  .page-ranking-system .toc {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  /* Keep the dropdown content styled when expanded */
+  .page-ranking-system .toc-toggle-btn[aria-expanded="true"] + .toc-list {
+    background-color: var(--color-bg-light);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+    margin-bottom: 1rem;
+  }
+
+  /* Reduce top spacing on first image */
+  .page-ranking-system .page-ranking-system__image {
+    margin-top: 1rem;
+  }
+
+  /* Main content area - this is where we control overflow */
+  .page-ranking-system .page-ranking-system__main-content {
+    max-width: 100%;
+    overflow-x: hidden; /* Only hide overflow on content area, not parent */
+  }
+
+  /* All sections should respect viewport */
+  .page-ranking-system section {
+    max-width: 100%;
+    overflow-x: hidden;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  /* Tables - ensure wrapper contains them */
+  .page-ranking-system .table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .page-ranking-system .data-table {
+    min-width: 500px; /* Minimum table width for readability */
+    font-size: 0.85rem;
+  }
+
+  .page-ranking-system .data-table th,
+  .page-ranking-system .data-table td {
+    padding: 0.5rem;
+  }
+
+  /* CTA deck - stack on tablet */
+  .page-ranking-system .cta-deck {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* Center CTA tiles on tablet */
+  .page-ranking-system .cta-tile {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .page-ranking-system .cta-tile > i {
+    width: 60px;
+    height: 60px;
+    font-size: 2.5rem;
+  }
+
+  /* Cards and boxes */
+  .page-ranking-system .card,
+  .page-ranking-system .compare-box,
+  .page-ranking-system .fgpi-reasons {
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 1rem;
+  }
+
+  /* Compare matrix - more compact */
+  .page-ranking-system .compare-matrix {
+    font-size: 0.85rem;
+  }
+
+  .page-ranking-system .matrix-cell {
+    padding: 0.5rem;
+    min-height: 40px;
+  }
+
+  /* Headings scale down */
+  .page-ranking-system h1 {
+    font-size: 2rem;
+  }
+
+  .page-ranking-system .page-ranking-system__main-content h2 {
+    font-size: 1.75rem;
+  }
+
+  .page-ranking-system .page-ranking-system__main-content h3 {
+    font-size: 1.25rem;
+  }
+
+  /* CTA tiles */
+  .page-ranking-system .cta-tile {
+    padding: 1rem;
+  }
+
+  /* Lists (only adjust inside main content to avoid footer/nav conflicts) */
+  .page-ranking-system .page-ranking-system__main-content ul,
+  .page-ranking-system .page-ranking-system__main-content ol {
+    padding-left: 1.25rem;
+    margin-right: 0;
+  }
+
+  /* Notes */
+  .page-ranking-system .note {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* Extra responsive tweaks for small mobile */
+@media (max-width: 640px) {
+  .page-ranking-system.content-container {
+    padding: 0 var(--spacing-sm, 0.75rem);
+  }
+
+  .page-ranking-system section {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
+  .page-ranking-system h1 {
+    font-size: 1.75rem;
+  }
+
+  .page-ranking-system .page-ranking-system__main-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .page-ranking-system .page-ranking-system__main-content h3 {
+    font-size: 1.15rem;
+  }
+
+  /* Tables even more compact on small mobile */
+  .page-ranking-system .data-table {
+    font-size: 0.8rem;
+    min-width: 450px;
+  }
+
+  .page-ranking-system .data-table th,
+  .page-ranking-system .data-table td {
+    padding: 0.4rem;
+  }
+
+  /* Matrix cells more compact */
+  .page-ranking-system .matrix-cell {
+    padding: 0.4rem;
+    font-size: 0.8rem;
+  }
+
+  /* CTA tiles stack and center */
+  .page-ranking-system .cta-tile {
+    flex-direction: column;
+    text-align: center;
+    padding: 0.75rem;
+  }
+
+  /* Workflow steps */
+  .page-ranking-system .workflow-steps li {
+    padding-left: 3rem;
+  }
+
+  /* FAQ accordion */
+  .page-ranking-system .faq-accordion summary {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+
+  .page-ranking-system .faq-accordion details p {
+    padding: 0 0.75rem 0.75rem;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,231 @@
+---
+title: Player Profiles — Street Fighter 6 Pro Players Directory
+bodyClass: "page-player-profiles"
+permalink: "/player-profiles/"
+eleventyNavigation:
+  key: Player Profiles
+  order: 3
+  iconClass: "fas fa-users"
+---
+
+{% extends "layout.njk" %}
+
+{# --- Set allPlayers variable for use throughout the template --- #}
+{% set allPlayers = playerStatsSlim | selectattr('rank', 'defined') | selectattr('rank', 'le', 200) | list %}
+
+{# --- <title> --- #}
+{% block title %}SF6 Pro Players Directory | FGC Top Players{% endblock %}
+
+{# --- Meta description (tight & keyworded) --- #}
+{% block meta_description %}
+<meta name="description" content="Browse Street Fighter 6 pro player profiles: ranks, mains, countries, and recent results. Search and filter the SF6 directory." />
+{% endblock %}
+
+{# --- Page-specific social copy (OG/Twitter) --- #}
+{% block og_title %}Street Fighter 6 Pro Players Directory — Player Profiles{% endblock %}
+{% block og_description %}Explore Street Fighter 6 player profiles with ranks, mains, countries, and recent results. Search and filter the global directory.{% endblock %}
+{% block twitter_title %}Street Fighter 6 Pro Players Directory — Player Profiles{% endblock %}
+{% block twitter_description %}Search and filter Street Fighter 6 pro player profiles by name, country, or main. See ranks and recent results.{% endblock %}
+
+
+{# --- Structured data: CollectionPage + ItemList + BreadcrumbList --- #}
+{% block structured_data %}
+{% set pageCount = allPlayers | length %}
+{% if pageCount and pageCount > 0 %}
+  {% set limit = pageCount %}
+{% else %}
+  {% set limit = 0 %}
+{% endif %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "SF6 Pro Players Directory",
+  "url": "{{ site.url }}{{ page.url }}",
+  "description": "Street Fighter 6 player profiles with ranks, mains, countries, and recent results.",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "FGC Top Players",
+    "url": "{{ site.url }}/"
+  }
+}
+</script>
+
+{% if limit > 0 %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "SF6 Player Profiles (This Page)",
+  "itemListOrder": "http://schema.org/ItemListOrderAscending",
+  "itemListElement": [
+    {% for p in allPlayers %}
+    {
+      "@type": "ListItem",
+      "position": {{ loop.index }},
+      "item": {
+        "@type": "Person",
+        "name": {{ p.name | dump }}{% if p.country %},
+        "nationality": {{ p.country | dump }}{% endif %}{% if p.mainCharacter %},
+        "description": {{ ("Main: " ~ p.mainCharacter) | dump }}{% endif %}{% if p.slug %},
+        "url": "{{ site.url }}/players/{{ p.slug }}/"{% endif %}{% if p.photoUrl %},
+        "image": "{{ site.url }}{{ p.photoUrl }}"{% endif %}
+      }
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ site.url }}/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Player Profiles",
+      "item": "{{ site.url }}{{ page.url }}"
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+{% block content %}
+<div class="content-container content-container--wide page-player-profiles">
+  {% include "banner.njk" %}
+
+  <h1>Street Fighter 6 Player Profiles</h1>
+  <p class="intro-text intro-text--compact">
+    Explore the <strong>Street Fighter 6 (SF6) player directory</strong> featuring the <strong>global Top 200 ranked players</strong>.
+    Search by <strong>name</strong>, <strong>country</strong>, or <strong>main character</strong>,
+    and sort by <strong>rank</strong> or <strong>name</strong>. Each profile includes key stats, recent results, mains, and follow links.
+  </p>
+
+  <hr class="hr-gradient--center-blue intro-rule">
+
+  <div class="archive-controls sticky-controls">
+    <button class="filter-toggle-btn" id="filter-toggle-btn" type="button" aria-expanded="false">
+      <span>Search & Filter</span>
+      <i class="fas fa-chevron-down toggle-icon"></i>
+    </button>
+    <form class="ac-inline" id="player-filters-form" onsubmit="return false">
+      <div class="ac-inline__row">
+        <div class="ac-field ac-field--search">
+          <label for="player-search-input" class="ac-label">Search</label>
+          <div class="ac-search search-wrapper">
+            <button type="button" class="search-submit-btn" id="player-search-submit-btn" aria-label="Close filters">
+              <i class="fas fa-search"></i>
+            </button>
+            <input
+              type="text"
+              id="player-search-input"
+              class="ac-input search-form__input"
+              placeholder="Search by Player..."
+              autocomplete="off"
+            >
+            <button class="ac-clear search-clear-btn" id="player-search-clear-btn" aria-label="Clear search">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="ac-field">
+          <label for="filter-country" class="ac-label">Country</label>
+          <select id="filter-country" class="ac-select ac-select--center">
+            <option value="all">All Countries</option>
+          </select>
+        </div>
+
+        <div class="ac-field">
+          <label for="filter-character" class="ac-label">Character</label>
+          <select id="filter-character" class="ac-select ac-select--center">
+            <option value="all">All Characters</option>
+          </select>
+        </div>
+
+        <div class="ac-field ac-field--sort">
+          <label for="sort-by" class="ac-label">Sort</label>
+          <select id="sort-by" class="ac-select ac-select--center">
+            <option value="rank-desc">Rank (High → Low)</option>
+            <option value="rank-asc">Rank (Low → High)</option>
+            <option value="name-asc">Name (A–Z)</option>
+            <option value="name-desc">Name (Z–A)</option>
+            <option value="country-asc">Country (A–Z)</option>
+            <option value="country-desc">Country (Z–A)</option>
+            <option value="character-asc">Character (A–Z)</option>
+            <option value="character-desc">Character (Z–A)</option>
+          </select>
+        </div>
+
+        <div class="ac-field ac-field--reset">
+          <label class="ac-label ac-label--spacer" aria-hidden="true">Reset</label>
+          <button id="reset-filters-btn" class="btn btn--primary btn--small">Reset</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div id="active-filters-container" class="active-filters-container"></div>
+  <div id="results-count" class="results-count" style="margin: .5rem auto;">
+    Displaying {{ allPlayers | length }} players
+  </div>
+  <div id="spotlight-placement-target"></div>
+
+  <div
+    id="player-card-grid"
+    class="player-card-grid"
+  >
+    {%- for player in allPlayers -%}
+      <div
+        class="pcard"
+        data-rank="{{ player.rank or 9999 }}"
+        data-name="{{ player.name | escape }}"
+        {% if player.englishName %}
+        data-english-name="{{ player.englishName | escape }}"
+        {% endif %}
+        data-slug="{{ player.slug | escape }}"
+        data-country="{{ (player.country or '') | slug }}"
+        data-character="{{ (player.mainCharacter or '') | slug }}"
+        data-character-display="{{ player.mainCharacter or '' }}"
+      >
+        {% include "components/player-card-item.njk" %}
+      </div>
+    {%- endfor -%}
+  </div>
+
+  <div id="no-results-message" class="no-results-message" style="display: none;">
+    <h2>No Players Found</h2>
+    <p>Try adjusting your search or filter criteria.</p>
+    <button id="no-results-reset-btn" class="btn btn--primary">Reset Filters</button>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  // Set playerProfiles with slim data that includes rankChange for spotlight logic
+  window.playerProfiles = {{ allPlayers | dump | safe }};
+</script>
+<script src="/js/playerDirectory.js" defer></script>
+<script>
+  // Load full player profiles from API in the background for additional features
+  fetch('/api/player-profiles.json')
+    .then(response => response.json())
+    .then(data => {
+      // Update with full data once loaded
+      window.playerProfiles = data;
+    })
+    .catch(error => console.error('Error fetching player profiles:', error));
+</script>
+{% endblock %}

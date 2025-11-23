@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Ninja Crash",
+    "isQualified": false,
+    "raw": -14.706295896506036,
+    "statsFGPI": null,
+    "fgpiNorm": 33.393625811913786
+  },
+  {
+    "name": "fhASSA",
+    "isQualified": false,
+    "raw": -14.521656593085169,
+    "statsFGPI": null,
+    "fgpiNorm": 33.50946650569383
+  },
+  {
+    "name": "Vatistah",
+    "isQualified": false,
+    "raw": -11.087098540910283,
+    "statsFGPI": null,
+    "fgpiNorm": 35.66427092826514
+  },
+  {
+    "name": "Ramposan",
+    "isQualified": false,
+    "raw": -7.117367946234522,
+    "statsFGPI": null,
+    "fgpiNorm": 38.1548367920179
+  },
+  {
+    "name": "Teal",
+    "isQualified": false,
+    "raw": -12.334509433111249,
+    "statsFGPI": null,
+    "fgpiNorm": 34.88165888140334
+  }
+]

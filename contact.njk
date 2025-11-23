@@ -1,0 +1,53 @@
+---
+title: Contact Us
+permalink: "/contact/"
+bodyClass: "contact-page static-page"
+eleventyNavigation:
+  key: Contact
+  parent: About & Support
+  order: 40
+  iconClass: "fas fa-envelope"
+---
+
+{% extends "layout.njk" %}
+
+{% block title %}Contact FGC Top Players | Get in Touch{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="Contact FGC Top Players with questions, missing results, player corrections, bug reports, ideas, or support inquiries." />
+{% endblock %}
+
+{% block head %}
+<link rel="canonical" href="{{ page.url | url | absoluteUrl(site.url) }}">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="FGC Top Players">
+<meta property="og:title" content="Contact FGC Top Players">
+<meta property="og:description" content="One inbox for results, corrections, bug reports, ideas, and support." />
+<meta property="og:url" content="{{ page.url | url | absoluteUrl(site.url) }}">
+<meta property="og:image" content="{{ '/images/og-default.png' | url | absoluteUrl(site.url) }}">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact FGC Top Players">
+<meta name="twitter:description" content="Email us with results, corrections, bug reports, ideas, or support questions.">
+<meta name="twitter:image" content="{{ '/images/og-default.png' | url | absoluteUrl(site.url) }}">
+{% endblock %}
+
+{% block content %}
+
+  {% include "banner.njk" %}
+
+  <h1>Contact FGC Top Players</h1>
+
+  <p class="intro-text intro-text--spacious">
+    One inbox for everything. Email us with results, corrections, bugs, ideas, or support questions.
+  </p>
+
+  <p class="btn-row" style="text-align:center;">
+    <a href="mailto:fgcpr@gmail.com?subject=FGCTP%20Contact" class="btn btn--primary">
+      <i class="fa-solid fa-envelope"></i>
+      Email FGC Top Players
+    </a>
+  </p>
+
+{% endblock %}

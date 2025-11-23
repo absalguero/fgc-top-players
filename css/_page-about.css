@@ -1,0 +1,12 @@
+/* ============================================= */
+/* ABOUT PAGE                                    */
+/* ============================================= */
+
+.about-page .home-card__content > .btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+  width: fit-content;
+  max-width: 100%;
+}

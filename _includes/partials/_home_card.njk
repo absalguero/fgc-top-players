@@ -1,0 +1,38 @@
+<article class="home-card">
+    <div class="home-card__content">
+        <a href="{{ article.url }}" class="home-card__link" aria-label="Read {{ article.data.title }}">
+            {# Date at top #}
+            <span class="home-card__date">
+                {{ article.date | readableDate }}
+            </span>
+             
+            {# Title #}
+            <h2 class="home-card__title">
+                {{ article.data.title }}
+            </h2>
+             
+            {# Excerpt #}
+            {% if article.data.excerpt %}
+                <div class="home-card__excerpt">
+                    <p>{{ article.data.excerpt }}</p>
+                </div>
+            {% endif %}
+        </a>
+         
+        {# Footer with tags on left and read more on right #}
+        <div class="home-card__footer">
+            <div class="home-card__tags">
+                {% for tag in article.data.tags %}
+                    {% if tag != "news" and tag != "all" %}
+                        {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+                        <a href="{{ tagUrl }}" class="home-card__tag">{{ tag }}</a>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            
+            <a href="{{ article.url }}" class="btn btn--primary btn--small home-card__read-more">
+                Read More
+            </a>
+        </div>
+    </div>
+</article>

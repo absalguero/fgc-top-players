@@ -1,0 +1,24 @@
+Eleventy should not process or copy the environment variables file
+.env
+
+Ignore the cache file for Eleventy Fetch
+.cache/
+
+Ignore the archive file for tournament results
+_data/tournaments_archive.json
+
+Ignore the cache file for player rankings
+_data/rankings_cache.json
+
+Ignore the Eleventy helper files directory
+_eleventy/
+
+Ignore the data directory from the template processing system
+_data/
+
+Ignore documentation files (contain code examples with template syntax)
+START_GG_IMAGES_SETUP.md
+START_GG_QUICK_START.md
+START_GG_SUMMARY.md
+terms-additions-for-attorney-review.md
+privacy-additions-for-attorney-review.md

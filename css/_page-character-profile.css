@@ -1,0 +1,476 @@
+/*
+ * ===============================================
+ * Page: Character Profile
+ * ===============================================
+ */
+
+/* --- Character Header Overrides --- */
+.page-character-profile .profile-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.page-character-profile .profile-header::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 0; /* top: 0; right: auto; bottom: 0; left: 0 */
+    width: 4px;
+    background: transparent;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.page-character-profile .profile-header__name {
+    font-size: 3.25rem;
+    line-height: 1;
+    margin: 0;
+    text-align: center;
+    transition: color 0.2s ease;
+    color: var(--color-text-primary);
+    transform: translateY(-2px);
+    text-transform: none;
+}
+
+.page-character-profile .profile-header__rank-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    height: 36px;
+    padding: 0 1rem;
+    border-radius: var(--border-radius);
+    flex-shrink: 0;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.2s ease;
+}
+
+.page-character-profile .profile-header__rank-badge .rank-badge__label {
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+.page-character-profile .profile-header__rank-badge .rank-badge__number {
+    font-size: 1.4rem;
+}
+
+/* Tier-specific colors */
+.profile-header.tier-s {
+    color: var(--color-rank-1-gold);
+    background: linear-gradient(90deg, rgba(255, 193, 7, 0.25) 0%, rgba(255, 193, 7, 0.08) 100%), var(--color-bg-light);
+}
+.profile-header.tier-s::before {
+    background: var(--color-rank-1-gold);
+}
+
+.profile-header.tier-a {
+    color: var(--color-rank-2-silver);
+    background: linear-gradient(90deg, rgba(188, 198, 204, 0.22) 0%, rgba(188, 198, 204, 0.08) 100%), var(--color-bg-light);
+}
+.profile-header.tier-a::before {
+    background: var(--color-rank-2-silver);
+}
+
+.profile-header.tier-b {
+    color: var(--color-rank-3-bronze);
+    background: linear-gradient(90deg, rgba(205, 127, 50, 0.22) 0%, rgba(205, 127, 50, 0.08) 100%), var(--color-bg-light);
+}
+.profile-header.tier-b::before {
+    background: var(--color-rank-3-bronze);
+}
+
+.profile-header.tier-c {
+    color: var(--color-rank-4-cobalt);
+    background: linear-gradient(90deg, rgba(58, 94, 141, 0.22) 0%, rgba(58, 94, 141, 0.08) 100%), var(--color-bg-light);
+}
+.profile-header.tier-c::before {
+    background: var(--color-rank-4-cobalt);
+}
+
+.profile-header.tier-d {
+    color: var(--color-rank-5-graphite);
+    background: linear-gradient(90deg, rgba(102, 114, 128, 0.18) 0%, rgba(102, 114, 128, 0.06) 100%), var(--color-bg-light);
+}
+.profile-header.tier-d::before {
+    background: var(--color-rank-5-graphite);
+}
+
+.page-character-profile .profile-header.tier-s .profile-header__name {
+    color: var(--color-rank-1-gold);
+    text-shadow: 0 0 18px rgba(255, 193, 7, 0.35);
+}
+.page-character-profile .profile-header.tier-a .profile-header__name {
+    color: var(--color-rank-2-silver);
+    text-shadow: 0 0 14px rgba(188, 198, 204, 0.35);
+}
+.page-character-profile .profile-header.tier-b .profile-header__name {
+    color: var(--color-rank-3-bronze);
+    text-shadow: 0 0 14px rgba(205, 127, 50, 0.35);
+}
+.page-character-profile .profile-header.tier-c .profile-header__name {
+    color: var(--color-rank-4-cobalt);
+    text-shadow: 0 0 12px rgba(58, 94, 141, 0.35);
+}
+.page-character-profile .profile-header.tier-d .profile-header__name {
+    color: var(--color-rank-5-graphite);
+    text-shadow: 0 0 12px rgba(102, 114, 128, 0.35);
+}
+.page-character-profile .profile-header.tier-unknown .profile-header__name {
+    color: var(--color-text-primary);
+    text-shadow: none;
+}
+
+.page-character-profile .profile-header.tier-s .character-icon { box-shadow: 0 0 15px 4px var(--color-rank-1-gold); }
+.page-character-profile .profile-header.tier-a .character-icon { box-shadow: 0 0 15px 4px var(--color-rank-2-silver); }
+.page-character-profile .profile-header.tier-b .character-icon { box-shadow: 0 0 15px 4px var(--color-rank-3-bronze); }
+.page-character-profile .profile-header.tier-c .character-icon { box-shadow: 0 0 15px 4px var(--color-rank-4-cobalt); }
+
+.page-character-profile .profile-header__rank-badge.tier-s {
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.18), rgba(181, 148, 80, 0.2));
+    border-color: var(--color-rank-1-gold);
+    color: var(--color-rank-1-gold);
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.25);
+}
+.page-character-profile .profile-header__rank-badge.tier-a {
+    background: linear-gradient(135deg, rgba(192, 192, 192, 0.18), rgba(188, 198, 204, 0.2));
+    border-color: var(--color-rank-2-silver);
+    color: var(--color-rank-2-silver);
+    box-shadow: 0 0 9px rgba(188, 198, 204, 0.25);
+}
+.page-character-profile .profile-header__rank-badge.tier-b {
+    background: linear-gradient(135deg, rgba(205, 127, 50, 0.18), rgba(184, 115, 51, 0.2));
+    border-color: var(--color-rank-3-bronze);
+    color: var(--color-rank-3-bronze);
+    box-shadow: 0 0 9px rgba(205, 127, 50, 0.25);
+}
+.page-character-profile .profile-header__rank-badge.tier-c {
+    background: linear-gradient(135deg, rgba(58, 94, 141, 0.18), rgba(70, 130, 180, 0.2));
+    border-color: var(--color-rank-4-cobalt);
+    color: var(--color-rank-4-cobalt);
+    box-shadow: 0 0 8px rgba(58, 94, 141, 0.25);
+}
+.page-character-profile .profile-header__rank-badge.tier-d {
+    background: linear-gradient(135deg, rgba(102, 114, 128, 0.18), rgba(119, 136, 153, 0.2));
+    border-color: var(--color-rank-5-graphite);
+    color: var(--color-rank-5-graphite);
+    box-shadow: 0 0 8px rgba(102, 114, 128, 0.25);
+}
+.page-character-profile .profile-header__rank-badge.tier-unknown {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(200, 200, 200, 0.12));
+    border-color: var(--color-border);
+    color: var(--color-text-primary);
+    box-shadow: none;
+}
+
+
+/* --- Character-Specific Snapshot Grid --- */
+.page-character-profile .stats-grid--snapshot {
+    grid-template-columns: repeat(4, 1fr) !important;
+    overflow: visible;
+}
+
+.page-character-profile .profile-card.profile-snapshot-row {
+    overflow: visible;
+}
+
+
+/* --- Character Overview & Traits (UPDATED FOR META ROW) --- */
+.character-overview__intro,
+.character-overview__summary {
+    padding: 0 var(--spacing-md);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+.character-overview__intro {
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-md);
+}
+
+/* Flex container for Playstyle & Execution */
+.character-meta-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: var(--spacing-xl);
+    row-gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    margin: var(--spacing-md) 0;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    background-color: rgba(255, 255, 255, 0.03); /* Subtle background fill */
+}
+
+/* Individual items (Playstyle / Execution) */
+.character-archetype,
+.character-execution {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    /* Reset legacy block margins/padding if previously set globally */
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+}
+
+.archetype-label {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.archetype-value {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    text-transform: uppercase;
+}
+
+.character-traits {
+    padding: 0 var(--spacing-md) var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.trait-section h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.trait-section ul {
+    list-style-type: none;
+    padding-left: 1.25rem;
+    margin: 0;
+}
+
+.trait-section li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+    color: var(--color-text-secondary);
+}
+.trait-section li strong {
+    color: var(--color-text-primary);
+}
+
+.trait-section--strengths h3,
+.trait-section--strengths i { color: var(--color-success); }
+
+.trait-section--weaknesses h3,
+.trait-section--weaknesses i { color: var(--color-danger); }
+
+.trait-section--counter h3,
+.trait-section--counter i { color: var(--color-accent-blue); }
+
+
+/* --- Combat Profile Chart & Matchups --- */
+.page-character-profile h2.profile-card__header--chart {
+    /* Force mobile-sized padding on top/bottom for all screens */
+    padding-top: var(--spacing-sm) !important;
+    padding-bottom: var(--spacing-sm) !important;
+    /* Keep horizontal padding standard */
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
+    
+    /* Optional: Prevent the font from getting too huge on desktop if you want it compact */
+    max-height: 3rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-character-profile .chart-container {
+    /* Mobile Default: 300px height works well for square aspect ratios */
+    height: 300px;
+    width: 100%;
+    
+    /* Remove padding so the chart touches the edges */
+    padding: 0 !important;
+    
+    /* Ensure canvas centers perfectly */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.matchup-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: var(--spacing-md);
+}
+
+.matchup-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+}
+
+.matchup-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    padding: 0.35rem 0.75rem;
+    background: rgba(0, 150, 255, 0.08);
+    border: 1px solid rgba(0, 150, 255, 0.2);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.matchup-item__name {
+    font-size: 0.85rem;
+    font-family: var(--font-heading);
+    color: var(--color-accent-blue);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.matchup-item:hover {
+    transform: translateY(-2px);
+    background: rgba(0, 150, 255, 0.18);
+    border-color: var(--color-accent-blue);
+    box-shadow: 0 4px 12px rgba(0, 150, 255, 0.25);
+}
+
+.matchup-item:hover .matchup-item__name {
+    color: var(--color-accent-blue-dark);
+}
+
+/* --- Responsive Overrides --- */
+@media (max-width: 1439px) {
+    .page-character-profile .profile-header {
+        text-align: center;
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+
+    /* Tablet: 4-column snapshot grid (8 stats = 2 perfect rows) */
+    .page-character-profile .stats-grid--snapshot {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .page-character-profile .profile-header__name {
+        font-size: 2.5rem;
+    }
+    .page-character-profile .profile-header__rank-badge {
+        height: 34px;
+        padding: 0 0.85rem;
+    }
+
+    /* Mobile: 2-column snapshot grid */
+    .page-character-profile .stats-grid--snapshot {
+        grid-template-columns: repeat(2, 1fr) !important;
+        padding: var(--spacing-sm);
+        margin: 0;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    /* Snapshot stats mobile improvements */
+    .page-character-profile .stats-grid--snapshot .stat-item {
+        padding: var(--spacing-sm);
+        border-bottom: 1px solid var(--color-border);
+        box-sizing: border-box;
+    }
+
+    /* Left column items get right border for visual separation */
+    .page-character-profile .stats-grid--snapshot .stat-item:nth-child(odd) {
+        border-right: 1px solid var(--color-border);
+    }
+
+    .page-character-profile .stats-grid--snapshot .stat-item__title-text {
+        font-size: 0.8rem;
+    }
+
+    .page-character-profile .stats-grid--snapshot .stat-item__value {
+        font-size: 1.4rem;
+    }
+
+    /* Mobile pagination - buttons side by side */
+    .page-character-profile .profile-pagination {
+        flex-direction: row !important;
+        gap: var(--spacing-sm);
+    }
+
+    .page-character-profile .profile-pagination .btn {
+        flex: 1 !important;
+        min-width: 0 !important;
+        max-width: 50% !important;
+        font-size: 0.875rem !important;
+        padding: var(--spacing-sm) var(--spacing-xs) !important;
+        justify-content: center !important;
+    }
+
+    .page-character-profile .profile-pagination .btn[style*="margin-left"] {
+        margin-left: auto !important;
+    }
+
+    /* Stack meta row items vertically on mobile */
+    .character-meta-row {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+}
+
+/* Pagination */
+.page-character-profile .profile-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: var(--spacing-lg);
+    gap: var(--spacing-md);
+}
+
+.page-character-profile .profile-pagination .btn {
+    flex: 0 0 auto;
+    min-width: 200px;
+    text-align: center;
+}
+
+/* Character Profile — ensure stat headers are NOT forced uppercase */
+.page-character-profile .stat-item__title-text,
+.page-character-profile .stat-item__label .stat-item__title-text {
+    text-transform: none !important;
+    font-variant-caps: normal;
+}
+
+/* Top Players List - Rectangular Flag Icons */
+.spotlight-flag-icon {
+    width: 20px;
+    height: 15px;
+    border-radius: 2px;
+    object-fit: cover;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); /* Subtle depth */
+}
+
+@media (min-width: 768px) {
+    .page-character-profile .chart-container {
+        /* Reduce height on wide screens to tighten the layout */
+        /* This removes the "visual padding" you see top/bottom */
+        height: 250px !important; 
+        max-height: 250px !important;
+    }
+}

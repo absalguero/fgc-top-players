@@ -1,0 +1,37 @@
+<div class="content-container page-tags">
+  {% include "banner.njk" %}
+  
+  <h1 class="home-title">Articles tagged "{{ tagPage.label }}"{% if tagPage.pageNumber > 0 %} (Page {{ tagPage.pageNumber + 1 }}){% endif %}</h1>
+
+  {% if tagPage.items and tagPage.items.length %}
+    <div class="home-news-list">
+      {% for article in tagPage.items %}
+        {% include "partials/_home_card.njk" %}
+      {% endfor %}
+    </div>
+
+    {% if tagPage.totalPages > 1 %}
+      <nav class="pagination-nav" aria-label="Pagination">
+        {% if tagPage.hrefPrevious %}
+          <a href="{{ tagPage.hrefPrevious }}" class="pagination-nav__link" rel="prev">&larr; Previous Page</a>
+        {% else %}
+          <span class="pagination-nav__link--disabled">&larr; Previous Page</span>
+        {% endif %}
+
+        {% for href in tagPage.hrefs %}
+          <a href="{{ href }}" class="pagination-nav__link {% if href == page.url %}pagination-nav__link--active{% endif %}" aria-label="Go to page {{ loop.index }}">
+            {{ loop.index }}
+          </a>
+        {% endfor %}
+
+        {% if tagPage.hrefNext %}
+          <a href="{{ tagPage.hrefNext }}" class="pagination-nav__link" rel="next">Next Page &rarr;</a>
+        {% else %}
+          <span class="pagination-nav__link--disabled">Next Page &rarr;</span>
+        {% endif %}
+      </nav>
+    {% endif %}
+  {% else %}
+    <p class="no-results">No articles found for this tag yet.</p>
+  {% endif %}
+</div>

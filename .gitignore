@@ -1,0 +1,14 @@
+# Eleventy/Netlify build output
+_site/
+
+# Node.js dependencies
+node_modules/
+
+# Eleventy cache folder
+.cache/
+
+# Environment variables - never commit these!
+.env
+
+# start.gg social links cache
+_data/startgg_socials_cache.json

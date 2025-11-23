@@ -1,0 +1,26 @@
+{
+  "mindset-2025": {
+    "name": "MINDSET 2025",
+    "slug": "mindset-2025",
+    "startAt": 1764405000,
+    "endAt": 1764522000,
+    "startDate": "2025-11-29",
+    "endDate": "2025-11-30",
+    "dates": "Nov 29-30, 2025",
+    "location": "65 Rue Germaine Tillion, 92700 Colombes, France",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/mindset-2025",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "MINDSET 2025 is scheduled for Nov 29-30, 2025 in 65 Rue Germaine Tillion, 92700 Colombes, France. Featuring Street Fighter 6. Registered top players include Mister Crimson, Kilzyou, Akainu.",
+    "notablePlayers": [
+      "Mister Crimson",
+      "Kilzyou",
+      "Akainu"
+    ],
+    "isArchived": false
+  }
+}

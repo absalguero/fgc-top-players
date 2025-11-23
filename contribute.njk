@@ -1,0 +1,156 @@
+---
+title: Become a Contributor
+permalink: "/contribute/"
+bodyClass: "contributor-page static-page"
+eleventyNavigation:
+  key: Contribute
+  parent: About & Support
+  order: 20
+  iconClass: "fas fa-hands-helping"
+---
+
+{% extends "layout.njk" %}
+
+{% block title %}Contribute to FGC Top Players | Submit Results, Corrections & Feedback{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="Contribute to FGC Top Players. Send missing tournament results, player data corrections, bug reports, and ideas through our contact page for fast review." />
+{% endblock %}
+
+{% block head %}
+<link rel="canonical" href="{{ page.url | url | absoluteUrl(site.url) }}">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="FGC Top Players">
+<meta property="og:title" content="Contribute to FGC Top Players">
+<meta property="og:description" content="Submit missing results, player corrections, bug reports, and ideas. All contributions route through the contact page for a quick response.">
+<meta property="og:url" content="{{ page.url | url | absoluteUrl(site.url) }}">
+<meta property="og:image" content="{{ '/images/og-default.png' | url | absoluteUrl(site.url) }}">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contribute to FGC Top Players">
+<meta name="twitter:description" content="Help improve rankings and data: send results, corrections, bug reports, and ideas via the contact page.">
+<meta name="twitter:image" content="{{ '/images/og-default.png' | url | absoluteUrl(site.url) }}">
+
+<!-- JSON-LD: WebPage + Breadcrumbs + FAQ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "name": "Contribute to FGC Top Players",
+      "url": "{{ page.url | url | absoluteUrl(site.url) }}",
+      "description": "Community contributions for FGC Top Players including missing tournament results, player corrections, bug reports, and feature ideas."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "About & Support", "item": "{{ '/about-and-support/' | url | absoluteUrl(site.url) }}" },
+        { "@type": "ListItem", "position": 2, "name": "Contribute", "item": "{{ page.url | url | absoluteUrl(site.url) }}" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I submit missing tournament results?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Send the Start gg or Challonge link, date, location, and top 8 to our contact page and select Missing Results." }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I correct a player page?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Provide the player name, a link to their page, and the change needed such as social links, main character, team, or country along with a source if possible." }
+        },
+        {
+          "@type": "Question",
+          "name": "Where do I report a website bug?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Report bugs via the contact page with the page URL, what happened, steps to reproduce, device, and browser. Screenshots help." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+{% block content %}
+
+  {% include "banner.njk" %}
+
+  <h1>Become a Contributor</h1>
+
+  <p class="intro-text intro-text--spacious">
+    FGC Top Players is community powered. If you can help with results, corrections, bug reports, or ideas, use the options below and we will route it to the right place.
+  </p>
+
+  <p class="btn-row">
+    <a href="/contact/" class="btn btn--primary">
+      <i class="fa-solid fa-envelope"></i>
+      Contact FGC Top Players
+    </a>
+  </p>
+
+  <div class="grid-gap-md" style="grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));">
+
+    <!-- Missing Results -->
+    <div class="profile-card">
+      <div class="profile-card__header">
+        <h2><i class="fa-solid fa-trophy"></i> Report Missing Results</h2>
+      </div>
+      <div class="home-card__content">
+        <p>
+          If we missed a tournament, send the event link. Start.gg or Challonge links make verification faster.
+        </p>
+      </div>
+    </div>
+
+    <!-- Player Corrections -->
+    <div class="profile-card">
+      <div class="profile-card__header">
+        <h2><i class="fa-solid fa-user-pen"></i> Correct Player Info</h2>
+      </div>
+      <div class="home-card__content">
+        <p>
+          Share updates to a player page such as socials, main character, team, or country. Include the player name and the correct info.
+        </p>
+      </div>
+    </div>
+
+    <!-- Website Bugs -->
+    <div class="profile-card">
+      <div class="profile-card__header">
+        <h2><i class="fa-solid fa-bug"></i> Report a Website Bug</h2>
+      </div>
+      <div class="home-card__content">
+        <p>
+          If search is not working or a page looks off, tell us what happened and where. Screenshots help us fix issues faster.
+        </p>
+      </div>
+    </div>
+
+    <!-- Ideas and Feedback -->
+    <div class="profile-card">
+      <div class="profile-card__header">
+        <h2><i class="fa-solid fa-lightbulb"></i> Share Ideas and Feedback</h2>
+      </div>
+      <div class="home-card__content">
+        <p>
+          Have a feature request or thoughts on rankings and metrics. We read every message and iterate often.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="btn-row">
+    <a href="/contact/" class="btn btn--primary">
+      <i class="fa-solid fa-envelope"></i>
+      Contact FGC Top Players
+    </a>
+  </p>
+
+{% endblock %}

@@ -1,0 +1,214 @@
+---
+title: "Street Fighter 6 Character Comparison"
+permalink: "/character-comparison/"
+bodyClass: "page-character-comparison"
+eleventyNavigation:
+  key: Character Comparison
+  parent: Analysis
+  order: 24
+  iconClass: "fas fa-not-equal"
+---
+
+{% extends "layout.njk" %}
+
+{% block title %}SF6 Character Comparison: Tier & CPV | FGC Top Players{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="Compare up to 5 Street Fighter 6 characters side-by-side. See tier placement, CPV (Competitive Performance Viability), T3R Momentum, matchup context, and competitive viability—then save or share your comparison.">
+
+{# Absolute canonical; requires site.url set in _data/site.json #}
+<link id="canonical-url" rel="canonical" href="{{ page.url | url | absoluteUrl(site.url) }}">
+
+{# Open Graph #}
+<meta property="og:type" content="website">
+<meta property="og:title" content="Street Fighter 6 Character Comparison (Tier, CPV, T3R) | FGC Top Players">
+<meta property="og:description" content="Compare up to 5 SF6 characters side-by-side with CPV (Competitive Performance Viability) and T3R Momentum. Save and share your presets.">
+<meta property="og:url" content="{{ page.url | url | absoluteUrl(site.url) }}">
+<meta property="og:image" content="{{ '/images/social/sf6-character-comparison-card.png' | url | absoluteUrl(site.url) }}">
+<meta property="og:site_name" content="FGC Top Players">
+
+{# Twitter #}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Street Fighter 6 Character Comparison (Tier, CPV, T3R)">
+<meta name="twitter:description" content="Side-by-side SF6 tiers, CPV (Competitive Performance Viability), and T3R Momentum for up to 5 characters.">
+<meta name="twitter:image" content="{{ '/images/social/sf6-character-comparison-card.png' | url | absoluteUrl(site.url) }}">
+
+{# JSON-LD: WebApplication + BreadcrumbList + FAQ #}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Street Fighter 6 Character Comparison",
+      "url": "{{ page.url | url | absoluteUrl(site.url) }}",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Web",
+      "description": "Compare up to 5 SF6 characters with tier placement, CPV (Competitive Performance Viability), and T3R Momentum. Save and share comparisons.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "FGC Top Players",
+        "url": "{{ site.url }}"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Analysis",
+          "item": "{{ '/analysis/' | url | absoluteUrl(site.url) }}"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Character Comparison",
+          "item": "{{ page.url | url | absoluteUrl(site.url) }}"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How many characters can I compare?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can compare up to 5 Street Fighter 6 characters side-by-side."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are CPV and T3R Momentum?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CPV stands for Competitive Performance Viability, our metric for summarizing a character’s competitive strength across events. T3R Momentum tracks short-term performance trends. See the Analytics Glossary for details."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I save or share a comparison?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Use the Save and Share buttons to store your presets and copy a shareable link for social platforms."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+{% block content %}
+
+<div class="content-container content-container--wide">
+  {% include "banner.njk" %}
+
+  <h1 class="page-title">Street Fighter 6 Character Comparison</h1>
+
+  <p class="intro-text">
+    Compare up to 5 Street Fighter 6 characters side-by-side to evaluate tier placement,
+    <a href="/analytics-glossary/#t3r-momentum">T3R</a> Momentum, and
+    <a href="/analytics-glossary/#cpv">CPV</a> (Competitive Performance Viability).
+    Looking for broader leaderboards? Visit the <a href="/character-stats/">Character Stats</a> page, or learn how our metrics work in the <a href="/analytics-glossary/">Analytics Glossary</a>.
+  </p>
+
+  <div class="comparison-sticky-wrapper" data-component="comparison-bar">
+    <div id="persistent-comparison-bar">
+      <div class="persistent-bar__players" id="persistent-bar-characters"></div>
+
+      <div class="persistent-bar__controls">
+        <div class="add-player-wrapper search-wrapper">
+  <input
+    type="text"
+    id="add-character-search"
+    class="search-form__input"
+    placeholder="Add a Character..."
+    autocomplete="off"
+    inputmode="search"
+    aria-label="Add a character to compare"
+  >
+  <button type="button" class="search-clear-btn" id="add-character-search-clear-btn" aria-label="Clear search">
+    <i class="fas fa-times" aria-hidden="true"></i>
+  </button>
+  
+  <div id="autocomplete-results" class="autocomplete-results" role="listbox" aria-label="Character suggestions"></div>
+</div>
+
+<button id="reset-comparison-btn" class="btn btn--primary" style="display: none;" aria-live="polite">
+  <i class="fas fa-sync-alt" aria-hidden="true"></i> Reset Comparison
+</button>
+<div id="character-limit-message" class="player-limit-message" style="display: none;">
+  Maximum of 5 characters reached.
+</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="comparison-actions">
+    <button id="save-comparison-btn" class="btn btn--primary"><i class="fas fa-save" aria-hidden="true"></i> Save Comparison</button>
+    <button id="share-comparison-btn" class="btn btn--primary"><i class="fas fa-share-alt" aria-hidden="true"></i> Share Comparison</button>
+  </div>
+
+  <div id="comparison-container">
+    <div id="comparison-placeholder">
+      <div id="comparison-presets">
+        <h2 class="presets-title">Start a New Comparison</h2>
+        <p>Select a preset or use the search bar above to add characters manually.</p>
+        <div class="preset-buttons">
+          <button id="preset-top-5-cpv" class="btn btn--primary"><i class="fas fa-trophy" aria-hidden="true"></i> Load Top 5 by CPV</button>
+          <button id="preset-top-5-cms" class="btn btn--primary"><i class="fas fa-chart-line" aria-hidden="true"></i> Load Top 5 by Momentum</button>
+          <button id="preset-random-5" class="btn btn--primary"><i class="fas fa-random" aria-hidden="true"></i> Load 5 Random Characters</button>
+        </div>
+
+        {# Dynamic popular comparisons (filled by JS) #}
+        <div class="popular-comparisons" aria-labelledby="popular-comparisons-heading">
+          <h2 id="popular-comparisons-heading" class="h4">Popular comparisons</h2>
+          <ul id="popular-comparisons-list" class="link-list"></ul>
+          <p id="popular-comparisons-empty" class="muted" style="display:none;">No suggestions available yet.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="saved-comparisons-container">
+    <h3>Saved Comparisons</h3>
+    <ul id="saved-comparisons-list"></ul>
+  </div>
+</div>
+
+{# --- Modals --- #}
+<div id="modal-overlay" class="modal-overlay" style="display: none;"></div>
+
+<div id="save-modal" class="modal" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="save-modal-title">
+  <div class="modal-content">
+    <button class="close-btn" id="close-save-modal" aria-label="Close save modal">&times;</button>
+    <h3 id="save-modal-title">Save Comparison</h3>
+    <p>Give your comparison a name to easily find it later.</p>
+    <input type="text" id="save-comparison-name-input" placeholder="e.g., Top Tiers" aria-label="Comparison name">
+    <button id="confirm-save-btn" class="btn btn--primary">Save</button>
+  </div>
+</div>
+
+<div id="share-modal" class="modal" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="share-modal-title">
+  <div class="modal-content">
+    <button class="close-btn" id="close-share-modal" aria-label="Close share modal">&times;</button>
+    <h3 id="share-modal-title">Share Comparison</h3>
+    <p>Copy the link or pre-formatted text for social media.</p>
+    <div class="share-options">
+      <textarea id="social-media-text" readonly rows="4" aria-label="Pre-formatted social text"></textarea>
+      <button id="copy-social-text-btn" class="btn btn--primary"><i class="fas fa-copy" aria-hidden="true"></i> Copy Text for Social Media</button>
+      <button id="copy-link-btn" class="btn btn--primary"><i class="fas fa-link" aria-hidden="true"></i> Copy Link Only</button>
+    </div>
+  </div>
+</div>
+
+<div id="tooltip" class="tooltip" role="tooltip"></div>
+
+<script src="/js/popularityTracker.js" defer></script>
+<script src="/js/characterComparison.js" defer></script>
+
+{% endblock %}

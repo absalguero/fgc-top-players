@@ -1,0 +1,262 @@
+---
+permalink: /character-stats/index.html
+title: "SF6 Character Stats & CPV Tier Rankings"
+bodyClass: "page-character-stats"
+eleventyNavigation:
+  key: Character Stats
+  parent: Analysis
+  order: 22
+  iconClass: "fas fa-ghost"
+---
+
+{% extends "layout.njk" %}
+
+{% block title %}{{ title }} | FGC Top Players{% endblock %}
+
+{% block head %}
+<meta name="description" content="Street Fighter 6 character stats leaderboard and CPV tier rankings. Compare characters by competitive performance, momentum, consistency, and regional dominance over the last 12 months.">
+
+{# Canonical (self-referential) #}
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+{# Faceted/param hygiene: set noindex when query/filter params are present #}
+{% set faceted = query or filters or false %}
+{% if faceted %}
+<meta name="robots" content="noindex,follow">
+{% else %}
+<meta name="robots" content="index,follow">
+{% endif %}
+
+{# Social cards #}
+<meta property="og:type" content="website">
+<meta property="og:title" content="Street Fighter 6 Character Stats Leaderboard | CPV Tier Rankings">
+<meta property="og:description" content="Data-driven SF6 character rankings by CPV, momentum, consistency, and regional dominance.">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:image" content="{{ site.url }}/images/og/sf6-character-stats.png">
+<meta name="twitter:card" content="summary_large_image">
+
+{# Dataset JSON-LD (enhanced) #}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Street Fighter 6 Character Statistics Leaderboard",
+  "description": "Data-driven SF6 tier rankings by Competitive Performance Viability (CPV) with momentum, consistency, and regional indices. Updated from rated, verified tournaments.",
+  "url": "{{ site.url }}{{ page.url }}",
+  "inLanguage": "en",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "isAccessibleForFree": true,
+  "creator": { "@type": "Organization", "name": "FGC Top Players", "url": "{{ site.url }}" },
+  "temporalCoverage": "P12M",
+  "measurementTechnique": [
+    "CPV (competitive viability composite)",
+    "CMS (character momentum score)",
+    "CPF (consistency / performance floor)",
+    "T3R (top-3 rate)",
+    "RDI (regional dominance index)",
+    "Tournament strength / majors splits"
+  ],
+  "variableMeasured": [
+    { "@type": "PropertyValue", "name": "Tier", "description": "Overall character tier derived from CPV" },
+    { "@type": "PropertyValue", "name": "Character", "description": "Character name" },
+    { "@type": "PropertyValue", "name": "CPV", "description": "Competitive Performance Viability score" },
+    { "@type": "PropertyValue", "name": "CMS", "description": "Momentum trend of recent results" },
+    { "@type": "PropertyValue", "name": "CPF", "description": "Consistency / performance floor" },
+    { "@type": "PropertyValue", "name": "T3R", "description": "Top-3 finish rate" },
+    { "@type": "PropertyValue", "name": "RDI", "description": "Regional dominance peak score" },
+    { "@type": "PropertyValue", "name": "TP", "description": "Tournament popularity / distribution" }
+  ],
+  "distribution": [{
+    "@type": "DataDownload",
+    "encodingFormat": "application/json",
+    "contentUrl": "{{ site.url }}/data/sf6-character-stats.json"
+  }]
+}
+</script>
+
+{# Breadcrumbs JSON-LD #}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Analysis", "item": "{{ site.url }}/analysis/" },
+    { "@type": "ListItem", "position": 2, "name": "Character Stats", "item": "{{ site.url }}{{ page.url }}" }
+  ]
+}
+</script>
+{% endblock %}
+
+{% block content %}
+
+<div class="profile-container">
+  {% include "banner.njk" %}
+  <h1>Street Fighter 6 Character Stats</h1>
+
+  <div class="intro-text-container">
+    <p class="intro-text">
+  Street Fighter 6 character stats and <a href="/analytics-glossary/#cpv">CPV</a> tier rankings derived from rated tournament results over the last 12 months. We measure character strength using momentum<a href="/analytics-glossary/#cms">(CMS)</a>, consistency <a href="/analytics-glossary/#cpf">(CPF)</a>, top-3 rate <a href="/analytics-glossary/#t3r">(T3R)</a>, and regional dominance <a href="/analytics-glossary/#rdi">(RDI)</a> to assign data-driven tiers.
+</p>
+  </div>
+
+  <div class="mobile-sort-controls">
+    <div class="mobile-controls-row">
+      <div class="how-to-use-container">
+        <button id="mobile-how-to-use-btn" class="btn btn--icon" aria-label="How to Use">
+          <i class="fas fa-question-circle"></i>
+        </button>
+        <div id="how-to-use-panel" class="popover-panel" role="dialog" aria-modal="false">
+          <button class="popover-close-btn" id="how-to-use-close-btn" aria-label="Close">
+            <i class="fas fa-times"></i>
+          </button>
+          <h2>How to Use These Statistics</h2>
+          <p>Get the most out of our stats table with these features:</p>
+          <ul>
+            <li><strong>Sort Columns:</strong> Click any header (e.g., <strong>CPV</strong> or <strong>TP</strong>) to sort. Click again to reverse.</li>
+            <li><strong>Search Character:</strong> Use the search to quickly find a character by name.</li>
+            <li><strong>Customize Columns:</strong> Open the columns button and toggle which stats you want to see. Your choices are saved.</li>
+            <li><strong>Understand the Metrics:</strong> Hover a header for a tooltip explaining each stat.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mobile-search-wrapper">
+        <input type="text" id="character-search-input" class="search-form__input" placeholder="Search by Character..." autocomplete="off">
+        <button id="character-search-clear-btn" class="search-clear-btn" aria-label="Clear search input">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="column-options-container">
+        <button id="mobile-toggle-columns-btn" class="btn btn--icon" aria-label="Show or Hide Columns">
+          <i class="fas fa-sliders-h"></i>
+        </button>
+        <div id="column-controls-wrapper" class="popover-panel" role="dialog" aria-modal="false">
+          <button class="popover-close-btn" id="column-controls-close-btn" aria-label="Close">
+            <i class="fas fa-times"></i>
+          </button>
+          <h2>Show/Hide Columns</h2>
+          <div id="column-checkboxes-primary" class="column-controls-row"></div>
+          <div id="column-checkboxes-secondary" class="column-controls-row"></div>
+          <div class="column-actions">
+            <button id="select-all-cols" class="btn btn--secondary">Select All</button>
+            <button id="deselect-all-cols" class="btn btn--secondary">Deselect All</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="results-count" class="results-count"></div>
+</div>
+
+  <div class="table-wrapper">
+    <table class="stats-table" id="character-stats-table">
+      <thead>
+        <tr>
+          <th scope="col" data-key="Tier" data-sort="Tier" data-sort-type="string" data-sort-default="asc" class="sortable" data-tooltip="Character Tier based on overall performance.">
+            <div class="header-content">
+              <span>Tier</span>
+              <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg>
+            </div>
+          </th>
+          <th scope="col" data-key="name" data-sort="name" data-sort-type="string" data-sort-default="asc" class="sortable col-character" data-tooltip="Character name. Click each name to open their full SF6 profile with stats, notable players, and key matchups.">
+            <div class="header-content">
+              <span>Character</span>
+              <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg>
+            </div>
+          </th>
+          <th scope="col" data-key="CPV" data-sort="CPV" data-sort-type="number" data-sort-default="desc" class="sortable" data-tooltip="Competitive Performance Viability: The character's overall competitive strength.">
+            <div class="header-content">
+              <span>CPV</span>
+              <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg>
+            </div>
+          </th>
+          <th scope="col" data-key="TWE" data-sort="TWE" data-sort-type="number" data-sort-default="desc" class="sortable" data-tooltip="Top-3 Rate (T3R): Rate of Top-3 finishes.">
+            <div class="header-content">
+              <span>T3R</span>
+              <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg>
+            </div>
+          </th>
+          <th scope="col" data-key="FGPI" data-sort="FGPI" data-sort-type="number" data-sort-default="desc" class="sortable" data-tooltip="Average Player FGPI: The average skill rating of players who use this character.">
+            <div class="header-content">
+              <span>FGPI</span>
+              <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg>
+            </div>
+          </th>
+          <th scope="col" data-key="CPF" data-sort="CPF" data-sort-type="number" data-sort-default="desc" class="sortable" data-tooltip="Character Performance Floor (CPF): Measures how well a character performs on its worst days. A high CPF indicates a stable pick whose players rarely bomb out of tournaments.">
+            <div class="header-content">
+              <span>CPF</span>
+              <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg>
+            </div>
+          </th>
+          <th scope="col" data-key="CMS" data-sort="CMS" data-sort-type="number" data-sort-default="desc" class="sortable" data-tooltip="Character Momentum Score: Measures recent performance trend. Positive means improving.">
+            <div class="header-content">
+              <span>CMS</span>
+              <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg>
+            </div>
+          </th>
+          <th scope="col" data-key="TS" data-sort="TS" data-sort-type="number" data-sort-default="desc" class="sortable" data-tooltip="Tournament Specialization (TS): Shows whether this character tends to overperform at majors compared to smaller events. Higher TS means they perform better at majors.">
+            <div class="header-content">
+              <span>TS</span>
+              <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg>
+            </div>
+          </th>
+          <th scope="col" data-key="primaryRDI.region" data-sort="primaryRDI_count" data-sort-type="number" data-sort-default="desc" class="sortable" data-tooltip="The character's strongest performing region.">
+            <div class="header-content">
+              <span>Top Region</span>
+              <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg>
+            </div>
+          </th>
+          <th scope="col" data-key="primaryRDI.score" data-sort="primaryRDI.score" data-sort-type="number" data-sort-default="desc" class="sortable" data-tooltip="Regional Dominance Index: Score for the region where this character performs best. Higher RDI means stronger results and more players maining the character in that region.">
+            <div class="header-content">
+              <span>RDI</span>
+              <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg>
+            </div>
+          </th>
+          <th scope="col" data-key="TP" data-sort="TP" data-sort-type="number" data-sort-default="desc" class="sortable" data-tooltip="Tournament Popularity: How often this character shows up in rated tournaments. Higher TP means more players are using them.">
+            <div class="header-content">
+              <span>TP</span>
+              <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg>
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for i in range(0, 10) %}
+        <tr class="skeleton-row">
+          <td><div class="skeleton skeleton-text" style="width: 20px; margin: auto;"></div></td>
+          <td>
+            <div class="player-cell-content">
+              <div class="skeleton skeleton-avatar"></div>
+              <div class="skeleton skeleton-text" style="width: 80px;"></div>
+            </div>
+          </td>
+          <td><div class="skeleton skeleton-text" style="width: 50px; margin: auto;"></div></td>
+          <td><div class="skeleton skeleton-text" style="width: 50px; margin: auto;"></div></td>
+          <td><div class="skeleton skeleton-text" style="width: 50px; margin: auto;"></div></td>
+          <td><div class="skeleton skeleton-text" style="width: 50px; margin: auto;"></div></td>
+          <td><div class="skeleton skeleton-text" style="width: 50px; margin: auto;"></div></td>
+          <td><div class="skeleton skeleton-text" style="width: 50px; margin: auto;"></div></td>
+          <td><div class="skeleton skeleton-text" style="width: 40px; margin: auto;"></div></td>
+          <td><div class="skeleton skeleton-text" style="width: 50px; margin: auto;"></div></td>
+          <td><div class="skeleton skeleton-text" style="width: 50px; margin: auto;"></div></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <div id="sentinel" class="sentinel"></div>
+  <div id="stats-card-container" class="is-hidden-desktop"></div>
+
+<div id="tooltip" class="tooltip" role="tooltip"></div>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+  const characterStats = {{ characterAnalytics | dump | safe }};
+</script>
+<script src="/js/characterStats.js"></script>
+{% endblock %}

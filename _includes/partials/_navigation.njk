@@ -1,0 +1,123 @@
+{% set tree = collections.all | eleventyNavigation %}
+{% set activeEntries = activeTrail or [] %}
+{% set activeLeaf = null %}
+{% if activeEntries and activeEntries.length %}
+  {% set activeLeaf = activeEntries[activeEntries.length - 1] %}
+{% endif %}
+{% set highlightKey = navHighlightKey or (activeLeaf and activeLeaf.key) %}
+
+{% macro renderList(entries, level, parent) %}
+  {# Ensure consistent order at this depth #}
+  {% set entries = entries | sortByOrder %}
+
+  {% set ulClass %}
+    {% if level == 0 %}
+      {{ listClass or 'nav-menu' }}
+    {% else %}
+      {% set isOpen = false %}
+      {% if parent %}
+        {% if parent.key %}
+          {% for active in activeEntries %}
+            {% if active.key and active.key == parent.key %}
+              {% set isOpen = true %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+        {% if not isOpen and parent.url %}
+          {% for active in activeEntries %}
+            {% if active.url and active.url == parent.url %}
+              {% set isOpen = true %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      {% endif %}
+      {% if not isOpen and highlightKey and parent and parent.key and parent.key == highlightKey %}
+        {% set isOpen = true %}
+      {% endif %}
+      nav-submenu{% if isOpen %} nav-submenu--open{% endif %}
+    {% endif %}
+  {% endset %}
+  <ul class="{{ ulClass | trim }}">
+    {%- for entry in entries %}
+      {% set hasPagination = entry.data and entry.data.pagination %}
+      {% set isExtraPaginatedPage = hasPagination and entry.data.pagination.pageNumber and entry.data.pagination.pageNumber > 0 %}
+      {% if not isExtraPaginatedPage %}
+        <li class="nav-item-wrapper level-{{ level }}">
+
+          {% if entry.url %}
+            {% set isActive = (entry.url == page.url) or (entry.url == '/' and tags and 'news' in tags) %}
+            {% if not isActive %}
+              {% for active in activeEntries %}
+                {% if active.url and active.url == entry.url %}
+                  {% set isActive = true %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+            {% if not isActive and entry.url == "/tournament-results/" %}
+              {% if "/tournament-results" in page.url or "/tournaments/" in page.url %}
+                {% set isActive = true %}
+              {% endif %}
+            {% endif %}
+            {% if not isActive and highlightKey and entry.key and entry.key == highlightKey %}
+              {% set isActive = true %}
+            {% endif %}
+            {% if not isActive and activeLeaf %}
+              {% if activeLeaf.url and entry.url and entry.url == activeLeaf.url %}
+                {% set isActive = true %}
+              {% endif %}
+            {% endif %}
+            {% set isInTrail = isActive %}
+            {% if not isInTrail and entry.key %}
+              {% for active in activeEntries %}
+                {% if active.key and active.key == entry.key %}
+                  {% set isInTrail = true %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+            {% if not isInTrail and entry.key and highlightKey and entry.key == highlightKey %}
+              {% set isInTrail = true %}
+            {% endif %}
+            {% if not isInTrail and entry.url %}
+              {% for active in activeEntries %}
+                {% if active.url and active.url == entry.url %}
+                  {% set isInTrail = true %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+            <a class="nav-item{% if isActive %} nav-item--active{% endif %}"
+               href="{{ entry.url | url }}"
+               {% if isActive %}aria-current="page"{% endif %}>
+              <i class="{{ entry.iconClass | default('fas fa-link') }}"></i>
+              <span>{{ entry.title }}</span>
+            </a>
+
+          {% elseif entry.iconClass %}
+            {% set isInTrail = false %}
+            {% if entry.key %}
+              {% for active in activeEntries %}
+                {% if active.key and active.key == entry.key %}
+                  {% set isInTrail = true %}
+                {% endif %}
+              {% endfor %}
+              {% if not isInTrail and highlightKey and entry.key == highlightKey %}
+                {% set isInTrail = true %}
+              {% endif %}
+            {% endif %}
+            <span class="nav-group-header sidebar__label{% if isInTrail %} is-open{% endif %}">
+              <i class="{{ entry.iconClass | default('fas fa-folder') }}"></i>
+              <span>{{ entry.title }}</span>
+            </span>
+          {% endif %}
+
+          {% if entry.children and entry.children.length %}
+            {{ renderList(entry.children, level + 1, entry) }}
+          {% endif %}
+        </li>
+      {% endif %}
+    {%- endfor %}
+  </ul>
+{% endmacro %}
+
+{# Sort root level too #}
+{{ renderList(tree | sort(false, false, 'order'), 0, null) }}
+

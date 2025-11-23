@@ -1,0 +1,97 @@
+---
+title: Support the Site
+permalink: "/support/"
+bodyClass: "support-page static-page"
+eleventyNavigation:
+  key: Support Us
+  parent: About & Support
+  order: 30
+  iconClass: "fas fa-heart"
+---
+
+{% extends "layout.njk" %}
+
+{% block title %}Support the Site | FGC Top Players{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="Support FGC Top Players on Ko-fi. Make a one time tip or become a monthly member to help fund hosting, data tools, and ongoing development." />
+{% endblock %}
+
+{% block head %}
+<link rel="canonical" href="{{ page.url | url | absoluteUrl(site.url) }}">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="FGC Top Players">
+<meta property="og:title" content="Support FGC Top Players on Ko-fi">
+<meta property="og:description" content="Make a one time tip or become a monthly member. Your support funds hosting, data tools, and development.">
+<meta property="og:url" content="{{ page.url | url | absoluteUrl(site.url) }}">
+<meta property="og:image" content="{{ '/images/og-default.png' | url | absoluteUrl(site.url) }}">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Support FGC Top Players on Ko-fi">
+<meta name="twitter:description" content="Tip once or join monthly to keep rankings and stats free for the community.">
+<meta name="twitter:image" content="{{ '/images/og-default.png' | url | absoluteUrl(site.url) }}">
+{% endblock %}
+
+{% block content %}
+
+  {% include "banner.njk" %}
+
+  <h1>Support the Site</h1>
+
+  <p class="intro-text intro-text--spacious">
+    FGC Top Players is an independent project by a longtime member of the community. Rankings and analysis are built from real tournament data. If this resource helps you, please consider supporting the site on Ko-fi so it can stay fast, accurate, and free for everyone.
+  </p>
+
+  <div class="grid-gap-md support-options-grid">
+
+    <!-- Ko-fi Tip -->
+    <div class="profile-card">
+      <div class="profile-card__header">
+        <h2>Make a One Time Tip</h2>
+      </div>
+      <div class="home-card__content text-center">
+        <p>
+          Say thanks with a small tip. Your support helps cover hosting and data tools that power rankings and stats.
+        </p>
+        <a href="https://ko-fi.com/YOUR_KOFI_USERNAME" rel="noopener" class="btn btn--primary">
+          <i class="fa-solid fa-mug-hot"></i>
+          Tip on Ko-fi
+        </a>
+      </div>
+    </div>
+
+    <!-- Ko-fi Memberships -->
+    <div class="profile-card">
+      <div class="profile-card__header profile-card__header--center">
+        <h2>Monthly Support</h2>
+      </div>
+      <div class="home-card__content text-center">
+        <p>
+          Ongoing support helps plan new features, expand data coverage, and keep the site running smoothly. Join as a monthly member on Ko-fi.
+        </p>
+        <a href="https://ko-fi.com/YOUR_KOFI_USERNAME/tiers" rel="noopener" class="btn btn--primary">
+          <i class="fa-regular fa-calendar-check"></i>
+          Join on Ko-fi
+        </a>
+      </div>
+    </div>
+
+    <!-- Allow Light Ads (optional) -->
+    <div class="profile-card">
+      <div class="profile-card__header">
+        <h2>Allow Light Ads</h2>
+      </div>
+      <div class="home-card__content text-center">
+        <p>
+          We keep ads light and relevant to help cover costs. If you use an ad blocker, adding FGC Top Players to your allow list is another simple way to support the project.
+        </p>
+        <p class="text-sm" style="color:var(--color-text-secondary); margin-top:.5rem;">
+          Thank you for helping the community grow.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+{% endblock %}

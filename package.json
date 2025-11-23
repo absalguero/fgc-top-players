@@ -1,0 +1,50 @@
+{
+  "name": "fgc-rankings",
+  "version": "1.0.0",
+  "description": "FGC Rankings project documentation and site.",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy --config=.eleventy.js && npm run pagefind",
+    "pagefind": "pagefind --site _site --output-subdir pagefind",
+    "dev:eleventy": "eleventy --config=.eleventy.js --serve --watch --port=8080 --input=./ --output=_site",
+    "dev": "npm run dev:eleventy",
+    "pagefind:watch": "onchange \"_site/**/*\" --exclude \"_site/pagefind/**\" --await-write-finish 200 --kill --initial -- npm run pagefind",
+    "dev:search": "concurrently -k -n eleventy,pagefind -c auto \"npm:dev:eleventy\" \"npm:pagefind:watch\"",
+    "start": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/absalguero/fgc-rankings.git"
+  },
+  "keywords": [
+    "eleventy",
+    "11ty",
+    "static-site-generator"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/absalguero/fgc-rankings/issues"
+  },
+  "homepage": "https://github.com/absalguero/fgc-rankings#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-fetch": "^5.1.0",
+    "@11ty/eleventy-navigation": "^1.0.4",
+    "concurrently": "^9.0.1",
+    "onchange": "^7.1.0",
+    "pagefind": "^1.0.4",
+    "dotenv": "^17.2.3",
+    "luxon": "^3.7.2"
+  },
+  "dependencies": {
+    "@quasibit/eleventy-plugin-sitemap": "^2.2.0",
+    "chart.js": "^4.5.1",
+    "chartjs-adapter-date-fns": "^3.0.0",
+    "csv-parse": "^6.1.0",
+    "eleventy-plugin-postcss": "^3.0.1",
+    "linkedom": "^0.18.0",
+    "papaparse": "^5.5.3",
+    "slugify": "^1.6.6"
+  }
+}

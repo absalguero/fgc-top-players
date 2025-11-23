@@ -1,0 +1,30 @@
+{# Only show breadcrumbs if:
+   - The page declares eleventyNavigation (so it exists in the nav tree), and
+   - It’s not a later page of a paginated series (pageNumber > 0), and
+   - There’s actually something to show (length > 1)
+#}
+
+{% set isPaginated = pagination and (pagination.pageNumber is defined) %}
+{% set isExtraPage = isPaginated and pagination.pageNumber > 0 %}
+
+{% if eleventyNavigation and not isExtraPage %}
+  {# Prefer starting by key; falls back to URL only if no key is present #}
+  {% set startNode = (eleventyNavigation.key if eleventyNavigation.key else page.url) %}
+  {% set crumbs = collections.all | eleventyNavigationBreadcrumb(startNode) %}
+
+  {% if crumbs and crumbs.length > 1 and not page.hideBreadcrumbs %}
+  <nav aria-label="Breadcrumb" class="breadcrumbs">
+    <ol>
+      {% for c in crumbs %}
+        <li>
+          {% if c.url and c.url != page.url %}
+            <a href="{{ c.url | url }}">{{ c.title }}</a>
+          {% else %}
+            <span aria-current="page">{{ c.title }}</span>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ol>
+  </nav>
+  {% endif %}
+{% endif %}

@@ -1,0 +1,106 @@
+{% extends "layout.njk" %}
+{% set cardImageAlt = cardImageAlt or title %}
+
+{% block title %}{{ title }} | FGC Top Players{% endblock %}
+
+{% block content %}
+{% include "banner.njk" %}
+
+<div class="article-page page-article">
+  <article class="article-post">
+
+    <header class="article-post__header">
+      <h1 class="article-post__title">{{ title }}</h1>
+      <div class="article-post__meta">
+        <span class="article-post__date">
+          <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+          {{ date | readableDate }}
+        </span>
+        {% if tags and (tags | reject('eq', 'news')).length > 0 %}
+        <div class="article-post__tags">
+          <i class="fas fa-tags" aria-hidden="true"></i>
+          {% for tag in tags %}
+            {% if tag != 'news' %}
+              <a href="{{ ('/tags/' + (tag | slugify) + '/') | url }}" class="article-post__tag">{{ tag }}</a>
+            {% endif %}
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </header>
+    
+    <div class="article-post__body">
+      {{ content | autoLink(page, collections, playerProfiles) | safe }}
+    </div>
+
+    {# Footer with social share and navigation #}
+    <footer class="article-post__footer">
+      
+      <hr class="hr-gradient">
+
+      <div class="article-post__share">
+        <span class="article-post__share-label">Share this article:</span>
+        <div class="article-post__share-buttons">
+          <a href="#"
+             onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + '&url=' + encodeURIComponent(window.location.href), '_blank', 'width=550,height=420'); return false;"
+             class="btn-social btn-social--twitter"
+             aria-label="Share on X (formerly Twitter)">
+            <i class="fab fa-x-twitter" aria-hidden="true"></i>
+          </a>
+
+          <a href="#"
+             onclick="window.open('https://www.facebook.com/dialog/share?app_id=145634995501895&display=popup&href=' + encodeURIComponent(window.location.href) + '&quote=' + encodeURIComponent(document.title), '_blank', 'width=550,height=420'); return false;"
+             class="btn-social btn-social--facebook"
+             aria-label="Share on Facebook">
+            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+          </a>
+
+          <a href="#"
+             onclick="window.open('https://www.reddit.com/submit?url=' + encodeURIComponent(window.location.href) + '&title=' + encodeURIComponent(document.title), '_blank', 'width=550,height=420'); return false;"
+             class="btn-social btn-social--reddit"
+             aria-label="Share on Reddit">
+            <i class="fab fa-reddit-alien" aria-hidden="true"></i>
+          </a>
+
+          <button class="btn-social btn-social--copy"
+                  onclick="navigator.clipboard.writeText(window.location.href); this.innerHTML='<i class=\'fas fa-check\' aria-hidden=\'true\'></i>'; setTimeout(() => this.innerHTML='<i class=\'fas fa-copy\' aria-hidden=\'true\'></i>', 2000)"
+                  aria-label="Copy link">
+            <i class="fas fa-copy" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+
+      <nav class="article-post__nav" aria-label="Article navigation">
+  <a href="javascript:void(0);" onclick="smartGoBack();" class="btn btn--primary">
+    <i class="fas fa-arrow-left" aria-hidden="true"></i> Back to News
+  </a>
+</nav>
+    </footer>
+
+  </article>
+</div>
+{% block scripts %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "headline": "{{ title }}",
+  "datePublished": "{{ date | date('YYYY-MM-DDTHH:mm:ssZ') }}",
+  "dateModified": "{{ date | date('YYYY-MM-DDTHH:mm:ssZ') }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ authorName or 'FGC Top Players' }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "FGC Top Players",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}/images/logo.png"
+    }
+  },
+  "description": "{{ description or title }}"
+}
+</script>
+{% endblock %}
+{% endblock %}

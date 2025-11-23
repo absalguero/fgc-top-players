@@ -1,0 +1,25 @@
+/* ============================================= */
+/* FGC Top Players MAIN CSS ENTRY POINT          */
+/* ============================================= */
+
+/* 1. FOUNDATION & GLOBALS */
+@import url("global.css");
+
+/* 2. PAGE-SPECIFIC STYLES */
+@import url("_page-home.css");
+@import url("_page-about.css");
+@import url("_page-contribute.css");
+@import url("_page-article.css");
+@import url("_page-player-profiles.css");
+@import url("_page-player-profile.css");
+@import url("_page-character-profile.css");
+@import url("_page-player-comparison.css");
+@import url("_page-character-comparison.css");
+@import url("_page-player-stats.css");
+@import url("_page-character-stats.css");
+@import url("_page-rankings.css");
+@import url("_page-tournament-results.css");
+@import url("_page-tournament-result.css");
+@import url("_page-upcoming-tournaments.css");
+@import url("_page-upcoming-tournament.css");
+@import url("_page-ranking-system.css");

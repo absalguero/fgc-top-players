@@ -1,0 +1,363 @@
+---
+title: "Street Fighter 6 Player Stats Leaderboard: FGPI, Ranks & Metrics"
+bodyClass: "page-player-stats"
+eleventyNavigation:
+  key: Player Stats
+  parent: Analysis
+  order: 21
+  iconClass: "fas fa-chart-bar"
+---
+
+{% extends "layout.njk" %}
+
+{% block title %}SF6 Player Stats: FGPI, Ranks & Metrics | FGC Top Players{% endblock %}
+
+{% block head %}
+{# Basic SEO #}
+<meta name="description" content="Street Fighter 6 player stats leaderboard with FGPI, victories, average finish, momentum, and schedule difficulty. Sort, filter, and compare competitors.">
+
+{# Canonical (self-referential) #}
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+{# Faceted/param hygiene: default to indexing; switch to noindex if your template sets 'query' or 'filters' context vars #}
+{% set faceted = query or filters or false %}
+{% if faceted %}
+<meta name="robots" content="noindex,follow">
+{% else %}
+<meta name="robots" content="index,follow">
+{% endif %}
+
+{# Social cards #}
+<meta property="og:type" content="website">
+<meta property="og:title" content="Street Fighter 6 Player Stats Leaderboard | FGPI, Ranks & Metrics">
+<meta property="og:description" content="Street Fighter 6 player stats with FGPI, victories, average finish, momentum, and schedule difficulty. Sort and compare competitors.">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:image" content="{{ site.url }}/images/og/sf6-player-stats.png">
+<meta name="twitter:card" content="summary_large_image">
+
+{# Dataset JSON-LD #}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Street Fighter 6 Player Statistics Leaderboard",
+  "description": "Leaderboard of Street Fighter 6 competitors with FGPI, victories, average finish, momentum, and tournament difficulty metrics. Updated regularly from rated offline events.",
+  "url": "{{ site.url }}{{ page.url }}",
+  "inLanguage": "en",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "isAccessibleForFree": true,
+  "creator": {
+    "@type": "Organization",
+    "name": "FGC Top Players",
+    "url": "{{ site.url }}"
+  },
+  "temporalCoverage": "P12M",
+  "measurementTechnique": [
+    "FGPI (composite performance rating)",
+    "MS (momentum score)",
+    "PF (performance floor)",
+    "TDR (tournament difficulty rating)",
+    "Victories / Top 3 / Top 8 / Top 16",
+    "Average Finish (time windows and majors-only splits)"
+  ],
+  "variableMeasured": [
+    { "@type": "PropertyValue", "name": "Rank", "description": "Overall player rank" },
+    { "@type": "PropertyValue", "name": "Player", "description": "Gamertag" },
+    { "@type": "PropertyValue", "name": "FGPI", "description": "Composite performance rating" },
+    { "@type": "PropertyValue", "name": "MS", "description": "Momentum score over recent events" },
+    { "@type": "PropertyValue", "name": "PF", "description": "Performance floor / consistency" },
+    { "@type": "PropertyValue", "name": "TDR", "description": "Average strength of field faced" },
+    { "@type": "PropertyValue", "name": "V", "description": "Tournament victories (12 months)" },
+    { "@type": "PropertyValue", "name": "T3", "description": "Top 3 finishes (12 months)" },
+    { "@type": "PropertyValue", "name": "T8", "description": "Top 8 finishes (12 months)" },
+    { "@type": "PropertyValue", "name": "T16", "description": "Top 16 finishes (12 months)" },
+    { "@type": "PropertyValue", "name": "AF12", "description": "Average finish (12 months)" },
+    { "@type": "PropertyValue", "name": "AFM12", "description": "Average finish at majors (12 months)" },
+    { "@type": "PropertyValue", "name": "AF6", "description": "Average finish (6 months)" },
+    { "@type": "PropertyValue", "name": "AFM6", "description": "Average finish at majors (6 months)" }
+  ],
+  "distribution": [{
+    "@type": "DataDownload",
+    "encodingFormat": "application/json",
+    "contentUrl": "{{ site.url }}/data/sf6-player-stats.json"
+  }]
+}
+</script>
+
+{# Breadcrumbs JSON-LD #}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Analysis", "item": "{{ site.url }}/analysis/" },
+    { "@type": "ListItem", "position": 2, "name": "Player Stats", "item": "{{ site.url }}{{ page.url }}" }
+  ]
+}
+</script>
+{% endblock %}
+
+{% block content %}
+
+<div class="profile-container">
+    {% include "banner.njk" %}
+    <h1>Street Fighter 6 Player Statistics</h1>
+    <div class="intro-text-container">
+        <p class="intro-text">
+  Street Fighter 6 player stats leaderboard: compare top competitors by <a href="/analytics-glossary/#fgpi">FGPI</a>, rank, finishes, schedule difficulty (<a href="/analytics-glossary/#tdr">TDR</a>), recent momentum (<a href="/analytics-glossary/#ms">MS</a>), and consistency <a href="/analytics-glossary/#pf">(PF)</a>. We display the top 200 ranked players, and the top five in each metric are highlighted.
+</p>
+    </div>
+
+    <div class="mobile-sort-controls">
+        <div class="mobile-controls-row">
+            <div class="how-to-use-container">
+                <button id="mobile-how-to-use-btn" class="btn btn--icon" aria-label="How to Use">
+                    <i class="fas fa-question-circle"></i>
+                </button>
+                <div id="how-to-use-panel" class="popover-panel">
+                    <button class="popover-close-btn" id="how-to-use-close-btn" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <h2>How to Use These Statistics</h2>
+                    <p>Get the most out of our stats table with these features:</p>
+                    <ul>
+                        <li><strong>Sort Columns:</strong> Click on any column header to sort the table.</li>
+                        <li><strong>Search Player:</strong> Use the search bar to find a specific player.</li>
+                        <li><strong>Filter & Display:</strong> Use the "Filter & Display" button to filter by stat values and show or hide columns.</li>
+                        <li><strong>Understand Metrics:</strong> Hover over any column header for a tooltip.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mobile-search-wrapper">
+                <input type="text" id="player-search-input" class="search-form__input" placeholder="Search by Player..." autocomplete="off">
+                <button id="player-search-clear-btn" class="search-clear-btn" aria-label="Clear search input">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="filter-options-container">
+                <button id="mobile-filter-options-btn" class="btn btn--icon" aria-label="Filter & Display">
+                    <i class="fas fa-filter"></i>
+                </button>
+                <div id="filter-options-panel" class="popover-panel">
+                    <button class="popover-close-btn" id="filter-options-close-btn" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <div class="tab-nav">
+                        <button class="tab-btn is-active" data-tab-target="filter-tab-content">
+                            <i class="fas fa-filter" aria-hidden="true"></i> Filter by Stat
+                        </button>
+                        <button class="tab-btn" data-tab-target="display-tab-content">
+                            <i class="fas fa-cog" aria-hidden="true"></i> Display Options
+                        </button>
+                    </div>
+                    <div class="tab-content-wrapper">
+                        <div id="filter-tab-content" class="tab-content is-active">
+                            <div class="filter-controls">
+                                <div class="filter-input-group">
+                                    <select id="stat-filter" class="filter-select">
+                                        <option value="">-- Select a Stat to Filter --</option>
+                                        <optgroup label="Core Ratings">
+                                            <option value="fgpi">FGPI (Overall Rating)</option>
+                                            <option value="ms">MS (Momentum)</option>
+                                            <option value="pf">PF (Performance Floor)</option>
+                                            <option value="tdr">TDR (Tournament Difficulty)</option>
+                                        </optgroup>
+                                        <optgroup label="Placings (12 Mo.)">
+                                            <option value="v">Victories</option>
+                                            <option value="t3">Top 3 Finishes</option>
+                                            <option value="t8">Top 8 Finishes</option>
+                                            <option value="t16">Top 16 Finishes</option>
+                                        </optgroup>
+                                        <optgroup label="Avg. Finish (Placement)">
+                                            <option value="af12">All Tournaments (12 Mo.)</option>
+                                            <option value="afm12">Majors Only (12 Mo.)</option>
+                                            <option value="af6">All Tournaments (6 Mo.)</option>
+                                            <option value="afm6">Majors Only (6 Mo.)</option>
+                                        </optgroup>
+                                        <optgroup label="Avg. Finish (Percentile)">
+                                            <option value="app">APP (All Tournaments)</option>
+                                            <option value="apm">APM (Majors Only)</option>
+                                        </optgroup>
+                                    </select>
+                                    <select id="operator-filter" class="filter-select">
+                                        <option value=">=">≥</option>
+                                        <option value="<=">≤</option>
+                                        <option value="==">=</option>
+                                    </select>
+                                    <input type="text" id="value-filter" class="filter-input" placeholder="Value">
+                                </div>
+                                <div class="filter-actions">
+                                    <button id="reset-filters-btn" class="btn btn--primary btn--small">Reset Filters</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="display-tab-content" class="tab-content">
+                            <div id="column-controls-wrapper">
+                                <div id="column-checkboxes-primary" class="column-controls-row"></div>
+                                <div id="column-checkboxes-secondary" class="column-controls-row"></div>
+                                <div id="column-checkboxes-tertiary" class="column-controls-row"></div>
+                                <div class="column-actions">
+                                    <button id="select-all-cols" class="btn btn--secondary">Select All</button>
+                                    <button id="deselect-all-cols" class="btn btn--secondary">Deselect All</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="results-count" class="results-count"></div>
+
+</div>
+<p class="table-scroll-hint">
+    <i class="fas fa-info-circle" aria-hidden="true"></i>
+    <span class="sr-only">Hint:</span>
+    Swipe left or right on the table to view every column.
+</p>
+<div class="table-wrapper">
+    <table class="stats-table" id="stats-table">
+        <thead>
+            <tr>
+                <th scope="col" data-key="rank" data-sort="rank" data-sort-type="number" data-sort-default="asc" class="sortable rank-cell reverse-arrow" data-tooltip="Overall player rank.">
+                    <div class="header-content">
+                        <span>Rank</span>
+                        <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg>
+                    </div>
+                </th>
+                <th scope="col" data-key="player" data-sort="player" data-sort-type="string" data-sort-default="asc" class="sortable col-player reverse-arrow" data-tooltip="Player handle. Click a name to open their full profile, stats, and recent results.">
+                    <div class="header-content">
+                        <span>Player</span>
+                        <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg>
+                    </div>
+                </th>
+                <th scope="col" data-key="fgpi" data-sort="fgpi" data-sort-type="number" data-sort-default="desc" class="sortable" data-tooltip="Fighting Game Performance Index: A comprehensive rating of a player's overall skill, combining recent results, consistency, and schedule strength. Higher is better.">
+                    <div class="header-content">
+                        <span>FGPI</span>
+                        <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg>
+                    </div>
+                </th>
+                <th scope="col" data-key="ms" data-sort="ms" data-sort-type="number" data-sort-default="desc" class="sortable" data-tooltip="Momentum Score: Higher values indicate stronger recent form and an upward performance trend.">
+                    <div class="header-content">
+                        <span>MS</span>
+                        <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg>
+                    </div>
+                </th>
+                <th scope="col" data-key="pf" data-sort="pf" data-sort-type="number" data-sort-default="desc" class="sortable" data-tooltip="Performance Floor: Measures how well a player performs on their worst days. A high PF indicates a consistent player who rarely bombs out of tournaments.">
+                    <div class="header-content">
+                        <span>PF</span>
+                        <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg>
+                    </div>
+                </th>
+                <th scope="col" data-key="tdr" data-sort="tdr" data-sort-type="number" data-sort-default="desc" class="sortable" data-tooltip="Tournament Difficulty Rating: Reflects the average difficulty of tournaments attended. A higher score means the player consistently faces tougher competition.">
+                    <div class="header-content">
+                        <span>TDR</span>
+                        <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg>
+                    </div>
+                </th>
+                <th scope="col" data-key="v" data-sort="v" data-sort-type="number" data-sort-default="desc" class="sortable" data-tooltip="Victories: Total 1st place finishes in the last 12 months.">
+                    <div class="header-content">
+                        <span>V</span>
+                        <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg>
+                    </div>
+                </th>
+                <th scope="col" data-key="t3" data-sort="t3" data-sort-type="number" data-sort-default="desc" class="sortable" data-tooltip="Top 3 Finishes: Total Top 3 finishes in the last 12 months.">
+                    <div class="header-content">
+                        <span>T3</span>
+                        <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg>
+                    </div>
+                </th>
+                <th scope="col" data-key="t8" data-sort="t8" data-sort-type="number" data-sort-default="desc" class="sortable" data-tooltip="Top 8 Finishes: Total Top 8 finishes in the last 12 months.">
+                    <div class="header-content">
+                        <span>T8</span>
+                        <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg>
+                    </div>
+                </th>
+                <th scope="col" data-key="t16" data-sort="t16" data-sort-type="number" data-sort-default="desc" class="sortable" data-tooltip="Top 16 Finishes: Total Top 16 finishes in the last 12 months.">
+                    <div class="header-content">
+                        <span>T16</span>
+                        <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg>
+                    </div>
+                </th>
+                <th scope="col" data-key="app" data-sort="app" data-sort-type="number" data-sort-default="desc" class="sortable" data-tooltip="Avg. Placement Percentile: 95 means the player finishes ahead of 95% of the bracket on average. Higher is better.">
+                    <div class="header-content">
+                        <span>APP</span>
+                        <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg>
+                    </div>
+                </th>
+                <th scope="col" data-key="apm" data-sort="apm" data-sort-type="number" data-sort-default="desc" class="sortable" data-tooltip="Avg. Percentile at Majors: Average placement percentile at Major tournaments only.">
+                    <div class="header-content">
+                        <span>APM</span>
+                        <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg>
+                    </div>
+                </th>
+                <th scope="col" data-key="af12" data-sort="af12" data-sort-type="number" data-sort-default="asc" class="sortable reverse-arrow" data-tooltip="Avg. Finish (12 Mo.): The player's average final placement in all rated tournaments over the last 12 months. Lower is better.">
+                    <div class="header-content">
+                        <span>AF12</span>
+                        <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg>
+                    </div>
+                </th>
+                <th scope="col" data-key="afm12" data-sort="afm12" data-sort-type="number" data-sort-default="asc" class="sortable reverse-arrow" data-tooltip="Avg. Finish at Majors (12 Mo.): The player's average final placement at Major tournaments over the last 12 months. Lower is better.">
+                    <div class="header-content">
+                        <span>AFM12</span>
+                        <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg>
+                    </div>
+                </th>
+                <th scope="col" data-key="af6" data-sort="af6" data-sort-type="number" data-sort-default="asc" class="sortable reverse-arrow" data-tooltip="Avg. Finish (6 Mo.): The player's average final placement in rated tournaments over the last 6 months. Lower is better.">
+                    <div class="header-content">
+                        <span>AF6</span>
+                        <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg>
+                    </div>
+                </th>
+                <th scope="col" data-key="afm6" data-sort="afm6" data-sort-type="number" data-sort-default="asc" class="sortable reverse-arrow" data-tooltip="Avg. Finish at Majors (6 Mo.): The player's average final placement at Major tournaments over the last 6 months. Lower is better.">
+                    <div class="header-content">
+                        <span>AFM6</span>
+                        <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg>
+                    </div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            {# Skeleton Loader #}
+            {% for i in range(0, 10) %}
+            <tr class="skeleton-row">
+                <td><div class="skeleton skeleton-text" style="width: 20px; margin: auto;"></div></td>
+                <td>
+                    <div class="player-cell-content">
+                        <div class="skeleton skeleton-avatar"></div>
+                        <div class="skeleton skeleton-text" style="width: 100px;"></div>
+                    </div>
+                </td>
+                <td><div class="skeleton skeleton-text" style="width: 50px; margin: auto;"></div></td>
+                <td><div class="skeleton skeleton-text" style="width: 30px; margin: auto;"></div></td>
+                <td><div class="skeleton skeleton-text" style="width: 30px; margin: auto;"></div></td>
+                <td><div class="skeleton skeleton-text" style="width: 30px; margin: auto;"></div></td>
+                <td><div class="skeleton skeleton-text" style="width: 30px; margin: auto;"></div></td>
+                <td><div class="skeleton skeleton-text" style="width: 30px; margin: auto;"></div></td>
+                <td><div class="skeleton skeleton-text" style="width: 30px; margin: auto;"></div></td>
+                <td><div class="skeleton skeleton-text" style="width: 30px; margin: auto;"></div></td>
+                <td><div class="skeleton skeleton-text" style="width: 50px; margin: auto;"></div></td>
+                <td><div class="skeleton skeleton-text" style="width: 50px; margin: auto;"></div></td>
+                <td><div class="skeleton skeleton-text" style="width: 50px; margin: auto;"></div></td>
+                <td><div class="skeleton skeleton-text" style="width: 50px; margin: auto;"></div></td>
+                <td><div class="skeleton skeleton-text" style="width: 50px; margin: auto;"></div></td>
+                <td><div class="skeleton skeleton-text" style="width: 50px; margin: auto;"></div></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<div id="stats-card-container" class="is-hidden-desktop"></div>
+<div id="sentinel" class="sentinel" aria-hidden="true"></div>
+<div id="tooltip" class="tooltip" role="tooltip"></div>
+
+{% endblock %}
+
+{% block scripts %}
+    <script>
+        window.playerStatsDataEndpoint = "/api/player-profiles.json";
+    </script>
+    <script src="/js/playerStats.js" defer></script>
+{% endblock %}

@@ -1,0 +1,232 @@
+---
+title: "SF6 Player Ranking System Explained | FGC Top Players"
+bodyClass: "page-ranking-system"
+permalink: "/ranking-system/"
+eleventyNavigation:
+  key: Ranking System
+  parent: Reference
+  order: 31
+  iconClass: "fas fa-ruler-combined"
+---
+{% extends "layout.njk" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block head %}
+<meta name="description" content="Understand the Street Fighter 6 player ranking methodology: how results are scored, events are weighted, and recency is applied to produce official SF6 rankings from sanctioned offline tournaments.">
+<link rel="stylesheet" href="/css/ranking-system.css">
+
+{# Absolute canonical; requires site.url in _data/site.json and an absoluteUrl filter in .eleventy.js #}
+<link rel="canonical" href="{{ page.url | url | absoluteUrl(site.url) }}">
+
+{# Open Graph #}
+<meta property="og:type" content="website">
+<meta property="og:title" content="How Our Street Fighter 6 Player Ranking System Works | FGC Top Players">
+<meta property="og:description" content="Learn how we calculate Street Fighter 6 player rankings using event weighting, results scoring, and recency—based on sanctioned offline tournaments.">
+<meta property="og:url" content="{{ page.url | url | absoluteUrl(site.url) }}">
+<meta property="og:image" content="{{ '/images/social/ranking-system-card.png' | url | absoluteUrl(site.url) }}">
+<meta property="og:site_name" content="FGC Top Players">
+
+{# Twitter #}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How Our Street Fighter 6 Player Ranking System Works">
+<meta name="twitter:description" content="Methodology for SF6 player rankings: results scoring, event weighting, and recency from sanctioned offline events.">
+<meta name="twitter:image" content="{{ '/images/social/ranking-system-card.png' | url | absoluteUrl(site.url) }}">
+
+{# JSON-LD: WebPage + BreadcrumbList + FAQPage (updated to reference /contact/) #}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "name": "How Our SF6 Player Ranking System Works",
+      "url": "{{ page.url | url | absoluteUrl(site.url) }}",
+      "description": "Methodology for Street Fighter 6 player rankings using results scoring, event weighting, and recency from sanctioned offline tournaments.",
+      "isPartOf": { "@type": "Website", "name": "FGC Top Players", "url": "{{ site.url }}" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Reference", "item": "{{ '/reference/' | url | absoluteUrl(site.url) }}" },
+        { "@type": "ListItem", "position": 2, "name": "Ranking System", "item": "{{ page.url | url | absoluteUrl(site.url) }}" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How are SF6 player rankings calculated?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Rankings use a player's top five performances at sanctioned offline tournaments, factoring placing, event value, and recency." }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I see player stats?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Visit the Street Fighter 6 Player Stats Leaderboard to explore FGPI, momentum (MS), performance floor (PF), tournament difficulty (TDR), finishes, and averages." }
+        },
+        {
+          "@type": "Question",
+          "name": "Why aren’t online tournaments included?",
+          "acceptedAnswer": { "@type": "Answer", "text": "We evaluate in-person events only, as online results can be affected by connectivity and environment differences." }
+        },
+        {
+          "@type": "Question",
+          "name": "How often are rankings updated?",
+          "acceptedAnswer": { "@type": "Answer", "text": "We update soon after major offline events to reflect current competitive form." }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I get a tournament included?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Organizers can request event evaluation via the contact form at {{ site.url }}/contact/." }
+        },
+        {
+          "@type": "Question",
+          "name": "How are disputes or errors handled?",
+          "acceptedAnswer": { "@type": "Answer", "text": "We review reported discrepancies and update rankings when appropriate. If you find an error, please reach out at {{ site.url }}/contact/." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+{% block content %}
+<div class="content-container page-ranking-system">
+  <article>
+    {% include "banner.njk" %}
+    <h1>How the SF6 Player Ranking System Works</h1>
+
+    <div class="page-ranking-system__layout">
+      <div class="page-ranking-system__toc-wrapper">
+        <button class="toc-toggle-btn" aria-expanded="false" aria-controls="toc-nav">
+          Jump to Section <i class="fas fa-chevron-down"></i>
+        </button>
+        <nav id="toc-nav" aria-label="Table of Contents" class="toc toc-list">
+          <strong>Contents</strong>
+          <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#how-ranking-works">How the Ranking System Works</a></li>
+            <li><a href="#results-scoring">Results-Based Scoring</a></li>
+            <li><a href="#best-performances">Best Performances</a></li>
+            <li><a href="#event-valuation">Event Weighting</a></li>
+            <li><a href="#recency-bias">Recency Bias</a></li>
+            <li><a href="#offline-events">In-Person Events Only</a></li>
+            <li><a href="#data-sources">Data Sources & Verification</a></li>
+            <li><a href="#global-recognition">Global Recognition</a></li>
+            <li><a href="#updates-transparency">Regular Updates & Transparency</a></li>
+            <li><a href="#example-calculation">A Player's Journey (Example)</a></li>
+            <li><a href="#faq">Frequently Asked Questions (FAQ)</a></li>
+            <li><a href="#contact-feedback">Contact & Feedback</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="page-ranking-system__main-content">
+        <img src="/images/fgc-ranking-system-explained.png" alt="Graphical representation of the SF6 player ranking system components" loading="lazy" class="page-ranking-system__image" />
+        
+        <div class="cta-container">
+          <a href="/street-fighter-6-rankings/" class="btn btn--primary">View Current Street Fighter 6 Rankings</a>
+        </div>
+
+        <section id="overview">
+          <h2>Overview: Accurate & Current Player Rankings for Street Fighter 6</h2>
+          <p>
+            Our SF6 player ranking system reflects live competitive form using results scoring, event weighting, and recency from sanctioned offline tournaments.
+            See the <a href="/street-fighter-6-rankings/">current rankings</a>, browse <a href="/tournament-results/">recent tournament results</a>, or explore metrics on the
+            <a href="/player-stats/">Player Stats Leaderboard</a>.
+          </p>
+        </section>
+
+        <section id="how-ranking-works">
+          <h2>How the Ranking System Works</h2>
+          <p>Our system is designed to evaluate player performance by focusing on meaningful <a href="/tournament-results/">tournament results</a> and current competitive form.</p>
+
+          <h3 id="results-scoring"><i class="fas fa-medal"></i> Results-Based Scoring</h3>
+          <p>Players earn rating points according to final placing at offline tournaments. Higher placings receive more points, ensuring that top finishes have the greatest impact on rankings.</p>
+
+          <h3 id="best-performances"><i class="fas fa-chart-bar"></i> Best Performances</h3>
+          <p>To balance quantity and quality, only each player’s five highest-rated performances are included in their overall ranking. This rewards consistent top-level play without favoring sheer attendance. <a href="#faq-fewer-events" onclick="document.getElementById('faq-fewer-events').open = true;">(How does attendance affect rank?)</a></p>
+
+          <h3 id="event-valuation"><i class="fas fa-globe-americas"></i> Event Weighting</h3>
+          <p>Each tournament’s value is calculated using multiple factors, including event prestige/history, strength of competition, and prize pool. Larger, more prestigious events with stronger fields carry greater weight.</p>
+
+          <h3 id="recency-bias"><i class="fas fa-history"></i> Recency Bias</h3>
+          <p>The system emphasizes recent <a href="/tournament-results/">tournament results</a> so the leaderboard represents who is performing best right now. Older results gradually have less influence.</p>
+
+          <h3 id="offline-events"><i class="fas fa-users"></i> In-Person Events Only</h3>
+          <p>
+            Rankings are based exclusively on sanctioned offline tournaments.
+            Sanctioned tournaments are offline events approved by official organizers and run under an established ruleset.
+            <a href="#faq-online-events" onclick="document.getElementById('faq-online-events').open = true;">(Why not online events?)</a>
+          </p>
+
+          <h3 id="data-sources"><i class="fas fa-clipboard-check"></i> Data Sources & Verification</h3>
+          <p>We prioritize accurate data collection from trusted organizers and verified results to maintain ranking integrity. Our process ensures that standings reflect genuine competitive performance.</p>
+
+          <h3 id="global-recognition"><i class="fas fa-globe"></i> Global Recognition</h3>
+          <p>Our ranking system recognizes offline fighting game tournaments worldwide, promoting a diverse and comprehensive competitive landscape. Organizers can request event evaluation. <a href="#faq-inclusion" onclick="document.getElementById('faq-inclusion').open = true;">(How do I get a tournament included?)</a></p>
+
+          <h3 id="updates-transparency"><i class="fas fa-sync-alt"></i> Regular Updates & Transparency</h3>
+          <p>Rankings are updated regularly to incorporate the latest <a href="/tournament-results/">tournament results</a>. Built by and for the FGC, our approach aims to recognize performance, consistency, and current form. <a href="#faq-updates" onclick="document.getElementById('faq-updates').open = true;">(How often are rankings updated?)</a></p>
+        </section>
+
+        <section id="example-calculation">
+          <h2>Putting It All Together: A Player's Journey</h2>
+          <p>Here's a simplified example illustrating how results, event weight, and recency interact:</p>
+          <ol>
+            <li><strong>Event 1 (Premier Tier):</strong> Player places 3rd — high points due to placing and tier.</li>
+            <li><strong>Event 2 (Major Tier):</strong> Player places 1st — strong points; recent win boosts impact.</li>
+            <li><strong>Event 3 (Regional/Standard):</strong> Player places 1st — solid points; lower event weight than Premier/Major.</li>
+            <li><strong>Event 4 (Old Premier):</strong> Player placed 5th last year — value decays with time.</li>
+            <li><strong>Event 5 & 6:</strong> Additional solid finishes — recency/weight determine which five results count.</li>
+          </ol>
+          <p>The system keeps the <strong>top five</strong> weighted results with recency applied, ensuring the ranking reflects current form.</p>
+        </section>
+
+        <section id="faq" class="faq-accordion">
+          <h2>Frequently Asked Questions (FAQ)</h2>
+          <details>
+            <summary>How are player rankings calculated?</summary>
+            <p>Rankings are calculated from a player's top five performances at sanctioned offline tournaments, factoring placing, event value, and recency.</p>
+          </details>
+          <details>
+            <summary>How do these rankings differ from a game's built-in online ladder or ranked mode?</summary>
+            <p>Our rankings and in-game ladders measure different things. We evaluate performance in high-stakes <strong>offline tournaments</strong>, while ranked ladders reflect <strong>online consistency</strong> over many matches. Together they offer a fuller picture of competitive level.</p>
+          </details>
+          <details id="faq-online-events">
+            <summary>Why aren’t online tournaments included?</summary>
+            <p>We evaluate in-person events only, as online results can be affected by connectivity and environment differences.</p>
+          </details>
+          <details id="faq-fewer-events">
+            <summary>Can a player’s ranking change if they attend fewer events?</summary>
+            <p>Yes. Because the system emphasizes recent and top performances, players who compete less frequently can still improve their ranking by performing well at higher-value tournaments.</p>
+          </details>
+          <details id="faq-updates">
+            <summary>How often are rankings updated?</summary>
+            <p>Rankings are updated soon after the completion of major offline events to reflect the latest results.</p>
+          </details>
+          <details>
+            <summary>Where can I see player statistics and metrics?</summary>
+            <p>Visit the <a href="/player-stats/">Street Fighter 6 Player Stats Leaderboard</a> to explore FGPI, momentum (MS), performance floor (PF), tournament difficulty (TDR), finishes, and averages.</p>
+          </details>
+          <details id="faq-inclusion">
+            <summary>How can I get my tournament included?</summary>
+            <p>Tournament organizers can request evaluation via the <a href="/contact/">contact form</a>.</p>
+          </details>
+          <details>
+            <summary>How are disputes or errors handled?</summary>
+            <p>We review reported discrepancies and update rankings when appropriate to ensure accuracy. If you find an error, please reach out through our <a href="/contact/">contact form</a>.</p>
+          </details>
+        </section>
+
+        <section id="contact-feedback">
+          <h2>Contact & Feedback</h2>
+          <p>Questions or suggestions? Reach us via the <a href="/contact/">contact form</a>. We’re committed to transparency and community collaboration.</p>
+        </section>
+      </div>
+    </div>
+  </article>
+</div>
+{% endblock %}

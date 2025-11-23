@@ -1,0 +1,103 @@
+---
+title: FGC Top Players
+pagination:
+  data: collections.news
+  size: 6
+  alias: articles
+  reverse: true
+permalink: "{% if pagination.pageNumber == 0 %}/{% else %}/page/{{ pagination.pageNumber + 1 }}/{% endif %}"
+eleventyNavigation:
+  key: Home
+  order: 1
+  iconClass: "fas fa-home"
+navHighlight: "Home"
+---
+
+{% extends "layout.njk" %}
+
+{# --- <title> --- #}
+{% block title -%}
+  {% if pagination.pageNumber == 0 -%}
+    FGC Top Players — Latest FGC News, Results, and Rankings
+  {%- else -%}
+    FGC News (Page {{ pagination.pageNumber + 1 }}) — FGC Top Players
+  {%- endif %}
+{%- endblock %}
+
+{# --- Meta description --- #}
+{% block meta_description -%}
+  <meta name="description" content="{% if pagination.pageNumber == 0 %}Latest FGC news, tournament results, and rankings across Street Fighter and more—updated regularly.{% else %}FGC news index page {{ pagination.pageNumber + 1 }}. Catch up on recent tournaments, results, and analysis.{% endif %}">
+{%- endblock %}
+
+{# --- Extra head tags: prev/next, RSS discovery --- #}
+{% block head_extra %}
+  {% if pagination.href.previous %}
+    <link rel="prev" href="{{ pagination.href.previous }}">
+  {% endif %}
+  {% if pagination.href.next %}
+    <link rel="next" href="{{ pagination.href.next }}">
+  {% endif %}
+  <link rel="alternate" type="application/rss+xml" title="FGC Top Players — News Feed" href="/feed.xml">
+{% endblock %}
+
+{# --- Page-level JSON-LD (ItemList) --- #}
+{% block structured_data %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": {% if pagination.pageNumber == 0 %}"FGC Top Players — Latest FGC News"{% else %}"FGC News (Page {{ pagination.pageNumber + 1 }}) — FGC Top Players"{% endif %},
+  "url": "{{ site.url }}{{ page.url }}",
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      {% for article in pagination.items %}
+      {
+        "@type": "ListItem",
+        "position": {{ loop.index }},
+        "url": "{{ site.url }}{{ article.url }}",
+        "name": {{ (article.data.title or 'FGC News') | dump }}{% if article.data.cardImage %},
+        "image": "{{ site.url }}{{ article.data.cardImage }}"{% endif %},
+        "datePublished": "{{ article.date | date('yyyy-LL-dd') }}"
+      }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ]
+  }
+}
+</script>
+{% endblock %}
+
+{% block content %}
+<div class="content-container">
+  {% include "banner.njk" %}
+
+  <h1>Latest FGC News{% if pagination.pageNumber > 0 %} (Page {{ pagination.pageNumber + 1 }}){% endif %}</h1>
+
+  <div class="home-news-list">
+    {% for article in pagination.items %}
+      {% include "partials/_home_card.njk" %}
+    {% endfor %}
+  </div>
+
+  <nav class="pagination-nav" aria-label="Pagination">
+    {% if pagination.href.previous %}
+      <a href="{{ pagination.href.previous }}" class="pagination-nav__link" rel="prev">&larr; Previous Page</a>
+    {% else %}
+      <span class="pagination-nav__link--disabled">&larr; Previous Page</span>
+    {% endif %}
+
+    {% for pageEntry in pagination.pages %}
+      {% set pageUrl = pagination.hrefs[loop.index0] %}
+      <a href="{{ pageUrl }}" class="pagination-nav__link {% if pageUrl == page.url %}pagination-nav__link--active{% endif %}" aria-label="Go to page {{ loop.index }}">
+        {{ loop.index }}
+      </a>
+    {% endfor %}
+
+    {% if pagination.href.next %}
+      <a href="{{ pagination.href.next }}" class="pagination-nav__link" rel="next">Next Page &rarr;</a>
+    {% else %}
+      <span class="pagination-nav__link--disabled">Next Page &rarr;</span>
+    {% endif %}
+  </nav>
+</div>
+{% endblock %}

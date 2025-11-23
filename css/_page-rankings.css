@@ -1,0 +1,492 @@
+/* /css/_page-rankings.css */
+
+/* ===========================
+   DESKTOP STYLES (Default)
+   =========================== */
+
+.sf6-rankings .controls-container {
+  max-width: 600px;
+  margin-inline: auto; /* let global .controls-container control vertical spacing */
+}
+
+/* Add space below search bar on all screen sizes */
+.sf6-rankings .search-wrapper {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.sf6-rankings .search-wrapper .search-form__input {
+  width: 100%;
+  text-align: center;
+}
+
+.sf6-rankings #last-updated {
+  color: var(--color-rank-1-gold);
+  text-align: center;
+  margin-top: 0.25rem;
+  /* margin-bottom controlled globally */
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Desktop: Hide mobile sort controls and dropdown */
+.sf6-rankings .mobile-sort-controls {
+  display: none;
+}
+
+.sf6-rankings .mobile-sort-wrapper {
+  display: none;
+}
+
+/* ===========================
+   TABLET (768px - 1023px)
+   =========================== */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .sf6-rankings h1 {
+    font-size: 2rem;
+  }
+
+  .sf6-rankings #last-updated {
+    font-size: 1rem;
+  }
+
+  /* Slightly reduce table padding on tablet */
+  .sf6-rankings .sf6-rankings-table th,
+  .sf6-rankings .sf6-rankings-table td {
+    padding: var(--spacing-sm);
+  }
+
+  /* Reduce icon sizes on tablet */
+  .sf6-rankings :is(.player-icon, .character-icon, .country-icon, .flag-icon) {
+    width: 48px;
+    height: 48px;
+  }
+
+  /* Smaller rank cell font */
+  .sf6-rankings .rank-cell {
+    font-size: 1rem;
+  }
+
+  /* Hide mobile dropdown on tablet */
+  .sf6-rankings .mobile-sort-wrapper {
+    display: none !important;
+  }
+
+  /* Add space below search bar on tablet */
+  .sf6-rankings .search-wrapper {
+    margin-bottom: 0.5rem !important;
+  }
+}
+
+/* ===========================
+   MOBILE (max-width: 767px) - FINAL EXPANDABLE LAYOUT
+   =========================== */
+
+@media (max-width: 767px) {
+  /* Keep general mobile styles */
+  .sf6-rankings h1 {
+    font-size: 1.75rem;
+    margin-bottom: var(--spacing-sm);
+  }
+  .sf6-rankings #last-updated {
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+  }
+
+  /* Desktop: Hide table header on mobile */
+  .sf6-rankings .sf6-rankings-table thead {
+    display: none;
+  }
+  .sf6-rankings .sf6-rankings-table {
+    width: 100%;
+    background: transparent !important;
+    display: table; /* Counteracts global 'display: block' */
+    table-layout: fixed; /* Ensures width is respected */
+  }
+
+  /*
+  * NEW EXPANDABLE CARD STYLES
+  */
+
+  /* 1. The Card (tr) - Centered, grid layout */
+  .sf6-rankings .sf6-rankings-table tbody tr {
+    display: grid;
+    /* Columns: Rank(50px) | Player(1fr) | Country(auto) | Chevron(30px) */
+    grid-template-columns: 50px 1fr auto 30px;
+    /* Rows: Main Content | Collapsed Extra Content */
+    grid-template-rows: auto minmax(0, 0fr);
+    grid-template-areas:
+      "rank player country chevron"
+      "extra extra extra extra";
+    gap: 0 0.75rem; /* 0 vertical, 0.75rem horizontal */
+    align-items: center;
+
+    /* Centering Fix: Use border, border-radius, and margin-bottom */
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--spacing-md);
+
+    padding: var(--spacing-md) 0.75rem;
+    width: 100%; /* Will be 100% of the padded container */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    background: var(--color-bg-light) !important; /* Base background */
+  }
+
+  /* When expanded, grow the extra content row */
+  .sf6-rankings .sf6-rankings-table tbody tr.is-open {
+    grid-template-rows: auto 1fr;
+  }
+
+  /* 2. Rank-Specific Backgrounds (on the card itself) */
+  .sf6-rankings .sf6-rankings-table tbody tr.rank-1 {
+    background: rgba(255, 193, 7, 0.1) !important;
+  }
+  .sf6-rankings .sf6-rankings-table tbody tr.rank-2 {
+    background: rgba(188, 198, 204, 0.1) !important;
+  }
+  .sf6-rankings .sf6-rankings-table tbody tr.rank-3 {
+    background: rgba(205, 127, 50, 0.1) !important;
+  }
+  .sf6-rankings .sf6-rankings-table tbody tr.rank-4 {
+    background: rgba(58, 94, 141, 0.08) !important;
+  }
+  .sf6-rankings .sf6-rankings-table tbody tr.rank-5 {
+    background: rgba(102, 114, 128, 0.08) !important;
+  }
+  .sf6-rankings .sf6-rankings-table tbody tr.ranked-6-20 {
+    background: rgba(155, 122, 185, 0.05) !important;
+  }
+  
+  /* 3. FIX: Remove hover highlight from all cells */
+  .sf6-rankings .sf6-rankings-table tbody tr:hover td {
+    background-color: transparent !important;
+  }
+
+  /* 4. The Chevron (tr::after) - Expandable */
+  .sf6-rankings .sf6-rankings-table tbody tr::after {
+    content: '\f078'; /* fas fa-chevron-down */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    grid-area: chevron;
+    text-align: right;
+    font-size: 1rem;
+    color: var(--color-text-secondary); /* Default color */
+    transition: transform 0.3s ease, color 0.2s;
+  }
+
+  /* Rank-colored chevrons (closed state) */
+  .sf6-rankings .sf6-rankings-table tbody tr.rank-1::after {
+    color: var(--color-rank-1-gold);
+  }
+  .sf6-rankings .sf6-rankings-table tbody tr.rank-2::after {
+    color: var(--color-rank-2-silver);
+  }
+  .sf6-rankings .sf6-rankings-table tbody tr.rank-3::after {
+    color: var(--color-rank-3-bronze);
+  }
+  .sf6-rankings .sf6-rankings-table tbody tr.rank-4::after {
+    color: var(--color-rank-4-cobalt);
+  }
+  .sf6-rankings .sf6-rankings-table tbody tr.rank-5::after {
+    color: var(--color-rank-5-graphite);
+  }
+  .sf6-rankings .sf6-rankings-table tbody tr.ranked-6-20::after {
+    color: var(--color-rank-amethyst-glow);
+  }
+
+  /* Chevron open state - flip up but keep rank color */
+  .sf6-rankings .sf6-rankings-table tbody tr.is-open::after {
+    transform: rotate(180deg);
+  }
+
+  /* 5. All Stat Cells (td) */
+  .sf6-rankings .sf6-rankings-table tbody td {
+    display: block;
+    padding: 0;
+    text-align: left;
+    background: transparent !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    animation: none !important;
+    line-height: 1.4;
+    border: none; /* Remove border from individual cells */
+  }
+
+  /* Hide ALL labels by default */
+  .sf6-rankings .sf6-rankings-table tbody td::before {
+    display: none;
+  }
+
+  /* 6. Rank Cell (Circle) */
+  .sf6-rankings .sf6-rankings-table tbody td[data-label="Rank"] {
+    grid-area: rank;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50% !important;
+    font-size: 1rem;
+    font-weight: 600;
+    background: var(--color-bg-dark);
+    border: 1px solid var(--color-text-secondary); /* Default border */
+    color: var(--color-text-primary); /* Default color */
+    margin: auto;
+  }
+  /* Rank Circle Colors */
+  .sf6-rankings .sf6-rankings-table tbody tr.rank-1 td[data-label="Rank"] {
+    color: var(--color-rank-1-gold);
+    border-color: var(--color-rank-1-gold);
+  }
+  .sf6-rankings .sf6-rankings-table tbody tr.rank-2 td[data-label="Rank"] {
+    color: var(--color-rank-2-silver);
+    border-color: var(--color-rank-2-silver);
+  }
+  .sf6-rankings .sf6-rankings-table tbody tr.rank-3 td[data-label="Rank"] {
+    color: var(--color-rank-3-bronze);
+    border-color: var(--color-rank-3-bronze);
+  }
+  .sf6-rankings .sf6-rankings-table tbody tr.rank-4 td[data-label="Rank"] {
+    color: var(--color-rank-4-cobalt);
+    border-color: var(--color-rank-4-cobalt);
+  }
+  .sf6-rankings .sf6-rankings-table tbody tr.rank-5 td[data-label="Rank"] {
+    color: var(--color-rank-5-graphite);
+    border-color: var(--color-rank-5-graphite);
+  }
+  .sf6-rankings .sf6-rankings-table tbody tr.ranked-6-20 td[data-label="Rank"] {
+    color: var(--color-rank-amethyst-glow);
+    border-color: var(--color-rank-amethyst-glow);
+  }
+
+  /* 7. Player Cell */
+  .sf6-rankings .sf6-rankings-table tbody td[data-label="Player"] {
+    grid-area: player;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-accent-blue);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* 8. Country Cell (Flag + Name) */
+  .sf6-rankings .sf6-rankings-table tbody td[data-label="Country"] {
+    grid-area: country;
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 0.5ch;
+    white-space: nowrap;
+    justify-self: end; /* Push to the right */
+  }
+  /* Show the country-link wrapper */
+  .sf6-rankings .sf6-rankings-table tbody td[data-label="Country"] .country-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5ch;
+    color: var(--color-text-secondary);
+    text-decoration: none;
+  }
+  /* Style the flag */
+  .sf6-rankings .sf6-rankings-table tbody td[data-label="Country"] .country-flag {
+    width: 16px;
+    height: 12px;
+    border-radius: 2px;
+    border: 1px solid var(--color-border);
+  }
+
+  /* 9. Hidden Content (Rating, Main Character) */
+  .sf6-rankings .sf6-rankings-table tbody td[data-label="Main Character"],
+  .sf6-rankings .sf6-rankings-table tbody td[data-label="Rating"],
+  .sf6-rankings .sf6-rankings-table tbody td[data-label="Change"] {
+    display: none; /* Hide by default */
+    grid-area: extra;
+    overflow: hidden; /* Part of the collapse effect */
+  }
+
+  /* 10. Show Hidden Content when .is-open (2-Column Layout) */
+  .sf6-rankings .sf6-rankings-table tbody tr.is-open td[data-label="Main Character"],
+  .sf6-rankings .sf6-rankings-table tbody tr.is-open td[data-label="Rating"] {
+    display: block;
+    font-size: 0.9rem;
+    padding: var(--spacing-md) 0; /* Vertical padding only */
+    border: none;
+    margin-top: var(--spacing-md); /* Space between main row and extra */
+    grid-row: 2; /* Force to 2nd row */
+    grid-area: unset; /* Unset the "extra" area */
+  }
+
+  .sf6-rankings .sf6-rankings-table tbody tr.is-open td[data-label="Main Character"] {
+    grid-column: 1 / span 2; /* Span first 2 columns */
+    padding-left: var(--spacing-md); /* Re-add padding */
+  }
+
+  .sf6-rankings .data-table tbody tr.is-open td[data-label="Rating"] {
+    grid-column: 3; /* Span just column 3 */
+    justify-self: end; /* ALIGNMENT FIX 1 */
+    text-align: left; /* ALIGNMENT FIX 2 (Reset text-align) */
+  }
+
+  /* Add labels back for expanded content */
+  .sf6-rankings .sf6-rankings-table tbody tr.is-open td[data-label="Main Character"]::before,
+  .sf6-rankings .sf6-rankings-table tbody tr.is-open td[data-label="Rating"]::before {
+    display: block; /* Forces value to a new line */
+    content: attr(data-label) ": ";
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    min-width: 0;
+    margin-right: 0;
+    margin-bottom: var(--spacing-xs); /* Space between label and value */
+  }
+
+  /* 11. Rating Value Colors (to match rank) */
+  .sf6-rankings .sf6-rankings-table tbody tr.rank-1 td[data-label="Rating"] {
+    color: var(--color-rank-1-gold);
+  }
+  .sf6-rankings .sf6-rankings-table tbody tr.rank-2 td[data-label="Rating"] {
+    color: var(--color-rank-2-silver);
+  }
+  .sf6-rankings .sf6-rankings-table tbody tr.rank-3 td[data-label="Rating"] {
+    color: var(--color-rank-3-bronze);
+  }
+  .sf6-rankings .sf6-rankings-table tbody tr.rank-4 td[data-label="Rating"] {
+    color: var(--color-rank-4-cobalt);
+  }
+  .sf6-rankings .sf6-rankings-table tbody tr.rank-5 td[data-label="Rating"] {
+    color: var(--color-rank-5-graphite);
+  }
+  .sf6-rankings .sf6-rankings-table tbody tr.ranked-6-20 td[data-label="Rating"] {
+    color: var(--color-rank-amethyst-glow);
+  }
+
+  /* Ensure search input and dropdown have same width */
+  .sf6-rankings .search-wrapper,
+  .sf6-rankings .mobile-sort-wrapper {
+    width: 100% !important;
+  }
+
+  /* Ensure search bar has space below on mobile */
+  .sf6-rankings .search-wrapper {
+    margin-bottom: 0.125rem !important;
+  }
+
+  /* Show and style the dropdown on mobile */
+  .sf6-rankings .mobile-sort-wrapper {
+    display: block !important;
+    margin-bottom: 0.25rem !important; /* Reduced from 0.5rem */
+  }
+
+  .sf6-rankings .search-form__input {
+    width: 100% !important;
+    padding-right: 2rem !important;
+    padding-left: 2rem !important;
+  }
+
+  .sf6-rankings .sf6-rankings-sort-select {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: var(--tap-target-min);
+    padding: var(--spacing-sm) 2rem !important;
+    background-color: var(--color-bg-card-gradient-start);
+    border: 2px solid var(--color-border);
+    border-radius: var(--border-radius);
+    color: var(--color-text-primary);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center !important;
+    text-align-last: center !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8' fill='none'><path d='M1 1.25L6 6.75L11 1.25' stroke='%23A0A0A0' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 12px auto;
+    box-sizing: border-box;
+  }
+
+  /* Center dropdown options and constrain to select width */
+  .sf6-rankings .sf6-rankings-sort-select option {
+    text-align: center !important;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .sf6-rankings .sf6-rankings-sort-select:focus {
+    outline: none;
+    border-color: var(--color-accent-blue);
+    box-shadow: 0 0 0 3px rgba(0, 150, 255, 0.3);
+  }
+
+  /* Remove the old button styles */
+  .sf6-rankings .mobile-sort-controls {
+    display: none !important;
+  }
+}
+
+/* ===========================
+   SMALL MOBILE (max-width: 375px)
+   =========================== */
+
+@media (max-width: 375px) {
+  .sf6-rankings h1 {
+    font-size: 1.5rem;
+  }
+
+  .sf6-rankings #last-updated {
+    font-size: 0.85rem;
+  }
+
+  .sf6-rankings .mobile-sort-controls .btn {
+    font-size: 0.7rem;
+    padding: 0.375rem 0.5rem;
+  }
+
+  /* Even smaller icons on very small screens */
+  .sf6-rankings :is(.player-icon, .character-icon, .country-icon, .flag-icon) {
+    width: 36px;
+    height: 36px;
+  }
+
+  /* Adjust data label width on small screens */
+  .sf6-rankings .sf6-rankings-table tbody td::before {
+    min-width: 80px;
+    font-size: 0.7rem;
+  }
+}
+
+/* ===========================
+   LARGE DESKTOP (min-width: 1440px)
+   =========================== */
+
+@media (min-width: 1440px) {
+  .sf6-rankings h1 {
+    font-size: 2.75rem;
+  }
+
+  .sf6-rankings #last-updated {
+    font-size: 1.2rem;
+  }
+
+  /* Slightly larger icons on large screens */
+  .sf6-rankings :is(.player-icon, .character-icon, .country-icon, .flag-icon) {
+    width: 60px;
+    height: 60px;
+  }
+
+  .sf6-rankings .rank-cell {
+    font-size: 1.15rem;
+  }
+}

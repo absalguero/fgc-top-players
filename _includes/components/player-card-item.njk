@@ -1,0 +1,44 @@
+{% set rank = player.rank %}
+{% set rankClass = "" %}
+{% if rank %}
+  {% if rank >= 6 and rank <= 20 %}
+    {% set rankClass = "ranked-6-20" %}
+  {% else %}
+    {% set rankClass = "rank-" + rank %}
+  {% endif %}
+{% endif %}
+
+<a href="/players/{{ player.slug }}/" class="player-card--redesigned {{ rankClass }}">
+  <h3 class="player-card__name">{{ player.name }}{% if player.englishName %} ({{ player.englishName }}){% endif %}</h3>
+
+  {% if rank %}
+    <div class="player-card__rank-badge">
+      {% if rank == 1 %}
+        <i class="fas fa-trophy trophy-1" aria-label="1st"></i>
+      {% elif rank == 2 %}
+        <i class="fas fa-trophy trophy-2" aria-label="2nd"></i>
+      {% elif rank == 3 %}
+        <i class="fas fa-trophy trophy-3" aria-label="3rd"></i>
+      {% elif rank == 4 %}
+        <i class="fas fa-medal medal-4" aria-label="4th"></i>
+      {% endif %}
+      #{{ rank }}
+    </div>
+  {% endif %}
+
+  <div class="player-card__info">
+    {% if player.mainCharacter %}
+      <div class="player-card__info-item">
+        <i class="fas fa-user-ninja" aria-hidden="true"></i>
+        <span>{{ player.mainCharacter }}</span>
+      </div>
+    {% endif %}
+
+    {% if player.country %}
+      <div class="player-card__info-item">
+        <img src="/images/flags/{{ player.country | lower }}.png" alt="{{ player.country }}" class="player-card__flag">
+        <span>{{ player.country }}</span>
+      </div>
+    {% endif %}
+  </div>
+</a>

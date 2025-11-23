@@ -1,0 +1,620 @@
+/* ============================
+   Event Results Page (/tournaments/slug/)
+   ============================ */
+
+/* 1) Page Layout */
+body.page-event .content {
+  max-width: 100%;
+  padding: 0;
+}
+
+/* ============================
+   2) Sticky Header (Consolidated)
+   ============================ */
+
+.event-header-group {
+  background: var(--color-bg-dark);
+}
+
+/*
+ * 1. The main container is sticky and full-width.
+ */
+.header-sticky-container {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  padding-left: var(--spacing-lg);
+  padding-right: var(--spacing-lg);
+  border-bottom: 1px solid var(--color-border);
+  background: none;
+  backdrop-filter: none;
+}
+
+/* This rule replaces all other .header-sticky-container::before rules */
+.header-sticky-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--spacing-lg);
+  right: var(--spacing-lg);
+  pointer-events: none;
+  z-index: 0;
+
+  /* --- FIX: Set to none to remove transparency --- */
+  background: none;
+  backdrop-filter: none;
+}
+
+/*
+ * 3. The header content itself.
+ */
+.event-header {
+  width: 100%;
+  max-width: 1200px;
+  padding: var(--spacing-md) 0; /* Vertical padding, no horizontal */
+  position: relative;
+  z-index: 1; /* Sits on top of the pseudo-element */
+  border: 0;
+  background-clip: padding-box;
+
+  /* Flex layout for image + text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  background: var(--color-bg-light); /* Default background */
+}
+
+/*
+ * 4. Header Internals (Image, Text)
+ */
+.event-image-container {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 120px;
+  border-radius: var(--border-radius);
+  background: var(--color-bg-dark);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), var(--bg-image-url);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--spacing-sm);
+  overflow: hidden;
+}
+
+.event-header__image {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
+}
+
+.event-header__details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  min-width: 0;
+  align-items: center;
+  text-align: center;
+}
+
+.event-header__details h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  color: var(--color-text-primary);
+  text-wrap: balance;
+}
+
+.event-header__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  justify-content: center;
+}
+
+.event-header__meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.event-header__meta .fas {
+  color: var(--color-accent-blue);
+  width: 1.2em;
+  text-align: center;
+}
+
+/*
+ * 5. Header Tier Styling
+ */
+.event-header::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0; /* top:0; right:auto; bottom:0; left:0 */
+  width: 4px;
+  background: transparent;
+  pointer-events: none;
+  z-index: 1; /* <-- 1. ADDED THIS LINE */
+}
+
+/* 2. ADDED THE `, var(--color-bg-light)` TO EACH OF THESE 5 RULES */
+.event-header--s-plus {
+  background: linear-gradient(90deg, rgba(255, 193, 7, 0.25) 0%, rgba(255, 193, 7, 0.08) 100%), var(--color-bg-light);
+}
+
+.event-header--s-plus::before {
+  background: var(--color-rank-1-gold);
+}
+
+.event-header--s {
+  background: linear-gradient(90deg, rgba(188, 198, 204, 0.22) 0%, rgba(188, 198, 204, 0.08) 100%), var(--color-bg-light);
+}
+
+.event-header--s::before {
+  background: var(--color-rank-2-silver);
+}
+
+.event-header--a {
+  background: linear-gradient(90deg, rgba(205, 127, 50, 0.22) 0%, rgba(205, 127, 50, 0.08) 100%), var(--color-bg-light);
+}
+
+.event-header--a::before {
+  background: var(--color-rank-3-bronze);
+}
+
+.event-header--b {
+  background: linear-gradient(90deg, rgba(58, 94, 141, 0.22) 0%, rgba(58, 94, 141, 0.08) 100%), var(--color-bg-light);
+}
+
+.event-header--b::before {
+  background: var(--color-rank-4-cobalt);
+}
+
+.event-header--c {
+  background: linear-gradient(90deg, rgba(102, 114, 128, 0.18) 0%, rgba(102, 114, 128, 0.06) 100%), var(--color-bg-light);
+}
+
+.event-header--c::before {
+  background: var(--color-rank-5-graphite);
+}
+
+/* 4) Results Grid */
+.results-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-lg) var(--spacing-lg) 0;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-md);
+}
+
+.back-button-container {
+  text-align: center;
+  margin: 1rem 0 1rem 0;
+}
+
+/* 5) Result Card */
+.result-card {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  background: var(--color-bg-light);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  border-left-width: 4px;
+  border-left-color: transparent;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.result-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-accent-blue);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 6) Card Internals */
+.result-card__finish {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text-secondary);
+  background: var(--color-bg-dark);
+  border-right: 1px solid var(--color-border);
+  padding: var(--spacing-md);
+  text-align: center;
+  transition: color 0.2s ease-in-out;
+}
+
+.result-card__finish .fas {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.result-card__player {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm);
+  min-width: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.result-card__player:hover {
+  text-decoration: none;
+}
+
+.result-card__player-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--spacing-sm);
+  min-width: 0;
+  width: 100%;
+}
+
+.result-card__player-info--text-only {
+  justify-content: flex-start;
+}
+
+.player-info__text-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.4rem;
+  flex-wrap: nowrap;
+  font-size: 0.95rem;
+  font-weight: 600;
+  min-width: 0;
+  flex: 1 1 auto;
+  color: var(--color-text-primary); /* <-- 1. Set default to primary text color */
+}
+
+/* 2. NEW: Only make names inside a link blue */
+a.result-card__player .player-info__text-container {
+  color: var(--color-accent-blue);
+}
+
+/* 3. FIX: Only apply hover effect to the link */
+a.result-card__player:hover .player-info__text-container {
+  color: var(--color-accent-blue-light);
+}
+
+.page-event .result-card__player:hover .rank-badge {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.08), 0 2px 6px rgba(0, 0, 0, 0.25);
+  filter: brightness(1.05);
+}
+
+/* 6a) Player name handling — single-line fade OR 2-line clamp */
+.result-card .player-info__text-container {
+  min-width: 0;
+}
+
+.player-name {
+  display: inline-block;
+  flex: 0 1 auto;
+  min-width: 0;
+  max-width: 100%;
+  line-height: 1.2;
+  color: currentColor;
+}
+
+/* Single-word: one line + soft fade */
+.player-name--fade {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.player-name--fade::after {
+  display: none;
+}
+
+/* Two+ words: allow wrap, clamp to 2 lines */
+.player-name--wrap2 {
+  white-space: normal;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  max-height: calc(1.2em * 2);
+}
+
+/* --- Rank Badge Styling --- */
+.rank-badge {
+  display: inline-block;
+  width: fit-content;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  line-height: 1.3;
+  transition: all 0.2s ease;
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--color-text-secondary);
+  flex-shrink: 0;
+}
+
+.rank-badge.rank-badge-1 {
+  background: var(--color-rank-1-gold);
+  color: #000;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+.rank-badge.rank-badge-2 {
+  background: var(--color-rank-2-silver);
+  color: #000;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+.rank-badge.rank-badge-3 {
+  background: var(--color-rank-3-bronze);
+  color: #000;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+.rank-badge.rank-badge-4 {
+  background: var(--color-rank-4-cobalt);
+  color: var(--color-text-primary);
+}
+
+.rank-badge.rank-badge-5 {
+  background: var(--color-rank-5-graphite);
+  color: var(--color-text-primary);
+}
+
+.rank-badge.rank-badge-6-20 {
+  background: var(--color-rank-amethyst-dark, var(--color-rank-amethyst-glow));
+  color: var(--color-text-primary);
+}
+
+/* --- Trophy/Medal Icons --- */
+.trophy-1 {
+  color: var(--color-rank-1-gold);
+}
+
+.trophy-2 {
+  color: var(--color-rank-2-silver);
+}
+
+.trophy-3 {
+  color: var(--color-rank-3-bronze);
+}
+
+.medal-4 {
+  color: var(--color-rank-4-cobalt);
+}
+
+/* 7) Player Rank Styling (Cards) */
+.result-card.rank-1,
+.result-card.rank-2,
+.result-card.rank-3,
+.result-card.rank-4 {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.1), var(--color-bg-light) 70%);
+}
+
+.result-card.rank-1 {
+  border-left-color: var(--color-rank-1-gold);
+}
+
+.result-card.rank-2 {
+  border-left-color: var(--color-rank-2-silver);
+}
+
+.result-card.rank-3 {
+  border-left-color: var(--color-rank-3-bronze);
+}
+
+.result-card.rank-4 {
+  border-left-color: var(--color-rank-4-cobalt);
+}
+
+.result-card.rank-5 {
+  border-left-color: var(--color-rank-5-graphite);
+}
+
+.result-card.rank-6-20 {
+  border-left-color: var(--color-rank-amethyst-dark, var(--color-rank-amethyst-glow));
+}
+
+/* 8) Finish Styling (Top 16) */
+.result-card.finish-style-1 {
+  border-color: var(--color-rank-1-gold);
+  background: linear-gradient(145deg, rgba(255, 193, 7, 0.2), var(--color-bg-light) 70%);
+}
+
+.result-card.finish-style-1:hover {
+  box-shadow: 0 0 15px 4px rgba(255, 193, 7, 0.5);
+}
+
+.result-card.finish-style-2 {
+  border-color: var(--color-rank-2-silver);
+  background: linear-gradient(145deg, rgba(192, 192, 192, 0.2), var(--color-bg-light) 70%);
+}
+
+.result-card.finish-style-2:hover {
+  box-shadow: 0 0 15px 4px rgba(188, 198, 204, 0.4);
+}
+
+.result-card.finish-style-3 {
+  border-color: var(--color-rank-3-bronze);
+  background: linear-gradient(145deg, rgba(205, 127, 50, 0.2), var(--color-bg-light) 70%);
+}
+
+.result-card.finish-style-3:hover {
+  box-shadow: 0 0 15px 4px rgba(205, 127, 50, 0.4);
+}
+
+.result-card.finish-style-4 {
+  border-color: var(--color-rank-4-cobalt);
+  background: linear-gradient(145deg, rgba(58, 94, 141, 0.2), var(--color-bg-light) 70%);
+}
+
+.result-card.finish-style-4 .result-card__finish {
+  color: var(--color-rank-4-cobalt);
+}
+
+.result-card.finish-style-4:hover {
+  box-shadow: 0 0 15px 4px rgba(58, 94, 141, 0.4);
+}
+
+.result-card.finish-style-top8 {
+  border-left-color: var(--color-rank-4-cobalt);
+}
+
+.result-card.finish-style-top8 .result-card__finish {
+  color: var(--color-rank-4-cobalt);
+}
+
+.result-card.finish-style-top8:hover {
+  border-color: var(--color-rank-4-cobalt);
+  box-shadow: 0 0 15px 4px rgba(58, 94, 141, 0.4);
+}
+
+.result-card.finish-style-top16 {
+  border-left-color: var(--color-rank-5-graphite);
+}
+
+.result-card.finish-style-top16 .result-card__finish {
+  color: var(--color-rank-5-graphite);
+}
+
+.result-card.finish-style-top16:hover {
+  border-color: var(--color-rank-5-graphite);
+  box-shadow: 0 0 15px 4px rgba(102, 114, 128, 0.4);
+}
+
+/* 8a) Rank halos on player icons (Top 20) */
+
+
+/* 9) Responsive */
+@media (max-width: 1100px) {
+  .results-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .results-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .event-header__details h1 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Stack the header vertically on small screens */
+  .event-header {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+
+  .event-image-container {
+    height: 100px;
+    width: 150px;
+    margin: 0 auto;
+  }
+
+  .event-header__details {
+    text-align: center;
+    align-items: center;
+  }
+
+  .event-header__meta {
+    justify-content: center;
+  }
+
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .result-card {
+    grid-template-columns: 60px 1fr;
+  }
+
+  .result-card__finish {
+    font-size: 1rem;
+  }
+
+  .player-info__text-container {
+    font-size: 0.95rem;
+  }
+}
+
+/* === Make the sticky wrapper gutters 100% transparent (no blur/overlay) === */
+.page-event .event-header-group,
+.page-event .header-sticky-container {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+
+/* Kill any overlay/pseudo that could be painting the haze */
+.page-event .header-sticky-container::before,
+.page-event .header-sticky-container::after {
+  content: none !important;
+  background: none !important;
+  backdrop-filter: none !important;
+}
+
+/* Keep header width/position exactly as-is; only the gutters are transparent */
+.page-event .event-header {
+  /* no width or padding changes here */
+  position: relative;
+  z-index: 1; /* stay above the now-transparent wrapper */
+}
+
+/* Optional: prevent hover flicker in the transparent gutters */
+.page-event .header-sticky-container {
+  pointer-events: none;
+}
+
+.page-event .event-header {
+  pointer-events: auto;
+}
+
+.page-event .event-header__actions {
+  margin-top: var(--spacing-sm);
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+/* Hide actions container when button is not visible */
+.page-event .event-header__actions:has(> [style*="display:none"]),
+.page-event .event-header__actions:has(> [style*="display: none"]) {
+  display: none;
+}
+
+/* Slightly widen the hit area without altering your global btn */
+.page-event .event-header__actions .btn {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* If the header gets cramped on narrow screens, stack nicely */
+@media (max-width: 600px) {
+  .page-event .event-header__actions {
+    justify-content: center;
+  }
+}

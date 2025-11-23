@@ -1,0 +1,24 @@
+/* /css/_page-home.css */
+
+/* Styles for the main heading on the home page */
+.page-home h1 {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  font-size: 2.5rem;
+}
+
+/* Grid container for news article cards on the home page */
+.page-home .home-news-list {
+  display: grid;
+  gap: calc(var(--spacing-lg) / 4);
+  grid-template-columns: 1fr;
+  margin-bottom: 0;
+}
+
+/* Mobile landscape: 2-column grid for news cards */
+@media (max-width: 767px) and (orientation: landscape) {
+  .page-home .home-news-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+  }
+}

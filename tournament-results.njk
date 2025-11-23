@@ -1,0 +1,417 @@
+---
+title: "Tournament Results Archive"
+bodyClass: "page-tournament-results"
+pagination:
+  data: tournaments.events
+  size: 15
+  alias: pageEvents
+permalink: "/tournament-results/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
+eleventyNavigation:
+  key: Tournament Results
+  parent: Tournaments
+  order: 11
+  iconClass: "fas fa-clipboard-list"
+---
+
+{% extends "layout.njk" %}
+
+{# --- <title> --- #}
+{% block title %}Street Fighter 6 Tournament Results Archive | FGC Top Players{% endblock %}
+
+{# --- Meta description (tight, keyworded) --- #}
+{% block meta_description %}
+<meta name="description" content="Explore the Street Fighter 6 tournament results archive: official standings, podium finishers, and final brackets from Evo, Combo Breaker, Capcom Pro Tour, and more. Filter by year and rated tier." />
+{% endblock %}
+
+{# --- Canonical + robots + prev/next for paginated pages (used by infinite scroll) --- #}
+{% block head_extra %}
+  {# Always canonicalize to page 1 to avoid duplicate content with infinite scroll pages #}
+  <link rel="canonical" href="{{ site.url }}/tournament-results/">
+
+  {% if pagination.href.previous %}
+    <link rel="prev" href="{{ pagination.href.previous }}">
+  {% endif %}
+  {% if pagination.href.next %}
+    <link rel="next" href="{{ pagination.href.next }}">
+  {% endif %}
+
+  {# De-index paginated pages beyond page 1 #}
+  {% if pagination.pageNumber and pagination.pageNumber > 0 %}
+    <meta name="robots" content="noindex,follow">
+  {% endif %}
+
+  {# Open Graph / Twitter #}
+  <meta property="og:title" content="Street Fighter 6 Tournament Results Archive | FGC Top Players">
+  <meta property="og:description" content="Browse Street Fighter 6 tournament results, podium finishers, and final brackets. Filter by year and rated tier.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}/images/sf6-banner-background.jpg">
+  <meta property="og:site_name" content="FGC Top Players">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Street Fighter 6 Tournament Results Archive | FGC Top Players">
+  <meta name="twitter:description" content="Official Street Fighter 6 results from majors worldwide. See winners, podiums, and brackets.">
+  <meta name="twitter:image" content="{{ site.url }}/images/sf6-banner-background.jpg">
+
+  <script>
+    (function normalizeArchiveQueryParam() {
+      if (typeof URLSearchParams === "undefined") return;
+      var nextParam = "trs";
+      var legacyParam = "q";
+      try {
+        var params = new URLSearchParams(window.location.search || "");
+        if (params.has(legacyParam) && !params.has(nextParam)) {
+          var legacyValue = params.get(legacyParam);
+          if (legacyValue) {
+            params.set(nextParam, legacyValue);
+          }
+          params.delete(legacyParam);
+          var newQuery = params.toString();
+          var hash = window.location.hash || "";
+          var newUrl = window.location.pathname + (newQuery ? ("?" + newQuery) : "") + hash;
+          window.history.replaceState({}, "", newUrl);
+        }
+      } catch (err) {}
+    })();
+  </script>
+{% endblock %}
+
+{# --- Structured data: CollectionPage + ItemList (events on this page) + BreadcrumbList --- #}
+{% block structured_data %}
+{% set eventsOnPage = pageEvents or [] %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "SF6 Tournament Results Archive",
+  "url": "{{ site.url }}{{ page.url }}",
+  "description": "Street Fighter 6 tournament results with podium finishers and links to final brackets."
+}
+</script>
+
+{% if eventsOnPage and eventsOnPage | length > 0 %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Street Fighter 6 Tournaments (This Page)",
+  "itemListOrder": "http://schema.org/ItemListOrderDescending",
+  "itemListElement": [
+    {% for evt in eventsOnPage %}
+    {
+      "@type": "ListItem",
+      "position": {{ loop.index }},
+      "item": {
+        "@type": "WebPage",
+        "name": {{ evt.name | dump }},
+        "url": "{{ site.url }}/tournaments/{{ evt.slug }}/"
+      }
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/" },
+    { "@type": "ListItem", "position": 2, "name": "Tournament Results", "item": "{{ site.url }}{{ page.url }}" }
+  ]
+}
+</script>
+{% endblock %}
+
+{% block content %}
+<div class="content-container page-tournament-results">
+  {% include "banner.njk" %}
+
+  <h1 id="archive-h1">SF6 Tournament Results Archive</h1>
+  <p class="intro-text">
+    Dive into the archive of competitive Street Fighter&nbsp;6 tournament results.
+    Explore official standings, top 3 finishers, and final brackets from majors worldwide,
+    including Evo, Combo Breaker, and the Capcom Pro Tour. Use the filters to browse by year
+    and spotlight rated events.
+  </p>
+
+  {# ===== Compute available years from ALL tournaments (server-side) ===== #}
+  {% set _all = tournaments.events or [] %}
+  {% set years = _all | extractYears %}
+
+  {# ===== Inline Controls (centered labels) ===== #}
+  <div class="archive-controls sticky-controls">
+    <button class="filter-toggle-btn" id="filter-toggle-btn-tournament" type="button" aria-expanded="false">
+      <span>Search & Filter</span>
+      <i class="fas fa-chevron-down toggle-icon"></i>
+    </button>
+    <form class="ac-inline" id="archive-filters-form" onsubmit="return false">
+      <div class="ac-inline__row">
+        <div class="ac-field ac-field--search">
+          <label for="search-input" class="ac-label">Search</label>
+          <div class="ac-search search-wrapper">
+            <button type="button" class="search-submit-btn" id="search-submit-btn" aria-label="Search">
+              <i class="fas fa-search"></i>
+            </button>
+            <input
+              type="text"
+              id="search-input"
+              class="ac-input search-form__input"
+              placeholder="Search Tournaments..."
+              autocomplete="off"
+            >
+            <button class="ac-clear search-clear-btn" id="search-clear-btn" aria-label="Clear search">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="ac-field select-wrap">
+          <label for="year-filter" class="ac-label">Year</label>
+          <select id="year-filter" class="ac-select ac-select--center">
+            <option value="">All Years</option>
+            {% for y in years %}
+              <option value="{{ y }}">{{ y }}</option>
+            {% endfor %}
+          </select>
+        </div>
+
+        <div class="ac-field ac-field--toggle">
+          <label for="rated-only-filter" class="ac-label">Rated Only</label>
+          <div class="ac-toggle-wrap">
+            <input type="checkbox" id="rated-only-filter" class="styled-checkbox">
+            <label for="rated-only-filter" class="styled-checkbox__label">Show rated events only</label>
+          </div>
+        </div>
+
+        <div class="ac-field ac-field--sort select-wrap">
+          <label for="sort-by" class="ac-label">Sort</label>
+          <select id="sort-by" class="ac-select ac-select--center">
+            <option value="date-desc">Date (Newest First)</option>
+            <option value="date-asc">Date (Oldest First)</option>
+            <option value="rating-desc">Tier (High to Low)</option>
+            <option value="rating-asc">Tier (Low to High)</option>
+            <option value="name-asc">Name (A–Z)</option>
+          </select>
+        </div>
+
+        <div class="ac-field ac-field--reset">
+          <label class="ac-label ac-label--spacer" aria-hidden="true">Reset</label>
+          <button id="reset-filters-btn" class="btn btn--primary btn--small" type="button">
+            Reset
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div id="results-count" class="results-count" style="margin: .5rem auto;"></div>
+
+  {# ===== Archive Grid (Paginated data chunk + Infinite Scroll Container) ===== #}
+  <div id="archive-list" data-infinite-scroll-container data-page-size="{{ pagination.size }}">
+    {% set events = pageEvents or [] %}
+
+    {% if events | length > 0 %}
+      {% for evt in events %}
+
+        {# ---- Tier → visual class (server-side, with archive gate) ---- #}
+        {% set tier = (evt.Tier | default('')) | trim | upper %}
+        {% set isRatedTier = tier in ['S+', 'S', 'A', 'B'] %}
+        {% set isArchived = evt.isArchived %}
+
+        {% set tier_mod = '' %}
+        {% if isRatedTier and not isArchived %}
+          {% if tier == 'S+' %}
+            {% set tier_mod = 't-event-card--s-plus' %}
+          {% elif tier == 'S' %}
+            {% set tier_mod = 't-event-card--s' %}
+          {% elif tier == 'A' %}
+            {% set tier_mod = 't-event-card--a' %}
+          {% elif tier == 'B' %}
+            {% set tier_mod = 't-event-card--b' %}
+          {% endif %}
+        {% endif %}
+
+        {# ---- Top 3 ---- #}
+        {% set results = evt.results or [] %}
+        {% set top = [] %}
+        {% for r in results %}
+          {% if ('' ~ (r.Finish or '')) in ['1','2','3'] %}
+            {% set top = top.concat([r]) %}
+          {% endif %}
+        {% endfor %}
+
+        {# ---- Slug ---- #}
+        {% set slug = evt.slug %}
+
+        <article
+          class="t-event-card {{ tier_mod }}{% if isArchived %} is-archived{% endif %}"
+          role="link"
+          tabindex="0"
+          aria-label="View {{ evt.name }} results"
+          data-slug="{{ slug }}"
+          data-date="{{ evt.date | default('') }}"
+          data-name="{{ evt.name | escape }}"
+          data-tier="{{ tier }}"
+          data-archived="{% if isArchived %}1{% else %}0{% endif %}"
+        >
+          <div class="t-card__body">
+            {% set formattedDate = 'TBD' %}
+            {% if evt.date %}
+              {% set parts = evt.date | split('-') %}
+              {% if parts | length == 3 %}
+                {% set yearPart = parts[0] %}
+                {% set monthPart = parts[1] | int %}
+                {% set dayPart = parts[2] | int %}
+                {% set monthNames = [
+                  'January', 'February', 'March', 'April', 'May', 'June',
+                  'July', 'August', 'September', 'October', 'November', 'December'
+                ] %}
+                {% if monthPart >= 1 and monthPart <= 12 %}
+                  {% set formattedDate = monthNames[monthPart - 1] ~ ' ' ~ dayPart ~ ', ' ~ yearPart %}
+                {% else %}
+                  {% set formattedDate = evt.date %}
+                {% endif %}
+              {% else %}
+                {% set formattedDate = evt.date %}
+              {% endif %}
+            {% endif %}
+
+            <header class="t-card__head">
+              <h3 class="t-card__title">
+                <a href="/tournaments/{{ slug }}/">{{ evt.name }}</a>
+              </h3>
+              <time class="t-card__date">{{ formattedDate }}</time>
+            </header>
+
+            {% set entrants = evt.Entrants or evt.entrants %}
+            <div class="t-card__meta">
+              {% if entrants %}
+                <span class="t-card__chip">
+                  <i class="fas fa-users" aria-hidden="true"></i>
+                  <span>{{ entrants }} Entrants</span>
+                </span>
+              {% endif %}
+              {% if isArchived %}
+                <span class="t-card__chip t-card__chip--archived">
+                  <i class="fas fa-archive" aria-hidden="true"></i>
+                  <span>Archived</span>
+                </span>
+              {% elseif isRatedTier %}
+                <span class="t-card__chip t-card__chip--rated">
+                  <i class="fas fa-star" aria-hidden="true"></i>
+                  <span>Rated Event</span>
+                </span>
+              {% endif %}
+            </div>
+
+            {% if top | length %}
+              <ol class="t-card__podium-list">
+                {% for r in top %}
+                  {% set pid = r['Player ID'] %}
+                  {% set profile = (collections.players | default([])) | find('id', pid) %}
+                  {% if not profile and playerProfiles %}
+                    {% set profile = (playerProfiles | default([])) | find('name', r.Player) %}
+                  {% endif %}
+                  {% if not profile and playerProfiles and pid %}
+                    {% set profile = (playerProfiles | default([])) | find('slug', pid) %}
+                  {% endif %}
+
+                  {% set displayName = r.Player %}
+                  {% if profile and profile.englishName and profile.englishName | trim %}
+                    {% set displayName = r.Player ~ ' (' ~ profile.englishName ~ ')' %}
+                  {% endif %}
+
+                  {% set linkSlug = profile and profile.slug %}
+                  {% if not linkSlug and pid %}
+                    {% set linkSlug = pid %}
+                  {% endif %}
+                  {% if not linkSlug %}
+                    {% set linkSlug = r.Player | slug %}
+                  {% endif %}
+                  {% set finish = '' ~ (r.Finish or '') %}
+
+                  {% set place_label = '' %}
+                  {% if finish == '1' %}
+                    {% set place_label = '1st' %}
+                  {% elif finish == '2' %}
+                    {% set place_label = '2nd' %}
+                  {% elif finish == '3' %}
+                    {% set place_label = '3rd' %}
+                  {% else %}
+                    {% set place_label = finish ~ 'th' %}
+                  {% endif %}
+
+                  {% set rank_val = profile and (profile.rank or profile.Rank or profile.data.rank or profile.data.Rank) or 0 %}
+                  {% set rank_num = rank_val | int %}
+                  {% set rank_badge_class = "" %}
+                  {% if rank_num >= 1 and rank_num <= 4 %}
+                    {% set rank_badge_class = "rank-badge-" + (rank_num | string) %}
+                  {% elseif rank_num == 5 %}
+                    {% set rank_badge_class = "rank-badge-5" %}
+                  {% elseif rank_num >= 6 and rank_num <= 20 %}
+                    {% set rank_badge_class = "rank-badge-6-20" %}
+                  {% endif %}
+
+                  <li class="t-podium-list__item">
+                    {# Trophy icon instead of ordinal text, but keep ordinal for accessibility #}
+                    <span class="t-podium-list__place" aria-label="{{ place_label }}">
+                      <i class="fas fa-trophy" aria-hidden="true"></i>
+                    </span>
+
+                    <div class="t-podium-list__name-wrap">
+                      {% if linkSlug %}
+                        <a class="t-podium-list__name" href="/players/{{ linkSlug }}/">{{ displayName }}</a>
+                      {% else %}
+                        <span class="t-podium-list__name">{{ displayName }}</span>
+                      {% endif %}
+
+                      {% if rank_num >= 1 and rank_num <= 20 %}
+                        <span class="rank-badge {{ rank_badge_class }}">#{{ rank_num }}</span>
+                      {% endif %}
+                    </div>
+                  </li>
+                {% endfor %}
+              </ol>
+            {% else %}
+              <p class="t-card__no-results">Top 3 results coming soon.</p>
+            {% endif %}
+
+            <div class="t-card__cta">
+              <a href="/tournaments/{{ slug }}/" class="btn btn--primary btn--small">View Rated Results</a>
+            </div>
+          </div>
+        </article>
+
+      {% endfor %}
+    {% endif %}
+  </div>
+
+  {# Shared no-results message + reset button (same UX as Upcoming Rated Tournaments) #}
+  <div
+    id="no-results-message"
+    class="no-results-message{% if events | length == 0 %} no-results--visible{% endif %}"
+  >
+    <h2>No Tournaments Found</h2>
+    <p>Try adjusting your search or filter criteria.</p>
+    <button id="clear-filters-btn" class="btn btn--primary">Clear All Filters</button>
+  </div>
+
+  {# Invisible "next page" link for infinite scroll loader #}
+  {% if pagination.href.next %}
+    <a href="{{ pagination.href.next }}" data-next-page-link hidden rel="next">Next</a>
+  {% endif %}
+
+  <div id="sentinel" class="sentinel"></div>
+</div>
+
+{# Available years for the client script to hydrate filters #}
+<script id="available-years" type="application/json">{{ years | dump | safe }}</script>
+
+{# Archive behavior (filtering, infinite scroll, etc.) #}
+<script src="/js/tournamentArchive.js" defer></script>
+
+{% endblock %}

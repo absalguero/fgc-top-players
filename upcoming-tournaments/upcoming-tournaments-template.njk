@@ -1,0 +1,361 @@
+---
+pagination:
+  data: allUpcomingTournaments
+  size: 1
+  alias: tournament
+  resolve: values
+permalink: "/upcoming-tournaments/{{ tournament.slug }}/"
+navHighlight: "Upcoming Rated Tournaments"
+---
+
+{% extends "layout.njk" %}
+{% set bodyClass = "page-tournament-detail page-event" %}
+
+{% block title %}{{ tournament.name }} | Details, Registration & Travel Info | FGC Top Players{% endblock %}
+
+{% block meta_description %}
+  <meta name="description" content="Get full details for {{ tournament.name }} on {{ tournament.dates }}. See which top-ranked players are attending, venue information, and travel tips for {{ tournament.location }}.">
+{% endblock %}
+
+{% block head %}
+  {# ----- Canonical + robots ----- #}
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+
+  {# ----- OG / Twitter ----- #}
+  {% set ogTitle = tournament.name ~ ' — Details, Registration & Travel Info' %}
+  {% set ogDesc = 'Get full details for ' ~ tournament.name ~ ' on ' ~ tournament.dates ~ '. See which top-ranked players are attending, venue information, and travel tips for ' ~ tournament.location ~ '.' %}
+  {% set ogImage = site.url ~ '/images/events/' ~ tournament.slug ~ '.png' %}
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:title" content="{{ ogTitle }}">
+  <meta property="og:description" content="{{ ogDesc }}">
+  <meta property="og:image" content="{{ ogImage }}">
+  <meta property="og:site_name" content="FGC Top Players">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ ogTitle }}">
+  <meta name="twitter:description" content="{{ ogDesc }}">
+  <meta name="twitter:image" content="{{ ogImage }}">
+
+  {# ----- Safe address parts for JSON-LD (supports "City, Country" and "City, Region, Country") ----- #}
+  {% set addressParts = (tournament.location or '') | split(',') %}
+  {% set partsLen = addressParts.length %}
+  {% set city = "" %}
+  {% set region = "" %}
+  {% set country = "" %}
+  {% if partsLen >= 1 %}{% set city = addressParts[0] | trim %}{% endif %}
+  {% if partsLen == 2 %}{% set country = addressParts[1] | trim %}{% endif %}
+  {% if partsLen >= 3 %}
+    {% set region = addressParts[partsLen - 2] | trim %}
+    {% set country = addressParts[partsLen - 1] | trim %}
+  {% endif %}
+
+  {# ----- Breadcrumbs JSON-LD ----- #}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Upcoming Tournaments",
+        "item": "{{ site.url }}/upcoming-tournaments/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "{{ tournament.name }}",
+        "item": "{{ site.url }}{{ page.url }}"
+      }
+    ]
+  }
+  </script>
+
+  {# ----- Event JSON-LD (safer fields & conditionals) ----- #}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "{{ tournament.name }}",
+    "url": "{{ site.url }}{{ page.url }}",
+    "startDate": "{{ tournament.startDate }}",
+    "endDate": "{{ tournament.endDate }}",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "image": ["{{ ogImage }}"],
+    "description": "{{ (tournament.description or 'A premier fighting game tournament.') | striptags | trim }}",
+    "location": {
+      "@type": "Place",
+      "name": "{{ tournament.venueName or tournament.location }}",
+      "address": {
+        "@type": "PostalAddress"{% if city %},
+        "addressLocality": "{{ city }}"{% endif %}{% if region and region != city %},
+        "addressRegion": "{{ region }}"{% endif %}{% if country %},
+        "addressCountry": "{{ country }}"{% endif %}
+      }{% if tournament.latitude and tournament.longitude %},
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": {{ tournament.latitude }},
+        "longitude": {{ tournament.longitude }}
+      }{% endif %}
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "{{ tournament.organizer or 'FGC Top Players' }}",
+      "url": "{{ tournament.organizerUrl or tournament.url or (site.url ~ page.url) }}"
+    }{% if tournament.notablePlayers and tournament.notablePlayers.length > 0 %},
+    "performer": [
+      {% for player in tournament.notablePlayers %}
+        { "@type": "Person", "name": "{{ (player.Player or player.name or player) | trim }}" }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ]{% endif %}{% if tournament.url %},
+    "offers": {
+      "@type": "Offer",
+      "url": "{{ tournament.url }}",
+      "availability": "https://schema.org/InStock",
+      "priceCurrency": "USD"{% if tournament.price %},
+      "price": "{{ tournament.price }}"{% endif %}{% if tournament.startDate %},
+      "availabilityStarts": "{{ tournament.startDate }}"{% endif %}
+    }{% endif %}{% set first = true %}{% if tournament.url or tournament.bracketUrl or tournament.twitter or tournament.streamLink %},
+    "sameAs": [
+      {% for link in [tournament.url, tournament.bracketUrl, tournament.twitter, tournament.streamLink] %}
+        {% if link %}
+          {% if not first %},{% endif %}"{{ link }}"{% set first = false %}
+        {% endif %}
+      {% endfor %}
+    ]{% endif %},
+    "subjectOf": { "@type": "WebPage", "@id": "{{ site.url }}{{ page.url }}" }
+  }
+  </script>
+{% endblock %}
+
+{% block content %}
+{% include "banner.njk" %}
+<div class="content-container">
+
+  <div class="event-header-group">
+    <div class="header-sticky-container">
+      <div class="event-header {% if tournament.tier %}event-header--{{ tournament.tier | lower | replace("+", "-plus") }}{% endif %}">
+        <div class="event-header__details">
+          <h1 class="text-center">{{ tournament.name }}</h1>
+          <div class="event-header__meta">
+            <span class="meta-item--date"><i class="fas fa-calendar-alt"></i> {{ tournament.dates }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-action-hub">
+    <a href="{{ tournament.url }}" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+      <i class="fas fa-external-link-alt"></i> View Event Page & Register
+    </a>
+    {% if tournament.streamLink %}
+      <a href="{{ tournament.streamLink }}" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-twitch"></i> Watch Live Stream
+      </a>
+    {% endif %}
+    {% if tournament.scheduleLink %}
+      <a href="{{ tournament.scheduleLink }}" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-clock"></i> View Full Schedule
+      </a>
+    {% endif %}
+  </div>
+
+  <div class="overview-content">
+    <div class="info-section">
+      <h2 class="section-title text-center">Tournament Information</h2>
+
+      {# OPTION A: explicit order for a 2×2 grid
+         Row 1: Location | Venue
+         Row 2: Game     | Prize Pool #}
+      <div class="info-cards-grid">
+        {# 1) LOCATION — top-left #}
+        <div class="info-card">
+          <div class="info-card__header">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3 class="text-center">Location</h3>
+          </div>
+          <p class="info-card__value">{{ tournament.location }}</p>
+        </div>
+
+        {# 2) VENUE — top-right #}
+        <div class="info-card">
+          <div class="info-card__header">
+            <i class="fas fa-landmark"></i>
+            <h3 class="text-center">Venue</h3>
+          </div>
+          <p class="info-card__value">{{ tournament.venueName or "To be announced" }}</p>
+        </div>
+
+        {# 3) GAME — bottom-left #}
+        <div class="info-card">
+          <div class="info-card__header">
+            <i class="fas fa-gamepad"></i>
+            <h3 class="text-center">Game</h3>
+          </div>
+          <p class="info-card__value">{{ tournament.game }}</p>
+        </div>
+
+        {# 4) PRIZE POOL — bottom-right #}
+        <div class="info-card">
+          <div class="info-card__header">
+            <i class="fas fa-trophy"></i>
+            <h3 class="text-center">Prize Pool</h3>
+          </div>
+          <p class="info-card__value">{{ tournament.prizes }}</p>
+        </div>
+      </div>
+    </div>
+
+    {% if tournament.description %}
+    <div class="about-section">
+      <h2 class="section-title text-center">About This Event</h2>
+      <div class="about-content">
+        {{ tournament.description | nl2p | safe }}
+      </div>
+    </div>
+    {% endif %}
+
+    <div class="travel-section">
+      <h2 class="section-title text-center">Plan Your Trip</h2>
+      <div class="travel-links-grid">
+        <a href="https://www.google.com/maps/search/?api=1&query={{ tournament.location | url_encode }}" class="travel-link-card" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-map-marked-alt"></i>
+          <span>View Map</span>
+        </a>
+        <a href="https://www.google.com/flights?q=flights+to+{{ tournament.location | url_encode }}" class="travel-link-card" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-plane-departure"></i>
+          <span>Find Flights</span>
+        </a>
+        <a href="https://www.google.com/search?q=hotels+near+{{ tournament.location | url_encode }}" class="travel-link-card" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-bed"></i>
+          <span>Find Hotels</span>
+        </a>
+      </div>
+    </div>
+
+    {% if tournament.notablePlayers and tournament.notablePlayers.length > 0 %}
+      <div class="notable-players-section">
+        <h2 class="section-title text-center">Top Players Attending</h2>
+        <div class="notable-players-grid">
+          {% for item in tournament.notablePlayers %}
+            {# Extract display name #}
+            {% if item and (item.Player or item.name) %}
+              {% set raw_name = (item.Player or item.name) | trim %}
+            {% else %}
+              {% set raw_name = (item or '') | trim %}
+            {% endif %}
+
+            {# Drop sponsor prefix "ORG | Name" #}
+            {% set parts = raw_name | split('|') %}
+            {% if parts | length > 1 %}
+              {% set canonical_name = parts[parts | length - 1] | trim %}
+            {% else %}
+              {% set canonical_name = raw_name %}
+            {% endif %}
+            {% set lower_name = canonical_name | lower %}
+
+            {# Scan collections.players case-insensitively #}
+            {% set player_entry = null %}
+            {% for p in collections.players %}
+              {% set dn = (p.data and (p.data.Player or p.data.name)) or (p.Player or p.name) %}
+              {% if dn and (dn | trim | lower) == lower_name %}
+                {% set player_entry = p %}
+              {% endif %}
+            {% endfor %}
+
+            {# Build player data #}
+            {% set pdata = player_entry.data if player_entry and player_entry.data else player_entry %}
+
+            {# Get English name and build display name #}
+            {% set display_name = canonical_name %}
+            {% if pdata and pdata.englishName and pdata.englishName | trim %}
+              {% set display_name = canonical_name ~ ' (' ~ pdata.englishName ~ ')' %}
+            {% endif %}
+
+            {# Get slug #}
+            {% set player_slug = (item and (item.slug or item.Slug)) or (pdata and (pdata.slug or pdata.Slug)) or (canonical_name | slug) %}
+
+            {# Get rank #}
+            {% set rank_num = ((pdata and (pdata.rank or pdata.Rank)) or 0) | int %}
+
+            {# Rank badge class #}
+            {% set badge_class = "" %}
+            {% if rank_num == 1 %}
+              {% set badge_class = "rank-badge-1" %}
+            {% elseif rank_num == 2 %}
+              {% set badge_class = "rank-badge-2" %}
+            {% elseif rank_num == 3 %}
+              {% set badge_class = "rank-badge-3" %}
+            {% elseif rank_num == 4 %}
+              {% set badge_class = "rank-badge-4" %}
+            {% elseif rank_num == 5 %}
+              {% set badge_class = "rank-badge-5" %}
+            {% elseif rank_num >= 6 and rank_num <= 20 %}
+              {% set badge_class = "rank-badge-6-40" %}
+            {% endif %}
+
+            {# Card rank class #}
+            {% set card_class = "" %}
+            {% if rank_num >= 1 and rank_num <= 4 %}
+              {% set card_class = "rank-" + (rank_num | string) %}
+            {% elseif rank_num >= 5 and rank_num <= 20 %}
+              {% set card_class = "ranked-6-40" %}
+            {% endif %}
+
+            {# Linked vs not linked wrapper so we can style names correctly #}
+            {% set has_profile = player_entry and player_slug %}
+            {% if has_profile %}
+              <a class="np-card-link np-card--linked" href="/players/{{ player_slug }}/">
+            {% else %}
+              <div class="np-card-link np-card--nolink">
+            {% endif %}
+                <div class="np-card {{ card_class }}">
+                  <span class="np-name">{{ display_name }}</span>
+                  {% if rank_num > 0 and rank_num <= 20 %}
+                    <span class="rank-badge {{ badge_class }}">#{{ rank_num }}</span>
+                  {% endif %}
+                </div>
+            {% if has_profile %}
+              </a>
+            {% else %}
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{# --- Back to Upcoming Tournaments (bottom affordance) --- #}
+<div class="back-button-container" style="text-align:center; margin: 1.25rem 0 2rem;">
+  <a
+    id="back-to-upcoming"
+    class="btn btn--primary"
+    href="/upcoming-tournaments/"
+    aria-label="Back to Upcoming Tournaments"
+  >
+    <span class="btn__icon">←</span> Back to Upcoming Tournaments
+  </a>
+</div>
+
+<script>
+  (function () {
+    try {
+      var a = document.getElementById('back-to-upcoming');
+      var ref = document.referrer || "";
+      var loc = window.location;
+      var sameOrigin = ref.indexOf(loc.origin) === 0;
+      var path = sameOrigin ? ref.replace(loc.origin, "") : "";
+      if (sameOrigin && /^\/upcoming-tournaments(\/|\/\?|\?|$)/i.test(path)) {
+        a.setAttribute('href', path);
+      }
+    } catch (e) {}
+  })();
+</script>
+{% endblock %}

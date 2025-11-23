@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run build:*)",
+      "Bash(npm run build:eleventy:*)",
+      "Bash(npm run build:eleventy:css:*)",
+      "Bash(npm run:*)",
+      "Bash(node -c:*)",
+      "Bash(cp:*)",
+      "Bash(cat:*)",
+      "Bash(node -e:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

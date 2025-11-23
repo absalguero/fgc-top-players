@@ -1,0 +1,395 @@
+---
+pagination:
+    data: characterAnalytics
+    size: 1
+    alias: character
+permalink: "/characters/{{ character.slug }}/"
+eleventyExcludeFromCollections: true
+navHighlight: "Character Stats"
+eleventyComputed:
+    title: "{{ character.name }} - Street Fighter 6 Tier, Stats, & Matchups"
+---
+
+{%- extends "layout.njk" -%}
+
+{%- block title -%}
+  {{ title }} | FGC Top Players
+{%- endblock -%}
+
+{%- block meta_tags -%}
+  {# Common computed values #}
+  {%- set canonicalUrl = page.url | url | absoluteUrl(site.url) -%}
+  {%- set imgUrl = ("/images/characters/" ~ character.slug ~ ".png") | absoluteUrl(site.url) -%}
+  {%- set metaTitle = (character.name ~ " — SF6 Tier, Matchups & CPV Stats") -%}
+  {%- set metaDesc = ("See " ~ character.name ~ "’s Street Fighter 6 tier, CPV score, matchups, notable players, and competitive analytics from the last 12 months.") -%}
+
+  <link rel="canonical" href="{{ canonicalUrl }}">
+  <meta name="description" content="{{ metaDesc }}">
+
+  {# Optional thin-page guard #}
+  {%- if not character.CPV and not character.statRanks -%}
+    <meta name="robots" content="noindex,follow">
+  {%- endif -%}
+
+  {# Pagination hints in HEAD #}
+  {%- if pagination.href.previous -%}
+    <link rel="prev" href="{{ pagination.href.previous | url | absoluteUrl(site.url) }}">
+  {%- endif -%}
+  {%- if pagination.href.next -%}
+    <link rel="next" href="{{ pagination.href.next | url | absoluteUrl(site.url) }}">
+  {%- endif -%}
+
+  {# Open Graph #}
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ canonicalUrl }}">
+  <meta property="og:title" content="{{ metaTitle }}">
+  <meta property="og:description" content="{{ metaDesc }}">
+  <meta property="og:image" content="{{ imgUrl }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{{ character.name }} — Street Fighter 6 character portrait">
+
+  {# Twitter #}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="{{ canonicalUrl }}">
+  <meta name="twitter:title" content="{{ metaTitle }}">
+  <meta name="twitter:description" content="{{ metaDesc }}">
+  <meta name="twitter:image" content="{{ imgUrl }}">
+
+  {# Optional performance hint #}
+  <link rel="preload" as="image" href="{{ imgUrl }}">
+{%- endblock -%}
+
+{%- block structured_data -%}
+{%- set canonicalUrl = page.url | url | absoluteUrl(site.url) -%}
+{%- set imgUrl = ("/images/characters/" ~ character.slug ~ ".png") | absoluteUrl(site.url) -%}
+{%- set lastMod = (character.updatedAt or site.buildTime) | date("yyyy-LL-dd'T'HH:mmZZ") -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "{{ character.name }} — SF6 Tier, Matchups & CPV",
+  "url": "{{ canonicalUrl }}",
+  "image": "{{ imgUrl }}",
+  "dateModified": "{{ lastMod }}",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "FGC Top Players",
+    "url": "{{ site.url }}"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "{{ character.name }}",
+    "description": {{ (character.overview or "Street Fighter 6 character profile with tier, matchups, and competitive stats.") | dump }}
+  },
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "url": "{{ imgUrl }}",
+    "width": 1200,
+    "height": 630
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"{{ site.url }}"},
+    {"@type":"ListItem","position":2,"name":"Characters","item":"{{ site.url }}/characters/"},
+    {"@type":"ListItem","position":3,"name":"{{ character.name }}","item":"{{ canonicalUrl }}"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Dataset",
+  "name":"{{ character.name }} — SF6 Competitive Snapshot",
+  "description":"CPV, momentum (CMS), popularity, Top-3 Rate (T3R), FGPI average, specialization, and top region for {{ character.name }} based on last-12-months tournament data.",
+  "url":"{{ canonicalUrl }}",
+  "isPartOf": {"@type":"WebSite","name":"FGC Top Players","url":"{{ site.url }}"},
+  "variableMeasured":[
+    {"@type":"PropertyValue","name":"CPV","value": {{ (character.CPV or "null") | dump }}},
+    {"@type":"PropertyValue","name":"CMS","value": {{ (character.CMS or "null") | dump }}},
+    {"@type":"PropertyValue","name":"T3R","value": {{ (character.TWE or "null") | dump }}},
+    {"@type":"PropertyValue","name":"Avg. Player FGPI","value": {{ (character.FGPI or "null") | dump }}},
+    {"@type":"PropertyValue","name":"Tournament Popularity","value": {{ (character.TP or "null") | dump }}},
+    {"@type":"PropertyValue","name":"Performance Floor (CPF)","value": {{ (character.CPF or "null") | dump }}},
+    {"@type":"PropertyValue","name":"Tournament Specialization (TS)","value": {{ (character.TS or "null") | dump }}},
+    {"@type":"PropertyValue","name":"Top Region (RDI)","value": {{ (character.primaryRDI and character.primaryRDI.region) | default("null") | dump }}}
+  ],
+  "license":"{{ ("/terms/") | absoluteUrl(site.url) }}"
+}
+</script>
+{%- endblock -%}
+
+{%- set bodyClass = "page-character-profile" -%}
+
+{%- block content -%}
+
+  <div class="profile-container">
+    {%- include "banner.njk" -%}
+    {%- set tierValue = character.Tier if character.Tier and character.Tier != 'N/A' else null -%}
+    {%- set tierBase = (tierValue | lower | replace('+', 'plus') | replace(' ', '-') | replace('/', '-')) if tierValue else null -%}
+    {%- set tierClass = 'tier-' ~ tierBase if tierBase else 'tier-unknown' -%}
+
+    <header class="profile-header {{ tierClass }}">
+      <h1 class="profile-header__name">{{ character.name }}</h1>
+      <div class="profile-header__rank-badge tier-badge {{ tierClass }}">
+        <span class="rank-badge__label">Tier</span>
+        <span class="rank-badge__number">{{ character.Tier or 'N/A' }}</span>
+      </div>
+    </header>
+
+    <div class="profile-context-note">
+      <i class="fas fa-info-circle" aria-hidden="true"></i> All stats are based on performance in tournaments recorded within the last 12 months.
+    </div>
+
+    <div class="profile-card profile-snapshot-row">
+      <h2 class="profile-card__header">Current Performance Snapshot</h2>
+
+      {%- set stats_to_display = [
+        { key: 'CPV', label: 'Character Performance Viability', tooltip: 'Competitive Performance Viability: The character\'s overall competitive strength.' },
+        { key: 'CMS', label: 'Character Momentum Score', tooltip: 'Character Momentum Score: Measures recent performance trend. Positive means improving.' },
+        { key: 'TP', label: 'Tournament Popularity', tooltip: 'Tournament Popularity: How often this character shows up in rated tournaments. Higher TP means more players are using them.' },
+        { key: 'CPF', label: 'Performance Floor', tooltip: 'Character Performance Floor (CPF): Measures how well a character performs on its worst days. A high CPF indicates a stable pick whose players rarely bomb out of tournaments.' },
+        { key: 'TWE', label: 'T3R', tooltip: 'Top-3 Rate (T3R): Rate of Top-3 finishes.' },
+        { key: 'FGPI', label: 'Avg. Player FGPI', tooltip: 'Average Player FGPI: The average skill rating of players who use this character.' },
+        { key: 'TS', label: 'Tournament Specialization', tooltip: 'Tournament Specialization (TS): Shows whether this character tends to overperform at majors compared to smaller events. Higher TS means they perform better at majors.' },
+        { key: 'primaryRDI', label: 'Top Region', tooltip: 'The character\'s strongest performing region.' }
+      ] -%}
+
+      <div class="stats-grid stats-grid--snapshot">
+        {%- for stat in stats_to_display -%}
+          {%- set stat_value = character[stat.key] -%}
+          {%- if stat.key == 'primaryRDI' and character.primaryRDI and character.primaryRDI.region -%}
+            {%- set stat_value = character.primaryRDI.region -%}
+          {%- elif stat.key == 'primaryRDI' -%}
+            {%- set stat_value = 'N/A' -%}
+          {%- endif -%}
+
+          {# Check if stat is not calculated (null, undefined, empty string, or already N/A) #}
+          {# Preserve numeric 0 as a valid calculated value #}
+          {%- if stat_value is not number and (stat_value == null or stat_value == undefined or stat_value == '' or stat_value == 'N/A') -%}
+            {%- set stat_value = 'N/A' -%}
+          {%- endif -%}
+
+          {%- set statRank = character.statRanks[stat.key] -%}
+          {%- set rankClass = "rank-" + statRank if statRank and statRank <= 5 and stat.key != 'primaryRDI' else "" -%}
+
+          <div class="stat-item {{ rankClass }} {% if stat.key == 'primaryRDI' %}stat-item--rdi{% endif %}">
+            <div class="stat-item__label" data-tooltip="{{ stat.tooltip }}">
+              <span class="stat-item__title-text">{{ stat.label }}</span>
+              <i class="fas fa-info-circle tooltip-icon" aria-hidden="true"></i>
+            </div>
+            <div class="stat-item__value" {% if stat.key == 'CMS' or stat.key == 'TS' %}style="display: flex; align-items: center; justify-content: center; gap: 0.25em;"{% endif %}>
+              {%- if stat.key == 'CMS' and stat_value and stat_value != 'N/A' -%}
+                {%- if stat_value > 0 -%}
+                  <i class="fas fa-arrow-up {{ rankClass }}" {% if not rankClass %}style="color: var(--color-success, #22c55e);"{% endif %} aria-hidden="true"></i>
+                {%- elif stat_value < 0 -%}
+                  <i class="fas fa-arrow-down {{ rankClass }}" {% if not rankClass %}style="color: var(--color-danger, #ef4444);"{% endif %} aria-hidden="true"></i>
+                {%- endif -%}
+              {%- endif -%}
+              {%- if stat.key == 'TS' and stat_value and stat_value != 'N/A' -%}
+                {%- if stat_value > 0 -%}
+                  <i class="fas fa-arrow-up {{ rankClass }}" {% if not rankClass %}style="color: var(--color-success, #22c55e);"{% endif %} aria-hidden="true"></i>
+                {%- elif stat_value < 0 -%}
+                  <i class="fas fa-arrow-down {{ rankClass }}" {% if not rankClass %}style="color: var(--color-danger, #ef4444);"{% endif %} aria-hidden="true"></i>
+                {%- endif -%}
+              {%- endif -%}
+              {%- if stat_value != 'N/A' and stat.key != 'primaryRDI' and stat_value is number -%}
+                {{- stat_value | round(2) -}}
+              {%- else -%}
+                {{- stat_value -}}
+              {%- endif -%}
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+
+    <div class="profile-main-layout">
+      <div class="profile-section profile-section--left-col">
+        <div class="profile-card">
+          <h2 class="profile-card__header">Character Overview</h2>
+
+          {%- if character.overview -%}
+            <p class="character-overview__intro">{{ character.overview }}</p>
+          {%- endif -%}
+
+          <div class="character-meta-row" style="display: flex; flex-direction: column; gap: 0.375rem; align-items: center; margin-bottom: 1rem; font-size: 1rem;">
+            {%- if character.archetype and character.archetype != 'N/A' -%}
+              <div class="character-archetype" style="display: flex; align-items: center; gap: 0.5rem;">
+                <span class="archetype-label" style="font-weight: bold; color: var(--color-text-muted); font-size: 1rem;">Playstyle:</span>
+                <span class="archetype-value" style="font-size: 1rem;">{{ character.archetype }}</span>
+              </div>
+            {%- endif -%}
+
+            {%- if character.execution -%}
+              <div class="character-execution" style="display: flex; align-items: center; gap: 0.5rem;">
+                <span class="archetype-label" style="font-weight: bold; color: var(--color-text-muted); font-size: 1rem;">Execution:</span>
+                <span class="archetype-value" style="font-size: 1rem;
+                  {% if character.execution == 'Very High' or character.execution == 'High' %}color: var(--color-danger, #ef4444);
+                  {% elif character.execution == 'Low' %}color: var(--color-success, #22c55e);
+                  {% endif %}
+                  font-weight: bold;">
+                  {{ character.execution }}
+                </span>
+              </div>
+            {%- endif -%}
+          </div>
+
+          {%- if character.playstyle_summary -%}
+            <p class="character-overview__summary">{{ character.playstyle_summary }}</p>
+          {%- endif -%}
+
+          <div class="character-traits" style="margin-top: 1.5rem;">
+            {%- if character.strengths and character.strengths.length > 0 -%}
+              <div class="trait-section trait-section--strengths">
+                <h3><i class="fas fa-plus-circle" aria-hidden="true"></i> Key Strengths</h3>
+                <ul>
+                  {%- for item in character.strengths -%}
+                    <li><strong>{{ item.title }}:</strong> {{ item.description }}</li>
+                  {%- endfor -%}
+                </ul>
+              </div>
+            {%- endif -%}
+
+            {%- if character.weaknesses and character.weaknesses.length > 0 -%}
+              <div class="trait-section trait-section--weaknesses">
+                <h3><i class="fas fa-minus-circle" aria-hidden="true"></i> Key Weaknesses</h3>
+                <ul>
+                  {%- for item in character.weaknesses -%}
+                    <li><strong>{{ item.title }}:</strong> {{ item.description }}</li>
+                  {%- endfor -%}
+                </ul>
+              </div>
+            {%- endif -%}
+
+            {%- if character.counter_strategy and character.counter_strategy.indexOf('not yet available') == -1 -%}
+              <div class="trait-section trait-section--counter">
+                <h3><i class="fas fa-shield-alt" aria-hidden="true"></i> Counter-Strategy</h3>
+                <p style="margin: 0; padding-left: 1.25rem;">{{ character.counter_strategy }}</p>
+              </div>
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-section profile-section--right-col">
+        {%- if character.notablePlayers and character.notablePlayers.length > 0 -%}
+<div class="profile-card">
+  <h2 class="profile-card__header">Top {{ character.name }} Players</h2>
+          <div class="notable-players-list" style="display: flex; flex-direction: column; gap: 0.75rem;">
+            {%- for player in character.notablePlayers -%}
+              {% set playerRankClass = "" %}
+              {% if player.rank <= 5 %}
+                {% set playerRankClass = "rank-" + player.rank %}
+              {% elif player.rank > 5 and player.rank <= 20 %}
+                {% set playerRankClass = "ranked-6-20" %}
+              {% endif %}
+              <a
+                href="/players/{{ player.slug }}/"
+                class="spotlight-card--horizontal {{ playerRankClass }}"
+                style="background: var(--color-surface-1); border-radius: 6px; padding: 0.5rem 1rem; text-decoration: none; display: flex; align-items: center; justify-content: space-between;"
+              >
+                <div class="spotlight-group-player" style="display: flex; align-items: center; gap: 0.75rem;">
+                  <div class="spotlight-text-content" style="display: flex; flex-direction: column; align-items: flex-start;">
+                    <div class="signature-performance__name" style="font-weight: bold;">{{ player.name }}{% if player.englishName %} ({{ player.englishName }}){% endif %}</div>
+                    <div class="spotlight-rank-country" style="display: flex; align-items: center; gap: 0.5rem;">
+                      <span class="spotlight-rank">#{{ player.rank }}</span>
+                      {%- if player.country and player.country != 'N/A' -%}
+                        <img
+  src="/images/flags/{{ player.country | lower }}.png"
+  alt="{{ player.country }}"
+  class="spotlight-flag-icon"
+>
+                      {%- endif -%}
+                    </div>
+                  </div>
+                </div>
+                <i class="fas fa-chevron-right result-row__icon" aria-hidden="true"></i>
+              </a>
+            {%- endfor -%}
+          </div>
+        </div>
+        {%- endif -%}
+
+        {%- if character.radar_stats -%}
+        <div class="profile-card profile-card--chart">
+          <h2 class="profile-card__header profile-card__header--chart">Combat Profile</h2>
+          <div class="chart-container">
+            <canvas id="radarChart" aria-label="{{ character.name }} combat profile"></canvas>
+          </div>
+        </div>
+        {%- endif -%}
+        
+        <div class="profile-card">
+          <h2 class="profile-card__header">Key Matchups</h2>
+          <div class="matchup-container">
+            {%- if character.favorable and character.favorable.length > 0 and character.favorable[0] != 'N/A' -%}
+            <div class="trait-section trait-section--strengths">
+              <h3 style="justify-content: center;"><i class="fas fa-plus-circle" aria-hidden="true"></i> Favorable</h3>
+              <div class="matchup-grid">
+                {%- for matchup in character.favorable -%}
+                {% set matchupSlug = matchup | slugify %}
+                {% if matchupSlug == 'a-k-i' %}{% set matchupSlug = 'aki' %}{% endif %}
+                <a href="/characters/{{ matchupSlug }}/" class="matchup-item" title="{{ matchup }}">
+                  <span class="matchup-item__name">{{ matchup }}</span>
+                </a>
+                {%- endfor -%}
+              </div>
+            </div>
+            {%- endif -%}
+    
+            {%- if character.unfavorable and character.unfavorable.length > 0 and character.unfavorable[0] != 'N/A' -%}
+            <div class="trait-section trait-section--weaknesses">
+              <h3 style="justify-content: center;"><i class="fas fa-minus-circle" aria-hidden="true"></i> Unfavorable</h3>
+              <div class="matchup-grid">
+                {%- for matchup in character.unfavorable -%}
+                {% set matchupSlug = matchup | slugify %}
+                {% if matchupSlug == 'a-k-i' %}{% set matchupSlug = 'aki' %}{% endif %}
+                <a href="/characters/{{ matchupSlug }}/" class="matchup-item" title="{{ matchup }}">
+                  <span class="matchup-item__name">{{ matchup }}</span>
+                </a>
+                {%- endfor -%}
+              </div>
+            </div>
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="profile-pagination">
+      {% if pagination.href.previous %}
+        {% set prevChar = characterAnalytics[pagination.pageNumber - 1] %}
+        <a href="{{ pagination.href.previous }}" class="btn btn--primary" rel="prev">
+          &laquo; {{ prevChar.name if prevChar else 'Previous Character' }}
+        </a>
+      {% endif %}
+
+      {% if pagination.href.next %}
+        {% set nextChar = characterAnalytics[pagination.pageNumber + 1] %}
+        <a href="{{ pagination.href.next }}" class="btn btn--primary" style="margin-left: auto;" rel="next">
+          {{ nextChar.name if nextChar else 'Next Character' }} &raquo;
+        </a>
+      {% endif %}
+    </div>
+  </div>
+
+  {%- block scripts -%}
+  <script>
+    const characterData = {{ character | dump | safe }};
+  </script>
+
+  {%- if character.radar_stats -%}
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="/js/characterGraph.js" defer></script>
+  {%- endif -%}
+  {%- endblock -%}
+{%- endblock -%}

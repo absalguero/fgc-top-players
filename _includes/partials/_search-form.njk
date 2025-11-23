@@ -1,0 +1,31 @@
+{% set clearId = inputId ~ "-clear-btn" %}
+{% set submitId = inputId ~ "-submit-btn" %}
+<form role="search" class="search-form">
+  <label for="{{ inputId }}" class="sr-only">Search Site</label>
+  <div class="search-wrapper">
+    <input
+      type="text"
+      id="{{ inputId }}"
+      class="search-form__input"
+      placeholder="Search Site..."
+      aria-label="Search site"
+      autocomplete="off"
+    >
+    <button
+      type="button"
+      class="search-clear-btn"
+      id="{{ clearId }}"
+      aria-label="Clear search"
+    >
+      <i class="fas fa-times"></i>
+    </button>
+    <button
+      type="submit"
+      class="search-submit-btn"
+      id="{{ submitId }}"
+      aria-label="Search"
+    >
+      <i class="fas fa-search"></i>
+    </button>
+  </div>
+</form>

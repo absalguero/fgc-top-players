@@ -1,0 +1,223 @@
+/* =========================
+   Article Page (Scoped)
+   ========================= */
+
+/* Title + body spacing around meta block */
+.page-article .article-post__title {
+  margin-bottom: 0;        /* all spacing handled by .article-post__meta */
+}
+
+.page-article .article-post__body {
+  margin-top: 0;           /* all spacing handled by .article-post__meta */
+}
+
+/* Meta block with centered blue lines and symmetric spacing */
+.page-article .article-post__meta {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;             /* space between date and tags */
+  margin: 1rem 0;          /* equal space above/below whole block */
+  padding: 0.75rem 0 1.25rem; /* equal space between lines and content */
+  border: 0;
+}
+
+.page-article .article-post__meta::before,
+.page-article .article-post__meta::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 2px;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    var(--color-accent-blue),
+    transparent
+  );
+  pointer-events: none;
+}
+
+.page-article .article-post__meta::before {
+  top: 0;
+}
+
+.page-article .article-post__meta::after {
+  bottom: 0;
+}
+
+/* Date + tags inside meta */
+.page-article .article-post__date,
+.page-article .article-post__tags {
+  margin: 0 !important; /* Force the override */
+  font-size: 0.9rem;
+}
+
+.page-article .article-post__date {
+  color: var(--color-text-secondary);
+}
+
+.page-article .article-post__tags {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 !important;
+}
+
+.page-article .article-post__meta .fas {
+  color: var(--color-accent-blue);
+  font-size: 0.9em;
+}
+
+/* Tag pills (article context) */
+.page-article .article-post__tag {
+  background: rgba(0, 150, 255, 0.12);
+  border: 1px solid rgba(0, 150, 255, 0.25);
+  color: rgba(100, 180, 255, 0.95);
+  padding: 5px 12px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.page-article .article-post__tag:hover {
+  background: rgba(0, 150, 255, 0.2);
+  border-color: rgba(0, 150, 255, 0.4);
+  color: rgba(120, 200, 255, 1);
+  box-shadow: 0 0 8px rgba(0, 150, 255, 0.15);
+  transform: translateY(-1px);
+}
+
+.page-article .article-post__tag:active {
+  transform: translateY(0);
+  box-shadow: 0 0 4px rgba(0, 150, 255, 0.1);
+}
+
+/* Headings/body inside article content */
+.page-article .article-post__body :is(h2, h3) {
+  text-align: left;
+}
+
+.page-article .article-post__body {
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+.page-article .article-post__body h2 {
+  font-size: 1.6rem;
+}
+
+.page-article .article-post__body h3 {
+  font-size: 1.35rem;
+}
+
+/* Legacy float image helper */
+.page-article .article-post__image-float {
+  float: right;
+  max-width: 210px;
+  width: 100%;
+  margin: 0 0 1rem 1.5rem;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--color-surface-4);
+}
+
+.page-article .article-post__image-float img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Figure caption */
+.page-article .article-post__body figure figcaption {
+  text-align: center;
+  margin-top: 0.5rem;
+  color: var(--color-text-secondary);
+}
+
+.page-article .article-post__body figure figcaption a {
+  color: var(--color-accent-blue);
+}
+
+.page-article .article-post__body figure figcaption a:hover {
+  color: var(--color-accent-blue-dark);
+  text-decoration: underline;
+}
+
+/* Share block + divider */
+.page-article .article-post__footer .hr-gradient {
+  margin: 0 0 1rem 0;
+}
+
+.page-article .article-post__share {
+  position: relative;
+  margin: 0 0 1rem;
+  padding-top: 0.75rem;
+  text-align: center;      /* keeps label + icons centered */
+}
+
+.page-article .article-post__share::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 2px;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    var(--color-accent-blue),
+    transparent
+  );
+}
+
+.page-article .article-post__share-label {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.page-article .article-post__share-buttons {
+  display: flex;
+  justify-content: center; /* centers the social icons */
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Copy button hover (targets a global component) */
+.page-article .article-post__share-buttons :is(.btn-social--copy:hover, .share-btn--copy:hover) {
+  background: var(--color-accent-blue);
+  color: #fff;
+  border-color: var(--color-accent-blue);
+  box-shadow: 0 6px 16px rgba(0, 150, 255, 0.35);
+}
+
+/* Back nav button centered */
+.page-article .article-post__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: -0.75rem;
+}
+
+/* Lists inside articles */
+.page-article .article-post__body li {
+  color: var(--color-text-primary);
+}

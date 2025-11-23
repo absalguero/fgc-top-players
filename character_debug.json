@@ -1,0 +1,144 @@
+{
+  "name": "Marisa",
+  "slug": "marisa",
+  "hasData": true,
+  "CPV": 2.33,
+  "CMS": -0.08,
+  "CPF": 65.92,
+  "FGPI": 5.02,
+  "TP": 23,
+  "TWE": 2.27,
+  "historicalTWE": 0,
+  "AF3": 29,
+  "AF12": 16.44,
+  "V": 0,
+  "T3": 0.02564102564102564,
+  "T8": 0.1282051282051282,
+  "T16": 0.22564102564102562,
+  "displayV": 0,
+  "displayT3": 0.02564102564102564,
+  "displayT8": 0.1282051282051282,
+  "displayT16": 0.22564102564102562,
+  "MajorV": 0,
+  "MajorT3": 0,
+  "MajorT8": 0,
+  "MajorT16": 0,
+  "TS": 0.67,
+  "tsComponents": {
+    "perfS_plus": 0,
+    "perfS": 0.0326,
+    "perfA": 0,
+    "perfB": 0.0277,
+    "rawTS": 0.0025,
+    "highTierPlayerCount": 6,
+    "playerMultiplier": 0.8115,
+    "tierCountMultiplier": 0.3333,
+    "confidenceMultiplier": 0.2705
+  },
+  "primaryRDI": {
+    "region": "Europe",
+    "score": 0
+  },
+  "primaryRDI_score": 0,
+  "Tier": "D",
+  "overview": "A slow but devastating bruiser who dominates trades and corner situations.",
+  "playstyle_summary": "Marisa uses armored charge moves and high-damage punishes to impose fear and corner carry.",
+  "archetype": "Power / Brawler",
+  "strengths": [
+    {
+      "title": "Armor Tools",
+      "description": "Can challenge pressure effectively."
+    },
+    {
+      "title": "Burst Damage",
+      "description": "Top 3 in raw output."
+    },
+    {
+      "title": "Corner Pressure",
+      "description": "Near checkmate with Drive Rush."
+    }
+  ],
+  "weaknesses": [
+    {
+      "title": "Mobility",
+      "description": "Easily zoned or kited."
+    },
+    {
+      "title": "Predictable Entry",
+      "description": "Armored charges can be baited."
+    },
+    {
+      "title": "Execution",
+      "description": "Timing-sensitive confirms."
+    }
+  ],
+  "radar_stats": {
+    "Damage": 5,
+    "Health": 4,
+    "Mobility": 1,
+    "Zoning": 1,
+    "Mix-up": 2
+  },
+  "topPlayer": {
+    "name": "Ninja Crash",
+    "rank": 388,
+    "slug": "ninja-crash",
+    "country": "PR",
+    "photoUrl": "/images/players/ninja-crash.png",
+    "initials": "NC"
+  },
+  "favorable": [
+    "Jamie",
+    "Lily"
+  ],
+  "unfavorable": [
+    "JP",
+    "Kimberly"
+  ],
+  "counter_strategy": "Answer armor with throws and multihit. Do not challenge charge. Force block, walk throw, and tax her gauge. On whiffed heavy specials take full punish counter and set okizeme.",
+  "notablePlayers": [
+    {
+      "name": "Ninja Crash",
+      "englishName": null,
+      "rank": 388,
+      "slug": "ninja-crash",
+      "country": "PR",
+      "photoUrl": "/images/players/ninja-crash.png"
+    },
+    {
+      "name": "fhASSA",
+      "englishName": null,
+      "rank": 445,
+      "slug": "fhassa",
+      "country": "DE",
+      "photoUrl": "/images/players/fhassa.png"
+    },
+    {
+      "name": "Vatistah",
+      "englishName": null,
+      "rank": 480,
+      "slug": "vatistah",
+      "country": "CA",
+      "photoUrl": "/images/players/vatistah.png"
+    }
+  ],
+  "primaryRDI_count": 3,
+  "statRanks": {
+    "CPV": null,
+    "CMS": null,
+    "TWE": null,
+    "FGPI": null,
+    "CPF": null,
+    "TS": null,
+    "TP": null,
+    "primaryRDI": null,
+    "AF12": null,
+    "AF3": null
+  },
+  "leaderRank": {
+    "victories": null,
+    "top3": null,
+    "top8": null,
+    "top16": null
+  }
+}

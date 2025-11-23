@@ -1,0 +1,196 @@
+---
+title: Street Fighter 6 Global Player Rankings
+permalink: "/street-fighter-6-rankings/"
+bodyClass: "sf6-rankings"
+eleventyNavigation:
+  key: SF6 Rankings
+  order: 2
+  iconClass: "fas fa-trophy"
+---
+
+{% extends "layout.njk" %}
+
+{# --- Page <title> --- #}
+{% block title %}Street Fighter 6 Global Player Rankings | FGC Top Players{% endblock %}
+
+{# --- Meta description --- #}
+{% block meta_description %}
+<meta name="description" content="The definitive Street Fighter 6 global player rankings, updated regularly. See who's on top and track rises & falls across the SF6 pro scene." />
+{% endblock %}
+
+{# --- Page-specific social copy (OG/Twitter) --- #}
+{% block og_title %}Street Fighter 6 Global Player Rankings — Updated Regularly{% endblock %}
+{% block og_description %}Live SF6 power rankings based on offline results and recent performance. Track pros like MenaRD, Punk, Tokido, and more.{% endblock %}
+{% block twitter_title %}Street Fighter 6 Global Player Rankings — Updated{% endblock %}
+{% block twitter_description %}Who’s on top right now? See the latest Street Fighter 6 rankings and track rises & falls by player, country, and main.{% endblock %}
+
+{# --- Optional: page-specific social image & keep canonical explicit --- #}
+{% block canonical %}
+<link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+{% endblock %}
+
+{% block head_extra %}
+  <meta property="og:image" content="{{ site.url }}/images/og/sf6-rankings.png">
+  <meta name="twitter:image" content="{{ site.url }}/images/og/sf6-rankings.png">
+{% endblock %}
+
+{# --- Structured data: CollectionPage + ItemList + BreadcrumbList --- #}
+{% block structured_data %}
+{% set totalPlayers = rankings.players | length %}
+{% if totalPlayers and totalPlayers > 0 %}
+  {% set limit = 50 %}
+  {% if totalPlayers < limit %}
+    {% set limit = totalPlayers %}
+  {% endif %}
+{% endif %}
+
+{# derive a reasonable dateModified: prefer rankings.lastUpdated, else fallback to the latest news date if available #}
+{% set dateMod = rankings.lastUpdated %}
+{% if not dateMod and collections.news and (collections.news | length) > 0 %}
+  {% set dateMod = collections.news[0].date | date('yyyy-LL-dd') %}
+{% endif %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Street Fighter 6 Global Player Rankings",
+  "url": "{{ site.url }}{{ page.url }}",
+  "description": "Continuously updated Street Fighter 6 player rankings based on offline results and recent performance.",
+  {% if dateMod %}"dateModified": "{{ dateMod }}",{% endif %}
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "FGC Top Players",
+    "url": "{{ site.url }}/"
+  }
+}
+</script>
+
+{% if totalPlayers and totalPlayers > 0 %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Street Fighter 6 Global Player Rankings",
+  "itemListOrder": "http://schema.org/ItemListOrderAscending",
+  "itemListElement": [
+    {% for player in rankings.players %}
+    {% if loop.index <= limit %}
+    {
+      "@type": "ListItem",
+      "position": {{ loop.index }},
+      "item": {
+        "@type": "Person",
+        "name": {{ player.Player | dump }}{% if player.Country %},
+        "nationality": {{ player.Country | dump }}{% endif %}{% if player.Character %},
+        "description": {{ ("Main: " ~ player.Character) | dump }}{% endif %}
+      }
+    }{% if loop.index < limit and loop.index < (rankings.players | length) %},{% endif %}
+    {% endif %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ site.url }}/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "SF6 Rankings",
+      "item": "{{ site.url }}{{ page.url }}"
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+{% block content %}
+<div class="content-container content-container--wide">
+  {% include "banner.njk" %}
+
+  <h1>Street Fighter 6 Global Rankings</h1>
+  <h2 id="last-updated" class="last-updated">Last Updated: Loading...</h2>
+
+  <p class="intro-text intro-text--compact">
+    The definitive Street Fighter 6 global player rankings, updated regularly.
+    Search and sort by rank, player, rating, country, or main character.
+    These standings combine offline tournament results and recent performance to show who is on top right now.
+    For methodology details, see <a href="/ranking-system/">Ranking System Explained</a>.
+  </p>
+
+  <div class="controls-container">
+  <div class="search-wrapper">
+    <input
+      type="text"
+      id="player-search-input"
+      class="search-form__input"
+      placeholder="Search Rankings..."
+      autocomplete="off"
+    >
+    <button
+      class="search-clear-btn"
+      id="player-search-clear-btn"
+      aria-label="Clear search"
+    >
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+
+  <div class="mobile-sort-wrapper">
+    <label for="mobile-sort-select" class="sr-only">Sort by:</label>
+    <select id="mobile-sort-select" class="sf6-rankings-sort-select">
+      <option value="0-asc" data-type="number">Rank (High to Low)</option>
+      <option value="0-desc" data-type="number">Rank (Low to High)</option>
+      <option value="2-asc" data-type="string">Player (A-Z)</option>
+      <option value="4-asc" data-type="string">Country (A-Z)</option>
+      <option value="3-asc" data-type="string">Character (A-Z)</option>
+    </select>
+  </div>
+</div>
+
+  <div class="table-wrapper">
+    <table class="data-table sf6-rankings-table" id="rankings-table">
+      <caption class="sr-only">Street Fighter 6 Global Player Rankings — sortable table</caption>
+      <thead>
+        <tr>
+          <th data-column-index="0" data-type="number" data-default-sort="asc" class="sorted asc reverse-arrow">
+            <span>Rank <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg></span>
+          </th>
+          <th data-column-index="1" data-type="number" data-default-sort="desc">
+            <span>Change <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg></span>
+          </th>
+          <th data-column-index="2" data-type="string" data-default-sort="asc" class="reverse-arrow">
+            <span>Player <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg></span>
+          </th>
+          <th data-column-index="3" data-type="string" data-default-sort="asc" class="col-character reverse-arrow">
+            <span>Main<br>Character <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg></span>
+          </th>
+          <th data-column-index="4" data-type="string" data-default-sort="asc" class="col-country reverse-arrow">
+            <span>Country <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg></span>
+          </th>
+          <th data-column-index="5" data-type="number" data-default-sort="desc">
+            <span>Rating <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg></span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="/js/sf6Rankings.js" defer></script>
+{% endblock %}
