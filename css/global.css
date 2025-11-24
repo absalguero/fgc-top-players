@@ -846,6 +846,11 @@ ol li {
 }
 
 @media (max-width: 767px) {
+  .site-search-panel {
+    align-items: flex-start !important;
+    padding: 0.5rem !important;
+  }
+
   .profile-pagination { flex-direction: column; }
   .profile-pagination a { width: 100%; justify-content: center; }
 }
@@ -2954,6 +2959,11 @@ h2.profile-card__header {
 
 /* Mobile-only responsive styles (tablet and desktop use original layout) */
 @media (max-width: 767px) {
+  .site-search-panel {
+    align-items: flex-start !important;
+    padding: 0.5rem !important;
+  }
+
   .home-card__content {
     padding: 1rem;
     text-align: center; /* Center all content including date */
@@ -4588,6 +4598,11 @@ table {
 }
 
 @media (max-width: 767px) {
+  .site-search-panel {
+    align-items: flex-start !important;
+    padding: 0.5rem !important;
+  }
+
   table {
     font-size: 0.875rem;
   }
@@ -4620,6 +4635,11 @@ table {
 
 /* Better spacing on mobile */
 @media (max-width: 767px) {
+  .site-search-panel {
+    align-items: flex-start !important;
+    padding: 0.5rem !important;
+  }
+
   h1 {
     margin-bottom: var(--spacing-md);
   }
@@ -5396,6 +5416,11 @@ body.mobile-nav-open {
 
 /* Mobile: Keep date and location left-aligned */
 @media (max-width: 767px) {
+  .site-search-panel {
+    align-items: flex-start !important;
+    padding: 0.5rem !important;
+  }
+
   .sidebar-event-card__info {
     align-items: flex-start !important;
   }
@@ -5471,4 +5496,32 @@ body.mobile-nav-open {
   /* Matches the margin-bottom of your .sidebar-event-card (var(--spacing-md) = 1rem) */
   margin-bottom: var(--spacing-md);
   min-height: 250px;
+}
+/* Mobile fix for site search panel header visibility */
+@media (max-width: 767px) {
+  .site-search-panel {
+    align-items: flex-start !important;
+    padding: 0.5rem !important;
+  }
+
+  .profile-card--search {
+    max-height: 90dvh !important;
+    height: 90dvh;
+    margin: 1rem;
+  }
+  
+  .profile-card--search .profile-card__header {
+    flex-shrink: 0 !important;
+    position: sticky !important;
+    top: 0;
+    z-index: 10;
+    min-height: 56px !important;
+  }
+  
+  .profile-card--search .profile-card__body {
+    flex: 1 1 auto !important;
+    min-height: 0 !important;
+    max-height: calc(90dvh - 70px) !important;
+    overflow-y: auto !important;
+  }
 }
