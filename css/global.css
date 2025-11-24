@@ -4048,6 +4048,7 @@ a[data-next-page-link][hidden] {
 .profile-card--search {
   width: min(60rem, 100%);
   max-height: calc(100vh - clamp(3rem, 8vw, 6rem));
+  max-height: calc(100dvh - 2rem); /* Dynamic viewport for mobile browsers */
   background: linear-gradient(165deg, rgba(32, 33, 45, 0.96), rgba(18, 19, 28, 0.94));
   border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: var(--border-radius);
