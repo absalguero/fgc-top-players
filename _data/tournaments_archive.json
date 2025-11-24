@@ -53398,5 +53398,655 @@
       }
     ],
     "isArchived": false
+  },
+  "knox-out-25": {
+    "name": "KNOX-OUT '25",
+    "date": "2025-11-22",
+    "slug": "knox-out-25",
+    "Tier": "B",
+    "Entrants": "73",
+    "results": [
+      {
+        "Player": "CamPaine",
+        "Player ID": "121e8abf",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "1",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Zombieguts13",
+        "Player ID": "f8b23c47",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "2",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "MissedInput.exe",
+        "Player ID": "1c933043",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "3",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "harms",
+        "Player ID": "08e8bae1",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "4",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "ArtificialHolly",
+        "Player ID": "e917d9bf",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "5",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Steven2brazu",
+        "Player ID": "e9d3b69f",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "5",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Sturnz",
+        "Player ID": "dd0a8994",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "7",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "ShadePrince",
+        "Player ID": "717e4094",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "7",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Chudzilla",
+        "Player ID": "34b85049",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "9",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mason_The_Ogre",
+        "Player ID": "7de57759",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "9",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "chrisymandias",
+        "Player ID": "22031965",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "9",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Deznere",
+        "Player ID": "f63cd4ca",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "9",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Archway",
+        "Player ID": "d67c9e92",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "13",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Alex_dotdot",
+        "Player ID": "042696c6",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "13",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Yugo",
+        "Player ID": "39675ec5",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "13",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "DA MASKED KUSKO",
+        "Player ID": "160f64b4",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "13",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "swaffmoney",
+        "Player ID": "a378003d",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "17",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ryle",
+        "Player ID": "c1efce40",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "17",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Check this out!",
+        "Player ID": "ddf83b91",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "17",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Burboovas",
+        "Player ID": "26d5fef3",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "17",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Swept",
+        "Player ID": "b1260681",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "17",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "GalaxyStar",
+        "Player ID": "b79537a2",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "17",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "ImJustAdamant",
+        "Player ID": "8a439196",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "17",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "ONIONBUBS",
+        "Player ID": "c529e714",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "17",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Demonic",
+        "Player ID": "f84e92e6",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "25",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Lookeyus",
+        "Player ID": "6a5c38a6",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "25",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Aberration",
+        "Player ID": "26216965",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "25",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Daddy Thiccems",
+        "Player ID": "bd42131a",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "25",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "mothie",
+        "Player ID": "3077a263",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "25",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Toph The Goat",
+        "Player ID": "06de6219",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "25",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dr.Long Slap",
+        "Player ID": "6c31d87b",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "25",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Easter",
+        "Player ID": "e07dbca9",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "25",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "2000",
+        "Player ID": "65fe2ec1",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "33",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Azura",
+        "Player ID": "58b3c34f",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "33",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Lucifer CZ",
+        "Player ID": "8fcb8e3b",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "33",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "ThatPolishGirl",
+        "Player ID": "34df722b",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "33",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Nixy",
+        "Player ID": "6efabc7c",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "33",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "StarWagi",
+        "Player ID": "ce0739db",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "33",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Poss_uwu",
+        "Player ID": "c3e78c7b",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "33",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Foodstamps",
+        "Player ID": "9850fbe9",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "33",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "dartorias",
+        "Player ID": "5e204812",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "33",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "JohnnyTheFlash",
+        "Player ID": "7df30f65",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "33",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Couch",
+        "Player ID": "27bf1ace",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "33",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Good King Onyx",
+        "Player ID": "8a493dc6",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "33",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Sozan",
+        "Player ID": "3778081d",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "33",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Unknown",
+        "Player ID": "45f189a0",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "33",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "DietClubSoda",
+        "Player ID": "ab678b12",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "33",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dirty Llama",
+        "Player ID": "ee89dfd5",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "33",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Envoy",
+        "Player ID": "6c75abca",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "49",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "AceUnlimited",
+        "Player ID": "16772b52",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "49",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cheesus",
+        "Player ID": "13370beb",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "49",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Frisboy",
+        "Player ID": "767e1680",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "49",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "BlaiseNova",
+        "Player ID": "76b13133",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "49",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Keeda",
+        "Player ID": "87f51375",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "49",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Amo",
+        "Player ID": "836cf7e4",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "49",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Frosty",
+        "Player ID": "d6000975",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "49",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Hynlan",
+        "Player ID": "66b5e365",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "49",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pazure",
+        "Player ID": "e78e08b9",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "49",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "KakSoup Aes_Thetics",
+        "Player ID": "4c91389f",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "49",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Coughing guy",
+        "Player ID": "860d942b",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "49",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "YourPolorized",
+        "Player ID": "d0680af6",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "49",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "TheBestinWestPalmBeach",
+        "Player ID": "6b25891f",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "49",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "REM",
+        "Player ID": "e7a3da29",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "49",
+        "Entrants": "73",
+        "Tier": "B"
+      },
+      {
+        "Player": "Naked Couch",
+        "Player ID": "8c5cce84",
+        "Event": "KNOX-OUT '25",
+        "Event ID": "knox-out-25",
+        "Date": "2025-11-23",
+        "Finish": "49",
+        "Entrants": "73",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
   }
 }
