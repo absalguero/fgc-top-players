@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fgc-rankings.netlify.app/sitemap.xml
+Sitemap: https://fgctopplayers.com/sitemap.xml

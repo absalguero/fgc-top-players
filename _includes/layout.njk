@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {# Google Analytics - Loaded conditionally by cookie consent manager #}
-    {# See js/cookie-consent.js for GDPR-compliant loading #}
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    {# --- Google AdSense Verification --- #}
     <meta name="google-adsense-account" content="ca-pub-4748186290410675">
 
-    {# --- Canonical helpers (child pages can override `canonical` var or block below) --- #}
+    {# --- Google Consent Mode v2 & Analytics --- #}
+    {# This MUST load before any other tracking scripts #}
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      
+      // 1. Default consent to 'denied' immediately
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied',
+        'wait_for_update': 500
+      });
+    </script>
+
+    {# 2. Load Google Analytics #}
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-47ZV9G37SY"></script>
+    <script>
+      gtag('js', new Date());
+      gtag('config', 'G-47ZV9G37SY');
+    </script>
+
+    {# 3. Google AdSense Engine (Loads once for the whole page) #}
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4748186290410675"
+     crossorigin="anonymous"></script>
+
+    {# --- Canonical helpers --- #}
     {% set canonical_path = canonical or page.url %}
     {% set canonical_abs = (site.url or '') + canonical_path %}
 
@@ -29,7 +56,7 @@
     <meta name="twitter:description" content="{% block twitter_description %}The definitive ranking of top professional fighting game players. See who's on top and track your favorite pros.{% endblock %}">
     <meta name="twitter:image" content="{{ site.url }}/images/fgc-rankings-social-card.png">
 
-    {# --- Canonical (override from child if needed) --- #}
+    {# --- Canonical --- #}
     {% block canonical %}
     <link rel="canonical" href="{{ canonical_abs }}" />
     {% endblock %}
@@ -45,25 +72,15 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/pagefind/pagefind-ui.css">
 
-    {# Favicon for browsers #}
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png" />
     <link rel="shortcut icon" href="/images/favicon.png" />
-
-    {# Apple Touch Icon for iOS devices #}
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-
-    {# Theme color for mobile browsers #}
     <meta name="theme-color" content="#FF5E13" />
 
     <script src="/js/main.js" defer></script>
 
-    {# --- Optional extra <head> tags from child templates (prev/next, RSS, etc.) --- #}
     {% block head_extra %}{% endblock %}
-
-    {# --- Page-level JSON-LD goes here (e.g., ItemList on index) --- #}
     {% block structured_data %}{% endblock %}
-
-    {# Legacy head block if you already use it elsewhere #}
     {% block head %}{% endblock %}
 </head>
 <body class="{{ bodyClass or '' }}">
@@ -126,6 +143,23 @@
 
         <main class="content" id="maincontent" tabindex="-1" data-pagefind-body>
         {% include "partials/breadcrumbs.njk" %}
+
+            {# --- MANUAL AD: LEADERBOARD --- #}
+            <div class="ad-container ad-container--header">
+                <span class="ad-label">Advertisement</span>
+
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-4748186290410675"
+                     data-ad-slot="6905520391"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+            {# ------------------------------ #}
+
             {% block content %}
     {{ content | autoLink(page, collections, playerProfiles) | safe }}
 {% endblock %}
@@ -165,6 +199,7 @@
                         <a href="/contact/">Contact</a> |
                         <a href="/terms-of-use/">Terms of Use</a> |
                         <a href="/privacy-policy/">Privacy Policy</a> |
+                        {# This link triggers Google's Privacy Menu via cookie-consent.js #}
                         <a href="#" id="footer-cookie-settings">Cookie Settings</a>
                     </p>
                 </div>
@@ -175,7 +210,24 @@
         {% set sidebarCountValue = sidebarCount or 4 %}
 
         <aside class="sidebar right-sidebar" aria-label="Contextual Information">
+            
             <h2 class="sidebar__label">{{ sidebarTitleValue }}</h2>
+
+            {# --- MANUAL AD: SIDEBAR --- #}
+            <div class="ad-container ad-container--sidebar">
+                <span class="ad-label">Advertisement</span>
+                
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-4748186290410675"
+                     data-ad-slot="8246630028"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+            {# -------------------------- #}
 
             {% if sidebarVariantValue == "news" %}
                 {% set sidebarNewsItems = collections.news | default([]) | reverse %}
@@ -272,9 +324,6 @@
     <button id="back-to-top-btn" class="back-to-top-btn" title="Go to top" aria-label="Go to top">
         <i class="fas fa-chevron-up"></i>
     </button>
-
-    {# Cookie Consent Banner - GDPR Compliance #}
-    {% include "partials/cookie-consent.njk" %}
 
     <script type="module" src="/js/siteSearch.js"></script>
     <script src="/js/cookie-consent.js"></script>

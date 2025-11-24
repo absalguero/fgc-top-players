@@ -1,3 +1,3 @@
 module.exports = {
-  url: "https://fgc-player-rankings.netlify.app"
+  url: "https://fgctopplayers.com"
 };

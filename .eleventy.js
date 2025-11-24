@@ -35,7 +35,7 @@ module.exports = async function (eleventyConfig) {
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin, { createStubs: false });
   eleventyConfig.addPlugin(eleventySitemap, {
-    sitemap: { hostname: "https://fgc-top-players.netlify.app" },
+    sitemap: { hostname: "https://fgctopplayers.com" },
   });
   eleventyConfig.addPlugin(eleventyPostcss);
 

@@ -5430,3 +5430,41 @@ body.mobile-nav-open {
     top: 50px; /* Height of the shorter landscape header */
   }
 }
+
+/* ===========================
+   AD UNITS & MONETIZATION
+   =========================== */
+
+.ad-container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px dashed var(--color-border);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.ad-label {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Header Ad (Leaderboard) */
+.ad-container--header {
+  /* Resets top margin to sit flush with breadcrumbs/nav */
+  margin-top: 0; 
+  /* Sets exactly 0.5rem space below, as requested */
+  margin-bottom: 0.5rem; 
+  min-height: 100px;
+}
+
+/* Sidebar Ad (Rectangle/Skyscraper) */
+.ad-container--sidebar {
+  /* Matches the margin-bottom of your .sidebar-event-card (var(--spacing-md) = 1rem) */
+  margin-bottom: var(--spacing-md);
+  min-height: 250px;
+}
