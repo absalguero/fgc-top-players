@@ -1,26 +1,27 @@
 {
-  "fgc-teamups": {
-    "name": "FGC TEAMUPS",
-    "slug": "fgc-teamups",
-    "startAt": 1763845200,
-    "endAt": 1763877540,
-    "startDate": "2025-11-22",
-    "endDate": "2025-11-22",
-    "dates": "Nov 22, 2025",
-    "location": "8125 Skokie Blvd, Skokie, IL 60077, USA",
-    "venueName": "",
-    "url": "https://www.start.gg/tournament/fgc-teamups",
+  "thaiger-uppercut-2025": {
+    "name": "Thaiger Uppercut 2025",
+    "slug": "thaiger-uppercut-2025",
+    "startAt": 1764301200,
+    "endAt": 1764511200,
+    "startDate": "2025-11-28",
+    "endDate": "2025-11-30",
+    "dates": "Nov 28-30, 2025",
+    "location": "IMPACT Muang Thong Thani, Tambon Ban Mai, Amphoe Pak Kret, Chang Wat Nonthaburi 11120, Thailand",
+    "venueName": "The Portal Ballroom",
+    "url": "https://www.start.gg/tournament/tgu-2025/details",
     "tier": "B",
     "prizes": "TBA",
     "game": "Street Fighter 6",
     "streamLink": "",
     "scheduleLink": "",
-    "description": "FGC TEAMUPS is scheduled for Nov 22, 2025 in 8125 Skokie Blvd, Skokie, IL 60077, USA. Featuring Street Fighter 6. Registered top players include Zaidi.",
+    "description": "<p>Thaiger Uppercut 2025 (TGU 2025) marks the 13th anniversary of Thailand’s premier fighting game major. Hosted at The Portal Ballroom @ IMPACT Muang Thong Thani, this event stands as one of Southeast Asia's critical competitive hubs. For Street Fighter 6 players and fans, TGU 2025 offers a massive dedicated bracket and unique community events in the heart of Bangkok.</p><p>TGU 2025 features a robust schedule designed for competitive depth and community engagement. In addition to the main singles bracket, the event will host a special Street Fighter 6 3v3 Team Tournament on Friday featuring a 'Last Man Standing' format. While the event focuses heavily on the SF6 community, it remains a global powerhouse in the FGC ecosystem, simultaneously hosting Master and Gold tier events for other titles like Tekken 8 and Guilty Gear -STRIVE-.</p><p>The tournament takes place at IMPACT Muang Thong Thani, easily accessible via the Pink Line Monorail. Passes are available in Competitor and Spectator tiers, with the venue offering an Artist Alley, Indie Game Showcase, and a dedicated Retro Game & Toy Zone.</p>",
     "notablePlayers": [
-      "Zaidi"
+      "Burnoutfighter",
+      "Book"
     ],
     "isArchived": false,
-    "excludeFromSite": true
+    "excludeFromSite": false
   },
   "the-iron-crown-29": {
     "name": "The Iron Crown 29",
@@ -113,6 +114,27 @@
     "notablePlayers": [
       "Garnet"
     ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
+  "frosty-faustings-xviii-2026": {
+    "name": "Frosty Faustings XVIII 2026",
+    "slug": "frosty-faustings-xviii-2026",
+    "startAt": 1769709600,
+    "endAt": 1770004800,
+    "startDate": "2026-01-29",
+    "endDate": "2026-02-01",
+    "dates": "Jan 29 - Feb 1, 2026",
+    "location": "70 Yorktown Center, Lombard, IL 60148, USA",
+    "venueName": "The Westin Chicago Lombard",
+    "url": "https://frostyfaustings.com/",
+    "tier": "A",
+    "prizes": "$50,000 (2XKO)",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "<p>Frosty Faustings XVIII 2026 is the 18th annual edition of the Midwest’s largest fighting game festival. Held at the Westin Chicago Lombard, this four-day event is celebrated for its massive variety of tournaments, 24-hour venue access, and unique 'convention-style' atmosphere. While historically known as a haven for anime fighters, the event has evolved into a global major for all fighting game disciplines, including Street Fighter 6, Tekken 8, and the highly anticipated 2XKO.</p><p>The 2026 event distinguishes itself with one of the most diverse lineups in the FGC, running nearly 30 main stage games. A major headline for 2026 is the official partnership with Riot Games for 2XKO, featuring a special mixed-mode tournament with a $50,000 prize pool. For Street Fighter 6 players, the event offers a massive singles bracket and the unique Sunday Special 2v2 Waseda-style Team Tournament, a format that emphasizes team strategy.</p><p>Unlike many esports majors, the venue remains open 24 hours a day from Thursday to Sunday, allowing for non-stop casual matches and community events like the famous late-night Karaoke and Artist Alley. The Westin Chicago Lombard is located approximately 25 minutes from O'Hare International Airport, with registration available via Start.gg.</p>",
+    "notablePlayers": [],
     "isArchived": false,
     "excludeFromSite": false
   }

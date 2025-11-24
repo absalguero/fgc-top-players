@@ -449,5 +449,24 @@ document.addEventListener('DOMContentLoaded', () => {
     initAutosizeArchiveControls();
     bindFilterVisibilityPump();
     initRankingSystemTOC();
+    initExternalLinks();
     setTimeout(() => document.dispatchEvent(new CustomEvent('archive:items-appended')), 0);
 });
+/* --- EXTERNAL LINKS --- */
+function initExternalLinks() {
+    const isExternal = (url) => {
+        try {
+            const link = new URL(url, window.location.href);
+            return link.host !== window.location.host;
+        } catch {
+            return false;
+        }
+    };
+
+    document.querySelectorAll('a[href]').forEach(link => {
+        if (isExternal(link.href) && !link.hasAttribute('target')) {
+            link.setAttribute('target', '_blank');
+            link.setAttribute('rel', 'noopener noreferrer');
+        }
+    });
+}

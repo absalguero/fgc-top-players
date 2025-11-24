@@ -57,6 +57,7 @@ module.exports = async function (eleventyConfig) {
   // Static asset passthrough
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("js");
+  eleventyConfig.addPassthroughCopy("ads.txt");
 
   // Pagefind UI assets
   eleventyConfig.addPassthroughCopy({
