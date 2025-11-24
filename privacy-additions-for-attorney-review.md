@@ -42,7 +42,7 @@
       If you are between 13 and 18 years of age (or the age of majority in your jurisdiction), you may only use the Site with the permission and supervision of a parent or legal guardian who agrees to be bound by our <a href="/terms-of-use/">Terms of Use</a> on your behalf.
     </p>
     <p>
-      If you are a parent or legal guardian and believe your child under 13 has provided personal information to us without your consent, or if you are aware of a minor using the Site without proper parental permission, please contact us immediately at <a href="mailto:fgcpr@gmail.com">fgcpr@gmail.com</a>. We will promptly investigate and delete such information from our systems.
+      If you are a parent or legal guardian and believe your child under 13 has provided personal information to us without your consent, or if you are aware of a minor using the Site without proper parental permission, please contact us immediately at <a href="mailto:contact@fgctopplayers.com">contact@fgctopplayers.com</a>. We will promptly investigate and delete such information from our systems.
     </p>
   </div>
 </div>
@@ -75,7 +75,7 @@
       <strong>Important:</strong> Player rankings, statistics, tournament placements, and performance metrics published on the Site are derived from publicly reported tournament results and are not "personal information" collected directly from you as a Site visitor. This information is publicly accessible and is used for the legitimate purpose of providing competitive gaming rankings and analytics.
     </p>
     <p>
-      If you are a player featured on the Site and wish to correct inaccurate biographical information (such as name spelling, country, character selection, or social media links), please contact us at <a href="mailto:fgcpr@gmail.com">fgcpr@gmail.com</a> or via our <a href="/contact/">contact form</a>. We do not remove tournament results or historical rankings, as they represent factual public record, but we will correct demonstrable errors in biographical data.
+      If you are a player featured on the Site and wish to correct inaccurate biographical information (such as name spelling, country, character selection, or social media links), please contact us at <a href="mailto:contact@fgctopplayers.com">contact@fgctopplayers.com</a> or via our <a href="/contact/">contact form</a>. We do not remove tournament results or historical rankings, as they represent factual public record, but we will correct demonstrable errors in biographical data.
     </p>
   </div>
 </div>
@@ -188,7 +188,7 @@
 
     <h3>Exercising Your Rights</h3>
     <p>
-      To exercise any of these rights, please contact us at <a href="mailto:fgcpr@gmail.com">fgcpr@gmail.com</a> or via our <a href="/contact/">contact form</a>. We will respond to verified requests within the timeframes required by applicable law (typically 30-45 days).
+      To exercise any of these rights, please contact us at <a href="mailto:contact@fgctopplayers.com">contact@fgctopplayers.com</a> or via our <a href="/contact/">contact form</a>. We will respond to verified requests within the timeframes required by applicable law (typically 30-45 days).
     </p>
     <p>
       We may need to verify your identity before processing your request. We will not fulfill requests related to publicly available information (such as tournament results and rankings) that we did not collect directly from you.
@@ -329,7 +329,7 @@
       Contact Us
     </a>
     <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--color-text-secondary);">
-      Email: <a href="mailto:fgcpr@gmail.com">fgcpr@gmail.com</a><br>
+      Email: <a href="mailto:contact@fgctopplayers.com">contact@fgctopplayers.com</a><br>
       Mailing Address: [INSERT PHYSICAL ADDRESS IF REQUIRED BY STATE LAW]
     </p>
   </div>

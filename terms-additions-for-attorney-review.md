@@ -15,7 +15,7 @@
   </div>
   <div class="home-card__content terms-card-content">
     <p>
-      You must be at least 13 years of age to use the Site. If you are between 13 and 18 years of age (or the age of majority in your jurisdiction), you represent and warrant that you have obtained verifiable parental or legal guardian consent to use the Site and agree to these Terms. If you are a parent or guardian and believe your minor child is using the Site without your consent, please contact us immediately at <a href="mailto:fgcpr@gmail.com">fgcpr@gmail.com</a>.
+      You must be at least 13 years of age to use the Site. If you are between 13 and 18 years of age (or the age of majority in your jurisdiction), you represent and warrant that you have obtained verifiable parental or legal guardian consent to use the Site and agree to these Terms. If you are a parent or guardian and believe your minor child is using the Site without your consent, please contact us immediately at <a href="mailto:contact@fgctopplayers.com">contact@fgctopplayers.com</a>.
     </p>
   </div>
 </div>

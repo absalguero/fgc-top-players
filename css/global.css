@@ -533,10 +533,14 @@ ol li {
   }
 
   /* Reset text alignment for normal sidebar display */
-  .sidebar.right-sidebar .sidebar__label,
   .sidebar.right-sidebar .sidebar-event-card,
   .sidebar.right-sidebar .sidebar-card-link {
     text-align: left;
+  }
+
+  /* Keep sidebar header centered */
+  .sidebar.right-sidebar .sidebar__label {
+    text-align: center;
   }
 
   .sidebar.right-sidebar .sidebar-event-card__info {
