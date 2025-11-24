@@ -4078,6 +4078,8 @@ a[data-next-page-link][hidden] {
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.4);
   text-align: center;
   position: relative;
+  flex-shrink: 0; /* Prevent header from being compressed */
+  min-height: 60px; /* Ensure minimum height on mobile */
 }
 
 .profile-card--search .site-search-panel__title {
@@ -4121,6 +4123,7 @@ a[data-next-page-link][hidden] {
 
 .profile-card--search .profile-card__body {
   flex: 1;
+  min-height: 0; /* Fix flexbox overflow on mobile */
   padding: 0 clamp(1.25rem, 4vw, 2rem) clamp(1.25rem, 4vw, 2rem);
   background: linear-gradient(180deg, rgba(26, 28, 40, 0.96), rgba(16, 17, 26, 0.92));
   overflow-y: auto;
