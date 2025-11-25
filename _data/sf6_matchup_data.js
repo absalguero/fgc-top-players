@@ -1,143 +1,143 @@
 module.exports = {
   "ryu": {
-    favorable: ["Marisa", "E. Honda"],
-    unfavorable: ["JP", "Juri"],
-    counter_strategy: "Deny his mid range with micro walk guard and delayed whiff punish. Bait fireball rhythm with feint drive rush then take space. Once you score a knockdown, run layered okizeme and remove jump and parry with tight meaties and throw threat."
+    favorable: ["E. Honda", "Marisa", "Manon"],
+    unfavorable: ["JP", "Guile", "Ken"],
+    counter_strategy: "Deny his mid-range control with micro-walk guarding and delayed whiff punishes. Bait his fireball rhythm with feint Drive Rushes to take space. On knockdown, enforce layered okizeme. Remove his jump and parry options with tight meaties and throw threats."
   },
   "ken": {
-    favorable: ["Dhalsim", "E. Honda"],
-    unfavorable: ["Juri", "JP"],
-    counter_strategy: "Hold outside step kick and crouch medium kick ranges and check dash with buffered lights. During plus frames do not swing. After he yields space challenge the gap with delayed jab or back walk whiff punish. Corner him and keep oki tight to avoid reversal timing."
+    favorable: ["Dhalsim", "Zangief", "Manon"],
+    unfavorable: ["Guile", "Luke", "JP"],
+    counter_strategy: "Maintain spacing outside his Step Kick and crouching medium kick ranges. Check his dashes with buffered light buttons. Do not press buttons during his plus frames. When he yields space, challenge the gap with delayed jabs or walk-back whiff punishes. Corner him and keep your okizeme tight to beat his reversal timing."
   },
   "chun-li": {
-    favorable: ["Manon", "E. Honda"],
-    unfavorable: ["Cammy", "JP"],
-    counter_strategy: "Contest stance entries with preemptive drive approach and lows that slip under far mediums. Play for whiff punish on heavy buttons. If cornered delay tech and take your turn only after she spends drive so she cannot loop pressure."
+    favorable: ["E. Honda", "Marisa", "Manon"],
+    unfavorable: ["JP", "M. Bison", "Akuma"],
+    counter_strategy: "Contest her Stance entries with preemptive Drive Rushes or low attacks that go under her far medium buttons. Play for whiff punishes on her heavy normals. If cornered, use delayed tech. Only take your turn after she spends Drive Gauge so she cannot loop pressure."
   },
   "jamie": {
-    favorable: ["Marisa"],
-    unfavorable: ["JP", "Cammy"],
-    counter_strategy: "Suffocate him early to deny safe drinking windows. If he levels up, force him to burn Drive Gauge on defense. Block his Drive Rush entry, then challenge the gaps in his pressure to punish greedy resets." // Clarified
+    favorable: ["Dhalsim", "Manon", "Lily"],
+    unfavorable: ["Guile", "M. Bison", "Blanka"],
+    counter_strategy: "Suffocate him early to deny safe drinking opportunities. If he gains levels, force him to burn Drive Gauge on defense. Respect his forward Drive Rush, then challenge the gaps in his pressure strings to punish greedy resets."
   },
   "luke": {
-    favorable: ["Manon"],
-    unfavorable: ["Juri", "JP"],
-    counter_strategy: "Sit just outside his crouch medium punch range and punish forward movement on reaction. On defense, delay your tech to avoid getting shimmied. On offense, loop tight meaty/throw mix-ups to force him to burn Drive Gauge on expensive reversals." // "Meaty" implies perfect timing
+    favorable: ["Zangief", "Marisa", "Manon"],
+    unfavorable: ["Ken", "JP", "Guile"],
+    counter_strategy: "Sit just outside his crouching medium punch range and punish forward movement on reaction. On defense, delay your tech to avoid getting shimmied. On offense, loop tight meaty/throw mix-ups to force him to burn Drive Gauge on expensive OD reversals."
   },
   "manon": {
-    favorable: ["Marisa"],
-    unfavorable: ["Juri", "JP"],
-    counter_strategy: "Play outside command grab range and buffer lows to stop drive rush. Never give free grab after plus situations. If medals climb, disengage and take screen back before re-engaging. Interrupt tick-throw attempts with fast light buttons." // Fixed
+    favorable: ["Marisa", "E. Honda", "Zangief"],
+    unfavorable: ["JP", "Dhalsim", "Guile"],
+    counter_strategy: "Play outside her command grab range and buffer low attacks to stop her Drive Rush. Never give her a free grab opportunity after plus-frame situations. If her Medal level climbs, disengage and regain screen control before re-engaging. Interrupt her tick-throw attempts with fast light buttons."
   },
   "kimberly": {
-    favorable: ["Dhalsim", "Marisa"], // Swapped Chun-Li for Dhalsim
-    unfavorable: ["Guile", "Luke"],
-    counter_strategy: "React to teleport lines and keep anti air ready. Use drive impact on telegraphed run strings. Deny safe jump timing with varied wakeups then walk her to mid screen where her confirms are weaker."
+    favorable: ["JP", "Dhalsim", "Marisa"],
+    unfavorable: ["Rashid", "Guile", "Zangief"],
+    counter_strategy: "React to her teleport setups and keep your anti-airs ready. Use Drive Impact to punish telegraphed run strings. Deny her safe jump setups with varied wakeup timings, then walk her to mid-screen where her hit-confirms are weaker."
   },
   "marisa": {
-    favorable: ["Jamie", "Lily"],
-    unfavorable: ["JP", "Kimberly"],
-    counter_strategy: "Counter armor with throws or multi-hit moves. Respect her charged normals. Do not challenge them. Deplete her Drive Gauge by forcing her to block or take throws. Punish whiffed heavy specials with optimal Punish Counter routes into okizeme."
+    favorable: ["Zangief", "E. Honda", "Blanka"],
+    unfavorable: ["Dhalsim", "JP", "Rashid"],
+    counter_strategy: "Counter her armor with throws or multi-hit moves. Respect her charged normals. Do not challenge them. Deplete her Drive Gauge by forcing her to block or tech throws. Punish whiffed heavy specials with optimal Punish Counter combos into okizeme."
   },
   "lily": {
-    favorable: ["Jamie"],
-    unfavorable: ["Cammy", "Luke"],
-    counter_strategy: "Deny wind stocks by staying close and forcing checks. Anti-air early to keep her grounded. When she is stockless take space and make her spend to re-enter. Punish unsafe condor specials on block."
+    favorable: ["Zangief", "E. Honda", "Marisa"],
+    unfavorable: ["Dhalsim", "Guile", "JP"],
+    counter_strategy: "Deny her Wind Stocks by staying close and forcing interaction checks. Anti-air early to keep her grounded. When she is stockless, take space and make her spend resources to re-enter. Punish unsafe Condor Spire attempts on block."
   },
   "jp": {
-    favorable: ["Zangief", "E. Honda"],
-    unfavorable: ["Cammy", "Luke"],
-    counter_strategy: "Walk guard and feint drive rush to punish departure calls. Do not guess jump. Once you enter, maintain okizeme and deny back shift and amnesia with delayed throw and baited meaty."
+    favorable: ["Zangief", "E. Honda", "Marisa"],
+    unfavorable: ["Cammy", "Kimberly", "Rashid"],
+    counter_strategy: "Use 'Walk and Guard' tactics and feint Drive Rushes to punish his portal setups. Do not guess with jumps. Once you enter his range, maintain okizeme and deny his Back Shift and Amnesia escapes with delayed throws and baited meaties."
   },
   "dhalsim": {
-    favorable: ["E. Honda"],
-    unfavorable: ["Ken", "Cammy"],
-    counter_strategy: "Advance behind parry and take limb recovery space. Punish teleport with delay then late button. After knockdown keep meaty pressure to remove float and slide escape, then cycle throw and short frame trap."
+    favorable: ["E. Honda", "Marisa", "Zangief"],
+    unfavorable: ["Ken", "Cammy", "Kimberly"],
+    counter_strategy: "Advance behind Parry and occupy the space left by his recovering limbs. Punish teleports with delayed buttons. After a knockdown, maintain meaty pressure to stop him from floating or sliding out, then cycle between throws and short frame traps."
   },
   "dee-jay": {
-    favorable: ["E. Honda"],
-    unfavorable: ["JP", "Juri"],
-    counter_strategy: "Identify fake fireball and charge strings. Take your turn when he concedes advantage. Challenge crossup with early anti air and chase backdash with drive. Corner him and deny sway with meaty throw."
+    favorable: ["Zangief", "E. Honda", "Lily"],
+    unfavorable: ["JP", "Ken", "Cammy"],
+    counter_strategy: "Identify his fake fireball and charge strings. Take your turn only when he clearly concedes advantage. Challenge his cross-ups with early anti-airs and chase his backdash with Drive Rush. Corner him and deny his Sway options with meaty throws."
   },
   "e-honda": {
-    favorable: ["Marisa"],
-    unfavorable: ["JP", "Dhalsim"],
-    counter_strategy: "Bait headbutt spacing and punish only when recovery is certain. His defense breaks under repeated throw oki. Keep him knocked down and remove charge with safe jumps and delayed meaties."
+    favorable: ["Kimberly", "Jamie", "Lily"],
+    unfavorable: ["Dhalsim", "Luke", "Guile"],
+    counter_strategy: "Bait his Headbutt spacing and punish only when recovery is guaranteed. His defense breaks under repeated throw loops. Keep him knocked down and remove his charge by forcing him to block safe jumps and delayed meaties."
   },
   "blanka": {
-    favorable: ["Jamie", "E. Honda"],
-    unfavorable: ["Chun-Li", "Guile"],
-    counter_strategy: "Kill scramble by holding ground and anti airing early. Punish ball on block with drive rush conversions. Force honest footsies where his reward is lower and his walk is limited."
+    favorable: ["Zangief", "Lily", "Jamie"],
+    unfavorable: ["Marisa", "Guile", "Chun-Li"],
+    counter_strategy: "Kill the scramble by holding your ground and anti-airing early. Punish Blanka Balls on block with Drive Rush conversions. Force him to play honest footsies, where his reward is lower and his walk speed is limited."
   },
   "juri": {
-    favorable: ["E. Honda", "Manon"],
-    unfavorable: ["Cammy", "Luke"],
-    counter_strategy: "Do not allow free Fuha stores. Contest at the edge of her mediums and force defensive spend with tight pressure. Without stocks her risk reward falls and her escape options become linear."
+    favorable: ["Manon", "E. Honda", "Ryu"],
+    unfavorable: ["Guile", "M. Bison", "Cammy"],
+    counter_strategy: "Do not allow free Fuha stores. Contest at the maximum range of her medium buttons and force her to burn Drive Gauge with tight pressure. Without stocks, her risk/reward ratio falls and her escape options become linear."
   },
   "cammy": {
-    favorable: ["Dhalsim", "Zangief"],
-    unfavorable: ["Luke", "Guile"],
-    counter_strategy: "Hold defense during plus frames and look for delayed challenge when she yields space. Bait spiral arrow checks and convert to punish counter. Once cornered she must take risk to leave, be ready to call it out."
+    favorable: ["JP", "Dhalsim", "Manon"],
+    unfavorable: ["M. Bison", "Guile", "Ken"],
+    counter_strategy: "Hold your defense during her plus frames and look for delayed challenges when she yields space. Bait Spiral Arrow spacing checks and convert them into Punish Counters. Once she is cornered, she must take big risks to escape. Be ready to call them out."
   },
   "aki": {
-    favorable: ["Zangief", "E. Honda"],
-    unfavorable: ["Guile", "Cammy"],
-    counter_strategy: "Use parry to purge poison then hold mid range where her confirms are limited. Challenge retreat with long buttons. On knockdown, her lack of a meterless reversal makes any okizeme sequence decisive." // Fixed
+    favorable: ["Zangief", "E. Honda", "Marisa"],
+    unfavorable: ["Guile", "Cammy", "M. Bison"],
+    counter_strategy: "Parry projectiles to avoid poison application, or land a hit to cleanse the status immediately. Challenge her retreat with long-range buttons. On knockdown, her lack of a meterless reversal makes any okizeme sequence decisive."
   },
   "rashid": {
-    favorable: ["E. Honda", "Zangief"],
-    unfavorable: ["Chun-Li", "Guile"],
-    counter_strategy: "Control the air and deny wall approach. After blocking strings do not swing. Walk him down when he yields space and force grounded exchanges where his reward is lower. Check jump with early jab and crouch fierce."
+    favorable: ["JP", "Marisa", "Zangief"],
+    unfavorable: ["Guile", "Chun-Li", "Cammy"],
+    counter_strategy: "Control the air space to deny his wall approaches. Do not press buttons after blocking his strings. Walk him down when he yields space and force grounded exchanges where his reward is lower. Check his jumps with early jabs or crouching heavy punches."
   },
   "ed": {
-    favorable: ["Jamie", "E. Honda"],
-    unfavorable: ["JP", "Dhalsim"],
-    counter_strategy: "Respect flicker spacing and do not contest minus with slow buttons. Corner him and rotate throw strike to tax gauge. Without meter his escape is limited so keep oki tight."
+    favorable: ["Zangief", "E. Honda", "Marisa"],
+    unfavorable: ["JP", "Dhalsim", "Guile"],
+    counter_strategy: "Respect his Psycho Flicker spacing and do not contest his minus frames with slow buttons. Corner him and rotate between strikes and throws to tax his Drive Gauge. Without meter, his escape options are limited, so keep your okizeme tight."
   },
   "akuma": {
-    favorable: ["Jamie", "E. Honda"],
-    unfavorable: ["Luke", "JP"],
-    counter_strategy: "Deny air approach with early anti air and be ready for air fireball landings. On defense do not panic. Take throw until you see the string, then challenge the gap with delayed jab or backdash callout."
+    favorable: ["E. Honda", "Jamie", "Manon"],
+    unfavorable: ["M. Bison", "JP", "Cammy"],
+    counter_strategy: "Deny his air approach with early anti-airs and be ready to punish air fireball landings. Do not panic on defense. Take the throw until you identify his string pattern, then challenge the gap with a delayed jab or backdash read."
   },
   "guile": {
-    favorable: ["Zangief", "Manon"],
-    unfavorable: ["JP", "Cammy"],
-    counter_strategy: "Walk forward and perfect parry booms to gain screen space. Do not jump unless you have a hard read on recovery. Force him to guess on defense where his only escape is Flash Kick."
+    favorable: ["Zangief", "Manon", "Marisa"],
+    unfavorable: ["JP", "Cammy", "M. Bison"],
+    counter_strategy: "Walk forward and Perfect Parry his Sonic Booms to gain screen space. Do not jump unless you have a hard read on his recovery. Force him to guess on defense, where his only true escape is a Flash Kick."
   },
   "mai": {
-    favorable: ["Zangief", "Marisa"],
-    unfavorable: ["JP", "Guile"],
-    counter_strategy: "Crowd her airspace to shut down fan toss mixups. She relies on controlling horizontal space, so stay in the mid-range dead zone where her fans miss and her normals are slow."
+    favorable: ["Zangief", "E. Honda", "Marisa"],
+    unfavorable: ["JP", "Guile", "Cammy"],
+    counter_strategy: "Crowd her airspace to shut down Fan Toss mix-ups. She relies on controlling horizontal space, so stay in the mid-range 'dead zone' where her fans miss and her normals are too slow to compete."
   },
   "m-bison": {
-    favorable: ["E. Honda", "Zangief"],
-    unfavorable: ["JP", "Guile"],
-    counter_strategy: "Contest dash pressure with fast lights when he gives up advantage. Once he commits to psycho crusher spacing, punish with drive rush confirm. On defense delay tech to beat throw into frame trap."
+    favorable: ["Guile", "Zangief", "E. Honda"],
+    unfavorable: ["Akuma", "Rashid", "Cammy"],
+    counter_strategy: "Contest his dash pressure with fast light buttons when he gives up advantage. Once he commits to Psycho Crusher spacing, punish with a Drive Rush confirm. On defense, use delayed tech to beat his throw/frame-trap mix-ups."
   },
   "sagat": {
-    favorable: ["E. Honda", "Zangief"],
-    unfavorable: ["Cammy", "Luke"],
-    counter_strategy: "Parry tiger shots to approach and punish recovery. Once you close the gap, stay in his face. His normals are too slow to contest point-blank scrambles. Enforce throw loops on his wakeup to crack his heavy reliance on blocking."
+    favorable: ["Zangief", "E. Honda", "Marisa"],
+    unfavorable: ["Guile", "Cammy", "JP"],
+    counter_strategy: "Parry Tiger Shots to close the distance and punish his recovery. Once you close the gap, stay in his face. His normals are too slow to contest point-blank scrambles. Enforce throw loops on his wakeup to crack his heavy reliance on blocking."
   },
   "terry": {
-    favorable: ["E. Honda", "Zangief"],
-    unfavorable: ["Guile", "JP"],
-    counter_strategy: "Bait crack shoot and burn knuckle spacing and punish with optimized counter hit routes. On defense challenge only when he surrenders plus. His reversal options are limited without meter so keep okizeme tight."
+    favorable: ["Zangief", "E. Honda", "Marisa"],
+    unfavorable: ["Guile", "JP", "M. Bison"],
+    counter_strategy: "Bait Crack Shoot and Burn Knuckle spacing, then punish with optimized Counter Hit routes. On defense, challenge only when he surrenders his plus frames. His reversal options are limited without meter, so keep your okizeme tight."
   },
   "elena": {
-    favorable: ["Lily", "Jamie"],
-    unfavorable: ["Guile", "JP"],
-    counter_strategy: "Walk into her range to bait pokes, then catch her extended limb recovery with buffered Drive Rush. Corner her and run tight meaties. She lacks a meterless invincible reversal, forcing her to guess or spend resources to escape." 
+    favorable: ["Zangief", "Lily", "Marisa"],
+    unfavorable: ["Guile", "JP", "Akuma"],
+    counter_strategy: "Walk into her range to bait pokes, then catch her extended limb recovery with a buffered Drive Rush. Corner her and run tight meaties. She lacks a meterless invincible reversal, forcing her to guess or spend resources to escape."
   },
   "zangief": {
-    favorable: ["Marisa", "Manon"],
-    unfavorable: ["JP", "Dhalsim"],
-    counter_strategy: "Keep him outside drive rush range and deny charged walk with low pokes. If cornered spend meter to escape rather than gamble on command grab. When you knock him down, meaty with throw strike to remove lariat and backdash."
+    favorable: ["Marisa", "Manon", "E. Honda"],
+    unfavorable: ["Dhalsim", "JP", "Lily"],
+    counter_strategy: "Keep him outside his Drive Rush range and deny his forward movement with low pokes. If cornered, spend meter to escape rather than gambling on a command grab read. When you knock him down, use meaty strikes or throws to beat his Lariat and backdash options."
   },
   "c-viper": {
-    favorable: ["Marisa", "E. Honda"],
-    unfavorable: ["JP", "Chun-Li"],
-    counter_strategy: "Cut off burn kick lanes with early anti air and preemptive crouch fierce. Interrupt seismo chains with forward advancing drive rush when she overextends. On her wakeup, run layered okizeme since her reversal coverage is limited without meter."
+    favorable: ["Zangief", "Marisa", "E. Honda"],
+    unfavorable: ["Guile", "Chun-Li", "Cammy"],
+    counter_strategy: "Cut off Burn Kick lanes with early anti-airs and preemptive crouching heavy punches. Interrupt Seismo chains with forward-advancing Drive Rushes when she overextends. On her wakeup, run layered okizeme since her reversal coverage is limited without meter."
   },
   "default": {
     favorable: ["N/A"],

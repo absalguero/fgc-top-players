@@ -187,15 +187,13 @@ function buildPlayerEntries(playerProfiles, pageUrl) {
     })
     .map((player) => {
       const label = player.name.trim();
-      // For very short names (3 chars or less), use case-sensitive matching
-      const caseSensitive = label.length <= 3;
       return {
         key: `player:${player.slug}`,
         label,
         url: `/players/${player.slug}/`,
         type: "player",
         maxMatches: 2,
-        caseSensitive, // Flag for case-sensitive matching
+        caseSensitive: true, // Always use case-sensitive matching for player names
       };
     })
     .filter((entry) => entry.url !== pageUrl);
