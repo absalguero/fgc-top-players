@@ -84,12 +84,19 @@
 {
   "@context": "https://schema.org",
   "@type": "NewsArticle",
-  "headline": "{{ title }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url | url }}" 
+  },
+  "headline": {{ title | dump | safe }},
+  "image": [
+    "{{ site.url }}{{ image if image else '/images/default-news.jpg' }}"
+  ],
   "datePublished": "{{ date | date('YYYY-MM-DDTHH:mm:ssZ') }}",
   "dateModified": "{{ date | date('YYYY-MM-DDTHH:mm:ssZ') }}",
   "author": {
     "@type": "Person",
-    "name": "{{ authorName or 'FGC Top Players' }}"
+    "name": {{ (authorName or 'FGC Top Players') | dump | safe }}
   },
   "publisher": {
     "@type": "Organization",
@@ -99,7 +106,7 @@
       "url": "{{ site.url }}/images/logo.png"
     }
   },
-  "description": "{{ description or title }}"
+  "description": {{ (description or title) | dump | safe }}
 }
 </script>
 {% endblock %}
