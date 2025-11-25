@@ -4,7 +4,6 @@ pagination:
     size: 1
     alias: player
 permalink: false
-eleventyExcludeFromCollections: true
 navHighlight: "Player Profiles"
 eleventyComputed:
     title: "{{ player.name }}{% if player.mainCharacter %} ({{ player.mainCharacter }}){% endif %} - Rank #{{ player.rank or 'N/A' }}, {{ player.game | upper | default('FGC') }} Stats & Profile"

@@ -5,13 +5,17 @@ eleventyExcludeFromCollections: true
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 {%- for page in collections.all %}
-  {%- if not page.data.eleventyExcludeFromCollections and page.url and page.outputPath and page.outputPath.endsWith('.html') %}
+  {%- if page.url and page.outputPath and page.outputPath.endsWith('.html') %}
+    {%- set excluded = page.data.eleventyExcludeFromCollections %}
+    {%- set is404 = page.url.includes('/404') %}
+    {%- if not excluded and not is404 %}
   <url>
     <loc>{{ site.url }}{{ page.url | url }}</loc>
     {%- if page.date %}
     <lastmod>{{ page.date | date('yyyy-LL-dd') }}</lastmod>
     {%- endif %}
   </url>
+    {%- endif %}
   {%- endif %}
 {%- endfor %}
 </urlset>

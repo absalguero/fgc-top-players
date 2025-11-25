@@ -17,17 +17,17 @@ module.exports = {
   "jamie": {
     favorable: ["Marisa"],
     unfavorable: ["JP", "Cammy"],
-    counter_strategy: "Deny drink at round start space with constant presence. If he gains levels, force defensive spend then reset to neutral. On defense respect forward drive rush then challenge late to tag greedy frame traps."
+    counter_strategy: "Suffocate him early to deny safe drinking windows. If he levels up, force him to burn Drive Gauge on defense. Block his Drive Rush entry, then challenge the gaps in his pressure to punish greedy resets." // Clarified
   },
   "luke": {
     favorable: ["Manon"],
     unfavorable: ["Juri", "JP"],
-    counter_strategy: "Sit just outside crouch medium punch and punish forward movement on reaction. On his offense delay your choices to avoid throw shimmy into counter hit. Knock him down and run throw strike so he must spend drive to escape."
+    counter_strategy: "Sit just outside his crouch medium punch range and punish forward movement on reaction. On defense, delay your tech to avoid getting shimmied. On offense, loop tight meaty/throw mix-ups to force him to burn Drive Gauge on expensive reversals." // "Meaty" implies perfect timing
   },
   "manon": {
     favorable: ["Marisa"],
     unfavorable: ["Juri", "JP"],
-    counter_strategy: "Play outside command grab range and buffer lows to stop drive rush. Never give free grab after plus situations. If medals climb, disengage and take screen back before re entry. Challenge jump after tick pressure with early stand jab."
+    counter_strategy: "Play outside command grab range and buffer lows to stop drive rush. Never give free grab after plus situations. If medals climb, disengage and take screen back before re-engaging. Interrupt tick-throw attempts with fast light buttons." // Fixed
   },
   "kimberly": {
     favorable: ["Dhalsim", "Marisa"], // Swapped Chun-Li for Dhalsim
@@ -37,12 +37,12 @@ module.exports = {
   "marisa": {
     favorable: ["Jamie", "Lily"],
     unfavorable: ["JP", "Kimberly"],
-    counter_strategy: "Answer armor with throws and multihit. Do not challenge charge. Force block, walk throw, and tax her gauge. On whiffed heavy specials take full punish counter and set okizeme."
+    counter_strategy: "Counter armor with throws or multi-hit moves. Respect her charged normals. Do not challenge them. Deplete her Drive Gauge by forcing her to block or take throws. Punish whiffed heavy specials with optimal Punish Counter routes into okizeme."
   },
   "lily": {
     favorable: ["Jamie"],
     unfavorable: ["Cammy", "Luke"],
-    counter_strategy: "Deny wind stocks by staying close and forcing checks. Anti air early to keep her grounded. When she is stockless take space and make her spend to re enter. Punish unsafe condor specials on block."
+    counter_strategy: "Deny wind stocks by staying close and forcing checks. Anti-air early to keep her grounded. When she is stockless take space and make her spend to re-enter. Punish unsafe condor specials on block."
   },
   "jp": {
     favorable: ["Zangief", "E. Honda"],
@@ -82,7 +82,7 @@ module.exports = {
   "aki": {
     favorable: ["Zangief", "E. Honda"],
     unfavorable: ["Guile", "Cammy"],
-    counter_strategy: "Use parry to purge poison then hold mid range where her confirms are limited. Challenge retreat with long buttons. On knockdown her life total makes any clean punish into oki decisive."
+    counter_strategy: "Use parry to purge poison then hold mid range where her confirms are limited. Challenge retreat with long buttons. On knockdown, her lack of a meterless reversal makes any okizeme sequence decisive." // Fixed
   },
   "rashid": {
     favorable: ["E. Honda", "Zangief"],
@@ -117,7 +117,7 @@ module.exports = {
   "sagat": {
     favorable: ["E. Honda", "Zangief"],
     unfavorable: ["Cammy", "Luke"],
-    counter_strategy: "Parry tiger shots to approach and punish recovery. Stay close once you gain space since his buttons are slow at scramble range. Use meaty throw to tax his guard options."
+    counter_strategy: "Parry tiger shots to approach and punish recovery. Once you close the gap, stay in his face. His normals are too slow to contest point-blank scrambles. Enforce throw loops on his wakeup to crack his heavy reliance on blocking."
   },
   "terry": {
     favorable: ["E. Honda", "Zangief"],
@@ -127,7 +127,7 @@ module.exports = {
   "elena": {
     favorable: ["Lily", "Jamie"],
     unfavorable: ["Guile", "JP"],
-    counter_strategy: "Step into her limbs then whiff punish the recovery with buffered mediums. Do not let her reset tempo after healing. Corner her and use delayed throw to stop back walk."
+    counter_strategy: "Walk into her range to bait pokes, then catch her extended limb recovery with buffered Drive Rush. Corner her and run tight meaties. She lacks a meterless invincible reversal, forcing her to guess or spend resources to escape." 
   },
   "zangief": {
     favorable: ["Marisa", "Manon"],

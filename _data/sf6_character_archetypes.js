@@ -116,18 +116,18 @@ module.exports = {
 
   "dhalsim": {
     overview: "A pure zoner relying on spatial denial and evasive repositioning.",
-    playstyle_summary: "Dhalsim’s long limbs and teleport game create a wall of control. He wins by never letting the opponent stabilize their range.",
+    playstyle_summary: "Dhalsim’s long limbs and teleport game create a wall of control. He wins by frustrating opponents into mistakes, then punishing with high-damage Yoga Float setups and drills.",
     archetype: "Zoner / Keep-Away",
-    execution: "Very High",
+    execution: "Very High", // Correct
     strengths: [
       { title: "Full-Screen Control", description: "Dominates long-range exchanges." },
-      { title: "Teleport Utility", description: "Can escape or fake cross situations." },
-      { title: "Anti-Air Options", description: "Multiple reliable anti-airs." }
+      { title: "Teleport Utility", description: "Can escape corner pressure or create ambiguous cross-ups." },
+      { title: "Anti-Air Options", description: "Multiple reliable anti-airs covering every angle." }
     ],
     weaknesses: [
-      { title: "Floaty Defense", description: "Slow jump arc makes him vulnerable to air-to-airs." }, // Fixed: Health is average (3)
-      { title: "Close Combat", description: "Weak when cornered." },
-      { title: "Execution", description: "High input precision requirement." }
+      { title: "Floaty Defense", description: "Slow jump arc makes him vulnerable to air-to-airs and corner traps." }, // Fixed: He has 10,000 HP
+      { title: "Close Combat", description: "Weak buttons when pressured at point-blank range." },
+      { title: "Execution", description: "Requires mastery of instant air inputs and float physics." }
     ],
     radar_stats: { Damage: 2, Health: 3, Mobility: 2, Zoning: 5, "Mix-up": 3 },
     topPlayer: null
@@ -211,18 +211,18 @@ module.exports = {
 
   "jp": {
     overview: "A trap-oriented zoner who dominates neutral with overlapping projectiles and punishes mis-timed aggression.",
-    playstyle_summary: "JP controls mid-screen with torpedo zoning and command grabs that reset distance, excelling at suffocating space.",
+    playstyle_summary: "JP oppresses opponents from full-screen using Torbalan ghosts and Triglav spikes to create a projectile maze. He forces difficult approach decisions, then capitalizes on mistakes with high-damage portal combos and corner traps.", // Adjusted to remove command grab emphasis
     archetype: "Zoner / Trap Control",
     execution: "High",
     strengths: [
-      { title: "Screen Control", description: "Traps and spikes dominate tempo." },
-      { title: "Punish Reward", description: "Huge conversions from stray hits." },
-      { title: "Safe Pressure", description: "Maintains advantage even at distance." }
+      { title: "Screen Control", description: "Triglav spikes and Torbalan ghosts deny grounded and aerial approaches." },
+      { title: "Punish Reward", description: "Huge damage conversions from stray hits or OD Amnesia." },
+      { title: "Safe Pressure", description: "Departure portals allow for ambiguous, safe mix-ups." }
     ],
     weaknesses: [
-      { title: "Close Quarters", description: "Struggles when opponents stay inside." },
-      { title: "Setplay Vulnerability", description: "Loses control when smothered." },
-      { title: "Predictable Patterns", description: "Can be studied and counter-zoned." }
+      { title: "Close Quarters", description: "Struggles when opponents stay inside his dead zone." },
+      { title: "Setplay Vulnerability", description: "Loses control when smothered; relies on OD Amnesia to escape." },
+      { title: "Defensive Complexity", description: "Mistiming a counter or reversal often leads to death." }
     ],
     radar_stats: { Damage: 4, Health: 3, Mobility: 2, Zoning: 5, "Mix-up": 2 },
     topPlayer: null
@@ -270,7 +270,7 @@ module.exports = {
     overview: "A deceptive rushdown fighter who uses mobility and misdirection to overwhelm.",
     playstyle_summary: "Kimberly leverages dash cancels, spray can setups, and teleports for high-tempo, ambiguous offense.",
     archetype: "Tricky Rushdown",
-    execution: "High",
+    execution: "High", // Retained due to APM/Input Density
     strengths: [
       { title: "Speed", description: "Exceptional ground and air mobility." },
       { title: "Ambiguity", description: "Teleport and bombs create chaos." },
@@ -278,8 +278,8 @@ module.exports = {
     ],
     weaknesses: [
       { title: "Low Damage", description: "Must win neutral multiple times to kill." },
-      { title: "Defensive Options", description: "Lacks a fully invulnerable reversal without Super." }, // Fixed: Health is average (3)
-      { title: "Punishability", description: "Unsafe moves if mis-timed." }
+      { title: "Defensive Options", description: "Lacks a fully invulnerable reversal without Super." },
+      { title: "Input Density", description: "Requires high APM and precise run-stop cancels to function safe." } // Changed "Punishability" to this more accurate execution barrier
     ],
     radar_stats: { Damage: 2, Health: 3, Mobility: 5, Zoning: 1, "Mix-up": 5 },
     topPlayer: null
@@ -312,7 +312,7 @@ module.exports = {
     strengths: [
       { title: "Projectile Speed", description: "Sandblast punishes opponent startups from range." },
       { title: "Anti-Air", description: "Rising Uppercut is a distinct, reliable anti-air." },
-      { title: "Damage Consistency", description: "Charge mechanics reward patience." }
+      { title: "Perfect Knuckle", description: "Timed button holds unlock massive juggle routes and corner carry." } // Fixed
     ],
     weaknesses: [
       { title: "Short Range Pokes", description: "Loses to long-range pokes (e.g., Chun-Li, Dhalsim)." },
@@ -344,18 +344,18 @@ module.exports = {
 
   "marisa": {
     overview: "A slow but devastating bruiser who dominates trades and corner situations.",
-    playstyle_summary: "Marisa uses armored charge moves and high-damage punishes to impose fear and corner carry.",
+    playstyle_summary: "Marisa uses armored charge moves and high-damage punishes to impose fear and corner carry. She forces opponents to guess for their life, but struggles against mobile characters.",
     archetype: "Power / Brawler",
     execution: "Low",
     strengths: [
       { title: "Armor Tools", description: "Can challenge pressure effectively." },
       { title: "Burst Damage", description: "Top 3 in raw output." },
-      { title: "Corner Pressure", description: "Near checkmate with Drive Rush." }
+      { title: "Corner Pressure", description: "Oppressive lockdown with Drive Rush plus-frames." } // Fixed "Checkmate"
     ],
     weaknesses: [
-      { title: "Mobility", description: "Easily zoned or kited." },
+      { title: "Mobility", description: "Slow movement makes her easy to zone or out-maneuver." },
       { title: "Predictable Entry", description: "Armored charges can be baited." },
-      { title: "Execution", description: "Timing-sensitive confirms." }
+      { title: "Defensive Gaps", description: "Armor loses cleanly to throws and multi-hit moves. No invincible reversal." }
     ],
     radar_stats: { Damage: 5, Health: 4, Mobility: 1, Zoning: 1, "Mix-up": 2 },
     topPlayer: null
@@ -363,18 +363,18 @@ module.exports = {
 
   "rashid": {
     overview: "A vortex-heavy mobility fighter who breaks conventional spacing through wind-enhanced movement.",
-    playstyle_summary: "Rashid controls aerial and ground tempo through Whirlwind Shot and dive options, forcing unstable neutral.",
+    playstyle_summary: "Rashid controls aerial and ground tempo through Whirlwind Shot and dive options, forcing unstable neutral. He excels at cornering opponents and using Level 2 (Ysaar) to create checkmate pressure sequences.",
     archetype: "Vortex / Mix-up",
-    execution: "High",
+    execution: "High", // Correct
     strengths: [
-      { title: "Mobility", description: "Elite movement in all ranges." },
-      { title: "Okizeme", description: "Continuous looping pressure after knockdown." },
-      { title: "Scramble Strength", description: "Excels in chaos and resets." }
+      { title: "Mobility", description: "Elite movement options (Wall Jump, Run) dictate the pace." },
+      { title: "Corner Pressure", description: "Continuous looping oki and side-switch setups." },
+      { title: "Level 2 Install", description: "Ysaar creates one of the strongest win conditions in the game." }
     ],
     weaknesses: [
-      { title: "Stubby Normals", description: "Range is limited without wind enhancement." }, // Fixed: Health is average (3)
-      { title: "Damage Scaling", description: "Requires meter for strong conversions." },
-      { title: "Execution Demand", description: "Complex aerial setups." }
+      { title: "Stubby Normals", description: "Struggles to contest long-range pokes without wind stocks." }, // Fixed: He has 10,000 HP
+      { title: "Damage Scaling", description: "Requires heavy meter usage for optimal damage." },
+      { title: "Execution Demand", description: "Complex movement requires precise inputs to avoid errors." }
     ],
     radar_stats: { Damage: 3, Health: 3, Mobility: 5, Zoning: 3, "Mix-up": 5 },
     topPlayer: null
@@ -401,7 +401,7 @@ module.exports = {
 
   "zangief": {
     overview: "A command grab specialist who enforces fear through spacing control and immense reward per hit.",
-    playstyle_summary: "Zangief corners opponents using Drive Rush armor, SPD threat, and high stun potential — one mistake can end the round.",
+    playstyle_summary: "Zangief corners opponents using Drive Rush armor, SPD threat, and high stun potential. One mistake can end the round.",
     archetype: "Grappler",
     execution: "Medium",
     strengths: [
@@ -421,18 +421,18 @@ module.exports = {
   // --- SEASON 2 ADDITIONS ---
   "m-bison": {
     overview: "A powerhouse with oppressive plus-frames, teleport pressure, and corner lockdown.",
-    playstyle_summary: "M. Bison overwhelms opponents with frame traps, Psycho Impact pressure, and forced defense loops.",
-    archetype: "Pressure / Dictator",
-    execution: "Medium",
+    playstyle_summary: "M. Bison overwhelms opponents with frame traps and Psycho Mine pressure. He 'dictates' the pace by forcing opponents to block while he plants bombs for high-damage checkmate sequences.",
+    archetype: "Pressure / Plus-Frames", // Changed from "Dictator" to be more descriptive
+    execution: "Medium", // Keeps Medium (Scissor Kicks are now simple Motion inputs)
     strengths: [
-      { title: "Frame Advantage", description: "Dominates once in block range." },
-      { title: "Teleport Mix", description: "Ambiguous movement confuses defense." },
-      { title: "Corner Traps", description: "Extremely strong against passive play." }
+      { title: "Frame Advantage", description: "Dominates close range with plus-on-block normals." },
+      { title: "Psycho Mine", description: "Bomb plants force opponents to freeze or take massive damage." },
+      { title: "Corner Traps", description: "Extremely strong throw/strike mixup against cornered opponents." }
     ],
     weaknesses: [
-      { title: "Mobility", description: "Slow walk speed, relies on Drive Rush." },
-      { title: "Predictable Strings", description: "Pressure can be parried if read." },
-      { title: "No True Reversal", description: "Relies on meter to escape." }
+      { title: "Mobility", description: "Slow walk speed; relies on Drive Rush to close gaps." },
+      { title: "Defensive Gaps", description: "No invulnerable reversal without spending Super meter." },
+      { title: "Linear Approach", description: "Scissor Kicks and Devil Reverse can be anti-aired if predictable." }
     ],
     radar_stats: { Damage: 4, Health: 3, Mobility: 3, Zoning: 2, "Mix-up": 5 },
     topPlayer: null
@@ -445,15 +445,15 @@ module.exports = {
     execution: "Medium",
     strengths: [
       { title: "Neutral Skipping", description: "Burn Knuckle and Crack Shoot close gaps instantly." },
-      { title: "Damage", description: "High damage output when spending meter." },
+      { title: "Corner Carry", description: "Pushes opponents wall-to-wall with Power Dunk enders." }, // Replaced "Damage"
       { title: "Anti-Air", description: "Rising Tackle is a strong defensive tool." }
     ],
     weaknesses: [
-      { title: "Meter Hungry", description: "Needs Drive Gauge to be truly threatening." },
-      { title: "Linearity", description: "Specials are unsafe if spaced poorly." },
-      { title: "Recovery", description: "Whiffed specials are easily punished." }
+      { title: "Meter Hungry", description: "Needs Drive Gauge to convert pokes into significant reward." },
+      { title: "Honest Mix-up", description: "Lacks fast overheads or gimmicks to open up turtles." }, // Replaced redundant entry
+      { title: "Commitment", description: "Specials are highly punishable on block or whiff." } // Merged Linearity/Recovery
     ],
-    radar_stats: { Damage: 4, Health: 3, Mobility: 3, Zoning: 3, "Mix-up": 3 },
+    radar_stats: { Damage: 3, Health: 3, Mobility: 3, Zoning: 3, "Mix-up": 3 }, // Damage lowered to 3
     topPlayer: null
   },
 
@@ -477,60 +477,60 @@ module.exports = {
   },
 
   "elena": {
-    overview: "A mobile footsie character defined by long-range normals and unique healing potential.",
-    playstyle_summary: "Elena frustrates through evasive movement and low-risk pokes, then sustains life with her Super arts in drawn-out matches.",
-    archetype: "Footsie / Sustain",
+    overview: "A mobile footsie character defined by long-range normals and confusing animation frames.",
+    playstyle_summary: "Elena frustrates through evasive movement and low-risk pokes. She uses her awkward hurtbox to avoid punishes, then opens opponents up with ambiguous high/low target combos.",
+    archetype: "Footsie / High-Low",
     execution: "Medium",
     strengths: [
       { title: "Range", description: "Long reach on key pokes and target strings." },
-      { title: "Evasion", description: "High mobility and awkward hurtbox." },
-      { title: "Healing", description: "Super Art allows life recovery." }
+      { title: "Evasion", description: "High mobility and awkward hurtbox make her hard to punish." },
+      { title: "Mix-up", description: "Strong overhead/low target combos are difficult to block on reaction." }
     ],
     weaknesses: [
-      { title: "Low Damage", description: "Struggles to snowball momentum." },
-      { title: "Limited Defense", description: "Few reversal options." },
-      { title: "Super Risk", description: "Healing punishable if telegraphed." }
+      { title: "Low Burst", description: "Requires multiple successful mix-up sequences to close out a round." },
+      { title: "Limited Defense", description: "Few reversal options when pressured." },
+      { title: "Whiff Vulnerability", description: "Long-range normals leave her hurtbox extended, inviting whiff punishes." } // Replaced "Super Risk"
     ],
-    radar_stats: { Damage: 2, Health: 3, Mobility: 4, Zoning: 2, "Mix-up": 3 },
+    radar_stats: { Damage: 2, Health: 3, Mobility: 4, Zoning: 2, "Mix-up": 4 },
     topPlayer: null
   },
 
   // --- SPECIAL / REQUESTED ADDITIONS ---
   "c-viper": {
-    overview: "An explosive, high-execution rushdown character who thrives on relentless offense and aerial feints.",
-    playstyle_summary: "C. Viper is a momentum monster who leverages feints, seismos, and burn kick mix to overwhelm opponents. She rewards mechanical mastery with oppressive pressure sequences.",
+    overview: "An explosive, high-execution rushdown character defined by Super Jump mobility and rapid-fire feint cancels.",
+    playstyle_summary: "C. Viper uses Seismo blasts to bait Parries and check movement, rather than for pure zoning. She dominates by canceling normal moves into Super Jumps (SJC) for explosive damage and uses Thunder Knuckle feints to freeze opponents before resetting pressure with throws.",
     archetype: "Technical Rushdown / Mix-up",
     execution: "Very High",
     strengths: [
-      { title: "Okizeme", description: "Top-tier knockdown pressure with ambiguous setups." },
-      { title: "Feint Cancels", description: "Thunder Knuckle feints create safe pressure and frame traps." },
-      { title: "Aerial Approach", description: "Burn Kick cross-ups and jump arcs punish static defense." }
+      { title: "Okizeme", description: "Unseeable left/right/throw mixups using Burn Kick and Super Jump cross-ups." },
+      { title: "Burst Damage", description: "Super Jump Cancels (SJC) unlock some of the highest non-super damage routes in the game." }, // More specific than just "Explosive"
+      { title: "Anti-Zoning", description: "Super Jump and OD Seismo allow her to bypass fireball wars entirely." }
     ],
     weaknesses: [
-      { title: "Defense", description: "Lacks reliable meterless reversal options." },
-      { title: "Execution", description: "Requires advanced cancel precision and manual timing." },
-      { title: "Neutral Risk", description: "Struggles to establish presence against strong zoners." }
+      { title: "Defensive Options", description: "Lacks a reliable meterless reversal. Relies heavily on OD gauge to escape pressure." },
+      { title: "Execution Barrier", description: "Optimal routing requires consistent SJC inputs. Dropping them leaves her unsafe." },
+      { title: "Drive Gauge Thirsty", description: "Relies on OD moves to make Burn Kick pressure safe on block." } // Critical SF6 meta point
     ],
-    radar_stats: { Damage: 5, Health: 3, Mobility: 5, Zoning: 1, "Mix-up": 5 },
+    radar_stats: { Damage: 4, Health: 3, Mobility: 5, Zoning: 2, "Mix-up": 4 },
     topPlayer: null
   },
 
   "sagat": {
-    overview: "The Emperor of Muay Thai who controls the screen with unrivaled projectile speed and reach.",
-    playstyle_summary: "Sagat enforces a strict zoning game with High and Low Tiger Shots, punishing any jump attempt with a devastating Tiger Uppercut.",
-    archetype: "Zoner / King",
+    overview: "The Emperor of Muay Thai who controls the screen with unrivaled reach and anti-air consistency.",
+    playstyle_summary: "Sagat acts as a mobile wall. While he loses the pure fireball war to Guile, he dominates the mid-range with massive normals and creates a 'no-fly zone' with Tiger Uppercut. He frustrates opponents into jumping or crouching, then punishes their positioning.",
+    archetype: "Zoner / Mid-Range King", // Adjusted to reflect he is less of a pure zoner than Guile
     execution: "Medium",
     strengths: [
-      { title: "Projectile Dominance", description: "Fastest recovery fireballs in the game." },
-      { title: "Anti-Air", description: "Tiger Uppercut covers huge vertical space." },
-      { title: "Reach", description: "Massive limbs control mid-range effortlessly." }
+      { title: "Space Denial", description: "High/Low shots force reactions, but his limbs (st.HK) actually control the neutral." }, // Fixed
+      { title: "Anti-Air", description: "Tiger Uppercut covers huge vertical space; arguably best AA in the game." },
+      { title: "Damage", description: "High damage output on stray hits and Tiger Knee confirms." } // Replaced "Reach" with Damage since Reach is covered in Space Denial
     ],
     weaknesses: [
-      { title: "Mobility", description: "Slow walk speed and heavy jump arc." },
-      { title: "Big Hurtbox", description: "Easier to combo against and harder to escape pressure." },
-      { title: "Close Range", description: "Struggles against fast, small rushdown characters." }
+      { title: "Mobility", description: "Slow walk speed and heavy jump arc make escaping pressure difficult." },
+      { title: "Big Hurtbox", description: "Easier to combo against; fuzzy guard setups work on him that fail on others." },
+      { title: "Projectile Recovery", description: "Slower recovery than Guile makes him vulnerable to Drive Rush punishes." } // Added specific meta weakness
     ],
-    radar_stats: { Damage: 5, Health: 4, Mobility: 1, Zoning: 5, "Mix-up": 2 },
+    radar_stats: { Damage: 5, Health: 4, Mobility: 1, Zoning: 4, "Mix-up": 2 }, // Lowered Zoning to 4 to reflect Guile is the 5
     topPlayer: null
   }
 };
