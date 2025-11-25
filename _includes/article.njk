@@ -92,8 +92,8 @@
   "image": [
     "{{ site.url }}{{ image if image else '/images/default-news.jpg' }}"
   ],
-  "datePublished": "{{ date | date('YYYY-MM-DDTHH:mm:ssZ') }}",
-  "dateModified": "{{ date | date('YYYY-MM-DDTHH:mm:ssZ') }}",
+  "datePublished": "{{ date | date('yyyy-MM-ddTHH:mm:ssZZ') }}",
+  "dateModified": "{{ date | date('yyyy-MM-ddTHH:mm:ssZZ') }}",
   "author": {
     "@type": "Person",
     "name": {{ (authorName or 'FGC Top Players') | dump | safe }}
