@@ -56,9 +56,11 @@ navHighlight: "Home"
         "@type": "ListItem",
         "position": {{ loop.index }},
         "url": "{{ site.url }}{{ article.url }}",
-        "name": {{ (article.data.title or 'FGC News') | dump }}{% if article.data.cardImage %},
-        "image": "{{ site.url }}{{ article.data.cardImage }}"{% endif %},
-        "datePublished": "{{ article.date | date('yyyy-LL-dd') }}"
+        "name": {{ (article.data.title or 'FGC News') | dump | safe }},
+        {% if article.data.cardImage %}
+        "image": "{{ site.url }}{{ article.data.cardImage }}",
+        {% endif %}
+        "datePublished": "{{ article.date | date('yyyy-MM-dd') }}"
       }{% if not loop.last %},{% endif %}
       {% endfor %}
     ]
