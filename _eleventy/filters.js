@@ -28,6 +28,13 @@ const STAT_ACRONYMS = new Set([
   "T16",
   "PR",
   "TR",
+  "CPV",
+  "T3R",
+  "CMS",
+  "CPF",
+  "TS",
+  "TP",
+  "RDI",
 ]);
 
 const WORD_CHAR = /[A-Za-z0-9_]/;
@@ -81,12 +88,24 @@ const EXTRA_KEYWORDS = [
 ];
 
 const ANALYTICS_TERMS = [
-  { key: "glossary:fgpi", label: "FGPI" },
-  { key: "glossary:tdr", label: "TDR" },
-  { key: "glossary:performance-index", label: "performance index" },
-  { key: "glossary:momentum-score", label: "momentum score" },
-  { key: "glossary:top-40-streak", label: "top 40 streak" },
-  { key: "glossary:ranking-system", label: "ranking system" },
+  { key: "glossary:fgpi", label: "FGPI", url: "/fgpi/" },
+  { key: "glossary:tdr", label: "TDR", url: "/analytics-glossary/#tdr" },
+  { key: "glossary:pf", label: "PF", url: "/analytics-glossary/#pf" },
+  { key: "glossary:ms", label: "MS", url: "/analytics-glossary/#ms" },
+  { key: "glossary:app", label: "APP", url: "/analytics-glossary/#app" },
+  { key: "glossary:apm", label: "APM", url: "/analytics-glossary/#apm" },
+  { key: "glossary:cpv", label: "CPV", url: "/analytics-glossary/#cpv" },
+  { key: "glossary:t3r", label: "T3R", url: "/analytics-glossary/#t3r" },
+  { key: "glossary:cms", label: "CMS", url: "/analytics-glossary/#cms" },
+  { key: "glossary:cpf", label: "CPF", url: "/analytics-glossary/#cpf" },
+  { key: "glossary:ts", label: "TS", url: "/analytics-glossary/#ts" },
+  { key: "glossary:tp", label: "TP", url: "/analytics-glossary/#tp" },
+  { key: "glossary:rdi", label: "RDI", url: "/analytics-glossary/#rdi" },
+  { key: "glossary:performance-floor", label: "Performance Floor", url: "/analytics-glossary/#pf" },
+  { key: "glossary:momentum-score", label: "Momentum Score", url: "/analytics-glossary/#ms" },
+  { key: "glossary:performance-viability", label: "Competitive Performance Viability", url: "/analytics-glossary/#cpv" },
+  { key: "glossary:top-3-rate", label: "Top-3 Rate", url: "/analytics-glossary/#t3r" },
+  { key: "glossary:ranking-system", label: "ranking system", url: "/reference/ranking-system/" },
 ];
 
 const TYPE_PRIORITY = {
@@ -166,13 +185,19 @@ function buildPlayerEntries(playerProfiles, pageUrl) {
       if (rank <= 0 || rank > 300) return false;
       return true;
     })
-    .map((player) => ({
-      key: `player:${player.slug}`,
-      label: player.name.trim(),
-      url: `/players/${player.slug}/`,
-      type: "player",
-      maxMatches: 2,
-    }))
+    .map((player) => {
+      const label = player.name.trim();
+      // For very short names (3 chars or less), use case-sensitive matching
+      const caseSensitive = label.length <= 3;
+      return {
+        key: `player:${player.slug}`,
+        label,
+        url: `/players/${player.slug}/`,
+        type: "player",
+        maxMatches: 2,
+        caseSensitive, // Flag for case-sensitive matching
+      };
+    })
     .filter((entry) => entry.url !== pageUrl);
 }
 
@@ -196,31 +221,46 @@ function buildTagEntries(collections, pageUrl) {
 
 function buildCharacterEntries(pageUrl) {
   if (!Array.isArray(characterMasterList)) return [];
-  return characterMasterList
+  const entries = [];
+
+  characterMasterList
     .filter((entry) => entry && typeof entry.name === "string" && entry.name.trim())
-    .map((entry) => {
+    .forEach((entry) => {
       const label = entry.name.trim();
       const slug = slugify(label, { lower: true, strict: true });
-      return {
+
+      // Add full name entry
+      entries.push({
         key: `character:${slug}`,
         label,
         url: `/characters/${slug}/`,
         type: "character",
         maxMatches: 1,
-      };
-    })
-    .filter((entry) => entry.url !== pageUrl);
+      });
+
+      // Check for shortened names (e.g., "M. Bison" -> "Bison")
+      const shortNameMatch = label.match(/^[A-Z]\.\s+(.+)$/);
+      if (shortNameMatch) {
+        const lastName = shortNameMatch[1];
+        entries.push({
+          key: `character:${slug}-short`,
+          label: lastName,
+          url: `/characters/${slug}/`,
+          type: "character",
+          maxMatches: 1,
+        });
+      }
+    });
+
+  return entries.filter((entry) => entry.url !== pageUrl);
 }
 
 function buildGlossaryEntries(pageUrl) {
   return ANALYTICS_TERMS.map((term) => ({
     ...term,
-    url:
-      term.key === "glossary:ranking-system"
-        ? "/reference/ranking-system/"
-        : "/analytics-glossary/",
+    url: term.url || "/analytics-glossary/",
     type: "glossary",
-    maxMatches: term.label.includes("FGPI") || term.label.includes("TDR") ? 2 : 1,
+    maxMatches: term.label.length <= 4 ? 2 : 1, // Acronyms can appear twice, phrases once
   })).filter((entry) => entry.url !== pageUrl);
 }
 
@@ -243,7 +283,7 @@ function prepareEntries(playerProfiles, collections, pageUrl) {
     .filter((entry) => entry.label && entry.url)
     .map((entry) => ({
       ...entry,
-      regex: new RegExp(escapeRegExp(entry.label), "gi"),
+      regex: new RegExp(escapeRegExp(entry.label), entry.caseSensitive ? "g" : "gi"),
     }));
 
   entriesWithRegex.sort((a, b) => {
