@@ -182,7 +182,7 @@ function buildPlayerEntries(playerProfiles, pageUrl) {
       if (!name) return false;
       const rank = Number.isFinite(player.rank) ? player.rank : null;
       if (rank === null) return false;
-      if (rank <= 0 || rank > 300) return false;
+      if (rank <= 0 || rank > 200) return false;
       return true;
     })
     .map((player) => {
