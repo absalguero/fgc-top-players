@@ -192,7 +192,7 @@ function buildPlayerEntries(playerProfiles, pageUrl) {
         label,
         url: `/players/${player.slug}/`,
         type: "player",
-        maxMatches: 2,
+        maxMatches: 1, // Only link the first mention for cleaner UX
         caseSensitive: true, // Always use case-sensitive matching for player names
       };
     })
@@ -269,9 +269,53 @@ function buildExtraEntries(pageUrl) {
 }
 
 function prepareEntries(playerProfiles, collections, pageUrl) {
+  const playerEntries = buildPlayerEntries(playerProfiles, pageUrl);
+  const tagEntries = buildTagEntries(collections, pageUrl);
+
+  // Build a Set of ALL player names (not just top 200) for identifying player tags
+  const allPlayerNames = new Set();
+  if (Array.isArray(playerProfiles)) {
+    playerProfiles.forEach(player => {
+      if (player && typeof player.name === "string") {
+        allPlayerNames.add(player.name.trim().toLowerCase());
+      }
+    });
+  }
+
+  // Build a map of top 200 player names who have profiles
+  const top200PlayerNames = new Set();
+  playerEntries.forEach(player => {
+    top200PlayerNames.add(player.label.toLowerCase());
+  });
+
+  // Build a map of tag URLs by label (case-insensitive)
+  const tagsByLabel = new Map();
+  tagEntries.forEach(tag => {
+    tagsByLabel.set(tag.label.toLowerCase(), tag.url);
+  });
+
+  // Enhance player entries with tag URLs if they have matching tags
+  const enhancedPlayerEntries = playerEntries.map(player => {
+    const tagUrl = tagsByLabel.get(player.label.toLowerCase());
+    return tagUrl ? { ...player, tagUrl } : player;
+  });
+
+  // Mark tag entries that are player tags (but player has no profile in top 200)
+  const enhancedTagEntries = tagEntries.map(tag => {
+    const labelLower = tag.label.toLowerCase();
+    const isPlayerTag = allPlayerNames.has(labelLower);
+    const hasProfile = top200PlayerNames.has(labelLower);
+
+    // If it's a player tag but player doesn't have a profile, show icon only
+    if (isPlayerTag && !hasProfile) {
+      return { ...tag, showIconOnly: true, maxMatches: 1 };
+    }
+    return tag;
+  });
+
   const rawEntries = [
-    ...buildPlayerEntries(playerProfiles, pageUrl),
-    ...buildTagEntries(collections, pageUrl),
+    ...enhancedPlayerEntries,
+    ...enhancedTagEntries,
     ...buildCharacterEntries(pageUrl),
     ...buildGlossaryEntries(pageUrl),
     ...buildExtraEntries(pageUrl),
@@ -294,7 +338,15 @@ function prepareEntries(playerProfiles, collections, pageUrl) {
 
   const seenLabels = new Set();
   return entriesWithRegex.filter((entry) => {
-    const key = `${entry.type}:${entry.label.toLowerCase()}`;
+    const key = entry.label.toLowerCase();
+
+    // Don't deduplicate tag entries marked as showIconOnly
+    if (entry.showIconOnly) {
+      return true;
+    }
+
+    // Use only the label (case-insensitive) as key to deduplicate across types
+    // This ensures player links take priority over tag links for the same name
     if (seenLabels.has(key)) return false;
     seenLabels.add(key);
     return true;
@@ -361,12 +413,41 @@ function processTextNode(document, node, entries, linkCounts) {
       parent.insertBefore(document.createTextNode(text.slice(0, index)), node);
     }
 
-    const anchor = document.createElement("a");
-    anchor.setAttribute("href", entry.url);
-    anchor.setAttribute("data-auto-link", entry.type);
-    anchor.className = `auto-link auto-link--${entry.type}`;
-    anchor.textContent = match;
-    parent.insertBefore(anchor, node);
+    // For tags marked as showIconOnly (player tags without profiles), show only the icon
+    if (entry.showIconOnly) {
+      // Insert plain text (no link)
+      parent.insertBefore(document.createTextNode(match), node);
+
+      // Insert tag icon
+      const tagIcon = document.createElement("a");
+      tagIcon.setAttribute("href", entry.url);
+      tagIcon.setAttribute("data-player-tag", "true");
+      tagIcon.className = "player-tag-icon";
+      tagIcon.setAttribute("aria-label", `View ${match} tag page`);
+      tagIcon.setAttribute("title", `View articles tagged with ${match}`);
+      tagIcon.innerHTML = '<i class="fas fa-tag"></i>';
+      parent.insertBefore(tagIcon, node);
+    } else {
+      // Normal behavior: create link for the text
+      const anchor = document.createElement("a");
+      anchor.setAttribute("href", entry.url);
+      anchor.setAttribute("data-auto-link", entry.type);
+      anchor.className = `auto-link auto-link--${entry.type}`;
+      anchor.textContent = match;
+      parent.insertBefore(anchor, node);
+
+      // If this is a player with a corresponding tag, add a tag icon link
+      if (entry.type === "player" && entry.tagUrl) {
+        const tagIcon = document.createElement("a");
+        tagIcon.setAttribute("href", entry.tagUrl);
+        tagIcon.setAttribute("data-player-tag", "true");
+        tagIcon.className = "player-tag-icon";
+        tagIcon.setAttribute("aria-label", `View ${match} tag page`);
+        tagIcon.setAttribute("title", `View articles tagged with ${match}`);
+        tagIcon.innerHTML = '<i class="fas fa-tag"></i>';
+        parent.insertBefore(tagIcon, node);
+      }
+    }
 
     linkCounts.set(entry.key, (linkCounts.get(entry.key) || 0) + 1);
     text = text.slice(index + match.length);

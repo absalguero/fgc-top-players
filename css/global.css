@@ -5525,3 +5525,32 @@ body.mobile-nav-open {
     overflow-y: auto !important;
   }
 }
+
+/* --- PLAYER TAG ICON --- */
+.player-tag-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.15rem;
+  background: rgba(0, 150, 255, 0.12);
+  border: 1px solid rgba(0, 150, 255, 0.25);
+  color: rgba(100, 180, 255, 0.95);
+  padding: 3px 8px;
+  font-size: 0.65em;
+  font-weight: 500;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  vertical-align: middle;
+}
+
+.player-tag-icon:hover {
+  background: rgba(0, 150, 255, 0.2);
+  border-color: rgba(0, 150, 255, 0.4);
+  color: rgba(120, 200, 255, 1);
+  box-shadow: 0 0 8px rgba(0, 150, 255, 0.15);
+}
+
+.player-tag-icon i {
+  font-size: 1em;
+}
