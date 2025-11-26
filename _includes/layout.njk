@@ -24,16 +24,21 @@
       });
     </script>
 
-    {# 2. Load Google Analytics #}
+    {# 2. Load Google Analytics (Production Only) #}
+{% if env.environment == "production" %}
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-47ZV9G37SY"></script>
     <script>
       gtag('js', new Date());
       gtag('config', 'G-47ZV9G37SY');
     </script>
+{% endif %}
 
     {# 3. Google AdSense Engine (Loads once for the whole page) #}
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4748186290410675"
-     crossorigin="anonymous"></script>
+    {# Wrapped to prevent ads from loading on localhost #}
+    {% if env.environment == "production" %}
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4748186290410675"
+          crossorigin="anonymous"></script>
+    {% endif %}
 
     {# --- Canonical helpers --- #}
     {% set canonical_path = canonical or page.url %}
@@ -49,14 +54,18 @@
     <meta property="og:url" content="{{ canonical_abs }}">
     <meta property="og:title" content="{% block og_title %}{{ title or 'FGC Top Players' }}{% endblock %}">
     <meta property="og:description" content="{% block og_description %}The definitive ranking of top professional fighting game players. See who's on top and track your favorite pros.{% endblock %}">
-    <meta property="og:image" content="{{ site.url }}/images/fgc-rankings-social-card.png">
+    {# --- Social / Open Graph Images --- #}
+    {# Logic: Use page-specific image if available, otherwise use default social card #}
+    {% set socialImage = image or '/images/fgc-top-players-social-card.png' %}
+
+    <meta property="og:image" content="{{ site.url }}{{ socialImage }}">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@FGCTopPlayers">
     <meta name="twitter:url" content="{{ canonical_abs }}">
     <meta name="twitter:title" content="{% block twitter_title %}{{ title or 'FGC Global Player Rankings' }}{% endblock %}">
     <meta name="twitter:description" content="{% block twitter_description %}The definitive ranking of top professional fighting game players. See who's on top and track your favorite pros.{% endblock %}">
-    <meta name="twitter:image" content="{{ site.url }}/images/fgc-rankings-social-card.png">
+    <meta name="twitter:image" content="{{ site.url }}{{ socialImage }}">
 
     {# --- Canonical --- #}
     {% block canonical %}
@@ -74,7 +83,7 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/pagefind/pagefind-ui.css">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon.png" />
     <link rel="shortcut icon" href="/images/favicon.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
     <meta name="theme-color" content="#FF5E13" />
