@@ -5,6 +5,7 @@ pagination:
   data: tournaments.events
   size: 15
   alias: pageEvents
+  addAllPagesToCollections: true
 permalink: "/tournament-results/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
 eleventyNavigation:
   key: Tournament Results

@@ -9,7 +9,12 @@
       "Bash(cp:*)",
       "Bash(cat:*)",
       "Bash(node -e:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(node debug-players.js:*)",
+      "Bash(find:*)",
+      "Bash(comm -23:*)",
+      "Bash(xargs -I {} bash -c 'echo \"\"\"\"Checking {}\"\"\"\"; grep -A 2 \"\"\"\"rank\"\"\"\" \"\"\"\"C:\\fgctp\\_site/{}/index.html\"\"\"\" | head -5')",
+      "Bash(done)"
     ],
     "deny": [],
     "ask": []

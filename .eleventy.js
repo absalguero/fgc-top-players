@@ -107,7 +107,8 @@ module.exports = async function (eleventyConfig) {
       const rankNum = typeof p?.rank === "number" ? p.rank : Number(p?.rank);
       const isTop200 = Number.isFinite(rankNum) && rankNum > 0 && rankNum <= 200;
       const isNotablePlayer = p.slug && notablePlayerSlugs.has(p.slug);
-      return isTop200 || isNotablePlayer;
+      const hasEnoughResults = results.length >= 3;
+      return isTop200 || isNotablePlayer || hasEnoughResults;
     });
 
     const seen = new Map();

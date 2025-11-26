@@ -5,6 +5,7 @@ pagination:
   size: 6
   alias: articles
   reverse: true
+  addAllPagesToCollections: true
 permalink: "{% if pagination.pageNumber == 0 %}/{% else %}/page/{{ pagination.pageNumber + 1 }}/{% endif %}"
 eleventyNavigation:
   key: Home

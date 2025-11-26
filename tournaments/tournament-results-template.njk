@@ -3,6 +3,7 @@ pagination:
   data: tournaments.events
   size: 1
   alias: tournamentData
+  addAllPagesToCollections: true
 permalink: "/tournaments/{{ tournamentData.slug }}/"
 ---
 {% extends "layout.njk" %}

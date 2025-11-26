@@ -172,19 +172,23 @@ function hasSkipAncestor(node) {
   return false;
 }
 
-function buildPlayerEntries(playerProfiles, pageUrl) {
-  if (!Array.isArray(playerProfiles)) return [];
+function buildPlayerEntries(playerProfiles, pageUrl, collectionsPlayers) {
+  // Use collections.players if available (it has the correct filtering logic)
+  // Otherwise fall back to top 200 from playerProfiles
+  const playersToLink = Array.isArray(collectionsPlayers) && collectionsPlayers.length > 0
+    ? collectionsPlayers
+    : (Array.isArray(playerProfiles) ? playerProfiles.filter((player) => {
+        if (!player || typeof player.name !== "string" || !player.slug) return false;
+        const name = player.name.trim();
+        if (!name) return false;
+        const rank = Number.isFinite(player.rank) ? player.rank : null;
+        if (rank === null) return false;
+        if (rank <= 0 || rank > 200) return false;
+        return true;
+      }) : []);
 
-  return playerProfiles
-    .filter((player) => {
-      if (!player || typeof player.name !== "string" || !player.slug) return false;
-      const name = player.name.trim();
-      if (!name) return false;
-      const rank = Number.isFinite(player.rank) ? player.rank : null;
-      if (rank === null) return false;
-      if (rank <= 0 || rank > 200) return false;
-      return true;
-    })
+  return playersToLink
+    .filter((player) => player && typeof player.name === "string" && player.slug && player.name.trim())
     .map((player) => {
       const label = player.name.trim();
       return {
@@ -193,7 +197,7 @@ function buildPlayerEntries(playerProfiles, pageUrl) {
         url: `/players/${player.slug}/`,
         type: "player",
         maxMatches: 1, // Only link the first mention for cleaner UX
-        caseSensitive: true, // Always use case-sensitive matching for player names
+        caseSensitive: false, // Use case-insensitive matching for player names
       };
     })
     .filter((entry) => entry.url !== pageUrl);
@@ -269,7 +273,8 @@ function buildExtraEntries(pageUrl) {
 }
 
 function prepareEntries(playerProfiles, collections, pageUrl) {
-  const playerEntries = buildPlayerEntries(playerProfiles, pageUrl);
+  const collectionsPlayers = Array.isArray(collections?.players) ? collections.players : [];
+  const playerEntries = buildPlayerEntries(playerProfiles, pageUrl, collectionsPlayers);
   const tagEntries = buildTagEntries(collections, pageUrl);
 
   // Build a Set of ALL player names (not just top 200) for identifying player tags
@@ -282,10 +287,10 @@ function prepareEntries(playerProfiles, collections, pageUrl) {
     });
   }
 
-  // Build a map of top 200 player names who have profiles
-  const top200PlayerNames = new Set();
+  // Build a map of player names who have profile pages
+  const playersWithPages = new Set();
   playerEntries.forEach(player => {
-    top200PlayerNames.add(player.label.toLowerCase());
+    playersWithPages.add(player.label.toLowerCase());
   });
 
   // Build a map of tag URLs by label (case-insensitive)
@@ -300,11 +305,11 @@ function prepareEntries(playerProfiles, collections, pageUrl) {
     return tagUrl ? { ...player, tagUrl } : player;
   });
 
-  // Mark tag entries that are player tags (but player has no profile in top 200)
+  // Mark tag entries that are player tags (but player has no profile page)
   const enhancedTagEntries = tagEntries.map(tag => {
     const labelLower = tag.label.toLowerCase();
     const isPlayerTag = allPlayerNames.has(labelLower);
-    const hasProfile = top200PlayerNames.has(labelLower);
+    const hasProfile = playersWithPages.has(labelLower);
 
     // If it's a player tag but player doesn't have a profile, show icon only
     if (isPlayerTag && !hasProfile) {
