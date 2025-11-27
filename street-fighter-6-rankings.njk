@@ -81,9 +81,10 @@ eleventyNavigation:
       "position": {{ loop.index }},
       "item": {
         "@type": "Person",
-        "name": {{ player.Player | dump }}{% if player.Country %},
-        "nationality": {{ player.Country | dump }}{% endif %}{% if player.Character %},
-        "description": {{ ("Main: " ~ player.Character) | dump }}{% endif %}
+        {# Added | safe to all dumped variables below #}
+        "name": {{ player.Player | dump | safe }}{% if player.Country %},
+        "nationality": {{ player.Country | dump | safe }}{% endif %}{% if player.Character %},
+        "description": {{ ("Main: " ~ player.Character) | dump | safe }}{% endif %}
       }
     }{% if loop.index < limit and loop.index < (rankings.players | length) %},{% endif %}
     {% endif %}
