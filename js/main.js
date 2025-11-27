@@ -2,7 +2,22 @@
 
 /* --- UTILITIES --- */
 const createSafeSlug = (name) => !name ? '' : name.toLowerCase().replace(/[#<>:"/\\|?*().]/g, '').replace(/\s+/g, '-').trim();
-const smartGoBack = () => window.history.length > 2 ? history.back() : window.location.href = "/news/";
+const smartGoBack = () => {
+  // Try to get the stored news listing page from sessionStorage
+  const storedNewsPage = sessionStorage.getItem('newsListingPage');
+
+  if (storedNewsPage) {
+    // Clear it and navigate back to it
+    sessionStorage.removeItem('newsListingPage');
+    window.location.href = storedNewsPage;
+  } else if (window.history.length > 2) {
+    // Fallback to browser history
+    history.back();
+  } else {
+    // Ultimate fallback to news home
+    window.location.href = "/";
+  }
+};
 const debounce = (fn, delay = 180) => { let t; return (...args) => { clearTimeout(t); t = setTimeout(() => fn.apply(null, args), delay); }; };
 
 /* --- TOOLTIP SYSTEM --- */

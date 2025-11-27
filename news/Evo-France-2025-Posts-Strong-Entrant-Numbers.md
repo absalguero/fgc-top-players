@@ -41,6 +41,7 @@ The seven mainline games at Evo France 2025 attracted the following number of pa
     </tbody>
   </table>
 </div>
+<br>
 
 Street Fighter 6 and Tekken 8 clearly dominate registrations, accounting for the majority of entrants. This demonstrates that marquee titles continue to drive participation, while mid-tier games see more modest turnout.
 
@@ -71,4 +72,4 @@ Evo France 2025 provides a promising start for Evo’s European expansion. Stree
 
 ---
 
-*(Credit: Evo France on X — via [this staff announcement](https://x.com/Evo_France/status/1967966077914382352))*
+*(Credit: Evo France on X, via [this staff announcement](https://x.com/Evo_France/status/1967966077914382352))*

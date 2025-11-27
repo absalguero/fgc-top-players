@@ -15,7 +15,7 @@ imageCredit: "Capcom"
 imageSourceUrl: "https://sf.esports.capcom.com/"
 ---
 
-In a landmark shift for fighting game esports, Capcom has announced that the Capcom Cup 12 Finals will be broadcast as a pay-per-view (PPV) event. The controversial decision places the tournament’s Top 16 finals bracket, scheduled for March 14, 2026, behind a paywall — breaking from the long-standing tradition of free access for its premier Street Fighter tournament.
+In a landmark shift for fighting game esports, Capcom has announced that the Capcom Cup 12 Finals will be broadcast as a pay-per-view (PPV) event. The controversial decision places the tournament’s Top 16 finals bracket, scheduled for March 14, 2026, behind a paywall, breaking from the long-standing tradition of free access for its premier Street Fighter tournament.
 
 The event, which features a $1,282,000 prize pool with $1 million for the champion, will be held at Tokyo’s Ryōgoku Kokugikan. While the early stages of the 48-player tournament from March 11–13 will remain free to watch, the climax of the competition will require a paid ticket.
 
@@ -29,7 +29,7 @@ For those who miss the live broadcast, free replays of the matches (without comm
 
 ## Community Backlash and Industry Precedent
 
-The announcement was met with immediate and widespread backlash from the fighting game community (FGC). Many fans and players argue that the PPV model undermines the grassroots accessibility that has been crucial to the FGC’s growth. Prominent professional player **Adel “Big Bird” Anouche** called it a “surprising and weird decision,” expressing that he doesn’t believe this is the right approach — a sentiment he shared directly on social media. ([Big Bird on X](https://x.com/Bigbird_fgc/status/1972276202900779274))
+The announcement was met with immediate and widespread backlash from the fighting game community (FGC). Many fans and players argue that the PPV model undermines the grassroots accessibility that has been crucial to the FGC’s growth. Prominent professional player **Adel “Big Bird” Anouche** called it a “surprising and weird decision,” expressing that he doesn’t believe this is the right approach, a sentiment he shared directly on social media. ([Big Bird on X](https://x.com/Bigbird_fgc/status/1972276202900779274))
 
 The move is widely seen as a dangerous precedent that could lead other major tournaments, such as EVO or the Tekken World Tour, to adopt similar paid models.
 
@@ -41,5 +41,5 @@ As the event approaches, the key questions remain: will community pressure lead 
 
 ---
 
-*Source: [Capcom Fighters](https://sf.esports.capcom.com/)*  
+*Source: [Capcom Fighters](https://sf.esports.capcom.com/)*<br>
 *Source: [Adel “Big Bird” Anouche on X](https://x.com/Bigbird_fgc/status/1972276202900779274)*

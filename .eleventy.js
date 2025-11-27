@@ -254,6 +254,43 @@ module.exports = async function (eleventyConfig) {
     });
   });
 
+  // --- RELATED POSTS FILTER (Relevance Score Algorithm) ---
+  eleventyConfig.addFilter("getRelated", function(collection, currentUrl, currentTags) {
+    if (!collection || !currentTags) return [];
+
+    // Tags that are too generic to count towards a high relevance score
+    const ignoredTags = new Set(['news', 'esports', 'street fighter 6', 'post', 'article']);
+
+    // 1. Score every post in the collection
+    const scoredPosts = collection.map(post => {
+      // Normalize removing trailing slashes for comparison
+const normalize = url => (url || "").replace(/\/+$/, "");
+if (normalize(post.url) === normalize(currentUrl)) return { score: -1, post };
+
+      let score = 0;
+      const otherTags = post.data.tags || [];
+
+      // 2. Calculate score based on matching tags
+      currentTags.forEach(tag => {
+        const cleanTag = tag.toLowerCase();
+        // Only count the tag if it's not in the ignored list AND the other post has it
+        if (!ignoredTags.has(cleanTag) && otherTags.map(t => t.toLowerCase()).includes(cleanTag)) {
+          score++;
+        }
+      });
+
+      return { score, post };
+    });
+
+    // 3. Filter for matches, sort by highest score, take top 3
+    return scoredPosts
+      .filter(item => item.score > 0) // Must have at least one meaningful tag in common
+      .sort((a, b) => b.score - a.score) // Highest score first
+      .slice(0, 3) // Take top 3
+      .map(item => item.post); // Return just the post object
+  });
+  // -----------------------------------------------------
+
   eleventyConfig.addDataExtension("js", { parser: "javascript" });
   eleventyConfig.setTemplateFormats(["md", "njk", "html", "11ty.js"]);
 

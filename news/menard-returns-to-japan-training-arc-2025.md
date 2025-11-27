@@ -9,7 +9,6 @@ tags:
   - capcom cup
   - esports
 layout: article.njk
-permalink: "/news/menard-returns-to-japan-training-arc-2025/"
 date: 2025-11-19
 excerpt: "Despite a dominant 6-0 start in Street Fighter League US, MenaRD is flying back to Japan for intensive training. Find out why the Evo Las Vegas & Japan Champ refuses to rest."
 ---

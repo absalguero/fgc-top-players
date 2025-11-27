@@ -9,7 +9,7 @@ layout: article.njk
 permalink: "/news/{{ title | slug }}/"
 cardImage: "/images/events/evo-vegas-2025.png"
 date: 2025-08-21
-excerpt: "NODWIN Gaming has acquired Sony Interactive Entertainment's stake in Evo. The move — backed by renewed multi-year partnerships with SIE and Qiddiya — aims to supercharge Evo’s international expansion while keeping PlayStation prominent in the event experience."
+excerpt: "NODWIN Gaming has acquired Sony Interactive Entertainment's stake in Evo. The move, backed by renewed multi-year partnerships with SIE and Qiddiya, aims to supercharge Evo’s international expansion while keeping PlayStation prominent in the event experience."
 imageCredit: "Evo"
 imageSourceUrl: "https://evo.gg/"
 ---
@@ -28,4 +28,4 @@ If Evo’s leadership can uphold that balance, this new chapter could elevate Ev
 
 ---
 
-*Source: [NODWIN Gaming Investors](https://nodwingaming.com/investors/)
+*Source: [NODWIN Gaming Investors](https://nodwingaming.com/investors/)*

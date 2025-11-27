@@ -9,7 +9,6 @@ tags:
   - kei.b
   - nagoya oja
 layout: article.njk
-permalink: "/news/kei-b-dominates-sfl-japan-2025/"
 date: 2025-11-25
 excerpt: "Kei 'KEI.B' Komada secures MVP in SFL Japan 2025 with a historic 140-point performance using Mai Shiranui. His dominance propels Nagoya OJA NTP to the playoffs."
 ---

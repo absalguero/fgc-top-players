@@ -8,7 +8,6 @@ tags:
   - moke
   - nauman
 layout: article.njk
-permalink: "/news/moke-nauman-sf6-year-3-projectile-tier-list/"
 date: 2025-11-17
 excerpt: "Top Japanese pros Moke and Nauman rank every projectile in Street Fighter 6 Year 3. Find out why Guile and Mai Shiranui dominate while returning legends Sagat and C. Viper struggle."
 ---

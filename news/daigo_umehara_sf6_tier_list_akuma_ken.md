@@ -7,7 +7,6 @@ tags:
   - tier lists
   - esports
 layout: article.njk
-permalink: "/news/daigo-umehara-sf6-tier-list-akuma-ken/"
 date: 2025-11-16
 excerpt: "The Beast has spoken, and his take on the current Street Fighter 6 meta is shocking. Daigo Umehara argues that Ken might be bottom tier and explains why Akuma needs buffs to truly compete."
 ---

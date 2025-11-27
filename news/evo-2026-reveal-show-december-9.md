@@ -9,7 +9,6 @@ tags:
   - city of the wolves
   - esports
 layout: article.njk
-permalink: "/news/evo-2026-reveal-show-december-9/"
 date: 2025-11-18
 excerpt: "The roadmap for the 2026 fighting game season arrives early. Here is everything you need to know about the Evo Announcement Show on December 9."
 ---

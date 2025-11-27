@@ -9,7 +9,6 @@ tags:
   - tekken 8
   - esports
 layout: article.njk
-permalink: "/news/street-fighter-6-hits-6-million-sales/"
 date: 2025-11-20
 excerpt: "Capcom announces that Street Fighter 6 has surpassed 6 million copies sold worldwide. The fighting game is now outpacing its predecessors and closing the gap with rival Mortal Kombat 1."
 ---

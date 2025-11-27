@@ -33,7 +33,52 @@
       {{ content | autoLink(page, collections, playerProfiles) | safe }}
     </div>
 
-    {# Footer with social share and navigation #}
+    {# --- RELATED ARTICLES SECTION START --- #}
+    {% set relatedPosts = collections.news | getRelated(page.url, tags) %}
+    
+    {% if relatedPosts | length > 0 %}
+    <aside class="related-articles">
+      {# REMOVED style="margin-bottom: 3rem;" - This fixes the gap #}
+      <hr class="hr-gradient--center-blue">
+      
+      <h3 class="related-articles__heading">Related News</h3>
+      
+      <div class="related-grid">
+        {% for post in relatedPosts %}
+            <article class="home-card">
+              <a href="{{ post.url }}" class="home-card__link">
+                <div class="home-card__content">
+                  <span class="home-card__date">
+                    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                    {{ post.date | readableDate }}
+                  </span>
+                  <h4 class="home-card__title">{{ post.data.title }}</h4>
+                  
+                  {% if post.data.excerpt %}
+                  <div class="home-card__excerpt">
+                    <p>{{ post.data.excerpt | truncate(100) }}</p>
+                  </div>
+                  {% endif %}
+
+                  <div class="home-card__footer">
+                    <div class="home-card__tags">
+                      {% for tag in post.data.tags | slice(0,3) %}
+                        {% if tag != 'news' %}
+                          <span class="home-card__tag">{{ tag }}</span>
+                        {% endif %}
+                      {% endfor %}
+                    </div>
+                    <span class="btn btn--small btn--primary home-card__read-more">Read More</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+        {% endfor %}
+      </div>
+    </aside>
+    {% endif %}
+    {# --- RELATED ARTICLES SECTION END --- #}
+
     <footer class="article-post__footer">
       
       <hr class="hr-gradient">
@@ -71,10 +116,10 @@
       </div>
 
       <nav class="article-post__nav" aria-label="Article navigation">
-  <a href="javascript:void(0);" onclick="smartGoBack();" class="btn btn--primary">
-    <i class="fas fa-arrow-left" aria-hidden="true"></i> Back to News
-  </a>
-</nav>
+        <a href="javascript:void(0);" onclick="smartGoBack();" class="btn btn--primary">
+          <i class="fas fa-arrow-left" aria-hidden="true"></i> Back to News
+        </a>
+      </nav>
     </footer>
 
   </article>

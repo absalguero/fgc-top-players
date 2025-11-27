@@ -19,17 +19,17 @@ Phenom’s latest rankings offer valuable insight into the current *Street Fight
 
 ## Alignments Between Phenom and Data
 
-Some of Phenom’s top placements match closely with competitive results. For example, **Ryu** is in S-tier on both Phenom’s list and our site’s rankings, where he holds a **CPV of 10.00**, the highest in the game. Phenom’s recognition of Ryu’s rise reflects the character’s recent buffs and consistent high-level performances across global events.
+Some of Phenom’s top placements match closely with competitive results. For example, **Ryu** is in S-tier on both Phenom’s list and our site’s rankings, where he holds a **CPV of 99.99**, the highest in the game. Phenom’s recognition of Ryu’s rise reflects the character’s recent buffs and consistent high-level performances across global events.
 
-Similarly, **Ed** earns a spot among the best on both lists, with a **CPV of 9.44** in our data. These shared rankings reinforce the idea that Ryu and Ed have established themselves as cornerstones of the *SF6* meta. They are versatile, powerful, and tournament-proven.
+Similarly, **Ed** earns a spot among the best on both lists, with a **CPV of 94.40** in our data. These shared rankings reinforce the idea that Ryu and Ed have established themselves as cornerstones of the *SF6* meta. They are versatile, powerful, and tournament-proven.
 
 ## Positive Divergences
 
-Some placements showcase Phenom’s distinct perspective as a top competitor. **Chun-Li**, for example, is in **A-tier** on Phenom’s list but sits in **S-tier** on our site with a CPV of **9.20**. This isn’t a disagreement so much as a difference in approach. Phenom may be factoring in how demanding she is to play at peak efficiency, while the data reflects her consistent tournament results. Together, these viewpoints give players a more complete picture of her true potential.
+Some placements showcase Phenom’s distinct perspective as a top competitor. **Chun-Li**, for example, is in **A-tier** on Phenom’s list but sits in **S-tier** on our site with a CPV of **92.03**. This isn’t a disagreement so much as a difference in approach. Phenom may be factoring in how demanding she is to play at peak efficiency, while the data reflects her consistent tournament results. Together, these viewpoints give players a more complete picture of her true potential.
 
-**JP** is another example. Phenom ranks him higher than our B-tier CPV placement, suggesting he values JP’s oppressive zoning and control tools more heavily than results data alone might indicate. This kind of variance is valuable — it encourages players to look deeper at characters that can thrive in the right hands or under specific conditions.
+**JP** is another example. Phenom ranks him higher than our B-tier CPV placement, suggesting he values JP’s oppressive zoning and control tools more heavily than results data alone might indicate. This kind of variance is valuable, it encourages players to look deeper at characters that can thrive in the right hands or under specific conditions.
 
-**Ken**, a long-time fan favorite, sees one of the largest contrasts. Phenom places him in **B+ tier**, whereas our CPV metrics position him in **C-tier (1.79)**. While tournament numbers show Ken’s dominance tapering off since earlier patches, Phenom’s continued faith in the character points to how strong Ken remains in practiced hands and certain matchups.
+**Ken**, a long-time fan favorite, sees one of the largest contrasts. Phenom places him in **B+ tier**, whereas our CPV metrics position him in **C-tier (17.79)**. While tournament numbers show Ken’s dominance tapering off since earlier patches, Phenom’s continued faith in the character points to how strong Ken remains in practiced hands and certain matchups.
 
 ## Shared Takeaways
 

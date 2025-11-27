@@ -5,6 +5,7 @@ tags:
   - esports
   - capcom cup
   - street fighter 6
+  - tournaments
 layout: article.njk
 permalink: "/news/{{ title | slug }}/"
 cardImage: "/images/events/capcom-cup.png"

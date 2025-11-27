@@ -2,14 +2,10 @@
 title: "The King Ascends: xiaohai Named Esports Controller Player of the Year"
 tags: 
   - news
-  - street fighter 6
-  - kof xv
   - xiaohai
-  - esports awards
-  - ewc
+  - awards
   - esports
 layout: article.njk
-permalink: "/news/xiao-hai-esports-controller-player-of-the-year-2025/"
 date: 2025-11-19
 excerpt: "From Street Fighter to KOF, the Chinese legend's historic 2025 run is finally recognized on the global stage with a prestigious win at the Esports Awards."
 ---

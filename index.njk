@@ -103,4 +103,18 @@ navHighlight: "Home"
     {% endif %}
   </nav>
 </div>
+
+{# Store current page URL in sessionStorage when clicking news article links #}
+<script>
+  (function() {
+    const currentPageUrl = window.location.pathname;
+
+    // Find all news article links and add click handler
+    document.querySelectorAll('.home-news-list a[href^="/news/"]').forEach(link => {
+      link.addEventListener('click', function() {
+        sessionStorage.setItem('newsListingPage', currentPageUrl);
+      });
+    });
+  })();
+</script>
 {% endblock %}

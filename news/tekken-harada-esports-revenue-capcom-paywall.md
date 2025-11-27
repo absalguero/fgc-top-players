@@ -6,7 +6,6 @@ tags:
   - tekken 8
   - capcom cup
   - street fighter 6
-  - tournaments
   - tekken world tour
 layout: article.njk
 permalink: "/news/{{ title | slug }}/"
