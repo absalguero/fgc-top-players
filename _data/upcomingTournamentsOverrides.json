@@ -9,12 +9,12 @@
     "dates": "Nov 28-30, 2025",
     "location": "IMPACT Muang Thong Thani, Tambon Ban Mai, Amphoe Pak Kret, Chang Wat Nonthaburi 11120, Thailand",
     "venueName": "The Portal Ballroom",
-    "url": "https://www.start.gg/tournament/tgu-2025/details",
+    "url": "https://www.tgu.gg/",
     "tier": "B",
     "prizes": "TBA",
     "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
+    "streamLink": "https://www.twitch.tv/MirageOrg",
+    "scheduleLink": "https://x.com/TGUteam/status/1993201240969560230?s=20",
     "description": "<p>Thaiger Uppercut 2025 (TGU 2025) marks the 13th anniversary of Thailand’s premier fighting game major. Hosted at The Portal Ballroom @ IMPACT Muang Thong Thani, this event stands as one of Southeast Asia's critical competitive hubs. For Street Fighter 6 players and fans, TGU 2025 offers a massive dedicated bracket and unique community events in the heart of Bangkok.</p><p>TGU 2025 features a robust schedule designed for competitive depth and community engagement. In addition to the main singles bracket, the event will host a special Street Fighter 6 3v3 Team Tournament on Friday featuring a 'Last Man Standing' format. While the event focuses heavily on the SF6 community, it remains a global powerhouse in the FGC ecosystem, simultaneously hosting Master and Gold tier events for other titles like Tekken 8 and Guilty Gear -STRIVE-.</p><p>The tournament takes place at IMPACT Muang Thong Thani, easily accessible via the Pink Line Monorail. Passes are available in Competitor and Spectator tiers, with the venue offering an Artist Alley, Indie Game Showcase, and a dedicated Retro Game & Toy Zone.</p>",
     "notablePlayers": [
       "Burnoutfighter",
@@ -57,16 +57,20 @@
     "location": "65 Rue Germaine Tillion, 92700 Colombes, France",
     "venueName": "KOPSTER Hotel Residence Paris Ouest Colombes",
     "url": "https://nsxc.gg/mindset/",
-    "tier": "A",
+    "tier": "B",
     "prizes": "TBA",
     "game": "Street Fighter 6",
     "streamLink": "",
-    "scheduleLink": "",
+    "scheduleLink": "https://x.com/_NSxC/status/1986780974378586260?s=20",
     "description": "<p>MINDSET 2025 is a two day fighting game tournament in Colombes, just outside Paris, running November 29 and 30 at KOPSTER Hotel Residence Paris Ouest Colombes, 65 Rue Germaine Tillion. The event is built as a dedicated weekend for versus fighting, inviting players from across France and beyond to compete, stay on site and make the most of a full schedule in one location.</p><p>The game lineup covers a wide range of styles: Street Fighter 6, Tekken 8, Guilty Gear Strive, Granblue Fantasy Versus Rising, Guilty Gear Xrd Rev 2, 2XKO, Fatal Fury City of the Wolves and Hunter x Hunter Nen Impact. This mix of modern flagship titles, anime fighters and new releases gives players multiple brackets to enter whether they focus on traditional 2D games, 3D fighters or team based action, with some titles also tied into official tour circuits for competitors tracking season long results.</p><p>Beyond the brackets, MINDSET 2025 is presented as an inclusive event that emphasizes accessibility, diversity and fair play, aiming to create an environment where players can challenge themselves, build confidence and connect with the wider fighting game community around shared values as well as matches.</p>",
     "notablePlayers": [
       "Mister Crimson",
       "Kilzyou",
-      "Akainu"
+      "Akainu",
+      "s4ltyKiD",
+      "Alphen",
+      "JuniorLeo",
+      "Kayne"
     ],
     "isArchived": false,
     "excludeFromSite": false
@@ -85,11 +89,13 @@
     "tier": "B",
     "prizes": "$2,000",
     "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
+    "streamLink": "https://www.twitch.tv/mtl_underground",
+    "scheduleLink": "https://drive.google.com/file/d/1fyqUc6scXUzUHWPMqRtfd6E-4Z7hLhqn/view",
     "description": "<p>The Noodle Fest 2025 is a week long fighting game and community festival in Kirkland, Quebec, running from November 29 to December 6, 2025 at Noodle Empire’s gaming and esports center on Rue Jean-Yves. Framed as a crossover celebration for Noodle Empire’s third anniversary, it brings together a full schedule of tournaments, special events and hangout time under one roof, with more than a dozen featured games and over two thousand dollars in prizes and pot bonuses across the week.</p><p>The lineup highlights both platform fighters and traditional fighting games, with brackets for Street Fighter 6, Tekken 8, Super Smash Bros Ultimate, Super Smash Bros Melee, Rivals 2, Guilty Gear Strive and 2XKO among the core competitions. Different titles are given their own dedicated day of play, supported by targeted pot bonuses such as a featured bonus for Street Fighter 6 and additional prize boosts for games like Rivals 2 and Smash Melee, so players can focus on their main game while still being part of a larger festival schedule.</p><p>Across the week, The Noodle Fest 2025 is positioned as a hub for the Montreal area fighting game community and visitors, combining structured tournaments with casual sessions, creator content and venue activities to create a sustained event that rewards both repeat attendance and focused tournament runs.</p>",
     "notablePlayers": [
-      "Zykles"
+      "Zykles",
+      "Slice",
+      "BigDomChurros"
     ],
     "isArchived": false,
     "excludeFromSite": false

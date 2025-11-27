@@ -3,10 +3,10 @@ title: "Tekken Producer Harada Addresses Esports Revenue Gap and Capcom Paywall"
 tags: 
   - news
   - esports
-  - tekken 8
   - capcom cup
-  - street fighter 6
   - tekken world tour
+  - harada
+  - bandai namco
 layout: article.njk
 permalink: "/news/{{ title | slug }}/"
 date: 2025-11-25
