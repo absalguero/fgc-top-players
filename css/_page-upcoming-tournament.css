@@ -4,7 +4,14 @@
    ============================ */
 
 /* --- Shared container: align page width with site header --- */
-:root { --container-max: 1100px; }
+:root { --container-max: 1200px; }
+
+/* Force content area to match other pages */
+.page-tournament-detail .content {
+  max-width: var(--container-max-width) !important;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .page-tournament-detail .event-header-group,
 .page-tournament-detail .content-container,
@@ -13,11 +20,11 @@
 .page-tournament-detail .back-button-container,
 .page-tournament-detail .header-sticky-container,
 .page-tournament-detail .event-header__details {
-  max-width: var(--container-max);
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: var(--spacing-md, 1rem);
-  padding-right: var(--spacing-md, 1rem);
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .page-tournament-detail .header-sticky-container {

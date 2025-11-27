@@ -16,7 +16,9 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
 {% endblock %}
 
 {% block content %}
+<div class="results-container" style="padding-top: 0; padding-bottom: 0;">
 {% include "banner.njk" %}
+</div>
 
 {# Build the expected upcoming URL strings #}
 {% set thisSlug = (tournamentData.slug or tournamentData.Slug) | lower %}

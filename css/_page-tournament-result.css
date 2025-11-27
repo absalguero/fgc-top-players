@@ -2,10 +2,12 @@
    Event Results Page (/tournaments/slug/)
    ============================ */
 
-/* 1) Page Layout */
+/* 1) Page Layout - Force content width to match other pages */
 body.page-event .content {
-  max-width: 100%;
-  padding: 0;
+  max-width: var(--container-max-width) !important;
+  padding: 0 var(--spacing-xl) var(--spacing-lg);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ============================
@@ -190,9 +192,9 @@ body.page-event .content {
 
 /* 4) Results Grid */
 .results-container {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: var(--spacing-lg) var(--spacing-lg) 0;
+  padding: var(--spacing-lg) 0 0;
 }
 
 .results-grid {
