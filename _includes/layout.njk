@@ -300,25 +300,28 @@
             </div>
             <div class="site-search-panel__results profile-card__body">
                 <form id="site-search-refine" class="site-search-refine-form" role="search" novalidate>
-                    <label class="sr-only" for="site-search-refine-input">Refine search</label>
-                    <div class="site-search-refine__controls">
-                            <div class="site-search-refine__input-wrapper">
-                                <input
-                                    id="site-search-refine-input"
-                                    class="site-search-refine__input"
-                                    type="text"
-                                    autocomplete="off"
-                                    spellcheck="false"
-                                >
-                                <button type="button" id="site-search-clear-btn" class="search-clear-btn" aria-label="Clear search">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            </div>
-                            <button type="submit" class="site-search-refine__submit">
-                                Search
-                            </button>
-                        </div>
-                </form>
+    <label class="sr-only" for="site-search-refine-input">Refine search</label>
+    <div class="site-search-refine__controls">
+        <div class="site-search-refine__input-wrapper">
+            <button type="submit" class="site-search-submit-btn" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </button>
+
+            <input
+                id="site-search-refine-input"
+                class="site-search-refine__input"
+                type="search"
+                placeholder="Search..."
+                autocomplete="off"
+                spellcheck="false"
+            >
+
+            <button type="button" id="site-search-clear-btn" class="search-clear-btn" aria-label="Clear search">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        </div>
+</form>
                 <div id="site-search-status" class="site-search-panel__status" role="status" aria-live="polite" hidden></div>
                 <div id="pagefind-search" class="site-search-panel__results-body" data-pagefind></div>
             </div>

@@ -5554,3 +5554,75 @@ body.mobile-nav-open {
 .player-tag-icon i {
   font-size: 1em;
 }
+
+/* =========================================
+   SEARCH POP-UP FIX (Integrated Glass)
+   ========================================= */
+
+/* 1. Fix the Container Layout */
+/* It was previously a grid for [Input] + [Button]. Now it's just one block. */
+.site-search-refine__controls {
+    display: block !important; /* Stack/Fill width */
+    grid-template-columns: none !important;
+    padding: 0.5rem !important; /* Tighten padding */
+    gap: 0 !important;
+}
+
+/* 2. Style the Input Field */
+.site-search-refine__input-wrapper .site-search-refine__input {
+    /* Space for Glass (Left) and X (Right) */
+    padding-left: 2.5rem !important; 
+    padding-right: 2.5rem !important;
+    
+    /* Left Align Text (Fixes the "1-2 chars visible" bug) */
+    text-align: center !important;
+    text-indent: 0 !important;
+    
+    /* Aesthetics */
+    width: 100%;
+    height: 44px; /* Touch friendly height */
+    border-radius: 8px; /* Slightly softer corners */
+}
+
+/* 3. Style the NEW Submit Button (Magnifying Glass) */
+.site-search-submit-btn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2.5rem; /* Matches padding-left */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background: transparent;
+    border: none;
+    color: var(--color-accent-blue); /* Blue Icon */
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.site-search-submit-btn:hover {
+    color: #fff; /* White on hover */
+}
+
+/* 4. Ensure Clear Button stays on the Right */
+.site-search-refine__input-wrapper .search-clear-btn {
+    right: 0 !important;
+    left: auto !important;
+    width: 2.5rem; /* Matches padding-right */
+    height: 100%;
+    top: 0;
+    transform: none;
+}
+
+/* Remove native browser 'X' from search inputs */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
