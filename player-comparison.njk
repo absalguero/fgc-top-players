@@ -11,26 +11,33 @@ eleventyNavigation:
 
 {% extends "layout.njk" %}
 
-{% block title %}Compare Top Street Fighter 6 Pro Players | FGC Top Players{% endblock %}
+{# --- Page Variables --- #}
+{% set pageTitle = "Compare Top Street Fighter 6 Pro Players | FGC Top Players" %}
+{% set pageDesc = "Build side-by-side matchups for top SF6 pros. See FGPI, ranks, recent results, and momentum. Save and share up to 5-player comparisons." %}
+{% set image = '/images/social/player-comparison-card.png' %}
+
+{# --- Block Overrides --- #}
+
+{% block title %}{{ pageTitle }}{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="{{ pageDesc }}">
+{% endblock %}
+
+{% block og_title %}{{ pageTitle }}{% endblock %}
+{% block og_description %}{{ pageDesc }}{% endblock %}
+
+{% block twitter_title %}{{ pageTitle }}{% endblock %}
+{% block twitter_description %}{{ pageDesc }}{% endblock %}
 
 {% block head %}
-{# ——— Basic SEO ——— #}
-<meta name="description" content="Build side-by-side matchups for top SF6 pros. See FGPI, ranks, recent results, and momentum. Save and share up to 5-player comparisons.">
-<link id="canonical-url" rel="canonical" href="{{ site.url }}{{ page.url | url }}">
-<link rel="preload" as="image" href="{{ site.url }}/images/social/player-comparison-card.png">
+{# NOTE: Canonical & Social Tags removed (Layout handles them automatically) #}
 
-{# ——— Open Graph / Twitter ——— #}
-<meta property="og:title" content="Compare Top Street Fighter 6 Pro Players | FGC Top Players">
-<meta property="og:description" content="Side-by-side stats: FGPI, ranks, results, momentum. Save and share your 5-player comparisons.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="{{ site.url }}{{ page.url | url }}">
-<meta property="og:image" content="{{ site.url }}/images/social/player-comparison-card.png">
-<meta property="og:site_name" content="FGC Top Players">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Compare Top Street Fighter 6 Pro Players">
-<meta name="twitter:description" content="Build & share 5-player comparisons powered by FGPI and tournament data.">
-<meta name="twitter:image" content="{{ site.url }}/images/social/player-comparison-card.png">
+{# Performance optimization: Preload the social card image #}
+<link rel="preload" as="image" href="{{ site.url }}{{ image }}">
+{% endblock %}
 
+{% block structured_data %}
 {# ——— Breadcrumbs ——— #}
 <script type="application/ld+json">
 {

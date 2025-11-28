@@ -15,7 +15,7 @@ function buildTagsBySlug(collectionApi) {
     tags.forEach((raw) => {
       if (typeof raw !== "string") return;
       const label = raw.trim();
-      if (!label || TAG_SKIP.has(label)) return;
+      if (!label || TAG_SKIP.has(label.toLowerCase())) return;
 
       const slug = slugify(label, { lower: true, strict: true });
       if (!map.has(slug)) map.set(slug, { slug, label, items: [] });
@@ -58,6 +58,7 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("ads.txt");
+  eleventyConfig.addPassthroughCopy("robots.txt");
 
   // Pagefind UI assets
   eleventyConfig.addPassthroughCopy({
@@ -259,7 +260,7 @@ module.exports = async function (eleventyConfig) {
     if (!collection || !currentTags) return [];
 
     // Tags that are too generic to count towards a high relevance score
-    const ignoredTags = new Set(['news', 'esports', 'street fighter 6', 'post', 'article']);
+    const ignoredTags = new Set([...TAG_SKIP, 'street fighter 6', 'article']);
 
     // 1. Score every post in the collection
     const scoredPosts = collection.map(post => {

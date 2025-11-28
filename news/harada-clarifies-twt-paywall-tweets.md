@@ -4,7 +4,7 @@ tags:
   - news
   - esports
   - tekken 8
-  - katsuhiro harada
+  - harada
   - tekken world tour
   - capcom cup
   - bandai namco

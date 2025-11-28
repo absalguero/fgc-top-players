@@ -15,7 +15,8 @@
       "Bash(comm -23:*)",
       "Bash(xargs -I {} bash -c 'echo \"\"\"\"Checking {}\"\"\"\"; grep -A 2 \"\"\"\"rank\"\"\"\" \"\"\"\"C:\\fgctp\\_site/{}/index.html\"\"\"\" | head -5')",
       "Bash(done)",
-      "Bash(fi)"
+      "Bash(fi)",
+      "Bash(npx @11ty/eleventy:*)"
     ],
     "deny": [],
     "ask": []

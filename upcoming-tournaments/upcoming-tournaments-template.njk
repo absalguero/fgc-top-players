@@ -12,35 +12,32 @@ navHighlight: "Upcoming Rated Tournaments"
 {% extends "layout.njk" %}
 {% set bodyClass = "page-tournament-detail page-event" %}
 
-{% block title %}{{ tournament.name }} | Details, Registration & Travel Info | FGC Top Players{% endblock %}
+{# --- Calculate SEO Variables --- #}
+{% set pageTitle = tournament.name ~ ' | Details, Registration & Travel Info | FGC Top Players' %}
+{% set seoDesc = 'Get full details for ' ~ tournament.name ~ ' on ' ~ tournament.dates ~ '. See which top-ranked players are attending, venue information, and travel tips for ' ~ tournament.location ~ '.' %}
+
+{# --- Page Title & Description --- #}
+{% block title %}{{ pageTitle }}{% endblock %}
 
 {% block meta_description %}
-  <meta name="description" content="Get full details for {{ tournament.name }} on {{ tournament.dates }}. See which top-ranked players are attending, venue information, and travel tips for {{ tournament.location }}.">
+  <meta name="description" content="{{ seoDesc }}">
 {% endblock %}
 
+{# --- Social Media Overrides (Injecting into Layout Blocks) --- #}
+{% block og_title %}{{ tournament.name }} — Details & Info{% endblock %}
+{% block og_description %}{{ seoDesc }}{% endblock %}
+
+{% block twitter_title %}{{ tournament.name }} — Details & Info{% endblock %}
+{% block twitter_description %}{{ seoDesc }}{% endblock %}
+
 {% block head %}
-  {# ----- Canonical + robots ----- #}
-  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  {# ----- Robots ----- #}
   <meta name="robots" content="index,follow,max-image-preview:large">
 
-  {# ----- OG / Twitter ----- #}
-  {% set ogTitle = tournament.name ~ ' — Details, Registration & Travel Info' %}
-  {% set ogDesc = 'Get full details for ' ~ tournament.name ~ ' on ' ~ tournament.dates ~ '. See which top-ranked players are attending, venue information, and travel tips for ' ~ tournament.location ~ '.' %}
-  {% set ogImage = site.url ~ '/images/events/' ~ tournament.slug ~ '.png' %}
+  {# NOTE: Social Images removed per request. Layout will use default social card. #}
+  {# NOTE: Canonical tag removed (Layout handles it automatically). #}
 
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-  <meta property="og:title" content="{{ ogTitle }}">
-  <meta property="og:description" content="{{ ogDesc }}">
-  <meta property="og:image" content="{{ ogImage }}">
-  <meta property="og:site_name" content="FGC Top Players">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{ ogTitle }}">
-  <meta name="twitter:description" content="{{ ogDesc }}">
-  <meta name="twitter:image" content="{{ ogImage }}">
-
-  {# ----- Safe address parts for JSON-LD (supports "City, Country" and "City, Region, Country") ----- #}
+  {# ----- Safe address parts for JSON-LD ----- #}
   {% set addressParts = (tournament.location or '') | split(',') %}
   {% set partsLen = addressParts.length %}
   {% set city = "" %}
@@ -75,7 +72,7 @@ navHighlight: "Upcoming Rated Tournaments"
   }
   </script>
 
-  {# ----- Event JSON-LD (safer fields & conditionals) ----- #}
+  {# ----- Event JSON-LD ----- #}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -86,7 +83,6 @@ navHighlight: "Upcoming Rated Tournaments"
     "endDate": "{{ tournament.endDate }}",
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "eventStatus": "https://schema.org/EventScheduled",
-    "image": ["{{ ogImage }}"],
     "description": "{{ (tournament.description or 'A premier fighting game tournament.') | striptags | trim }}",
     "location": {
       "@type": "Place",
@@ -170,11 +166,8 @@ navHighlight: "Upcoming Rated Tournaments"
     <div class="info-section">
       <h2 class="section-title text-center">Tournament Information</h2>
 
-      {# OPTION A: explicit order for a 2×2 grid
-         Row 1: Location | Venue
-         Row 2: Game     | Prize Pool #}
       <div class="info-cards-grid">
-        {# 1) LOCATION — top-left #}
+        {# 1) LOCATION #}
         <div class="info-card">
           <div class="info-card__header">
             <i class="fas fa-map-marker-alt"></i>
@@ -183,7 +176,7 @@ navHighlight: "Upcoming Rated Tournaments"
           <p class="info-card__value">{{ tournament.location }}</p>
         </div>
 
-        {# 2) VENUE — top-right #}
+        {# 2) VENUE #}
         <div class="info-card">
           <div class="info-card__header">
             <i class="fas fa-landmark"></i>
@@ -192,7 +185,7 @@ navHighlight: "Upcoming Rated Tournaments"
           <p class="info-card__value">{{ tournament.venueName or "To be announced" }}</p>
         </div>
 
-        {# 3) GAME — bottom-left #}
+        {# 3) GAME #}
         <div class="info-card">
           <div class="info-card__header">
             <i class="fas fa-gamepad"></i>
@@ -201,7 +194,7 @@ navHighlight: "Upcoming Rated Tournaments"
           <p class="info-card__value">{{ tournament.game }}</p>
         </div>
 
-        {# 4) PRIZE POOL — bottom-right #}
+        {# 4) PRIZE POOL #}
         <div class="info-card">
           <div class="info-card__header">
             <i class="fas fa-trophy"></i>

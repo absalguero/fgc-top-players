@@ -1,7 +1,59 @@
 {% extends "layout.njk" %}
-{% set cardImageAlt = cardImageAlt or title %}
 
-{% block title %}{{ title }} | FGC Top Players{% endblock %}
+{# --- Page Variables --- #}
+{% set pageTitle = title %}
+{% set pageDesc = description or excerpt or "Latest news from FGC Top Players." %}
+
+{# Explicitly set the default image so Schema and Social Tags match perfectly #}
+{% set image = '/images/fgc-top-players-social-card.png' %}
+
+{# --- Block Overrides --- #}
+
+{% block title %}{{ pageTitle }} | FGC Top Players{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="{{ pageDesc }}">
+{% endblock %}
+
+{# Ensure social cards show the specific article title/desc #}
+{% block og_title %}{{ pageTitle }}{% endblock %}
+{% block og_description %}{{ pageDesc }}{% endblock %}
+
+{% block twitter_title %}{{ pageTitle }}{% endblock %}
+{% block twitter_description %}{{ pageDesc }}{% endblock %}
+
+{# --- Structured Data (NewsArticle) --- #}
+{% block structured_data %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url | url }}" 
+  },
+  "headline": {{ pageTitle | dump | safe }},
+  "image": [
+    "{{ site.url }}{{ image }}"
+  ],
+  "datePublished": "{{ date | date('yyyy-MM-ddTHH:mm:ssZZ') }}",
+  "dateModified": "{{ date | date('yyyy-MM-ddTHH:mm:ssZZ') }}",
+  "author": {
+    "@type": "Person",
+    "name": {{ (authorName or 'FGC Top Players') | dump | safe }}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "FGC Top Players",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}/images/logo.png"
+    }
+  },
+  "description": {{ pageDesc | dump | safe }}
+}
+</script>
+{% endblock %}
 
 {% block content %}
 {% include "banner.njk" %}
@@ -38,7 +90,6 @@
     
     {% if relatedPosts | length > 0 %}
     <aside class="related-articles">
-      {# REMOVED style="margin-bottom: 3rem;" - This fixes the gap #}
       <hr class="hr-gradient--center-blue">
       
       <h3 class="related-articles__heading">Related News</h3>
@@ -124,35 +175,4 @@
 
   </article>
 </div>
-{% block scripts %}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "NewsArticle",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "{{ site.url }}{{ page.url | url }}" 
-  },
-  "headline": {{ title | dump | safe }},
-  "image": [
-    "{{ site.url }}{{ image if image else '/images/default-news.jpg' }}"
-  ],
-  "datePublished": "{{ date | date('yyyy-MM-ddTHH:mm:ssZZ') }}",
-  "dateModified": "{{ date | date('yyyy-MM-ddTHH:mm:ssZZ') }}",
-  "author": {
-    "@type": "Person",
-    "name": {{ (authorName or 'FGC Top Players') | dump | safe }}
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "FGC Top Players",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "{{ site.url }}/images/logo.png"
-    }
-  },
-  "description": {{ (description or title) | dump | safe }}
-}
-</script>
-{% endblock %}
 {% endblock %}

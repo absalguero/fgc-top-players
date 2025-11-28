@@ -12,11 +12,24 @@ lastUpdated: 2025-11-14
 
 {% extends "layout.njk" %}
 
-{% block title %}Terms of Use | FGC Top Players{% endblock %}
+{# --- Page Variables --- #}
+{% set pageTitle = "Terms of Use | FGC Top Players" %}
+{% set pageDesc = "Official Terms of Use for FGC Top Players. Read the rules governing site access, proprietary rankings/data, and permitted use." %}
+
+{# --- Block Overrides --- #}
+
+{% block title %}{{ pageTitle }}{% endblock %}
 
 {% block meta_description %}
-<meta name="description" content="Official Terms of Use for FGC Top Players. Read the rules governing site access, proprietary rankings/data, and permitted use." />
+<meta name="description" content="{{ pageDesc }}" />
 {% endblock %}
+
+{# Ensure social cards describe the terms, not the ranking system #}
+{% block og_title %}{{ pageTitle }}{% endblock %}
+{% block og_description %}{{ pageDesc }}{% endblock %}
+
+{% block twitter_title %}{{ pageTitle }}{% endblock %}
+{% block twitter_description %}{{ pageDesc }}{% endblock %}
 
 {% block content %}
   {% include "banner.njk" %}

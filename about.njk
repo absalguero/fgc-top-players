@@ -11,55 +11,51 @@ eleventyNavigation:
 
 {% extends "layout.njk" %}
 
-{% block title %}About FGC Top Players | Author Background and Mission{% endblock %}
+{# --- SEO Variables --- #}
+{% set pageTitle = "About FGC Top Players | Author Background and Mission" %}
+{% set pageDesc = "About FGC Top Players. Created by a former FGC competitor active since 2001. Learn the mission and the statistics-based rankings behind the site." %}
+
+{% block title %}{{ pageTitle }}{% endblock %}
 
 {% block meta_description %}
-<meta name="description" content="About FGC Top Players. Created by a former FGC competitor active since 2001 and a B5 entrant. Learn the mission and the statistics based rankings behind the site." />
+<meta name="description" content="{{ pageDesc }}" />
 {% endblock %}
 
+{# --- Social Media Overrides (Injecting into Layout Blocks) --- #}
+{% block og_title %}{{ pageTitle }}{% endblock %}
+{% block og_description %}{{ pageDesc }}{% endblock %}
+
+{% block twitter_title %}{{ pageTitle }}{% endblock %}
+{% block twitter_description %}{{ pageDesc }}{% endblock %}
+
 {% block head %}
-<link rel="canonical" href="{{ page.url | url | absoluteUrl(site.url) }}">
+{# NOTE: Canonical & Social Tags removed (Layout handles them automatically) #}
 
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="FGC Top Players">
-<meta property="og:title" content="About FGC Top Players">
-<meta property="og:description" content="Created by a former competitor in the fighting game community. Discover the mission behind the statistics based rankings on FGC Top Players.">
-<meta property="og:url" content="{{ page.url | url | absoluteUrl(site.url) }}">
-<meta property="og:image" content="{{ '/images/og-default.png' | url | absoluteUrl(site.url) }}">
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="About FGC Top Players">
-<meta name="twitter:description" content="Meet the author and learn the mission behind FGC Top Players.">
-<meta name="twitter:image" content="{{ '/images/og-default.png' | url | absoluteUrl(site.url) }}">
-
-<!-- JSON-LD -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "AboutPage",
-      "@id": "{{ page.url | url | absoluteUrl(site.url) }}#about",
+      "@id": "{{ site.url }}{{ page.url }}#about",
       "name": "About FGC Top Players",
-      "url": "{{ page.url | url | absoluteUrl(site.url) }}",
+      "url": "{{ site.url }}{{ page.url }}",
       "isPartOf": { "@type": "Website", "name": "FGC Top Players", "url": "{{ site.url }}" },
-      "mainEntity": { "@id": "{{ page.url | url | absoluteUrl(site.url) }}#owner" }
+      "mainEntity": { "@id": "{{ site.url }}{{ page.url }}#owner" }
     },
     {
       "@type": "Organization",
       "@id": "{{ site.url }}#org",
       "name": "FGC Top Players",
       "url": "{{ site.url }}",
-      "logo": { "@type": "ImageObject", "url": "{{ '/images/logo.png' | url | absoluteUrl(site.url) }}" }
+      "logo": { "@type": "ImageObject", "url": "{{ site.url }}/images/logo.png" }
       {% if site.social %}
-      ,"sameAs": {{ site.social | dump }}
+      ,"sameAs": {{ site.social | dump | safe }}
       {% endif %}
     },
     {
       "@type": "Person",
-      "@id": "{{ page.url | url | absoluteUrl(site.url) }}#owner",
+      "@id": "{{ site.url }}{{ page.url }}#owner",
       "description": "Former FGC competitor and devoted fan active since 2001 who entered B5, the event that preceded Evo. Follows majors through live streams and in person attendance.",
       "affiliation": { "@id": "{{ site.url }}#org" },
       "knowsAbout": ["Fighting game community","Esports rankings","Tournament results","Player analytics","Character analytics"]
@@ -67,8 +63,8 @@ eleventyNavigation:
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "About & Support", "item": "{{ '/about-and-support/' | url | absoluteUrl(site.url) }}" },
-        { "@type": "ListItem", "position": 2, "name": "About FGC Top Players", "item": "{{ page.url | url | absoluteUrl(site.url) }}" }
+        { "@type": "ListItem", "position": 1, "name": "About & Support", "item": "{{ site.url }}/about-and-support/" },
+        { "@type": "ListItem", "position": 2, "name": "About FGC Top Players", "item": "{{ site.url }}{{ page.url }}" }
       ]
     }
   ]

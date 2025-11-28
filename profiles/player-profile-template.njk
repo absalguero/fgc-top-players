@@ -1,16 +1,25 @@
 ﻿---
 pagination:
-    data: collections.players
-    size: 1
-    alias: player
-    addAllPagesToCollections: true
+  data: collections.players
+  size: 1
+  alias: player
+  addAllPagesToCollections: true
 permalink: "/players/{{ player.slug }}/"
 navHighlight: "Player Profiles"
 eleventyComputed:
-    title: "{{ player.name }}{% if player.mainCharacter %} ({{ player.mainCharacter }}){% endif %} - Rank #{{ player.rank or 'N/A' }}, {{ player.game | upper | default('FGC') }} Stats & Profile"
+  title: "{{ player.name }}{% if player.mainCharacter %} ({{ player.mainCharacter }}){% endif %} - Rank #{{ player.rank or 'N/A' }}, {{ player.game | upper | default('FGC') }} Stats & Profile"
 ---
 
 {% extends "layout.njk" %}
+
+{% set bodyClass = "page-player-profile" %}
+
+{# --- SEO & Social Variables --- #}
+{% set pageTitle = player.name ~ " — Rank #" ~ (player.rank or 'N/A') ~ " | FGC Top Players" %}
+{% set pageDesc = "Recent results, ranking history, signature wins, trophies, and stats for " ~ player.name ~ " in " ~ (player.game | default('FGC')) ~ "." %}
+{% set playerUrl = site.url + '/players/' + player.slug + '/' %}
+
+{# --- Block Overrides (Injecting into Layout) --- #}
 
 {% block title %}{{ title }} | FGC Top Players{% endblock %}
 
@@ -18,39 +27,29 @@ eleventyComputed:
 <meta name="description" content="View the latest {{ player.game | default('FGC') }} tournament results, player ranking, and performance stats for {{ player.name }}. See key wins, peak rank, and trophy case.">
 {% endblock %}
 
+{% block og_title %}{{ pageTitle }}{% endblock %}
+{% block og_description %}{{ pageDesc }}{% endblock %}
+
+{% block twitter_title %}{{ pageTitle }}{% endblock %}
+{% block twitter_description %}{{ pageDesc }}{% endblock %}
+
+
 {% block head %}
-{# Canonical, robots, social cards, and structured data #}
-{% set playerUrl = site.url + '/players/' + player.slug + '/' %}
-<link rel="canonical" href="{{ playerUrl }}">
+{# NOTE: Canonical tag removed. Layout.njk handles it automatically. #}
+{# NOTE: Image logic removed per request. #}
+
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
 
-{# Preconnects for performance (adjust hosts to your infra) #}
+{# Preconnects for performance #}
 <link rel="preconnect" href="{{ site.url }}" crossorigin>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-{# Determine og:image safely #}
-{% if player.photoUrl and (player.photoUrl | trim) %}
-  {% set ogImage = player.photoUrl %}
-{% else %}
-  {% set ogImage = site.url + '/images/social/player-default.png' %}
-{% endif %}
-
-{# Open Graph & Twitter #}
-<meta property="og:type" content="profile">
-<meta property="og:title" content="{{ player.name }} — Rank #{{ player.rank or 'N/A' }} | FGC Top Players">
-<meta property="og:description" content="Recent results, ranking history, signature wins, trophies, and stats for {{ player.name }} in {{ player.game | default('FGC') }}.">
-<meta property="og:url" content="{{ playerUrl }}">
-<meta property="og:image" content="{{ ogImage }}">
+{# Twitter Username (Specific to this page, not in layout) #}
 {% if player.socials and player.socials.twitter %}
 <meta property="profile:username" content="{{ player.socials.twitter | replace('https://twitter.com/','') | replace('https://x.com/','') | replace('/','') }}">
 {% endif %}
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ player.name }} — Rank #{{ player.rank or 'N/A' }} | FGC Top Players">
-<meta name="twitter:description" content="Up-to-date results, trophies, and performance metrics for {{ player.name }}.">
-<meta name="twitter:image" content="{{ ogImage }}">
-
-{# Breadcrumbs + ProfilePage + Person + Recent Events (trimmed) in one graph #}
+{# Breadcrumbs + ProfilePage + Person + Recent Events JSON-LD #}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -85,7 +84,6 @@ eleventyComputed:
       "affiliation": { "@type": "SportsTeam", "name": "{{ player.team }}" },
       {% endif %}
       {% if player.country and player.country != 'N/A' %}"nationality": "{{ player.country }}",{% endif %}
-      {% if player.photoUrl and (player.photoUrl | trim) %}"image": "{{ player.photoUrl }}",{% endif %}
       {% if player.socials and (player.socials.twitter or player.socials.twitch or player.socials.discord) %}
       "sameAs": [
         {% if player.socials.twitter %}"{{ player.socials.twitter }}"{% if player.socials.twitch or player.socials.discord %},{% endif %}{% endif %}
@@ -120,7 +118,6 @@ eleventyComputed:
 </script>
 {% endblock %}
 
-{% set bodyClass = "page-player-profile" %}
 
 {% block content %}
 

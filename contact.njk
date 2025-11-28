@@ -11,26 +11,48 @@ eleventyNavigation:
 
 {% extends "layout.njk" %}
 
-{% block title %}Contact FGC Top Players | Get in Touch{% endblock %}
+{# --- Page Variables --- #}
+{% set pageTitle = "Contact FGC Top Players | Get in Touch" %}
+{% set pageDesc = "Contact FGC Top Players with questions, missing results, player corrections, bug reports, ideas, or support inquiries." %}
+{# Setting image here allows layout.njk to pick it up automatically #}
+{% set image = '/images/og-default.png' %}
+
+{# --- Block Overrides --- #}
+
+{% block title %}{{ pageTitle }}{% endblock %}
 
 {% block meta_description %}
-<meta name="description" content="Contact FGC Top Players with questions, missing results, player corrections, bug reports, ideas, or support inquiries." />
+<meta name="description" content="{{ pageDesc }}" />
 {% endblock %}
 
+{% block og_title %}{{ pageTitle }}{% endblock %}
+{% block og_description %}{{ pageDesc }}{% endblock %}
+
+{% block twitter_title %}{{ pageTitle }}{% endblock %}
+{% block twitter_description %}{{ pageDesc }}{% endblock %}
+
 {% block head %}
-<link rel="canonical" href="{{ page.url | url | absoluteUrl(site.url) }}">
+{# NOTE: Canonical & Social Tags removed (Layout handles them automatically) #}
 
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="FGC Top Players">
-<meta property="og:title" content="Contact FGC Top Players">
-<meta property="og:description" content="One inbox for results, corrections, bug reports, ideas, and support." />
-<meta property="og:url" content="{{ page.url | url | absoluteUrl(site.url) }}">
-<meta property="og:image" content="{{ '/images/og-default.png' | url | absoluteUrl(site.url) }}">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Contact FGC Top Players">
-<meta name="twitter:description" content="Email us with results, corrections, bug reports, ideas, or support questions.">
-<meta name="twitter:image" content="{{ '/images/og-default.png' | url | absoluteUrl(site.url) }}">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact FGC Top Players",
+  "url": "{{ site.url }}{{ page.url }}",
+  "description": "Contact page for reporting results, corrections, or bugs.",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "FGC Top Players",
+    "url": "{{ site.url }}",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "contact@fgctopplayers.com",
+      "contactType": "customer support"
+    }
+  }
+}
+</script>
 {% endblock %}
 
 {% block content %}

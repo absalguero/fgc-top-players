@@ -10,31 +10,30 @@ eleventyNavigation:
 
 {% extends "layout.njk" %}
 
-{# --- Page <title> --- #}
-{% block title %}Street Fighter 6 Global Player Rankings | FGC Top Players{% endblock %}
+{# --- Page Variables --- #}
+{% set pageTitle = "Street Fighter 6 Global Player Rankings | FGC Top Players" %}
+{% set pageDesc = "The definitive Street Fighter 6 global player rankings, updated regularly. See who's on top and track rises & falls across the SF6 pro scene." %}
+{% set image = '/images/og/sf6-rankings.png' %}
 
-{# --- Meta description --- #}
+{# --- Block Overrides --- #}
+
+{% block title %}{{ pageTitle }}{% endblock %}
+
 {% block meta_description %}
-<meta name="description" content="The definitive Street Fighter 6 global player rankings, updated regularly. See who's on top and track rises & falls across the SF6 pro scene." />
+<meta name="description" content="{{ pageDesc }}">
 {% endblock %}
 
-{# --- Page-specific social copy (OG/Twitter) --- #}
 {% block og_title %}Street Fighter 6 Global Player Rankings — Updated Regularly{% endblock %}
 {% block og_description %}Live SF6 power rankings based on offline results and recent performance. Track pros like MenaRD, Punk, Tokido, and more.{% endblock %}
+
 {% block twitter_title %}Street Fighter 6 Global Player Rankings — Updated{% endblock %}
 {% block twitter_description %}Who’s on top right now? See the latest Street Fighter 6 rankings and track rises & falls by player, country, and main.{% endblock %}
 
-{# --- Optional: page-specific social image & keep canonical explicit --- #}
-{% block canonical %}
-<link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+{% block head %}
+{# NOTE: Canonical & Social Tags removed (Layout handles them automatically) #}
 {% endblock %}
 
-{% block head_extra %}
-  <meta property="og:image" content="{{ site.url }}/images/og/sf6-rankings.png">
-  <meta name="twitter:image" content="{{ site.url }}/images/og/sf6-rankings.png">
-{% endblock %}
-
-{# --- Structured data: CollectionPage + ItemList + BreadcrumbList --- #}
+{# --- Structured data --- #}
 {% block structured_data %}
 {% set totalPlayers = rankings.players | length %}
 {% if totalPlayers and totalPlayers > 0 %}
@@ -44,7 +43,7 @@ eleventyNavigation:
   {% endif %}
 {% endif %}
 
-{# derive a reasonable dateModified: prefer rankings.lastUpdated, else fallback to the latest news date if available #}
+{# derive a reasonable dateModified #}
 {% set dateMod = rankings.lastUpdated %}
 {% if not dateMod and collections.news and (collections.news | length) > 0 %}
   {% set dateMod = collections.news[0].date | date('yyyy-LL-dd') %}
@@ -81,7 +80,6 @@ eleventyNavigation:
       "position": {{ loop.index }},
       "item": {
         "@type": "Person",
-        {# Added | safe to all dumped variables below #}
         "name": {{ player.Player | dump | safe }}{% if player.Country %},
         "nationality": {{ player.Country | dump | safe }}{% endif %}{% if player.Character %},
         "description": {{ ("Main: " ~ player.Character) | dump | safe }}{% endif %}

@@ -16,28 +16,48 @@ navHighlight: "Home"
 
 {% extends "layout.njk" %}
 
-{# --- <title> --- #}
-{% block title -%}
-  {% if pagination.pageNumber == 0 -%}
-    FGC Top Players — Latest FGC News, Results, and Rankings
-  {%- else -%}
-    FGC News (Page {{ pagination.pageNumber + 1 }}) — FGC Top Players
-  {%- endif %}
-{%- endblock %}
+{# --- Calculate Dynamic Metadata Variables --- #}
+{% set pageTitle %}
+  FGC Top Players
+  {% if pagination.pageNumber > 0 %}
+    (Page {{ pagination.pageNumber + 1 }})
+  {% endif %}
+{% endset %}
 
-{# --- Meta description --- #}
-{% block meta_description -%}
-  <meta name="description" content="{% if pagination.pageNumber == 0 %}Latest FGC news, tournament results, and rankings across Street Fighter and more—updated regularly.{% else %}FGC news index page {{ pagination.pageNumber + 1 }}. Catch up on recent tournaments, results, and analysis.{% endif %}">
-{%- endblock %}
+{% set pageDesc %}
+  {% if pagination.pageNumber == 0 %}
+    Latest FGC news, tournament results, and rankings across Street Fighter and more—updated regularly.
+  {% else %}
+    FGC news index page {{ pagination.pageNumber + 1 }}. Catch up on recent tournaments, results, and analysis.
+  {% endif %}
+{% endset %}
 
-{# --- Extra head tags: prev/next, RSS discovery --- #}
+{# --- Block Overrides (Apply variables to SEO & Social) --- #}
+
+{% block title %}{{ pageTitle | trim }}{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="{{ pageDesc | trim }}">
+{% endblock %}
+
+{# Ensure Social Cards match the specific page title (e.g. "Page 2") #}
+{% block og_title %}{{ pageTitle | trim }}{% endblock %}
+{% block og_description %}{{ pageDesc | trim }}{% endblock %}
+
+{% block twitter_title %}{{ pageTitle | trim }}{% endblock %}
+{% block twitter_description %}{{ pageDesc | trim }}{% endblock %}
+
+{# --- Extra Head Tags --- #}
 {% block head_extra %}
+  {# Pagination Relations (Crucial for SEO) #}
   {% if pagination.href.previous %}
     <link rel="prev" href="{{ pagination.href.previous }}">
   {% endif %}
   {% if pagination.href.next %}
     <link rel="next" href="{{ pagination.href.next }}">
   {% endif %}
+  
+  {# RSS Feed Discovery #}
   <link rel="alternate" type="application/rss+xml" title="FGC Top Players — News Feed" href="/feed.xml">
 {% endblock %}
 
@@ -47,7 +67,7 @@ navHighlight: "Home"
 {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": {% if pagination.pageNumber == 0 %}"FGC Top Players — Latest FGC News"{% else %}"FGC News (Page {{ pagination.pageNumber + 1 }}) — FGC Top Players"{% endif %},
+  "name": "{{ pageTitle | trim }}",
   "url": "{{ site.url }}{{ page.url }}",
   "mainEntity": {
     "@type": "ItemList",

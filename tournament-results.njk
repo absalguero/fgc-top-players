@@ -16,19 +16,28 @@ eleventyNavigation:
 
 {% extends "layout.njk" %}
 
-{# --- <title> --- #}
-{% block title %}Street Fighter 6 Tournament Results Archive | FGC Top Players{% endblock %}
+{# --- Page Variables --- #}
+{% set pageTitle = "Street Fighter 6 Tournament Results Archive | FGC Top Players" %}
+{% set pageDesc = "Explore the Street Fighter 6 tournament results archive: official standings, podium finishers, and final brackets from Evo, Combo Breaker, Capcom Pro Tour, and more. Filter by year and rated tier." %}
+{% set image = '/images/sf6-banner-background.jpg' %}
 
-{# --- Meta description (tight, keyworded) --- #}
+{# --- Block Overrides --- #}
+
+{% block title %}{{ pageTitle }}{% endblock %}
+
 {% block meta_description %}
-<meta name="description" content="Explore the Street Fighter 6 tournament results archive: official standings, podium finishers, and final brackets from Evo, Combo Breaker, Capcom Pro Tour, and more. Filter by year and rated tier." />
+<meta name="description" content="{{ pageDesc }}">
 {% endblock %}
 
-{# --- Canonical + robots + prev/next for paginated pages (used by infinite scroll) --- #}
-{% block head_extra %}
-  {# Always canonicalize to page 1 to avoid duplicate content with infinite scroll pages #}
-  <link rel="canonical" href="{{ site.url }}/tournament-results/">
+{% block og_title %}{{ pageTitle }}{% endblock %}
+{% block og_description %}{{ pageDesc }}{% endblock %}
 
+{% block twitter_title %}{{ pageTitle }}{% endblock %}
+{% block twitter_description %}{{ pageDesc }}{% endblock %}
+
+{# --- Head Extra (Logic specific to archive pagination) --- #}
+{% block head_extra %}
+  {# Pagination Links (Helps Google understand the series) #}
   {% if pagination.href.previous %}
     <link rel="prev" href="{{ pagination.href.previous }}">
   {% endif %}
@@ -36,24 +45,12 @@ eleventyNavigation:
     <link rel="next" href="{{ pagination.href.next }}">
   {% endif %}
 
-  {# De-index paginated pages beyond page 1 #}
+  {# De-index paginated pages beyond page 1 (Best practice for infinite scroll/archives) #}
   {% if pagination.pageNumber and pagination.pageNumber > 0 %}
     <meta name="robots" content="noindex,follow">
   {% endif %}
 
-  {# Open Graph / Twitter #}
-  <meta property="og:title" content="Street Fighter 6 Tournament Results Archive | FGC Top Players">
-  <meta property="og:description" content="Browse Street Fighter 6 tournament results, podium finishers, and final brackets. Filter by year and rated tier.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-  <meta property="og:image" content="{{ site.url }}/images/sf6-banner-background.jpg">
-  <meta property="og:site_name" content="FGC Top Players">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Street Fighter 6 Tournament Results Archive | FGC Top Players">
-  <meta name="twitter:description" content="Official Street Fighter 6 results from majors worldwide. See winners, podiums, and brackets.">
-  <meta name="twitter:image" content="{{ site.url }}/images/sf6-banner-background.jpg">
-
+  {# Legacy Query Param Redirect Script #}
   <script>
     (function normalizeArchiveQueryParam() {
       if (typeof URLSearchParams === "undefined") return;
@@ -77,7 +74,7 @@ eleventyNavigation:
   </script>
 {% endblock %}
 
-{# --- Structured data: CollectionPage + ItemList (events on this page) + BreadcrumbList --- #}
+{# --- Structured data --- #}
 {% block structured_data %}
 {% set eventsOnPage = pageEvents or [] %}
 
@@ -105,7 +102,7 @@ eleventyNavigation:
       "position": {{ loop.index }},
       "item": {
         "@type": "WebPage",
-        "name": {{ evt.name | dump }},
+        "name": {{ evt.name | dump | safe }},
         "url": "{{ site.url }}/tournaments/{{ evt.slug }}/"
       }
     }{% if not loop.last %},{% endif %}

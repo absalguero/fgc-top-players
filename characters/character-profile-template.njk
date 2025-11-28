@@ -1,68 +1,55 @@
 ---
 pagination:
-    data: characterAnalytics
-    size: 1
-    alias: character
-    addAllPagesToCollections: true
+  data: characterAnalytics
+  size: 1
+  alias: character
+  addAllPagesToCollections: true
 permalink: "/characters/{{ character.slug }}/"
 navHighlight: "Character Stats"
 eleventyComputed:
-    title: "{{ character.name }} - Street Fighter 6 Tier, Stats, & Matchups"
+  title: "{{ character.name }} - Street Fighter 6 Tier, Stats, & Matchups"
 ---
 
 {%- extends "layout.njk" -%}
 
+{# --- SEO Variables --- #}
+{%- set metaTitle = character.name ~ " — SF6 Tier, Matchups & CPV Stats" -%}
+{%- set metaDesc = "See " ~ character.name ~ "’s Street Fighter 6 tier, CPV score, matchups, notable players, and competitive analytics from the last 12 months." -%}
+
+{# --- Block Overrides --- #}
 {%- block title -%}
   {{ title }} | FGC Top Players
 {%- endblock -%}
 
-{%- block meta_tags -%}
-  {# Common computed values #}
-  {%- set canonicalUrl = page.url | url | absoluteUrl(site.url) -%}
-  {%- set imgUrl = ("/images/characters/" ~ character.slug ~ ".png") | absoluteUrl(site.url) -%}
-  {%- set metaTitle = (character.name ~ " — SF6 Tier, Matchups & CPV Stats") -%}
-  {%- set metaDesc = ("See " ~ character.name ~ "’s Street Fighter 6 tier, CPV score, matchups, notable players, and competitive analytics from the last 12 months.") -%}
-
-  <link rel="canonical" href="{{ canonicalUrl }}">
+{%- block meta_description -%}
   <meta name="description" content="{{ metaDesc }}">
+{%- endblock -%}
+
+{%- block og_title -%}{{ metaTitle }}{%- endblock -%}
+{%- block og_description -%}{{ metaDesc }}{%- endblock -%}
+
+{%- block twitter_title -%}{{ metaTitle }}{%- endblock -%}
+{%- block twitter_description -%}{{ metaDesc }}{%- endblock -%}
+
+{%- block head -%}
+  {# Canonical is handled automatically by layout.njk #}
 
   {# Optional thin-page guard #}
   {%- if not character.CPV and not character.statRanks -%}
     <meta name="robots" content="noindex,follow">
   {%- endif -%}
 
-  {# Pagination hints in HEAD #}
+  {# Pagination hints #}
   {%- if pagination.href.previous -%}
     <link rel="prev" href="{{ pagination.href.previous | url | absoluteUrl(site.url) }}">
   {%- endif -%}
   {%- if pagination.href.next -%}
     <link rel="next" href="{{ pagination.href.next | url | absoluteUrl(site.url) }}">
   {%- endif -%}
-
-  {# Open Graph #}
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ canonicalUrl }}">
-  <meta property="og:title" content="{{ metaTitle }}">
-  <meta property="og:description" content="{{ metaDesc }}">
-  <meta property="og:image" content="{{ imgUrl }}">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="{{ character.name }} — Street Fighter 6 character portrait">
-
-  {# Twitter #}
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="{{ canonicalUrl }}">
-  <meta name="twitter:title" content="{{ metaTitle }}">
-  <meta name="twitter:description" content="{{ metaDesc }}">
-  <meta name="twitter:image" content="{{ imgUrl }}">
-
-  {# Optional performance hint #}
-  <link rel="preload" as="image" href="{{ imgUrl }}">
 {%- endblock -%}
 
 {%- block structured_data -%}
 {%- set canonicalUrl = page.url | url | absoluteUrl(site.url) -%}
-{%- set imgUrl = ("/images/characters/" ~ character.slug ~ ".png") | absoluteUrl(site.url) -%}
 {%- set lastMod = (character.updatedAt or site.buildTime) | date("yyyy-LL-dd'T'HH:mmZZ") -%}
 
 <script type="application/ld+json">
@@ -71,7 +58,6 @@ eleventyComputed:
   "@type": "WebPage",
   "name": "{{ character.name }} — SF6 Tier, Matchups & CPV",
   "url": "{{ canonicalUrl }}",
-  "image": "{{ imgUrl }}",
   "dateModified": "{{ lastMod }}",
   "isPartOf": {
     "@type": "WebSite",
@@ -82,12 +68,6 @@ eleventyComputed:
     "@type": "Thing",
     "name": "{{ character.name }}",
     "description": {{ (character.overview or "Street Fighter 6 character profile with tier, matchups, and competitive stats.") | dump }}
-  },
-  "primaryImageOfPage": {
-    "@type": "ImageObject",
-    "url": "{{ imgUrl }}",
-    "width": 1200,
-    "height": 630
   }
 }
 </script>
@@ -282,8 +262,8 @@ eleventyComputed:
 
       <div class="profile-section profile-section--right-col">
         {%- if character.notablePlayers and character.notablePlayers.length > 0 -%}
-<div class="profile-card">
-  <h2 class="profile-card__header">Top {{ character.name }} Players</h2>
+        <div class="profile-card">
+          <h2 class="profile-card__header">Top {{ character.name }} Players</h2>
           <div class="notable-players-list" style="display: flex; flex-direction: column; gap: 0.75rem;">
             {%- for player in character.notablePlayers -%}
               {% set playerRankClass = "" %}
@@ -304,10 +284,10 @@ eleventyComputed:
                       <span class="spotlight-rank">#{{ player.rank }}</span>
                       {%- if player.country and player.country != 'N/A' -%}
                         <img
-  src="/images/flags/{{ player.country | lower }}.png"
-  alt="{{ player.country }}"
-  class="spotlight-flag-icon"
->
+                          src="/images/flags/{{ player.country | lower }}.png"
+                          alt="{{ player.country }}"
+                          class="spotlight-flag-icon"
+                        >
                       {%- endif -%}
                     </div>
                   </div>

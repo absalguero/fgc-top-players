@@ -15,6 +15,34 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
 <meta name="description" content="View the full tournament results for {{ tournamentData.name }}. See all player placings and entrants." />
 {% endblock %}
 
+{% block head %}
+{# ----- Robots ----- #}
+<meta name="robots" content="index,follow,max-image-preview:large">
+
+{# NOTE: Canonical tag is removed here because layout.njk handles it automatically #}
+
+{# ----- Structured Data for Rich Snippets ----- #}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportsEvent",
+  "name": "{{ tournamentData.name }}",
+  "description": "Tournament results for {{ tournamentData.name }}",
+  "startDate": "{{ tournamentData.date }}",
+  "location": {
+    "@type": "Place",
+    "name": "See Event Details"
+  },
+  "organizer": {
+    "@type": "Organization",
+    "name": "FGC Top Players",
+    "url": "{{ site.url }}"
+  },
+  "eventStatus": "https://schema.org/EventScheduled"
+}
+</script>
+{% endblock %}
+
 {% block content %}
 <div class="results-container" style="padding-top: 0; padding-bottom: 0;">
 {% include "banner.njk" %}
@@ -75,6 +103,7 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
     padding-left: 1rem;
     padding-right: 1rem;
   }
+  
   /* Keep CTA blue and static on hover/focus/active despite global hover rules */
   .page-event .event-header__actions .btn.btn--primary,
   .page-event .event-header__actions .btn.btn--primary:hover,
@@ -117,8 +146,7 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
         {% set rank_val    = pdata and (pdata.rank or pdata.Rank) or 0 %}
         {% set rank_num    = rank_val | int %}
         {% set finish      = result.Finish | int %}
-        {% set photo       = pdata and (pdata.photoUrl or pdata.photoURL or pdata.image or pdata.headshot or pdata.avatar) %}
-
+        
         {# Card class by rank #}
         {% set card_class = "" %}
         {% if rank_num >= 1 and rank_num <= 4 %}
@@ -232,40 +260,6 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
         .catch(function () { tryNext(i + 1); });
     }
     tryNext(0);
-  })();
-</script>
-
-{# Progressive enhancement for image fallback #}
-<script>
-  (function () {
-    function handleLoad(e) {
-      var img = e.target;
-      var ph = img.nextElementSibling;
-      if (ph && ph.classList && ph.classList.contains('js-player-placeholder')) {
-        ph.style.display = 'none';
-      }
-      img.style.display = 'block';
-    }
-    function handleError(e) {
-      var img = e.target;
-      var ph = img.nextElementSibling;
-      if (ph && ph.classList && ph.classList.contains('js-player-placeholder')) {
-        ph.style.display = 'grid';
-      }
-      try { img.remove(); } catch (_) { img.style.display = 'none'; }
-    }
-
-    var imgs = document.querySelectorAll('.result-card .js-player-photo');
-    imgs.forEach(function (img) {
-      img.addEventListener('load', handleLoad, { once: true });
-      img.addEventListener('error', handleError, { once: true });
-
-      if (img.complete && img.naturalWidth > 0) {
-        handleLoad({ target: img });
-      } else if (img.complete && img.naturalWidth === 0) {
-        handleError({ target: img });
-      }
-    });
   })();
 </script>
 {% endblock %}

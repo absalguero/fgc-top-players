@@ -11,26 +11,44 @@ eleventyNavigation:
 
 {% extends "layout.njk" %}
 
-{% block title %}Support the Site | FGC Top Players{% endblock %}
+{# --- Page Variables --- #}
+{% set pageTitle = "Support the Site | FGC Top Players" %}
+{% set pageDesc = "Support FGC Top Players on Fourthwall. Make a donation or become a member to help fund hosting, data tools, and ongoing development." %}
+{% set image = '/images/og-default.png' %}
+
+{# --- Block Overrides --- #}
+
+{% block title %}{{ pageTitle }}{% endblock %}
 
 {% block meta_description %}
-<meta name="description" content="Support FGC Top Players on Fourthwall. Make a donation or become a member to help fund hosting, data tools, and ongoing development." />
+<meta name="description" content="{{ pageDesc }}" />
 {% endblock %}
 
+{% block og_title %}{{ pageTitle }}{% endblock %}
+{% block og_description %}{{ pageDesc }}{% endblock %}
+
+{% block twitter_title %}{{ pageTitle }}{% endblock %}
+{% block twitter_description %}{{ pageDesc }}{% endblock %}
+
 {% block head %}
-<link rel="canonical" href="{{ page.url | url | absoluteUrl(site.url) }}">
+{# NOTE: Canonical & Social Tags removed (Layout handles them automatically) #}
+{% endblock %}
 
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="FGC Top Players">
-<meta property="og:title" content="Support FGC Top Players">
-<meta property="og:description" content="Support the project on Fourthwall. Your contributions fund hosting, data tools, and development.">
-<meta property="og:url" content="{{ page.url | url | absoluteUrl(site.url) }}">
-<meta property="og:image" content="{{ '/images/og-default.png' | url | absoluteUrl(site.url) }}">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Support FGC Top Players">
-<meta name="twitter:description" content="Support the project on Fourthwall to keep rankings and stats free for the community.">
-<meta name="twitter:image" content="{{ '/images/og-default.png' | url | absoluteUrl(site.url) }}">
+{% block structured_data %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Support FGC Top Players",
+  "url": "{{ site.url }}{{ page.url }}",
+  "description": "Information on how to support the FGC Top Players project via donations or membership.",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "FGC Top Players",
+    "url": "{{ site.url }}"
+  }
+}
+</script>
 {% endblock %}
 
 {% block content %}

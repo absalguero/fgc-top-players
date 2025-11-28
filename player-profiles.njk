@@ -10,25 +10,34 @@ eleventyNavigation:
 
 {% extends "layout.njk" %}
 
-{# --- Set allPlayers variable for use throughout the template --- #}
+{# --- Page Variables --- #}
+{% set pageTitle = "SF6 Pro Players Directory | FGC Top Players" %}
+{% set pageDesc = "Browse Street Fighter 6 pro player profiles: ranks, mains, countries, and recent results. Search and filter the SF6 directory." %}
+{# Set specific social image if available, otherwise defaults to layout's generic card #}
+{# {% set image = '/images/social/player-directory-card.png' %} #}
+
+{# --- Data Setup --- #}
 {% set allPlayers = playerStatsSlim | selectattr('rank', 'defined') | selectattr('rank', 'le', 200) | list %}
 
-{# --- <title> --- #}
-{% block title %}SF6 Pro Players Directory | FGC Top Players{% endblock %}
+{# --- Block Overrides --- #}
 
-{# --- Meta description (tight & keyworded) --- #}
+{% block title %}{{ pageTitle }}{% endblock %}
+
 {% block meta_description %}
-<meta name="description" content="Browse Street Fighter 6 pro player profiles: ranks, mains, countries, and recent results. Search and filter the SF6 directory." />
+<meta name="description" content="{{ pageDesc }}">
 {% endblock %}
 
-{# --- Page-specific social copy (OG/Twitter) --- #}
 {% block og_title %}Street Fighter 6 Pro Players Directory — Player Profiles{% endblock %}
 {% block og_description %}Explore Street Fighter 6 player profiles with ranks, mains, countries, and recent results. Search and filter the global directory.{% endblock %}
+
 {% block twitter_title %}Street Fighter 6 Pro Players Directory — Player Profiles{% endblock %}
 {% block twitter_description %}Search and filter Street Fighter 6 pro player profiles by name, country, or main. See ranks and recent results.{% endblock %}
 
+{% block head %}
+{# NOTE: Canonical & Social Tags removed (Layout handles them automatically) #}
+{% endblock %}
 
-{# --- Structured data: CollectionPage + ItemList + BreadcrumbList --- #}
+{# --- Structured data --- #}
 {% block structured_data %}
 {% set pageCount = allPlayers | length %}
 {% if pageCount and pageCount > 0 %}
@@ -66,9 +75,9 @@ eleventyNavigation:
       "position": {{ loop.index }},
       "item": {
         "@type": "Person",
-        "name": {{ p.name | dump }}{% if p.country %},
-        "nationality": {{ p.country | dump }}{% endif %}{% if p.mainCharacter %},
-        "description": {{ ("Main: " ~ p.mainCharacter) | dump }}{% endif %}{% if p.slug %},
+        "name": {{ p.name | dump | safe }}{% if p.country %},
+        "nationality": {{ p.country | dump | safe }}{% endif %}{% if p.mainCharacter %},
+        "description": {{ ("Main: " ~ p.mainCharacter) | dump | safe }}{% endif %}{% if p.slug %},
         "url": "{{ site.url }}/players/{{ p.slug }}/"{% endif %}{% if p.photoUrl %},
         "image": "{{ site.url }}{{ p.photoUrl }}"{% endif %}
       }

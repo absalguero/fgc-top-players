@@ -1,3 +1,78 @@
+---
+pagination:
+  data: collections.pagedTags
+  size: 1
+  alias: tagPage
+  addAllPagesToCollections: true
+permalink: "{{ tagPage.permalink }}"
+eleventyComputed:
+  title: "Articles tagged '{{ tagPage.label }}'"
+---
+
+{% extends "layout.njk" %}
+
+{# --- Page Variables --- #}
+{% set pageTitle %}
+  Articles tagged "{{ tagPage.label }}"
+  {% if tagPage.pageNumber > 0 %} (Page {{ tagPage.pageNumber + 1 }}){% endif %}
+  | FGC Top Players
+{% endset %}
+
+{% set pageDesc %}
+  Browse FGC news, results, and analysis tagged with "{{ tagPage.label }}".
+  {% if tagPage.pageNumber > 0 %} - Page {{ tagPage.pageNumber + 1 }}{% endif %}
+{% endset %}
+
+{# --- Block Overrides --- #}
+
+{% block title %}{{ pageTitle | trim }}{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="{{ pageDesc | trim }}">
+{% endblock %}
+
+{% block og_title %}{{ pageTitle | trim }}{% endblock %}
+{% block og_description %}{{ pageDesc | trim }}{% endblock %}
+
+{% block twitter_title %}{{ pageTitle | trim }}{% endblock %}
+{% block twitter_description %}{{ pageDesc | trim }}{% endblock %}
+
+{% block head_extra %}
+  {# Pagination SEO: Tell Google about previous/next pages #}
+  {% if tagPage.hrefPrevious %}
+    <link rel="prev" href="{{ site.url }}{{ tagPage.hrefPrevious }}">
+  {% endif %}
+  {% if tagPage.hrefNext %}
+    <link rel="next" href="{{ site.url }}{{ tagPage.hrefNext }}">
+  {% endif %}
+{% endblock %}
+
+{% block structured_data %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "{{ pageTitle | trim }}",
+  "url": "{{ site.url }}{{ page.url }}",
+  "description": "{{ pageDesc | trim }}",
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      {% for article in tagPage.items %}
+      {
+        "@type": "ListItem",
+        "position": {{ loop.index }},
+        "url": "{{ site.url }}{{ article.url }}",
+        "name": {{ (article.data.title or 'Article') | dump | safe }}
+      }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ]
+  }
+}
+</script>
+{% endblock %}
+
+{% block content %}
 <div class="content-container page-tags">
   {% include "banner.njk" %}
   
@@ -35,3 +110,4 @@
     <p class="no-results">No articles found for this tag yet.</p>
   {% endif %}
 </div>
+{% endblock %}

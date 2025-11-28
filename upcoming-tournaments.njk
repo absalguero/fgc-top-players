@@ -9,36 +9,102 @@ eleventyNavigation:
   iconClass: "fas fa-calendar-alt"
 sidebarVariant: "news"
 sidebarTitle: "Latest FGC News"
-sidebarCount: 4
+sidebarCount: 3
 ---
 
 {% extends "layout.njk" %}
 
-{% block title %}Upcoming Rated Tournaments | FGC Top Players{% endblock %}
+{# --- Data Logic (Moved to top for global access) --- #}
+{% set ratedTournaments = allUpcomingTournaments | values | rejectattr("isArchived", "truthy") | selectattr('tier', 'defined') | list %}
+
+{# --- Page Variables --- #}
+{% set pageTitle = "Upcoming Rated Tournaments | FGC Top Players" %}
+{% set pageDesc = "The official list of upcoming rated FGC tournaments for Street Fighter, Tekken, and more. Find event dates, locations, and prize pools to plan your competitive journey." %}
+{% set image = '/images/og/upcoming-tournaments.png' %}
+
+{# --- Block Overrides --- #}
+
+{% block title %}{{ pageTitle }}{% endblock %}
 
 {% block meta_description %}
-<meta name="description" content="The official list of upcoming rated FGC tournaments for Street Fighter, Tekken, and more. Find event dates, locations, and prize pools to plan your competitive journey.">
+<meta name="description" content="{{ pageDesc }}">
 {% endblock %}
 
-{# Self-referential canonical #}
-{% block canonical %}
-<link rel="canonical" href="{{ site.url }}/upcoming-tournaments/">
-{% endblock %}
+{% block og_title %}{{ pageTitle }}{% endblock %}
+{% block og_description %}{{ pageDesc }}{% endblock %}
 
-{# Social cards (fallback if layout doesn't already set) #}
-{% block social_meta %}
-<meta property="og:type" content="website">
-<meta property="og:title" content="Upcoming Rated Tournaments | FGC Top Players">
-<meta property="og:description" content="The official list of upcoming rated FGC tournaments for Street Fighter, Tekken, and more.">
-<meta property="og:url" content="{{ site.url }}/upcoming-tournaments/">
-<meta property="og:image" content="{{ site.url }}/images/og/upcoming-tournaments.png">
-<meta name="twitter:card" content="summary_large_image">
-{% endblock %}
+{% block twitter_title %}{{ pageTitle }}{% endblock %}
+{% block twitter_description %}{{ pageDesc }}{% endblock %}
 
-{# Optional alternate feeds for UX/links (provide these routes if you have them) #}
 {% block head_extra %}
-<link rel="alternate" type="application/json" href="{{ site.url }}/upcoming-tournaments.json">
-<link rel="alternate" type="text/calendar" href="{{ site.url }}/upcoming-tournaments.ics">
+  {# RSS/JSON Feeds #}
+  <link rel="alternate" type="application/json" href="{{ site.url }}/upcoming-tournaments.json">
+  <link rel="alternate" type="text/calendar" href="{{ site.url }}/upcoming-tournaments.ics">
+{% endblock %}
+
+{# --- Structured Data --- #}
+{% block structured_data %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Upcoming Rated Tournaments",
+  "itemListOrder": "Ascending",
+  "numberOfItems": {{ ratedTournaments | length }},
+  "itemListElement": [
+    {% for tournament in ratedTournaments %}
+    {
+      "@type": "ListItem",
+      "position": {{ loop.index }},
+      "url": "{{ site.url }}/upcoming-tournaments/{{ tournament.slug }}/",
+      "item": {
+        "@type": "Event",
+        "name": {{ tournament.name | dump | safe }},
+        "url": "{{ site.url }}/upcoming-tournaments/{{ tournament.slug }}/",
+        "image": [
+          {% if tournament.image %}
+            "{{ tournament.image | safe }}"
+          {% else %}
+            "{{ site.url }}/images/events/{{ tournament.slug }}.png"
+          {% endif %}
+        ],
+        "description": "Rated {{ tournament.game }} tournament{% if tournament.tier %} · Tier {{ tournament.tier }}{% endif %}.",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "startDate": "{{ tournament.startDate }}"{% if tournament.endDate %},
+        "endDate": "{{ tournament.endDate }}"{% endif %},
+        "location": {
+          "@type": "Place",
+          "name": {{ (tournament.venueName or tournament.location or 'Venue') | dump | safe }},
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": {{ (tournament.city or '') | dump | safe }},
+            "addressRegion": {{ (tournament.region or '') | dump | safe }},
+            "addressCountry": {{ (tournament.country or '') | dump | safe }}
+          }
+        },
+        "organizer": {
+          "@type": "Organization",
+          "name": {{ (tournament.orgName or 'FGC Top Players') | dump | safe }},
+          "url": "{{ tournament.orgUrl or site.url }}"
+        }
+      }
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Tournaments", "item": "{{ site.url }}/tournaments/" },
+    { "@type": "ListItem", "position": 2, "name": "Upcoming Rated Tournaments", "item": "{{ site.url }}/upcoming-tournaments/" }
+  ]
+}
+</script>
 {% endblock %}
 
 {% block content %}
@@ -87,9 +153,6 @@ sidebarCount: 4
 
   <div id="results-count" class="results-count"></div>
 
-  {# Source data for list and JSON-LD #}
-  {% set ratedTournaments = allUpcomingTournaments | values | rejectattr("isArchived", "truthy") | selectattr('tier', 'defined') | list %}
-
   <div id="tournaments-list" class="upcoming-tourney-list">
     {% if ratedTournaments and ratedTournaments | length %}
       {% for tournament in ratedTournaments %}
@@ -109,87 +172,5 @@ sidebarCount: 4
   <div class="sentinel"></div>
 
   <script src="/js/upcomingRatedTournaments.js" defer></script>
-
-  {# Richer ItemList + Event schema with absolute URLs and ISO dates #}
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "name": "Upcoming Rated Tournaments",
-    "itemListOrder": "Ascending",
-    "numberOfItems": {{ ratedTournaments | length }},
-    "itemListElement": [
-      {% for tournament in ratedTournaments %}
-      {
-        "@type": "ListItem",
-        "position": {{ loop.index }},
-        "url": "{{ site.url }}/upcoming-tournaments/{{ tournament.slug }}/",
-        "item": {
-          "@type": "Event",
-          "@id": "{{ site.url }}/upcoming-tournaments/{{ tournament.slug }}/#event",
-          "name": "{{ tournament.name }}",
-          "url": "{{ site.url }}/upcoming-tournaments/{{ tournament.slug }}/",
-          "image": [
-            {% if tournament.image %}
-              "{{ tournament.image | safe }}"
-            {% else %}
-              "{{ site.url }}/images/events/{{ tournament.slug }}.png"
-            {% endif %}
-          ],
-          "description": "Rated {{ tournament.game }} tournament{% if tournament.tier %} · Tier {{ tournament.tier }}{% endif %}.",
-          "eventStatus": "https://schema.org/EventScheduled",
-          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-          "startDate": "{{ tournament.startDate }}"{% if tournament.endDate %},
-          "endDate": "{{ tournament.endDate }}"{% endif %},
-          "location": {
-            "@type": "Place",
-            "name": "{{ tournament.venueName or tournament.location or 'Venue' }}",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "{{ tournament.addressStreet or '' }}",
-              "addressLocality": "{{ tournament.city or '' }}",
-              "addressRegion": "{{ tournament.region or '' }}",
-              "postalCode": "{{ tournament.postalCode or '' }}",
-              "addressCountry": "{{ tournament.country or '' }}"
-            }
-          }
-          {% if tournament.registrationUrl %},
-          "offers": {
-            "@type": "Offer",
-            "url": "{{ tournament.registrationUrl }}",
-            "price": "{{ tournament.price or '0' }}",
-            "priceCurrency": "{{ tournament.currency or 'USD' }}",
-            "availability": "https://schema.org/{% if tournament.isSoldOut %}SoldOut{% else %}InStock{% endif %}"
-          }
-          {% endif %},
-          "organizer": {
-            "@type": "Organization",
-            "name": "{{ tournament.orgName or 'FGC Top Players' }}",
-            "url": "{{ tournament.orgUrl or site.url }}"
-          }
-          {% if tournament.registerActionUrl %},
-          "potentialAction": {
-            "@type": "RegisterAction",
-            "target": "{{ tournament.registerActionUrl }}"
-          }
-          {% endif %}
-        }
-      }{% if not loop.last %},{% endif %}
-      {% endfor %}
-    ]
-  }
-  </script>
-
-  {# Breadcrumbs for sitelinks/context #}
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Tournaments", "item": "{{ site.url }}/tournaments/" },
-      { "@type": "ListItem", "position": 2, "name": "Upcoming Rated Tournaments", "item": "{{ site.url }}/upcoming-tournaments/" }
-    ]
-  }
-  </script>
 
 {% endblock %}

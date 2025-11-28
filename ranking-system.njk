@@ -10,30 +10,32 @@ eleventyNavigation:
 ---
 {% extends "layout.njk" %}
 
+{# --- Page Variables --- #}
+{% set pageTitle = "How Our Street Fighter 6 Player Ranking System Works | FGC Top Players" %}
+{% set pageDesc = "Understand the Street Fighter 6 player ranking methodology: how results are scored, events are weighted, and recency is applied to produce official SF6 rankings from sanctioned offline tournaments." %}
+{% set image = '/images/social/ranking-system-card.png' %}
+
+{# --- Block Overrides --- #}
+
 {% block title %}{{ title }}{% endblock %}
 
+{% block meta_description %}
+<meta name="description" content="{{ pageDesc }}">
+{% endblock %}
+
+{% block og_title %}{{ pageTitle }}{% endblock %}
+{% block og_description %}{{ pageDesc }}{% endblock %}
+
+{% block twitter_title %}{{ pageTitle }}{% endblock %}
+{% block twitter_description %}{{ pageDesc }}{% endblock %}
+
 {% block head %}
-<meta name="description" content="Understand the Street Fighter 6 player ranking methodology: how results are scored, events are weighted, and recency is applied to produce official SF6 rankings from sanctioned offline tournaments.">
+{# NOTE: Canonical & Social Tags removed (Layout handles them automatically) #}
 <link rel="stylesheet" href="/css/ranking-system.css">
+{% endblock %}
 
-{# Absolute canonical; requires site.url in _data/site.json and an absoluteUrl filter in .eleventy.js #}
-<link rel="canonical" href="{{ page.url | url | absoluteUrl(site.url) }}">
-
-{# Open Graph #}
-<meta property="og:type" content="website">
-<meta property="og:title" content="How Our Street Fighter 6 Player Ranking System Works | FGC Top Players">
-<meta property="og:description" content="Learn how we calculate Street Fighter 6 player rankings using event weighting, results scoring, and recency—based on sanctioned offline tournaments.">
-<meta property="og:url" content="{{ page.url | url | absoluteUrl(site.url) }}">
-<meta property="og:image" content="{{ '/images/social/ranking-system-card.png' | url | absoluteUrl(site.url) }}">
-<meta property="og:site_name" content="FGC Top Players">
-
-{# Twitter #}
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="How Our Street Fighter 6 Player Ranking System Works">
-<meta name="twitter:description" content="Methodology for SF6 player rankings: results scoring, event weighting, and recency from sanctioned offline events.">
-<meta name="twitter:image" content="{{ '/images/social/ranking-system-card.png' | url | absoluteUrl(site.url) }}">
-
-{# JSON-LD: WebPage + BreadcrumbList + FAQPage (updated to reference /contact/) #}
+{% block structured_data %}
+{# JSON-LD: WebPage + BreadcrumbList + FAQPage #}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -41,15 +43,15 @@ eleventyNavigation:
     {
       "@type": "WebPage",
       "name": "How Our SF6 Player Ranking System Works",
-      "url": "{{ page.url | url | absoluteUrl(site.url) }}",
+      "url": "{{ site.url }}{{ page.url }}",
       "description": "Methodology for Street Fighter 6 player rankings using results scoring, event weighting, and recency from sanctioned offline tournaments.",
       "isPartOf": { "@type": "Website", "name": "FGC Top Players", "url": "{{ site.url }}" }
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Reference", "item": "{{ '/reference/' | url | absoluteUrl(site.url) }}" },
-        { "@type": "ListItem", "position": 2, "name": "Ranking System", "item": "{{ page.url | url | absoluteUrl(site.url) }}" }
+        { "@type": "ListItem", "position": 1, "name": "Reference", "item": "{{ site.url }}/reference/" },
+        { "@type": "ListItem", "position": 2, "name": "Ranking System", "item": "{{ site.url }}{{ page.url }}" }
       ]
     },
     {

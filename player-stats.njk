@@ -10,30 +10,28 @@ eleventyNavigation:
 
 {% extends "layout.njk" %}
 
-{% block title %}SF6 Player Stats: FGPI, Ranks & Metrics | FGC Top Players{% endblock %}
+{# --- Page Variables --- #}
+{% set pageTitle = "SF6 Player Stats: FGPI, Ranks & Metrics | FGC Top Players" %}
+{% set pageDesc = "Street Fighter 6 player stats leaderboard with FGPI, victories, average finish, momentum, and schedule difficulty. Sort, filter, and compare competitors." %}
+{% set image = site.url + '/images/og/sf6-player-stats.png' %}
+
+{# --- Block Overrides --- #}
+
+{% block title %}{{ pageTitle }}{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="{{ pageDesc }}">
+{% endblock %}
+
+{% block og_title %}{{ pageTitle }}{% endblock %}
+{% block og_description %}{{ pageDesc }}{% endblock %}
+
+{% block twitter_title %}{{ pageTitle }}{% endblock %}
+{% block twitter_description %}{{ pageDesc }}{% endblock %}
 
 {% block head %}
-{# Basic SEO #}
-<meta name="description" content="Street Fighter 6 player stats leaderboard with FGPI, victories, average finish, momentum, and schedule difficulty. Sort, filter, and compare competitors.">
-
-{# Canonical (self-referential) #}
-<link rel="canonical" href="{{ site.url }}{{ page.url }}">
-
-{# Faceted/param hygiene: default to indexing; switch to noindex if your template sets 'query' or 'filters' context vars #}
-{% set faceted = query or filters or false %}
-{% if faceted %}
-<meta name="robots" content="noindex,follow">
-{% else %}
+{# NOTE: Canonical & Social Tags removed (Layout handles them automatically) #}
 <meta name="robots" content="index,follow">
-{% endif %}
-
-{# Social cards #}
-<meta property="og:type" content="website">
-<meta property="og:title" content="Street Fighter 6 Player Stats Leaderboard | FGPI, Ranks & Metrics">
-<meta property="og:description" content="Street Fighter 6 player stats with FGPI, victories, average finish, momentum, and schedule difficulty. Sort and compare competitors.">
-<meta property="og:url" content="{{ site.url }}{{ page.url }}">
-<meta property="og:image" content="{{ site.url }}/images/og/sf6-player-stats.png">
-<meta name="twitter:card" content="summary_large_image">
 
 {# Dataset JSON-LD #}
 <script type="application/ld+json">
@@ -174,10 +172,6 @@ eleventyNavigation:
                                             <option value="af6">All Tournaments (6 Mo.)</option>
                                             <option value="afm6">Majors Only (6 Mo.)</option>
                                         </optgroup>
-                                        <optgroup label="Avg. Finish (Percentile)">
-                                            <option value="app">APP (All Tournaments)</option>
-                                            <option value="apm">APM (Majors Only)</option>
-                                        </optgroup>
                                     </select>
                                     <select id="operator-filter" class="filter-select">
                                         <option value=">=">≥</option>
@@ -280,18 +274,6 @@ eleventyNavigation:
                         <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg>
                     </div>
                 </th>
-                <th scope="col" data-key="app" data-sort="app" data-sort-type="number" data-sort-default="desc" class="sortable" data-tooltip="Avg. Placement Percentile: 95 means the player finishes ahead of 95% of the bracket on average. Higher is better.">
-                    <div class="header-content">
-                        <span>APP</span>
-                        <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg>
-                    </div>
-                </th>
-                <th scope="col" data-key="apm" data-sort="apm" data-sort-type="number" data-sort-default="desc" class="sortable" data-tooltip="Avg. Percentile at Majors: Average placement percentile at Major tournaments only.">
-                    <div class="header-content">
-                        <span>APM</span>
-                        <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg>
-                    </div>
-                </th>
                 <th scope="col" data-key="af12" data-sort="af12" data-sort-type="number" data-sort-default="asc" class="sortable reverse-arrow" data-tooltip="Avg. Finish (12 Mo.): The player's average final placement in all rated tournaments over the last 12 months. Lower is better.">
                     <div class="header-content">
                         <span>AF12</span>
@@ -337,8 +319,6 @@ eleventyNavigation:
                 <td><div class="skeleton skeleton-text" style="width: 30px; margin: auto;"></div></td>
                 <td><div class="skeleton skeleton-text" style="width: 30px; margin: auto;"></div></td>
                 <td><div class="skeleton skeleton-text" style="width: 30px; margin: auto;"></div></td>
-                <td><div class="skeleton skeleton-text" style="width: 50px; margin: auto;"></div></td>
-                <td><div class="skeleton skeleton-text" style="width: 50px; margin: auto;"></div></td>
                 <td><div class="skeleton skeleton-text" style="width: 50px; margin: auto;"></div></td>
                 <td><div class="skeleton skeleton-text" style="width: 50px; margin: auto;"></div></td>
                 <td><div class="skeleton skeleton-text" style="width: 50px; margin: auto;"></div></td>

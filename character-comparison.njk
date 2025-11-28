@@ -11,28 +11,31 @@ eleventyNavigation:
 
 {% extends "layout.njk" %}
 
-{% block title %}SF6 Character Comparison: Tier & CPV | FGC Top Players{% endblock %}
+{# --- Page Variables --- #}
+{% set pageTitle = "SF6 Character Comparison: Tier & CPV | FGC Top Players" %}
+{% set pageDesc = "Compare up to 5 Street Fighter 6 characters side-by-side. See tier placement, CPV (Competitive Performance Viability), T3R Momentum, matchup context, and competitive viability—then save or share your comparison." %}
+
+{# --- Block Overrides --- #}
+
+{% block title %}{{ pageTitle }}{% endblock %}
 
 {% block meta_description %}
-<meta name="description" content="Compare up to 5 Street Fighter 6 characters side-by-side. See tier placement, CPV (Competitive Performance Viability), T3R Momentum, matchup context, and competitive viability—then save or share your comparison.">
+<meta name="description" content="{{ pageDesc }}">
+{% endblock %}
 
-{# Absolute canonical; requires site.url set in _data/site.json #}
-<link id="canonical-url" rel="canonical" href="{{ page.url | url | absoluteUrl(site.url) }}">
+{% block og_title %}{{ pageTitle }}{% endblock %}
+{% block og_description %}{{ pageDesc }}{% endblock %}
 
-{# Open Graph #}
-<meta property="og:type" content="website">
-<meta property="og:title" content="Street Fighter 6 Character Comparison (Tier, CPV, T3R) | FGC Top Players">
-<meta property="og:description" content="Compare up to 5 SF6 characters side-by-side with CPV (Competitive Performance Viability) and T3R Momentum. Save and share your presets.">
-<meta property="og:url" content="{{ page.url | url | absoluteUrl(site.url) }}">
-<meta property="og:image" content="{{ '/images/social/sf6-character-comparison-card.png' | url | absoluteUrl(site.url) }}">
-<meta property="og:site_name" content="FGC Top Players">
+{% block twitter_title %}{{ pageTitle }}{% endblock %}
+{% block twitter_description %}{{ pageDesc }}{% endblock %}
 
-{# Twitter #}
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Street Fighter 6 Character Comparison (Tier, CPV, T3R)">
-<meta name="twitter:description" content="Side-by-side SF6 tiers, CPV (Competitive Performance Viability), and T3R Momentum for up to 5 characters.">
-<meta name="twitter:image" content="{{ '/images/social/sf6-character-comparison-card.png' | url | absoluteUrl(site.url) }}">
 
+{% block head %}
+{# NOTE: Canonical & Social Tags removed (Layout handles them automatically) #}
+{# NOTE: No specific image set; Layout will use default site social card #}
+{% endblock %}
+
+{% block structured_data %}
 {# JSON-LD: WebApplication + BreadcrumbList + FAQ #}
 <script type="application/ld+json">
 {
@@ -41,7 +44,7 @@ eleventyNavigation:
     {
       "@type": "WebApplication",
       "name": "Street Fighter 6 Character Comparison",
-      "url": "{{ page.url | url | absoluteUrl(site.url) }}",
+      "url": "{{ site.url }}{{ page.url }}",
       "applicationCategory": "MultimediaApplication",
       "operatingSystem": "Web",
       "description": "Compare up to 5 SF6 characters with tier placement, CPV (Competitive Performance Viability), and T3R Momentum. Save and share comparisons.",
@@ -58,13 +61,13 @@ eleventyNavigation:
           "@type": "ListItem",
           "position": 1,
           "name": "Analysis",
-          "item": "{{ '/analysis/' | url | absoluteUrl(site.url) }}"
+          "item": "{{ site.url }}/analysis/"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Character Comparison",
-          "item": "{{ page.url | url | absoluteUrl(site.url) }}"
+          "item": "{{ site.url }}{{ page.url }}"
         }
       ]
     },

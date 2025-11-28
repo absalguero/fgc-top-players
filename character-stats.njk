@@ -11,29 +11,28 @@ eleventyNavigation:
 
 {% extends "layout.njk" %}
 
+{# --- Page Variables --- #}
+{% set pageTitle = "Street Fighter 6 Character Stats Leaderboard | CPV Tier Rankings" %}
+{% set pageDesc = "Data-driven SF6 character rankings by CPV, momentum, consistency, and regional dominance over the last 12 months." %}
+{% set image = site.url + '/images/og/sf6-character-stats.png' %}
+
+{# --- Block Overrides --- #}
+
 {% block title %}{{ title }} | FGC Top Players{% endblock %}
 
+{% block meta_description %}
+<meta name="description" content="{{ pageDesc }}">
+{% endblock %}
+
+{% block og_title %}{{ pageTitle }}{% endblock %}
+{% block og_description %}{{ pageDesc }}{% endblock %}
+
+{% block twitter_title %}{{ pageTitle }}{% endblock %}
+{% block twitter_description %}{{ pageDesc }}{% endblock %}
+
 {% block head %}
-<meta name="description" content="Street Fighter 6 character stats leaderboard and CPV tier rankings. Compare characters by competitive performance, momentum, consistency, and regional dominance over the last 12 months.">
-
-{# Canonical (self-referential) #}
-<link rel="canonical" href="{{ site.url }}{{ page.url }}">
-
-{# Faceted/param hygiene: set noindex when query/filter params are present #}
-{% set faceted = query or filters or false %}
-{% if faceted %}
-<meta name="robots" content="noindex,follow">
-{% else %}
+{# NOTE: Canonical & Social Tags removed (Layout handles them automatically) #}
 <meta name="robots" content="index,follow">
-{% endif %}
-
-{# Social cards #}
-<meta property="og:type" content="website">
-<meta property="og:title" content="Street Fighter 6 Character Stats Leaderboard | CPV Tier Rankings">
-<meta property="og:description" content="Data-driven SF6 character rankings by CPV, momentum, consistency, and regional dominance.">
-<meta property="og:url" content="{{ site.url }}{{ page.url }}">
-<meta property="og:image" content="{{ site.url }}/images/og/sf6-character-stats.png">
-<meta name="twitter:card" content="summary_large_image">
 
 {# Dataset JSON-LD (enhanced) #}
 <script type="application/ld+json">

@@ -11,36 +11,35 @@ eleventyNavigation:
 
 {% extends "layout.njk" %}
 
-{# Page <title> includes site name for branding #}
-{% block title %}{{ title }} | {{ site.name | default('FGC Top Players') }}{% endblock %}
+{# --- Page Variables --- #}
+{% set pageTitle = "What is the FGPI? | Fighting Game Performance Index Explained" %}
+{% set pageDesc = "FGPI is a Street Fighter 6 performance rating that complements results-only rankings by factoring recent form, consistency, and event context." %}
+{% set image = '/images/social/fgpi-explained-card.png' %}
+
+{# --- Block Overrides --- #}
+
+{% block title %}{{ pageTitle }}{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="{{ pageDesc }}">
+{% endblock %}
+
+{% block og_title %}{{ pageTitle }}{% endblock %}
+{% block og_description %}{{ pageDesc }}{% endblock %}
+
+{% block twitter_title %}{{ pageTitle }}{% endblock %}
+{% block twitter_description %}{{ pageDesc }}{% endblock %}
 
 {% block head %}
-{# Precompute dates without custom filters #}
+{# NOTE: Canonical & Social Tags removed (Layout handles them automatically) #}
+
+{# Precompute dates #}
 {% set _publishedISO = (page.date | date('yyyy-LL-dd\'T\'HH:mm:ssZZ')) %}
 {% set _modifiedISO = ((page.dateModified or page.date) | date('yyyy-LL-dd\'T\'HH:mm:ssZZ')) %}
-{% set _modifiedHuman = ((page.dateModified or page.date) | date('LLL d, yyyy')) %}
-
-<meta name="description" content="FGPI is a Street Fighter 6 performance rating that complements results-only rankings by factoring recent form, consistency, and event context.">
-<link rel="canonical" href="{{ page.url | url | absoluteUrl(site.url) }}">
 
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="google" content="notranslate">
 <meta name="theme-color" content="#0f1115">
-
-<meta property="og:type" content="article">
-<meta property="og:site_name" content="{{ site.name | default('FGC Top Players') }}">
-<meta property="og:title" content="What is the FGPI? | Fighting Game Performance Index">
-<meta property="og:description" content="FGPI complements rankings by summarizing player strength with recent form, consistency, and event context.">
-<meta property="og:url" content="{{ page.url | url | absoluteUrl(site.url) }}">
-<meta property="og:image" content="{{ '/images/social/fgpi-explained-card.png' | url | absoluteUrl(site.url) }}">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="FGPI: Fighting Game Performance Index (Explained)">
-<meta name="twitter:description" content="A complementary performance rating for SF6 that goes deeper than results-only rankings.">
-<meta name="twitter:image" content="{{ '/images/social/fgpi-explained-card.png' | url | absoluteUrl(site.url) }}">
-<meta name="twitter:image:alt" content="What is the FGPI? An explainer of the Street Fighter 6 performance rating.">
 
 <script type="application/ld+json">
 {
@@ -48,9 +47,9 @@ eleventyNavigation:
   "@graph":[
     {
       "@type":"WebPage",
-      "@id":"{{ page.url | url | absoluteUrl(site.url) }}#webpage",
+      "@id":"{{ site.url }}{{ page.url }}#webpage",
       "name":"FGPI: Fighting Game Performance Index (Explained)",
-      "url":"{{ page.url | url | absoluteUrl(site.url) }}",
+      "url":"{{ site.url }}{{ page.url }}",
       "description":"FGPI is a performance rating for Street Fighter 6 that complements results-based rankings with a holistic view of player strength.",
       "isPartOf":{"@id":"{{ site.url }}/#website"},
       "datePublished":"{{ _publishedISO }}",
@@ -63,13 +62,13 @@ eleventyNavigation:
           "@type":"ListItem",
           "position":1,
           "name":"Reference",
-          "item":"{{ '/reference/' | url | absoluteUrl(site.url) }}"
+          "item":"{{ site.url }}/reference/"
         },
         {
           "@type":"ListItem",
           "position":2,
           "name":"FGPI",
-          "item":"{{ page.url | url | absoluteUrl(site.url) }}"
+          "item":"{{ site.url }}{{ page.url }}"
         }
       ]
     },
@@ -78,8 +77,8 @@ eleventyNavigation:
       "name":"Fighting Game Performance Index",
       "termCode":"FGPI",
       "description":"A Street Fighter 6 performance rating that blends results, consistency, recency, and event context to estimate current competitive strength.",
-      "inDefinedTermSet":"{{ '/analytics-glossary/' | url | absoluteUrl(site.url) }}",
-      "url":"{{ page.url | url | absoluteUrl(site.url) }}"
+      "inDefinedTermSet":"{{ site.url }}/analytics-glossary/",
+      "url":"{{ site.url }}{{ page.url }}"
     },
     {
       "@type":"FAQPage",
@@ -146,7 +145,7 @@ eleventyNavigation:
       "@type":"WebSite",
       "@id":"{{ site.url }}/#website",
       "url":"{{ site.url }}",
-      "name":"{{ site.name | default('FGC Top Players') }}"
+      "name":"FGC Top Players"
     }
   ]
 }
