@@ -187,18 +187,38 @@ function buildPlayerEntries(playerProfiles, pageUrl, collectionsPlayers) {
         return true;
       }) : []);
 
+  // Use flatMap to allow multiple name variations (Native + English) to link to the same player
   return playersToLink
     .filter((player) => player && typeof player.name === "string" && player.slug && player.name.trim())
-    .map((player) => {
-      const label = player.name.trim();
-      return {
-        key: `player:${player.slug}`,
-        label,
+    .flatMap((player) => {
+      const entries = [];
+      const primaryLabel = player.name.trim();
+
+      // 1. Add the Primary Name (e.g., 小路KOG)
+      entries.push({
+        key: `player:${player.slug}`, // Shared key ensures maxMatches applies to the PERSON
+        label: primaryLabel,
         url: `/players/${player.slug}/`,
         type: "player",
-        maxMatches: 1, // Only link the first mention for cleaner UX
-        caseSensitive: false, // Use case-insensitive matching for player names
-      };
+        maxMatches: 1, 
+        caseSensitive: false,
+      });
+
+      // 2. Add the English Name if it exists and is different (e.g., KojiKOG)
+      if (player.englishName && typeof player.englishName === "string") {
+        const englishLabel = player.englishName.trim();
+        if (englishLabel && englishLabel.toLowerCase() !== primaryLabel.toLowerCase()) {
+          entries.push({
+            key: `player:${player.slug}`, // Share the same key
+            label: englishLabel,
+            url: `/players/${player.slug}/`,
+            type: "player",
+            maxMatches: 1,
+            caseSensitive: false,
+          });
+        }
+      }
+      return entries;
     })
     .filter((entry) => entry.url !== pageUrl);
 }
@@ -283,6 +303,10 @@ function prepareEntries(playerProfiles, collections, pageUrl) {
     playerProfiles.forEach(player => {
       if (player && typeof player.name === "string") {
         allPlayerNames.add(player.name.trim().toLowerCase());
+      }
+      // Check for English names so they are recognized as "Player Tags"
+      if (player && typeof player.englishName === "string") {
+        allPlayerNames.add(player.englishName.trim().toLowerCase());
       }
     });
   }
