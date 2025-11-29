@@ -4177,7 +4177,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "neutralmania-2": {
     "name": "Neutralmania 2",
@@ -4827,7 +4827,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "terry-christmas-4": {
     "name": "Terry Christmas 4",
@@ -5117,7 +5117,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "kings-of-the-world-2024": {
     "name": "Kings of the World 2024",

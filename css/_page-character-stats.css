@@ -110,13 +110,30 @@
 .page-character-stats .mobile-search-wrapper .search-form__input {
     width: 100%;
     height: 44px;
-    /* Balanced padding ensures centered text */
-    padding: 0 2.5rem; 
+    
+    /* FIX: Reduce padding from 2.5rem to 2rem. 
+       This gains 16px of space for text while keeping enough room 
+       for the X button so typed text doesn't overlap it. 
+       Must be symmetric (same left & right) to keep text truly centered. */
+    padding: 0 2rem;
+    
+    /* Ensure text stays centered */
+    text-align: center;
+    
+    /* FIX: Slightly reduce font size (from 1rem to 0.9rem) 
+       to allow the long placeholder to fit on small screens. */
+    font-size: 0.9rem;
+    
     background-color: var(--color-bg-card-gradient-start);
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius);
     color: var(--color-text-primary);
-    font-size: 1rem;
+}
+
+/* Optional: Ensure placeholder strictly follows suit */
+.page-character-stats .mobile-search-wrapper .search-form__input::placeholder {
+    text-align: center;
+    overflow: visible;
 }
 
 .page-character-stats .mobile-search-wrapper .search-clear-btn {

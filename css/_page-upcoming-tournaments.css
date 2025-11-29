@@ -71,13 +71,14 @@
   display: none !important;
   flex-direction: column !important;
   gap: 0.5rem !important;
-  width: calc(100% - var(--spacing-md) * 2) !important;
+  /* FIX: Use percentage width instead of rigid calc for better mobile safety */
+  width: 94% !important;
   max-width: 500px !important;
   background: var(--color-bg-light);
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
-  margin-top: 0.5rem !important;
-  margin-bottom: 0.5rem !important;
+  /* FIX: Force auto left/right margins to ensure centering */
+  margin: 0.5rem auto !important;
   padding: var(--spacing-sm);
   box-sizing: border-box;
 }
@@ -118,7 +119,8 @@
   font-family: var(--font-body);
   font-size: 1rem;
   min-height: 40px;
-  padding: var(--spacing-sm) 3.5rem; 
+  /* Reduced from 3.5rem to 2.5rem for better mobile text space */
+  padding: var(--spacing-sm) 2.5rem; 
   text-align: center;
   text-indent: 0;
   transition: border-color .2s ease, box-shadow .2s ease;
