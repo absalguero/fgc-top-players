@@ -57,7 +57,7 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
   <div class="header-sticky-container {% if pagination.items[0].Tier %}tier-{{ pagination.items[0].Tier | lower | replace('+','-plus') }}{% endif %}" id="sticky-header-fix">
     <div class="event-header {% if pagination.items[0].Tier %}event-header--{{ pagination.items[0].Tier | lower | replace('+', '-plus') }}{% endif %}">
       <div class="event-header__details">
-        <h1>{{ tournamentData.name }}</h1>
+        <h1>{{ tournamentData.name }} Results</h1>
 
         <div class="event-header__meta">
           {% if tournamentData.date %}

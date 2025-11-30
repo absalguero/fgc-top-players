@@ -27,8 +27,8 @@ body.page-event .content {
   z-index: 50;
   display: flex;
   justify-content: center;
-  padding-left: var(--spacing-lg);
-  padding-right: var(--spacing-lg);
+  padding-left: 0;
+  padding-right: 0;
   border-bottom: 1px solid var(--color-border);
   background: none;
   backdrop-filter: none;
