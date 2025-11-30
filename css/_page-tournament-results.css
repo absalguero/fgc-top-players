@@ -192,7 +192,9 @@
   flex: 0 1 auto;
   min-width: 0;
   max-width: 100%;
-  white-space: nowrap;
+  white-space: normal;
+  word-wrap: break-word;
+  line-height: 1.25rem;
   overflow: visible;
   text-overflow: initial;
   word-break: normal;

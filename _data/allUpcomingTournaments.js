@@ -262,6 +262,7 @@ module.exports = async function () {
       delete dynamicTournaments[slug];
     }
   });
+  Object.values(dynamicTournaments).forEach(ensureDerivedDates);
   dynamicTournaments = sortObjectByStartDate(dynamicTournaments);
 
   try {

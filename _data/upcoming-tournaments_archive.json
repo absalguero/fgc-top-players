@@ -1,4 +1,57 @@
 {
+  "mindset-2025": {
+    "name": "MINDSET 2025",
+    "slug": "mindset-2025",
+    "startAt": 1764405000,
+    "endAt": 1764522000,
+    "startDate": "2025-11-29",
+    "endDate": "2025-11-30",
+    "dates": "Nov 29-30, 2025",
+    "location": "65 Rue Germaine Tillion, 92700 Colombes, France",
+    "venueName": "KOPSTER Hotel Residence Paris Ouest Colombes",
+    "url": "https://nsxc.gg/mindset/",
+    "tier": "B",
+    "prizes": "€1,000",
+    "game": "Street Fighter 6",
+    "streamLink": "https://www.twitch.tv/mistahcrimson",
+    "scheduleLink": "https://x.com/_NSxC/status/1986780974378586260?s=20",
+    "description": "<p>MINDSET 2025 is a two day fighting game tournament in Colombes, just outside Paris, running November 29 and 30 at KOPSTER Hotel Residence Paris Ouest Colombes, 65 Rue Germaine Tillion. The event is built as a dedicated weekend for versus fighting, inviting players from across France and beyond to compete, stay on site and make the most of a full schedule in one location.</p><p>The game lineup covers a wide range of styles: Street Fighter 6, Tekken 8, Guilty Gear Strive, Granblue Fantasy Versus Rising, Guilty Gear Xrd Rev 2, 2XKO, Fatal Fury City of the Wolves and Hunter x Hunter Nen Impact. This mix of modern flagship titles, anime fighters and new releases gives players multiple brackets to enter whether they focus on traditional 2D games, 3D fighters or team based action, with some titles also tied into official tour circuits for competitors tracking season long results.</p><p>Beyond the brackets, MINDSET 2025 is presented as an inclusive event that emphasizes accessibility, diversity and fair play, aiming to create an environment where players can challenge themselves, build confidence and connect with the wider fighting game community around shared values as well as matches.</p>",
+    "notablePlayers": [
+      "Mister Crimson",
+      "Kilzyou",
+      "Akainu",
+      "s4ltyKiD",
+      "Alphen",
+      "JuniorLeo",
+      "Kayne"
+    ],
+    "isArchived": true,
+    "excludeFromSite": false
+  },
+  "thaiger-uppercut-2025": {
+    "name": "Thaiger Uppercut 2025",
+    "slug": "thaiger-uppercut-2025",
+    "startAt": 1764301200,
+    "endAt": 1764511200,
+    "startDate": "2025-11-28",
+    "endDate": "2025-11-30",
+    "dates": "Nov 28-30, 2025",
+    "location": "IMPACT Muang Thong Thani, Tambon Ban Mai, Amphoe Pak Kret, Chang Wat Nonthaburi 11120, Thailand",
+    "venueName": "The Portal Ballroom",
+    "url": "https://www.tgu.gg/",
+    "tier": "B",
+    "prizes": "฿42,000",
+    "game": "Street Fighter 6",
+    "streamLink": "https://www.twitch.tv/tgu_main",
+    "scheduleLink": "https://x.com/TGUteam/status/1993201240969560230?s=20",
+    "description": "<p>Thaiger Uppercut 2025 (TGU 2025) marks the 13th anniversary of Thailand’s premier fighting game major. Hosted at The Portal Ballroom @ IMPACT Muang Thong Thani, this event stands as one of Southeast Asia's critical competitive hubs. For Street Fighter 6 players and fans, TGU 2025 offers a massive dedicated bracket and unique community events in the heart of Bangkok.</p><p>TGU 2025 features a robust schedule designed for competitive depth and community engagement. In addition to the main singles bracket, the event will host a special Street Fighter 6 3v3 Team Tournament on Friday featuring a 'Last Man Standing' format. While the event focuses heavily on the SF6 community, it remains a global powerhouse in the FGC ecosystem, simultaneously hosting Master and Gold tier events for other titles like Tekken 8 and Guilty Gear -STRIVE-.</p><p>The tournament takes place at IMPACT Muang Thong Thani, easily accessible via the Pink Line Monorail. Passes are available in Competitor and Spectator tiers, with the venue offering an Artist Alley, Indie Game Showcase, and a dedicated Retro Game & Toy Zone.</p>",
+    "notablePlayers": [
+      "Burnoutfighter",
+      "Book"
+    ],
+    "isArchived": true,
+    "excludeFromSite": false
+  },
   "knox-out-25": {
     "name": "Knox Out 25",
     "slug": "knox-out-25",

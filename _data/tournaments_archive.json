@@ -54048,5 +54048,1305 @@
       }
     ],
     "isArchived": false
+  },
+  "thaiger-uppsercut-tgu-2025": {
+    "name": "Thaiger Uppsercut (TGU) 2025",
+    "date": "2025-11-27",
+    "slug": "thaiger-uppsercut-tgu-2025",
+    "Tier": "B",
+    "Entrants": "118",
+    "results": [
+      {
+        "Player": "トラボ Trashbox",
+        "Player ID": "52c72e9f",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "1",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "Music4friends",
+        "Player ID": "561aa0f6",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "2",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "Vita",
+        "Player ID": "777de3c4",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "3",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "MindRPG",
+        "Player ID": "f30ea99c",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "4",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "b3lLz",
+        "Player ID": "35dc4778",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "5",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "LaVISION santarou",
+        "Player ID": "a2762057",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "5",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "CHUU",
+        "Player ID": "b5b9ee11",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "7",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "HYDRIX DensetsuSP",
+        "Player ID": "9fdf24ff",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "7",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "RuTz08",
+        "Player ID": "d9693682",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "9",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "Gyanbu",
+        "Player ID": "f87e3c10",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "9",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "Book",
+        "Player ID": "a1dca669",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "9",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "Burnoutfighter",
+        "Player ID": "f3daa040",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "9",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "happymanth",
+        "Player ID": "ac0236f0",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "13",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "l3lackHB",
+        "Player ID": "d715a4aa",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "13",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ayane",
+        "Player ID": "4cb7e298",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "13",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "DennisW",
+        "Player ID": "1c630440",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "13",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "MikeRoss",
+        "Player ID": "f5ad77ad",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "17",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "HiFightTH",
+        "Player ID": "51ff7c08",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "17",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "Meonji",
+        "Player ID": "72299f0b",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "17",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "Natsuki_tri",
+        "Player ID": "506ff6ae",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "17",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "Azaradin",
+        "Player ID": "b2b63242",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "17",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "DoubleJ_",
+        "Player ID": "4fb1a86a",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "17",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "soushihan_ksk",
+        "Player ID": "23d31d58",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "17",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "Takahashi",
+        "Player ID": "171e3ff0",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "17",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "Meemoi_th",
+        "Player ID": "9290c948",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "25",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "MCB.NinjaXsia",
+        "Player ID": "b1ae5c6a",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "25",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "AmNoobZ",
+        "Player ID": "4270e4c1",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "25",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "TSUNADE",
+        "Player ID": "23177948",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "25",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "LinLin",
+        "Player ID": "1a64a714",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "25",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "Diden",
+        "Player ID": "f409f03e",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "25",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "TheReaperSama",
+        "Player ID": "359e1c11",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "25",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "Riyo",
+        "Player ID": "bf1a4711",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "25",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "YAGI",
+        "Player ID": "acd06bdc",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "33",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "Soju",
+        "Player ID": "5218977e",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "33",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "Acidrock",
+        "Player ID": "0b258672",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "33",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "Yendor",
+        "Player ID": "3713605b",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "33",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "GOD-GUAN_DU",
+        "Player ID": "73a544a0",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "33",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "GMGik",
+        "Player ID": "105ead78",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "33",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "Workingdolls",
+        "Player ID": "86c703c1",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "33",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "SUBATUBE",
+        "Player ID": "c26529c9",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "33",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "Nekon",
+        "Player ID": "772ed7ec",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "33",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jephiroth",
+        "Player ID": "90b06ef4",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "33",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "Minato",
+        "Player ID": "c6129518",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "33",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cornman",
+        "Player ID": "838289d2",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "33",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "SunGouki",
+        "Player ID": "b05872cf",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "33",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "shiranui26",
+        "Player ID": "803c086f",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "33",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bakjoi",
+        "Player ID": "bf991f1f",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "33",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mongoemon",
+        "Player ID": "3fb8f4f3",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "33",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "Boonies",
+        "Player ID": "54888cde",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "49",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "PapaComin",
+        "Player ID": "96f8f6c5",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "49",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "HannLoso",
+        "Player ID": "35aa525a",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "49",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "MechaMEK",
+        "Player ID": "7c4884c7",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "49",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "ToonSoSad",
+        "Player ID": "5c9c0027",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "49",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "areesnooker",
+        "Player ID": "c4ba0e41",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "49",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "Gaming Mogura",
+        "Player ID": "01af9eb0",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "49",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "Momovan",
+        "Player ID": "0c859e15",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "49",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "BinaryMarrow",
+        "Player ID": "d33cc81d",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "49",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "asuka666",
+        "Player ID": "c3398912",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "49",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jinkouyuki",
+        "Player ID": "d7770fa2",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "49",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "airflares",
+        "Player ID": "a7469fb4",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "49",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "hghghg",
+        "Player ID": "0788c910",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "49",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "XaeroTH",
+        "Player ID": "510ce2fd",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "49",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "AngeloL",
+        "Player ID": "3a45c62c",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "49",
+        "Entrants": "118",
+        "Tier": "B"
+      },
+      {
+        "Player": "Maydic",
+        "Player ID": "7ea6bd2b",
+        "Event": "Thaiger Uppsercut (TGU) 2025",
+        "Event ID": "tgu-2025",
+        "Date": "2025-11-28",
+        "Finish": "49",
+        "Entrants": "118",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "mindset-2025": {
+    "name": "MINDSET 2025",
+    "date": "2025-11-29",
+    "slug": "mindset-2025",
+    "Tier": "B",
+    "Entrants": "96",
+    "results": [
+      {
+        "Player": "s4ltyKiD",
+        "Player ID": "c0dbe56d",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "1",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mister Crimson",
+        "Player ID": "60eb8f41",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "2",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ritchy",
+        "Player ID": "4a3b14ea",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "3",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "JuniorLeo",
+        "Player ID": "dce6f793",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "4",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Lionheart",
+        "Player ID": "1c9f6a2a",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "5",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Akainu",
+        "Player ID": "3e909da2",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "5",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Yasha",
+        "Player ID": "46b7aff0",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "7",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Baki",
+        "Player ID": "8daae380",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "7",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "MillionsKnives",
+        "Player ID": "4e2cabe1",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "9",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kayne",
+        "Player ID": "cd4f2827",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "9",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Soualiho",
+        "Player ID": "d80e5e58",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "9",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kanou",
+        "Player ID": "2e9387d7",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "9",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dims",
+        "Player ID": "20ac3561",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "13",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Tchang",
+        "Player ID": "6527aad9",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "13",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Alphen",
+        "Player ID": "f281b9df",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "13",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kame",
+        "Player ID": "43e6d8e6",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "13",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Daryl_972",
+        "Player ID": "b069cf08",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "17",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kaky",
+        "Player ID": "fe3b0b17",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "17",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "daimo",
+        "Player ID": "92f47052",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "17",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Lanikeu",
+        "Player ID": "5e9bc79b",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "17",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "NonoBlcK",
+        "Player ID": "bfa15d16",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "17",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Caoji",
+        "Player ID": "3c6260e2",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "17",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Zodd2108",
+        "Player ID": "d535cf7c",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "17",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "TessTary",
+        "Player ID": "8af98400",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "17",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "FREE Nhoj",
+        "Player ID": "7fe5a00c",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "25",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "RASTACOOL01",
+        "Player ID": "b9ee14a6",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "25",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Amazing",
+        "Player ID": "088f098e",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "25",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "will2pac",
+        "Player ID": "18579714",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "25",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Willox",
+        "Player ID": "6f0de2fc",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "25",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Chunk",
+        "Player ID": "e2f8caff",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "25",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "tirionFL",
+        "Player ID": "bae46df8",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "25",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "PoMM3",
+        "Player ID": "9d0b4059",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "25",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Sata",
+        "Player ID": "271ace9e",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "33",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Akuroi",
+        "Player ID": "37bc0bc1",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "33",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "kingJaro",
+        "Player ID": "9368de28",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "33",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Don",
+        "Player ID": "e58089b4",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "33",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pweting",
+        "Player ID": "7c992625",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "33",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Hyorvenn",
+        "Player ID": "6feca5e3",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "33",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Anken93",
+        "Player ID": "6cccd9cd",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "33",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Chouchen Light",
+        "Player ID": "540d02fc",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "33",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Onitsuki",
+        "Player ID": "988c4865",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "33",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "KrazyMeer",
+        "Player ID": "24acbae4",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "33",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cantarelle",
+        "Player ID": "d9ebb0de",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "33",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dawwed",
+        "Player ID": "15e2acdf",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "33",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "MLGplantie",
+        "Player ID": "64b8a6dc",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "33",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "A free khan",
+        "Player ID": "679edc55",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "33",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Joulaks",
+        "Player ID": "6dcdccb7",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "33",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Leovath",
+        "Player ID": "94e19ae5",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "33",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rex",
+        "Player ID": "5c93d8a8",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "49",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Nebiot",
+        "Player ID": "0ef6be97",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "49",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Aerinh",
+        "Player ID": "65abda33",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "49",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cerberrus",
+        "Player ID": "127212ae",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "49",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Davsnot",
+        "Player ID": "ebc86b23",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "49",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Syekko",
+        "Player ID": "5f61b169",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "49",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kamatari",
+        "Player ID": "4b51542f",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "49",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bassline",
+        "Player ID": "604ce117",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "49",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Shinky_971",
+        "Player ID": "e3ca0032",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "49",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Arthur (Bear)",
+        "Player ID": "d8dcb5b9",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "49",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Oniro",
+        "Player ID": "8f61927d",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "49",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ares",
+        "Player ID": "e7e29883",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "49",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "MIKEY",
+        "Player ID": "adf95d6c",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "49",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Feelgy",
+        "Player ID": "c04182ed",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "49",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Curtis Newton",
+        "Player ID": "84cdc9a5",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "49",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Logolepit",
+        "Player ID": "e8d897ce",
+        "Event": "MINDSET 2025",
+        "Event ID": "mindset-2025",
+        "Date": "2025-11-30",
+        "Finish": "49",
+        "Entrants": "96",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
   }
 }
