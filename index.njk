@@ -61,31 +61,15 @@ navHighlight: "Home"
   <link rel="alternate" type="application/rss+xml" title="FGC Top Players — News Feed" href="/feed.xml">
 {% endblock %}
 
-{# --- Page-level JSON-LD (ItemList) --- #}
+{# --- Page-level JSON-LD --- #}
 {% block structured_data %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "CollectionPage",
+  "@type": "WebPage",
   "name": "{{ pageTitle | trim }}",
   "url": "{{ site.url }}{{ page.url }}",
-  "mainEntity": {
-    "@type": "ItemList",
-    "itemListElement": [
-      {% for article in pagination.items %}
-      {
-        "@type": "ListItem",
-        "position": {{ loop.index }},
-        "url": "{{ site.url }}{{ article.url }}",
-        "name": {{ (article.data.title or 'FGC News') | dump | safe }},
-        {% if article.data.cardImage %}
-        "image": "{{ site.url }}{{ article.data.cardImage }}",
-        {% endif %}
-        "datePublished": "{{ article.date | date('yyyy-MM-dd') }}"
-      }{% if not loop.last %},{% endif %}
-      {% endfor %}
-    ]
-  }
+  "description": "Latest FGC news, tournament results, and rankings across Street Fighter and more."
 }
 </script>
 {% endblock %}

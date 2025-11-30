@@ -76,8 +76,8 @@ eleventyNavigation:
 
 {# --- Structured data --- #}
 {% block structured_data %}
-{% set eventsOnPage = pageEvents or [] %}
 
+{# 1. CollectionPage: Describes the page itself #}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -88,37 +88,30 @@ eleventyNavigation:
 }
 </script>
 
-{% if eventsOnPage and eventsOnPage | length > 0 %}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "Street Fighter 6 Tournaments (This Page)",
-  "itemListOrder": "http://schema.org/ItemListOrderDescending",
-  "itemListElement": [
-    {% for evt in eventsOnPage %}
-    {
-      "@type": "ListItem",
-      "position": {{ loop.index }},
-      "item": {
-        "@type": "WebPage",
-        "name": {{ evt.name | dump | safe }},
-        "url": "{{ site.url }}/tournaments/{{ evt.slug }}/"
-      }
-    }{% if not loop.last %},{% endif %}
-    {% endfor %}
-  ]
-}
-</script>
-{% endif %}
+{# 
+   NOTE: The 'ItemList' block was removed here. 
+   Google GSC flagged it as 'Invalid' because 'WebPage' is not a supported 
+   type for Rich Result Carousels. Removing it clears the error.
+#}
 
+{# 2. BreadcrumbList: Keeps your navigation structure valid for SEO #}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/" },
-    { "@type": "ListItem", "position": 2, "name": "Tournament Results", "item": "{{ site.url }}{{ page.url }}" }
+    { 
+      "@type": "ListItem", 
+      "position": 1, 
+      "name": "Home", 
+      "item": "{{ site.url }}/" 
+    },
+    { 
+      "@type": "ListItem", 
+      "position": 2, 
+      "name": "Tournament Results", 
+      "item": "{{ site.url }}{{ page.url }}" 
+    }
   ]
 }
 </script>

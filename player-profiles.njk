@@ -39,13 +39,8 @@ eleventyNavigation:
 
 {# --- Structured data --- #}
 {% block structured_data %}
-{% set pageCount = allPlayers | length %}
-{% if pageCount and pageCount > 0 %}
-  {% set limit = pageCount %}
-{% else %}
-  {% set limit = 0 %}
-{% endif %}
 
+{# 1. CollectionPage: Describes the Player Directory itself #}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -61,33 +56,13 @@ eleventyNavigation:
 }
 </script>
 
-{% if limit > 0 %}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "SF6 Player Profiles (This Page)",
-  "itemListOrder": "http://schema.org/ItemListOrderAscending",
-  "itemListElement": [
-    {% for p in allPlayers %}
-    {
-      "@type": "ListItem",
-      "position": {{ loop.index }},
-      "item": {
-        "@type": "Person",
-        "name": {{ p.name | dump | safe }}{% if p.country %},
-        "nationality": {{ p.country | dump | safe }}{% endif %}{% if p.mainCharacter %},
-        "description": {{ ("Main: " ~ p.mainCharacter) | dump | safe }}{% endif %}{% if p.slug %},
-        "url": "{{ site.url }}/players/{{ p.slug }}/"{% endif %}{% if p.photoUrl %},
-        "image": "{{ site.url }}{{ p.photoUrl }}"{% endif %}
-      }
-    }{% if not loop.last %},{% endif %}
-    {% endfor %}
-  ]
-}
-</script>
-{% endif %}
+{# 
+   NOTE: 'ItemList' removed to fix Google Search Console "Incorrect Value Type" errors.
+   Google does not support Rich Result Carousels for lists of 'Person' entities 
+   on a category page like this.
+#}
 
+{# 2. BreadcrumbList: Essential for SEO navigation path #}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
