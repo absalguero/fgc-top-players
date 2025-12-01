@@ -206,7 +206,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Mobile card rendering
   const createCardHtml = (char) => {
-    const imageSrc = `/images/characters/${char.slug}.png`;
     const tier = char.Tier || 'N/A';
     const tierClass = `tier-${tier.toLowerCase().replace('+', '-plus')}`;
     const cardTierClass = tier === 'S+' ? 'tier-s-plus-card' :
@@ -236,9 +235,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     return `
       <div class="character-stat-card ${cardTierClass}">
-        <div class="character-stat-card__header">
-          <img src="${imageSrc}" alt="${char.name}" class="character-icon" onerror="this.style.display='none'">
-          
+        <div class="character-stat-card__header">          
           <div class="character-name-row">
             <span class="tier-badge ${tierClass}">${tier}</span>
             <div class="character-stat-card__name">
@@ -347,7 +344,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const frag = document.createDocumentFragment();
 
     data.forEach(char => {
-      const imageSrc = `/images/characters/${char.slug}.png`;
       const row = document.createElement('tr');
       row.className = `tier-${(char.Tier || 'na').toLowerCase().replace('+', '-plus')}`;
       row.dataset.slug = char.slug;
@@ -362,7 +358,6 @@ document.addEventListener('DOMContentLoaded', () => {
         </td>
         <td class="col-character" data-key="name">
           <div class="player-cell-content">
-            <img src="${imageSrc}" alt="${char.name}" class="character-icon" onerror="this.style.display='none'">
             <span><a href="/characters/${char.slug}/">${char.name}</a></span>
           </div>
         </td>

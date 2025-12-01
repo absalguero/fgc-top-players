@@ -88,5 +88,26 @@
     "notablePlayers": [],
     "isArchived": false,
     "excludeFromSite": false
+  },
+  "texas-showdown-2026": {
+    "name": "Texas Showdown 2026",
+    "slug": "texas-showdown-2026",
+    "startAt": 1774612800,
+    "endAt": 1774828799,
+    "startDate": "2026-03-27",
+    "endDate": "2026-03-29",
+    "dates": "Mar 27-29, 2026",
+    "location": "2001 Post Oak Blvd, Houston, TX 77056, USA",
+    "venueName": "Hilton Houston Post Oak by the Galleria",
+    "url": "https://www.txshowdown.com/",
+    "tier": "A",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "<p>Texas Showdown 2026 marks the 25th anniversary of this longstanding tournament, scheduled to take place from March 27 through March 29, 2026. As one of the longest-running competitive events in the region, the tournament acts as a primary hub for players across the Southwest, offering a mix of official brackets and casual play.</p><p>The event is hosted at the Hilton Post Oak at the Galleria in Houston, Texas. This venue houses the main competition hall, providing space for tournament pools, finals, vendor areas, and community gaming setups throughout the weekend.</p><p>The 2026 lineup includes over 25 official tournaments, split between modern releases and legacy titles. Confirmed games include Street Fighter 6, TEKKEN 8, Mortal Kombat 1, and Fatal Fury: City of the Wolves, alongside classic competitions for Marvel vs. Capcom 2 and Super Street Fighter II Turbo.</p><p>Texas Showdown 2026 continues to operate as a central meeting point for the Fighting Game Community, providing a standardized tournament environment that accommodates both the latest competitive scenes and the preservation of retro fighting game history.</p>",
+    "notablePlayers": [],
+    "isArchived": false,
+    "excludeFromSite": false
   }
 }

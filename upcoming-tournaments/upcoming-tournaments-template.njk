@@ -73,6 +73,11 @@ navHighlight: "Upcoming Rated Tournaments"
   </script>
 
   {# ----- Event JSON-LD ----- #}
+  {% set isOnline = (tournament.location | lower == 'online') or (tournament.location | lower == 'remote') %}
+  
+  {# Fallback: If no endDate, assume it ends 4 hours after start or same day #}
+  {% set safeEndDate = tournament.endDate or tournament.startDate %}
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -80,32 +85,49 @@ navHighlight: "Upcoming Rated Tournaments"
     "name": "{{ tournament.name }}",
     "url": "{{ site.url }}{{ page.url }}",
     "startDate": "{{ tournament.startDate }}",
-    "endDate": "{{ tournament.endDate }}",
-    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-    "eventStatus": "https://schema.org/EventScheduled",
+    "endDate": "{{ safeEndDate }}",
+    
+    {# --- FIX: Switch between Online and Offline modes --- #}
+    {% if isOnline %}
+      "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "VirtualLocation",
+        "url": "{{ tournament.streamLink or tournament.url or (site.url ~ page.url) }}" 
+      },
+    {% else %}
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "{{ (tournament.venueName or tournament.location) | replace('"', '\\"') }}",
+        "address": {
+          "@type": "PostalAddress",
+          {# If parsing fails, dump the whole location string into street address to satisfy Google #}
+          "streetAddress": "{{ tournament.location | replace('"', '\\"') }}",
+          {% if city %}"addressLocality": "{{ city }}",{% endif %}
+          {% if region and region != city %}"addressRegion": "{{ region }}",{% endif %}
+          {% if country %}"addressCountry": "{{ country }}"{% endif %}
+           {# Ensure at least one field is filled to prevent empty object error #}
+          "name": "{{ tournament.location | replace('"', '\\"') }}"
+        }
+        {% if tournament.latitude and tournament.longitude %},
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": {{ tournament.latitude }},
+          "longitude": {{ tournament.longitude }}
+        }
+        {% endif %}
+      },
+    {% endif %}
+
     "description": "{{ (tournament.description or 'A premier fighting game tournament.') | striptags | trim | replace('"', '\\"') }}",
-    "location": {
-      "@type": "Place",
-      "name": "{{ (tournament.venueName or tournament.location) | replace('"', '\\"') }}",
-      "address": {
-        "@type": "PostalAddress"{% if city %},
-        "addressLocality": "{{ city }}"{% endif %}{% if region and region != city %},
-        "addressRegion": "{{ region }}"{% endif %}{% if country %},
-        "addressCountry": "{{ country }}"{% endif %}
-      }{% if tournament.latitude and tournament.longitude %},
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": {{ tournament.latitude }},
-        "longitude": {{ tournament.longitude }}
-      }{% endif %}
-    },
     "organizer": {
       "@type": "Organization",
       "name": "{{ (tournament.organizer or 'FGC Top Players') | replace('"', '\\"') }}",
       "url": "{{ tournament.organizerUrl or tournament.url or (site.url ~ page.url) }}"
     },
     
-    {# --- FIX: PERFORMER LOGIC --- #}
     "performer": [
       {% if tournament.notablePlayers and tournament.notablePlayers.length > 0 %}
         {% for player in tournament.notablePlayers %}
@@ -115,7 +137,6 @@ navHighlight: "Upcoming Rated Tournaments"
           }{% if not loop.last %},{% endif %}
         {% endfor %}
       {% else %}
-        {# Fallback to Organizer if no players listed to prevent 'missing performer' error #}
         { 
           "@type": "Organization", 
           "name": "{{ (tournament.organizer or 'Tournament Organizer') | replace('"', '\\"') }}" 
@@ -123,23 +144,20 @@ navHighlight: "Upcoming Rated Tournaments"
       {% endif %}
     ],
 
-    {# --- FIX: OFFERS LOGIC --- #}
     {% if tournament.url %}
     "offers": {
       "@type": "Offer",
       "url": "{{ tournament.url }}",
       "availability": "https://schema.org/InStock",
       "priceCurrency": "USD",
-      {# Default to 0 if price missing to clear 'missing price' warning #}
       "price": "{{ tournament.price | default('0') }}",
-      {# Default validFrom to startDate if missing to clear 'missing validFrom' warning #}
       "validFrom": "{{ tournament.registrationOpen or tournament.startDate or '2024-01-01' }}"
     },
     {% endif %}
 
     "image": [
-       "{{ site.url }}/assets/img/social-card-default.jpg"
-       {# If you have a specific tournament image, add logic here #}
+       {# FIX: Prioritize tournament specific image, fallback to social card #}
+       "{{ tournament.image or (site.url ~ '/assets/img/social-card-default.jpg') }}"
     ],
 
     {% set first = true %}
