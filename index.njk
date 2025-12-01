@@ -84,7 +84,7 @@ navHighlight: "Home"
   {# HEADER REMOVED FOR DASHBOARD #}
   {% if not isHomePage %}
     <h1 class="page-title">
-      FGC News (Page {{ pagination.pageNumber + 1 }})
+      Latest FGC News (Page {{ pagination.pageNumber + 1 }})
     </h1>
   {% endif %}
 
@@ -137,7 +137,7 @@ navHighlight: "Home"
     {# === COLUMN 2: NEWS FEED (Always visible) === #}
     <main class="dash-feed">
       {% if isHomePage %}
-        <h2 class="section-label">Latest News</h2>
+        <h2 class="section-label">Latest FGC News</h2>
       {% endif %}
 
       <div class="home-news-list {% if isHomePage %}dashboard-feed-list{% endif %}">
@@ -218,7 +218,7 @@ navHighlight: "Home"
         </div>
 
         <div class="widget-footer-wrapper">
-          <a href="/tournament-results/" class="btn btn--primary btn--small">View Archive</a>
+          <a href="/tournament-results/" class="btn btn--primary btn--small">View Results Archive</a>
         </div>
       </aside>
     {% endif %}

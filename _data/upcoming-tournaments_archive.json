@@ -1,4 +1,30 @@
 {
+  "the-noodle-fest-2025": {
+    "name": "The Noodle Fest 2025",
+    "slug": "the-noodle-fest-2025",
+    "startAt": 1764428400,
+    "endAt": 1765080000,
+    "startDate": "2025-11-29",
+    "endDate": "2025-12-06",
+    "dates": "Nov 29-Dec 6, 2025",
+    "location": "3248 Rue Jean-Yves, Kirkland, QC H9J 2R6, Canada",
+    "venueName": "Noodle Empire Esports & Game Center",
+    "url": "https://www.noodleempire.com/event-details/the-noodle-fest-2025",
+    "tier": "B",
+    "prizes": "$2,000",
+    "game": "Street Fighter 6",
+    "streamLink": "https://www.twitch.tv/mtl_underground",
+    "scheduleLink": "https://drive.google.com/file/d/1fyqUc6scXUzUHWPMqRtfd6E-4Z7hLhqn/view",
+    "description": "<p>The Noodle Fest 2025 is a week long fighting game and community festival in Kirkland, Quebec, running from November 29 to December 6, 2025 at Noodle Empire’s gaming and esports center on Rue Jean-Yves. Framed as a crossover celebration for Noodle Empire’s third anniversary, it brings together a full schedule of tournaments, special events and hangout time under one roof, with more than a dozen featured games and over two thousand dollars in prizes and pot bonuses across the week.</p><p>The lineup highlights both platform fighters and traditional fighting games, with brackets for Street Fighter 6, Tekken 8, Super Smash Bros Ultimate, Super Smash Bros Melee, Rivals 2, Guilty Gear Strive and 2XKO among the core competitions. Different titles are given their own dedicated day of play, supported by targeted pot bonuses such as a featured bonus for Street Fighter 6 and additional prize boosts for games like Rivals 2 and Smash Melee, so players can focus on their main game while still being part of a larger festival schedule.</p><p>Across the week, The Noodle Fest 2025 is positioned as a hub for the Montreal area fighting game community and visitors, combining structured tournaments with casual sessions, creator content and venue activities to create a sustained event that rewards both repeat attendance and focused tournament runs.</p>",
+    "notablePlayers": [
+      "Zykles",
+      "Slice",
+      "BigDomChurros",
+      "MTL_Rami"
+    ],
+    "isArchived": true,
+    "excludeFromSite": false
+  },
   "mindset-2025": {
     "name": "MINDSET 2025",
     "slug": "mindset-2025",

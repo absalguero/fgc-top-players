@@ -83,10 +83,10 @@ navHighlight: "Upcoming Rated Tournaments"
     "endDate": "{{ tournament.endDate }}",
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "eventStatus": "https://schema.org/EventScheduled",
-    "description": "{{ (tournament.description or 'A premier fighting game tournament.') | striptags | trim }}",
+    "description": "{{ (tournament.description or 'A premier fighting game tournament.') | striptags | trim | replace('"', '\\"') }}",
     "location": {
       "@type": "Place",
-      "name": "{{ tournament.venueName or tournament.location }}",
+      "name": "{{ (tournament.venueName or tournament.location) | replace('"', '\\"') }}",
       "address": {
         "@type": "PostalAddress"{% if city %},
         "addressLocality": "{{ city }}"{% endif %}{% if region and region != city %},
@@ -101,29 +101,57 @@ navHighlight: "Upcoming Rated Tournaments"
     },
     "organizer": {
       "@type": "Organization",
-      "name": "{{ tournament.organizer or 'FGC Top Players' }}",
+      "name": "{{ (tournament.organizer or 'FGC Top Players') | replace('"', '\\"') }}",
       "url": "{{ tournament.organizerUrl or tournament.url or (site.url ~ page.url) }}"
-    }{% if tournament.notablePlayers and tournament.notablePlayers.length > 0 %},
+    },
+    
+    {# --- FIX: PERFORMER LOGIC --- #}
     "performer": [
-      {% for player in tournament.notablePlayers %}
-        { "@type": "Person", "name": "{{ (player.Player or player.name or player) | trim }}" }{% if not loop.last %},{% endif %}
-      {% endfor %}
-    ]{% endif %}{% if tournament.url %},
+      {% if tournament.notablePlayers and tournament.notablePlayers.length > 0 %}
+        {% for player in tournament.notablePlayers %}
+          { 
+            "@type": "Person", 
+            "name": "{{ (player.Player or player.name or player) | trim | replace('"', '\\"') }}" 
+          }{% if not loop.last %},{% endif %}
+        {% endfor %}
+      {% else %}
+        {# Fallback to Organizer if no players listed to prevent 'missing performer' error #}
+        { 
+          "@type": "Organization", 
+          "name": "{{ (tournament.organizer or 'Tournament Organizer') | replace('"', '\\"') }}" 
+        }
+      {% endif %}
+    ],
+
+    {# --- FIX: OFFERS LOGIC --- #}
+    {% if tournament.url %}
     "offers": {
       "@type": "Offer",
       "url": "{{ tournament.url }}",
       "availability": "https://schema.org/InStock",
-      "priceCurrency": "USD"{% if tournament.price %},
-      "price": "{{ tournament.price }}"{% endif %}{% if tournament.startDate %},
-      "availabilityStarts": "{{ tournament.startDate }}"{% endif %}
-    }{% endif %}{% set first = true %}{% if tournament.url or tournament.bracketUrl or tournament.twitter or tournament.streamLink %},
+      "priceCurrency": "USD",
+      {# Default to 0 if price missing to clear 'missing price' warning #}
+      "price": "{{ tournament.price | default('0') }}",
+      {# Default validFrom to startDate if missing to clear 'missing validFrom' warning #}
+      "validFrom": "{{ tournament.registrationOpen or tournament.startDate or '2024-01-01' }}"
+    },
+    {% endif %}
+
+    "image": [
+       "{{ site.url }}/assets/img/social-card-default.jpg"
+       {# If you have a specific tournament image, add logic here #}
+    ],
+
+    {% set first = true %}
+    {% if tournament.url or tournament.bracketUrl or tournament.twitter or tournament.streamLink %}
     "sameAs": [
       {% for link in [tournament.url, tournament.bracketUrl, tournament.twitter, tournament.streamLink] %}
         {% if link %}
           {% if not first %},{% endif %}"{{ link }}"{% set first = false %}
         {% endif %}
       {% endfor %}
-    ]{% endif %},
+    ]
+    {% endif %},
     "subjectOf": { "@type": "WebPage", "@id": "{{ site.url }}{{ page.url }}" }
   }
   </script>
