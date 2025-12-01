@@ -260,7 +260,7 @@ module.exports = async function (eleventyConfig) {
     if (!collection || !currentTags) return [];
 
     // Tags that are too generic to count towards a high relevance score
-    const ignoredTags = new Set([...TAG_SKIP, 'street fighter 6', 'article']);
+    const ignoredTags = new Set([...TAG_SKIP, 'article']);
 
     // 1. Score every post in the collection
     const scoredPosts = collection.map(post => {

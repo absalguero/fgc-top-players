@@ -1,23 +1,323 @@
 /* /css/_page-home.css */
 
-/* Styles for the main heading on the home page */
+/* --- Page Title --- */
 .page-home h1 {
   text-align: center;
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: 0.5rem;
   font-size: 2.5rem;
+  font-family: var(--font-heading);
+  line-height: 1.2;
 }
 
-/* Grid container for news article cards on the home page */
+/* --- Layout Grid System --- */
+.dashboard-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+@media (min-width: 1024px) {
+  .dashboard-grid--home {
+    display: grid;
+    /* Left Sidebar | Main Feed | Right Sidebar */
+    grid-template-columns: 200px 1fr 280px; 
+    align-items: start;
+    gap: var(--spacing-xl);
+  }
+
+  .dashboard-grid--archive {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* FIX: Removed max-width restriction so it matches the banner width */
+    width: 100%; 
+  }
+}
+
+/* --- Main News Feed --- */
 .page-home .home-news-list {
-  display: grid;
-  gap: calc(var(--spacing-lg) / 4);
-  grid-template-columns: 1fr;
-  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-/* Mobile landscape: 2-column grid for news cards */
-@media (max-width: 767px) and (orientation: landscape) {
+/* ====================================================
+   DASHBOARD SPECIFIC NEWS STYLES (Page 1 Only)
+   
+   Logic: Apply the "Stacked & Centered" look ONLY on:
+   1. Mobile (max-width: 767px)
+   2. Desktop (min-width: 1024px)
+   
+   Result: Tablets (768px - 1023px) get the Standard Wide Card.
+   ==================================================== */
+
+@media (max-width: 767px), (min-width: 1024px) {
+
+  .page-home .dashboard-feed-list > * {
+    text-align: center;
+  }
+
+  /* 1. Content Padding Matches Gap (0.5rem) */
+  .page-home .dashboard-feed-list .home-card__content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100%;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+
+  /* 2. Footer Layout (Stacked) */
+  body.page-home .dashboard-feed-list article .home-card__footer {
+    display: flex !important;
+    flex-direction: column !important; /* Force stack */
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    margin-top: auto;
+    gap: 0.75rem; 
+  }
+
+  /* 3. Tags First */
+  body.page-home .dashboard-feed-list .home-card__tags {
+    justify-content: center !important;
+    margin-bottom: 0 !important;
+    width: 100%;
+    order: 1; 
+  }
+
+  /* 4. Button Second */
+  body.page-home .dashboard-feed-list .home-card__read-more {
+    margin-top: 0 !important; 
+    margin-left: auto;
+    margin-right: auto;
+    order: 2; 
+    align-self: center !important;
+  }
+
+} /* End Dashboard Style Media Query */
+
+
+/* --- Section Labels --- */
+.section-label {
+  font-size: 1.5rem; 
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--accent-primary, #3b82f6);
+  text-align: center;
+}
+
+/* --- Sidebar Container --- */
+.dash-sidebar {
+  background: var(--bg-card, #1a1a1a);
+  border: 1px solid var(--border-color, #333);
+  border-radius: 8px;
+  padding: var(--spacing-md);
+  height: fit-content;
+}
+
+/* MOBILE/TABLET FIX: Hide Sidebars on screens smaller than 1024px */
+@media (max-width: 1023px) {
+  .dash-sidebar {
+    display: none !important;
+  }
+}
+
+.widget-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--spacing-md);
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--accent-primary, #3b82f6);
+}
+
+.widget-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+/* Footer Buttons */
+.widget-footer-wrapper {
+  margin-top: var(--spacing-md);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.widget-footer-wrapper .btn {
+  padding: 0.5rem 1rem !important;
+  width: auto;
+}
+
+/* =========================================
+   TOP 10 PLAYERS WIDGET
+   ========================================= */
+.mini-rank-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mini-rank-item {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  background: var(--color-bg-light);
+  transition: transform 0.2s ease;
+}
+
+.mini-rank-item:hover {
+  transform: translateX(2px);
+  border-color: var(--color-accent-blue);
+}
+
+.mini-rank-item.rank-1 { background: rgba(255, 193, 7, 0.1); border-color: rgba(255, 193, 7, 0.3); }
+.mini-rank-item.rank-2 { background: rgba(188, 198, 204, 0.1); border-color: rgba(188, 198, 204, 0.3); }
+.mini-rank-item.rank-3 { background: rgba(205, 127, 50, 0.1); border-color: rgba(205, 127, 50, 0.3); }
+.mini-rank-item.rank-4 { background: rgba(58, 94, 141, 0.1); border-color: rgba(58, 94, 141, 0.3); }
+.mini-rank-item.rank-5 { background: rgba(102, 114, 128, 0.1); border-color: rgba(102, 114, 128, 0.3); }
+.mini-rank-item.rank-6-10 { background: rgba(255, 255, 255, 0.03); border-color: var(--color-border); padding: 0.5rem 0.75rem; }
+
+/* The Rank Circle */
+.mini-rank-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 1rem;
+  background: var(--color-bg-dark);
+  border: 2px solid var(--color-text-secondary);
+  color: var(--color-text-primary);
+}
+
+.mini-rank-item.rank-1 .mini-rank-circle { color: var(--color-rank-1-gold); border-color: var(--color-rank-1-gold); }
+.mini-rank-item.rank-2 .mini-rank-circle { color: var(--color-rank-2-silver); border-color: var(--color-rank-2-silver); }
+.mini-rank-item.rank-3 .mini-rank-circle { color: var(--color-rank-3-bronze); border-color: var(--color-rank-3-bronze); }
+.mini-rank-item.rank-4 .mini-rank-circle { color: var(--color-rank-4-cobalt); border-color: var(--color-rank-4-cobalt); }
+.mini-rank-item.rank-5 .mini-rank-circle { color: var(--color-rank-5-graphite); border-color: var(--color-rank-5-graphite); }
+.mini-rank-item.rank-6-10 .mini-rank-circle { color: var(--color-rank-amethyst-glow, #9b59b6); border-color: var(--color-rank-amethyst-glow, #9b59b6); }
+
+/* Player Name & Flag */
+.mini-rank-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  overflow: hidden;
+}
+
+.mini-rank-details .rank-name {
+  font-weight: 700;
+  color: var(--color-accent-blue);
+  text-decoration: none;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mini-rank-details .rank-country {
+  display: flex;
+  align-items: center;
+  gap: 0.5ch;
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+}
+
+/* FIX: FLAG STYLING 
+   Use local image styling resets.
+*/
+body.page-home .mini-rank-details img.country-flag {
+  display: block;
+  width: 16px;
+  height: 12px;
+  
+  /* Reset Shadow/Blur */
+  box-shadow: none !important;
+  border-radius: 2px !important; 
+  
+  border: 1px solid var(--color-border);
+  object-fit: cover; 
+}
+
+/* Rank-Specific Flag Borders */
+body.page-home .mini-rank-item.rank-1 img.country-flag { border-color: var(--color-rank-1-gold) !important; }
+body.page-home .mini-rank-item.rank-2 img.country-flag { border-color: var(--color-rank-2-silver) !important; }
+body.page-home .mini-rank-item.rank-3 img.country-flag { border-color: var(--color-rank-3-bronze) !important; }
+body.page-home .mini-rank-item.rank-4 img.country-flag { border-color: var(--color-rank-4-cobalt) !important; }
+body.page-home .mini-rank-item.rank-5 img.country-flag { border-color: var(--color-rank-5-graphite) !important; }
+body.page-home .mini-rank-item.rank-6-10 img.country-flag { border-color: var(--color-rank-amethyst-glow) !important; }
+
+
+/* =========================================
+   TOURNAMENT RESULTS WIDGET
+   ========================================= */
+.mini-event-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mini-event-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: var(--color-bg-light);
+  border: 1px solid var(--color-border);
+  border-left-width: 4px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+}
+
+.mini-event-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.mini-card--s-plus { border-left-color: var(--color-rank-1-gold); background: linear-gradient(145deg, rgba(255,193,7,.15), var(--color-bg-light) 80%); border-color: rgba(255,193,7,.3); }
+.mini-card--s { border-left-color: var(--color-rank-2-silver); background: linear-gradient(145deg, rgba(192,192,192,.15), var(--color-bg-light) 80%); border-color: rgba(192,192,192,.3); }
+.mini-card--a { border-left-color: var(--color-rank-3-bronze); background: linear-gradient(145deg, rgba(205,127,50,.15), var(--color-bg-light) 80%); border-color: rgba(205,127,50,.3); }
+.mini-card--b { border-left-color: var(--color-rank-4-cobalt); background: linear-gradient(145deg, rgba(58,94,141,.15), var(--color-bg-light) 80%); border-color: rgba(58,94,141,.3); }
+
+.mini-card__head { text-align: center; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 0.5rem; margin-bottom: 0.25rem; }
+.mini-card__title { font-size: 1.1rem; margin: 0; color: var(--color-text-primary); line-height: 1.3; }
+.mini-card__date { font-size: 0.8rem; color: var(--color-text-secondary); }
+
+.mini-card__meta { display: flex; justify-content: center; gap: 0.5rem; }
+.mini-chip { font-size: 0.7rem; padding: 2px 8px; border-radius: 10px; background: rgba(255,255,255,0.05); color: var(--color-text-secondary); text-transform: uppercase; border: 1px solid rgba(255,255,255,0.1); }
+.mini-chip--rated { background: rgba(0, 150, 255, 0.15); color: var(--color-accent-blue); border-color: rgba(0, 150, 255, 0.3); }
+
+.mini-podium { display: flex; flex-direction: column; gap: 4px; margin-top: 0.25rem; }
+.mini-podium-row { display: flex; align-items: center; font-size: 0.85rem; padding: 4px 6px; border-radius: 4px; background: rgba(255,255,255,0.03); }
+.mini-podium-row.place-1 { background: linear-gradient(90deg, rgba(255,193,7,0.2), transparent); }
+.mini-podium-row.place-2 { background: linear-gradient(90deg, rgba(192,192,192,0.2), transparent); }
+.mini-podium-row.place-3 { background: linear-gradient(90deg, rgba(205,127,50,0.2), transparent); }
+
+.p-place { font-size: 0.85rem; margin-right: 0.5rem; min-width: 24px; text-align: center; }
+.place-1 .p-place { color: var(--color-rank-1-gold); }
+.place-2 .p-place { color: var(--color-rank-2-silver); }
+.place-3 .p-place { color: var(--color-rank-3-bronze); }
+
+.p-name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--color-text-primary); }
+
+/* Legacy Support */
+@media (max-width: 1023px) and (orientation: landscape) {
   .page-home .home-news-list {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing-md);
   }

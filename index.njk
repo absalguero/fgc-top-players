@@ -1,5 +1,6 @@
 ---
 title: FGC Top Players
+bodyClass: "page-home"
 pagination:
   data: collections.news
   size: 6
@@ -18,9 +19,12 @@ navHighlight: "Home"
 
 {# --- Calculate Dynamic Metadata Variables --- #}
 {% set pageTitle %}
-  FGC Top Players
-  {% if pagination.pageNumber > 0 %}
-    (Page {{ pagination.pageNumber + 1 }})
+  {% if pagination.pageNumber == 0 %}
+    {# SEO OPTIMIZED TITLE #}
+    FGC Top Players — Latest News, Rankings & Stats
+  {% else %}
+    {# ARCHIVE TITLE (Prevents SEO Duplicate Title Errors) #}
+    FGC News Archive (Page {{ pagination.pageNumber + 1 }}) | FGC Top Players
   {% endif %}
 {% endset %}
 
@@ -32,7 +36,7 @@ navHighlight: "Home"
   {% endif %}
 {% endset %}
 
-{# --- Block Overrides (Apply variables to SEO & Social) --- #}
+{# --- Block Overrides --- #}
 
 {% block title %}{{ pageTitle | trim }}{% endblock %}
 
@@ -40,7 +44,6 @@ navHighlight: "Home"
 <meta name="description" content="{{ pageDesc | trim }}">
 {% endblock %}
 
-{# Ensure Social Cards match the specific page title (e.g. "Page 2") #}
 {% block og_title %}{{ pageTitle | trim }}{% endblock %}
 {% block og_description %}{{ pageDesc | trim }}{% endblock %}
 
@@ -49,15 +52,12 @@ navHighlight: "Home"
 
 {# --- Extra Head Tags --- #}
 {% block head_extra %}
-  {# Pagination Relations (Crucial for SEO) #}
   {% if pagination.href.previous %}
     <link rel="prev" href="{{ pagination.href.previous }}">
   {% endif %}
   {% if pagination.href.next %}
     <link rel="next" href="{{ pagination.href.next }}">
   {% endif %}
-  
-  {# RSS Feed Discovery #}
   <link rel="alternate" type="application/rss+xml" title="FGC Top Players — News Feed" href="/feed.xml">
 {% endblock %}
 
@@ -78,15 +78,155 @@ navHighlight: "Home"
 <div class="content-container">
   {% include "banner.njk" %}
 
-  <h1>Latest FGC News{% if pagination.pageNumber > 0 %} (Page {{ pagination.pageNumber + 1 }}){% endif %}</h1>
+  {# --- LOGIC: Are we on Page 1 (Dashboard) or Page 2+ (Archive)? --- #}
+  {% set isHomePage = (pagination.pageNumber == 0) %}
 
-  <div class="home-news-list">
-    {% for article in pagination.items %}
-      {% include "partials/_home_card.njk" %}
-    {% endfor %}
+  {# HEADER REMOVED FOR DASHBOARD #}
+  {% if not isHomePage %}
+    <h1 class="page-title">
+      FGC News (Page {{ pagination.pageNumber + 1 }})
+    </h1>
+  {% endif %}
+
+  <div class="dashboard-grid {% if isHomePage %}dashboard-grid--home{% else %}dashboard-grid--archive{% endif %}">
+    
+    {# === COLUMN 1: TOP 10 PLAYERS (Only on Home) === #}
+    {% if isHomePage %}
+      <aside class="dash-sidebar dash-sidebar--left" aria-label="Top Ranked Players">
+        <header class="widget-header">
+          <h3 class="widget-title">Top 10 SF6 Players</h3>
+        </header>
+        
+        <div class="mini-rank-list">
+          {% set count = 0 %}
+          {% for p in playerStatsSlim | sort(false, false, 'rank') %}
+            {% if p.rank and count < 10 %}
+              {% set count = count + 1 %}
+              
+              {% set rankClass = "" %}
+              {% if p.rank == 1 %}{% set rankClass = "rank-1" %}
+              {% elseif p.rank == 2 %}{% set rankClass = "rank-2" %}
+              {% elseif p.rank == 3 %}{% set rankClass = "rank-3" %}
+              {% elseif p.rank == 4 %}{% set rankClass = "rank-4" %}
+              {% elseif p.rank == 5 %}{% set rankClass = "rank-5" %}
+              {% else %}{% set rankClass = "rank-6-10" %}
+              {% endif %}
+
+              <div class="mini-rank-item {{ rankClass }}">
+                <div class="mini-rank-circle">{{ p.rank }}</div>
+                <div class="mini-rank-details">
+                  <a href="/players/{{ p.slug }}/" class="rank-name">{{ p.name }}</a>
+                  {% if p.country %}
+                    <span class="rank-country">
+                      {# FIX: Use direct filename match #}
+                      <img src="/images/flags/{{ p.country | lower }}.png" alt="{{ p.country }}" class="country-flag">
+                    </span>
+                  {% endif %}
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+        
+        <div class="widget-footer-wrapper">
+          <a href="/street-fighter-6-rankings/" class="btn btn--primary btn--small">View Full Rankings</a>
+        </div>
+      </aside>
+    {% endif %}
+
+    {# === COLUMN 2: NEWS FEED (Always visible) === #}
+    <main class="dash-feed">
+      {% if isHomePage %}
+        <h2 class="section-label">Latest News</h2>
+      {% endif %}
+
+      <div class="home-news-list {% if isHomePage %}dashboard-feed-list{% endif %}">
+        {% for article in pagination.items %}
+          {% include "partials/_home_card.njk" %}
+        {% endfor %}
+      </div>
+    </main>
+
+    {# === COLUMN 3: LATEST RESULTS (Only on Home) === #}
+    {% if isHomePage %}
+      <aside class="dash-sidebar dash-sidebar--right" aria-label="Recent Tournament Results">
+        <header class="widget-header">
+          <h3 class="widget-title">Latest Tournament Results</h3>
+        </header>
+
+        <div class="mini-event-list">
+          {% set count = 0 %}
+          {% set _allEvents = tournaments.events | default([]) | sort(attribute='date') | reverse %}
+          
+          {% for evt in _allEvents %}
+            {% if count < 3 %}
+              {% set count = count + 1 %}
+              
+              {% set tier = (evt.Tier | default('')) | trim | upper %}
+              {% set tier_mod = '' %}
+              {% if tier == 'S+' %}{% set tier_mod = 'mini-card--s-plus' %}
+              {% elseif tier == 'S' %}{% set tier_mod = 'mini-card--s' %}
+              {% elseif tier == 'A' %}{% set tier_mod = 'mini-card--a' %}
+              {% elseif tier == 'B' %}{% set tier_mod = 'mini-card--b' %}
+              {% endif %}
+
+              {# --- FIX: Manual Date Parsing (Reliable) --- #}
+              {% set dateDisplay = evt.date %}
+              {% if evt.date %}
+                {% set parts = evt.date | string | split('-') %}
+                {% if parts | length == 3 %}
+                  {% set monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"] %}
+                  {# Subtract 1 from month part to get array index #}
+                  {% set mIndex = (parts[1] | int) - 1 %}
+                  {% set dateDisplay = monthNames[mIndex] ~ " " ~ (parts[2] | int) ~ ", " ~ parts[0] %}
+                {% endif %}
+              {% endif %}
+
+              <article class="mini-event-card {{ tier_mod }}" onclick="window.location.href='/tournaments/{{ evt.slug }}/';">
+                
+                <header class="mini-card__head">
+                  <h4 class="mini-card__title">{{ evt.name }}</h4>
+                  <time class="mini-card__date">{{ dateDisplay }}</time>
+                </header>
+
+                <div class="mini-card__meta">
+                  {% if evt.Entrants %}
+                    <span class="mini-chip"><i class="fas fa-users"></i> {{ evt.Entrants }}</span>
+                  {% endif %}
+                  {% if tier in ['S+','S','A','B'] %}
+                    <span class="mini-chip mini-chip--rated">Rated</span>
+                  {% endif %}
+                </div>
+
+                {% if evt.results %}
+                  <div class="mini-podium">
+                    {% for r in evt.results %}
+                      {% if r.Finish == 1 or r.Finish == 2 or r.Finish == 3 %}
+                        <div class="mini-podium-row place-{{ r.Finish }}">
+                          <span class="p-place">
+                             <i class="fas fa-trophy"></i>
+                          </span>
+                          <span class="p-name">{{ r.Player }}</span>
+                        </div>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                {% endif %}
+              </article>
+            {% endif %}
+          {% endfor %}
+        </div>
+
+        <div class="widget-footer-wrapper">
+          <a href="/tournament-results/" class="btn btn--primary btn--small">View Archive</a>
+        </div>
+      </aside>
+    {% endif %}
+
   </div>
 
-  <nav class="pagination-nav" aria-label="Pagination">
+  {# --- Pagination Controls --- #}
+  <nav class="pagination-nav" aria-label="Pagination" style="margin-top: 1rem; width: 100%;">
     {% if pagination.href.previous %}
       <a href="{{ pagination.href.previous }}" class="pagination-nav__link" rel="prev">&larr; Previous Page</a>
     {% else %}
@@ -106,14 +246,12 @@ navHighlight: "Home"
       <span class="pagination-nav__link--disabled">Next Page &rarr;</span>
     {% endif %}
   </nav>
+
 </div>
 
-{# Store current page URL in sessionStorage when clicking news article links #}
 <script>
   (function() {
     const currentPageUrl = window.location.pathname;
-
-    // Find all news article links and add click handler
     document.querySelectorAll('.home-news-list a[href^="/news/"]').forEach(link => {
       link.addEventListener('click', function() {
         sessionStorage.setItem('newsListingPage', currentPageUrl);
