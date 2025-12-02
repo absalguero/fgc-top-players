@@ -107,8 +107,8 @@ navHighlight: "Upcoming Rated Tournaments"
           "streetAddress": "{{ tournament.location | replace('"', '\\"') }}",
           {% if city %}"addressLocality": "{{ city }}",{% endif %}
           {% if region and region != city %}"addressRegion": "{{ region }}",{% endif %}
-          {% if country %}"addressCountry": "{{ country }}"{% endif %}
-           {# Ensure at least one field is filled to prevent empty object error #}
+          {% if country %}"addressCountry": "{{ country }}",{% endif %}  {# <--- Comma added here #}
+            {# Ensure at least one field is filled to prevent empty object error #}
           "name": "{{ tournament.location | replace('"', '\\"') }}"
         }
         {% if tournament.latitude and tournament.longitude %},
@@ -168,8 +168,8 @@ navHighlight: "Upcoming Rated Tournaments"
           {% if not first %},{% endif %}"{{ link }}"{% set first = false %}
         {% endif %}
       {% endfor %}
-    ]
-    {% endif %},
+    ],
+    {% endif %}
     "subjectOf": { "@type": "WebPage", "@id": "{{ site.url }}{{ page.url }}" }
   }
   </script>

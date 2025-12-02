@@ -9,7 +9,7 @@ tags:
   - street fighter league
 layout: article.njk
 date: 2025-11-29 00:00:00
-excerpt: "In a stunning Grand Final upset, Ninjas in Pyjamas defeated the 1st seed MOUZ to become the Street Fighter League Pro-Europe 2025 Champions."
+excerpt: "In a Grand Finals upset, Ninjas in Pyjamas defeated the 1st seed MOUZ to become the Street Fighter League Pro-Europe 2025 Champions."
 ---
 
 **Ninjas in Pyjamas (NIP)** have been crowned the **Street Fighter League (SFL) Pro-Europe 2025 Champions**. In a Grand Final that defied the regular season odds, the third-seeded squad defeated **MOUZ** to claim the regional title and the €60,000 grand prize.
