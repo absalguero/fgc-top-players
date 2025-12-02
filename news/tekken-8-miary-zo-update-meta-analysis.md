@@ -14,11 +14,14 @@ excerpt: "Bandai Namco has released Update v2.08 for Tekken 8 with newcomer Miar
 Bandai Namco officially deployed Tekken 8 Update v2.08 today. This major content drop introduces the final character of Year 2, Miary Zo, and adds the Baobab Horizon stage to the rotation. The update focuses strictly on content expansion and specific bug fixes rather than systemic balance adjustments.
 
 ## Miary Zo Gameplay and Meta Identity
-Miary Zo enters the roster as a practitioner of Morengy which is a bare-knuckle striking style native to Madagascar. Her gameplay revolves around high mobility and stance transitions. She utilizes two primary stances to enforce mix-ups on her opponents.
+Miary Zo enters the roster as a practitioner of Morengy, a bare-knuckle striking style native to Madagascar. Her gameplay revolves around high mobility and stance transitions. Visual breakdowns confirm she utilizes two primary stances to enforce mix-ups:
 
-The competitive impact of Miary Zo relies on her ability to pressure opponents with plus frames from running attacks. Her approach tools allow her to transition directly into her stances while maintaining frame advantage. This forces defenders to guess between mid and low options immediately after blocking her approach. This design fits the current offensive-heavy nature of Tekken 8 where forcing a reaction is often more valuable than defensive spacing.
+* **Morengy Miroso:** A rapid-movement stance used for closing distance and pressuring with strikes.
+* **Baobab Mihira:** A unique stance where she **summons a spectral staff**. This stance grants her access to long-range pokes and sweeping low attacks, distinguishing her from pure brawlers.
 
-Her kit requires high execution to maximize damage. She possesses strong wall pressure tools that can restrict movement on smaller stages. However she lacks certain defensive "panic moves" common in other top-tier characters. This makes her vulnerable to pressure if she loses momentum during a match.
+The competitive impact of Miary Zo relies on her ability to pressure opponents with plus frames from running attacks. Her **While Running 2, 1** is a standout tool. Footage confirms that this string causes significant block stun. If the opponent blocks the first hit, they are forced to block the second hit even if they attempt to duck. This property guarantees she remains at frame advantage to transition directly into **Morengy Miroso**, forcing defenders to guess between mid and low options immediately.
+
+Her kit requires high execution to maximize damage. She possesses strong wall pressure tools, including an 11-frame wall splat (`2, 2`), that can restrict movement on smaller stages. However she lacks certain defensive "panic moves" common in other top-tier characters. This makes her vulnerable to pressure if she loses momentum during a match.
 
 ## Update v2.08 Balance Implications
 The official patch notes confirm that there are no balance adjustments for the existing cast in Update v2.08. This decision has specific implications for the competitive tournament scene.
@@ -34,6 +37,13 @@ The update is available now for players on all platforms. Access to the new cont
 * **December 4, 2025:** Available for individual DLC purchase for all players.
 
 This staggered release gives pass holders a three-day head start to practice her combos and learn the properties of the new Baobab Horizon stage.
+
+## Character Trailer
+Watch the official gameplay breakdown for Miary Zo below:
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-top: 20px; margin-bottom: 20px;">
+  <iframe src="https://www.youtube.com/embed/l_mid1s8WzQ" title="Tekken 8 Miary Zo Trailer" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ---
 
