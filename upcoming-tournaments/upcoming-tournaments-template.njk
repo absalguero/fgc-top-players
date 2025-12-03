@@ -34,18 +34,22 @@ navHighlight: "Upcoming Rated Tournaments"
   {# ----- Robots ----- #}
   <meta name="robots" content="index,follow,max-image-preview:large">
 
-  {# NOTE: Social Images removed per request. Layout will use default social card. #}
-  {# NOTE: Canonical tag removed (Layout handles it automatically). #}
-
-  {# ----- Safe address parts for JSON-LD ----- #}
+  {# ----- Smart Address Parsing for JSON-LD ----- #}
+  {# Splits "City, Region, Country" strings correctly to satisfy Google validation #}
   {% set addressParts = (tournament.location or '') | split(',') %}
   {% set partsLen = addressParts.length %}
+  
   {% set city = "" %}
   {% set region = "" %}
-  {% set country = "" %}
-  {% if partsLen >= 1 %}{% set city = addressParts[0] | trim %}{% endif %}
-  {% if partsLen == 2 %}{% set country = addressParts[1] | trim %}{% endif %}
-  {% if partsLen >= 3 %}
+  {% set country = "US" %} {# Default to US to prevent "Missing Country" errors on 2-part addresses #}
+
+  {% if partsLen == 1 %}
+    {% set city = addressParts[0] | trim %}
+  {% elif partsLen == 2 %}
+    {% set city = addressParts[0] | trim %}
+    {% set region = addressParts[1] | trim %}
+  {% elif partsLen >= 3 %}
+    {% set city = addressParts[partsLen - 3] | trim %}
     {% set region = addressParts[partsLen - 2] | trim %}
     {% set country = addressParts[partsLen - 1] | trim %}
   {% endif %}
@@ -75,8 +79,11 @@ navHighlight: "Upcoming Rated Tournaments"
   {# ----- Event JSON-LD ----- #}
   {% set isOnline = (tournament.location | lower == 'online') or (tournament.location | lower == 'remote') %}
   
-  {# Fallback: If no endDate, assume it ends 4 hours after start or same day #}
+  {# Fallback: If no endDate, assume it ends same day as start #}
   {% set safeEndDate = tournament.endDate or tournament.startDate %}
+  
+  {# Fallback: Image #}
+  {% set safeImage = tournament.image or (site.url ~ '/assets/img/social-card-default.jpg') %}
 
   <script type="application/ld+json">
   {
@@ -86,8 +93,12 @@ navHighlight: "Upcoming Rated Tournaments"
     "url": "{{ site.url }}{{ page.url }}",
     "startDate": "{{ tournament.startDate }}",
     "endDate": "{{ safeEndDate }}",
+    "image": [
+       "{{ safeImage }}"
+    ],
+    "description": {{ (tournament.description or 'A premier fighting game tournament.') | striptags | trim | dump | safe }},
     
-    {# --- FIX: Switch between Online and Offline modes --- #}
+    {# --- Event Mode (Online vs Offline) --- #}
     {% if isOnline %}
       "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
       "eventStatus": "https://schema.org/EventScheduled",
@@ -100,16 +111,13 @@ navHighlight: "Upcoming Rated Tournaments"
       "eventStatus": "https://schema.org/EventScheduled",
       "location": {
         "@type": "Place",
-        "name": "{{ (tournament.venueName or tournament.location) | replace('"', '\\"') }}",
+        "name": {{ (tournament.venueName or tournament.location) | dump | safe }},
         "address": {
           "@type": "PostalAddress",
-          {# If parsing fails, dump the whole location string into street address to satisfy Google #}
-          "streetAddress": "{{ tournament.location | replace('"', '\\"') }}",
-          {% if city %}"addressLocality": "{{ city }}",{% endif %}
-          {% if region and region != city %}"addressRegion": "{{ region }}",{% endif %}
-          {% if country %}"addressCountry": "{{ country }}",{% endif %}  {# <--- Comma added here #}
-            {# Ensure at least one field is filled to prevent empty object error #}
-          "name": "{{ tournament.location | replace('"', '\\"') }}"
+          "streetAddress": {{ tournament.location | dump | safe }},
+          "addressLocality": "{{ city }}",
+          "addressRegion": "{{ region }}",
+          "addressCountry": "{{ country }}"
         }
         {% if tournament.latitude and tournament.longitude %},
         "geo": {
@@ -121,10 +129,9 @@ navHighlight: "Upcoming Rated Tournaments"
       },
     {% endif %}
 
-    "description": "{{ (tournament.description or 'A premier fighting game tournament.') | striptags | trim | replace('"', '\\"') }}",
     "organizer": {
       "@type": "Organization",
-      "name": "{{ (tournament.organizer or 'FGC Top Players') | replace('"', '\\"') }}",
+      "name": {{ (tournament.organizer or 'FGC Top Players') | dump | safe }},
       "url": "{{ tournament.organizerUrl or tournament.url or (site.url ~ page.url) }}"
     },
     
@@ -133,32 +140,26 @@ navHighlight: "Upcoming Rated Tournaments"
         {% for player in tournament.notablePlayers %}
           { 
             "@type": "Person", 
-            "name": "{{ (player.Player or player.name or player) | trim | replace('"', '\\"') }}" 
+            "name": {{ (player.Player or player.name or player) | trim | dump | safe }} 
           }{% if not loop.last %},{% endif %}
         {% endfor %}
       {% else %}
+        {# Fallback Performer is required if notablePlayers is empty #}
         { 
           "@type": "Organization", 
-          "name": "{{ (tournament.organizer or 'Tournament Organizer') | replace('"', '\\"') }}" 
+          "name": {{ (tournament.organizer or 'Tournament Organizer') | dump | safe }} 
         }
       {% endif %}
     ],
 
-    {% if tournament.url %}
     "offers": {
       "@type": "Offer",
-      "url": "{{ tournament.url }}",
+      "url": "{{ tournament.url or (site.url ~ page.url) }}",
       "availability": "https://schema.org/InStock",
       "priceCurrency": "USD",
       "price": "{{ tournament.price | default('0') }}",
       "validFrom": "{{ tournament.registrationOpen or tournament.startDate or '2024-01-01' }}"
     },
-    {% endif %}
-
-    "image": [
-       {# FIX: Prioritize tournament specific image, fallback to social card #}
-       "{{ tournament.image or (site.url ~ '/assets/img/social-card-default.jpg') }}"
-    ],
 
     {% set first = true %}
     {% if tournament.url or tournament.bracketUrl or tournament.twitter or tournament.streamLink %}
@@ -170,6 +171,7 @@ navHighlight: "Upcoming Rated Tournaments"
       {% endfor %}
     ],
     {% endif %}
+
     "subjectOf": { "@type": "WebPage", "@id": "{{ site.url }}{{ page.url }}" }
   }
   </script>
