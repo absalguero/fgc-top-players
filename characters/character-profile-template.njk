@@ -67,7 +67,8 @@ eleventyComputed:
   "about": {
     "@type": "Thing",
     "name": "{{ character.name }}",
-    "description": {{ (character.overview or "Street Fighter 6 character profile with tier, matchups, and competitive stats.") | dump }}
+    {# ADDED | safe HERE #}
+    "description": {{ (character.overview or "Street Fighter 6 character profile with tier, matchups, and competitive stats.") | dump | safe }}
   }
 }
 </script>
@@ -93,14 +94,15 @@ eleventyComputed:
   "url":"{{ canonicalUrl }}",
   "isPartOf": {"@type":"WebSite","name":"FGC Top Players","url":"{{ site.url }}"},
   "variableMeasured":[
-    {"@type":"PropertyValue","name":"CPV","value": {{ (character.CPV or "null") | dump }}},
-    {"@type":"PropertyValue","name":"CMS","value": {{ (character.CMS or "null") | dump }}},
-    {"@type":"PropertyValue","name":"T3R","value": {{ (character.TWE or "null") | dump }}},
-    {"@type":"PropertyValue","name":"Avg. Player FGPI","value": {{ (character.FGPI or "null") | dump }}},
-    {"@type":"PropertyValue","name":"Tournament Popularity","value": {{ (character.TP or "null") | dump }}},
-    {"@type":"PropertyValue","name":"Performance Floor (CPF)","value": {{ (character.CPF or "null") | dump }}},
-    {"@type":"PropertyValue","name":"Tournament Specialization (TS)","value": {{ (character.TS or "null") | dump }}},
-    {"@type":"PropertyValue","name":"Top Region (RDI)","value": {{ (character.primaryRDI and character.primaryRDI.region) | default("null") | dump }}}
+    {# ADDED | safe TO ALL DUMPS BELOW #}
+    {"@type":"PropertyValue","name":"CPV","value": {{ (character.CPV or "null") | dump | safe }}},
+    {"@type":"PropertyValue","name":"CMS","value": {{ (character.CMS or "null") | dump | safe }}},
+    {"@type":"PropertyValue","name":"T3R","value": {{ (character.TWE or "null") | dump | safe }}},
+    {"@type":"PropertyValue","name":"Avg. Player FGPI","value": {{ (character.FGPI or "null") | dump | safe }}},
+    {"@type":"PropertyValue","name":"Tournament Popularity","value": {{ (character.TP or "null") | dump | safe }}},
+    {"@type":"PropertyValue","name":"Performance Floor (CPF)","value": {{ (character.CPF or "null") | dump | safe }}},
+    {"@type":"PropertyValue","name":"Tournament Specialization (TS)","value": {{ (character.TS or "null") | dump | safe }}},
+    {"@type":"PropertyValue","name":"Top Region (RDI)","value": {{ (character.primaryRDI and character.primaryRDI.region) | default("null") | dump | safe }}}
   ],
   "license":"{{ ("/terms/") | absoluteUrl(site.url) }}"
 }
