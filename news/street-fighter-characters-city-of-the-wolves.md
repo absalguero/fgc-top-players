@@ -2,7 +2,6 @@
 title: "The 'Street Fighter' Trap: Why Ken and Chun-Li Struggle in Fatal Fury"
 tags: 
   - news
-  - esports
   - city of the wolves
   - diaphone
   - characters
