@@ -88,7 +88,11 @@ sidebarCount: 3
           "name": {{ (tournament.orgName or 'FGC Top Players') | dump | safe }},
           "url": "{{ tournament.orgUrl or site.url }}"
         },
-        {# ADDED: Offers object to satisfy validation #}
+        {# FIXED: Added 'performer' fallback (using organizer) to satisfy validation #}
+        "performer": {
+          "@type": "Organization",
+          "name": {{ (tournament.orgName or 'FGC Top Players') | dump | safe }}
+        },
         "offers": {
           "@type": "Offer",
           "url": "{{ site.url }}/upcoming-tournaments/{{ tournament.slug }}/",

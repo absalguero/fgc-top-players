@@ -52,9 +52,9 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
     "name": "FGC Top Players",
     "url": "{{ site.url }}"
   },
-  {# ADDED: Competitor maps to 'performer' for SportsEvents. We list the Top 3. #}
+  {# FIXED: Changed 'competitor' to 'performer' to satisfy Google Validator #}
   {% if tournamentData.results and tournamentData.results.length > 0 %}
-  "competitor": [
+  "performer": [
     {%- for result in tournamentData.results | slice(0, 3) -%}
     {
       "@type": "Person",
@@ -63,7 +63,6 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
     {%- endfor -%}
   ],
   {% endif %}
-  {# ADDED: Offers object to satisfy the warning #}
   "offers": {
     "@type": "Offer",
     "url": "{{ site.url }}/tournaments/{{ tournamentData.slug }}/",
