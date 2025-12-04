@@ -7,7 +7,7 @@ pagination:
 permalink: "/players/{{ player.slug }}/"
 navHighlight: "Player Profiles"
 eleventyComputed:
-  title: "{{ player.name }}{% if player.mainCharacter %} ({{ player.mainCharacter }}){% endif %} - Rank #{{ player.rank or 'N/A' }}, {{ player.game | upper | default('FGC') }} Stats & Profile"
+  title: "{{ player.name }}{% if player.englishName %} ({{ player.englishName }}){% endif %}{% if player.mainCharacter %} ({{ player.mainCharacter }}){% endif %} - Rank #{{ player.rank or 'N/A' }}, {{ player.game | upper | default('FGC') }} Stats & Profile"
 ---
 
 {% extends "layout.njk" %}
@@ -15,7 +15,7 @@ eleventyComputed:
 {% set bodyClass = "page-player-profile" %}
 
 {# --- SEO & Social Variables --- #}
-{% set pageTitle = player.name ~ " — Rank #" ~ (player.rank or 'N/A') ~ " | FGC Top Players" %}
+{% set pageTitle = player.name ~ (" (" ~ player.englishName ~ ")" if player.englishName else "") ~ " — Rank #" ~ (player.rank or 'N/A') ~ " | FGC Top Players" %}
 {% set pageDesc = "Recent results, ranking history, signature wins, trophies, and stats for " ~ player.name ~ " in " ~ (player.game | default('FGC')) ~ "." %}
 {% set playerUrl = site.url + '/players/' + player.slug + '/' %}
 
