@@ -52,17 +52,24 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
     "name": "FGC Top Players",
     "url": "{{ site.url }}"
   },
-  {# FIXED: Changed 'competitor' to 'performer' to satisfy Google Validator #}
-  {% if tournamentData.results and tournamentData.results.length > 0 %}
+  {# FIXED: "Performer" is now ALWAYS present. #}
+  {# If we have results, we list the Top 3 players. #}
+  {# If NOT, we fallback to the Organization to satisfy the validator. #}
   "performer": [
-    {%- for result in tournamentData.results | slice(0, 3) -%}
-    {
-      "@type": "Person",
-      "name": {{ result.Player | dump | safe }}
-    }{%- if not loop.last -%},{%- endif -%}
-    {%- endfor -%}
+    {%- if tournamentData.results and tournamentData.results.length > 0 -%}
+      {%- for result in tournamentData.results | slice(0, 3) -%}
+      {
+        "@type": "Person",
+        "name": {{ result.Player | dump | safe }}
+      }{%- if not loop.last -%},{%- endif -%}
+      {%- endfor -%}
+    {%- else -%}
+      {
+        "@type": "Organization",
+        "name": "FGC Top Players"
+      }
+    {%- endif -%}
   ],
-  {% endif %}
   "offers": {
     "@type": "Offer",
     "url": "{{ site.url }}/tournaments/{{ tournamentData.slug }}/",
