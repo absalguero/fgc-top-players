@@ -67,7 +67,6 @@ eleventyComputed:
   "about": {
     "@type": "Thing",
     "name": "{{ character.name }}",
-    {# ADDED | safe HERE #}
     "description": {{ (character.overview or "Street Fighter 6 character profile with tier, matchups, and competitive stats.") | dump | safe }}
   }
 }
@@ -92,9 +91,22 @@ eleventyComputed:
   "name":"{{ character.name }} — SF6 Competitive Snapshot",
   "description":"CPV, momentum (CMS), popularity, Top-3 Rate (T3R), FGPI average, specialization, and top region for {{ character.name }} based on last-12-months tournament data.",
   "url":"{{ canonicalUrl }}",
-  "isPartOf": {"@type":"WebSite","name":"FGC Top Players","url":"{{ site.url }}"},
+  
+  {# FIXED: Changed 'isPartOf' to 'includedInDataCatalog' for Dataset validation #}
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "FGC Top Players",
+    "url": "{{ site.url }}"
+  },
+
+  {# FIXED: Added required 'creator' field #}
+  "creator": {
+    "@type": "Organization",
+    "name": "FGC Top Players",
+    "url": "{{ site.url }}"
+  },
+
   "variableMeasured":[
-    {# ADDED | safe TO ALL DUMPS BELOW #}
     {"@type":"PropertyValue","name":"CPV","value": {{ (character.CPV or "null") | dump | safe }}},
     {"@type":"PropertyValue","name":"CMS","value": {{ (character.CMS or "null") | dump | safe }}},
     {"@type":"PropertyValue","name":"T3R","value": {{ (character.TWE or "null") | dump | safe }}},
