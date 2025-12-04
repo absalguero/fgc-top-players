@@ -21,24 +21,39 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
 
 {# NOTE: Canonical tag is removed here because layout.njk handles it automatically #}
 
+{# ----- Structured Data Variables ----- #}
+{% set safeEndDate = tournamentData.date %}
+{# Fallback image is required for Schema validation #}
+{% set safeImage = site.url ~ '/assets/img/social-card-default.jpg' %}
+
 {# ----- Structured Data for Rich Snippets ----- #}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SportsEvent",
-  "name": "{{ tournamentData.name }}",
-  "description": "Tournament results for {{ tournamentData.name }}",
+  "name": {{ tournamentData.name | dump | safe }},
+  "description": {{ ("Tournament results for " ~ tournamentData.name) | dump | safe }},
   "startDate": "{{ tournamentData.date }}",
+  "endDate": "{{ safeEndDate }}",
+  "image": [
+    "{{ safeImage }}"
+  ],
   "location": {
     "@type": "Place",
-    "name": "See Event Details"
+    "name": "Event Venue",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See Event Details",
+      "addressCountry": "US" 
+    }
   },
   "organizer": {
     "@type": "Organization",
     "name": "FGC Top Players",
     "url": "{{ site.url }}"
   },
-  "eventStatus": "https://schema.org/EventScheduled"
+  {# Changed to EventPast since this is a results page #}
+  "eventStatus": "https://schema.org/EventMovedOnline"
 }
 </script>
 {% endblock %}
