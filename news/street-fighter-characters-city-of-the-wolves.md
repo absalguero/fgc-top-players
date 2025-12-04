@@ -4,10 +4,7 @@ tags:
   - news
   - esports
   - city of the wolves
-  - street fighter 6
   - diaphone
-  - tier lists
-  - strategy
   - characters
   - meta
 layout: article.njk
