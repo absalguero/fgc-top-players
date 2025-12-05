@@ -74,8 +74,40 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
     "name": "FGC Top Players",
     "url": "{{ site.url }}"
   },
-  "competitor": {{ performerList | dump | safe }},
-  "performer": {{ performerList | dump | safe }},
+  {# --- DIRECT LOGIC START --- #}
+  "competitor": [
+    {% if tournamentData.results and tournamentData.results.length > 0 %}
+      {% for result in tournamentData.results | slice(0, 3) %}
+        {
+          "@type": "Person",
+          "name": {{ result.Player | dump | safe }}
+        }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    {% else %}
+      {
+        "@type": "Organization",
+        "name": "FGC Top Players",
+        "url": "{{ site.url }}"
+      }
+    {% endif %}
+  ],
+  "performer": [
+    {% if tournamentData.results and tournamentData.results.length > 0 %}
+      {% for result in tournamentData.results | slice(0, 3) %}
+        {
+          "@type": "Person",
+          "name": {{ result.Player | dump | safe }}
+        }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    {% else %}
+      {
+        "@type": "Organization",
+        "name": "FGC Top Players",
+        "url": "{{ site.url }}"
+      }
+    {% endif %}
+  ],
+  {# --- DIRECT LOGIC END --- #}
   "offers": {{ offersObj | dump | safe }},
   "eventStatus": "https://schema.org/EventMovedOnline"
 }
