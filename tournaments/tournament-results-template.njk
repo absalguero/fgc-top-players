@@ -74,14 +74,19 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
     "name": "FGC Top Players",
     "url": "{{ site.url }}"
   },
-  {# --- Logic for Competitors (Top 3) --- #}
+  {# --- COMPETITOR SECTION --- #}
   "competitor": [
-    {% if tournamentData.results and (tournamentData.results | length) > 0 %}
-      {% for result in tournamentData.results | slice(0, 3) %}
-        {
-          "@type": "Person",
-          "name": {{ result.Player | default('Unknown Player') | dump | safe }}
-        }{% if not loop.last %},{% endif %}
+    {% set hasResults = tournamentData.results and (tournamentData.results | length > 0) %}
+    {% if hasResults %}
+      {# Use sortByFinish to ensure we get the actual winners, not random entrants #}
+      {% for result in tournamentData.results | sortByFinish %}
+        {# Only output the top 3 #}
+        {% if loop.index <= 3 %}
+          {
+            "@type": "Person",
+            "name": {{ result.Player | default('Competitor') | dump | safe }}
+          }{% if loop.index < 3 and not loop.last %},{% endif %}
+        {% endif %}
       {% endfor %}
     {% else %}
       {
@@ -91,14 +96,16 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
       }
     {% endif %}
   ],
-  {# --- Logic for Performers (Duplicate of Competitor) --- #}
+  {# --- PERFORMER SECTION (Required Duplicate) --- #}
   "performer": [
-    {% if tournamentData.results and (tournamentData.results | length) > 0 %}
-      {% for result in tournamentData.results | slice(0, 3) %}
-        {
-          "@type": "Person",
-          "name": {{ result.Player | default('Unknown Player') | dump | safe }}
-        }{% if not loop.last %},{% endif %}
+    {% if hasResults %}
+      {% for result in tournamentData.results | sortByFinish %}
+        {% if loop.index <= 3 %}
+          {
+            "@type": "Person",
+            "name": {{ result.Player | default('Competitor') | dump | safe }}
+          }{% if loop.index < 3 and not loop.last %},{% endif %}
+        {% endif %}
       {% endfor %}
     {% else %}
       {
