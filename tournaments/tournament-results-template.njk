@@ -19,29 +19,35 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
 {# ----- Robots ----- #}
 <meta name="robots" content="index,follow,max-image-preview:large">
 
-{# ----- Structured Data Logic ----- #}
+{# ----- Structured Data Construction ----- #}
 {% set safeEndDate = tournamentData.date %}
 {% set safeImage = site.url ~ '/assets/img/social-card-default.jpg' %}
 
-{# Build the Performer/Competitor List in Nunjucks first to ensure valid JSON #}
+{# 1. Build Performer List (Top 3 Players OR Organizer Fallback) #}
 {% set performerList = [] %}
 {% if tournamentData.results and tournamentData.results.length > 0 %}
-  {# Take top 3 players #}
   {% for result in tournamentData.results | slice(0, 3) %}
-    {% set p = {
+    {% set performerList = (performerList.push({
       "@type": "Person",
       "name": result.Player
-    } %}
-    {% set performerList = (performerList.push(p), performerList) %}
+    }), performerList) %}
   {% endfor %}
 {% else %}
-  {# Fallback: Organization acts as the 'PerformingGroup' #}
-  {% set p = {
-    "@type": "PerformingGroup",
-    "name": "FGC Top Players"
-  } %}
-  {% set performerList = (performerList.push(p), performerList) %}
+  {% set performerList = (performerList.push({
+    "@type": "Organization",
+    "name": "FGC Top Players",
+    "url": site.url
+  }), performerList) %}
 {% endif %}
+
+{# 2. Build Offers Object (Sold Out / Past Event) #}
+{% set offersObj = {
+  "@type": "Offer",
+  "url": site.url ~ "/tournaments/" ~ tournamentData.slug ~ "/",
+  "price": "0",
+  "priceCurrency": "USD",
+  "availability": "https://schema.org/SoldOut"
+} %}
 
 <script type="application/ld+json">
 {
@@ -58,7 +64,7 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "See Event Details",
-      "addressCountry": "US"
+      "addressCountry": "US" 
     }
   },
   "organizer": {
@@ -66,17 +72,9 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
     "name": "FGC Top Players",
     "url": "{{ site.url }}"
   },
-  {# Satisfy semantic sports schema #}
   "competitor": {{ performerList | dump | safe }},
-  {# Satisfy the Google 'missing performer' warning #}
   "performer": {{ performerList | dump | safe }},
-  "offers": {
-    "@type": "Offer",
-    "url": "{{ site.url }}/tournaments/{{ tournamentData.slug }}/",
-    "price": "0",
-    "priceCurrency": "USD",
-    "availability": "https://schema.org/SoldOut"
-  },
+  "offers": {{ offersObj | dump | safe }},
   "eventStatus": "https://schema.org/EventMovedOnline"
 }
 </script>
