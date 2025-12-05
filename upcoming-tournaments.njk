@@ -97,7 +97,8 @@ sidebarCount: 3
           "url": "{{ site.url }}/upcoming-tournaments/{{ tournament.slug }}/",
           "price": "0",
           "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock"
+          "availability": "https://schema.org/InStock",
+          "validFrom": "{{ tournament.startDate }}"
         }
       }
     }{% if not loop.last %},{% endif %}

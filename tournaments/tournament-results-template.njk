@@ -27,17 +27,18 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
 {% set performerList = [] %}
 {% if tournamentData.results and tournamentData.results.length > 0 %}
   {% for result in tournamentData.results | slice(0, 3) %}
-    {% set performerList = (performerList.push({
+    {# Use _ to trigger the push without creating a new local variable #}
+    {% set _ = performerList.push({
       "@type": "Person",
       "name": result.Player
-    }), performerList) %}
+    }) %}
   {% endfor %}
 {% else %}
-  {% set performerList = (performerList.push({
+  {% set _ = performerList.push({
     "@type": "Organization",
     "name": "FGC Top Players",
     "url": site.url
-  }), performerList) %}
+  }) %}
 {% endif %}
 
 {# 2. Build Offers Object (Sold Out / Past Event) #}
@@ -46,7 +47,8 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
   "url": site.url ~ "/tournaments/" ~ tournamentData.slug ~ "/",
   "price": "0",
   "priceCurrency": "USD",
-  "availability": "https://schema.org/SoldOut"
+  "availability": "https://schema.org/SoldOut",
+  "validFrom": tournamentData.date
 } %}
 
 <script type="application/ld+json">
