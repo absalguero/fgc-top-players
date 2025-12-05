@@ -19,14 +19,30 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
 {# ----- Robots ----- #}
 <meta name="robots" content="index,follow,max-image-preview:large">
 
-{# NOTE: Canonical tag is removed here because layout.njk handles it automatically #}
-
-{# ----- Structured Data Variables ----- #}
+{# ----- Structured Data Logic ----- #}
 {% set safeEndDate = tournamentData.date %}
-{# Fallback image is required for Schema validation #}
 {% set safeImage = site.url ~ '/assets/img/social-card-default.jpg' %}
 
-{# ----- Structured Data for Rich Snippets ----- #}
+{# Build the Performer/Competitor List in Nunjucks first to ensure valid JSON #}
+{% set performerList = [] %}
+{% if tournamentData.results and tournamentData.results.length > 0 %}
+  {# Take top 3 players #}
+  {% for result in tournamentData.results | slice(0, 3) %}
+    {% set p = {
+      "@type": "Person",
+      "name": result.Player
+    } %}
+    {% set performerList = (performerList.push(p), performerList) %}
+  {% endfor %}
+{% else %}
+  {# Fallback: Organization acts as the 'PerformingGroup' #}
+  {% set p = {
+    "@type": "PerformingGroup",
+    "name": "FGC Top Players"
+  } %}
+  {% set performerList = (performerList.push(p), performerList) %}
+{% endif %}
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -35,16 +51,14 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
   "description": {{ ("Tournament results for " ~ tournamentData.name) | dump | safe }},
   "startDate": "{{ tournamentData.date }}",
   "endDate": "{{ safeEndDate }}",
-  "image": [
-    "{{ safeImage }}"
-  ],
+  "image": ["{{ safeImage }}"],
   "location": {
     "@type": "Place",
     "name": "Event Venue",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "See Event Details",
-      "addressCountry": "US" 
+      "addressCountry": "US"
     }
   },
   "organizer": {
@@ -52,24 +66,10 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
     "name": "FGC Top Players",
     "url": "{{ site.url }}"
   },
-  {# FIXED: "Performer" is now ALWAYS present. #}
-  {# If we have results, we list the Top 3 players. #}
-  {# If NOT, we fallback to the Organization to satisfy the validator. #}
-  "performer": [
-    {%- if tournamentData.results and tournamentData.results.length > 0 -%}
-      {%- for result in tournamentData.results | slice(0, 3) -%}
-      {
-        "@type": "Person",
-        "name": {{ result.Player | dump | safe }}
-      }{%- if not loop.last -%},{%- endif -%}
-      {%- endfor -%}
-    {%- else -%}
-      {
-        "@type": "Organization",
-        "name": "FGC Top Players"
-      }
-    {%- endif -%}
-  ],
+  {# Satisfy semantic sports schema #}
+  "competitor": {{ performerList | dump | safe }},
+  {# Satisfy the Google 'missing performer' warning #}
+  "performer": {{ performerList | dump | safe }},
   "offers": {
     "@type": "Offer",
     "url": "{{ site.url }}/tournaments/{{ tournamentData.slug }}/",
