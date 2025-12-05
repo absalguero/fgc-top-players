@@ -74,13 +74,13 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
     "name": "FGC Top Players",
     "url": "{{ site.url }}"
   },
-  {# --- DIRECT LOGIC START --- #}
+  {# --- Logic for Competitors (Top 3) --- #}
   "competitor": [
-    {% if tournamentData.results and tournamentData.results.length > 0 %}
+    {% if tournamentData.results and (tournamentData.results | length) > 0 %}
       {% for result in tournamentData.results | slice(0, 3) %}
         {
           "@type": "Person",
-          "name": {{ result.Player | dump | safe }}
+          "name": {{ result.Player | default('Unknown Player') | dump | safe }}
         }{% if not loop.last %},{% endif %}
       {% endfor %}
     {% else %}
@@ -91,12 +91,13 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
       }
     {% endif %}
   ],
+  {# --- Logic for Performers (Duplicate of Competitor) --- #}
   "performer": [
-    {% if tournamentData.results and tournamentData.results.length > 0 %}
+    {% if tournamentData.results and (tournamentData.results | length) > 0 %}
       {% for result in tournamentData.results | slice(0, 3) %}
         {
           "@type": "Person",
-          "name": {{ result.Player | dump | safe }}
+          "name": {{ result.Player | default('Unknown Player') | dump | safe }}
         }{% if not loop.last %},{% endif %}
       {% endfor %}
     {% else %}
@@ -107,7 +108,6 @@ permalink: "/tournaments/{{ tournamentData.slug }}/"
       }
     {% endif %}
   ],
-  {# --- DIRECT LOGIC END --- #}
   "offers": {{ offersObj | dump | safe }},
   "eventStatus": "https://schema.org/EventMovedOnline"
 }
