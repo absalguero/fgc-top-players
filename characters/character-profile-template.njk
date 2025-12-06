@@ -52,26 +52,26 @@ eleventyComputed:
 {%- set canonicalUrl = page.url | url | absoluteUrl(site.url) -%}
 {%- set lastMod = (character.updatedAt or site.buildTime) | date("yyyy-LL-dd'T'HH:mmZZ") -%}
 
+{# --- 1. WebPage Schema --- #}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "{{ character.name }} — SF6 Tier, Matchups & CPV",
+  {# Use dump | safe to handle quotes in names automatically #}
+  "name": {{ (character.name ~ " — SF6 Tier, Matchups & CPV") | dump | safe }},
   "url": "{{ canonicalUrl }}",
   "dateModified": "{{ lastMod }}",
-  "isPartOf": {
-    "@type": "WebSite",
-    "name": "FGC Top Players",
-    "url": "{{ site.url }}"
-  },
+  {# FIX 1: isPartOf should be a URL string for WebPage, not an object #}
+  "isPartOf": "{{ site.url }}",
   "about": {
     "@type": "Thing",
-    "name": "{{ character.name }}",
+    "name": {{ character.name | dump | safe }},
     "description": {{ (character.overview or "Street Fighter 6 character profile with tier, matchups, and competitive stats.") | dump | safe }}
   }
 }
 </script>
 
+{# --- 2. Breadcrumbs Schema --- #}
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -79,27 +79,27 @@ eleventyComputed:
   "itemListElement":[
     {"@type":"ListItem","position":1,"name":"Home","item":"{{ site.url }}"},
     {"@type":"ListItem","position":2,"name":"Characters","item":"{{ site.url }}/characters/"},
-    {"@type":"ListItem","position":3,"name":"{{ character.name }}","item":"{{ canonicalUrl }}"}
+    {"@type":"ListItem","position":3,"name": {{ character.name | dump | safe }},"item":"{{ canonicalUrl }}"}
   ]
 }
 </script>
 
+{# --- 3. Dataset Schema --- #}
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
   "@type":"Dataset",
-  "name":"{{ character.name }} — SF6 Competitive Snapshot",
+  {# FIX 2: Added dump | safe to name to prevents syntax crashes that hide the 'creator' field #}
+  "name": {{ (character.name ~ " — SF6 Competitive Snapshot") | dump | safe }},
   "description":"CPV, momentum (CMS), popularity, Top-3 Rate (T3R), FGPI average, specialization, and top region for {{ character.name }} based on last-12-months tournament data.",
   "url":"{{ canonicalUrl }}",
   
-  {# FIXED: Changed 'isPartOf' to 'includedInDataCatalog' for Dataset validation #}
   "includedInDataCatalog": {
     "@type": "DataCatalog",
     "name": "FGC Top Players",
     "url": "{{ site.url }}"
   },
 
-  {# FIXED: Added required 'creator' field #}
   "creator": {
     "@type": "Organization",
     "name": "FGC Top Players",
