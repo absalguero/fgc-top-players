@@ -81,6 +81,62 @@ module.exports = async function (eleventyConfig) {
 
   eleventyConfig.addCollection("tagsBySlug", (collectionApi) => buildTagsBySlug(collectionApi));
 
+  // Pagination Collection: Generates pages for every tag (e.g. /tags/sf6/1/, /tags/sf6/2/)
+  eleventyConfig.addCollection("pagedTags", (collectionApi) => {
+    const pageSize = 10; // Set how many articles per page you want
+    const allPosts = collectionApi.getAll().sort((a, b) => b.date - a.date);
+    const tagMap = new Map();
+
+    allPosts.forEach((post) => {
+      const tags = post.data.tags || [];
+      tags.forEach((rawTag) => {
+        if (typeof rawTag !== "string") return;
+        const tag = rawTag.trim();
+
+        // Use your existing TAG_SKIP list to ignore internal tags
+        if (!tag || TAG_SKIP.has(tag.toLowerCase()) || tag === 'all' || tag === 'posts') return;
+
+        if (!tagMap.has(tag)) {
+          tagMap.set(tag, []);
+        }
+        tagMap.get(tag).push(post);
+      });
+    });
+
+    const pagedTags = [];
+
+    tagMap.forEach((posts, tag) => {
+      const totalPages = Math.ceil(posts.length / pageSize);
+      // Use the same slugify settings as your buildTagsBySlug function
+      const slug = slugify(tag, { lower: true, strict: true });
+      const tagPermalinkBase = `/tags/${slug}/`;
+
+      const hrefs = [];
+      for (let i = 0; i < totalPages; i++) {
+        hrefs.push(i === 0 ? tagPermalinkBase : `${tagPermalinkBase}${i + 1}/`);
+      }
+
+      for (let pageNumber = 0; pageNumber < totalPages; pageNumber++) {
+        const start = pageNumber * pageSize;
+        const end = start + pageSize;
+        const pageItems = posts.slice(start, end);
+
+        pagedTags.push({
+          label: tag,
+          items: pageItems,
+          pageNumber: pageNumber,
+          totalPages: totalPages,
+          permalink: hrefs[pageNumber], // This feeds the permalink in tag.njk
+          hrefs: hrefs,
+          hrefPrevious: pageNumber > 0 ? hrefs[pageNumber - 1] : null,
+          hrefNext: pageNumber < totalPages - 1 ? hrefs[pageNumber + 1] : null
+        });
+      }
+    });
+
+    return pagedTags;
+  });
+
   // Players collection with unique slugs
   eleventyConfig.addCollection("players", function (collectionApi) {
     const root = collectionApi.getAll()[0];
