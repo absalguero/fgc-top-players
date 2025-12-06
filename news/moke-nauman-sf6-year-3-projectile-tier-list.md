@@ -10,6 +10,12 @@ tags:
 layout: article.njk
 date: 2025-11-17
 excerpt: "Top Japanese pros Moke and Nauman rank every projectile in Street Fighter 6 Year 3. Find out why Guile and Mai Shiranui dominate while returning legends Sagat and C. Viper struggle."
+video:
+  title: "【Year3最新版】スト6最強の“弾”は？飛び道具だけでキャラランクつくってみた // もけ × ナウマン【ストリートファイター6】"
+  description: "Moke and Nauman rank the strongest projectiles in Street Fighter 6 Year 3, discussing Guile, Mai, and the struggles of Sagat and C. Viper."
+  thumbnail: "https://img.youtube.com/vi/7kME-FUVpKg/maxresdefault.jpg"
+  uploadDate: "2025-11-17"
+  embedUrl: "https://www.youtube.com/embed/7kME-FUVpKg"
 ---
 
 In the rapidly evolving landscape of **Street Fighter 6 Year 3**, the definition of a "zoner" is being rewritten. With the highly anticipated arrivals of **Mai Shiranui**, **Sagat**, and **C. Viper**, players have been scrambling to determine who truly controls the screen. Top Japanese competitors **Moke** and **Nauman** recently collaborated on [SmashlogTV](https://www.youtube.com/@Smashlog_SF6) to answer a definitive question: Who has the strongest projectile in the game right now?
@@ -37,6 +43,6 @@ The tier list highlights a key truth about **Street Fighter 6 Year 3**: Traditio
 
 *Source: [SmashlogTV](https://www.youtube.com/watch?v=7kME-FUVpKg)*
 
-<div style="text-align: center;">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7kME-FUVpKg?si=StartYourYear3Right" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-top: 20px; margin-bottom: 20px;">
+  <iframe src="https://www.youtube.com/embed/7kME-FUVpKg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

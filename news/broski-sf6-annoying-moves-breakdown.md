@@ -8,6 +8,12 @@ tags:
 layout: article.njk
 date: 2025-11-29 23:30:00
 excerpt: "Top player Broski analyzes the most hated moves in Street Fighter 6, from Mai's EX Fan to Bison's Scissors, and provides essential counterplay strategies."
+video:
+  title: "Annoying Moves (And How to Beat Them)"
+  description: "Broski reviews community complaints about SF6's most annoying special moves and offers high-level counterplay for Mai's Fan, Bison's Scissors, and more."
+  thumbnail: "https://img.youtube.com/vi/vvkfOyGucHc/maxresdefault.jpg"
+  uploadDate: "2025-11-29"
+  embedUrl: "https://www.youtube.com/embed/vvkfOyGucHc"
 ---
 
 In the evolving landscape of **Street Fighter 6**, certain special moves have transcended "strong" to become absolutely infuriating. A recent community thread sparked a debate on the most hated moves in the game, prompting top-level competitor and content creator **Broski** to weigh in.

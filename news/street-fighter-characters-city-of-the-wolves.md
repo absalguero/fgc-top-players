@@ -9,6 +9,12 @@ tags:
 layout: article.njk
 date: 2025-12-03 00:00:00
 excerpt: "Despite immense casual popularity, the Street Fighter guest characters are almost non-existent in high-level City of the Wolves play due to a critical mechanical flaw."
+video:
+  title: "Why No One Plays The Street Fighter Characters In Fatal Fury"
+  description: "Diaphone breaks down the mechanical flaws holding Ken and Chun-Li back in the CotW meta, specifically focusing on their non-cancelable dash."
+  thumbnail: "https://img.youtube.com/vi/T74C5Ili1eM/maxresdefault.jpg"
+  uploadDate: "2025-11-29"
+  embedUrl: "https://www.youtube.com/embed/T74C5Ili1eM"
 ---
 
 When SNK announced that Capcom legends Ken Masters and Chun-Li would be joining the roster of *Fatal Fury: City of the Wolves* (CotW), the hype was palpable. They are among the most recognizable faces in fighting game history, and unsurprisingly, they dominate character usage stats among casual players. Yet, a glance at the tournament scene reveals a stark paradox. These iconic world warriors are almost completely absent from competitive play.

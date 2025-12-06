@@ -9,6 +9,12 @@ tags:
 layout: article.njk
 date: 2025-12-01 00:00:00
 excerpt: "Bandai Namco has released Update v2.08 for Tekken 8 with newcomer Miary Zo. The patch focuses on new content and bug fixes while leaving the existing character balance untouched."
+video:
+  title: "Tekken 8 Miary Zo Trailer"
+  description: "Official gameplay breakdown and trailer for new character Miary Zo."
+  thumbnail: "https://img.youtube.com/vi/l_mid1s8WzQ/maxresdefault.jpg"
+  uploadDate: "2025-12-01"
+  embedUrl: "https://www.youtube.com/embed/l_mid1s8WzQ"
 ---
 
 Bandai Namco officially deployed Tekken 8 Update v2.08 today. This major content drop introduces the final character of Year 2, Miary Zo, and adds the Baobab Horizon stage to the rotation. The update focuses strictly on content expansion and specific bug fixes rather than systemic balance adjustments.

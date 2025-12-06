@@ -9,6 +9,12 @@ tags:
 layout: article.njk
 date: 2025-11-16
 excerpt: "The Beast has spoken, and his take on the current Street Fighter 6 meta is shocking. Daigo Umehara argues that Ken might be bottom tier and explains why Akuma needs buffs to truly compete."
+video:
+  title: "Daigo talks current character tiers and what Akuma needs to be top-tier【Daigo Umehara】"
+  description: "Daigo shares his thoughts on the current character rankings, why he thinks Ken is overrated, and his wish list for Akuma buffs (English Subtitles)."
+  thumbnail: "https://img.youtube.com/vi/A5mDXZids78/maxresdefault.jpg"
+  uploadDate: "2025-11-17"
+  embedUrl: "https://www.youtube.com/embed/A5mDXZids78"
 ---
 
 When **Daigo Umehara** speaks, the Fighting Game Community listens. However, his latest thoughts on the current state of **Street Fighter 6** might have players checking their hearing. In a recent stream, the Japanese legend shared his personal tier list views, offering a perspective that challenges the common perception of the roster, while aligning with the data on our **[Character Stats](https://fgctopplayers.com/character-stats/)** page.
@@ -41,6 +47,6 @@ Ultimately, Daigo's takes serve as a reminder that tier lists are never set in s
 
 *Source: [Daigo the BeasTV](https://www.youtube.com/watch?v=A5mDXZids78)*
 
-<div style="text-align: center;">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/A5mDXZids78?si=TheBeastUnleashed" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 2rem 0;">
+  <iframe src="https://www.youtube.com/embed/A5mDXZids78" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

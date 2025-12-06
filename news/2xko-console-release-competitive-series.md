@@ -9,6 +9,12 @@ tags:
 layout: article.njk
 date: 2025-12-05 08:00:00
 excerpt: "Riot Games confirms a January 2026 console release for 2XKO and unveils a new grassroots esports circuit featuring 20 sanctioned community events."
+video:
+  title: "2XKO Console Release & Competitive Series 2026"
+  description: "Riot Games esports director Michael Sherman and the 2XKO team detail the 2026 roadmap, including console launch dates and the new tiered tournament circuit."
+  thumbnail: "https://img.youtube.com/vi/8kcEAE-ZOVY/maxresdefault.jpg"
+  uploadDate: "2025-12-05"
+  embedUrl: "https://www.youtube.com/embed/8kcEAE-ZOVY"
 ---
 
 Riot Games has officially confirmed the console release window and esports roadmap for their upcoming tag-team fighter. In a developer update released this week, the *2XKO* team announced that the game will launch on consoles in January 2026 and introduced the 2026 Competitive Series, a global circuit that integrates directly with existing community tournaments.

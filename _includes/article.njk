@@ -22,7 +22,7 @@
 {% block twitter_title %}{{ pageTitle }}{% endblock %}
 {% block twitter_description %}{{ pageDesc }}{% endblock %}
 
-{# --- Structured Data (NewsArticle) --- #}
+{# --- Structured Data (NewsArticle + VideoObject) --- #}
 {% block structured_data %}
 <script type="application/ld+json">
 {
@@ -51,6 +51,22 @@
     }
   },
   "description": {{ pageDesc | dump | safe }}
+  
+  {# --- NEW: Video Object Schema --- #}
+  {% if video %}
+  ,
+  "video": {
+    "@type": "VideoObject",
+    "name": {{ video.title | dump | safe }},
+    "description": {{ (video.description or pageDesc) | dump | safe }},
+    "thumbnailUrl": [
+      "{{ video.thumbnail }}"
+    ],
+    "uploadDate": "{{ video.uploadDate | date('yyyy-MM-ddTHH:mm:ssZZ') }}",
+    "embedUrl": "{{ video.embedUrl }}"
+  }
+  {% endif %}
+  {# --- END NEW SECTION --- #}
 }
 </script>
 {% endblock %}
