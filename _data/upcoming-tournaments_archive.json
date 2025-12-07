@@ -1,4 +1,27 @@
 {
+  "red-line-fight-7-samurai-no-seiiki": {
+    "name": "RED LINE FIGHT 7: Samurai no Seiiki",
+    "slug": "red-line-fight-7-samurai-no-seiiki",
+    "startAt": 1764975600,
+    "endAt": 1765130400,
+    "startDate": "2025-12-06",
+    "endDate": "2025-12-07",
+    "dates": "Dec 6-7, 2025",
+    "location": "Viale Piemonte, 41, 20093 Cologno Monzese MI, Italy",
+    "venueName": "Nemiex Club",
+    "url": "https://www.start.gg/tournament/red-line-fight-7-samurai-no-seiiki",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "https://www.twitch.tv/sygesportsteam",
+    "scheduleLink": "",
+    "description": "<p>RED LINE FIGHT 7: Samurai no Seiiki continues the long running Red Line Street Fighter series at Nemiex Club on Viale Piemonte 41 in Cologno Monzese, just outside central Milan, with the main event weekend set for December 6 and 7, 2025 and a themed pre event party on December 5.</p><p>The schedule focuses on Capcom titles, pairing a Street Fighter III Third Strike singles bracket on December 6 with Street Fighter 6 singles on December 7, plus a Saturday Night Party block that gives players additional time for matches, exhibitions and warm up sets around the main competition days.</p><p>Red Line Fight 7 is framed as a Seven Samurai themed edition of the series, bringing together Italian and visiting players who follow both classic Street Fighter and the current Street Fighter 6 era, with Nemiex Club acting as the gathering point for a full weekend built around these games.</p>",
+    "notablePlayers": [
+      "Garnet"
+    ],
+    "isArchived": true,
+    "excludeFromSite": false
+  },
   "the-noodle-fest-2025": {
     "name": "The Noodle Fest 2025",
     "slug": "the-noodle-fest-2025",

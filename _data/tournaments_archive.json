@@ -55668,5 +55668,555 @@
       }
     ],
     "isArchived": false
+  },
+  "red-line-fight-7-samurai-no-seiiki": {
+    "name": "RED LINE FIGHT 7: Samurai no Seiiki",
+    "date": "2025-12-06",
+    "slug": "red-line-fight-7-samurai-no-seiiki",
+    "Tier": "B",
+    "Entrants": "54",
+    "results": [
+      {
+        "Player": "Garnet",
+        "Player ID": "d9919a1d",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "1",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "chuu!",
+        "Player ID": "b4270e56",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "2",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bryzee",
+        "Player ID": "678ee45c",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "3",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kastro",
+        "Player ID": "d9c6c1db",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "4",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Xerna",
+        "Player ID": "91a47593",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "5",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Armix",
+        "Player ID": "9982eafd",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "5",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Geeck-O",
+        "Player ID": "8d93e17a",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "7",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "KUZE",
+        "Player ID": "88ad7714",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "7",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Gillstolemyride",
+        "Player ID": "95c00e93",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "9",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "RTJ",
+        "Player ID": "e4a6769c",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "9",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Narkim",
+        "Player ID": "96fd326d",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "9",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "osiris",
+        "Player ID": "1db597fc",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "9",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Keito",
+        "Player ID": "b54e1a1f",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "13",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "RottoClone",
+        "Player ID": "e9dd2264",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "13",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "BlackSteel",
+        "Player ID": "9bcf409c",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "13",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rainbow",
+        "Player ID": "8b640df7",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "13",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Reekee",
+        "Player ID": "1f7404f7",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "17",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "SisterRay",
+        "Player ID": "4eb52e3a",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "17",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mr.Allen",
+        "Player ID": "83ab113f",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "17",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Riccarlino",
+        "Player ID": "cb1ee86e",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "17",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kagutsuchi",
+        "Player ID": "c1480d08",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "17",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "m0d",
+        "Player ID": "140a37f9",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "17",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jeremyray",
+        "Player ID": "42b1d853",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "17",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Fabry92",
+        "Player ID": "b1b0bceb",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "17",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Micheal Piton",
+        "Player ID": "38a4bc01",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "25",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Tonko",
+        "Player ID": "d793bd46",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "25",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Str4ko",
+        "Player ID": "acd498d9",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "25",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "zetaha",
+        "Player ID": "db6781c3",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "25",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Niowiad",
+        "Player ID": "82c2268e",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "25",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "IL_NINJAdiDDIO",
+        "Player ID": "9381ea74",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "25",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "OmneZex",
+        "Player ID": "46133df8",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "25",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Biggus Dickus",
+        "Player ID": "5d335939",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "25",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "pietrocfnbuciodicappero",
+        "Player ID": "50117aeb",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "33",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Wolkemann",
+        "Player ID": "f5cda543",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "33",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Panino",
+        "Player ID": "f6286b1c",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "33",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Olanzo",
+        "Player ID": "9515a2a5",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "33",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Maddox10",
+        "Player ID": "93a2807b",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "33",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Junker_Boy",
+        "Player ID": "b36ca0c7",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "33",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "SilverNoob99",
+        "Player ID": "d100024d",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "33",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "KenshirozPC",
+        "Player ID": "4224097e",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "33",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Khaos99",
+        "Player ID": "082e15af",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "33",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "CosoSmo",
+        "Player ID": "f2503421",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "33",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "OwlOfUs",
+        "Player ID": "cc308ded",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "33",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Lestecc",
+        "Player ID": "b0618575",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "33",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "GambaDiLegno",
+        "Player ID": "21280d95",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "33",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "RolandFhtagn",
+        "Player ID": "f9369c16",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "33",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cafo678",
+        "Player ID": "6f934e39",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "33",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Retr0",
+        "Player ID": "c4454f93",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "33",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Alba",
+        "Player ID": "0dbd6efb",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "49",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "James Pregunta",
+        "Player ID": "7001bcf1",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "49",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Andy",
+        "Player ID": "cddc3219",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "49",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Peepohold",
+        "Player ID": "d0ae9e5c",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "49",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Matteo Ciroldi",
+        "Player ID": "70090500",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "49",
+        "Entrants": "54",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mbuti",
+        "Player ID": "3136835c",
+        "Event": "RED LINE FIGHT 7: Samurai no Seiiki",
+        "Event ID": "red-line-fight-7-samurai-no-seiiki",
+        "Date": "2025-12-07",
+        "Finish": "49",
+        "Entrants": "54",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
   }
 }
