@@ -81,8 +81,12 @@ navHighlight: "Home"
   {# --- LOGIC: Are we on Page 1 (Dashboard) or Page 2+ (Archive)? --- #}
   {% set isHomePage = (pagination.pageNumber == 0) %}
 
-  {# HEADER REMOVED FOR DASHBOARD #}
-  {% if not isHomePage %}
+  {# --- H1 LOGIC --- #}
+  {% if isHomePage %}
+    {# Hidden H1 for SEO/Accessiblity only (Preserves Dashboard Layout) #}
+    <h1 class="sr-only">FGC Top Players — Street Fighter 6 Rankings & Tournament Results</h1>
+  {% else %}
+    {# Visible H1 for Archive Pages #}
     <h1 class="page-title">
       Latest FGC News (Page {{ pagination.pageNumber + 1 }})
     </h1>
