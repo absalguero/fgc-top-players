@@ -91,7 +91,23 @@
     <script src="/js/main.js" defer></script>
 
     {% block head_extra %}{% endblock %}
-    {% block structured_data %}{% endblock %}
+    {# --- Global JSON-LD Fallback --- #}
+    {# This runs on every page UNLESS a specific page overrides it (like index.njk does) #}
+    {% block structured_data %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "{{ title or 'FGC Top Players' }}",
+      "url": "{{ site.url }}{{ page.url }}",
+      "description": "{{ meta_description or 'The definitive ranking of top professional fighting game players.' }}",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "{{ site.url }}{{ socialImage }}"
+      }
+    }
+    </script>
+    {% endblock %}
     {% block head %}{% endblock %}
 </head>
 <body class="{{ bodyClass or '' }}">

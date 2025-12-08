@@ -62,14 +62,33 @@ navHighlight: "Home"
 {% endblock %}
 
 {# --- Page-level JSON-LD --- #}
+{# --- Page-level JSON-LD --- #}
 {% block structured_data %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "{{ pageTitle | trim }}",
-  "url": "{{ site.url }}{{ page.url }}",
-  "description": "Latest FGC news, tournament results, and rankings across Street Fighter and more."
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "FGC Top Players",
+      "url": "{{ site.url }}",
+      "logo": "{{ site.url }}/images/default-news.png",
+      "sameAs": [
+        "https://twitter.com/your_handle",
+        "https://facebook.com/your_page"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "name": "{{ pageTitle | trim }}",
+      "url": "{{ site.url }}{{ page.url }}",
+      "description": "Latest FGC news, tournament results, and rankings across Street Fighter and more.",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "{{ site.url }}/images/fgc-top-players-social-card.png"
+      }
+    }
+  ]
 }
 </script>
 {% endblock %}
