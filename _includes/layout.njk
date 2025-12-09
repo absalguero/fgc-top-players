@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="msvalidate.01" content="E2912AF201C363D2A52C70A60E5F4311" />
 
-    {# --- Google AdSense Verification --- #}
-    <meta name="google-adsense-account" content="ca-pub-4748186290410675">
-
     {# --- Google Consent Mode v2 & Analytics --- #}
     {# This MUST load before any other tracking scripts #}
     <script>
@@ -32,13 +29,6 @@
       gtag('config', 'G-47ZV9G37SY');
     </script>
 {% endif %}
-
-    {# 3. Google AdSense Engine (Loads once for the whole page) #}
-    {# Wrapped to prevent ads from loading on localhost #}
-    {% if env.environment == "production" %}
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4748186290410675"
-          crossorigin="anonymous"></script>
-    {% endif %}
 
     {# --- Canonical helpers --- #}
     {% set canonical_path = canonical or page.url %}
@@ -171,22 +161,6 @@
         <main class="content" id="maincontent" tabindex="-1" data-pagefind-body>
         {% include "partials/breadcrumbs.njk" %}
 
-            {# --- MANUAL AD: LEADERBOARD --- #}
-            <div class="ad-container ad-container--header">
-                <span class="ad-label">Advertisement</span>
-
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="ca-pub-4748186290410675"
-                     data-ad-slot="6905520391"
-                     data-ad-format="auto"
-                     data-full-width-responsive="true"></ins>
-                <script>
-                     (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </div>
-            {# ------------------------------ #}
-
             {% block content %}
     {{ content | autoLink(page, collections, playerProfiles) | safe }}
 {% endblock %}
@@ -234,27 +208,11 @@
         </main>
         {% set sidebarVariantValue = sidebarVariant or "events" %}
         {% set sidebarTitleValue = sidebarTitle or "Upcoming Tournaments" %}
-        {% set sidebarCountValue = sidebarCount or 3 %}
+        {% set sidebarCountValue = sidebarCount or 4 %}
 
         <aside class="sidebar right-sidebar" aria-label="Contextual Information">
             
             <h2 class="sidebar__label">{{ sidebarTitleValue }}</h2>
-
-            {# --- MANUAL AD: SIDEBAR --- #}
-            <div class="ad-container ad-container--sidebar">
-                <span class="ad-label">Advertisement</span>
-                
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="ca-pub-4748186290410675"
-                     data-ad-slot="8246630028"
-                     data-ad-format="auto"
-                     data-full-width-responsive="true"></ins>
-                <script>
-                     (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </div>
-            {# -------------------------- #}
 
             {% if sidebarVariantValue == "news" %}
                 {% set sidebarNewsItems = collections.news | default([]) | reverse %}
