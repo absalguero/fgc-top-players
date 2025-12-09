@@ -27,7 +27,7 @@ Fans waiting to purchase a live viewing ticket for **Capcom Cup 12** or the **SF
 
 ## Background
 
-This pricing review follows the earlier decision to place the Capcom Cup 12 Finals behind a pay per view model. For details on that move and community reaction, see our earlier report: [Capcom Cup 12 Finals Move to Pay Per View, Sparking FGC Debate](/news/capcom-cup-12-finals-move-to-pay-per-view-sparking-fgc-debate/).
+This pricing review follows the earlier decision to place the Capcom Cup 12 Finals behind a pay per view model. For details on that move and community reaction, see our earlier report: [Capcom Cup 12 Finals Move to Pay Per View, Sparking FGC Debate](https://fgctopplayers.com/news/capcom-cup-12-finals-move-to-pay-per-view-sparking-fgc-debate/).
 
 ---
 

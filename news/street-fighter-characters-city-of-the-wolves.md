@@ -33,7 +33,7 @@ Ken and Chun-Li, however, are committed to their traditional, fixed duration *St
 
 ## Trapped Behind "The Wall"
 
-This mobility issue is exacerbated when considering the current competitive landscape defined by top Japanese pros. [A recent analysis by legends like GO1 and Nemo](/japanese-pros-define-the-wall-in-fatal-fury-city-of-the-wolves-tier-list/) identified "The Wall", a massive power gap separating top tier characters like **Hotaru** and **Hokutomaru** from the rest of the cast.
+This mobility issue is exacerbated when considering the current competitive landscape defined by top Japanese pros. [A recent analysis by legends like GO1 and Nemo](https://fgctopplayers.com/news/japanese-pros-define-the-wall-in-fatal-fury-city-of-the-wolves-tier-list/) identified "The Wall", a massive power gap separating top tier characters like **Hotaru** and **Hokutomaru** from the rest of the cast.
 
 These top tier fighters excel at controlling space with powerful projectiles. Native *Fatal Fury* characters can navigate this "bullet hell" using mechanics like the "Super Jump" to alter their aerial trajectory over fireballs.
 

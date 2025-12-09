@@ -278,12 +278,18 @@ module.exports = async function () {
     );
   }
 
-  // Merge with correct priority: archive > overrides > dynamic
+// Merge with correct priority: archive > overrides > dynamic
   // Start with dynamic as base
   let tournaments = { ...dynamicTournaments };
 
+  // Filter out excluded entries from overrides before merging
+  const filteredOverrides = { ...overrides };
+  excludedSlugs.forEach((slug) => {
+    delete filteredOverrides[slug];
+  });
+
   // Apply overrides (middle priority)
-  tournaments = mergeOverrides(tournaments, overrides);
+  tournaments = mergeOverrides(tournaments, filteredOverrides);
 
   // Apply archive (highest priority)
   tournaments = mergeOverrides(tournaments, archive);

@@ -18,7 +18,7 @@ imageSourceUrl: "https://x.com/Kakeru_FGC"
 
 **Kakeru** has confirmed his **retirement from professional competition** and his **departure from ZETA DIVISION’s Street Fighter League roster**, citing an ongoing **neurological condition**. He posted the announcement on his official X account on October 23, 2025. [Kakeru on X](https://x.com/Kakeru_FGC/status/1981240095027188166)
 
-> This update follows our earlier report on his health related hiatus, which you can read here: [Kakeru’s Health Struggles Keep Him Out of Competition](/news/kakeru's-health-struggles-keep-him-out-of-competition/).
+> This update follows our earlier report on his health related hiatus, which you can read here: [Kakeru’s Health Struggles Keep Him Out of Competition](https://fgctopplayers.com/news/kakeru's-health-struggles-keep-him-out-of-competition/).
 
 ## What Kakeru announced
 
@@ -34,7 +34,7 @@ Kakeru’s message provides clarity after a period of absence from event play th
 
 ## Career highlights
 
-Kakeru is widely regarded as one of the strongest competitors in **Street Fighter 6**, with a marquee victory at **Capcom Cup 11** and a track record of elite results prior to his break from competition. He has been featured among the **top players in the world** in our rankings. See the current standings here: [Street Fighter 6 Global Rankings](/street-fighter-6-rankings/).
+Kakeru is widely regarded as one of the strongest competitors in **Street Fighter 6**, with a marquee victory at **Capcom Cup 11** and a track record of elite results prior to his break from competition. He has been featured among the **top players in the world** in our rankings. See the current standings here: [Street Fighter 6 Global Rankings](https://fgctopplayers.com/street-fighter-6-rankings/).
 
 ---
 

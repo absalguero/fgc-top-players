@@ -13,7 +13,7 @@ date: 2025-11-27
 excerpt: "Following community backlash, Tekken producer Katsuhiro Harada clarifies that there are no immediate plans to charge for Tekken World Tour broadcasts."
 ---
 
-Following our [previous report](/news/tekken-producer-harada-addresses-esports-revenue-gap-and-capcom-paywall/) regarding Katsuhiro Harada's comments on the financial gap in fighting game esports, the *Tekken* executive producer has taken to social media to calm the rising tide of speculation. In a series of tweets, Harada clarified that despite his interest in industry data, Bandai Namco has no current intention of putting the *Tekken World Tour (TWT)* behind a paywall.
+Following our [previous report](https://fgctopplayers.com/news/tekken-producer-harada-addresses-esports-revenue-gap-and-capcom-paywall/) regarding Katsuhiro Harada's comments on the financial gap in fighting game esports, the *Tekken* executive producer has taken to social media to calm the rising tide of speculation. In a series of tweets, Harada clarified that despite his interest in industry data, Bandai Namco has no current intention of putting the *Tekken World Tour (TWT)* behind a paywall.
 
 The clarification comes as a relief to a community already on edge following Capcom's controversial decision to charge for the *Capcom Cup 12* finals.
 

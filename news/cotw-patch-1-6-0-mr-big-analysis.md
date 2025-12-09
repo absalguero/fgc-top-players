@@ -9,6 +9,12 @@ tags:
 layout: article.njk
 date: 2025-12-08 11:00:00
 excerpt: "With the release of Patch 1.6.0, Mr. Big arrives in South Town to challenge the dominance of the top tier. We analyze his kit, the new frame meter, and if 'The Wall' can finally be broken."
+video:
+  title: "FATAL FURY: CotW ｜MR. BIG"
+  description: "FATAL FURY: City of the Wolves features a unique art style that stimulates the senses, an innovative REV System that supercharges the excitement, plus a host of other battle systems even more robust than before."
+  thumbnail: "https://img.youtube.com/vi/UutazAm9aRg/maxresdefault.jpg"
+  uploadDate: "2025-12-09"
+  embedUrl: "https://www.youtube.com/embed/UutazAm9aRg"
 ---
 
 The South Town underworld has officially made its move. With the release of **Fatal Fury: City of the Wolves Patch 1.6.0** today, SNK has introduced the crime lord himself, **Mr. Big**, as the latest playable character.
@@ -27,7 +33,7 @@ Meanwhile, fighting game legend **Justin Wong** identified a more terrifying pot
 
 ## The Meta Context: Facing "The Wall"
 
-To understand the weight of this addition, we have to look at the current competitive landscape. A recent roundtable featuring Japanese legends **GO1, Nemo, Score, and KojiKOG** defined the current meta by a concept they call ["The Wall."](/article/japanese-pros-define-the-wall-fatal-fury-cotw-tier-list)
+To understand the weight of this addition, we have to look at the current competitive landscape. A recent roundtable featuring Japanese legends **GO1, Nemo, Score, and KojiKOG** defined the current meta by a concept they call ["The Wall."](https://fgctopplayers.com/news/japanese-pros-define-the-wall-in-fatal-fury-city-of-the-wolves-tier-list/)
 
 "The Wall" represents a massive power gap separating the top three fighters (**Hotaru Futaba**, **Kain R. Heinlein**, and **Hokutomaru**) from the rest of the cast. These three characters currently strangle the competitive scene because they possess superior tools for controlling neutral and punishing mistakes.
 
@@ -49,6 +55,16 @@ This feature is the specific tool pros need to dismantle "The Wall."
 For now, expect to see Mr. Big flooding Ranked Match and upcoming tournament brackets as players race to unlock the potential of South Town’s most notorious crime boss.
 
 **City of the Wolves Patch 1.6.0 is available now on all platforms.**
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+  <iframe 
+    src="https://www.youtube.com/embed/UutazAm9aRg?start=61" 
+    title="FATAL FURY: CotW ｜MR. BIG" 
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</div>
 
 ---
 
