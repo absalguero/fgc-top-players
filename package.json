@@ -6,7 +6,7 @@
   "scripts": {
     "build": "eleventy --config=.eleventy.js && npm run pagefind",
     "pagefind": "pagefind --site _site --output-subdir pagefind",
-    "dev:eleventy": "eleventy --config=.eleventy.js --serve --watch --port=8080 --input=./ --output=_site",
+    "dev:eleventy": "ELEVENTY_ENV=dev eleventy --config=.eleventy.js --serve --watch --incremental --port=8080 --input=./ --output=_site",
     "dev": "npm run dev:eleventy",
     "pagefind:watch": "onchange \"_site/**/*\" --exclude \"_site/pagefind/**\" --await-write-finish 200 --kill --initial -- npm run pagefind",
     "dev:search": "concurrently -k -n eleventy,pagefind -c auto \"npm:dev:eleventy\" \"npm:pagefind:watch\"",

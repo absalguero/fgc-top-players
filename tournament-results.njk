@@ -129,7 +129,7 @@ eleventyNavigation:
     and spotlight rated events.
   </p>
 
-  {# ===== Compute available years from ALL tournaments (server-side) ===== #}
+  {# Compute available years using the cached filter #}
   {% set _all = tournaments.events or [] %}
   {% set years = _all | extractYears %}
 
@@ -303,12 +303,10 @@ eleventyNavigation:
               <ol class="t-card__podium-list">
                 {% for r in top %}
                   {% set pid = r['Player ID'] %}
-                  {% set profile = (collections.players | default([])) | find('id', pid) %}
+                  {# Pass the whole collection once so the filter can build the map #}
+{% set profile = pid | getPlayerById(collections.players) %}
                   {% if not profile and playerProfiles %}
-                    {% set profile = (playerProfiles | default([])) | find('name', r.Player) %}
-                  {% endif %}
-                  {% if not profile and playerProfiles and pid %}
-                    {% set profile = (playerProfiles | default([])) | find('slug', pid) %}
+                    {% set profile = r.Player | getPlayerById(playerProfiles) %}
                   {% endif %}
 
                   {% set displayName = r.Player %}

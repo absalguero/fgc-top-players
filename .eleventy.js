@@ -231,6 +231,37 @@ module.exports = async function (eleventyConfig) {
     return array.find((item) => item[key] === value);
   });
 
+  const playerCollectionCache = new WeakMap();
+
+  eleventyConfig.addFilter("getPlayerById", function(pid, playerCollection) {
+    if (!pid) return null;
+    if (!playerCollection || !Array.isArray(playerCollection)) return null;
+
+    // 1. Check if we already built a "Cheat Sheet" (Map) for this specific collection
+    let lookupMap = playerCollectionCache.get(playerCollection);
+
+    // 2. If not, build it now (Runs only ONCE per build)
+    if (!lookupMap) {
+      lookupMap = new Map();
+      
+      playerCollection.forEach(item => {
+        // We handle item.data (standard 11ty) or item (raw object)
+        const d = item.data || item; 
+        
+        // Map multiple keys so you can find by ID, Slug, or Name
+        if (d.id) lookupMap.set(String(d.id), d);
+        if (d.slug) lookupMap.set(String(d.slug), d);
+        if (d.name) lookupMap.set(String(d.name), d);
+      });
+
+      playerCollectionCache.set(playerCollection, lookupMap);
+      console.log(`[Performance] Built fast lookup map for ${playerCollection.length} players.`);
+    }
+
+    // 3. Return the result instantly (O(1) speed instead of O(N))
+    return lookupMap.get(String(pid));
+  });
+
   eleventyConfig.addFilter("sortByFinish", (results) => {
     if (!Array.isArray(results)) return results;
     return [...results].sort((a, b) => {
@@ -255,17 +286,32 @@ module.exports = async function (eleventyConfig) {
     return Object.values(obj);
   });
 
+  const yearsCache = new WeakMap(); // Cache storage
+
   eleventyConfig.addFilter("extractYears", function (events) {
-    const years = new Set();
-    if (Array.isArray(events)) {
-      events.forEach((ev) => {
-        if (ev && ev.date && typeof ev.date === "string") {
-          const year = ev.date.slice(0, 4);
-          if (year && /^\d{4}$/.test(year)) years.add(year);
-        }
-      });
+    // 1. Safety Check
+    if (!Array.isArray(events)) return [];
+
+    // 2. Cache Hit: Return immediately if we already did the math
+    if (yearsCache.has(events)) {
+      return yearsCache.get(events);
     }
-    return Array.from(years).sort().reverse();
+
+    // 3. Cache Miss: Calculate the years
+    const years = new Set();
+    events.forEach((ev) => {
+      if (ev && ev.date && typeof ev.date === "string") {
+        const year = ev.date.slice(0, 4);
+        if (year && /^\d{4}$/.test(year)) years.add(year);
+      }
+    });
+
+    const result = Array.from(years).sort().reverse();
+
+    // 4. Save result to cache
+    yearsCache.set(events, result);
+
+    return result;
   });
 
   eleventyConfig.addFilter("json", (value) => {

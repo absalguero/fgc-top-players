@@ -11,80 +11,28 @@ const characterMasterList = require("../_data/characterMasterList.js");
 
 const filters = (module.exports = module.exports || {});
 
+// =============================================================================
+// GLOBAL CONFIG & CONSTANTS
+// =============================================================================
+
 const STAT_ACRONYMS = new Set([
-  "FGPI",
-  "TDR",
-  "PF",
-  "MS",
-  "AF12",
-  "AF6",
-  "AFM12",
-  "AFM6",
-  "APP",
-  "APM",
-  "V",
-  "T3",
-  "T8",
-  "T16",
-  "PR",
-  "TR",
-  "CPV",
-  "T3R",
-  "CMS",
-  "CPF",
-  "TS",
-  "TP",
-  "RDI",
+  "FGPI", "TDR", "PF", "MS", "AF12", "AF6", "AFM12", "AFM6",
+  "APP", "APM", "V", "T3", "T8", "T16", "PR", "TR",
+  "CPV", "T3R", "CMS", "CPF", "TS", "TP", "RDI",
 ]);
 
 const WORD_CHAR = /[A-Za-z0-9_]/;
 const SHOW_TEXT = 4; // NodeFilter.SHOW_TEXT
 const SKIP_AUTOLINK_TAGS = new Set([
-  "A",
-  "CODE",
-  "PRE",
-  "SCRIPT",
-  "STYLE",
-  "NOSCRIPT",
-  "TEXTAREA",
+  "A", "CODE", "PRE", "SCRIPT", "STYLE", "NOSCRIPT", "TEXTAREA",
 ]);
 
 const EXTRA_KEYWORDS = [
-  {
-    key: "extra:tournament",
-    label: "tournament",
-    url: "/tournament-results/",
-    type: "section",
-    maxMatches: 1,
-  },
-  {
-    key: "extra:tournaments",
-    label: "tournaments",
-    url: "/tournament-results/",
-    type: "section",
-    maxMatches: 1,
-  },
-  {
-    key: "feature:player-comparison",
-    label: "player comparison",
-    url: "/player-comparison/",
-    type: "feature",
-    maxMatches: 1,
-  },
-  {
-    key: "feature:character-comparison",
-    label: "character comparison",
-    url: "/character-comparison/",
-    type: "feature",
-    maxMatches: 1,
-  },
-  {
-    key: "feature:player-directory",
-    label: "player directory",
-    url: "/player-profiles/",
-    type: "feature",
-    maxMatches: 1,
-  },
+  { key: "extra:tournament", label: "tournament", url: "/tournament-results/", type: "section", maxMatches: 1 },
+  { key: "extra:tournaments", label: "tournaments", url: "/tournament-results/", type: "section", maxMatches: 1 },
+  { key: "feature:player-comparison", label: "player comparison", url: "/player-comparison/", type: "feature", maxMatches: 1 },
+  { key: "feature:character-comparison", label: "character comparison", url: "/character-comparison/", type: "feature", maxMatches: 1 },
+  { key: "feature:player-directory", label: "player directory", url: "/player-profiles/", type: "feature", maxMatches: 1 },
 ];
 
 const ANALYTICS_TERMS = [
@@ -117,39 +65,16 @@ const TYPE_PRIORITY = {
   feature: 5,
 };
 
+// =============================================================================
+// UTILITY FUNCTIONS
+// =============================================================================
+
 function capFirstAlphaToken(token) {
   const m = token.match(/^([^A-Za-z]*)([A-Za-z])(.*)$/);
   if (!m) return token;
   const [, pre, first, rest] = m;
   return pre + first.toUpperCase() + rest.toLowerCase();
 }
-
-filters.titleCaseStat = function (label) {
-  if (!label) return "";
-  const s = String(label).trim();
-  if (!s) return "";
-
-  return s
-    .split(/\s+/)
-    .map((word) => {
-      const base = word.replace(/[^A-Za-z0-9]/g, "");
-      if (base && STAT_ACRONYMS.has(base.toUpperCase())) {
-        return word.replace(/[A-Za-z0-9]+/, (seg) => seg.toUpperCase());
-      }
-      return capFirstAlphaToken(word);
-    })
-    .join(" ");
-};
-
-filters.sentenceCaseStat =
-  filters.sentenceCaseStat ||
-  function (label) {
-    if (!label) return "";
-    const s = String(label).trim();
-    if (STAT_ACRONYMS.has(s)) return s;
-    const lower = s.toLowerCase();
-    return lower.replace(/([A-Za-z])/, (m) => m.toUpperCase());
-  };
 
 function escapeRegExp(str) {
   return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -159,57 +84,55 @@ function hasSkipAncestor(node) {
   let el = node.parentElement;
   while (el) {
     if (SKIP_AUTOLINK_TAGS.has(el.tagName)) return true;
-    if (el.getAttribute && el.getAttribute("data-no-autolink") !== null) {
-      return true;
-    }
-    if (el.classList) {
-      if (el.classList.contains("no-autolink") || el.classList.contains("auto-link")) {
-        return true;
-      }
-    }
+    if (el.getAttribute && el.getAttribute("data-no-autolink") !== null) return true;
+    if (el.classList && (el.classList.contains("no-autolink") || el.classList.contains("auto-link"))) return true;
     el = el.parentElement;
   }
   return false;
 }
 
-function buildPlayerEntries(playerProfiles, pageUrl, collectionsPlayers) {
-  // Use collections.players if available (it has the correct filtering logic)
-  // Otherwise fall back to top 200 from playerProfiles
-  const playersToLink = Array.isArray(collectionsPlayers) && collectionsPlayers.length > 0
+function isBoundaryChar(char) {
+  return !char || !WORD_CHAR.test(char);
+}
+
+// =============================================================================
+// CACHED ENTRY BUILDING (THE PERFORMANCE FIX)
+// =============================================================================
+
+// Cache the expensive regex list based on the 'collections' object
+const entryCache = new WeakMap();
+
+function buildGlobalEntries(playerProfiles, collections) {
+  // 1. Build Players
+  const collectionsPlayers = Array.isArray(collections?.players) ? collections.players : [];
+  const playersToLink = collectionsPlayers.length > 0
     ? collectionsPlayers
     : (Array.isArray(playerProfiles) ? playerProfiles.filter((player) => {
         if (!player || typeof player.name !== "string" || !player.slug) return false;
-        const name = player.name.trim();
-        if (!name) return false;
         const rank = Number.isFinite(player.rank) ? player.rank : null;
-        if (rank === null) return false;
-        if (rank <= 0 || rank > 200) return false;
-        return true;
+        return rank && rank > 0 && rank <= 200;
       }) : []);
 
-  // Use flatMap to allow multiple name variations (Native + English) to link to the same player
-  return playersToLink
+  const playerEntries = playersToLink
     .filter((player) => player && typeof player.name === "string" && player.slug && player.name.trim())
     .flatMap((player) => {
       const entries = [];
       const primaryLabel = player.name.trim();
-
-      // 1. Add the Primary Name (e.g., 小路KOG)
+      
       entries.push({
-        key: `player:${player.slug}`, // Shared key ensures maxMatches applies to the PERSON
+        key: `player:${player.slug}`,
         label: primaryLabel,
         url: `/players/${player.slug}/`,
         type: "player",
-        maxMatches: 1, 
+        maxMatches: 1,
         caseSensitive: false,
       });
 
-      // 2. Add the English Name if it exists and is different (e.g., KojiKOG)
       if (player.englishName && typeof player.englishName === "string") {
         const englishLabel = player.englishName.trim();
         if (englishLabel && englishLabel.toLowerCase() !== primaryLabel.toLowerCase()) {
           entries.push({
-            key: `player:${player.slug}`, // Share the same key
+            key: `player:${player.slug}`,
             label: englishLabel,
             url: `/players/${player.slug}/`,
             type: "player",
@@ -219,13 +142,11 @@ function buildPlayerEntries(playerProfiles, pageUrl, collectionsPlayers) {
         }
       }
       return entries;
-    })
-    .filter((entry) => entry.url !== pageUrl);
-}
+    });
 
-function buildTagEntries(collections, pageUrl) {
+  // 2. Build Tags
   const tags = Array.isArray(collections?.tagsBySlug) ? collections.tagsBySlug : [];
-  return tags
+  const tagEntries = tags
     .filter((tag) => tag && typeof tag.label === "string" && tag.label.trim())
     .map((tag) => {
       const label = tag.label.trim();
@@ -237,117 +158,82 @@ function buildTagEntries(collections, pageUrl) {
         type: "tag",
         maxMatches: 1,
       };
-    })
-    .filter((entry) => entry.url !== pageUrl);
-}
+    });
 
-function buildCharacterEntries(pageUrl) {
-  if (!Array.isArray(characterMasterList)) return [];
-  const entries = [];
-
-  characterMasterList
-    .filter((entry) => entry && typeof entry.name === "string" && entry.name.trim())
-    .forEach((entry) => {
-      const label = entry.name.trim();
-      const slug = slugify(label, { lower: true, strict: true });
-
-      // Add full name entry
-      entries.push({
-        key: `character:${slug}`,
-        label,
-        url: `/characters/${slug}/`,
-        type: "character",
-        maxMatches: 1,
-      });
-
-      // Check for shortened names (e.g., "M. Bison" -> "Bison")
-      const shortNameMatch = label.match(/^[A-Z]\.\s+(.+)$/);
-      if (shortNameMatch) {
-        const lastName = shortNameMatch[1];
-        entries.push({
-          key: `character:${slug}-short`,
-          label: lastName,
+  // 3. Build Characters
+  const characterEntries = [];
+  if (Array.isArray(characterMasterList)) {
+    characterMasterList
+      .filter((entry) => entry && typeof entry.name === "string" && entry.name.trim())
+      .forEach((entry) => {
+        const label = entry.name.trim();
+        const slug = slugify(label, { lower: true, strict: true });
+        
+        characterEntries.push({
+          key: `character:${slug}`,
+          label,
           url: `/characters/${slug}/`,
           type: "character",
           maxMatches: 1,
         });
-      }
-    });
 
-  return entries.filter((entry) => entry.url !== pageUrl);
-}
+        const shortNameMatch = label.match(/^[A-Z]\.\s+(.+)$/);
+        if (shortNameMatch) {
+          characterEntries.push({
+            key: `character:${slug}-short`,
+            label: shortNameMatch[1],
+            url: `/characters/${slug}/`,
+            type: "character",
+            maxMatches: 1,
+          });
+        }
+      });
+  }
 
-function buildGlossaryEntries(pageUrl) {
-  return ANALYTICS_TERMS.map((term) => ({
+  // 4. Build Glossary & Extras
+  const glossaryEntries = ANALYTICS_TERMS.map((term) => ({
     ...term,
     url: term.url || "/analytics-glossary/",
     type: "glossary",
-    maxMatches: term.label.length <= 4 ? 2 : 1, // Acronyms can appear twice, phrases once
-  })).filter((entry) => entry.url !== pageUrl);
-}
-
-function buildExtraEntries(pageUrl) {
-  return EXTRA_KEYWORDS.filter((entry) => entry.url !== pageUrl).map((entry) => ({
-    ...entry,
+    maxMatches: term.label.length <= 4 ? 2 : 1,
   }));
-}
 
-function prepareEntries(playerProfiles, collections, pageUrl) {
-  const collectionsPlayers = Array.isArray(collections?.players) ? collections.players : [];
-  const playerEntries = buildPlayerEntries(playerProfiles, pageUrl, collectionsPlayers);
-  const tagEntries = buildTagEntries(collections, pageUrl);
+  const extraEntries = EXTRA_KEYWORDS.map(entry => ({ ...entry }));
 
-  // Build a Set of ALL player names (not just top 200) for identifying player tags
+  // 5. Enhance Players with Tag Data
   const allPlayerNames = new Set();
   if (Array.isArray(playerProfiles)) {
     playerProfiles.forEach(player => {
-      if (player && typeof player.name === "string") {
-        allPlayerNames.add(player.name.trim().toLowerCase());
-      }
-      // Check for English names so they are recognized as "Player Tags"
-      if (player && typeof player.englishName === "string") {
-        allPlayerNames.add(player.englishName.trim().toLowerCase());
-      }
+      if (player?.name) allPlayerNames.add(player.name.trim().toLowerCase());
+      if (player?.englishName) allPlayerNames.add(player.englishName.trim().toLowerCase());
     });
   }
 
-  // Build a map of player names who have profile pages
-  const playersWithPages = new Set();
-  playerEntries.forEach(player => {
-    playersWithPages.add(player.label.toLowerCase());
-  });
+  const playersWithPages = new Set(playerEntries.map(p => p.label.toLowerCase()));
+  const tagsByLabel = new Map(tagEntries.map(t => [t.label.toLowerCase(), t.url]));
 
-  // Build a map of tag URLs by label (case-insensitive)
-  const tagsByLabel = new Map();
-  tagEntries.forEach(tag => {
-    tagsByLabel.set(tag.label.toLowerCase(), tag.url);
-  });
-
-  // Enhance player entries with tag URLs if they have matching tags
   const enhancedPlayerEntries = playerEntries.map(player => {
     const tagUrl = tagsByLabel.get(player.label.toLowerCase());
     return tagUrl ? { ...player, tagUrl } : player;
   });
 
-  // Mark tag entries that are player tags (but player has no profile page)
   const enhancedTagEntries = tagEntries.map(tag => {
     const labelLower = tag.label.toLowerCase();
     const isPlayerTag = allPlayerNames.has(labelLower);
     const hasProfile = playersWithPages.has(labelLower);
-
-    // If it's a player tag but player doesn't have a profile, show icon only
     if (isPlayerTag && !hasProfile) {
       return { ...tag, showIconOnly: true, maxMatches: 1 };
     }
     return tag;
   });
 
+  // 6. Combine and Regex
   const rawEntries = [
     ...enhancedPlayerEntries,
     ...enhancedTagEntries,
-    ...buildCharacterEntries(pageUrl),
-    ...buildGlossaryEntries(pageUrl),
-    ...buildExtraEntries(pageUrl),
+    ...characterEntries,
+    ...glossaryEntries,
+    ...extraEntries,
   ];
 
   const entriesWithRegex = rawEntries
@@ -357,6 +243,7 @@ function prepareEntries(playerProfiles, collections, pageUrl) {
       regex: new RegExp(escapeRegExp(entry.label), entry.caseSensitive ? "g" : "gi"),
     }));
 
+  // 7. Sort by Priority and Length (Longer first)
   entriesWithRegex.sort((a, b) => {
     const lenDiff = b.label.length - a.label.length;
     if (lenDiff !== 0) return lenDiff;
@@ -365,31 +252,26 @@ function prepareEntries(playerProfiles, collections, pageUrl) {
     return a.label.localeCompare(b.label);
   });
 
+  // 8. Deduplicate
   const seenLabels = new Set();
   return entriesWithRegex.filter((entry) => {
     const key = entry.label.toLowerCase();
-
-    // Don't deduplicate tag entries marked as showIconOnly
-    if (entry.showIconOnly) {
-      return true;
-    }
-
-    // Use only the label (case-insensitive) as key to deduplicate across types
-    // This ensures player links take priority over tag links for the same name
+    if (entry.showIconOnly) return true;
     if (seenLabels.has(key)) return false;
     seenLabels.add(key);
     return true;
   });
 }
 
-function isBoundaryChar(char) {
-  return !char || !WORD_CHAR.test(char);
-}
+// =============================================================================
+// MAIN LOGIC
+// =============================================================================
 
 function findFirstMatch(text, entries, linkCounts) {
   let best = null;
 
   for (const entry of entries) {
+    // Check max matches
     const used = linkCounts.get(entry.key) || 0;
     if (entry.maxMatches !== undefined && used >= entry.maxMatches) continue;
 
@@ -402,9 +284,9 @@ function findFirstMatch(text, entries, linkCounts) {
     const matchedText = match[0];
     if (!matchedText || !matchedText.trim()) continue;
 
+    // Word boundary check
     const beforeChar = start > 0 ? text[start - 1] : "";
-    const afterChar =
-      start + matchedText.length < text.length ? text[start + matchedText.length] : "";
+    const afterChar = start + matchedText.length < text.length ? text[start + matchedText.length] : "";
     if (!isBoundaryChar(beforeChar) || !isBoundaryChar(afterChar)) continue;
 
     if (
@@ -412,22 +294,15 @@ function findFirstMatch(text, entries, linkCounts) {
       start < best.index ||
       (start === best.index && matchedText.length > best.match.length)
     ) {
-      best = {
-        entry,
-        index: start,
-        match: matchedText,
-      };
+      best = { entry, index: start, match: matchedText };
     }
   }
-
   return best;
 }
 
 function processTextNode(document, node, entries, linkCounts) {
   let text = node.nodeValue;
-  if (!text || !text.trim()) {
-    return;
-  }
+  if (!text || !text.trim()) return;
 
   const parent = node.parentNode;
   if (!parent) return;
@@ -442,22 +317,16 @@ function processTextNode(document, node, entries, linkCounts) {
       parent.insertBefore(document.createTextNode(text.slice(0, index)), node);
     }
 
-    // For tags marked as showIconOnly (player tags without profiles), show only the icon
     if (entry.showIconOnly) {
-      // Insert plain text (no link)
       parent.insertBefore(document.createTextNode(match), node);
-
-      // Insert tag icon
       const tagIcon = document.createElement("a");
       tagIcon.setAttribute("href", entry.url);
       tagIcon.setAttribute("data-player-tag", "true");
       tagIcon.className = "player-tag-icon";
       tagIcon.setAttribute("aria-label", `View ${match} tag page`);
-      tagIcon.setAttribute("title", `View articles tagged with ${match}`);
       tagIcon.innerHTML = '<i class="fas fa-tag"></i>';
       parent.insertBefore(tagIcon, node);
     } else {
-      // Normal behavior: create link for the text
       const anchor = document.createElement("a");
       anchor.setAttribute("href", entry.url);
       anchor.setAttribute("data-auto-link", entry.type);
@@ -465,14 +334,12 @@ function processTextNode(document, node, entries, linkCounts) {
       anchor.textContent = match;
       parent.insertBefore(anchor, node);
 
-      // If this is a player with a corresponding tag, add a tag icon link
       if (entry.type === "player" && entry.tagUrl) {
         const tagIcon = document.createElement("a");
         tagIcon.setAttribute("href", entry.tagUrl);
         tagIcon.setAttribute("data-player-tag", "true");
         tagIcon.className = "player-tag-icon";
         tagIcon.setAttribute("aria-label", `View ${match} tag page`);
-        tagIcon.setAttribute("title", `View articles tagged with ${match}`);
         tagIcon.innerHTML = '<i class="fas fa-tag"></i>';
         parent.insertBefore(tagIcon, node);
       }
@@ -489,13 +356,52 @@ function processTextNode(document, node, entries, linkCounts) {
   }
 }
 
+// =============================================================================
+// EXPORTS
+// =============================================================================
+
+filters.titleCaseStat = function (label) {
+  if (!label) return "";
+  const s = String(label).trim();
+  if (!s) return "";
+  return s.split(/\s+/).map((word) => {
+    const base = word.replace(/[^A-Za-z0-9]/g, "");
+    if (base && STAT_ACRONYMS.has(base.toUpperCase())) {
+      return word.replace(/[A-Za-z0-9]+/, (seg) => seg.toUpperCase());
+    }
+    return capFirstAlphaToken(word);
+  }).join(" ");
+};
+
+filters.sentenceCaseStat = function (label) {
+  if (!label) return "";
+  const s = String(label).trim();
+  if (STAT_ACRONYMS.has(s)) return s;
+  const lower = s.toLowerCase();
+  return lower.replace(/([A-Za-z])/, (m) => m.toUpperCase());
+};
+
 filters.autoLink = function autoLink(content, page = {}, collections = {}, playerProfiles) {
   if (!content || typeof content !== "string") return content;
   if (typeof parseHTML !== "function") return content;
 
+  // --- PERFORMANCE FIX START ---
+  // 1. Check Cache
+  let entries = entryCache.get(collections);
+  
+  // 2. Build Cache if missing (Runs ONCE)
+  if (!entries) {
+    entries = buildGlobalEntries(playerProfiles, collections);
+    entryCache.set(collections, entries);
+    console.log(`[AutoLink] Built and cached ${entries.length} autolink entries.`);
+  }
+
+  // 3. Filter for current page (Fast, shallow filtering)
   const pageUrl = page && typeof page.url === "string" ? page.url : "";
-  const entries = prepareEntries(playerProfiles, collections, pageUrl);
-  if (entries.length === 0) return content;
+  const activeEntries = entries.filter(e => e.url !== pageUrl);
+  // --- PERFORMANCE FIX END ---
+
+  if (activeEntries.length === 0) return content;
 
   const { document } = parseHTML(`<div data-autolink-root="true">${content}</div>`);
   const root = document.querySelector("[data-autolink-root]");
@@ -507,7 +413,7 @@ filters.autoLink = function autoLink(content, page = {}, collections = {}, playe
   let current = walker.nextNode();
   while (current) {
     if (!hasSkipAncestor(current)) {
-      processTextNode(document, current, entries, linkCounts);
+      processTextNode(document, current, activeEntries, linkCounts);
     }
     current = walker.nextNode();
   }
@@ -515,17 +421,8 @@ filters.autoLink = function autoLink(content, page = {}, collections = {}, playe
   return root.innerHTML;
 };
 
-/**
- * Get player social media links from start.gg
- * @param {string} playerSlug - The player slug from start.gg (e.g., "menard", "punk")
- * @param {object} startggSocials - The startggSocials data object
- * @returns {object|null} - Social links object {twitter, twitch, discord} or null if not found
- */
 filters.getPlayerSocials = function (playerSlug, startggSocials) {
-  if (!playerSlug || !startggSocials || !startggSocials.players) {
-    return null;
-  }
-
+  if (!playerSlug || !startggSocials || !startggSocials.players) return null;
   const players = startggSocials.players;
   const slugKey = String(playerSlug);
   return players[slugKey] || players[slugKey.toLowerCase()] || null;
