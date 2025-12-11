@@ -6,7 +6,7 @@
   "scripts": {
     "build": "eleventy --config=.eleventy.js && npm run pagefind",
     "pagefind": "pagefind --site _site --output-subdir pagefind",
-    "dev:eleventy": "ELEVENTY_ENV=dev eleventy --config=.eleventy.js --serve --watch --incremental --port=8080 --input=./ --output=_site",
+    "dev:eleventy": "cross-env ELEVENTY_ENV=dev eleventy --config=.eleventy.js --serve --watch --incremental --port=8080 --input=./ --output=_site",
     "dev": "npm run dev:eleventy",
     "pagefind:watch": "onchange \"_site/**/*\" --exclude \"_site/pagefind/**\" --await-write-finish 200 --kill --initial -- npm run pagefind",
     "dev:search": "concurrently -k -n eleventy,pagefind -c auto \"npm:dev:eleventy\" \"npm:pagefind:watch\"",
@@ -32,10 +32,11 @@
     "@11ty/eleventy-fetch": "^5.1.0",
     "@11ty/eleventy-navigation": "^1.0.4",
     "concurrently": "^9.0.1",
-    "onchange": "^7.1.0",
-    "pagefind": "^1.0.4",
+    "cross-env": "^10.1.0",
     "dotenv": "^17.2.3",
-    "luxon": "^3.7.2"
+    "luxon": "^3.7.2",
+    "onchange": "^7.1.0",
+    "pagefind": "^1.0.4"
   },
   "dependencies": {
     "@quasibit/eleventy-plugin-sitemap": "^2.2.0",
