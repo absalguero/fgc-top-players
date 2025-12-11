@@ -1,1 +1,25 @@
-{}
+{
+  "next-level-battle-circuit-413": {
+    "name": "Next Level Battle Circuit 413",
+    "slug": "next-level-battle-circuit-413",
+    "startAt": 1766019600,
+    "endAt": 1766033940,
+    "startDate": "2025-12-17",
+    "endDate": "2025-12-17",
+    "dates": "Dec 17, 2025",
+    "location": "874 4th Ave, Brooklyn, NY 11232, USA",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/next-level-battle-circuit-413",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "Next Level Battle Circuit 413 is scheduled for Dec 17, 2025 in 874 4th Ave, Brooklyn, NY 11232, USA. Featuring Street Fighter 6. Registered top players include iDom.",
+    "notablePlayers": [
+      "iDom"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  }
+}
