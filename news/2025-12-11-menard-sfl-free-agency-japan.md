@@ -6,13 +6,7 @@ tags:
   - street fighter 6
   - menard
   - bandits
-  - flyquest
-  - 2game
-  - capcom
   - street fighter league
-  - strategy
-  - characters
-  - meta
 layout: article.njk
 date: 2025-12-11 00:00:00
 excerpt: "Fresh off an SFL US Championship with Bandits, MenaRD announces he is open to offers. This sparks rumors of a move to Street Fighter League Japan."
@@ -58,7 +52,7 @@ For the US, it opens a significant power vacuum. With the Bandits' captain poten
     <tbody>
       <tr><td><strong>1st / Blanka</strong></td><td>MenaRD</td><td>Bandits</td></tr>
       <tr><td><strong>2nd / Cammy</strong></td><td>Punk</td><td>FlyQuest</td></tr>
-      <tr><td><strong>3rd / Luke</strong></td><td>Blaz</td><td>2GAME</td></tr>
+      <tr><td><strong>3rd / Sagat</strong></td><td>Blaz</td><td>2GAME</td></tr>
     </tbody>
   </table>
 </div>
