@@ -15,7 +15,7 @@ video:
   title: "ARC WORLD TOUR 2025-2026 FINALS Hype Trailer"
   description: "Official announcement trailer for the AWT 2025-2026 Finals location and details."
   thumbnail: "https://img.youtube.com/vi/nTZE-KcmJ5I/maxresdefault.jpg"
-  uploadDate: "2025-12-09"
+  uploadDate: "2025-12-09T00:00:00+00:00"
   embedUrl: "https://www.youtube.com/embed/nTZE-KcmJ5I"
 ---
 

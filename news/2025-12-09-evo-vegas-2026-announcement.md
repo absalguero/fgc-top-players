@@ -26,7 +26,7 @@ video:
   title: "The 2026 Evo Announcement Show"
   description: "Evo 2026 Announcement Show featuring the full game reveal, dates for Evo Vegas and Evo Japan, and the return of the Evo Awards."
   thumbnail: "https://i.ytimg.com/vi/3zgaaEyMeg8/hqdefault.jpg"
-  uploadDate: "2025-12-10"
+  uploadDate: "2025-12-10T00:00:00+00:00"
   embedUrl: "https://www.youtube.com/embed/3zgaaEyMeg8"
 ---
 
