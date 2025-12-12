@@ -34,7 +34,7 @@
   },
   "headline": {{ pageTitle | dump | safe }},
   "image": [
-    "{{ site.url }}{{ image }}"
+    {{ ("" + site.url + image) | dump | safe }}
   ],
   "datePublished": "{{ date | date('yyyy-MM-ddTHH:mm:ssZZ') }}",
   "dateModified": "{{ date | date('yyyy-MM-ddTHH:mm:ssZZ') }}",
@@ -62,7 +62,7 @@
     "thumbnailUrl": [
       "{{ video.thumbnail }}"
     ],
-    "uploadDate": "{{ video.uploadDate | date('yyyy-MM-ddTHH:mm:ssZZ') }}",
+    "uploadDate": "{{ video.uploadDate }}", 
     "embedUrl": "{{ video.embedUrl }}"
   }
   {% endif %}
