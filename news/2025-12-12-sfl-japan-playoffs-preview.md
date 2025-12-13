@@ -19,6 +19,7 @@ excerpt: "The Street Fighter League Japan 2025 playoffs kick off this weekend, w
 * **KEI.B** enters the playoffs as the league’s top point scorer using the lethal Mai Shiranui.
 
 ---
+
 ## The Road to the Grand Finals begins Saturday
 
 The regular season has concluded and the matchups are locked for the **Street Fighter League: Pro-JP 2025 Playoffs**. Following months of intense competition in *Street Fighter 6*, the field has been whittled down to the top three teams from both Division S and Division F.
@@ -31,6 +32,7 @@ In Division F, **Team iXA** will square off against **ZETA DIVISION**. Team iXA�
 > — *[Shuto, Crazy Raccoon](https://saiganak.com/interview/sfl-pro-jp-2025-crazyraccoon/)*
 
 ---
+
 ## Division Finals and Broadcast Details
 
 The stakes raise even higher on **Sunday, December 14** when the winners of Saturday's bouts advance to face the division leaders.
@@ -41,9 +43,10 @@ Over in Division F, **Yogibo REJECT** (**Tokido, LeShar, Daigo, and Fuudo**) hol
 
 The winners of Sunday's Division Finals will officially qualify for the **SFL Pro-JP 2025 Grand Final** event scheduled for January 31, 2026.
 
-Fans can catch all the playoff action live on the official [Capcom Fighters YouTube](https://www.youtube.com/@CapcomFighters) and [Twitch](https://www.twitch.tv/capcomfighters) channels starting at **15:45 JST** on both days.
+This weekend's playoffs will be broadcast primarily as a **Pay-Per-View** event via **SPWN**. Viewers should note that unlike the regular season, the full matches may not be available for free on YouTube or Twitch immediately. The official [Capcom Fighters YouTube](https://www.youtube.com/@CapcomFighters) and [Twitch](https://www.twitch.tv/capcomfighters) channels are expected to air a **free preview** segment starting at **15:45 JST** (**10:45 PM PST** the previous day) on both days before switching to the paid broadcast for the main matches.
 
 ---
+
 ## Playoff Schedule & Standings
 
 <div class="table-wrapper m-auto max-w-90ch" style="margin-bottom: 40px; overflow-x: auto;">
@@ -65,9 +68,11 @@ Fans can catch all the playoff action live on the official [Capcom Fighters YouT
 </div>
 
 ---
+
 ## What’s Next
 
 Following this weekend's playoffs, the two victorious teams will have over a month to prepare for the live Grand Final in January. That event will not only crown the Japanese champion but also decide which team earns the right to face the champions of the US and European leagues at the **Street Fighter League World Championship** in March 2026.
 
 ---
+
 *Source: [Street Fighter League Official Website](https://sf.esports.capcom.com/sfl/)*

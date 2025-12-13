@@ -92,9 +92,15 @@ module.exports = async function (eleventyConfig) {
       tags.forEach((rawTag) => {
         if (typeof rawTag !== "string") return;
         const tag = rawTag.trim();
+        const lowerTag = tag.toLowerCase();
 
-        // Use your existing TAG_SKIP list to ignore internal tags
-        if (!tag || TAG_SKIP.has(tag.toLowerCase()) || tag === 'all' || tag === 'posts') return;
+        if (!tag || 
+            TAG_SKIP.has(lowerTag) || 
+            lowerTag === 'all' || 
+            lowerTag === 'posts' || 
+            lowerTag.startsWith('highlight')) { 
+          return; 
+        }
 
         if (!tagMap.has(tag)) {
           tagMap.set(tag, []);
@@ -133,6 +139,11 @@ module.exports = async function (eleventyConfig) {
         });
       }
     });
+
+    if (process.env.ELEVENTY_ENV === 'development') {
+      console.log('⚠️  DEV MODE: Limiting Tags to first 5 pages.');
+      return pagedTags.slice(0, 5); 
+    }
 
     return pagedTags;
   });
@@ -191,8 +202,26 @@ module.exports = async function (eleventyConfig) {
       });
     }
 
-    return out.sort((a, b) => (a.rank || Infinity) - (b.rank || Infinity));
+    const sortedPlayers = out.sort((a, b) => (a.rank || Infinity) - (b.rank || Infinity));
+
+    if (process.env.ELEVENTY_ENV === 'development') {
+      console.log('⚠️ DEV MODE: Building only top 40 players for speed.');
+      return sortedPlayers.slice(0, 40);
+    }
+
+    return sortedPlayers;
   });
+
+  eleventyConfig.addCollection("newsFeed", function (collectionApi) {
+  const allNews = collectionApi.getFilteredByTag("news");
+
+  if (process.env.ELEVENTY_ENV === 'development') {
+    console.log('⚠️  DEV MODE: Building only the 12 most recent news articles.');
+    return allNews.slice(-12);
+  }
+
+  return allNews;
+});
 
   eleventyConfig.setFrontMatterParsingOptions({
     excerpt: true,

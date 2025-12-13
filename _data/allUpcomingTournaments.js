@@ -303,6 +303,16 @@ module.exports = async function () {
   });
 
   const sorted = sortObjectByStartDate(tournaments);
-  Object.values(sorted).forEach(ensureDerivedDates);
+  Object.values(sorted).forEach(ensureDerivedDates);if (process.env.ELEVENTY_ENV === 'development') {
+    console.log('⚠️  DEV MODE: filtering for valid Rated Tournaments first...');
+    const validEntries = Object.entries(sorted).filter(([key, tournament]) => {
+      return tournament.tier !== undefined && !tournament.isArchived;
+    });
+
+    const limitedEntries = validEntries.slice(0, 6);
+    
+    console.log(`⚠️  DEV MODE: Returning ${limitedEntries.length} valid tournaments.`);
+    return Object.fromEntries(limitedEntries);
+  }
   return sorted;
 };

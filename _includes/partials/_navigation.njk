@@ -54,7 +54,8 @@
               {% endfor %}
             {% endif %}
             {% if not isActive and entry.url == "/tournament-results/" %}
-              {% if "/tournament-results" in page.url or "/tournaments/" in page.url %}
+              {# FIX: Check if page.url exists before searching inside it #}
+              {% if page.url and ("/tournament-results" in page.url or "/tournaments/" in page.url) %}
                 {% set isActive = true %}
               {% endif %}
             {% endif %}

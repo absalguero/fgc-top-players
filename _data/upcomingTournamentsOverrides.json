@@ -1,4 +1,75 @@
-{"fightclub-championship-vi-nansha": {
+{
+  "next-level-battle-circuit-413": {
+    "name": "Next Level Battle Circuit 413",
+    "slug": "next-level-battle-circuit-413",
+    "startAt": 1766019600,
+    "endAt": 1766033940,
+    "startDate": "2025-12-17",
+    "endDate": "2025-12-17",
+    "dates": "Dec 17, 2025",
+    "location": "874 4th Ave, Brooklyn, NY 11232, USA",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/next-level-battle-circuit-413",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "Next Level Battle Circuit 413 is scheduled for Dec 17, 2025 in 874 4th Ave, Brooklyn, NY 11232, USA. Featuring Street Fighter 6. Registered top players include iDom.",
+    "notablePlayers": [
+      "iDom"
+    ],
+    "isArchived": false,
+    "excludeFromSite": true
+  },
+  "winnerstayson-redemption-red-bull-gaming-sphere-december-13th-2025": {
+    "name": "WinnerStaysOn Redemption @ Red Bull Gaming Sphere - December 13th 2025",
+    "slug": "winnerstayson-redemption-red-bull-gaming-sphere-december-13th-2025",
+    "startAt": 1765623600,
+    "endAt": 1765656000,
+    "startDate": "2025-12-13",
+    "endDate": "2025-12-13",
+    "dates": "Dec 13, 2025",
+    "location": "Whitby St, London E1 6JT, UK",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/winnerstayson-redemption-red-bull-gaming-sphere-december-13th-2025",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "WinnerStaysOn Redemption @ Red Bull Gaming Sphere - December 13th 2025 is scheduled for Dec 13, 2025 in Whitby St, London E1 6JT, UK. Featuring Street Fighter 6. Registered top players include EndingWalker, Akainu.",
+    "notablePlayers": [
+      "EndingWalker",
+      "Akainu"
+    ],
+    "isArchived": false,
+    "excludeFromSite": true
+  },
+  "savage-saturday-52": {
+    "name": "Savage Saturday 52",
+    "slug": "savage-saturday-52",
+    "startAt": 1765674000,
+    "endAt": 1765688340,
+    "startDate": "2025-12-13",
+    "endDate": "2025-12-13",
+    "dates": "Dec 13, 2025",
+    "location": "874 4th Ave, Brooklyn, NY 11232, USA",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/savage-saturday-52",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "Savage Saturday 52 is scheduled for Dec 13, 2025 in 874 4th Ave, Brooklyn, NY 11232, USA. Featuring Street Fighter 6. Registered top players include iDom.",
+    "notablePlayers": [
+      "iDom"
+    ],
+    "isArchived": false,
+    "excludeFromSite": true
+  },
+  "fightclub-championship-vi-nansha": {
     "name": "FightClub Championship VI Nansha",
     "slug": "fightclub-championship-vi-nansha",
     "startAt": 1765684800,
@@ -27,6 +98,77 @@
     ],
     "isArchived": false,
     "excludeFromSite": false
+  },
+  "posada-gamer-2025": {
+    "name": "Posada Gamer 2025",
+    "slug": "posada-gamer-2025",
+    "startAt": 1765584000,
+    "endAt": 1765771200,
+    "startDate": "2025-12-12",
+    "endDate": "2025-12-14",
+    "dates": "Dec 12-14, 2025",
+    "location": "Av. Mariano Otero 3000, Jardines del Sol, 45050 Zapopan, Jal., México",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/posada-gamer-2025",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "Posada Gamer 2025 is scheduled for Dec 12-14, 2025 in Av. Mariano Otero 3000, Jardines del Sol, 45050 Zapopan, Jal., México. Featuring Street Fighter 6. Registered top players include MJ_Gama, AxL-.",
+    "notablePlayers": [
+      "MJ_Gama",
+      "AxL-"
+    ],
+    "isArchived": false,
+    "excludeFromSite": true
+  },
+  "concomics-2025-ingenia-gamerdome-fgc": {
+    "name": "Concomics 2025 - INGENIA Gamerdome (FGC)",
+    "slug": "concomics-2025-ingenia-gamerdome-fgc",
+    "startAt": 1765645200,
+    "endAt": 1765760400,
+    "startDate": "2025-12-13",
+    "endDate": "2025-12-14",
+    "dates": "Dec 13-14, 2025",
+    "location": "Av. Mariano Otero 1499, Verde Valle, 44550 Guadalajara, Jal., México",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/concomics-2025-ingenia-gamerdome-fgc",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "Concomics 2025 - INGENIA Gamerdome (FGC) is scheduled for Dec 13-14, 2025 in Av. Mariano Otero 1499, Verde Valle, 44550 Guadalajara, Jal., México. Featuring Street Fighter 6. Registered top players include AxL-.",
+    "notablePlayers": [
+      "AxL-"
+    ],
+    "isArchived": false,
+    "excludeFromSite": true
+  },
+  "posada-reset-2025": {
+    "name": "Posada Reset 2025",
+    "slug": "posada-reset-2025",
+    "startAt": 1766246400,
+    "endAt": 1766305800,
+    "startDate": "2025-12-20",
+    "endDate": "2025-12-21",
+    "dates": "Dec 20-21, 2025",
+    "location": "Manuel Navarrete 21, Algarín, Cuauhtémoc, 06880 Ciudad de México, CDMX, México",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/posada-reset-2025",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "Posada Reset 2025 is scheduled for Dec 20-21, 2025 in Manuel Navarrete 21, Algarín, Cuauhtémoc, 06880 Ciudad de México, CDMX, México. Featuring Street Fighter 6. Registered top players include LUGABO, MJ_Gama.",
+    "notablePlayers": [
+      "LUGABO",
+      "MJ_Gama"
+    ],
+    "isArchived": false,
+    "excludeFromSite": true
   },
   "frosty-faustings-xviii-2026": {
     "name": "Frosty Faustings XVIII 2026",
@@ -70,7 +212,7 @@
       "Zykles"
     ],
     "isArchived": false,
-    "excludeFromSite": true
+    "excludeFromSite": false
   },
   "capcom-cup-12": {
     "name": "Capcom Cup 12",
@@ -124,6 +266,44 @@
     "scheduleLink": "",
     "description": "<p>Texas Showdown 2026 marks the 25th anniversary of this longstanding tournament, scheduled to take place from March 27 through March 29, 2026. As one of the longest-running competitive events in the region, the tournament acts as a primary hub for players across the Southwest, offering a mix of official brackets and casual play.</p><p>The event is hosted at the Hilton Post Oak at the Galleria in Houston, Texas. This venue houses the main competition hall, providing space for tournament pools, finals, vendor areas, and community gaming setups throughout the weekend.</p><p>The 2026 lineup includes over 25 official tournaments, split between modern releases and legacy titles. Confirmed games include Street Fighter 6, TEKKEN 8, Mortal Kombat 1, and Fatal Fury: City of the Wolves, alongside classic competitions for Marvel vs. Capcom 2 and Super Street Fighter II Turbo.</p><p>Texas Showdown 2026 continues to operate as a central meeting point for the Fighting Game Community, providing a standardized tournament environment that accommodates both the latest competitive scenes and the preservation of retro fighting game history.</p>",
     "notablePlayers": [],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
+  "evo-japan-2026": {
+    "name": "Evo Japan 2026",
+    "slug": "evo-japan-2026",
+    "startAt": 1777593600,
+    "endAt": 1777809600,
+    "startDate": "2026-05-01",
+    "endDate": "2026-05-03",
+    "dates": "May 1-3, 2026",
+    "location": "3-chōme-11-1 Ariake, Koto City, Tokyo 135-0063, Japan",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/evo-japan-2026",
+    "tier": "S+",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "Evo Japan 2026 is scheduled for May 1-3, 2026 in 3-chōme-11-1 Ariake, Koto City, Tokyo 135-0063, Japan. Featuring Street Fighter 6. Registered top players include kobayan, Sahara., Higuchi, GO1, kingsvega, Zhen.",
+    "notablePlayers": [
+      "kobayan",
+      "Sahara.",
+      "Higuchi",
+      "GO1",
+      "kingsvega",
+      "Zhen",
+      "Kawano",
+      "Hikaru",
+      "Dogura",
+      "gachikun",
+      "Ryusei",
+      "kincho",
+      "Armperor",
+      "Yanai",
+      "matsu56",
+      "pugera"
+    ],
     "isArchived": false,
     "excludeFromSite": false
   }

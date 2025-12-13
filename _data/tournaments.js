@@ -147,7 +147,13 @@ module.exports = async function () {
       })
       .sort((a, b) => toEpoch(b.date) - toEpoch(a.date));
 
-    return { events: eventsArray };
+      let finalEvents = eventsArray;
+    if (process.env.ELEVENTY_ENV === 'development') {
+      console.log('⚠️  DEV MODE: Building only 6 tournament pages.');
+      finalEvents = eventsArray.slice(0, 6);
+    }
+
+    return { events: finalEvents };
   } catch (err) {
     console.error("❌ A critical error occurred in tournaments.js:", err);
     return { events: [] };
