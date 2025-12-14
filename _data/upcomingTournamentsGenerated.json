@@ -1,23 +1,25 @@
 {
-  "perfect-storm-2026": {
-    "name": "Perfect Storm 2026",
-    "slug": "perfect-storm-2026",
-    "startAt": 1770418800,
-    "endAt": 1770613140,
-    "startDate": "2026-02-06",
-    "endDate": "2026-02-08",
-    "dates": "Feb 6-8, 2026",
-    "location": "100 Kent St, Ottawa, ON K1P 5R7, Canada",
+  "posada-gamer-2025": {
+    "name": "Posada Gamer 2025",
+    "slug": "posada-gamer-2025",
+    "startAt": 1765584000,
+    "endAt": 1765771200,
+    "startDate": "2025-12-12",
+    "endDate": "2025-12-14",
+    "dates": "Dec 12-14, 2025",
+    "location": "Av. Mariano Otero 3000, Jardines del Sol, 45050 Zapopan, Jal., México",
     "venueName": "",
-    "url": "https://www.start.gg/tournament/perfect-storm-2026",
+    "url": "https://www.start.gg/tournament/posada-gamer-2025",
     "tier": "B",
     "prizes": "TBA",
     "game": "Street Fighter 6",
     "streamLink": "",
     "scheduleLink": "",
-    "description": "Perfect Storm 2026 is scheduled for Feb 6-8, 2026 in 100 Kent St, Ottawa, ON K1P 5R7, Canada. Featuring Street Fighter 6. Registered top players include Zykles.",
+    "description": "Posada Gamer 2025 is scheduled for Dec 12-14, 2025 in Av. Mariano Otero 3000, Jardines del Sol, 45050 Zapopan, Jal., México. Featuring Street Fighter 6. Registered top players include MJ_Gama, AxL-, Uriel Velorio.",
     "notablePlayers": [
-      "Zykles"
+      "MJ_Gama",
+      "AxL-",
+      "Uriel Velorio"
     ],
     "isArchived": false,
     "excludeFromSite": false

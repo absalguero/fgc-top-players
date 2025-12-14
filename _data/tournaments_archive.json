@@ -20328,7 +20328,7 @@
       },
       {
         "Player": "z_xiri",
-        "Player ID": "",
+        "Player ID": "z_xiri",
         "Event": "HERO ESPORTS Asian Champions League 2025",
         "Event ID": "hero-esports-asian-champions-league-2",
         "Date": "2025-05-16",
@@ -20618,7 +20618,7 @@
       },
       {
         "Player": "MarXD",
-        "Player ID": "",
+        "Player ID": "hotmarxd",
         "Event": "HERO ESPORTS Asian Champions League 2025",
         "Event ID": "hero-esports-asian-champions-league-2",
         "Date": "2025-05-16",
@@ -33598,7 +33598,7 @@
       },
       {
         "Player": "z_xiri",
-        "Player ID": "",
+        "Player ID": "z_xiri",
         "Event": "Esports World Cup 2025 Last Change Qualifier (LCQ)",
         "Event ID": "",
         "Date": "2025-08-14",
@@ -56214,6 +56214,266 @@
         "Date": "2025-12-07",
         "Finish": "49",
         "Entrants": "54",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "posada-gamer-2025": {
+    "name": "Posada Gamer 2025",
+    "date": "2025-12-12",
+    "slug": "posada-gamer-2025",
+    "Tier": "B",
+    "Entrants": "16",
+    "results": [
+      {
+        "Player": "MJ_Gama",
+        "Player ID": "4484e542",
+        "Event": "Posada Gamer 2025",
+        "Event ID": "posada-gamer-2025",
+        "Date": "2025-12-13",
+        "Finish": "1",
+        "Entrants": "16",
+        "Tier": "B"
+      },
+      {
+        "Player": "Uriel Velorio",
+        "Player ID": "55790db9",
+        "Event": "Posada Gamer 2025",
+        "Event ID": "posada-gamer-2025",
+        "Date": "2025-12-13",
+        "Finish": "2",
+        "Entrants": "16",
+        "Tier": "B"
+      },
+      {
+        "Player": "AxL-",
+        "Player ID": "43824b1a",
+        "Event": "Posada Gamer 2025",
+        "Event ID": "posada-gamer-2025",
+        "Date": "2025-12-13",
+        "Finish": "3",
+        "Entrants": "16",
+        "Tier": "B"
+      },
+      {
+        "Player": "Vicaron",
+        "Player ID": "6763dcf4",
+        "Event": "Posada Gamer 2025",
+        "Event ID": "posada-gamer-2025",
+        "Date": "2025-12-13",
+        "Finish": "4",
+        "Entrants": "16",
+        "Tier": "B"
+      },
+      {
+        "Player": "Yeriko",
+        "Player ID": "933516f3",
+        "Event": "Posada Gamer 2025",
+        "Event ID": "posada-gamer-2025",
+        "Date": "2025-12-13",
+        "Finish": "5",
+        "Entrants": "16",
+        "Tier": "B"
+      },
+      {
+        "Player": "DiegoMaquinito",
+        "Player ID": "a5597c9c",
+        "Event": "Posada Gamer 2025",
+        "Event ID": "posada-gamer-2025",
+        "Date": "2025-12-13",
+        "Finish": "5",
+        "Entrants": "16",
+        "Tier": "B"
+      },
+      {
+        "Player": "FuerzaDON",
+        "Player ID": "1e917a9f",
+        "Event": "Posada Gamer 2025",
+        "Event ID": "posada-gamer-2025",
+        "Date": "2025-12-13",
+        "Finish": "7",
+        "Entrants": "16",
+        "Tier": "B"
+      },
+      {
+        "Player": "yaeru",
+        "Player ID": "307e7018",
+        "Event": "Posada Gamer 2025",
+        "Event ID": "posada-gamer-2025",
+        "Date": "2025-12-13",
+        "Finish": "7",
+        "Entrants": "16",
+        "Tier": "B"
+      },
+      {
+        "Player": "Shin",
+        "Player ID": "0c4fb5e0",
+        "Event": "Posada Gamer 2025",
+        "Event ID": "posada-gamer-2025",
+        "Date": "2025-12-13",
+        "Finish": "9",
+        "Entrants": "16",
+        "Tier": "B"
+      },
+      {
+        "Player": "EGHCO",
+        "Player ID": "ee9946fa",
+        "Event": "Posada Gamer 2025",
+        "Event ID": "posada-gamer-2025",
+        "Date": "2025-12-13",
+        "Finish": "9",
+        "Entrants": "16",
+        "Tier": "B"
+      },
+      {
+        "Player": "Nalga",
+        "Player ID": "4d8f0953",
+        "Event": "Posada Gamer 2025",
+        "Event ID": "posada-gamer-2025",
+        "Date": "2025-12-13",
+        "Finish": "9",
+        "Entrants": "16",
+        "Tier": "B"
+      },
+      {
+        "Player": "yuuki natsuki",
+        "Player ID": "8f090240",
+        "Event": "Posada Gamer 2025",
+        "Event ID": "posada-gamer-2025",
+        "Date": "2025-12-13",
+        "Finish": "9",
+        "Entrants": "16",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rookie",
+        "Player ID": "50102a2e",
+        "Event": "Posada Gamer 2025",
+        "Event ID": "posada-gamer-2025",
+        "Date": "2025-12-13",
+        "Finish": "13",
+        "Entrants": "16",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rython",
+        "Player ID": "ca3b8a4a",
+        "Event": "Posada Gamer 2025",
+        "Event ID": "posada-gamer-2025",
+        "Date": "2025-12-13",
+        "Finish": "13",
+        "Entrants": "16",
+        "Tier": "B"
+      },
+      {
+        "Player": "Aetheriosz",
+        "Player ID": "ff0a7eb4",
+        "Event": "Posada Gamer 2025",
+        "Event ID": "posada-gamer-2025",
+        "Date": "2025-12-13",
+        "Finish": "13",
+        "Entrants": "16",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kim_Apb",
+        "Player ID": "d08b20e5",
+        "Event": "Posada Gamer 2025",
+        "Event ID": "posada-gamer-2025",
+        "Date": "2025-12-13",
+        "Finish": "13",
+        "Entrants": "16",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "fightclub-championship-vi-nansha-world-warrior-china-regional-finals-2025": {
+    "name": "FightClub Championship VI Nansha World Warrior China Regional Finals 2025",
+    "date": "2025-12-12",
+    "slug": "fightclub-championship-vi-nansha-world-warrior-china-regional-finals-2025",
+    "Tier": "B",
+    "Entrants": "8",
+    "results": [
+      {
+        "Player": "Jiewa",
+        "Player ID": "be8eb9f8",
+        "Event": "FightClub Championship VI Nansha World Warrior China Regional Finals 2025",
+        "Event ID": "fightclub-championship-vi-nansha-world-warrior-china-regional-finals-2025",
+        "Date": "2025-12-13",
+        "Finish": "1",
+        "Entrants": "8",
+        "Tier": "B"
+      },
+      {
+        "Player": "Zhen",
+        "Player ID": "0186079f",
+        "Event": "FightClub Championship VI Nansha World Warrior China Regional Finals 2025",
+        "Event ID": "fightclub-championship-vi-nansha-world-warrior-china-regional-finals-2025",
+        "Date": "2025-12-13",
+        "Finish": "2",
+        "Entrants": "8",
+        "Tier": "B"
+      },
+      {
+        "Player": "DCQ",
+        "Player ID": "ae2f4ff8",
+        "Event": "FightClub Championship VI Nansha World Warrior China Regional Finals 2025",
+        "Event ID": "fightclub-championship-vi-nansha-world-warrior-china-regional-finals-2025",
+        "Date": "2025-12-13",
+        "Finish": "3",
+        "Entrants": "8",
+        "Tier": "B"
+      },
+      {
+        "Player": "XIAOHU",
+        "Player ID": "gtwxiaohu",
+        "Event": "FightClub Championship VI Nansha World Warrior China Regional Finals 2025",
+        "Event ID": "fightclub-championship-vi-nansha-world-warrior-china-regional-finals-2025",
+        "Date": "2025-12-13",
+        "Finish": "4",
+        "Entrants": "8",
+        "Tier": "B"
+      },
+      {
+        "Player": "z_xiri",
+        "Player ID": "z_xiri",
+        "Event": "FightClub Championship VI Nansha World Warrior China Regional Finals 2025",
+        "Event ID": "fightclub-championship-vi-nansha-world-warrior-china-regional-finals-2025",
+        "Date": "2025-12-13",
+        "Finish": "5",
+        "Entrants": "8",
+        "Tier": "B"
+      },
+      {
+        "Player": "YANGMIAN",
+        "Player ID": "jdgyutao",
+        "Event": "FightClub Championship VI Nansha World Warrior China Regional Finals 2025",
+        "Event ID": "fightclub-championship-vi-nansha-world-warrior-china-regional-finals-2025",
+        "Date": "2025-12-13",
+        "Finish": "5",
+        "Entrants": "8",
+        "Tier": "B"
+      },
+      {
+        "Player": "MarXD",
+        "Player ID": "hotmarxd",
+        "Event": "FightClub Championship VI Nansha World Warrior China Regional Finals 2025",
+        "Event ID": "fightclub-championship-vi-nansha-world-warrior-china-regional-finals-2025",
+        "Date": "2025-12-13",
+        "Finish": "7",
+        "Entrants": "8",
+        "Tier": "B"
+      },
+      {
+        "Player": "PINKSTAR",
+        "Player ID": "hjkpinkstar",
+        "Event": "FightClub Championship VI Nansha World Warrior China Regional Finals 2025",
+        "Event ID": "fightclub-championship-vi-nansha-world-warrior-china-regional-finals-2025",
+        "Date": "2025-12-13",
+        "Finish": "7",
+        "Entrants": "8",
         "Tier": "B"
       }
     ],
