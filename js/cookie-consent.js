@@ -1,53 +1,50 @@
-/**
- * Cookie Consent Helper & Status Updater
- * 1. Re-opens Google's native consent modal from footer.
- * 2. Listens for consent changes and updates Gtag manually (Safety Net).
- */
-
 document.addEventListener('DOMContentLoaded', () => {
-    
-    // --- 1. Footer Link Functionality ---
-    const footerCookieBtn = document.getElementById('footer-cookie-settings');
+    const banner = document.getElementById('custom-consent-banner');
+    const acceptBtn = document.getElementById('btn-accept');
+    const rejectBtn = document.getElementById('btn-reject');
+    const footerSettingsBtn = document.getElementById('footer-cookie-settings');
 
-    if (footerCookieBtn) {
-        footerCookieBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            if (window.googlefc && typeof window.googlefc.callbackQueue !== 'undefined') {
-                window.googlefc.callbackQueue.push(window.googlefc.showRevocationMessage);
-            } else {
-                console.warn('Google CMP not ready or blocked by extension.');
-                alert('Cookie preferences are managed by Google. Please disable ad blockers to modify your settings.');
-            }
-        });
-        console.log('Cookie consent helper initialized: Footer link active.');
+    // 1. Check Local Storage on load
+    // If no choice is stored, show the banner
+    if (!localStorage.getItem('site_consent_mode')) {
+        if(banner) banner.style.display = 'block';
     }
 
-    // --- 2. Gtag Update Logic (The "Bridge") ---
-    // This watches for the standard IAB TCF (Consent Framework) API 
-    // which Google uses behind the scenes.
-    
-    const updateGtagConsent = (tcData) => {
-        // If the CMP says we have valid consent data
-        if (tcData && tcData.eventStatus === 'tcloaded' || tcData.eventStatus === 'useractioncomplete') {
-            
-            // We blindly assume "granted" if the user completed the flow, 
-            // strictly to override the "denied" default. 
-            // Google's script usually handles the granular details, 
-            // but this ensures the 'denied' flag is lifted.
-            
-            console.log('Consent action detected. Updating Gtag...');
-            
-            gtag('consent', 'update', {
-                'ad_storage': 'granted',
-                'ad_user_data': 'granted',
-                'ad_personalization': 'granted',
-                'analytics_storage': 'granted'
-            });
-        }
-    };
+    // 2. Helper to Update Consent
+    function updateConsent(state) {
+        const consentSettings = {
+            'ad_storage': state,
+            'ad_user_data': state,
+            'ad_personalization': state,
+            'analytics_storage': state
+        };
 
-    // Check if the TCF API exists (Standard for Google Funding Choices)
-    if (typeof window.__tcfapi !== 'undefined') {
-        window.__tcfapi('addEventListener', 2, updateGtagConsent);
+        // Send signal to Google (Gtag)
+        if (typeof gtag === 'function') {
+            gtag('consent', 'update', consentSettings);
+        }
+
+        // Save to storage
+        localStorage.setItem('site_consent_mode', JSON.stringify(consentSettings));
+
+        // Hide banner
+        if(banner) banner.style.display = 'none';
+    }
+
+    // 3. Button Listeners
+    if (acceptBtn) {
+        acceptBtn.addEventListener('click', () => updateConsent('granted'));
+    }
+
+    if (rejectBtn) {
+        rejectBtn.addEventListener('click', () => updateConsent('denied'));
+    }
+
+    // 4. Re-open settings from Footer Link
+    if (footerSettingsBtn) {
+        footerSettingsBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if(banner) banner.style.display = 'block';
+        });
     }
 });

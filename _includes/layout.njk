@@ -312,6 +312,22 @@
         <i class="fas fa-chevron-up"></i>
     </button>
 
+    <div id="custom-consent-banner" class="consent-banner" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="consent-title">
+        <div class="consent-content">
+            <div class="consent-text">
+                <h4 id="consent-title" style="margin:0; color: #fff;">We value your privacy</h4>
+                <p style="margin:0; font-size: 0.9rem;">
+                    We use cookies to analyze traffic and improve your experience. 
+                    <a href="/privacy-policy" style="color: var(--color-accent-blue);">Read our Privacy Policy</a>.
+                </p>
+            </div>
+            <div class="consent-buttons">
+                <button id="btn-reject" class="btn btn--secondary btn--small">Decline</button>
+                <button id="btn-accept" class="btn btn--primary btn--small">Accept</button>
+            </div>
+        </div>
+    </div>
+
     <script type="module" src="/js/siteSearch.js"></script>
     <script src="/js/cookie-consent.js"></script>
     {% block scripts %}{% endblock %}

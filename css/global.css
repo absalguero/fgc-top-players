@@ -5459,44 +5459,6 @@ body.mobile-nav-open {
     top: 50px; /* Height of the shorter landscape header */
   }
 }
-
-/* ===========================
-   AD UNITS & MONETIZATION
-   =========================== */
-
-.ad-container {
-  text-align: center;
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px dashed var(--color-border);
-  padding: 1rem;
-  border-radius: var(--border-radius);
-  overflow: hidden;
-}
-
-.ad-label {
-  display: block;
-  font-size: 0.7rem;
-  color: var(--color-text-secondary);
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-/* Header Ad (Leaderboard) */
-.ad-container--header {
-  /* Resets top margin to sit flush with breadcrumbs/nav */
-  margin-top: 0; 
-  /* Sets exactly 0.5rem space below, as requested */
-  margin-bottom: 0.5rem; 
-  min-height: 100px;
-}
-
-/* Sidebar Ad (Rectangle/Skyscraper) */
-.ad-container--sidebar {
-  /* Matches the margin-bottom of your .sidebar-event-card (var(--spacing-md) = 1rem) */
-  margin-bottom: var(--spacing-md);
-  min-height: 250px;
-}
 /* Mobile fix for site search panel header visibility */
 @media (max-width: 767px) {
   .site-search-panel {
@@ -5625,4 +5587,98 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance: none;
   appearance: none;
+}
+
+/* ===========================
+   CUSTOM CONSENT BANNER
+   =========================== */
+.consent-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* Dark background with slight transparency */
+    background: rgba(18, 18, 18, 0.98);
+    border-top: 1px solid var(--color-border);
+    padding: 1rem;
+    z-index: 9999;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.5);
+    animation: slideUp 0.3s ease-out;
+}
+
+.consent-content {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    /* FIX: This brings the text and buttons together in the center */
+    justify-content: center;
+    
+    /* Adds nice breathing room between text and buttons */
+    gap: 1.5rem; 
+}
+
+.consent-text {
+    flex: 0 1 auto;
+    max-width: 600px;
+    text-align: center; /* Ensures text is centered if it wraps */
+}
+
+.consent-text h4 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem !important;
+    color: #fff;
+}
+
+.consent-text p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: var(--color-text-secondary);
+}
+
+.consent-buttons {
+    display: flex;
+    gap: 0.75rem;
+    flex-shrink: 0;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+}
+
+/* --- MOBILE LAYOUT (Compact & Stacked) --- */
+@media (max-width: 767px) {
+    .consent-banner {
+        padding: 0.75rem 1rem;
+    }
+
+    .consent-content {
+        gap: 0.75rem;
+        flex-direction: column; /* Stack vertically on small screens */
+        align-items: stretch;
+    }
+
+    .consent-text {
+        text-align: left; /* Left align on mobile for readability */
+        max-width: 100%;
+    }
+    
+    /* Side-by-side buttons on mobile to save vertical space */
+    .consent-buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        gap: 0.75rem;
+    }
+
+    .consent-buttons .btn {
+        width: 100%;
+        justify-content: center;
+        padding: 0.5rem !important;
+        min-height: 36px !important;
+    }
 }
