@@ -1,7 +1,7 @@
 ---
 title: "SonicFox Joins FlyQuest: FGC Legend Signs With Organization"
 layout: article.njk
-date: 2025-12-15 06:30:00
+date: 2025-12-12 23:30:00
 tags:
   - news
   - esports
