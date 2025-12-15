@@ -1,5 +1,5 @@
 ---
-title: "Scandal in MEA3: Bandai Namco Bans Organizers for Rigging Matches to Aid Specific Player"
+title: "Bandai Namco Permanently Bans MEA3 Organizers, Revokes Dojo Points Over Collusion"
 layout: article.njk
 date: 2025-12-11 23:05:00
 tags:
