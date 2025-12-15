@@ -6,6 +6,7 @@ tags:
   - strategy
   - characters
   - meta
+  - patch notes
 layout: article.njk
 date: 2025-12-08 11:00:00
 excerpt: "With the release of Patch 1.6.0, Mr. Big arrives in South Town to challenge the dominance of the top tier. We analyze his kit, the new frame meter, and if 'The Wall' can finally be broken."

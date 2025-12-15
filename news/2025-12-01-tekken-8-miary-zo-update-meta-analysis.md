@@ -6,6 +6,7 @@ tags:
   - characters
   - meta
   - strategy
+  - patch notes
 layout: article.njk
 date: 2025-12-01 00:00:00
 excerpt: "Bandai Namco has released Update v2.08 for Tekken 8 with newcomer Miary Zo. The patch focuses on new content and bug fixes while leaving the existing character balance untouched."
