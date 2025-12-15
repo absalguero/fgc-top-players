@@ -56478,5 +56478,375 @@
       }
     ],
     "isArchived": false
+  },
+  "concomics-2025-ingenia-gamerdome": {
+    "name": "Concomics 2025 - INGENIA Gamerdome",
+    "date": "2025-12-13",
+    "slug": "concomics-2025-ingenia-gamerdome",
+    "Tier": "B",
+    "Entrants": "36",
+    "results": [
+      {
+        "Player": "AxL-",
+        "Player ID": "43824b1a",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "1",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "MJ_Gama",
+        "Player ID": "4484e542",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "2",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Vicaron",
+        "Player ID": "6763dcf4",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "3",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Milo Scorpius",
+        "Player ID": "7309efb6",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "4",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "DiegoMaquinito",
+        "Player ID": "a5597c9c",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "5",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mauhvenom",
+        "Player ID": "22e10f38",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "5",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "TT/Lingas",
+        "Player ID": "d63e076a",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "7",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kolbe",
+        "Player ID": "fb569999",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "7",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Yeriko",
+        "Player ID": "933516f3",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "9",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "RicaTumbado",
+        "Player ID": "a4b2c2ce",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "9",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Allanwarre",
+        "Player ID": "c2c4f290",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "9",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Trent",
+        "Player ID": "5ed598c6",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "9",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Sailor Boo",
+        "Player ID": "086af393",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "13",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "MARMOTA EKUN",
+        "Player ID": "24a321e9",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "13",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "PabloRodri",
+        "Player ID": "b65f8028",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "13",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Shin",
+        "Player ID": "0c4fb5e0",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "13",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "GEO",
+        "Player ID": "geo",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "17",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rython",
+        "Player ID": "ca3b8a4a",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "17",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kim_Apb",
+        "Player ID": "d08b20e5",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "17",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "tera",
+        "Player ID": "tera",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "17",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "ADRIELLOW",
+        "Player ID": "0aeb02d4",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "17",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "SPACE",
+        "Player ID": "space",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "17",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Boyka_OSC",
+        "Player ID": "5688d4fc",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "17",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "yaeru",
+        "Player ID": "307e7018",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "17",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Hayabusa",
+        "Player ID": "5e51d56b",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "25",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Zelryuk",
+        "Player ID": "bf580be6",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "25",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "MrDino023",
+        "Player ID": "7b0d3b8a",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "25",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "MemoriaFGC",
+        "Player ID": "b279b92e",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "25",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kurisu Quil",
+        "Player ID": "56f7e672",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "25",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Brianzard",
+        "Player ID": "79910a87",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "25",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "PMXHOMIE",
+        "Player ID": "98004a72",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "25",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "YAHEL",
+        "Player ID": "7b4d6777",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "25",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Teretenni",
+        "Player ID": "teretenni",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "33",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "The Wind",
+        "Player ID": "92c33ad7",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "33",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Tako",
+        "Player ID": "37da2cbc",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "33",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Papá Tulinos",
+        "Player ID": "5a502265",
+        "Event": "Concomics 2025 - INGENIA Gamerdome",
+        "Event ID": "concomics-2025-ingenia-gamerdome-fgc",
+        "Date": "2025-12-14",
+        "Finish": "33",
+        "Entrants": "36",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
   }
 }
