@@ -6,6 +6,7 @@ tags:
   - news
   - street fighter 6
   - broski
+  - shuto
   - meta
   - characters
 video:
@@ -44,7 +45,7 @@ While the West focused on Mai, the Japanese competitive scene, which heavily fav
 Crazy Raccoon's **Shuto** voiced this sentiment, noting that despite Capcom's promise of yearly updates, the lack of intermediate adjustments has hurt the game's excitement.
 
 > **"I got the impression that this year was boring for many people... Personally, I think it would be ideal if they made small adjustments for each act."**
-> — *Shuto, Crazy Raccoon*
+> — *[Shuto, Crazy Raccoon](https://x.com/Shuto_fgc/status/2000406676671787190)*
 
 The "Ed stocks" remain at an all-time high in Japan, and this patch does nothing to lower his value, potentially cementing his dominance until the major Season 3 update.
 
