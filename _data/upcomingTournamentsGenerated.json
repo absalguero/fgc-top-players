@@ -1,27 +1,4 @@
 {
-  "wonderverse-weekly-12-16": {
-    "name": "Wonderverse Weekly 12/16",
-    "slug": "wonderverse-weekly-12-16",
-    "startAt": 1765933200,
-    "endAt": 1765947600,
-    "startDate": "2025-12-16",
-    "endDate": "2025-12-16",
-    "dates": "Dec 16, 2025",
-    "location": "2310 Oakbrook Center, Oak Brook, IL 60523, USA",
-    "venueName": "",
-    "url": "https://www.start.gg/tournament/wonderverse-weekly-12-16",
-    "tier": "B",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "Wonderverse Weekly 12/16 is scheduled for Dec 16, 2025 in 2310 Oakbrook Center, Oak Brook, IL 60523, USA. Featuring Street Fighter 6. Registered top players include Play_guy.",
-    "notablePlayers": [
-      "Play_guy"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
   "evo-japan-2026": {
     "name": "Evo Japan 2026",
     "slug": "evo-japan-2026",

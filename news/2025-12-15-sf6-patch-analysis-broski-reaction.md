@@ -13,7 +13,7 @@ video:
   title: "It's real and it's small"
   description: "Broski analyzes the hidden impacts of the December SF6 patch and Japanese community reactions."
   thumbnail: "https://img.youtube.com/vi/qY-XnTkXEHc/maxresdefault.jpg"
-  uploadDate: "2025-12-15"
+  uploadDate: "2025-12-15T12:00:00+00:00"
   embedUrl: "https://www.youtube.com/embed/qY-XnTkXEHc"
 excerpt: "While the patch notes list nerfs, top players argue the \"safe\" update leaves the true meta threats untouched."
 description: "In-depth Street Fighter 6 patch analysis: Broski and Japanese pros react to Mai's throw loop nerf and the untouched dominance of Ed."
