@@ -246,27 +246,54 @@ navHighlight: "Home"
 
   </div>
 
-  {# --- Pagination Controls --- #}
-  <nav class="pagination-nav" aria-label="Pagination" style="margin-top: 1rem; width: 100%;">
-    {% if pagination.href.previous %}
-      <a href="{{ pagination.href.previous }}" class="pagination-nav__link" rel="prev">&larr; Previous Page</a>
-    {% else %}
-      <span class="pagination-nav__link--disabled">&larr; Previous Page</span>
+  {# --- Pagination Controls (Logic Only Update) --- #}
+<nav class="pagination-nav" aria-label="Pagination" style="margin-top: 1rem; width: 100%;">
+  
+  {# Previous Page #}
+  {% if pagination.href.previous %}
+    <a href="{{ pagination.href.previous }}" class="pagination-nav__link" rel="prev">&larr; Previous Page</a>
+  {% else %}
+    <span class="pagination-nav__link--disabled">&larr; Previous Page</span>
+  {% endif %}
+
+  {# Sliding Window Variables #}
+  {% set current = pagination.pageNumber %}
+  {% set total = pagination.pages | length %}
+  {% set windowSize = 2 %}
+
+  {% for pageEntry in pagination.pages %}
+    {% set idx = loop.index0 %}
+    {% set num = loop.index %}
+    
+    {# Logic: Show first, last, and pages around current #}
+    {% set showPage = false %}
+    {% if idx == 0 or idx == total - 1 or (idx >= current - windowSize and idx <= current + windowSize) %}
+      {% set showPage = true %}
     {% endif %}
 
-    {% for pageEntry in pagination.pages %}
-      {% set pageUrl = pagination.hrefs[loop.index0] %}
-      <a href="{{ pageUrl }}" class="pagination-nav__link {% if pageUrl == page.url %}pagination-nav__link--active{% endif %}" aria-label="Go to page {{ loop.index }}">
-        {{ loop.index }}
+    {% if showPage %}
+      <a href="{{ pagination.hrefs[idx] }}" 
+         class="pagination-nav__link {% if idx == current %}pagination-nav__link--active{% endif %}" 
+         aria-label="Go to page {{ num }}">
+        {{ num }}
       </a>
-    {% endfor %}
-
-    {% if pagination.href.next %}
-      <a href="{{ pagination.href.next }}" class="pagination-nav__link" rel="next">Next Page &rarr;</a>
     {% else %}
-      <span class="pagination-nav__link--disabled">Next Page &rarr;</span>
+      {# Only show the ellipsis if we are exactly on the boundary of the window #}
+      {% if idx == 1 and current > (windowSize + 1) %}
+        <span class="pagination-spacer">...</span>
+      {% elif idx == (total - 2) and current < (total - windowSize - 2) %}
+        <span class="pagination-spacer">...</span>
+      {% endif %}
     {% endif %}
-  </nav>
+  {% endfor %}
+
+  {# Next Page #}
+  {% if pagination.href.next %}
+    <a href="{{ pagination.href.next }}" class="pagination-nav__link" rel="next">Next Page &rarr;</a>
+  {% else %}
+    <span class="pagination-nav__link--disabled">Next Page &rarr;</span>
+  {% endif %}
+</nav>
 
 </div>
 

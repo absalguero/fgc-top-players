@@ -1782,6 +1782,12 @@ th.reverse-arrow.sorted.asc .sort-icon { transform: rotate(0deg) !important; }
   transition: background-color 0.2s, color 0.2s, border-color 0.2s;
 }
 
+.pagination-spacer {
+  color: var(--color-text-secondary);
+  padding: 0 0.5rem;
+  font-weight: bold;
+}
+
 .pagination-nav__link:hover {
   background-color: var(--color-accent-blue);
   color: var(--color-text-primary);
