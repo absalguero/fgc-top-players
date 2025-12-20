@@ -50,6 +50,27 @@ The 15th iteration of the Charity Cup marks the largest gathering of Street Figh
   </table>
 </div>
 
+## Final Tournament Results
+The 15th iteration of the cup remains one of the largest competitive gatherings in fighting game history.
+
+<div class="table-wrapper m-auto max-w-90ch" style="margin-bottom: 40px; overflow-x: auto;">
+  <table class="data-table" style="min-width: 100%;">
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Team Name</th>
+        <th>Players</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>1st</strong></td><td><strong>I'll show you</strong></td><td>JPKING, DakCorgi, Armperor, SURINI, beggar</td></tr>
+      <tr><td><strong>2nd</strong></td><td><strong>昼でも夜でもラヴーシュカ (Hiru demo Yoru demo Lavshuca)</strong></td><td>takum1015, taketake-piano, tak., Miguel Ito, Yujiro</td></tr>
+      <tr><td><strong>3rd-4th</strong></td><td><strong>CR (Crazy Raccoon)</strong></td><td>Tachikawa, Shuto, Kazunoko, Waiwai, Takagi</td></tr>
+      <tr><td><strong>3rd-4th</strong></td><td><strong>おすしまる (Osushimaru)</strong></td><td>Kamizuki, Yoshikibi, Shumai, Jr., Bulge</td></tr>
+    </tbody>
+  </table>
+</div>
+
 ## What’s Next
 The winners of the 15th TOPANGA Charity Cup will cement their legacy in one of the community's most respected events. Following the tournament, the Japanese scene will prepare for the final major events of 2025, including the Capcom Pro Tour regional conclusions and the Street Fighter League playoffs.
 
