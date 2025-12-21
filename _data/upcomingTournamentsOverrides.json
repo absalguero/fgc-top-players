@@ -1,50 +1,4 @@
 {
-  "next-level-battle-circuit-413": {
-    "name": "Next Level Battle Circuit 413",
-    "slug": "next-level-battle-circuit-413",
-    "startAt": 1766019600,
-    "endAt": 1766033940,
-    "startDate": "2025-12-17",
-    "endDate": "2025-12-17",
-    "dates": "Dec 17, 2025",
-    "location": "874 4th Ave, Brooklyn, NY 11232, USA",
-    "venueName": "",
-    "url": "https://www.start.gg/tournament/next-level-battle-circuit-413",
-    "tier": "B",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "Next Level Battle Circuit 413 is scheduled for Dec 17, 2025 in 874 4th Ave, Brooklyn, NY 11232, USA. Featuring Street Fighter 6. Registered top players include iDom.",
-    "notablePlayers": [
-      "iDom"
-    ],
-    "isArchived": false,
-    "excludeFromSite": true
-  },
-  "concomics-2025-ingenia-gamerdome-fgc": {
-    "name": "Concomics 2025 - INGENIA Gamerdome (FGC)",
-    "slug": "concomics-2025-ingenia-gamerdome-fgc",
-    "startAt": 1765645200,
-    "endAt": 1765760400,
-    "startDate": "2025-12-13",
-    "endDate": "2025-12-14",
-    "dates": "Dec 13-14, 2025",
-    "location": "Av. Mariano Otero 1499, Verde Valle, 44550 Guadalajara, Jal., México",
-    "venueName": "",
-    "url": "https://www.start.gg/tournament/concomics-2025-ingenia-gamerdome-fgc",
-    "tier": "B",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "Concomics 2025 - INGENIA Gamerdome (FGC) is scheduled for Dec 13-14, 2025 in Av. Mariano Otero 1499, Verde Valle, 44550 Guadalajara, Jal., México. Featuring Street Fighter 6. Registered top players include AxL-.",
-    "notablePlayers": [
-      "AxL-"
-    ],
-    "isArchived": false,
-    "excludeFromSite": true
-  },
   "posada-reset-2025": {
     "name": "Posada Reset 2025",
     "slug": "posada-reset-2025",
@@ -68,6 +22,31 @@
     ],
     "isArchived": false,
     "excludeFromSite": true
+  },
+  "autplayed-2026": {
+    "name": "AUTplayed 2026",
+    "slug": "autplayed-2026",
+    "startAt": 1736496000,
+    "endAt": 1736639999,
+    "startDate": "2026-01-10",
+    "endDate": "2026-01-11",
+    "dates": "Jan 10 - 11, 2026",
+    "location": "Am Stadtpark 1, 1030 Wien, Austria",
+    "venueName": "Hilton Hotel Vienna Park",
+    "url": "https://www.autplayed.com/",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "<p>AUTplayed 2026 serves as the fifth anniversary milestone for Austria's premier fighting game tournament. Scheduled for January 10 and 11, 2026, the event is organized by Virtual Dojo Vienna and takes place at the Hilton Hotel Vienna Park. The tournament has earned Gold Event status for the Arc World Tour 2025 through 2026, specifically for Guilty Gear -STRIVE- and Granblue Fantasy Versus: Rising. This designation makes the Vienna stop a high priority for international competitors seeking qualification points for the global finals.</p><p>The competitive lineup features a mix of modern titles and community favorites. Key tournaments include Street Fighter 6, Under Night In-Birth II [Sys:Celes], and Melty Blood: Type Lumina. Additionally, the event introduces a 2XKO Mixed Mode bracket played on PC, which allows for both solo and duo entries. The event permits mid-set coaching, allowing one coach per match to assist players for a maximum of one minute between games.</p><p>Located at Am Stadtpark 1, the venue is situated in the third district of Vienna and is accessible via the Landstraße U3 station or the City Airport Train. Registration for competitors and spectators is managed through start.gg, with tiered pricing available leading up to the January 2, 2026, final registration deadline.</p>",
+    "notablePlayers": [
+      "Kami",
+      "yosh",
+      "releasebogus"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
   },
   "frosty-faustings-xviii-2026": {
     "name": "Frosty Faustings XVIII 2026",
