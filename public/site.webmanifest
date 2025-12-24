@@ -1,0 +1,21 @@
+{
+  "name": "FGC Top Players",
+  "short_name": "FGC Top Players",
+  "description": "The definitive player rankings for top competitive fighting games. Track pro players across Street Fighter, Tekken, and more.",
+  "icons": [
+    {
+      "src": "/images/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#FF5E13",
+  "background_color": "#1a1a1a",
+  "display": "standalone",
+  "start_url": "/"
+}

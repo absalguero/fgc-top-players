@@ -60,6 +60,9 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("ads.txt");
   eleventyConfig.addPassthroughCopy("robots.txt");
 
+  // Copy files from the `public` directory to the root of the site
+  eleventyConfig.addPassthroughCopy({ "public/": "/" });
+
   // Pagefind UI assets
   eleventyConfig.addPassthroughCopy({
     "node_modules/@pagefind/ui/": "pagefind/"
