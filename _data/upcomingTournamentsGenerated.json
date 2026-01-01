@@ -1,27 +1,4 @@
 {
-  "perfect-storm-2026": {
-    "name": "Perfect Storm 2026",
-    "slug": "perfect-storm-2026",
-    "startAt": 1770418800,
-    "endAt": 1770613140,
-    "startDate": "2026-02-06",
-    "endDate": "2026-02-08",
-    "dates": "Feb 6-8, 2026",
-    "location": "100 Kent St, Ottawa, ON K1P 5R7, Canada",
-    "venueName": "",
-    "url": "https://www.start.gg/tournament/perfect-storm-2026",
-    "tier": "B",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "Perfect Storm 2026 is scheduled for Feb 6-8, 2026 in 100 Kent St, Ottawa, ON K1P 5R7, Canada. Featuring Street Fighter 6. Registered top players include Zykles.",
-    "notablePlayers": [
-      "Zykles"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
   "evo-japan-2026": {
     "name": "Evo Japan 2026",
     "slug": "evo-japan-2026",
