@@ -14,7 +14,7 @@ tags:
 video:
   title: "Top 5 Street Fighter 6 Players of 2025"
   description: "Broski breaks down the top competitive Street Fighter 6 players of the 2025 season."
-  thumbnail: "TODO_INSERT_THUMBNAIL_URL"
+  thumbnail: "https://i.ytimg.com/vi/6L7Q18aPzS8/maxresdefault.jpg"
   uploadDate: "2025-12-31T21:00:00+00:00"
   embedUrl: "https://www.youtube.com/embed/6L7Q18aPzS8"
 excerpt: "The 2025 competitive season concludes with MenaRD taking the top spot in Broski's year-end rankings after a historic double EVO victory."

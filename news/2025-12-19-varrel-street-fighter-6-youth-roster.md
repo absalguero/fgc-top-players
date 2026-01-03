@@ -7,6 +7,7 @@ tags:
   - esports
   - street fighter 6
   - varrel
+  - sponsorship
 excerpt: "VARREL has officially formed its Street Fighter 6 Youth Division, signing six promising young talents to bolster their developmental pipeline."
 description: "VARREL Street Fighter 6 youth division expansion: Japanese organization signs six new players to nurture the next generation of FGC talent."
 ---

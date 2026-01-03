@@ -7,6 +7,7 @@ tags:
   - menard
   - bandits
   - street fighter league
+  - sponsorship
 layout: article.njk
 date: 2025-12-11 00:00:00
 excerpt: "Fresh off an SFL US Championship with Bandits, MenaRD announces he is open to offers. This sparks rumors of a move to Street Fighter League Japan."

@@ -8,6 +8,7 @@ tags:
   - kakeru
   - zeta division
   - retirement
+  - sponsorship
 excerpt: "Former Capcom Cup champion Kakeru has officially parted ways with ZETA DIVISION, confirming his departure following his retirement due to health issues."
 description: "Kakeru officially leaves ZETA DIVISION today. The Street Fighter 6 champion previously announced his retirement in October due to neurological dysfunction."
 ---

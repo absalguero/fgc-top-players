@@ -8,6 +8,7 @@ tags:
   - tekken 8
   - mulgold
   - gen.g
+  - sponsorship
 excerpt: "Gen.G Esports has officially signed top Korean Tekken player Mulgold to their roster, signaling a major push into the Tekken 8 competitive scene."
 description: "Gen.G Esports signs Mulgold to their Tekken 8 roster. Read about the acquisition of the Korean Claudio specialist and what it means for the team."
 ---
@@ -41,6 +42,7 @@ Fans can expect to see Mulgold sporting the black and gold jersey at upcoming *T
 ---
 
 *Source: [Gen.G Official Announcement](https://twitter.com/GenG)*
+
 <div class="m-auto max-w-90ch" style="display: flex; justify-content: center; margin-top: 30px;">
   <blockquote class="twitter-tweet" data-dnt="true">
     <p lang="en" dir="ltr">𝐖𝐞𝐥𝐜𝐨𝐦𝐞, 𝐌𝐮𝐥𝐠𝐨𝐥𝐝!<br><br>‘Mulgold’ Jaegyun Han has joined the Gen.G Tekken team. We’re excited to see him compete and show what he can do. Please show your support for Mulgold and the Gen.G Tekken team!</p>

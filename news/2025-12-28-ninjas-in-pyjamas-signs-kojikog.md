@@ -7,6 +7,7 @@ tags:
   - esports
   - kojikog
   - ninjas in pyjamas
+  - sponsorship
 excerpt: "Ninjas in Pyjamas expands its fighting game division by signing Japanese veteran KojiKOG."
 description: "Ninjas in Pyjamas (NIP) officially signs KojiKOG to its FGC roster, joining Phenom for Street Fighter 6 and Fatal Fury: City of the Wolves competition."
 ---

@@ -8,6 +8,7 @@ tags:
   - zhen
   - vxbao
   - 8bitdo
+  - sponsorship
 excerpt: "Street Fighter 6 stars Zhen and Vxbao partner with 8BitDo for a transparent purple arcade stick releasing Jan 2026."
 description: "Zhen and Vxbao 8BitDo Arcade Stick revealed. The $94.99 Signature Edition features a transparent purple shell and releases January 31, 2026."
 ---

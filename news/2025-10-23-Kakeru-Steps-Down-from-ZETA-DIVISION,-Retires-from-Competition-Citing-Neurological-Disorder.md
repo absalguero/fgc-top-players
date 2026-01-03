@@ -7,6 +7,7 @@ tags:
   - kakeru
   - zeta division
   - retirement
+  - sponsorship
 layout: article.njk
 permalink: "/news/{{ title | slug }}/"
 cardImage: "/images/players/kakeru.png"

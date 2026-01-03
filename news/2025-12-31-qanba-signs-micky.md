@@ -7,6 +7,7 @@ tags:
   - esports
   - micky
   - qanba
+  - sponsorship
 excerpt: "Qanba USA announces the sponsorship of Hong Kong's Micky, who will compete using the Sapphire Leverless."
 description: "Qanba USA officially sponsors Street Fighter 6 phenom Micky. The top-level competitor will compete using the Qanba Sapphire Leverless."
 ---

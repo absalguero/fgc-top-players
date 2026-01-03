@@ -7,6 +7,7 @@ tags:
   - esports
   - 2xko
   - hikari
+  - sponsorship
 excerpt: "M80 officially enters the 2XKO competitive scene by signing two-time EVO champion Hikari."
 description: "M80 signs DBFZ legend Hikari (Jo'siah Miller) as their first pro player for Riot Games' 2XKO, targeting the 2026 Competitive Series."
 ---

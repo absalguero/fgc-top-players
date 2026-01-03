@@ -7,6 +7,7 @@ tags:
   - esports
   - flyquest
   - sonicfox
+  - sponsorship
 excerpt: "Dominique 'SonicFox' McLean has officially signed with FlyQuest, marking a major acquisition for the organization's fighting game division."
 description: "SonicFox FlyQuest signing confirmed. The 8-time Evo champion joins the organization's FGC roster, targeting dominance in Mortal Kombat 1 and 2XKO."
 ---
