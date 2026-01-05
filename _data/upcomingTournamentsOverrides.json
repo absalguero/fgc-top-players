@@ -1,28 +1,4 @@
 {
-  "posada-reset-2025": {
-    "name": "Posada Reset 2025",
-    "slug": "posada-reset-2025",
-    "startAt": 1766246400,
-    "endAt": 1766305800,
-    "startDate": "2025-12-20",
-    "endDate": "2025-12-21",
-    "dates": "Dec 20-21, 2025",
-    "location": "Manuel Navarrete 21, Algarín, Cuauhtémoc, 06880 Ciudad de México, CDMX, México",
-    "venueName": "",
-    "url": "https://www.start.gg/tournament/posada-reset-2025",
-    "tier": "B",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "Posada Reset 2025 is scheduled for Dec 20-21, 2025 in Manuel Navarrete 21, Algarín, Cuauhtémoc, 06880 Ciudad de México, CDMX, México. Featuring Street Fighter 6. Registered top players include LUGABO, MJ_Gama.",
-    "notablePlayers": [
-      "LUGABO",
-      "MJ_Gama"
-    ],
-    "isArchived": false,
-    "excludeFromSite": true
-  },
   "autplayed-2026": {
     "name": "AUTplayed 2026",
     "slug": "autplayed-2026",
@@ -178,6 +154,27 @@
       "Hikaru",
       "Jr."
     ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
+  "combo-breaker-2026": {
+    "name": "Combo Breaker 2026",
+    "slug": "combo-breaker-2026",
+    "startAt": 1779422400,
+    "endAt": 1779667199,
+    "startDate": "2026-05-22",
+    "endDate": "2026-05-24",
+    "dates": "May 22 - 24, 2026",
+    "location": "1551 Thoreau Dr N, Schaumburg, IL 60173, USA",
+    "venueName": "Renaissance Schaumburg Convention Center",
+    "url": "https://combobreaker.org/",
+    "tier": "S+",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "<p>Combo Breaker 2026 returns to the Renaissance Schaumburg Convention Center for its annual Memorial Day Weekend celebration of fighting games. Scheduled for May 22–24, 2026, the event is one of the largest competitive gaming conventions in North America, featuring a 24-game official tournament lineup that includes Street Fighter 6, Tekken 8, 2XKO, and Fatal Fury: City of the Wolves.</p><p>Registration is managed via start.gg with an attendance cap of 8,500. The event is known for its 24/7 venue access, massive Artist Alley, and the 'All In Together' program, which allocates dedicated resources for community-run side tournaments. Early bird registration for competitors ($115) and spectators ($90) is available until February 1, 2026.</p>",
+    "notablePlayers": [],
     "isArchived": false,
     "excludeFromSite": false
   }
