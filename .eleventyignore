@@ -1,3 +1,14 @@
+# Standard ignores for Eleventy projects
+node_modules/
+_site/
+
+# Don't process files in the includes directory as pages
+_includes/
+
+# Ignore template files in any directory
+**/template.md
+**/template.njk
+
 Eleventy should not process or copy the environment variables file
 .env
 
