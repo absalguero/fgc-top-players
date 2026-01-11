@@ -1,4 +1,29 @@
 {
+  "autplayed-2026": {
+    "name": "AUTplayed 2026",
+    "slug": "autplayed-2026",
+    "startAt": 1736496000,
+    "endAt": 1736639999,
+    "startDate": "2026-01-10",
+    "endDate": "2026-01-11",
+    "dates": "Jan 10 - 11, 2026",
+    "location": "Am Stadtpark 1, 1030 Wien, Austria",
+    "venueName": "Hilton Hotel Vienna Park",
+    "url": "https://www.autplayed.com/",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "https://www.twitch.tv/virtualdojovienna",
+    "scheduleLink": "https://x.com/autplayed/status/2008667466067832863?s=20",
+    "description": "<p>AUTplayed 2026 serves as the fifth anniversary milestone for Austria's premier fighting game tournament. Scheduled for January 10 and 11, 2026, the event is organized by Virtual Dojo Vienna and takes place at the Hilton Hotel Vienna Park. The tournament has earned Gold Event status for the Arc World Tour 2025 through 2026, specifically for Guilty Gear -STRIVE- and Granblue Fantasy Versus: Rising. This designation makes the Vienna stop a high priority for international competitors seeking qualification points for the global finals.</p><p>The competitive lineup features a mix of modern titles and community favorites. Key tournaments include Street Fighter 6, Under Night In-Birth II [Sys:Celes], and Melty Blood: Type Lumina. Additionally, the event introduces a 2XKO Mixed Mode bracket played on PC, which allows for both solo and duo entries. The event permits mid-set coaching, allowing one coach per match to assist players for a maximum of one minute between games.</p><p>Located at Am Stadtpark 1, the venue is situated in the third district of Vienna and is accessible via the Landstraße U3 station or the City Airport Train. Registration for competitors and spectators is managed through start.gg, with tiered pricing available leading up to the January 2, 2026, final registration deadline.</p>",
+    "notablePlayers": [
+      "Kami",
+      "yosh",
+      "releasebogus"
+    ],
+    "isArchived": true,
+    "excludeFromSite": false
+  },
   "fightclub-championship-vi-nansha-world-warrior-china-regional-finals-2025": {
     "name": "FightClub Championship VI Nansha World Warrior China Regional Finals 2025",
     "slug": "fightclub-championship-vi-nansha-world-warrior-china-regional-finals-2025",

@@ -1,29 +1,4 @@
 {
-  "autplayed-2026": {
-    "name": "AUTplayed 2026",
-    "slug": "autplayed-2026",
-    "startAt": 1736496000,
-    "endAt": 1736639999,
-    "startDate": "2026-01-10",
-    "endDate": "2026-01-11",
-    "dates": "Jan 10 - 11, 2026",
-    "location": "Am Stadtpark 1, 1030 Wien, Austria",
-    "venueName": "Hilton Hotel Vienna Park",
-    "url": "https://www.autplayed.com/",
-    "tier": "B",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "https://www.twitch.tv/virtualdojovienna",
-    "scheduleLink": "https://x.com/autplayed/status/2008667466067832863?s=20",
-    "description": "<p>AUTplayed 2026 serves as the fifth anniversary milestone for Austria's premier fighting game tournament. Scheduled for January 10 and 11, 2026, the event is organized by Virtual Dojo Vienna and takes place at the Hilton Hotel Vienna Park. The tournament has earned Gold Event status for the Arc World Tour 2025 through 2026, specifically for Guilty Gear -STRIVE- and Granblue Fantasy Versus: Rising. This designation makes the Vienna stop a high priority for international competitors seeking qualification points for the global finals.</p><p>The competitive lineup features a mix of modern titles and community favorites. Key tournaments include Street Fighter 6, Under Night In-Birth II [Sys:Celes], and Melty Blood: Type Lumina. Additionally, the event introduces a 2XKO Mixed Mode bracket played on PC, which allows for both solo and duo entries. The event permits mid-set coaching, allowing one coach per match to assist players for a maximum of one minute between games.</p><p>Located at Am Stadtpark 1, the venue is situated in the third district of Vienna and is accessible via the Landstraße U3 station or the City Airport Train. Registration for competitors and spectators is managed through start.gg, with tiered pricing available leading up to the January 2, 2026, final registration deadline.</p>",
-    "notablePlayers": [
-      "Kami",
-      "yosh",
-      "releasebogus"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
   "frosty-faustings-xviii-2026": {
     "name": "Frosty Faustings XVIII 2026",
     "slug": "frosty-faustings-xviii-2026",
@@ -39,9 +14,22 @@
     "prizes": "$50,000 (2XKO)",
     "game": "Street Fighter 6",
     "streamLink": "https://www.twitch.tv/tampaneversleeps",
-    "scheduleLink": "https://x.com/FrostyFaustings/status/2009815922417324535?s=20",
+    "scheduleLink": "https://x.com/FrostyFaustings/status/2010136840527884345?s=20",
     "description": "<p>Frosty Faustings XVIII 2026 is the 18th annual edition of the Midwest’s largest fighting game festival. Held at the Westin Chicago Lombard, this four-day event is celebrated for its massive variety of tournaments, 24-hour venue access, and unique 'convention-style' atmosphere. While historically known as a haven for anime fighters, the event has evolved into a global major for all fighting game disciplines, including Street Fighter 6, Tekken 8, and the highly anticipated 2XKO.</p><p>The 2026 event distinguishes itself with one of the most diverse lineups in the FGC, running nearly 30 main stage games. A major headline for 2026 is the official partnership with Riot Games for 2XKO, featuring a special mixed-mode tournament with a $50,000 prize pool. For Street Fighter 6 players, the event offers a massive singles bracket and the unique Sunday Special 2v2 Waseda-style Team Tournament, a format that emphasizes team strategy.</p><p>Unlike many esports majors, the venue remains open 24 hours a day from Thursday to Sunday, allowing for non-stop casual matches and community events like the famous late-night Karaoke and Artist Alley. The Westin Chicago Lombard is located approximately 25 minutes from O'Hare International Airport, with registration available via Start.gg.</p>",
-    "notablePlayers": [],
+    "notablePlayers": [
+      "Punk",
+      "GO1",
+      "Riddles",
+      "JAK",
+      "MJ_Gama",
+      "iDom",
+      "Threeyes",
+      "Play_guy",
+      "Docmorales24",
+      "Thunder DeLangis",
+      "小路KOG",
+      "Squall"
+    ],
     "isArchived": false,
     "excludeFromSite": false
   },
@@ -63,7 +51,34 @@
     "scheduleLink": "",
    "description": "<strong>Perfect Storm 2026</strong> is a major fighting game community tournament scheduled to take place in Ottawa, Ontario, Canada. The three-day event runs from February 6 through February 8, 2026, and serves as a central hub for competitive play in the region.</p><p>The tournament will be hosted at the <strong>Ottawa Marriott Hotel</strong> on Kent Street. The event utilizes the Victoria Ballroom, providing over 8,000 square feet of venue space for tournament brackets, casual setups, and vendor areas.</p><h3>Tournament Lineup and Featured Games</h3><p>Perfect Storm 2026 features a diverse roster of competitive titles, ranging from current industry standards to legacy games. The confirmed main lineup includes:</p><ul><li><strong>Street Fighter 6</strong></li><li><strong>Tekken 8</strong></li><li><strong>Guilty Gear -Strive-</strong></li><li><strong>Granblue Fantasy Versus: Rising</strong></li><li><strong>Under Night In-Birth II Sys:Celes</strong></li></ul><p>The competitive roster is rounded out by the latest generation of heavy hitters, including the recently released <strong>2XKO (PC)</strong> and the established <strong>Fatal Fury: City of the Wolves</strong>.</p><p>In addition to the main stage games, the event supports a variety of side tournaments, including <em>Ultimate Marvel vs. Capcom 3</em>, <em>Street Fighter III: 3rd Strike</em>, and <em>BlazBlue: Centralfiction</em>.</p><h3>Registration and Logistics</h3><p>Competitors and spectators can register for the event online. The registration period is divided into three tiers based on the date of purchase:</p><ul><li><strong>Early Bird Registration:</strong> Ends December 7, 2025</li><li><strong>Regular Registration:</strong> Ends January 11, 2026</li><li><strong>Late Registration:</strong> Ends January 31, 2026</li></ul><p>Spectator passes are available for attendees not participating in the brackets. The venue is located near the Lyon O-Train Station in downtown Ottawa, providing access to local transit and accommodation options.</p><p>For full rules, pooled brackets, and specific scheduling details, interested parties can view the official event page on <strong>start.gg</strong>.",
     "notablePlayers": [
-      "Zykles"
+      "LoDE",
+      "Spookymemes",
+      "Edgoron"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
+  "genesis-x3": {
+    "name": "Genesis X3",
+    "slug": "genesis-x3",
+    "startAt": 1770998400,
+    "endAt": 1771228799,
+    "startDate": "2026-02-13",
+    "endDate": "2026-02-15",
+    "dates": "Feb 13 - 15, 2026",
+    "location": "150 W San Carlos St, San Jose, CA 95113, USA",
+    "venueName": "San Jose McEnery Convention Center",
+    "url": "https://genesis.gg/",
+    "tier": "B",
+    "prizes": "TBD",
+    "game": "Street Fighter 6",
+    "streamLink": "https://www.twitch.tv/genesisgg_4",
+    "scheduleLink": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSAegaKKOT2_D2iyOB-vbo_cZu3H1u6sS7OeBcWy2MqaeAkQMIao-BpIULAFys1jOcgd_Ei9IHk9B0y/pubhtml?gid=30414474&single=true",
+    "description": "<p>Genesis X3 returns to the San Jose McEnery Convention Center from February 13–15, 2026. While primarily known as the largest grassroots Super Smash Bros. tournament in the world, the event maintains a dedicated footprint for the traditional Fighting Game Community, featuring Street Fighter 6 as a main competitive title.</p><p>For Street Fighter competitors, Genesis offers a change of pace from the high-pressure Capcom Pro Tour circuit. It typically falls into the 'community major' tier, meaning fewer global travelers but a concentrated pool of strong North American talent. Previous iterations have drawn top-level competitors like iDom, Nephew, and Riddles to the bracket.</p><p>The defining feature of Genesis for an SF6 player is the venue culture. Unlike standard esports events, Genesis X3 offers a 24-hour venue policy for competitors. This 'convention-style' access allows for overnight money matches, endless casual sets, and access to a massive arcade and rhythm game section, creating a festival atmosphere that persists long after tournament brackets conclude for the day.</p>",
+    "notablePlayers": [
+      "Samurai",
+      "MOTHMAN",
+      "TreeWiz"
     ],
     "isArchived": false,
     "excludeFromSite": false
