@@ -1,4 +1,50 @@
 {
+  "battle-city-weekly-bed-of-chaos": {
+    "name": "Battle City Weekly: Bed of Chaos",
+    "slug": "battle-city-weekly-bed-of-chaos",
+    "startAt": 1768606200,
+    "endAt": 1768626000,
+    "startDate": "2026-01-16",
+    "endDate": "2026-01-17",
+    "dates": "Jan 16-17, 2026",
+    "location": "30 Woodfield Dr, Nepean, ON K2G 3Y5, Canada",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/battle-city-weekly-bed-of-chaos",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "Battle City Weekly: Bed of Chaos is scheduled for Jan 16-17, 2026 in 30 Woodfield Dr, Nepean, ON K2G 3Y5, Canada. Featuring Street Fighter 6. Registered top players include Zykles.",
+    "notablePlayers": [
+      "Zykles"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
+  "frostfire-2026": {
+    "name": "Frostfire 2026",
+    "slug": "frostfire-2026",
+    "startAt": 1768654800,
+    "endAt": 1768791600,
+    "startDate": "2026-01-17",
+    "endDate": "2026-01-18",
+    "dates": "Jan 17-18, 2026",
+    "location": "1125 Colonel By Dr, Ottawa, ON K1S 5B6, Canada",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/frostfire-2026",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "Frostfire 2026 is scheduled for Jan 17-18, 2026 in 1125 Colonel By Dr, Ottawa, ON K1S 5B6, Canada. Featuring Street Fighter 6. Registered top players include Zykles.",
+    "notablePlayers": [
+      "Zykles"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
   "frosty-faustings-xviii-2026": {
     "name": "Frosty Faustings XVIII 2026",
     "slug": "frosty-faustings-xviii-2026",
@@ -47,6 +93,29 @@
     "description": "Dojo Wannabe Chapelle Series #4 is scheduled for Jan 31-Feb 1, 2026 in 5 Rue Baron Louis, 54000 Nancy, France. Featuring Street Fighter 6. Registered top players include Mister Crimson.",
     "notablePlayers": [
       "Mister Crimson"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
+  "perfect-storm-2026": {
+    "name": "Perfect Storm 2026",
+    "slug": "perfect-storm-2026",
+    "startAt": 1770418800,
+    "endAt": 1770613140,
+    "startDate": "2026-02-06",
+    "endDate": "2026-02-08",
+    "dates": "Feb 6-8, 2026",
+    "location": "100 Kent St, Ottawa, ON K1P 5R7, Canada",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/perfect-storm-2026",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "Perfect Storm 2026 is scheduled for Feb 6-8, 2026 in 100 Kent St, Ottawa, ON K1P 5R7, Canada. Featuring Street Fighter 6. Registered top players include Zykles.",
+    "notablePlayers": [
+      "Zykles"
     ],
     "isArchived": false,
     "excludeFromSite": false
@@ -113,8 +182,8 @@
       "Yamaguchi",
       "GO1",
       "Bonchan",
-      "Torimeshi",
       "jojotaro",
+      "Torimeshi",
       "kingsvega",
       "Zhen",
       "DCQ",
