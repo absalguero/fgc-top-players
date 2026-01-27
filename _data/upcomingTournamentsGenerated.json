@@ -26,30 +26,12 @@
       "Riddles",
       "JAK",
       "MJ_Gama",
-      "Caba"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
-  "dojo-wannabe-chapelle-series-4": {
-    "name": "Dojo Wannabe Chapelle Series #4",
-    "slug": "dojo-wannabe-chapelle-series-4",
-    "startAt": 1769850000,
-    "endAt": 1769965200,
-    "startDate": "2026-01-31",
-    "endDate": "2026-02-01",
-    "dates": "Jan 31-Feb 1, 2026",
-    "location": "5 Rue Baron Louis, 54000 Nancy, France",
-    "venueName": "",
-    "url": "https://www.start.gg/tournament/dojo-wannabe-chapelle-series-4",
-    "tier": "B",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "Dojo Wannabe Chapelle Series #4 is scheduled for Jan 31-Feb 1, 2026 in 5 Rue Baron Louis, 54000 Nancy, France. Featuring Street Fighter 6. Registered top players include Mister Crimson.",
-    "notablePlayers": [
-      "Mister Crimson"
+      "Caba",
+      "Threeyes",
+      "Play_guy",
+      "Docmorales24",
+      "Bloo",
+      "iDom"
     ],
     "isArchived": false,
     "excludeFromSite": false
@@ -93,11 +75,12 @@
     "game": "Street Fighter 6",
     "streamLink": "",
     "scheduleLink": "",
-    "description": "Genesis X3 is scheduled for Feb 13-15, 2026 in 150 W San Carlos St, San Jose, CA 95113, USA. Featuring Street Fighter 6. Registered top players include GO1, NoahTheProdigy, Riddles.",
+    "description": "Genesis X3 is scheduled for Feb 13-15, 2026 in 150 W San Carlos St, San Jose, CA 95113, USA. Featuring Street Fighter 6. Registered top players include GO1, NoahTheProdigy, Riddles, iDom.",
     "notablePlayers": [
       "GO1",
       "NoahTheProdigy",
-      "Riddles"
+      "Riddles",
+      "iDom"
     ],
     "isArchived": false,
     "excludeFromSite": false
@@ -127,7 +110,9 @@
       "Ryusei",
       "kincho",
       "Yanai",
-      "matsu56"
+      "matsu56",
+      "cosa",
+      "Nyanpi"
     ],
     "isArchived": false,
     "excludeFromSite": false
@@ -185,8 +170,8 @@
       "Higuchi",
       "Micky",
       "Oil King",
-      "Yamaguchi",
       "jojotaro",
+      "Yamaguchi",
       "GO1",
       "Torimeshi",
       "kingsvega",
@@ -198,9 +183,9 @@
       "Hikaru",
       "Dogura",
       "Jr.",
-      "Akira",
       "eguto",
       "Ryusei",
+      "Akira",
       "gachikun",
       "kincho",
       "Tachikawa",
@@ -210,7 +195,11 @@
       "matsu56",
       "YHC-mochi",
       "pugera",
-      "Garnet"
+      "cosa",
+      "SURINI",
+      "Garnet",
+      "HotDog29",
+      "Nyanpi"
     ],
     "isArchived": false,
     "excludeFromSite": false
