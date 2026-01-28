@@ -59,6 +59,29 @@
     "isArchived": false,
     "excludeFromSite": false
   },
+  "york-street-battles-114": {
+    "name": "York Street Battles #114",
+    "slug": "york-street-battles-114",
+    "startAt": 1770426000,
+    "endAt": 1770458400,
+    "startDate": "2026-02-07",
+    "endDate": "2026-02-07",
+    "dates": "Feb 7, 2026",
+    "location": "99 York St, Sydney NSW 2000, Australia",
+    "venueName": "99 on York",
+    "url": "https://www.start.gg/tournament/york-street-battles-114",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "York Street Battles #114 is scheduled for Feb 7, 2026 in 99 York St, Sydney NSW 2000, Australia. Featuring Street Fighter 6. Registered top players include Koopa.",
+    "notablePlayers": [
+      "Koopa"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
   "genesis-x3": {
     "name": "Genesis X3",
     "slug": "genesis-x3",
