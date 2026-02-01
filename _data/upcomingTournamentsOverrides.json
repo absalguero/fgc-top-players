@@ -1,38 +1,4 @@
 {
-  "frosty-faustings-xviii-2026": {
-    "name": "Frosty Faustings XVIII 2026",
-    "slug": "frosty-faustings-xviii-2026",
-    "startAt": 1769709600,
-    "endAt": 1770004800,
-    "startDate": "2026-01-29",
-    "endDate": "2026-02-01",
-    "dates": "Jan 29 - Feb 1, 2026",
-    "location": "70 Yorktown Center, Lombard, IL 60148, USA",
-    "venueName": "The Westin Chicago Lombard",
-    "url": "https://frostyfaustings.com/",
-    "tier": "A",
-    "prizes": "$50,000 (2XKO)",
-    "game": "Street Fighter 6",
-    "streamLink": "https://www.twitch.tv/tampaneversleeps",
-    "scheduleLink": "https://x.com/FrostyFaustings/status/2013296825113956405?s=20",
-    "description": "<p>Frosty Faustings XVIII 2026 is the 18th annual edition of the Midwest’s largest fighting game festival. Held at the Westin Chicago Lombard, this four-day event is celebrated for its massive variety of tournaments, 24-hour venue access, and unique 'convention-style' atmosphere. While historically known as a haven for anime fighters, the event has evolved into a global major for all fighting game disciplines, including Street Fighter 6, Tekken 8, and the highly anticipated 2XKO.</p><p>The 2026 event distinguishes itself with one of the most diverse lineups in the FGC, running nearly 30 main stage games. A major headline for 2026 is the official partnership with Riot Games for 2XKO, featuring a special mixed-mode tournament with a $50,000 prize pool. For Street Fighter 6 players, the event offers a massive singles bracket and the unique Sunday Special 2v2 Waseda-style Team Tournament, a format that emphasizes team strategy.</p><p>Unlike many esports majors, the venue remains open 24 hours a day from Thursday to Sunday, allowing for non-stop casual matches and community events like the famous late-night Karaoke and Artist Alley. The Westin Chicago Lombard is located approximately 25 minutes from O'Hare International Airport, with registration available via Start.gg.</p>",
-    "notablePlayers": [
-      "Dual Kevin",
-      "Punk",
-      "GO1",
-      "NYChrisG",
-      "NoahTheProdigy",
-      "Riddles",
-      "JAK",
-      "MJ_Gama",
-      "Caba",
-      "iDom",
-      "Threeyes",
-      "小路KOG"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
   "dojo-wannabe-chapelle-series-4": {
     "name": "Dojo Wannabe Chapelle Series #4",
     "slug": "dojo-wannabe-chapelle-series-4",
@@ -80,6 +46,29 @@
     ],
     "isArchived": false,
     "excludeFromSite": false
+  },
+  "york-street-battles-114": {
+    "name": "York Street Battles #114",
+    "slug": "york-street-battles-114",
+    "startAt": 1770426000,
+    "endAt": 1770458400,
+    "startDate": "2026-02-07",
+    "endDate": "2026-02-07",
+    "dates": "Feb 7, 2026",
+    "location": "99 York St, Sydney NSW 2000, Australia",
+    "venueName": "99 on York",
+    "url": "https://www.start.gg/tournament/york-street-battles-114",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "York Street Battles #114 is scheduled for Feb 7, 2026 in 99 York St, Sydney NSW 2000, Australia. Featuring Street Fighter 6. Registered top players include Koopa.",
+    "notablePlayers": [
+      "Koopa"
+    ],
+    "isArchived": false,
+    "excludeFromSite": true
   },
   "genesis-x3": {
     "name": "Genesis X3",

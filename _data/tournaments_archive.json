@@ -57578,5 +57578,655 @@
       }
     ],
     "isArchived": false
+  },
+  "frosty-faustings-xviii-2026": {
+    "name": "Frosty Faustings XVIII 2026",
+    "date": "2026-01-29",
+    "slug": "frosty-faustings-xviii-2026",
+    "Tier": "A",
+    "Entrants": "656",
+    "results": [
+      {
+        "Player": "Bloo",
+        "Player ID": "62f3840c",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "1",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Caba",
+        "Player ID": "7ef3978a",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "2",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Stealth",
+        "Player ID": "81fbeef0",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "3",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "NYChrisG",
+        "Player ID": "dab1e1cc",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "4",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Dual Kevin",
+        "Player ID": "88d3f20e",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "5",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Riddles",
+        "Player ID": "03d3a671",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "5",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Punk",
+        "Player ID": "1b9e2ed9",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "7",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "NoahTheProdigy",
+        "Player ID": "27053e88",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "7",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "GO1",
+        "Player ID": "fe93cbdc",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "9",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Ramsey",
+        "Player ID": "bb472734",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "9",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Enzo",
+        "Player ID": "9cc42fd3",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "9",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Docmorales24",
+        "Player ID": "4c6d1e01",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "9",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "iDom",
+        "Player ID": "f0979e4c",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "13",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Young_Gouki",
+        "Player ID": "94187955",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "13",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Kharsonist",
+        "Player ID": "dd8aaab4",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "13",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "MJ_Gama",
+        "Player ID": "4484e542",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "13",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "KiriGohan",
+        "Player ID": "ff707445",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "17",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "ARRUUMS",
+        "Player ID": "6302dcc2",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "17",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Magnegro",
+        "Player ID": "b1e466ba",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "17",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "小路KOG",
+        "Player ID": "17aece0a",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "17",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Play_guy",
+        "Player ID": "f2a9b3fc",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "17",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "SMOOTHMOVES22",
+        "Player ID": "d7446d15",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "17",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Thunder DeLangis",
+        "Player ID": "60c77e9c",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "17",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "JAK",
+        "Player ID": "ca35d13c",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "17",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Burnoutfighter",
+        "Player ID": "f3daa040",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "25",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Zaidi",
+        "Player ID": "ab548274",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "25",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "GuyGuy",
+        "Player ID": "f1e574a7",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "25",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "ZachInABox",
+        "Player ID": "dbbaa3d0",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "25",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "big mo",
+        "Player ID": "af88c91a",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "25",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Triumph",
+        "Player ID": "8fe4928c",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "25",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Docta Afrikan.EX",
+        "Player ID": "aa788ddc",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "25",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "ScrawtVermillion",
+        "Player ID": "1975133",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "25",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "tarotime",
+        "Player ID": "9effd6e1",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "33",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "EliTheCurry",
+        "Player ID": "cac46849",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "33",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "DADONGUS",
+        "Player ID": "169a588c",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "33",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "GalaxyBrAn",
+        "Player ID": "18b96666",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "33",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "ArtificialHolly",
+        "Player ID": "e917d9bf",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "33",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "FReZZer",
+        "Player ID": "473473e9",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "33",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Nemo",
+        "Player ID": "6f4013df",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "33",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "NeoJudai.EX",
+        "Player ID": "60879f30",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "33",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Deznere",
+        "Player ID": "f63cd4ca",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "33",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Frosty",
+        "Player ID": "6f42546c",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "33",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "CuhzLightYear",
+        "Player ID": "2ffbb6cb",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "33",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Shockjoc",
+        "Player ID": "3dc40109",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "33",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Vaxtrum",
+        "Player ID": "217086b9",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "33",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "harms",
+        "Player ID": "08e8bae1",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "33",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Rascal",
+        "Player ID": "a18b0813",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "33",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Iggy",
+        "Player ID": "d211b6d4",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "33",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "El Cubano Loco",
+        "Player ID": "7b12aa23",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "49",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "NY Mando",
+        "Player ID": "e40b869c",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "49",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Squall",
+        "Player ID": "fe7fcd62",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "49",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "JaMarvelous",
+        "Player ID": "151ee67f",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "49",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "aki guy",
+        "Player ID": "fa1890cd",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "49",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "keesby",
+        "Player ID": "e2475015",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "49",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Young_matt_teen",
+        "Player ID": "3cc850a5",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "49",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Raven is Raw",
+        "Player ID": "e0adefee",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "49",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Garlic Bread",
+        "Player ID": "b2cc8e36",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "49",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Mayuun-",
+        "Player ID": "ec64c026",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "49",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Spirit",
+        "Player ID": "fea72809",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "49",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Kite",
+        "Player ID": "5c5eabac",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "49",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "TreeWiz",
+        "Player ID": "77fc0194",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "49",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "UltraDavid",
+        "Player ID": "ffb6557c",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "49",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Mario",
+        "Player ID": "a8011bbf",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "49",
+        "Entrants": "656",
+        "Tier": "A"
+      },
+      {
+        "Player": "Nice1",
+        "Player ID": "9c70ca65",
+        "Event": "Frosty Faustings XVIII 2026",
+        "Event ID": "frosty-faustings-xviii-2026",
+        "Date": "2026-01-30",
+        "Finish": "49",
+        "Entrants": "656",
+        "Tier": "A"
+      }
+    ],
+    "isArchived": false
   }
 }
