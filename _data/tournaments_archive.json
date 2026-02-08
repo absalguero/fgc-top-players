@@ -9997,7 +9997,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "genesis-x2": {
     "name": "Genesis X2",
@@ -33261,16 +33261,6 @@
         "Player ID": "2ef9c6d6",
         "Event": "Saudi eLeague Season 3 Championship",
         "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-3",
-        "Date": "2025-08-11",
-        "Finish": "33",
-        "Entrants": "36",
-        "Tier": "A"
-      },
-      {
-        "Player": "punisher",
-        "Player ID": "",
-        "Event": "Saudi eLeague Season 3 Championship",
-        "Event ID": "",
         "Date": "2025-08-11",
         "Finish": "33",
         "Entrants": "36",
@@ -58224,6 +58214,176 @@
         "Date": "2026-01-30",
         "Finish": "49",
         "Entrants": "656",
+        "Tier": "A"
+      }
+    ],
+    "isArchived": false
+  },
+  "gtw-2026-new-year-championship": {
+    "name": "GTW 2026 New Year Championship",
+    "date": "2026-02-06",
+    "slug": "gtw-2026-new-year-championship",
+    "Tier": "A",
+    "Entrants": "16",
+    "results": [
+      {
+        "Player": "Blaz",
+        "Player ID": "37844e8a",
+        "Event": "GTW 2026 New Year Championship",
+        "Event ID": "",
+        "Date": "2026-02-07",
+        "Finish": "1",
+        "Entrants": "16",
+        "Tier": "A"
+      },
+      {
+        "Player": "xiaohai",
+        "Player ID": "dc3d34bc",
+        "Event": "GTW 2026 New Year Championship",
+        "Event ID": "",
+        "Date": "2026-02-07",
+        "Finish": "2",
+        "Entrants": "16",
+        "Tier": "A"
+      },
+      {
+        "Player": "DCQ",
+        "Player ID": "ae2f4ff8",
+        "Event": "GTW 2026 New Year Championship",
+        "Event ID": "",
+        "Date": "2026-02-07",
+        "Finish": "3",
+        "Entrants": "16",
+        "Tier": "A"
+      },
+      {
+        "Player": "Tokido",
+        "Player ID": "a4c7c2d4",
+        "Event": "GTW 2026 New Year Championship",
+        "Event ID": "",
+        "Date": "2026-02-07",
+        "Finish": "4",
+        "Entrants": "16",
+        "Tier": "A"
+      },
+      {
+        "Player": "Armperor",
+        "Player ID": "f8689c70",
+        "Event": "GTW 2026 New Year Championship",
+        "Event ID": "",
+        "Date": "2026-02-07",
+        "Finish": "5",
+        "Entrants": "16",
+        "Tier": "A"
+      },
+      {
+        "Player": "Micky",
+        "Player ID": "09e5dcc1",
+        "Event": "GTW 2026 New Year Championship",
+        "Event ID": "",
+        "Date": "2026-02-07",
+        "Finish": "5",
+        "Entrants": "16",
+        "Tier": "A"
+      },
+      {
+        "Player": "Xian",
+        "Player ID": "86cbcadc",
+        "Event": "GTW 2026 New Year Championship",
+        "Event ID": "",
+        "Date": "2026-02-07",
+        "Finish": "7",
+        "Entrants": "16",
+        "Tier": "A"
+      },
+      {
+        "Player": "Tiger",
+        "Player ID": "hot",
+        "Event": "GTW 2026 New Year Championship",
+        "Event ID": "",
+        "Date": "2026-02-07",
+        "Finish": "7",
+        "Entrants": "16",
+        "Tier": "A"
+      },
+      {
+        "Player": "Jiewa",
+        "Player ID": "be8eb9f8",
+        "Event": "GTW 2026 New Year Championship",
+        "Event ID": "",
+        "Date": "2026-02-07",
+        "Finish": "9",
+        "Entrants": "16",
+        "Tier": "A"
+      },
+      {
+        "Player": "Tachikawa",
+        "Player ID": "c68eeb1f",
+        "Event": "GTW 2026 New Year Championship",
+        "Event ID": "",
+        "Date": "2026-02-07",
+        "Finish": "9",
+        "Entrants": "16",
+        "Tier": "A"
+      },
+      {
+        "Player": "Mr. Rookie",
+        "Player ID": "Mr. Rookie",
+        "Event": "GTW 2026 New Year Championship",
+        "Event ID": "",
+        "Date": "2026-02-07",
+        "Finish": "9",
+        "Entrants": "16",
+        "Tier": "A"
+      },
+      {
+        "Player": "Rainpro",
+        "Player ID": "2ab0ced8",
+        "Event": "GTW 2026 New Year Championship",
+        "Event ID": "",
+        "Date": "2026-02-07",
+        "Finish": "9",
+        "Entrants": "16",
+        "Tier": "A"
+      },
+      {
+        "Player": "XiaoZhai",
+        "Player ID": "t1oil-king",
+        "Event": "GTW 2026 New Year Championship",
+        "Event ID": "",
+        "Date": "2026-02-07",
+        "Finish": "13",
+        "Entrants": "16",
+        "Tier": "A"
+      },
+      {
+        "Player": "Pandasaku",
+        "Player ID": "akirasylar",
+        "Event": "GTW 2026 New Year Championship",
+        "Event ID": "",
+        "Date": "2026-02-07",
+        "Finish": "13",
+        "Entrants": "16",
+        "Tier": "A"
+      },
+      {
+        "Player": "HotDog29",
+        "Player ID": "e9050ed0",
+        "Event": "GTW 2026 New Year Championship",
+        "Event ID": "",
+        "Date": "2026-02-07",
+        "Finish": "13",
+        "Entrants": "16",
+        "Tier": "A"
+      },
+      {
+        "Player": "PINKSTAR",
+        "Player ID": "hjkpinkstar",
+        "Event": "GTW 2026 New Year Championship",
+        "Event ID": "",
+        "Date": "2026-02-07",
+        "Finish": "13",
+        "Entrants": "16",
         "Tier": "A"
       }
     ],
