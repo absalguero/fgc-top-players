@@ -1,4 +1,29 @@
 {
+  "perfect-storm-2026": {
+    "name": "Perfect Storm 2026",
+    "slug": "perfect-storm-2026",
+    "startAt": 1770418800,
+    "endAt": 1770613140,
+    "startDate": "2026-02-06",
+    "endDate": "2026-02-08",
+    "dates": "Feb 6-8, 2026",
+    "location": "100 Kent St, Ottawa, ON K1P 5R7, Canada",
+    "venueName": "Ottawa Marriott Hotel-Victoria Ballroom",
+    "url": "https://www.start.gg/tournament/perfect-storm-2026",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+   "description": "<strong>Perfect Storm 2026</strong> is a major fighting game community tournament scheduled to take place in Ottawa, Ontario, Canada. The three-day event runs from February 6 through February 8, 2026, and serves as a central hub for competitive play in the region.</p><p>The tournament will be hosted at the <strong>Ottawa Marriott Hotel</strong> on Kent Street. The event utilizes the Victoria Ballroom, providing over 8,000 square feet of venue space for tournament brackets, casual setups, and vendor areas.</p><h3>Tournament Lineup and Featured Games</h3><p>Perfect Storm 2026 features a diverse roster of competitive titles, ranging from current industry standards to legacy games. The confirmed main lineup includes:</p><ul><li><strong>Street Fighter 6</strong></li><li><strong>Tekken 8</strong></li><li><strong>Guilty Gear -Strive-</strong></li><li><strong>Granblue Fantasy Versus: Rising</strong></li><li><strong>Under Night In-Birth II Sys:Celes</strong></li></ul><p>The competitive roster is rounded out by the latest generation of heavy hitters, including the recently released <strong>2XKO (PC)</strong> and the established <strong>Fatal Fury: City of the Wolves</strong>.</p><p>In addition to the main stage games, the event supports a variety of side tournaments, including <em>Ultimate Marvel vs. Capcom 3</em>, <em>Street Fighter III: 3rd Strike</em>, and <em>BlazBlue: Centralfiction</em>.</p><h3>Registration and Logistics</h3><p>Competitors and spectators can register for the event online. The registration period is divided into three tiers based on the date of purchase:</p><ul><li><strong>Early Bird Registration:</strong> Ends December 7, 2025</li><li><strong>Regular Registration:</strong> Ends January 11, 2026</li><li><strong>Late Registration:</strong> Ends January 31, 2026</li></ul><p>Spectator passes are available for attendees not participating in the brackets. The venue is located near the Lyon O-Train Station in downtown Ottawa, providing access to local transit and accommodation options.</p><p>For full rules, pooled brackets, and specific scheduling details, interested parties can view the official event page on <strong>start.gg</strong>.",
+    "notablePlayers": [
+      "LoDE",
+      "Spookymemes",
+      "Edgoron"
+    ],
+    "isArchived": true,
+    "excludeFromSite": false
+  },
   "frosty-faustings-xviii-2026": {
     "name": "Frosty Faustings XVIII 2026",
     "slug": "frosty-faustings-xviii-2026",
