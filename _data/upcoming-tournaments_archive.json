@@ -1,4 +1,36 @@
 {
+  "genesis-x3": {
+    "name": "Genesis X3",
+    "slug": "genesis-x3",
+    "startAt": 1770998400,
+    "endAt": 1771228799,
+    "startDate": "2026-02-13",
+    "endDate": "2026-02-15",
+    "dates": "Feb 13 - 15, 2026",
+    "location": "150 W San Carlos St, San Jose, CA 95113, USA",
+    "venueName": "San Jose McEnery Convention Center",
+    "url": "https://genesis.gg/",
+    "tier": "A",
+    "prizes": "TBD",
+    "game": "Street Fighter 6",
+    "streamLink": "https://www.twitch.tv/genesisgg_4",
+    "scheduleLink": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSAegaKKOT2_D2iyOB-vbo_cZu3H1u6sS7OeBcWy2MqaeAkQMIao-BpIULAFys1jOcgd_Ei9IHk9B0y/pubhtml?gid=30414474&single=true",
+    "description": "<p>Genesis X3 returns to the San Jose McEnery Convention Center from February 13–15, 2026. While primarily known as the largest grassroots Super Smash Bros. tournament in the world, the event maintains a dedicated footprint for the traditional Fighting Game Community, featuring Street Fighter 6 as a main competitive title.</p><p>For Street Fighter competitors, Genesis offers a change of pace from the high-pressure Capcom Pro Tour circuit. It typically falls into the 'community major' tier, meaning fewer global travelers but a concentrated pool of strong North American talent. Previous iterations have drawn top-level competitors like iDom, Nephew, and Riddles to the bracket.</p><p>The defining feature of Genesis for an SF6 player is the venue culture. Unlike standard esports events, Genesis X3 offers a 24-hour venue policy for competitors. This 'convention-style' access allows for overnight money matches, endless casual sets, and access to a massive arcade and rhythm game section, creating a festival atmosphere that persists long after tournament brackets conclude for the day.</p>",
+    "notablePlayers": [
+      "Punk",
+    "NYChrisG",
+    "Riddles",
+    "NoahTheProdigy",
+    "GO1",
+    "小路KOG",
+    "Samurai",
+    "MOTHMAN",
+    "Nemo",
+    "TreeWiz"
+    ],
+    "isArchived": true,
+    "excludeFromSite": false
+  },
   "perfect-storm-2026": {
     "name": "Perfect Storm 2026",
     "slug": "perfect-storm-2026",

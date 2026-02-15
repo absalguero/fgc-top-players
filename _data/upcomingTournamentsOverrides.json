@@ -1,36 +1,4 @@
 {
-  "genesis-x3": {
-    "name": "Genesis X3",
-    "slug": "genesis-x3",
-    "startAt": 1770998400,
-    "endAt": 1771228799,
-    "startDate": "2026-02-13",
-    "endDate": "2026-02-15",
-    "dates": "Feb 13 - 15, 2026",
-    "location": "150 W San Carlos St, San Jose, CA 95113, USA",
-    "venueName": "San Jose McEnery Convention Center",
-    "url": "https://genesis.gg/",
-    "tier": "A",
-    "prizes": "TBD",
-    "game": "Street Fighter 6",
-    "streamLink": "https://www.twitch.tv/genesisgg_4",
-    "scheduleLink": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSAegaKKOT2_D2iyOB-vbo_cZu3H1u6sS7OeBcWy2MqaeAkQMIao-BpIULAFys1jOcgd_Ei9IHk9B0y/pubhtml?gid=30414474&single=true",
-    "description": "<p>Genesis X3 returns to the San Jose McEnery Convention Center from February 13–15, 2026. While primarily known as the largest grassroots Super Smash Bros. tournament in the world, the event maintains a dedicated footprint for the traditional Fighting Game Community, featuring Street Fighter 6 as a main competitive title.</p><p>For Street Fighter competitors, Genesis offers a change of pace from the high-pressure Capcom Pro Tour circuit. It typically falls into the 'community major' tier, meaning fewer global travelers but a concentrated pool of strong North American talent. Previous iterations have drawn top-level competitors like iDom, Nephew, and Riddles to the bracket.</p><p>The defining feature of Genesis for an SF6 player is the venue culture. Unlike standard esports events, Genesis X3 offers a 24-hour venue policy for competitors. This 'convention-style' access allows for overnight money matches, endless casual sets, and access to a massive arcade and rhythm game section, creating a festival atmosphere that persists long after tournament brackets conclude for the day.</p>",
-    "notablePlayers": [
-      "Punk",
-    "NYChrisG",
-    "Riddles",
-    "NoahTheProdigy",
-    "GO1",
-    "小路KOG",
-    "Samurai",
-    "MOTHMAN",
-    "Nemo",
-    "TreeWiz"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
   "capcom-cup-12": {
     "name": "Capcom Cup 12",
     "slug": "capcom-cup-12",
@@ -117,6 +85,29 @@
     "scheduleLink": "",
     "description": "<p>Texas Showdown 2026 marks the 25th anniversary of this longstanding tournament, scheduled to take place from March 27 through March 29, 2026. As one of the longest-running competitive events in the region, the tournament acts as a primary hub for players across the Southwest, offering a mix of official brackets and casual play.</p><p>The event is hosted at the Hilton Post Oak at the Galleria in Houston, Texas. This venue houses the main competition hall, providing space for tournament pools, finals, vendor areas, and community gaming setups throughout the weekend.</p><p>The 2026 lineup includes over 25 official tournaments, split between modern releases and legacy titles. Confirmed games include Street Fighter 6, TEKKEN 8, Mortal Kombat 1, and Fatal Fury: City of the Wolves, alongside classic competitions for Marvel vs. Capcom 2 and Super Street Fighter II Turbo.</p><p>Texas Showdown 2026 continues to operate as a central meeting point for the Fighting Game Community, providing a standardized tournament environment that accommodates both the latest competitive scenes and the preservation of retro fighting game history.</p>",
     "notablePlayers": [],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
+  "edinbrawl-v": {
+    "name": "Edinbrawl V",
+    "slug": "edinbrawl-v",
+    "startAt": 1775898000,
+    "endAt": 1775955600,
+    "startDate": "2026-04-11",
+    "endDate": "2026-04-11",
+    "dates": "Apr 11, 2026",
+    "location": "20 North Bridge, Edinburgh EH1 1TR, UK",
+    "venueName": "The Scotsman Hotel",
+    "url": "https://www.start.gg/tournament/edinbrawl-v/details",
+    "tier": "B",
+    "prizes": "TBD",
+    "game": "Street Fighter 6",
+    "streamLink": "https://www.twitch.tv/rushdownedinburgh",
+    "scheduleLink": "https://www.start.gg/tournament/edinbrawl-v/details",
+    "description": "<p><strong>Edinbrawl V</strong> returns to the heart of Scotland's capital for its fifth outing, cementing its place as a premier destination for the fighting game community in the region. Hosted by <strong>Rushdown Edinburgh</strong>, this one-day major brings together players from across the country to compete in the elegant <strong>Fettercairn and Garden Suite</strong> at <strong>The Scotsman Hotel</strong>.</p><p>This year’s event is highlighted by the Scottish debut of Riot Games' highly anticipated fighter, <strong>2XKO</strong>, alongside staple titles in the modern fighting game landscape.</p><h3>The Games Lineup</h3><p>Competitors can test their skills across five major titles:<ul><li><strong>Street Fighter 6:</strong> The flagship title returns for more high-level play.</li><li><strong>Tekken 8:</strong> Experience the next chapter of the King of Iron Fist Tournament on PS5.</li><li><strong>Guilty Gear Strive:</strong> High-octane anime action continues to be a crowd favorite.</li><li><strong>Granblue Fantasy Versus: Rising:</strong> The gorgeous fighter returns to the Edinbrawl stage.</li><li><strong>2XKO (Scottish Debut):</strong> Be among the first in Scotland to compete in Riot’s tag-team brawler.</li></ul></p><h3>Venue & Experience</h3><p>The Fettercairn Suite serves as the primary arena, while the Jura Suite is dedicated to casual setups, ensuring everyone gets plenty of games in. For those needing a break from the intensity of the bracket, the Garden Suite offers a quiet space to relax.</p><p>Doors open at <strong>12:00 PM</strong>, and while registration is required for competitors, spectators are welcome to attend for free and soak in the atmosphere.</p><h3>Registration & Pricing</h3><p>Registration is open until <strong>April 9, 2026</strong>, via Start.gg. The entry structure is as follows:<ul><li><strong>Venue Fee:</strong> £15.</li><li><strong>Tournament Entry:</strong> £5 per game.</li><li><strong>Game Limit:</strong> Maximum of 3 games per entrant to ensure a smooth schedule.</li></ul></p>",
+    "notablePlayers": [
+      "MysticSmash"
+    ],
     "isArchived": false,
     "excludeFromSite": false
   },

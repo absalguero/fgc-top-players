@@ -11287,7 +11287,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "winter-showdown-2025": {
     "name": "Winter Showdown 2025",
@@ -58765,6 +58765,656 @@
         "Finish": "33",
         "Entrants": "37",
         "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "genesis-x3": {
+    "name": "Genesis X3",
+    "date": "2026-02-12",
+    "slug": "genesis-x3",
+    "Tier": "A",
+    "Entrants": "171",
+    "results": [
+      {
+        "Player": "GO1",
+        "Player ID": "fe93cbdc",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "1",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "Punk",
+        "Player ID": "1b9e2ed9",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "2",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "Riddles",
+        "Player ID": "03d3a671",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "3",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "NYChrisG",
+        "Player ID": "dab1e1cc",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "4",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "Samurai",
+        "Player ID": "5b98b446",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "5",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "NoahTheProdigy",
+        "Player ID": "27053e88",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "5",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "Julio Fuentes",
+        "Player ID": "7e1a429f",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "7",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "Skate Park Dad",
+        "Player ID": "acaaa853",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "7",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "SodaCan",
+        "Player ID": "fb9a1c7b",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "9",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "U",
+        "Player ID": "a1747b9a",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "9",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "NO RESPECT",
+        "Player ID": "7a5d0845",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "9",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "LPN",
+        "Player ID": "2a300d0b",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "9",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "小路KOG",
+        "Player ID": "17aece0a",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "13",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "DommaLlama",
+        "Player ID": "16b5e483",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "13",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "Jack",
+        "Player ID": "fe25d091",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "13",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "quiksilver",
+        "Player ID": "338f8bf2",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "13",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "SumThin",
+        "Player ID": "0b9a71e1",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "17",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "TreeWiz",
+        "Player ID": "77fc0194",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "17",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "Lucas",
+        "Player ID": "f6ec5015",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "17",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "Mgwa123",
+        "Player ID": "eed2362c",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "17",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "chumpslayer",
+        "Player ID": "f1815d2f",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "17",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "Chikarawr",
+        "Player ID": "65404f2f",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "17",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "Crazy Diamond",
+        "Player ID": "1e19cd3d",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "17",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "YJK",
+        "Player ID": "3a85ce6a",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "17",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "LouisCampbell",
+        "Player ID": "63ce7800",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "25",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "Frenchy",
+        "Player ID": "d5f09df6",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "25",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "Jornman",
+        "Player ID": "6ac60987",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "25",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "ewaller",
+        "Player ID": "f0e4b281",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "25",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "Jehtt",
+        "Player ID": "8c2d2ef3",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "25",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "NinjaBlaze",
+        "Player ID": "779a0784",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "25",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "MOTHMAN",
+        "Player ID": "590d043d",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "25",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "Catalyst",
+        "Player ID": "feb0d4a6",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "25",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "Strakaman",
+        "Player ID": "3fabbe94",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "33",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "foxyfarhad",
+        "Player ID": "d463afc7",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "33",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "Dr. Iggy",
+        "Player ID": "3234fd3e",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "33",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "Ryze",
+        "Player ID": "ad3647a0",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "33",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "xCaboose",
+        "Player ID": "b435388a",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "33",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "icecream",
+        "Player ID": "b450456c",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "33",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "dustinrider",
+        "Player ID": "62519ecf",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "33",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "HashMap",
+        "Player ID": "df1a8afd",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "33",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "Fistoffury",
+        "Player ID": "5a7016d6",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "33",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "Mongee Sr.",
+        "Player ID": "d9938528",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "33",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "sleepnsheep",
+        "Player ID": "80395920",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "33",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "Rayynz",
+        "Player ID": "14e4eaac",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "33",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "Dj norb",
+        "Player ID": "0cfa6ffc",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "33",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "dOKI-dOKI FTR",
+        "Player ID": "7002c7e3",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "33",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "Waterboy",
+        "Player ID": "133ab2de",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "33",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "TrawMuh",
+        "Player ID": "b0d7e680",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "33",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "Sherryjenix",
+        "Player ID": "f29d0db2",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "49",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "Super_Yan",
+        "Player ID": "9dfc8ec3",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "49",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "El Cubano Loco",
+        "Player ID": "7b12aa23",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "49",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "WrongInputRyan",
+        "Player ID": "4fd05a3c",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "49",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "aki guy",
+        "Player ID": "fa1890cd",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "49",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "Britknee Spears",
+        "Player ID": "b540abbd",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "49",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "Spookymank",
+        "Player ID": "ca59bcd3",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "49",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "Kwaniza",
+        "Player ID": "2fad4efb",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "49",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "LoweKeyFlexin",
+        "Player ID": "b61dabb7",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "49",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "kuggz",
+        "Player ID": "8796b71c",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "49",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "Tiggy",
+        "Player ID": "b67319eb",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "49",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "tpcstld",
+        "Player ID": "9eaa2f36",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "49",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "Mr. Sifu",
+        "Player ID": "418df70d",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "49",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "Gust",
+        "Player ID": "4a4bbf08",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "49",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "Rebel Scum",
+        "Player ID": "e910868c",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "49",
+        "Entrants": "171",
+        "Tier": "A"
+      },
+      {
+        "Player": "w8sec",
+        "Player ID": "a0852166",
+        "Event": "Genesis X3",
+        "Event ID": "genesis-x3",
+        "Date": "2026-02-13",
+        "Finish": "49",
+        "Entrants": "171",
+        "Tier": "A"
       }
     ],
     "isArchived": false
