@@ -419,10 +419,17 @@ if (normalize(post.url) === normalize(currentUrl)) return { score: -1, post };
 
     // 3. Filter for matches, sort by highest score, take top 3
     return scoredPosts
-      .filter(item => item.score > 0) // Must have at least one meaningful tag in common
-      .sort((a, b) => b.score - a.score) // Highest score first
-      .slice(0, 3) // Take top 3
-      .map(item => item.post); // Return just the post object
+    .filter(item => item.score > 0)
+    .sort((a, b) => {
+      // Primary Sort: Higher score first
+      if (b.score !== a.score) {
+        return b.score - a.score;
+      }
+      // Secondary Sort (Tie-Breaker): Newer date first
+      return b.post.date - a.post.date;
+    })
+    .slice(0, 3) // Take top 3
+    .map(item => item.post);
   });
   // -----------------------------------------------------
 
