@@ -1,4 +1,26 @@
 {
+  "max-mode-2026": {
+    "name": "MAX MODE 2026",
+    "slug": "max-mode-2026",
+    "startAt": 1772082000,
+    "endAt": 1772337540,
+    "startDate": "2026-02-27",
+    "endDate": "2026-03-01",
+    "dates": "Feb 27 - Mar 1, 2026",
+    "location": "5993 Peachtree Industrial Blvd, Peachtree Corners, GA 30092, USA",
+    "venueName": "Hilton Atlanta Northeast",
+    "url": "https://www.start.gg/tournament/max-mode-2026/details",
+    "tier": "B",
+    "prizes": "TBD",
+    "game": "Street Fighter 6",
+    "streamLink": "https://www.twitch.tv/data_fgc",
+    "scheduleLink": "https://www.start.gg/tournament/max-mode-2026/details",
+    "description": "<p><strong>MAX MODE 2026</strong> returns to Atlanta, Georgia for its third year! Hosted by <strong>DATA FGC</strong>, this premier fighting game celebration brings together competitors from across the Southeast and beyond for a weekend of high-stakes brackets and community vibes at the <strong>Hilton Atlanta Northeast</strong>.</p><h3>A Stacked Lineup of Titles</h3><p>This year’s event features a massive roster of official tournament games, catering to both modern hits and retro classics:<ul><li><strong>Modern & Featured Titles:</strong> Street Fighter 6, Tekken 8, Guilty Gear -Strive-, Granblue Fantasy Versus: Rising, and 2XKO Singles.</li><li><strong>SNK Showcase:</strong> The King of Fighters XV and Fatal Fury: City of the Wolves (SWC Master 3 Circuit).</li><li><strong>Retro & Classic:</strong> Street Fighter III: 3rd Strike (Jazzy Circuit Auto Qualifier), Capcom vs. SNK 2, and KOF XIII.</li></ul></p><h3>Circuit Significance</h3><p>MAX MODE 2026 serves as a critical stop for several major competitive circuits. It is an official <strong>SWC Master 3</strong> event for both <em>Fatal Fury: City of the Wolves</em> and <em>The King of Fighters XV</em>, and provides an auto-qualification spot for the <strong>Jazzy Circuit</strong> via the <em>3rd Strike</em> bracket.</p><h3>Registration & Venue Information</h3><p>Attendees can choose between Competitor and Spectator passes:<ul><li><strong>Competitor Passes:</strong> Required for all official tournament entries. Note that there is <strong>NO ONSITE REGISTRATION</strong> for competitors. Registration closes February 15, 2026.</li><li><strong>Spectator Passes:</strong> Available online and at the door for those looking to enjoy casuals, community games (like Marvel vs. Capcom 2 and CVS2), and the vendor hall.</li></ul></p>",
+    "notablePlayers": [
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
   "capcom-cup-12": {
     "name": "Capcom Cup 12",
     "slug": "capcom-cup-12",
