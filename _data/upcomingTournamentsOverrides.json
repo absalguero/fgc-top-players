@@ -1,27 +1,4 @@
 {
-  "run-the-set-7-the-red-bull-gaming-hub-tmu": {
-    "name": "Run The Set #7 @ The Red Bull Gaming Hub & TMU",
-    "slug": "run-the-set-7-the-red-bull-gaming-hub-tmu",
-    "startAt": 1772298000,
-    "endAt": 1772326800,
-    "startDate": "2026-02-28",
-    "endDate": "2026-02-28",
-    "dates": "Feb 28, 2026",
-    "location": "Rogers Communications Centre, 80 Gould St, Toronto, ON M5B 2M7, Canada",
-    "venueName": "",
-    "url": "https://www.start.gg/tournament/run-the-set-7-the-red-bull-gaming-hub-tmu",
-    "tier": "B",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "Run The Set #7 @ The Red Bull Gaming Hub & TMU is scheduled for Feb 28, 2026 in Rogers Communications Centre, 80 Gould St, Toronto, ON M5B 2M7, Canada. Featuring Street Fighter 6. Registered top players include Riddles.",
-    "notablePlayers": [
-      "Riddles"
-    ],
-    "isArchived": false,
-    "excludeFromSite": true
-  },
   "max-mode-2026": {
     "name": "MAX MODE 2026",
     "slug": "max-mode-2026",
@@ -40,6 +17,9 @@
     "scheduleLink": "https://x.com/data_fgc/status/2025078327648694389?s=20",
     "description": "<p><strong>MAX MODE 2026</strong> returns to Atlanta, Georgia for its third year! Hosted by <strong>DATA FGC</strong>, this premier fighting game celebration brings together competitors from across the Southeast and beyond for a weekend of high-stakes brackets and community vibes at the <strong>Hilton Atlanta Northeast</strong>.</p><h3>A Stacked Lineup of Titles</h3><p>This year’s event features a massive roster of official tournament games, catering to both modern hits and retro classics:<ul><li><strong>Modern & Featured Titles:</strong> Street Fighter 6, Tekken 8, Guilty Gear -Strive-, Granblue Fantasy Versus: Rising, and 2XKO Singles.</li><li><strong>SNK Showcase:</strong> The King of Fighters XV and Fatal Fury: City of the Wolves (SWC Master 3 Circuit).</li><li><strong>Retro & Classic:</strong> Street Fighter III: 3rd Strike (Jazzy Circuit Auto Qualifier), Capcom vs. SNK 2, and KOF XIII.</li></ul></p><h3>Circuit Significance</h3><p>MAX MODE 2026 serves as a critical stop for several major competitive circuits. It is an official <strong>SWC Master 3</strong> event for both <em>Fatal Fury: City of the Wolves</em> and <em>The King of Fighters XV</em>, and provides an auto-qualification spot for the <strong>Jazzy Circuit</strong> via the <em>3rd Strike</em> bracket.</p><h3>Registration & Venue Information</h3><p>Attendees can choose between Competitor and Spectator passes:<ul><li><strong>Competitor Passes:</strong> Required for all official tournament entries. Note that there is <strong>NO ONSITE REGISTRATION</strong> for competitors. Registration closes February 15, 2026.</li><li><strong>Spectator Passes:</strong> Available online and at the door for those looking to enjoy casuals, community games (like Marvel vs. Capcom 2 and CVS2), and the vendor hall.</li></ul></p>",
     "notablePlayers": [
+      "big mo",
+      "blendoben",
+      "Jayson"
     ],
     "isArchived": false,
     "excludeFromSite": false
@@ -74,6 +54,36 @@
       "EndingWalker",
       "Leshar",
       "Kawano"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
+  "road-to-ewc-dreamhack-birmingham-2026": {
+    "name": "Road to EWC: DreamHack Birmingham 2026",
+    "slug": "road-to-ewc-dreamhack-birmingham-2026",
+    "startAt": 1774602000,
+    "endAt": 1774828800,
+    "startDate": "2026-03-27",
+    "endDate": "2026-03-29",
+    "dates": "Mar 27-29, 2026",
+    "location": "Pendigo Way, Marston Green, Birmingham B40 1NT, United Kingdom",
+    "venueName": "National Exhibition Centre (NEC)",
+    "url": "https://dreamhack.com/birmingham/ewc/",
+    "tier": "A",
+    "prizes": "$50,000",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "https://dreamhack.com/birmingham/ewc/",
+    "description": "<p><strong>Road to EWC: DreamHack Birmingham 2026</strong> brings high-stakes fighting game action to the United Kingdom. Scheduled for March 27 through March 29, 2026, the event will take place at the massive <strong>National Exhibition Centre (NEC)</strong>, gathering top-tier international talent and passionate fans under one roof.</p><p>Serving as a crucial offline qualifier for the prestigious <strong>Esports World Cup 2026</strong>, the tournament offers competitors a direct path to the massive global finals in Riyadh. The pressure is on as players battle through intense brackets to secure their coveted EWC qualification spots.</p><h3>Featured Titles & Qualification Stakes</h3><p>The Birmingham qualifier highlights two major fighting game titles, each featuring a massive $50,000 prize pool and its own dedicated path to the global stage. Competitors will face off in Capcom's heavyweight champion, <strong>Street Fighter 6</strong>, where the top two placing players will secure their spots at EWC 2026. Alongside it, SNK's acclaimed <strong>Fatal Fury: City of the Wolves</strong> will see intense competition as its top four players earn qualification to Riyadh.</p><h3>World-Class Competition</h3><p>The quest for EWC qualification has attracted a stacked roster of international and regional heavyweights, setting the stage for an unforgettable weekend of fierce matches. With direct invites to Riyadh on the line, the tournament serves as a major battleground where local European FGC standouts will have to defend their home turf against traveling competitors from North America, Asia, and beyond.</p><p>This convergence of diverse playstyles and regional metas guarantees high-level competition from pools all the way to the Grand Finals. For both seasoned veterans and rising contenders, DreamHack Birmingham represents one of the most critical opportunities of the 2026 season to secure their place on the world's biggest esports stage.</p>",
+    "notablePlayers": [
+      "GO1",
+      "Mister Crimson",
+      "NoahTheProdigy",
+      "Nephew",
+      "Kusanagi",
+      "Armperor",
+      "MysticSmash",
+      "小路KOG"
     ],
     "isArchived": false,
     "excludeFromSite": false

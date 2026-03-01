@@ -12057,7 +12057,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "capcom-cup-xi": {
     "name": "Capcom Cup XI",
@@ -33888,7 +33888,7 @@
       },
       {
         "Player": "taketake-piano",
-        "Player ID": "",
+        "Player ID": "taketake-piano",
         "Event": "Esports World Cup 2025 Last Change Qualifier (LCQ)",
         "Event ID": "",
         "Date": "2025-08-14",
@@ -59894,6 +59894,96 @@
         "Date": "2026-02-21",
         "Finish": "33",
         "Entrants": "47",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "japan-world-warrior-regional-final-2026": {
+    "name": "Japan World Warrior Regional Final 2026",
+    "date": "2026-02-07",
+    "slug": "japan-world-warrior-regional-final-2026",
+    "Tier": "B",
+    "Entrants": "8",
+    "results": [
+      {
+        "Player": "kincho",
+        "Player ID": "c5bc27ca",
+        "Event": "Japan World Warrior Regional Final 2026",
+        "Event ID": "",
+        "Date": "2026-02-08",
+        "Finish": "1",
+        "Entrants": "8",
+        "Tier": "B"
+      },
+      {
+        "Player": "Torimeshi",
+        "Player ID": "5be8e15c",
+        "Event": "Japan World Warrior Regional Final 2026",
+        "Event ID": "",
+        "Date": "2026-02-08",
+        "Finish": "2",
+        "Entrants": "8",
+        "Tier": "B"
+      },
+      {
+        "Player": "taketake-piano",
+        "Player ID": "taketake-piano",
+        "Event": "Japan World Warrior Regional Final 2026",
+        "Event ID": "",
+        "Date": "2026-02-08",
+        "Finish": "3",
+        "Entrants": "8",
+        "Tier": "B"
+      },
+      {
+        "Player": "GO1",
+        "Player ID": "fe93cbdc",
+        "Event": "Japan World Warrior Regional Final 2026",
+        "Event ID": "",
+        "Date": "2026-02-08",
+        "Finish": "4",
+        "Entrants": "8",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dogura",
+        "Player ID": "2464d654",
+        "Event": "Japan World Warrior Regional Final 2026",
+        "Event ID": "",
+        "Date": "2026-02-08",
+        "Finish": "5",
+        "Entrants": "8",
+        "Tier": "B"
+      },
+      {
+        "Player": "Seiya",
+        "Player ID": "bf1fa486",
+        "Event": "Japan World Warrior Regional Final 2026",
+        "Event ID": "",
+        "Date": "2026-02-08",
+        "Finish": "5",
+        "Entrants": "8",
+        "Tier": "B"
+      },
+      {
+        "Player": "Hibiki",
+        "Player ID": "362536f6",
+        "Event": "Japan World Warrior Regional Final 2026",
+        "Event ID": "",
+        "Date": "2026-02-08",
+        "Finish": "7",
+        "Entrants": "8",
+        "Tier": "B"
+      },
+      {
+        "Player": "Yanai",
+        "Player ID": "0b55a51c",
+        "Event": "Japan World Warrior Regional Final 2026",
+        "Event ID": "",
+        "Date": "2026-02-08",
+        "Finish": "7",
+        "Entrants": "8",
         "Tier": "B"
       }
     ],
