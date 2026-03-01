@@ -59988,5 +59988,585 @@
       }
     ],
     "isArchived": false
+  },
+  "max-mode-2026": {
+    "name": "MAX MODE 2026",
+    "date": "2026-02-26",
+    "slug": "max-mode-2026",
+    "Tier": "B",
+    "Entrants": "57",
+    "results": [
+      {
+        "Player": "Fierce",
+        "Player ID": "2d7a14fd",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "1",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Musa",
+        "Player ID": "62d680d9",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "2",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Nagato",
+        "Player ID": "a93c7d05",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "3",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Milo-madds",
+        "Player ID": "cdc94322",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "4",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "big mo",
+        "Player ID": "af88c91a",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "5",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Toph The Goat",
+        "Player ID": "06de6219",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "5",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Chato",
+        "Player ID": "0c869f5a",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "7",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Buddylikefriend",
+        "Player ID": "ceb141eb",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "7",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Poss_uwu",
+        "Player ID": "c3e78c7b",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "9",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Alex_dotdot",
+        "Player ID": "042696c6",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "9",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "heg",
+        "Player ID": "150edf36",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "9",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "4H Tim",
+        "Player ID": "0c638c0d",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "9",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "TimeForSleeps",
+        "Player ID": "f8d2451b",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "13",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "AceUnlimited",
+        "Player ID": "16772b52",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "13",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Painbot",
+        "Player ID": "87b8bf12",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "13",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "DG AL",
+        "Player ID": "ceb96df9",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "13",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "blendoben",
+        "Player ID": "9a2614fd",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "17",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Skate",
+        "Player ID": "2023f8b3",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "17",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Biskit",
+        "Player ID": "9243a093",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "17",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Yugo",
+        "Player ID": "39675ec5",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "17",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Solveria",
+        "Player ID": "4c04b48b",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "17",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pokchop",
+        "Player ID": "d456cbaa",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "17",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Tomm",
+        "Player ID": "0f178686",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "17",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Demonic",
+        "Player ID": "f84e92e6",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "17",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "NikofTime",
+        "Player ID": "e1d78ad5",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "25",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "hazywoods",
+        "Player ID": "ce04ad8e",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "25",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mr Skinder",
+        "Player ID": "d6a0f1f8",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "25",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Famine",
+        "Player ID": "7b072f4f",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "25",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "SEÑOR  KRAKEN",
+        "Player ID": "933b07da",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "25",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dirty Llama",
+        "Player ID": "ee89dfd5",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "25",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "chrisymandias",
+        "Player ID": "22031965",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "25",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Iggyrick",
+        "Player ID": "a4689028",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "25",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "SurgingStormGG",
+        "Player ID": "d830eb79",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "33",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Humps",
+        "Player ID": "e452091c",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "33",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "MondoLad",
+        "Player ID": "656ca519",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "33",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "BigKuma",
+        "Player ID": "20fb7512",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "33",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "TortaPounder_Chino",
+        "Player ID": "eab0f940",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "33",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Killteca",
+        "Player ID": "4a230b6f",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "33",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "dertdobber",
+        "Player ID": "2ff3e3c2",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "33",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "DietClubSoda",
+        "Player ID": "ab678b12",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "33",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Lidistus",
+        "Player ID": "fbc992bc",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "33",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Larcenist",
+        "Player ID": "2669fc3c",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "33",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Zazu",
+        "Player ID": "8c2da1fd",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "33",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Aldrammech",
+        "Player ID": "99fa060e",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "33",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Papa_Sebb",
+        "Player ID": "f58466e1",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "33",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Astarte",
+        "Player ID": "0253d460",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "33",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "juice",
+        "Player ID": "df82bb68",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "33",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Green Lantern R",
+        "Player ID": "820e3c97",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "33",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "JSH3LLZ",
+        "Player ID": "19ad6cad",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "49",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "KakSoup Aes_Thetics",
+        "Player ID": "4c91389f",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "49",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "MessatsuIM",
+        "Player ID": "4246077d",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "49",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cujo Kate",
+        "Player ID": "9f252e7d",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "49",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mobu Darko",
+        "Player ID": "b76d50f1",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "49",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jayson",
+        "Player ID": "fe1f8a2f",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "49",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mellow 0ut",
+        "Player ID": "e8406482",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "49",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "Crang",
+        "Player ID": "a5af7809",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "49",
+        "Entrants": "57",
+        "Tier": "B"
+      },
+      {
+        "Player": "bradido",
+        "Player ID": "ad499c97",
+        "Event": "MAX MODE 2026",
+        "Event ID": "max-mode-2026",
+        "Date": "2026-02-27",
+        "Finish": "49",
+        "Entrants": "57",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
   }
 }
