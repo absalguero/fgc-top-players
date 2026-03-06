@@ -12,7 +12,7 @@ video:
   title: "Dogura’s Journey From Beginner to Pro | Evo Legends Powered by Qiddiya"
   description: "A deep dive into the FGC origins, legendary tournament runs, and future goals of Street Fighter 6 professional player Dogura."
   thumbnail: "https://img.youtube.com/vi/3lprWPdTpag/maxresdefault.jpg"
-  uploadDate: "2026-03-02"
+  uploadDate: "2026-03-02T16:41:52+00:00"
   embedUrl: "https://www.youtube.com/embed/3lprWPdTpag"
 excerpt: "The latest Evo Legends feature highlights Dogura's incredible journey from arcade warrior to Street Fighter League world championship hopeful."
 description: "Dogura Evo Legends mini-documentary reveals the Crazy Raccoon star's FGC origins, Tougeki 2008 victory, and his ultimate dream to open his own arcade."

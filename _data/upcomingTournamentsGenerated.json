@@ -65,6 +65,29 @@
     "isArchived": false,
     "excludeFromSite": false
   },
+  "blink-respawn-m-xico-2026": {
+    "name": "BLINK RESPAWN MÉXICO 2026",
+    "slug": "blink-respawn-m-xico-2026",
+    "startAt": 1775912400,
+    "endAt": 1775966340,
+    "startDate": "2026-04-11",
+    "endDate": "2026-04-11",
+    "dates": "Apr 11, 2026",
+    "location": "Av. Morelos 67, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, Mexico",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/blink-respawn-m-xico-2026",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "BLINK RESPAWN MÉXICO 2026 is scheduled for Apr 11, 2026 in Av. Morelos 67, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, Mexico. Featuring Street Fighter 6. Registered top players include Uriel Velorio.",
+    "notablePlayers": [
+      "Uriel Velorio"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
   "edinbrawl-v": {
     "name": "EDINBRAWL V",
     "slug": "edinbrawl-v",

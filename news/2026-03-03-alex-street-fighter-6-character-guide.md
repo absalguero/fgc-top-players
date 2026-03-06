@@ -10,7 +10,7 @@ video:
   title: "Street Fighter 6 – Character Guide: Alex"
   description: "Capcom's official character guide for Alex in Street Fighter 6, breaking down his Prowler Stance, special moves, and all three Super Art levels ahead of his March 17 release."
   thumbnail: "https://img.youtube.com/vi/e-xXJ-uzIHI/maxresdefault.jpg"
-  uploadDate: "2026-03-03"
+  uploadDate: "2026-03-03T20:00:00+00:00"
   embedUrl: "https://www.youtube.com/embed/e-xXJ-uzIHI"
 excerpt: "Capcom has dropped the official character guide for Alex in Street Fighter 6, and the Street Fighter III legend is packing 11 Prowler Stance options, reworked classics, and a Kenny Omega-inspired Super. He drops March 17."
 description: "Capcom releases the full SF6 character guide for Alex ahead of his March 17 launch, detailing Prowler Stance, Flash Axe, Power Bomb, and all Super Arts."
