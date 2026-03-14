@@ -12897,7 +12897,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "winter-clash-2025": {
     "name": "Winter Clash 2025",
@@ -13437,7 +13437,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "texas-showdown-2025": {
     "name": "Texas Showdown 2025",
@@ -60565,6 +60565,496 @@
         "Finish": "49",
         "Entrants": "57",
         "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "capcom-cup-12": {
+    "name": "Capcom Cup 12",
+    "date": "2026-03-13",
+    "slug": "capcom-cup-12",
+    "Tier": "S+",
+    "Entrants": "48",
+    "results": [
+      {
+        "Player": "Sahara.",
+        "Player ID": "a0062bed",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "1",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "kilzyou",
+        "Player ID": "dcd53ca7",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "2",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Blaz",
+        "Player ID": "37844e8a",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "3",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Higuchi",
+        "Player ID": "fee94c73",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "4",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Micky",
+        "Player ID": "09e5dcc1",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "5",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Vxbao",
+        "Player ID": "50096866",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "5",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Dual Kevin",
+        "Player ID": "88d3f20e",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "5",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Fuudo",
+        "Player ID": "173c6283",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "5",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Itabashi Zangief",
+        "Player ID": "c46d6f76",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "9",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "MenaRD",
+        "Player ID": "31a13177",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "9",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Leshar",
+        "Player ID": "c377c071",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "9",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "kincho",
+        "Player ID": "c5bc27ca",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "9",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Momochi",
+        "Player ID": "7b2d35d2",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "9",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Xerna",
+        "Player ID": "91a47593",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "9",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Big Bird",
+        "Player ID": "5e30e23e",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "9",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "ChrisT",
+        "Player ID": "9f399abf",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "9",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "lllRaihanlll",
+        "Player ID": "",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "17",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Ryukichi",
+        "Player ID": "9f36f82b",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "17",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "shaka22",
+        "Player ID": "0de38c24",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "17",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Bravery",
+        "Player ID": "",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "17",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "JAK",
+        "Player ID": "ca35d13c",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "21",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "NotPedro",
+        "Player ID": "9beebe73",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "21",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "YONANGEL",
+        "Player ID": "06d0de0e",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "21",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Juicyjoe",
+        "Player ID": "63aeb4b9",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "21",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Deiver",
+        "Player ID": "",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "25",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "NuckleDu",
+        "Player ID": "71b98b1d",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "25",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Rainpro",
+        "Player ID": "2ab0ced8",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "25",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "ARMAKOF",
+        "Player ID": "",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "25",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Travis Styles",
+        "Player ID": "609ec843",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "25",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "kobayan",
+        "Player ID": "ef64257e",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "25",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "AngryBird",
+        "Player ID": "3471a2f7",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "25",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Caba",
+        "Player ID": "7ef3978a",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "25",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "NL",
+        "Player ID": "bebd6de0",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "25",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "DakCorgi",
+        "Player ID": "",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "25",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "EndingWalker",
+        "Player ID": "90c33661",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "25",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "xiaohai",
+        "Player ID": "dc3d34bc",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "25",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Jiewa",
+        "Player ID": "be8eb9f8",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "37",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "ひなお",
+        "Player ID": "cab11166",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "37",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Lexx",
+        "Player ID": "ec4d302b",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "37",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Tokido",
+        "Player ID": "a4c7c2d4",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "37",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "LUGABO",
+        "Player ID": "9242d9e3",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "37",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "gachikun",
+        "Player ID": "7fc0306f",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "37",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Tashi",
+        "Player ID": "",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "37",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "pugera",
+        "Player ID": "9594efe4",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "37",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "JabhiM",
+        "Player ID": "",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "37",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "YHC-mochi",
+        "Player ID": "390dfda2",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "37",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Kawano",
+        "Player ID": "84491299",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "37",
+        "Entrants": "48",
+        "Tier": "S+"
+      },
+      {
+        "Player": "HotDog29",
+        "Player ID": "e9050ed0",
+        "Event": "Capcom Cup 12",
+        "Event ID": "",
+        "Date": "2026-03-14",
+        "Finish": "37",
+        "Entrants": "48",
+        "Tier": "S+"
       }
     ],
     "isArchived": false
