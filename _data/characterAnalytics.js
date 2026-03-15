@@ -410,7 +410,7 @@ module.exports = async function () {
         // CMS & RDI
         const monSc = Array.from({ length: 12 }, () => []);
         const regSc = { NA:[], EU:[], AS:[], ME:[], SA:[], OC:[], AF:[], Other:[] };
-        const REGIONS = { NA:["US","CA","MX","DR","PR","PA","CR","TT"], EU:["GB","FR","DE","ES","IT","SE","NO","FI","NL","BE","CH","AT","PT","GR","PL","DK","IE","RU","CZ"], AS:["JP","KR","CN","TW","HK","SG","TH","PH","MY","IN","VN"], ME:["AE","SA","KW","JO","BH","OM","QA","LB","IL"], SA:["BR","CL","AR","PE","CO","VE","UY","EC"], OC:["AU","NZ"], AF:["CM","MA","ZA","EG"] };
+        const REGIONS = { NA:["US","CA","MX","DR","PR","PA","CR","TT"], EU:["GB","FR","DE","ES","IT","SE","NO","FI","NL","BE","CH","AT","PT","GR","PL","DK","IE","RU","CZ"], AS:["JP","KR","CN","TW","HK","SG","TH","PH","MY","IN","BD","VN"], ME:["AE","SA","KW","JO","BH","OM","QA","LB","IL"], SA:["BR","CL","AR","PE","CO","VE","UY","EC"], OC:["AU","NZ"], AF:["CM","MA","ZA","EG"] };
         const getReg = (cc) => {
            const c = (cc||"").trim().toUpperCase();
            return Object.keys(REGIONS).find(k => REGIONS[k].includes(c)) || "Other";

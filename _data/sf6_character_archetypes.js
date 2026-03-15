@@ -507,9 +507,9 @@ module.exports = {
       { title: "Anti-Zoning", description: "Super Jump and OD Seismo allow her to bypass fireball wars entirely." }
     ],
     weaknesses: [
-      { title: "Defensive Options", description: "Lacks a reliable meterless reversal. Relies heavily on OD gauge to escape pressure." },
       { title: "Execution Barrier", description: "Optimal routing requires consistent SJC inputs. Dropping them leaves her unsafe." },
-      { title: "Drive Gauge Thirsty", description: "Relies on OD moves to make Burn Kick pressure safe on block." } // Critical SF6 meta point
+      { title: "High Risk", description: "Her most potent offensive sequences and defensive escapes are heavily reliant on meter, making resource management critical." },
+      { title: "Poor Defense", description: "Lacks a reliable meterless reversal, making her vulnerable when cornered without resources." }
     ],
     radar_stats: { Damage: 4, Health: 3, Mobility: 5, Zoning: 2, "Mix-up": 4 },
     topPlayer: null
@@ -522,15 +522,34 @@ module.exports = {
     execution: "Medium",
     strengths: [
       { title: "Space Denial", description: "High/Low shots force reactions, but his limbs (st.HK) actually control the neutral." }, // Fixed
-      { title: "Anti-Air", description: "Tiger Uppercut covers huge vertical space; arguably best AA in the game." },
+      { title: "Dominant Anti-Air", description: "Tiger Uppercut covers huge vertical space, making it an exceptionally dominant anti-air." },
       { title: "Damage", description: "High damage output on stray hits and Tiger Knee confirms." } // Replaced "Reach" with Damage since Reach is covered in Space Denial
     ],
     weaknesses: [
       { title: "Mobility", description: "Slow walk speed and heavy jump arc make escaping pressure difficult." },
       { title: "Big Hurtbox", description: "Easier to combo against; fuzzy guard setups work on him that fail on others." },
-      { title: "Projectile Recovery", description: "Slower recovery than Guile makes him vulnerable to Drive Rush punishes." } // Added specific meta weakness
+      { title: "Projectile Recovery", description: "His powerful projectiles have significant recovery, making them punishable if baited or poorly spaced." }
     ],
     radar_stats: { Damage: 5, Health: 4, Mobility: 1, Zoning: 4, "Mix-up": 2 }, // Lowered Zoning to 4 to reflect Guile is the 5
+    topPlayer: null
+  },
+
+  "alex": {
+    overview: "A powerful mid-range grappler who bullies opponents with long-range normals before closing in for devastating command grabs.",
+    playstyle_summary: "Alex controls the mid-range with his long limbs, forcing opponents to respect his pokes. Once he creates an opening or scores a knockdown, he leverages the threat of his Power Bomb command grab to create terrifying strike/throw mix-ups. He's not a rushdown monster, but a patient predator.",
+    archetype: "Mid-Range Grappler / Brawler",
+    execution: "Medium",
+    strengths: [
+      { title: "Mid-Range Dominance", description: "Long-reaching normals control space effectively outside of typical brawler range." },
+      { title: "Scary Mix-ups", description: "Once in range, his strike/throw/command grab options are a true guessing game." },
+      { title: "Heavy Damage", description: "Converts openings into significant damage thanks to powerful combos and high-value command grabs." }
+    ],
+    weaknesses: [
+      { title: "Slow Walk Speed", description: "His below-average walk speed requires him to use specials or Drive Rush to close distance." },
+      { title: "Weak to Zoning", description: "Without a projectile, he can struggle against characters who keep him at full-screen." },
+      { title: "Whiff Punishable", description: "His long-reaching normals, while powerful, can have significant recovery, making him vulnerable if his attacks are baited and miss." }
+    ],
+    radar_stats: { Damage: 4, Health: 4, Mobility: 2, Zoning: 1, "Mix-up": 4 },
     topPlayer: null
   }
 };

@@ -23,9 +23,10 @@
       "Nephew",
       "Kusanagi",
       "Armperor",
-      "MysticSmash",
       "Lexx",
-      "小路KOG"
+      "MysticSmash",
+      "小路KOG",
+      "LinkNova"
     ],
     "isArchived": false,
     "excludeFromSite": false
@@ -41,7 +42,7 @@
     "location": "日本、〒730-0811 広島県広島市中区中島町１−５ 3階",
     "venueName": "",
     "url": "https://www.start.gg/tournament/voltagecup-2026",
-    "tier": "A",
+    "tier": "S",
     "prizes": "TBA",
     "game": "Street Fighter 6",
     "streamLink": "",
@@ -165,8 +166,8 @@
       "Ryusei",
       "gachikun",
       "Enzo",
-      "Akira",
       "Chris Wong",
+      "Akira",
       "YHC-mochi",
       "pugera",
       "Rainpro",
@@ -177,8 +178,7 @@
       "HotDog29",
       "Thunder DeLangis",
       "SURINI",
-      "Yanai",
-      "Shuto"
+      "Yanai"
     ],
     "isArchived": false,
     "excludeFromSite": false
