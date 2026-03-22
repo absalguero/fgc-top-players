@@ -4,20 +4,18 @@
 
 /* --- 1. Header & Meta Block --- */
 
-/* Title spacing handled by meta block */
 .page-article .article-post__title {
   margin-bottom: 0;
 }
 
-/* Meta block with centered blue lines and symmetric spacing */
 .page-article .article-post__meta {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;             /* space between date and tags */
-  margin: 1rem 0;          /* equal space above/below whole block */
-  padding: 0.75rem 0 1.25rem; /* equal space between lines and content */
+  gap: 0.5rem;
+  margin: 1rem 0;
+  padding: 0.75rem 0 1.25rem;
   border: 0;
 }
 
@@ -41,10 +39,9 @@
 .page-article .article-post__meta::before { top: 0; }
 .page-article .article-post__meta::after { bottom: 0; }
 
-/* Date + tags inside meta */
 .page-article .article-post__date,
 .page-article .article-post__tags {
-  margin: 0 !important; /* Force the override */
+  margin: 0 !important;
   font-size: 0.9rem;
 }
 
@@ -58,7 +55,6 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin: 0 !important;
 }
 
 .page-article .article-post__meta .fas {
@@ -66,7 +62,6 @@
   font-size: 0.9em;
 }
 
-/* Tag pills (article context) */
 .page-article .article-post__tag {
   background: rgba(0, 150, 255, 0.12);
   border: 1px solid rgba(0, 150, 255, 0.25);
@@ -98,17 +93,15 @@
 /* --- 2. Article Body & Typography --- */
 
 .page-article .article-post__body {
-  margin-top: 0; /* Spacing handled by meta block */
+  margin-top: 0;
   font-size: 1.15rem;
   line-height: 1.8;
 }
 
-/* Remove bottom margin from the last element to prevent gap accumulation */
 .page-article .article-post__body > *:last-child {
   margin-bottom: 0 !important;
 }
 
-/* Headings left-aligned inside body */
 .page-article .article-post__body :is(h2, h3) {
   text-align: left;
 }
@@ -116,12 +109,10 @@
 .page-article .article-post__body h2 { font-size: 1.6rem; }
 .page-article .article-post__body h3 { font-size: 1.35rem; }
 
-/* Lists inside articles */
 .page-article .article-post__body li {
   color: var(--color-text-primary);
 }
 
-/* Legacy float image helper */
 .page-article .article-post__image-float {
   float: right;
   max-width: 210px;
@@ -140,7 +131,6 @@
   object-fit: cover;
 }
 
-/* Figure caption */
 .page-article .article-post__body figure figcaption {
   text-align: center;
   margin-top: 0.5rem;
@@ -156,16 +146,48 @@
   text-decoration: underline;
 }
 
-/* --- 3. Related Articles Section --- */
+/* --- 3. Key Takeaways Callout --- */
+
+.page-article .article-post__body .takeaways {
+  background-color: rgba(0, 150, 255, 0.05);
+  border: 1px solid rgba(0, 150, 255, 0.2);
+  border-radius: var(--border-radius);
+  padding: 0.5rem 1.5rem;
+  margin: 1rem 0;
+}
+
+.page-article .article-post__body .takeaways h3 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  border-left: 3px solid var(--color-accent-blue);
+  padding-left: 0.75rem;
+}
+
+.page-article .article-post__body .takeaways p {
+  margin: 0 0 0.5rem 0;
+}
+
+.page-article .article-post__body .takeaways ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.page-article .article-post__body .takeaways li {
+  margin-bottom: 0.25rem;
+}
+
+.page-article .article-post__body .takeaways li:last-child {
+  margin-bottom: 0;
+}
+
+/* --- 4. Related Articles Section --- */
 
 .page-article .related-articles {
-  /* Remove all container spacing to rely solely on the line's margin */
   margin-top: 0;
   padding-top: 0;
   border-top: none;
 }
 
-/* The Gradient Line */
 .page-article .hr-gradient--center-blue {
   border: 0;
   height: 2px;
@@ -176,17 +198,15 @@
     var(--color-accent-blue),
     transparent
   );
-  margin: 0.5rem auto; /* Exact 0.5rem spacing above and below */
+  margin: 0.5rem auto;
   display: block;
 }
 
-/* Section Header (Left Aligned) */
 .page-article .related-articles__heading {
   font-family: var(--font-heading);
   font-size: 1.75rem;
   color: var(--color-text-primary);
-  margin-bottom: var(--spacing-lg);
-  margin-top: 0; /* CRITICAL FIX: Removes default heading top margin */
+  margin: 0 0 var(--spacing-lg);
   text-align: left;
   text-transform: uppercase;
   padding-left: var(--spacing-xs);
@@ -194,14 +214,12 @@
   line-height: 1;
 }
 
-/* Grid Layout */
 .page-article .related-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: var(--spacing-md);
 }
 
-/* Override Card Styles for Centering */
 .page-article .related-articles .home-card__content {
   text-align: center;
 }
@@ -227,7 +245,7 @@
   margin: 0 auto;
 }
 
-/* --- 4. Footer & Share Block --- */
+/* --- 5. Footer & Share Block --- */
 
 .page-article .article-post__footer .hr-gradient {
   margin: 0 0 1rem 0;
@@ -237,7 +255,7 @@
   position: relative;
   margin: 0 0 1rem;
   padding-top: 0.75rem;
-  text-align: center;      /* keeps label + icons centered */
+  text-align: center;
 }
 
 .page-article .article-post__share::before {
@@ -268,12 +286,11 @@
 
 .page-article .article-post__share-buttons {
   display: flex;
-  justify-content: center; /* centers the social icons */
+  justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
 }
 
-/* Copy button hover (targets a global component) */
 .page-article .article-post__share-buttons :is(.btn-social--copy:hover, .share-btn--copy:hover) {
   background: var(--color-accent-blue);
   color: #fff;
@@ -281,7 +298,6 @@
   box-shadow: 0 6px 16px rgba(0, 150, 255, 0.35);
 }
 
-/* Back nav button centered */
 .page-article .article-post__nav {
   display: flex;
   justify-content: center;
