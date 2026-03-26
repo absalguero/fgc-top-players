@@ -1,6 +1,6 @@
 {
   "road-to-ewc-dreamhack-birmingham-2026": {
-    "name": "Road to EWC: DreamHack Birmingham 2026",
+    "name": "ROAD TO EWC 26: DreamHack Birmingham",
     "slug": "road-to-ewc-dreamhack-birmingham-2026",
     "startAt": 1774602000,
     "endAt": 1774890000,
@@ -9,13 +9,13 @@
     "dates": "Mar 27-30, 2026",
     "location": "Pendigo Way, Marston Green, Birmingham B40 1NT, Wielka Brytania",
     "venueName": "Atlanta Venue",
-    "url": "https://www.start.gg/tournament/road-to-ewc-dreamhack-birmingham-2026",
-    "tier": "B",
+    "url": "https://www.start.gg/tournament/road-to-ewc-26-dreamhack-birmingham",
+    "tier": "A",
     "prizes": "TBA",
     "game": "Street Fighter 6",
     "streamLink": "",
     "scheduleLink": "",
-    "description": "Road to EWC: DreamHack Birmingham 2026 is scheduled for Mar 27-30, 2026 in Pendigo Way, Marston Green, Birmingham B40 1NT, Wielka Brytania. Featuring Street Fighter 6. Registered top players include GO1, NoahTheProdigy, Mister Crimson, Nephew, Kusanagi, Armperor.",
+    "description": "ROAD TO EWC 26: DreamHack Birmingham is scheduled for Mar 27-30, 2026 in Pendigo Way, Marston Green, Birmingham B40 1NT, Wielka Brytania. Featuring Street Fighter 6. Registered top players include GO1, NoahTheProdigy, Mister Crimson, Nephew, Kusanagi, Armperor.",
     "notablePlayers": [
       "GO1",
       "NoahTheProdigy",
@@ -57,7 +57,8 @@
       "eguto",
       "Hikaru",
       "Ryusei",
-      "matsu56"
+      "matsu56",
+      "Yanai"
     ],
     "isArchived": false,
     "excludeFromSite": false
@@ -142,8 +143,8 @@
       "Oil King",
       "kincho",
       "jojotaro",
-      "moke",
       "Torimeshi",
+      "moke",
       "Vxbao",
       "DCQ",
       "kingsvega",
@@ -153,8 +154,8 @@
       "Stealth",
       "Zhen",
       "JAK",
-      "Bonchan",
       "Dogura",
+      "Bonchan",
       "Kusanagi",
       "Armperor",
       "eguto",
@@ -168,15 +169,16 @@
       "Chris Wong",
       "YHC-mochi",
       "Jiewa",
-      "Akira",
       "pugera",
+      "Akira",
       "Rainpro",
       "Hibiki",
       "小路KOG",
       "matsu56",
       "HotDog29",
       "Thunder DeLangis",
-      "SURINI"
+      "SURINI",
+      "Yanai"
     ],
     "isArchived": false,
     "excludeFromSite": false
