@@ -1,7 +1,7 @@
 ---
 title: "ZETA DIVISION Street Fighter 6 Tier List: C.Viper and Sagat Rise"
 layout: article.njk
-date: 2026-03-26 06:40:00
+date: 2026-03-25 22:40:00
 tags:
   - street fighter 6
   - news
