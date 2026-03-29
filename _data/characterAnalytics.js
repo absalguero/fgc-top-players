@@ -593,7 +593,7 @@ module.exports = async function () {
       const zS=0.85, zA=0.25;
       final.forEach(c => {
         const z = Number.isFinite(c.CPV) ? (c.CPV - m)/sd : -Infinity;
-        if(z>=zS) c.Tier = (c.MajorT3 >= 1) ? "S" : "A"; 
+        if(z>=zS) c.Tier = "S";
         else if(z>=zA) c.Tier = "A";
         else if(z>=-zA) c.Tier = "B";
         else if(z>=-zS) c.Tier = "C";

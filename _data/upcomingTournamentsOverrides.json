@@ -1,38 +1,4 @@
 {
-  "road-to-ewc-dreamhack-birmingham-2026": {
-    "name": "Road to EWC: DreamHack Birmingham 2026",
-    "slug": "road-to-ewc-dreamhack-birmingham-2026",
-    "startAt": 1774602000,
-    "endAt": 1774828800,
-    "startDate": "2026-03-27",
-    "endDate": "2026-03-29",
-    "dates": "Mar 27-29, 2026",
-    "location": "Pendigo Way, Marston Green, Birmingham B40 1NT, United Kingdom",
-    "venueName": "National Exhibition Centre (NEC)",
-    "url": "https://dreamhack.com/birmingham/ewc/",
-    "tier": "S",
-    "prizes": "$50,000",
-    "game": "Street Fighter 6",
-    "streamLink": "https://www.twitch.tv/ewc_plus_en2",
-    "scheduleLink": "https://dreamhack.com/birmingham/ewc/",
-    "description": "<p><strong>Road to EWC: DreamHack Birmingham 2026</strong> brings high-stakes fighting game action to the United Kingdom. Scheduled for March 27 through March 29, 2026, the event will take place at the massive <strong>National Exhibition Centre (NEC)</strong>, gathering top-tier international talent and passionate fans under one roof.</p><p>Serving as a crucial offline qualifier for the prestigious <strong>Esports World Cup 2026</strong>, the tournament offers competitors a direct path to the massive global finals in Riyadh. The pressure is on as players battle through intense brackets to secure their coveted EWC qualification spots.</p><h3>Featured Titles & Qualification Stakes</h3><p>The Birmingham qualifier highlights two major fighting game titles, each featuring a massive $50,000 prize pool and its own dedicated path to the global stage. Competitors will face off in Capcom's heavyweight champion, <strong>Street Fighter 6</strong>, where the top two placing players will secure their spots at EWC 2026. Alongside it, SNK's acclaimed <strong>Fatal Fury: City of the Wolves</strong> will see intense competition as its top four players earn qualification to Riyadh.</p><h3>World-Class Competition</h3><p>The quest for EWC qualification has attracted a stacked roster of international and regional heavyweights, setting the stage for an unforgettable weekend of fierce matches. With direct invites to Riyadh on the line, the tournament serves as a major battleground where local European FGC standouts will have to defend their home turf against traveling competitors from North America, Asia, and beyond.</p><p>This convergence of diverse playstyles and regional metas guarantees high-level competition from pools all the way to the Grand Finals. For both seasoned veterans and rising contenders, DreamHack Birmingham represents one of the most critical opportunities of the 2026 season to secure their place on the world's biggest esports stage.</p>",
-    "notablePlayers": [
-      "Dual Kevin",
-      "xiaohai",
-      "Punk",
-      "Micky",
-      "GO1",
-      "kobayan",
-      "NYChrisG",
-      "Mister Crimson",
-      "NoahTheProdigy",
-      "EndingWalker",
-      "Oil King",
-      "NL"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
   "texas-showdown-2026": {
     "name": "Texas Showdown 2026",
     "slug": "texas-showdown-2026",
