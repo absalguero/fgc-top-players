@@ -45088,7 +45088,7 @@
     "results": [
       {
         "Player": "ひなお",
-        "Player ID": "cab11166",
+        "Player ID": "1e05762a",
         "Event": "KUAISHOU FIGHTCLUB CHAMPIONSHIP VI",
         "Event ID": "vi-kuaishou-fightclub-championship-vi-chengdu",
         "Date": "2025-10-30",
@@ -60948,7 +60948,7 @@
       },
       {
         "Player": "ひなお",
-        "Player ID": "cab11166",
+        "Player ID": "1e05762a",
         "Event": "Capcom Cup 12",
         "Event ID": "",
         "Date": "2026-03-14",
@@ -61055,6 +61055,1226 @@
         "Finish": "37",
         "Entrants": "48",
         "Tier": "S+"
+      }
+    ],
+    "isArchived": false
+  },
+  "the-wild-west-2026": {
+    "name": "THE WILD WEST 2026",
+    "date": "2026-03-26",
+    "slug": "the-wild-west-2026",
+    "Tier": "B",
+    "Entrants": "29",
+    "results": [
+      {
+        "Player": "Travis Styles",
+        "Player ID": "609ec843",
+        "Event": "THE WILD WEST 2026",
+        "Event ID": "the-wild-west-2026",
+        "Date": "2026-03-27",
+        "Finish": "1",
+        "Entrants": "29",
+        "Tier": "B"
+      },
+      {
+        "Player": "FREESER",
+        "Player ID": "01b59b4f",
+        "Event": "THE WILD WEST 2026",
+        "Event ID": "the-wild-west-2026",
+        "Date": "2026-03-27",
+        "Finish": "2",
+        "Entrants": "29",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ker",
+        "Player ID": "a87e452c",
+        "Event": "THE WILD WEST 2026",
+        "Event ID": "the-wild-west-2026",
+        "Date": "2026-03-27",
+        "Finish": "3",
+        "Entrants": "29",
+        "Tier": "B"
+      },
+      {
+        "Player": "Robyn Romps",
+        "Player ID": "4e8c51af",
+        "Event": "THE WILD WEST 2026",
+        "Event ID": "the-wild-west-2026",
+        "Date": "2026-03-27",
+        "Finish": "4",
+        "Entrants": "29",
+        "Tier": "B"
+      },
+      {
+        "Player": "TB",
+        "Player ID": "b6a8f3f8",
+        "Event": "THE WILD WEST 2026",
+        "Event ID": "the-wild-west-2026",
+        "Date": "2026-03-27",
+        "Finish": "5",
+        "Entrants": "29",
+        "Tier": "B"
+      },
+      {
+        "Player": "donorofcorona",
+        "Player ID": "7c491186",
+        "Event": "THE WILD WEST 2026",
+        "Event ID": "the-wild-west-2026",
+        "Date": "2026-03-27",
+        "Finish": "5",
+        "Entrants": "29",
+        "Tier": "B"
+      },
+      {
+        "Player": "Baker",
+        "Player ID": "2b8eca1a",
+        "Event": "THE WILD WEST 2026",
+        "Event ID": "the-wild-west-2026",
+        "Date": "2026-03-27",
+        "Finish": "7",
+        "Entrants": "29",
+        "Tier": "B"
+      },
+      {
+        "Player": "Vujic",
+        "Player ID": "6e059e64",
+        "Event": "THE WILD WEST 2026",
+        "Event ID": "the-wild-west-2026",
+        "Date": "2026-03-27",
+        "Finish": "7",
+        "Entrants": "29",
+        "Tier": "B"
+      },
+      {
+        "Player": "PSIClipse",
+        "Player ID": "22d04957",
+        "Event": "THE WILD WEST 2026",
+        "Event ID": "the-wild-west-2026",
+        "Date": "2026-03-27",
+        "Finish": "9",
+        "Entrants": "29",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ctrl-Z",
+        "Player ID": "c0f1a2d2",
+        "Event": "THE WILD WEST 2026",
+        "Event ID": "the-wild-west-2026",
+        "Date": "2026-03-27",
+        "Finish": "9",
+        "Entrants": "29",
+        "Tier": "B"
+      },
+      {
+        "Player": "Atilla the Hun",
+        "Player ID": "15d3a029",
+        "Event": "THE WILD WEST 2026",
+        "Event ID": "the-wild-west-2026",
+        "Date": "2026-03-27",
+        "Finish": "9",
+        "Entrants": "29",
+        "Tier": "B"
+      },
+      {
+        "Player": "Milkshake",
+        "Player ID": "9951e52d",
+        "Event": "THE WILD WEST 2026",
+        "Event ID": "the-wild-west-2026",
+        "Date": "2026-03-27",
+        "Finish": "9",
+        "Entrants": "29",
+        "Tier": "B"
+      },
+      {
+        "Player": "WhyZee",
+        "Player ID": "dc589476",
+        "Event": "THE WILD WEST 2026",
+        "Event ID": "the-wild-west-2026",
+        "Date": "2026-03-27",
+        "Finish": "13",
+        "Entrants": "29",
+        "Tier": "B"
+      },
+      {
+        "Player": "Lilium",
+        "Player ID": "2f8ecaeb",
+        "Event": "THE WILD WEST 2026",
+        "Event ID": "the-wild-west-2026",
+        "Date": "2026-03-27",
+        "Finish": "13",
+        "Entrants": "29",
+        "Tier": "B"
+      },
+      {
+        "Player": "Beedozer",
+        "Player ID": "42933b74",
+        "Event": "THE WILD WEST 2026",
+        "Event ID": "the-wild-west-2026",
+        "Date": "2026-03-27",
+        "Finish": "13",
+        "Entrants": "29",
+        "Tier": "B"
+      },
+      {
+        "Player": "Tohfu",
+        "Player ID": "cecd280c",
+        "Event": "THE WILD WEST 2026",
+        "Event ID": "the-wild-west-2026",
+        "Date": "2026-03-27",
+        "Finish": "13",
+        "Entrants": "29",
+        "Tier": "B"
+      },
+      {
+        "Player": "TJ_Sandman",
+        "Player ID": "a195fe39",
+        "Event": "THE WILD WEST 2026",
+        "Event ID": "the-wild-west-2026",
+        "Date": "2026-03-27",
+        "Finish": "17",
+        "Entrants": "29",
+        "Tier": "B"
+      },
+      {
+        "Player": "MajinBeng",
+        "Player ID": "af4c9086",
+        "Event": "THE WILD WEST 2026",
+        "Event ID": "the-wild-west-2026",
+        "Date": "2026-03-27",
+        "Finish": "17",
+        "Entrants": "29",
+        "Tier": "B"
+      },
+      {
+        "Player": "FinalBlast",
+        "Player ID": "a83d9b3c",
+        "Event": "THE WILD WEST 2026",
+        "Event ID": "the-wild-west-2026",
+        "Date": "2026-03-27",
+        "Finish": "17",
+        "Entrants": "29",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mollie",
+        "Player ID": "1363f54e",
+        "Event": "THE WILD WEST 2026",
+        "Event ID": "the-wild-west-2026",
+        "Date": "2026-03-27",
+        "Finish": "17",
+        "Entrants": "29",
+        "Tier": "B"
+      },
+      {
+        "Player": "Vividly",
+        "Player ID": "2a087c29",
+        "Event": "THE WILD WEST 2026",
+        "Event ID": "the-wild-west-2026",
+        "Date": "2026-03-27",
+        "Finish": "17",
+        "Entrants": "29",
+        "Tier": "B"
+      },
+      {
+        "Player": "SHIZU",
+        "Player ID": "811d3c4e",
+        "Event": "THE WILD WEST 2026",
+        "Event ID": "the-wild-west-2026",
+        "Date": "2026-03-27",
+        "Finish": "17",
+        "Entrants": "29",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cerocivr",
+        "Player ID": "86d4433d",
+        "Event": "THE WILD WEST 2026",
+        "Event ID": "the-wild-west-2026",
+        "Date": "2026-03-27",
+        "Finish": "17",
+        "Entrants": "29",
+        "Tier": "B"
+      },
+      {
+        "Player": "StacyCarnage",
+        "Player ID": "418158b9",
+        "Event": "THE WILD WEST 2026",
+        "Event ID": "the-wild-west-2026",
+        "Date": "2026-03-27",
+        "Finish": "17",
+        "Entrants": "29",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dark",
+        "Player ID": "4f402368",
+        "Event": "THE WILD WEST 2026",
+        "Event ID": "the-wild-west-2026",
+        "Date": "2026-03-27",
+        "Finish": "25",
+        "Entrants": "29",
+        "Tier": "B"
+      },
+      {
+        "Player": "Eltannousss",
+        "Player ID": "8d722992",
+        "Event": "THE WILD WEST 2026",
+        "Event ID": "the-wild-west-2026",
+        "Date": "2026-03-27",
+        "Finish": "25",
+        "Entrants": "29",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rayzar",
+        "Player ID": "rayzar",
+        "Event": "THE WILD WEST 2026",
+        "Event ID": "the-wild-west-2026",
+        "Date": "2026-03-27",
+        "Finish": "25",
+        "Entrants": "29",
+        "Tier": "B"
+      },
+      {
+        "Player": "BryanHeart87",
+        "Player ID": "b180da9a",
+        "Event": "THE WILD WEST 2026",
+        "Event ID": "the-wild-west-2026",
+        "Date": "2026-03-27",
+        "Finish": "25",
+        "Entrants": "29",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mazio",
+        "Player ID": "31a027f7",
+        "Event": "THE WILD WEST 2026",
+        "Event ID": "the-wild-west-2026",
+        "Date": "2026-03-27",
+        "Finish": "25",
+        "Entrants": "29",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "viennality-xl": {
+    "name": "viennality XL",
+    "date": "2026-03-27",
+    "slug": "viennality-xl",
+    "Tier": "B",
+    "Entrants": "26",
+    "results": [
+      {
+        "Player": "krackerlack",
+        "Player ID": "40b9f400",
+        "Event": "viennality XL",
+        "Event ID": "viennality-xl",
+        "Date": "2026-03-28",
+        "Finish": "1",
+        "Entrants": "26",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kayne",
+        "Player ID": "cd4f2827",
+        "Event": "viennality XL",
+        "Event ID": "viennality-xl",
+        "Date": "2026-03-28",
+        "Finish": "2",
+        "Entrants": "26",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rewind",
+        "Player ID": "148b0da7",
+        "Event": "viennality XL",
+        "Event ID": "viennality-xl",
+        "Date": "2026-03-28",
+        "Finish": "3",
+        "Entrants": "26",
+        "Tier": "B"
+      },
+      {
+        "Player": "Torpan",
+        "Player ID": "39c1b468",
+        "Event": "viennality XL",
+        "Event ID": "viennality-xl",
+        "Date": "2026-03-28",
+        "Finish": "4",
+        "Entrants": "26",
+        "Tier": "B"
+      },
+      {
+        "Player": "Wawa",
+        "Player ID": "69331197",
+        "Event": "viennality XL",
+        "Event ID": "viennality-xl",
+        "Date": "2026-03-28",
+        "Finish": "5",
+        "Entrants": "26",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jäger",
+        "Player ID": "835b7db6",
+        "Event": "viennality XL",
+        "Event ID": "viennality-xl",
+        "Date": "2026-03-28",
+        "Finish": "5",
+        "Entrants": "26",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pommes",
+        "Player ID": "7f1b931c",
+        "Event": "viennality XL",
+        "Event ID": "viennality-xl",
+        "Date": "2026-03-28",
+        "Finish": "7",
+        "Entrants": "26",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dizflash",
+        "Player ID": "52c2e000",
+        "Event": "viennality XL",
+        "Event ID": "viennality-xl",
+        "Date": "2026-03-28",
+        "Finish": "7",
+        "Entrants": "26",
+        "Tier": "B"
+      },
+      {
+        "Player": "Geguu",
+        "Player ID": "0868f87d",
+        "Event": "viennality XL",
+        "Event ID": "viennality-xl",
+        "Date": "2026-03-28",
+        "Finish": "9",
+        "Entrants": "26",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rex",
+        "Player ID": "5c93d8a8",
+        "Event": "viennality XL",
+        "Event ID": "viennality-xl",
+        "Date": "2026-03-28",
+        "Finish": "9",
+        "Entrants": "26",
+        "Tier": "B"
+      },
+      {
+        "Player": "Thud13",
+        "Player ID": "82e09f20",
+        "Event": "viennality XL",
+        "Event ID": "viennality-xl",
+        "Date": "2026-03-28",
+        "Finish": "9",
+        "Entrants": "26",
+        "Tier": "B"
+      },
+      {
+        "Player": "uncletobai",
+        "Player ID": "6c5ab76a",
+        "Event": "viennality XL",
+        "Event ID": "viennality-xl",
+        "Date": "2026-03-28",
+        "Finish": "9",
+        "Entrants": "26",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cenciu",
+        "Player ID": "e6909dd2",
+        "Event": "viennality XL",
+        "Event ID": "viennality-xl",
+        "Date": "2026-03-28",
+        "Finish": "13",
+        "Entrants": "26",
+        "Tier": "B"
+      },
+      {
+        "Player": "tsuwamono",
+        "Player ID": "25dc5862",
+        "Event": "viennality XL",
+        "Event ID": "viennality-xl",
+        "Date": "2026-03-28",
+        "Finish": "13",
+        "Entrants": "26",
+        "Tier": "B"
+      },
+      {
+        "Player": "aphorismenoi",
+        "Player ID": "cdc6dc47",
+        "Event": "viennality XL",
+        "Event ID": "viennality-xl",
+        "Date": "2026-03-28",
+        "Finish": "13",
+        "Entrants": "26",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ullie",
+        "Player ID": "da7aa7ac",
+        "Event": "viennality XL",
+        "Event ID": "viennality-xl",
+        "Date": "2026-03-28",
+        "Finish": "13",
+        "Entrants": "26",
+        "Tier": "B"
+      },
+      {
+        "Player": "Takaya",
+        "Player ID": "4893d127",
+        "Event": "viennality XL",
+        "Event ID": "viennality-xl",
+        "Date": "2026-03-28",
+        "Finish": "17",
+        "Entrants": "26",
+        "Tier": "B"
+      },
+      {
+        "Player": "HerrZarku",
+        "Player ID": "ced093c1",
+        "Event": "viennality XL",
+        "Event ID": "viennality-xl",
+        "Date": "2026-03-28",
+        "Finish": "17",
+        "Entrants": "26",
+        "Tier": "B"
+      },
+      {
+        "Player": "VanObiVan",
+        "Player ID": "103160bc",
+        "Event": "viennality XL",
+        "Event ID": "viennality-xl",
+        "Date": "2026-03-28",
+        "Finish": "17",
+        "Entrants": "26",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jetfandam",
+        "Player ID": "6b6af6fa",
+        "Event": "viennality XL",
+        "Event ID": "viennality-xl",
+        "Date": "2026-03-28",
+        "Finish": "17",
+        "Entrants": "26",
+        "Tier": "B"
+      },
+      {
+        "Player": "Neru",
+        "Player ID": "aff15c05",
+        "Event": "viennality XL",
+        "Event ID": "viennality-xl",
+        "Date": "2026-03-28",
+        "Finish": "17",
+        "Entrants": "26",
+        "Tier": "B"
+      },
+      {
+        "Player": "Schiggy",
+        "Player ID": "935a64ac",
+        "Event": "viennality XL",
+        "Event ID": "viennality-xl",
+        "Date": "2026-03-28",
+        "Finish": "17",
+        "Entrants": "26",
+        "Tier": "B"
+      },
+      {
+        "Player": "Zabor",
+        "Player ID": "43cc6fef",
+        "Event": "viennality XL",
+        "Event ID": "viennality-xl",
+        "Date": "2026-03-28",
+        "Finish": "17",
+        "Entrants": "26",
+        "Tier": "B"
+      },
+      {
+        "Player": "RickTheAwful",
+        "Player ID": "288c5b0e",
+        "Event": "viennality XL",
+        "Event ID": "viennality-xl",
+        "Date": "2026-03-28",
+        "Finish": "17",
+        "Entrants": "26",
+        "Tier": "B"
+      },
+      {
+        "Player": "Lordrak",
+        "Player ID": "9af0887a",
+        "Event": "viennality XL",
+        "Event ID": "viennality-xl",
+        "Date": "2026-03-28",
+        "Finish": "25",
+        "Entrants": "26",
+        "Tier": "B"
+      },
+      {
+        "Player": "Gehnter",
+        "Player ID": "38594319",
+        "Event": "viennality XL",
+        "Event ID": "viennality-xl",
+        "Date": "2026-03-28",
+        "Finish": "25",
+        "Entrants": "26",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "voltagecup-2026": {
+    "name": "VOLTAGECUP 2026",
+    "date": "2026-03-26",
+    "slug": "voltagecup-2026",
+    "Tier": "A",
+    "Entrants": "368",
+    "results": [
+      {
+        "Player": "kincho",
+        "Player ID": "c5bc27ca",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "1",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "YHC-mochi",
+        "Player ID": "390dfda2",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "2",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "pugera",
+        "Player ID": "9594efe4",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "3",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "Higuchi",
+        "Player ID": "fee94c73",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "4",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "らおやむやむハイハイ謝謝",
+        "Player ID": "39f0e566",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "5",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "すりーぷ",
+        "Player ID": "a2f6bcf4",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "5",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "すさ",
+        "Player ID": "e1235e88",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "7",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "Hibiki",
+        "Player ID": "362536f6",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "7",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "zabutonn",
+        "Player ID": "9151fd06",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "9",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "Akira",
+        "Player ID": "ea580e86",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "9",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "あくたがわ",
+        "Player ID": "2754067c",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "9",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "ひなお",
+        "Player ID": "1e05762a",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "9",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "wabiichi",
+        "Player ID": "e14bf28c",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "13",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "Oniki",
+        "Player ID": "f3a60ed3",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "13",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "タンタンメン",
+        "Player ID": "8b487f7d",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "13",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "cosa",
+        "Player ID": "2e561d93",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "13",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "kingsvega",
+        "Player ID": "c0e4c985",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "17",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "inaba",
+        "Player ID": "6d79d1a3",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "17",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "Tokido",
+        "Player ID": "a4c7c2d4",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "17",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "カミクラ",
+        "Player ID": "038691a9",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "17",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "eda",
+        "Player ID": "311eb8ea",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "17",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "Fuudo",
+        "Player ID": "173c6283",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "17",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "orarin",
+        "Player ID": "993a7906",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "17",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "アムねじ",
+        "Player ID": "1b7c8bdd",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "17",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "taizen",
+        "Player ID": "f0932bb9",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "25",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "Taisei",
+        "Player ID": "d5c221c5",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "25",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "ray46",
+        "Player ID": "14b44208",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "25",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "naooonn",
+        "Player ID": "d8af4bf6",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "25",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "Kushina",
+        "Player ID": "beed3831",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "25",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "はるみー",
+        "Player ID": "ab32a3af",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "25",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "SHIGEMARU",
+        "Player ID": "1d4fce91",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "25",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "Jazzy",
+        "Player ID": "b49a1cf3",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "25",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "にこちん",
+        "Player ID": "66b3c766",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "33",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "ナオ",
+        "Player ID": "1f5d1b18",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "33",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "Zabeth",
+        "Player ID": "033960bc",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "33",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "雄次郎/Yujiro",
+        "Player ID": "e766e81f",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "33",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "sobolong",
+        "Player ID": "408ee54c",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "33",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "Pipokun",
+        "Player ID": "ef0c559a",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "33",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "Niruhiru",
+        "Player ID": "ac19c2ee",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "33",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "Jaccy",
+        "Player ID": "e613bfbb",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "33",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "ACQUA",
+        "Player ID": "20f90017",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "33",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "SS熊本 テイエム",
+        "Player ID": "6999c8ca",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "33",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "Yanai",
+        "Player ID": "0b55a51c",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "33",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "ばやしこ",
+        "Player ID": "26cc0d3f",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "33",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "matsu56",
+        "Player ID": "725ea610",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "33",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "Noble",
+        "Player ID": "befd4e60",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "33",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "KUDO",
+        "Player ID": "8b0838ba",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "33",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "しっくすびっと",
+        "Player ID": "59ce8abc",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "33",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "Syuji",
+        "Player ID": "ae6e0d1e",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "49",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "ぼんぎ",
+        "Player ID": "8dc088e2",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "49",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "Betty",
+        "Player ID": "85b08dcc",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "49",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "ナイト",
+        "Player ID": "f051fd13",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "49",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "五寸釘さす蔵",
+        "Player ID": "a63d4583",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "49",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "MixupCity",
+        "Player ID": "b259e06d",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "49",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "ミナヅキ",
+        "Player ID": "00f10a8b",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "49",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "chima",
+        "Player ID": "dc4e5ecf",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "49",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "baruji",
+        "Player ID": "a6765c79",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "49",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "反作用ボム2",
+        "Player ID": "5de96ade",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "49",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "すぴくん",
+        "Player ID": "421bd1de",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "49",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "今井翔太",
+        "Player ID": "a8e2d5d9",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "49",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "2BASSA",
+        "Player ID": "d8c5c1e8",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "49",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "Johnny",
+        "Player ID": "18f9cd76",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "49",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "ドドガマル",
+        "Player ID": "40e07858",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "49",
+        "Entrants": "368",
+        "Tier": "A"
+      },
+      {
+        "Player": "kuromame",
+        "Player ID": "ab0f03bd",
+        "Event": "VOLTAGECUP 2026",
+        "Event ID": "voltagecup-2026",
+        "Date": "2026-03-27",
+        "Finish": "49",
+        "Entrants": "368",
+        "Tier": "A"
       }
     ],
     "isArchived": false
