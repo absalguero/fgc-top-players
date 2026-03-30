@@ -16078,7 +16078,7 @@
       },
       {
         "Player": "FReZZer",
-        "Player ID": "4.73E+14",
+        "Player ID": "473473e9",
         "Event": "Saudi eLeague Season 3 Major",
         "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-3",
         "Date": "2025-04-10",
@@ -27528,7 +27528,7 @@
       },
       {
         "Player": "FReZZer",
-        "Player ID": "4.73E+14",
+        "Player ID": "473473e9",
         "Event": "The MIXUP 2025 - Round 7",
         "Event ID": "the-mixup-2025-round-7",
         "Date": "2025-07-05",
@@ -28388,7 +28388,7 @@
       },
       {
         "Player": "FReZZer",
-        "Player ID": "4.73E+14",
+        "Player ID": "473473e9",
         "Event": "Only The Best 2025",
         "Event ID": "only-the-best-2025",
         "Date": "2025-07-12",
@@ -45998,7 +45998,7 @@
       },
       {
         "Player": "FReZZer",
-        "Player ID": "4.73E+14",
+        "Player ID": "473473e9",
         "Event": "DreamHack Atlanta 2025",
         "Event ID": "dreamhack-atlanta-2025",
         "Date": "2025-10-31",
@@ -62925,6 +62925,656 @@
         "Finish": "49",
         "Entrants": "125",
         "Tier": "S"
+      }
+    ],
+    "isArchived": false
+  },
+  "texas-showdown-2026": {
+    "name": "Texas Showdown 2026",
+    "date": "2026-03-26",
+    "slug": "texas-showdown-2026",
+    "Tier": "B",
+    "Entrants": "283",
+    "results": [
+      {
+        "Player": "Stealth",
+        "Player ID": "81fbeef0",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "1",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dudesickle06",
+        "Player ID": "3c288ffe",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "2",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "KINGMAN",
+        "Player ID": "1fd4b7bd",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "3",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jueks",
+        "Player ID": "91696708",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "4",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rodge",
+        "Player ID": "09ca6511",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "5",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Sledge",
+        "Player ID": "c276aed2",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "5",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Coosco",
+        "Player ID": "bed73ccd",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "7",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Freezie",
+        "Player ID": "300a2d8c",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "7",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Sevens",
+        "Player ID": "bb0e8181",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "9",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "big mo",
+        "Player ID": "af88c91a",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "9",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Naji",
+        "Player ID": "10669adf",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "9",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pickle Stein",
+        "Player ID": "8adc8c9f",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "9",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Davy",
+        "Player ID": "235f887d",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "13",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "2D",
+        "Player ID": "b593251d",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "13",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "solidxpanda",
+        "Player ID": "8e922d06",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "13",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ronin",
+        "Player ID": "ec97bc1b",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "13",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Muddy",
+        "Player ID": "d8d32c0f",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "17",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "HoppyJawsh",
+        "Player ID": "828dd5e8",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "17",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "ElSeco",
+        "Player ID": "eb910b4f",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "17",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "kenziestar",
+        "Player ID": "492cc9c1",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "17",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "MJ_Gama",
+        "Player ID": "4484e542",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "17",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Sinister X",
+        "Player ID": "831b961a",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "17",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "SICKLE",
+        "Player ID": "92472c1a",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "17",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mr-MadGear",
+        "Player ID": "f2617b6a",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "17",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Machete24X",
+        "Player ID": "fbfefa83",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "25",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Chip",
+        "Player ID": "13e5fc49",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "25",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Melbu",
+        "Player ID": "cefd3733",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "25",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "AzizSensei",
+        "Player ID": "82b71010",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "25",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Solo",
+        "Player ID": "8aa466d8",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "25",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "BigMacCombo98",
+        "Player ID": "4d08742f",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "25",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Brian_F",
+        "Player ID": "e35978d9",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "25",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Nams",
+        "Player ID": "e7fc7140",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "25",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bass",
+        "Player ID": "2b573037",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "33",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "COLDM@N",
+        "Player ID": "d3d5937b",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "33",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ninja212x",
+        "Player ID": "9339bea6",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "33",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "hooligante",
+        "Player ID": "109eac16",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "33",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "xz0r",
+        "Player ID": "775f0256",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "33",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ferelden",
+        "Player ID": "2adf29c0",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "33",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "K-Brad",
+        "Player ID": "c0c00ff1",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "33",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Beluga",
+        "Player ID": "f21b6099",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "33",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cuby_ken",
+        "Player ID": "2a5d83ae",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "33",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Redfish",
+        "Player ID": "bd16d238",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "33",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Gabtraf",
+        "Player ID": "4977d3c2",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "33",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Endscape",
+        "Player ID": "0c43649f",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "33",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "BBZ",
+        "Player ID": "8ef57b14",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "33",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kendabeast",
+        "Player ID": "8a6910c0",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "33",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "HomieswithJesus",
+        "Player ID": "45e68baa",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "33",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Didimokof",
+        "Player ID": "420e069a",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "33",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "BigGuy",
+        "Player ID": "fdcdd3b9",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "49",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Faddy",
+        "Player ID": "265fe341",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "49",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "VismundCygnus",
+        "Player ID": "79ae4f91",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "49",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "ApexScrub",
+        "Player ID": "1a403160",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "49",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Marvinstein",
+        "Player ID": "3d31cb46",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "49",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pyromaniac",
+        "Player ID": "9442844e",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "49",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "PhattyMikey",
+        "Player ID": "534d1050",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "49",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Marv.EX",
+        "Player ID": "be7b9fcf",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "49",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Holo",
+        "Player ID": "cfe773e6",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "49",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Co-op",
+        "Player ID": "1d22545e",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "49",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Lora",
+        "Player ID": "c95d9c36",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "49",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Blues",
+        "Player ID": "da9c05e4",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "49",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Chano",
+        "Player ID": "aa183120",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "49",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "Duce2Thurl",
+        "Player ID": "925ad7e8",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "49",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "izzy",
+        "Player ID": "7c8850c9",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "49",
+        "Entrants": "283",
+        "Tier": "B"
+      },
+      {
+        "Player": "drunkmonkey",
+        "Player ID": "e888ba60",
+        "Event": "Texas Showdown 2026",
+        "Event ID": "texas-showdown-2026",
+        "Date": "2026-03-27",
+        "Finish": "49",
+        "Entrants": "283",
+        "Tier": "B"
       }
     ],
     "isArchived": false

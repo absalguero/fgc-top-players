@@ -99,52 +99,6 @@
     "isArchived": false,
     "excludeFromSite": false
   },
-  "don-t-drown-in-pools-2026": {
-    "name": "Don´t Drown in Pools 2026",
-    "slug": "don-t-drown-in-pools-2026",
-    "startAt": 1774706400,
-    "endAt": 1774839600,
-    "startDate": "2026-03-28",
-    "endDate": "2026-03-29",
-    "dates": "Mar 28-29, 2026",
-    "location": "C. Florencia, Santo Domingo, Dominican Republic",
-    "venueName": "Fight Club",
-    "url": "https://www.start.gg/tournament/don-t-drown-in-pools-2026",
-    "tier": "B",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "Don´t Drown in Pools 2026 is scheduled for Mar 28-29, 2026 in C. Florencia, Santo Domingo, Dominican Republic. Featuring Street Fighter 6. Registered top players include Caba.",
-    "notablePlayers": [
-      "Caba"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
-  "viennality-xl": {
-    "name": "viennality XL",
-    "slug": "viennality-xl",
-    "startAt": 1774688400,
-    "endAt": 1774814400,
-    "startDate": "2026-03-28",
-    "endDate": "2026-03-29",
-    "dates": "Mar 28-29, 2026",
-    "location": "Ottakringer Pl. 1, 1160 Wien, Austria",
-    "venueName": "",
-    "url": "https://www.start.gg/tournament/viennality-xl",
-    "tier": "B",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "viennality XL is scheduled for Mar 28-29, 2026 in Ottakringer Pl. 1, 1160 Wien, Austria. Featuring Street Fighter 6. Registered top players include krackerlack.",
-    "notablePlayers": [
-      "krackerlack"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
   "blink-respawn-m-xico-2026": {
     "name": "BLINK RESPAWN MÉXICO 2026",
     "slug": "blink-respawn-m-xico-2026",
@@ -281,6 +235,7 @@
       "Caba",
       "NoahTheProdigy",
       "Oil King",
+      "Stealth",
       "DCQ",
       "pugera",
       "EndingWalker",
@@ -295,7 +250,6 @@
       "Zhen",
       "kingsvega",
       "Yamaguchi",
-      "Stealth",
       "Kawano",
       "HotDog29",
       "Kusanagi",
