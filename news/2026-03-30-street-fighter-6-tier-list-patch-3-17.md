@@ -1,5 +1,5 @@
 ---
-title: "SmashlogTV 3.17 Tier List Clashes With FGC Top Players Stats"
+title: "SmashlogTV Ranks the Street Fighter 6 Roster for Patch 3.17"
 layout: article.njk
 date: 2026-03-30 19:44:07
 tags:
