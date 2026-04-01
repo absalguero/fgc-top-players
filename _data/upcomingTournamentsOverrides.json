@@ -1,4 +1,50 @@
 {
+  "galaxian-explosion-espot-bi-monthly-34-xl-edition": {
+    "name": "Galaxian Explosion Espot Bi-Monthly #34 - XL EDITION",
+    "slug": "galaxian-explosion-espot-bi-monthly-34-xl-edition",
+    "startAt": 1776585600,
+    "endAt": 1776621600,
+    "startDate": "2026-04-19",
+    "endDate": "2026-04-19",
+    "dates": "Apr 19, 2026",
+    "location": "150 Rue de Rivoli, 75001 Paris, France",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/galaxian-explosion-espot-bi-monthly-34-xl-edition",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "Galaxian Explosion Espot Bi-Monthly #34 - XL EDITION is scheduled for Apr 19, 2026 in 150 Rue de Rivoli, 75001 Paris, France. Featuring Street Fighter 6. Registered top players include Mister Crimson.",
+    "notablePlayers": [
+      "Mister Crimson"
+    ],
+    "isArchived": false,
+    "excludeFromSite": true
+  },
+  "czech-arcade-local-round-16": {
+    "name": "Czech Arcade Local — Round 16",
+    "slug": "czech-arcade-local-round-16",
+    "startAt": 1775901600,
+    "endAt": 1775937600,
+    "startDate": "2026-04-11",
+    "endDate": "2026-04-11",
+    "dates": "Apr 11, 2026",
+    "location": "Roztylská 2321/19, 148 00 Praha 11-Chodov, Czechia",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/czech-arcade-local-round-16",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "Czech Arcade Local — Round 16 is scheduled for Apr 11, 2026 in Roztylská 2321/19, 148 00 Praha 11-Chodov, Czechia. Featuring Street Fighter 6. Registered top players include krackerlack.",
+    "notablePlayers": [
+      "krackerlack"
+    ],
+    "isArchived": false,
+    "excludeFromSite": true
+  },
   "edinbrawl-v": {
     "name": "Edinbrawl V",
     "slug": "edinbrawl-v",
