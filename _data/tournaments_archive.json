@@ -14897,7 +14897,7 @@
         "Tier": "S"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "red-bull-kumite-2025-last-chance-qualifier-lcq": {
     "name": "Red Bull Kumite 2025 Last Chance Qualifier (LCQ)",
@@ -15547,7 +15547,7 @@
         "Tier": "A"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "say-your-prayers-4": {
     "name": "Say Your Prayers 4",
@@ -15687,7 +15687,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "saudi-eleague-season-3-major": {
     "name": "Saudi eLeague Season 3 Major",
@@ -63574,6 +63574,106 @@
         "Date": "2026-03-27",
         "Finish": "49",
         "Entrants": "283",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "vegas-climax-vi": {
+    "name": "Vegas Climax VI",
+    "date": "2026-04-02",
+    "slug": "vegas-climax-vi",
+    "Tier": "B",
+    "Entrants": "9",
+    "results": [
+      {
+        "Player": "NYChrisG",
+        "Player ID": "dab1e1cc",
+        "Event": "Vegas Climax VI",
+        "Event ID": "vegas-climax-vi",
+        "Date": "2026-04-03",
+        "Finish": "1",
+        "Entrants": "9",
+        "Tier": "B"
+      },
+      {
+        "Player": "Nemo",
+        "Player ID": "6f4013df",
+        "Event": "Vegas Climax VI",
+        "Event ID": "vegas-climax-vi",
+        "Date": "2026-04-03",
+        "Finish": "2",
+        "Entrants": "9",
+        "Tier": "B"
+      },
+      {
+        "Player": "Didimokof",
+        "Player ID": "420e069a",
+        "Event": "Vegas Climax VI",
+        "Event ID": "vegas-climax-vi",
+        "Date": "2026-04-03",
+        "Finish": "3",
+        "Entrants": "9",
+        "Tier": "B"
+      },
+      {
+        "Player": "Fenritti",
+        "Player ID": "3fe7b0ec",
+        "Event": "Vegas Climax VI",
+        "Event ID": "vegas-climax-vi",
+        "Date": "2026-04-03",
+        "Finish": "4",
+        "Entrants": "9",
+        "Tier": "B"
+      },
+      {
+        "Player": "BadIntent",
+        "Player ID": "a8636a24",
+        "Event": "Vegas Climax VI",
+        "Event ID": "vegas-climax-vi",
+        "Date": "2026-04-03",
+        "Finish": "5",
+        "Entrants": "9",
+        "Tier": "B"
+      },
+      {
+        "Player": "Broach",
+        "Player ID": "49123222",
+        "Event": "Vegas Climax VI",
+        "Event ID": "vegas-climax-vi",
+        "Date": "2026-04-03",
+        "Finish": "5",
+        "Entrants": "9",
+        "Tier": "B"
+      },
+      {
+        "Player": "Chava",
+        "Player ID": "cdaf9c2d",
+        "Event": "Vegas Climax VI",
+        "Event ID": "vegas-climax-vi",
+        "Date": "2026-04-03",
+        "Finish": "7",
+        "Entrants": "9",
+        "Tier": "B"
+      },
+      {
+        "Player": "Devil May Clown",
+        "Player ID": "dc9aa2d9",
+        "Event": "Vegas Climax VI",
+        "Event ID": "vegas-climax-vi",
+        "Date": "2026-04-03",
+        "Finish": "7",
+        "Entrants": "9",
+        "Tier": "B"
+      },
+      {
+        "Player": "Neopenny",
+        "Player ID": "68d9f430",
+        "Event": "Vegas Climax VI",
+        "Event ID": "vegas-climax-vi",
+        "Date": "2026-04-03",
+        "Finish": "9",
+        "Entrants": "9",
         "Tier": "B"
       }
     ],
