@@ -63,7 +63,9 @@
     "scheduleLink": "https://www.start.gg/tournament/edinbrawl-v/details",
     "description": "<p><strong>Edinbrawl V</strong> returns to the heart of Scotland's capital for its fifth outing, cementing its place as a premier destination for the fighting game community in the region. Hosted by <strong>Rushdown Edinburgh</strong>, this one-day major brings together players from across the country to compete in the elegant <strong>Fettercairn and Garden Suite</strong> at <strong>The Scotsman Hotel</strong>.</p><p>This year’s event is highlighted by the Scottish debut of Riot Games' highly anticipated fighter, <strong>2XKO</strong>, alongside staple titles in the modern fighting game landscape.</p><h3>The Games Lineup</h3><p>Competitors can test their skills across five major titles:<ul><li><strong>Street Fighter 6:</strong> The flagship title returns for more high-level play.</li><li><strong>Tekken 8:</strong> Experience the next chapter of the King of Iron Fist Tournament on PS5.</li><li><strong>Guilty Gear Strive:</strong> High-octane anime action continues to be a crowd favorite.</li><li><strong>Granblue Fantasy Versus: Rising:</strong> The gorgeous fighter returns to the Edinbrawl stage.</li><li><strong>2XKO (Scottish Debut):</strong> Be among the first in Scotland to compete in Riot’s tag-team brawler.</li></ul></p><h3>Venue & Experience</h3><p>The Fettercairn Suite serves as the primary arena, while the Jura Suite is dedicated to casual setups, ensuring everyone gets plenty of games in. For those needing a break from the intensity of the bracket, the Garden Suite offers a quiet space to relax.</p><p>Doors open at <strong>12:00 PM</strong>, and while registration is required for competitors, spectators are welcome to attend for free and soak in the atmosphere.</p><h3>Registration & Pricing</h3><p>Registration is open until <strong>April 9, 2026</strong>, via Start.gg. The entry structure is as follows:<ul><li><strong>Venue Fee:</strong> £15.</li><li><strong>Tournament Entry:</strong> £5 per game.</li><li><strong>Game Limit:</strong> Maximum of 3 games per entrant to ensure a smooth schedule.</li></ul></p>",
     "notablePlayers": [
-      "MysticSmash"
+      "Matt Hazard",
+      "MysticSmash",
+      "Suleymon"
     ],
     "isArchived": false,
     "excludeFromSite": false
@@ -88,10 +90,37 @@
     "notablePlayers": [
       "LUGABO",
       "MJ_Gama",
-      "KUSANAGI (MX)",
       "AxL-",
       "Uriel Velorio",
       "Jazdero"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
+  "lvl-up-expo-2026-1": {
+    "name": "LVL UP EXPO 2026",
+    "slug": "lvl-up-expo-2026-1",
+    "startAt": 1777053600,
+    "endAt": 1777251600,
+    "startDate": "2026-04-24",
+    "endDate": "2026-04-26",
+    "dates": "Apr 24-26, 2026",
+    "location": "3150 Paradise Rd, Las Vegas, NV 89109, USA",
+    "venueName": "Las Vegas Convention Center (South Hall)",
+    "url": "https://lvlupexpo.com/",
+    "tier": "A",
+    "prizes": "$5,000",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "<strong>LVL UP EXPO 2026</strong> returns to Las Vegas for a massive three-day celebration of gaming, anime, and competitive esports. Scheduled for April 24 through April 26, 2026, the event will take place at the <strong>Las Vegas Convention Center</strong> in the South Hall, bringing together thousands of global competitors and fans.</p><p>As a major destination for the fighting game community, the 2026 tournament features a heavyweight lineup. The main stages will host massive brackets for <strong>Street Fighter 6</strong>, <strong>Super Smash Bros. Ultimate</strong>, and <strong>Tekken 8</strong>, ensuring the highest-stakes matches are witnessed by a capacity crowd.</p><h3>Elevated Stakes and Prize Pools</h3><p>The 2026 iteration boasts over $40,000 in combined prize pools across its flagship tournaments. Highlights include a $10,000 prize pool for Smash Ultimate Singles, $10,000 for 2XKO, and $5,000 each for Street Fighter 6 and Tekken 8, raising the stakes significantly for the global talent in attendance.</p><h3>Modern Heavyweights and Legacy Games</h3><p>This year's iteration features established staples of the current competitive circuit. Attendees will compete in Riot's blockbuster team-based fighter <strong>2XKO</strong> and battle it out in SNK's acclaimed <strong>Fatal Fury: City of the Wolves</strong>. Additionally, <strong>Hunter x Hunter: Nen x Impact</strong> makes its appearance alongside other modern anime fighters.</p><p>Honoring the community's rich history, the lineup also includes the LVStylo Memorial Tournament for <em>Ultra Street Fighter IV</em>, alongside returning favorites like <em>Granblue Fantasy Versus: Rising</em>, <em>Guilty Gear: Strive</em>, <em>Under Night In-Birth II Sys:Celes</em>, <em>Mortal Kombat 1</em>, and <em>Ultimate Marvel vs Capcom 3</em>.</p><h3>Registration</h3><p>Registration and bracket sign-ups are managed through Start.gg and the official LVL UP EXPO website. Competitors can secure their spots in the brackets until April 21, 2026, with general admission passes available for spectators wishing to experience the event floor, artist alley, and vendor exhibits.",
+    "notablePlayers": [
+      "Dual Kevin",
+      "GO1",
+      "NYChrisG",
+      "NoahTheProdigy",
+      "NuckleDu",
+      "JAK"
     ],
     "isArchived": false,
     "excludeFromSite": false
@@ -148,6 +177,76 @@
     "scheduleLink": "",
     "description": "<p>Combo Breaker 2026 returns to the Renaissance Schaumburg Convention Center for its annual Memorial Day Weekend celebration of fighting games. Scheduled for May 22–24, 2026, the event is one of the largest competitive gaming conventions in North America, featuring a 24-game official tournament lineup that includes Street Fighter 6, Tekken 8, 2XKO, and Fatal Fury: City of the Wolves.</p><p>Registration is managed via start.gg with an attendance cap of 8,500. The event is known for its 24/7 venue access, massive Artist Alley, and the 'All In Together' program, which allocates dedicated resources for community-run side tournaments. Early bird registration for competitors ($115) and spectators ($90) is available until February 1, 2026.</p>",
     "notablePlayers": [],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
+  "blink-respawn-2026": {
+    "name": "BLINK RESPAWN 2026",
+    "slug": "blink-respawn-2026",
+    "startAt": 1780675200,
+    "endAt": 1780891140,
+    "startDate": "2026-06-05",
+    "endDate": "2026-06-07",
+    "dates": "Jun 5-7, 2026",
+    "location": "Sambil, Av. John F. Kennedy, Santo Domingo 10413, Dominican Republic",
+    "venueName": "Sambil Santo Domingo",
+    "url": "https://blinkrespawn.gg/",
+    "tier": "A",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "https://www.twitch.tv/blinkesportsrd",
+    "scheduleLink": "",
+    "description": "<strong>Blink Respawn 2026</strong> returns to the Dominican Republic as the Caribbean's premier esports and fighting game festival. Scheduled for June 5 through June 7, 2026, the event will take place at <strong>Sambil Santo Domingo</strong>, bringing together competitors, creators, and gaming communities from across LATAM, North America, and beyond.</p><p>As a major international destination, the 2026 tournament features a high-stakes lineup on an epic stage. The main event is headlined by a massive open bracket for <strong>Street Fighter 6</strong>, which proudly serves as an official Capcom Pro Tour Offline Premier Event, ensuring world-class talent will be in attendance to fight for the trophy.</p><h3>Premier Tournament Lineup</h3><p>Beyond Street Fighter 6, the competitive roster includes heavy-hitting staples and modern favorites. Attendees will clash in <strong>Super Smash Bros. Ultimate</strong>, Riot's tag-team fighter <strong>2XKO</strong>, and SNK's latest acclaimed release, <strong>Fatal Fury: City of the Wolves</strong>, which is featured as an SWC 2026 Official Tournament.</p><h3>More Than a Tournament</h3><p>Blink Respawn is designed to be a full destination experience fueled by energy, culture, and real competition. Attendees can take a break from the brackets to enjoy casual play zones, trading card game tournaments, free-play tables, and live community moments alongside top content creators.</p><h3>Registration</h3><p>Registration and bracket sign-ups are managed through Start.gg and the official Blink Respawn website. Competitors can secure their spots in the tournament until late registration closes on May 30, 2026. General admission passes are available online or at the venue for spectators wishing to experience the live commentators, the official Blink Respawn store, and the electrifying main stage.",
+    "notablePlayers": [
+      "Caba",
+      "Kusanagi"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
+  "hessen-crash-xxiii": {
+    "name": "Hessen Crash XXIII",
+    "slug": "hessen-crash-xxiii",
+    "startAt": 1780610400,
+    "endAt": 1780862400,
+    "startDate": "2026-06-05",
+    "endDate": "2026-06-07",
+    "dates": "Jun 5-7, 2026",
+    "location": "Louisenstraße 58, 61348 Bad Homburg vor der Höhe, Germany",
+    "venueName": "Kurhaus Bad Homburg",
+    "url": "https://www.start.gg/tournament/hessen-crash-xxiii",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "https://www.twitch.tv/2BCU",
+    "scheduleLink": "",
+    "description": "<strong>Hessen Crash XXIII</strong> returns as Germany's longest-running fighting game community event, bringing the European scene together since 2010. Scheduled for June 5 through June 7, 2026, the event will take place inside the historic <strong>Kurhaus Bad Homburg</strong>, welcoming competitors of all skill levels.</p><p>As a cornerstone of the European fighting game community, the 2026 tournament features a highly competitive main lineup. The brackets will be headlined by massive showdowns in <strong>Street Fighter 6</strong>, <strong>Tekken 8</strong>, and Riot's tag-team fighter <strong>2XKO</strong>, drawing top regional talent to battle for the championship titles.</p><h3>Premier Tournaments and SWC Qualifiers</h3><p>Beyond the core lineup, attendees will clash in Arc System Works favorites like <strong>Guilty Gear Strive</strong> and <strong>Granblue Fantasy Versus: Rising</strong>. The event also proudly hosts an official SWC Qualifier for SNK's <strong>Fatal Fury: City of the Wolves</strong>, adding international stakes to the weekend's competition.</p><h3>Community and Side Brackets</h3><p>Hessen Crash is celebrated for its dedication to the broader community and legacy titles. The weekend will feature dedicated side events, including brackets for <em>BlazBlue: Central Fiction</em>, <em>Guilty Gear Xrd REV 2</em>, and a special <em>Lethal League Blaze</em> tournament bolstered by a 500 Euro pot bonus.</p><h3>Registration</h3><p>Registration and bracket sign-ups are managed through Start.gg and the official Hessen Crash website. Competitors can secure Early Bird and Regular passes before late registration begins, with Weekend and Day passes available for spectators looking to experience the casual setups, community atmosphere, and high-level tournament streams.",
+    "notablePlayers": [
+      "krackerlack"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
+  "the-mixup-2026-round-8": {
+    "name": "The MIXUP 2026 - Round 8",
+    "slug": "the-mixup-2026-round-8",
+    "startAt": 1781334000,
+    "endAt": 1781467200,
+    "startDate": "2026-06-13",
+    "endDate": "2026-06-14",
+    "dates": "Jun 13-14, 2026",
+    "location": "Pl. de la Bourse, 69002 Lyon, France",
+    "venueName": "Palais de la Bourse",
+    "url": "https://themixup.eu/en",
+    "tier": "A",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "<strong>The MIXUP 2026 - Round 8</strong> returns to France as one of Europe's most prestigious fighting game tournaments. Scheduled for June 13 through June 14, 2026, the event will take place at <strong>Espace 140</strong> in Lyon, bringing together top competitors and passionate fans from across the continent and the world.</p><p>As a crucial stop on multiple international circuits, the 2026 tournament features an incredibly high stakes lineup. The main stage will be headlined by massive brackets for <strong>TEKKEN 8</strong>, which serves as a highly coveted TWT Master Event and an Esports World Cup 2026 qualifier, ensuring that global heavyweights will clash for crucial circuit points.</p><h3>Premier Circuit Qualifiers</h3><p>The competitive stakes extend well beyond a single title. Attendees will also battle it out in SNK's <strong>Fatal Fury: City of the Wolves</strong> and <strong>The King of Fighters XV</strong>, both proudly featured as official Master Tier qualifiers for the SWC 2026. Additionally, Riot Games' tag team fighter <strong>2XKO</strong> takes center stage as an official Challenger Tier event in the 2026 Competitive Series.</p><h3>Community and Legacy Events</h3><p>The MIXUP is deeply celebrated for its dedication to the vibrant French arcade community. The weekend will feature dedicated LaDOSETV classic arcade action, including brackets for <em>Super Street Fighter II X</em>, <em>Street Fighter III: 3rd Strike</em>, and <em>Garou: Mark of the Wolves</em>, alongside modern favorites like <em>Guilty Gear Strive</em> and <em>Street Fighter 6</em>.</p><h3>Registration</h3><p>Registration and bracket sign ups are managed through Start.gg and the official MIXUP website. Competitors can secure their passes before registration closes, with spectator tickets available for those looking to experience the intense matches, classic arcade setups, and the electrifying European crowd.",
+    "notablePlayers": [
+      "Mister Crimson"
+    ],
     "isArchived": false,
     "excludeFromSite": false
   }
