@@ -63678,5 +63678,1305 @@
       }
     ],
     "isArchived": false
+  },
+  "edinbrawl-v": {
+    "name": "EDINBRAWL V",
+    "date": "2026-04-10",
+    "slug": "edinbrawl-v",
+    "Tier": "B",
+    "Entrants": "77",
+    "results": [
+      {
+        "Player": "MysticSmash",
+        "Player ID": "7fde9c94",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "1",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pingutaro",
+        "Player ID": "b73db632",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "2",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Matt Hazard",
+        "Player ID": "71d51138",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "3",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "KooshIsCool",
+        "Player ID": "a4625a70",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "4",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "_cam_",
+        "Player ID": "054c5401",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "5",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Suleymon",
+        "Player ID": "0a57659d",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "5",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "phenakis",
+        "Player ID": "4bdd67d9",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "7",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pdaaaawg",
+        "Player ID": "c6d65c68",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "7",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "BearNoodles",
+        "Player ID": "8e8afe65",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "9",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Maku_23",
+        "Player ID": "78686d7c",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "9",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Wonder Ham",
+        "Player ID": "9edbeb95",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "9",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Parablegreg",
+        "Player ID": "22ef4295",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "9",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "ViewtifulGaz",
+        "Player ID": "f81f9d92",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "13",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "releasebogus",
+        "Player ID": "51570908",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "13",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pizza time",
+        "Player ID": "66db5ba7",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "13",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "TheToiletDuck",
+        "Player ID": "21985441",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "13",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Wordsmithery",
+        "Player ID": "b5aeead8",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "17",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Launch",
+        "Player ID": "0c57a74b",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "17",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Hydro",
+        "Player ID": "fb0f8e50",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "17",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Blackpill Fuego",
+        "Player ID": "f938de34",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "17",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Foamy",
+        "Player ID": "9eb29c7c",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "17",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Gibbo",
+        "Player ID": "b6b8e99e",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "17",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Un_Frog",
+        "Player ID": "cf56092d",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "17",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Spike",
+        "Player ID": "eba66387",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "17",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Near",
+        "Player ID": "cff08c1a",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "25",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "ChiefsAffinity",
+        "Player ID": "05565e24",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "25",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "LTS",
+        "Player ID": "3c2982a2",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "25",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dylan Eccles",
+        "Player ID": "1865468f",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "25",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Willy",
+        "Player ID": "1028c956",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "25",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "froakiethroat",
+        "Player ID": "4f31febc",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "25",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "BigFool",
+        "Player ID": "c8c86184",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "25",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "dawn",
+        "Player ID": "fd3b7717",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "25",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "AntikasKarios",
+        "Player ID": "d464ac4d",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "33",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "SamsonHunk",
+        "Player ID": "ffdf4d14",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "33",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Arismania",
+        "Player ID": "c75cba44",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "33",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "froyo.3",
+        "Player ID": "4628a42a",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "33",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "GeoBreaker",
+        "Player ID": "c7e8a95c",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "33",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cykamancer",
+        "Player ID": "250b5d53",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "33",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Oath",
+        "Player ID": "66be5749",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "33",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "RavageRumble",
+        "Player ID": "f9c7ae66",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "33",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Coffeecake",
+        "Player ID": "1ede862b",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "33",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "D.W.G",
+        "Player ID": "62fd1eac",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "33",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Proxymoron",
+        "Player ID": "0b25c981",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "33",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bagel",
+        "Player ID": "677077bf",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "33",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "xnopyt",
+        "Player ID": "645b97f4",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "33",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "eteptseisaE",
+        "Player ID": "f31696ed",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "33",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Morphidia",
+        "Player ID": "70189e14",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "33",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "sazzles",
+        "Player ID": "1820c89d",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "33",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Faber",
+        "Player ID": "c904a0bf",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "49",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "devo1989",
+        "Player ID": "3e2db279",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "49",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "BALLS",
+        "Player ID": "bfd93aa4",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "49",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Con-air",
+        "Player ID": "64908134",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "49",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "saynai",
+        "Player ID": "a1361314",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "49",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Yakotrick",
+        "Player ID": "dd6f511f",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "49",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dragonaut",
+        "Player ID": "ed082390",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "49",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Lew",
+        "Player ID": "a129e1da",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "49",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Windy",
+        "Player ID": "4c70f95c",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "49",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "OhNoPhoton",
+        "Player ID": "0b77293a",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "49",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dr.Booba",
+        "Player ID": "2bd17eb8",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "49",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Schilt",
+        "Player ID": "d6a3f921",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "49",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "YihaYorhaDylan",
+        "Player ID": "ed8ae7e3",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "49",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "JayOkay",
+        "Player ID": "2ec5204b",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "49",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mictlan",
+        "Player ID": "057dffdd",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "49",
+        "Entrants": "77",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dawnjaeger",
+        "Player ID": "596a38ee",
+        "Event": "EDINBRAWL V",
+        "Event ID": "edinbrawl-v",
+        "Date": "2026-04-11",
+        "Finish": "49",
+        "Entrants": "77",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "blink-respawn-mexico-2026": {
+    "name": "BLINK RESPAWN MÉXICO 2026",
+    "date": "2026-04-10",
+    "slug": "blink-respawn-mexico-2026",
+    "Tier": "B",
+    "Entrants": "128",
+    "results": [
+      {
+        "Player": "LUGABO",
+        "Player ID": "9242d9e3",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "1",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "KUSANAGI (MX)",
+        "Player ID": "208b0900",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "2",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "MJ_Gama",
+        "Player ID": "4484e542",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "3",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "ZIDANICO",
+        "Player ID": "20827d1f",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "4",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rookie",
+        "Player ID": "50102a2e",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "5",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "lSecto",
+        "Player ID": "9546ed0d",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "5",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jazdero",
+        "Player ID": "af303b7c",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "7",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "AxL-",
+        "Player ID": "43824b1a",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "7",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Fi3r0",
+        "Player ID": "1860dc62",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "9",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Milo Scorpius",
+        "Player ID": "7309efb6",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "9",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Lobo",
+        "Player ID": "81470ed8",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "9",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Killer keko",
+        "Player ID": "9a2cc5b9",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "9",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Danielsan",
+        "Player ID": "788c95b0",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "13",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "PONCHO",
+        "Player ID": "3273b3d5",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "13",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "lordjirall",
+        "Player ID": "1de7d591",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "13",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pepikof",
+        "Player ID": "b710f17d",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "13",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kim_Apb",
+        "Player ID": "d08b20e5",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "17",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "RogerFGC420",
+        "Player ID": "dd898a7d",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "17",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Yeriko",
+        "Player ID": "933516f3",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "17",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Superior Ermac",
+        "Player ID": "54cce2c6",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "17",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Chowder Hat",
+        "Player ID": "40713eca",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "17",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Creeture",
+        "Player ID": "ae81320a",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "17",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "MrDino023",
+        "Player ID": "7b0d3b8a",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "17",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "ZombieAzteka",
+        "Player ID": "39b56c28",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "17",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kyo_Belmont",
+        "Player ID": "21ddd43a",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "25",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "SyA0rAn",
+        "Player ID": "8b162b78",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "25",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Moñañu",
+        "Player ID": "19951b0a",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "25",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Schmoo",
+        "Player ID": "08b09b22",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "25",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Gustavgen8",
+        "Player ID": "db787dcc",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "25",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Lic. Tony",
+        "Player ID": "43688bbf",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "25",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "chizuz",
+        "Player ID": "31e36b0b",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "25",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Gish",
+        "Player ID": "df1b5aaa",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "25",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "ElAlely",
+        "Player ID": "573f9748",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "33",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "WeirdLira",
+        "Player ID": "e0b83cca",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "33",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cronoyugo",
+        "Player ID": "28c1fc0f",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "33",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "RicoSuave89",
+        "Player ID": "aee66fd0",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "33",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Aldair Mayen",
+        "Player ID": "3fdc5b3d",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "33",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "H2Ocate7u7r",
+        "Player ID": "70708cba",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "33",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Angel Ortiz",
+        "Player ID": "5167d264",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "33",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "CHOCO",
+        "Player ID": "009da429",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "33",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "mushion1ero",
+        "Player ID": "6b22b1bd",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "33",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cepibolla",
+        "Player ID": "23973928",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "33",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Charly",
+        "Player ID": "3e13a38f",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "33",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "JAIME-XD",
+        "Player ID": "d17afc12",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "33",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "El Carlos mal",
+        "Player ID": "59f00938",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "33",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "evankapibara",
+        "Player ID": "07666c4b",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "33",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Sentinel",
+        "Player ID": "c4e54f05",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "33",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "FuerzaDON",
+        "Player ID": "1e917a9f",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "33",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Chelabnfria1",
+        "Player ID": "e66738a5",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "49",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Osco",
+        "Player ID": "7621fef6",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "49",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "MenialZ",
+        "Player ID": "742b31be",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "49",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Zeus",
+        "Player ID": "809fd24c",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "49",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "farra",
+        "Player ID": "e6749991",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "49",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Blaze",
+        "Player ID": "45de508c",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "49",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mollejas",
+        "Player ID": "2c781cc2",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "49",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Vikiini",
+        "Player ID": "8c6038f5",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "49",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Koichi",
+        "Player ID": "8c0c3e88",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "49",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Efase",
+        "Player ID": "a9dd9eae",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "49",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Izana",
+        "Player ID": "8be778f6",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "49",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Samael11C",
+        "Player ID": "20ecfbc3",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "49",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Onimusha2",
+        "Player ID": "e4504ead",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "49",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "JinXed",
+        "Player ID": "633e1d86",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "49",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "MOOgle",
+        "Player ID": "7605395f",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "49",
+        "Entrants": "128",
+        "Tier": "B"
+      },
+      {
+        "Player": "Druller",
+        "Player ID": "647dc25b",
+        "Event": "BLINK RESPAWN MÉXICO 2026",
+        "Event ID": "blink-respawn-m-xico-2026",
+        "Date": "2026-04-11",
+        "Finish": "49",
+        "Entrants": "128",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
   }
 }
