@@ -66,8 +66,8 @@
   "brussels-challenge-major-edition-2026": {
     "name": "Brussels Challenge Major Edition 2026",
     "slug": "brussels-challenge-major-edition-2026",
-    "startAt": 1746648000,
-    "endAt": 1746907140,
+    "startAt": 1778184000, 
+    "endAt": 1778443140,
     "startDate": "2026-05-08",
     "endDate": "2026-05-10",
     "dates": "May 8-10, 2026",
@@ -121,8 +121,8 @@
   "3f-fight-for-the-future-2026": {
     "name": "3F Fight For the Future 2026",
     "slug": "3f-fight-for-the-future-2026",
-    "startAt": 1747396800,
-    "endAt": 1747526340,
+    "startAt": 1778932800,
+    "endAt": 1779062340,
     "startDate": "2026-05-16",
     "endDate": "2026-05-17",
     "dates": "May 16-17, 2026",
