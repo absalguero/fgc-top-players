@@ -7,6 +7,7 @@ tags:
   - esports
   - micky
   - falcons
+  - sponsorship
 excerpt: "Micky secures a spot on the Team Falcons competitive roster."
 description: "Team Falcons has signed Micky to their roster following his top finishes at Capcom Cup 12 and DreamHack Birmingham."
 ---
