@@ -1,5 +1,5 @@
 ---
-title: "Clique Signs NL, Fenritti, and WildBasher to Secure EWC Club Championship Points"
+title: "Clique Secures SF6 and Fatal Fury Coverage with NL, Fenritti, and WildBasher Signings"
 layout: article.njk
 date: 2026-04-21 20:33:00
 tags:
