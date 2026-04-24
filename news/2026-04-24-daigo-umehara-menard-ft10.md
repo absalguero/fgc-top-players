@@ -1,7 +1,7 @@
 ---
 title: "FGC Veterans Break Down Daigo vs MenaRD FT10 Matchup"
 layout: article.njk
-date: 2026-04-22 23:29:22
+date: 2026-04-22 23:54:15
 tags:
   - news
   - documentary
@@ -32,7 +32,7 @@ In a documentary feature from Daigo the BeasTV, veteran Japanese fighting game c
 
 ## Reflecting on a Legacy
 
-The video compilation highlights deeply personal interviews with peers who credit Daigo with establishing the pro gaming ecosystem. These players express a palpable mix of anxiety and reverence ahead of the exhibition. While standard tournament brackets test immediate execution over short bursts, several players in the feature share anecdotes of being completely dismantled by Daigo in extended formats. A First-to-10 set demands a drastically different approach to neutral interactions. The interviewees note Daigo excels when given the time to download an opponent over multiple games.
+The video compilation highlights deeply personal interviews with peers who credit Daigo with establishing the pro gaming ecosystem. These players express a palpable mix of anxiety and reverence ahead of the [Evo Legends Live exhibition scheduled for April 29, 2026](https://fgctopplayers.com/news/daigo-and-menard-prepare-for-grueling-ft10-at-evo-legends-live/). While standard tournament brackets test immediate execution over short bursts, several players in the feature share anecdotes of being completely dismantled by Daigo in extended formats. A First-to-10 set demands a drastically different approach to neutral interactions. The interviewees note Daigo excels when given the time to download an opponent over multiple games.
 
 ---
 
