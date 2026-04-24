@@ -17117,7 +17117,7 @@
         "Tier": "A"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "max-mode-2025": {
     "name": "MAX MODE 2025",
@@ -17767,7 +17767,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "somad-spring-overture-montreal-airdashers-2025": {
     "name": "SOMAD - Spring Overture Montreal Airdashers 2025",
