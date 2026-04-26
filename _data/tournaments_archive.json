@@ -18137,7 +18137,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "fight-kingdom-2025": {
     "name": "Fight Kingdom 2025",
@@ -64974,6 +64974,976 @@
         "Date": "2026-04-11",
         "Finish": "49",
         "Entrants": "128",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "lvl-up-expo-2026": {
+    "name": "LVL UP EXPO 2026",
+    "date": "2026-04-23",
+    "slug": "lvl-up-expo-2026",
+    "Tier": "A",
+    "Entrants": "136",
+    "results": [
+      {
+        "Player": "Punk",
+        "Player ID": "1b9e2ed9",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "1",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "NYChrisG",
+        "Player ID": "dab1e1cc",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "2",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Riddles",
+        "Player ID": "03d3a671",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "3",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Dual Kevin",
+        "Player ID": "88d3f20e",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "4",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "GO1",
+        "Player ID": "fe93cbdc",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "5",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "NuckleDu",
+        "Player ID": "71b98b1d",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "5",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "JAK",
+        "Player ID": "ca35d13c",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "7",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Kharsonist",
+        "Player ID": "dd8aaab4",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "7",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Charlie",
+        "Player ID": "facce731",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "9",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Docta Afrikan.EX",
+        "Player ID": "aa788ddc",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "9",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Fenritti",
+        "Player ID": "3fe7b0ec",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "9",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "iDom",
+        "Player ID": "f0979e4c",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "9",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Payaso",
+        "Player ID": "a7460766",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "13",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Fierce",
+        "Player ID": "2d7a14fd",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "13",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Naji",
+        "Player ID": "10669adf",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "13",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Samurai",
+        "Player ID": "5b98b446",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "13",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Exia",
+        "Player ID": "f490f867",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "17",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "MJ_Gama",
+        "Player ID": "4484e542",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "17",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "TAS",
+        "Player ID": "f89b968d",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "17",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Young_Gouki",
+        "Player ID": "94187955",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "17",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Samaro",
+        "Player ID": "f2c47951",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "17",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "NeroTheBoxer",
+        "Player ID": "0a14463f",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "17",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "NoahTheProdigy",
+        "Player ID": "27053e88",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "17",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "PRO7OTYPE",
+        "Player ID": "69d8d1db",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "17",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "TNutsMcNasty",
+        "Player ID": "330b8735",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "25",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "SuperAngryJigglypuff",
+        "Player ID": "84a2e09f",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "25",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Threeyes",
+        "Player ID": "2ff67cf3",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "25",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "king epic game store",
+        "Player ID": "40817e71",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "25",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "K7 Showoff",
+        "Player ID": "fb9b0a37",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "25",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Dodger",
+        "Player ID": "b7ae9557",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "25",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Dolfino",
+        "Player ID": "dd60d91e",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "25",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "SushiHeaven",
+        "Player ID": "ce06e2b0",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "25",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "siideeye",
+        "Player ID": "90f4169b",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "33",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Diaphone",
+        "Player ID": "3f9200bd",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "33",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "SCORPYN702",
+        "Player ID": "b1aecdfd",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "33",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "SumThin",
+        "Player ID": "0b9a71e1",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "33",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "DARLAN",
+        "Player ID": "78004acb",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "33",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "U",
+        "Player ID": "a1747b9a",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "33",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Froggymustdie",
+        "Player ID": "efc1f158",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "33",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "airjordan43",
+        "Player ID": "afa1a101",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "33",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Gust",
+        "Player ID": "4a4bbf08",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "33",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Matau32",
+        "Player ID": "62835d94",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "33",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "JurassicRabbit",
+        "Player ID": "94d42546",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "33",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "OnlineGuile",
+        "Player ID": "00f73b0f",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "33",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "ED_BOI_SURPRISE",
+        "Player ID": "936c9e23",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "33",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Dizzle",
+        "Player ID": "6bb12358",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "33",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Karoshiii",
+        "Player ID": "0f4fca01",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "33",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "AMX_cøla",
+        "Player ID": "amx_cla",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "33",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Protagonist",
+        "Player ID": "58668e48",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "49",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Callofjohn",
+        "Player ID": "727e1434",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "49",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Vorxter",
+        "Player ID": "6ecd4cf6",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "49",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Asimo",
+        "Player ID": "ffa84c87",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "49",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Fosh",
+        "Player ID": "2cb33309",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "49",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Tactical",
+        "Player ID": "2f28c1cb",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "49",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Dev",
+        "Player ID": "d4d03b30",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "49",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Squit",
+        "Player ID": "e776aafc",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "49",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Skrawk",
+        "Player ID": "a789c209",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "49",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Tong",
+        "Player ID": "a5f2aa63",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "49",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "PacGod",
+        "Player ID": "da14270d",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "49",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Serenborn",
+        "Player ID": "249d4f50",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "49",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "SehG",
+        "Player ID": "895969d9",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "49",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Bunz",
+        "Player ID": "37105c16",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "49",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "Chino",
+        "Player ID": "9234beb0",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "49",
+        "Entrants": "136",
+        "Tier": "A"
+      },
+      {
+        "Player": "sleepnsheep",
+        "Player ID": "80395920",
+        "Event": "LVL UP EXPO 2026",
+        "Event ID": "lvl-up-expo-2026-1",
+        "Date": "2026-04-24",
+        "Finish": "49",
+        "Entrants": "136",
+        "Tier": "A"
+      }
+    ],
+    "isArchived": false
+  },
+  "saudi-eleague-fighting-street-fighter-6-tier-a-season-5": {
+    "name": "Saudi eLeague - Fighting – Street Fighter 6 - Tier A [Season 5]",
+    "date": "2026-04-22",
+    "slug": "saudi-eleague-fighting-street-fighter-6-tier-a-season-5",
+    "Tier": "B",
+    "Entrants": "31",
+    "results": [
+      {
+        "Player": "Latif",
+        "Player ID": "89defdf1",
+        "Event": "Saudi eLeague - Fighting – Street Fighter 6 - Tier A [Season 5]",
+        "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-5",
+        "Date": "2026-04-23",
+        "Finish": "1",
+        "Entrants": "31",
+        "Tier": "B"
+      },
+      {
+        "Player": "vWsym",
+        "Player ID": "c42ab9f6",
+        "Event": "Saudi eLeague - Fighting – Street Fighter 6 - Tier A [Season 5]",
+        "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-5",
+        "Date": "2026-04-23",
+        "Finish": "2",
+        "Entrants": "31",
+        "Tier": "B"
+      },
+      {
+        "Player": "MEA_MB",
+        "Player ID": "5a6e7150",
+        "Event": "Saudi eLeague - Fighting – Street Fighter 6 - Tier A [Season 5]",
+        "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-5",
+        "Date": "2026-04-23",
+        "Finish": "3",
+        "Entrants": "31",
+        "Tier": "B"
+      },
+      {
+        "Player": "Vi",
+        "Player ID": "9fd2ea1d",
+        "Event": "Saudi eLeague - Fighting – Street Fighter 6 - Tier A [Season 5]",
+        "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-5",
+        "Date": "2026-04-23",
+        "Finish": "4",
+        "Entrants": "31",
+        "Tier": "B"
+      },
+      {
+        "Player": "White-AshX",
+        "Player ID": "8bb3103b",
+        "Event": "Saudi eLeague - Fighting – Street Fighter 6 - Tier A [Season 5]",
+        "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-5",
+        "Date": "2026-04-23",
+        "Finish": "5",
+        "Entrants": "31",
+        "Tier": "B"
+      },
+      {
+        "Player": "RichteR",
+        "Player ID": "9b8939fc",
+        "Event": "Saudi eLeague - Fighting – Street Fighter 6 - Tier A [Season 5]",
+        "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-5",
+        "Date": "2026-04-23",
+        "Finish": "5",
+        "Entrants": "31",
+        "Tier": "B"
+      },
+      {
+        "Player": "VanMezian",
+        "Player ID": "7acb98aa",
+        "Event": "Saudi eLeague - Fighting – Street Fighter 6 - Tier A [Season 5]",
+        "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-5",
+        "Date": "2026-04-23",
+        "Finish": "7",
+        "Entrants": "31",
+        "Tier": "B"
+      },
+      {
+        "Player": "turkiabc",
+        "Player ID": "b07c6dfe",
+        "Event": "Saudi eLeague - Fighting – Street Fighter 6 - Tier A [Season 5]",
+        "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-5",
+        "Date": "2026-04-23",
+        "Finish": "7",
+        "Entrants": "31",
+        "Tier": "B"
+      },
+      {
+        "Player": "HOOM",
+        "Player ID": "63d8e139",
+        "Event": "Saudi eLeague - Fighting – Street Fighter 6 - Tier A [Season 5]",
+        "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-5",
+        "Date": "2026-04-23",
+        "Finish": "9",
+        "Entrants": "31",
+        "Tier": "B"
+      },
+      {
+        "Player": "Yuskaz",
+        "Player ID": "f16c3d48",
+        "Event": "Saudi eLeague - Fighting – Street Fighter 6 - Tier A [Season 5]",
+        "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-5",
+        "Date": "2026-04-23",
+        "Finish": "9",
+        "Entrants": "31",
+        "Tier": "B"
+      },
+      {
+        "Player": "Gouken",
+        "Player ID": "393f6426",
+        "Event": "Saudi eLeague - Fighting – Street Fighter 6 - Tier A [Season 5]",
+        "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-5",
+        "Date": "2026-04-23",
+        "Finish": "9",
+        "Entrants": "31",
+        "Tier": "B"
+      },
+      {
+        "Player": "Deadeye",
+        "Player ID": "a638072d",
+        "Event": "Saudi eLeague - Fighting – Street Fighter 6 - Tier A [Season 5]",
+        "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-5",
+        "Date": "2026-04-23",
+        "Finish": "9",
+        "Entrants": "31",
+        "Tier": "B"
+      },
+      {
+        "Player": "BADerRules",
+        "Player ID": "84e0f1b5",
+        "Event": "Saudi eLeague - Fighting – Street Fighter 6 - Tier A [Season 5]",
+        "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-5",
+        "Date": "2026-04-23",
+        "Finish": "13",
+        "Entrants": "31",
+        "Tier": "B"
+      },
+      {
+        "Player": "OSteami",
+        "Player ID": "b4cc0ee9",
+        "Event": "Saudi eLeague - Fighting – Street Fighter 6 - Tier A [Season 5]",
+        "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-5",
+        "Date": "2026-04-23",
+        "Finish": "13",
+        "Entrants": "31",
+        "Tier": "B"
+      },
+      {
+        "Player": "_Solomon",
+        "Player ID": "33008ff9",
+        "Event": "Saudi eLeague - Fighting – Street Fighter 6 - Tier A [Season 5]",
+        "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-5",
+        "Date": "2026-04-23",
+        "Finish": "13",
+        "Entrants": "31",
+        "Tier": "B"
+      },
+      {
+        "Player": "Lightning",
+        "Player ID": "c8804f52",
+        "Event": "Saudi eLeague - Fighting – Street Fighter 6 - Tier A [Season 5]",
+        "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-5",
+        "Date": "2026-04-23",
+        "Finish": "13",
+        "Entrants": "31",
+        "Tier": "B"
+      },
+      {
+        "Player": "SeekMVS",
+        "Player ID": "7baff341",
+        "Event": "Saudi eLeague - Fighting – Street Fighter 6 - Tier A [Season 5]",
+        "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-5",
+        "Date": "2026-04-23",
+        "Finish": "17",
+        "Entrants": "31",
+        "Tier": "B"
+      },
+      {
+        "Player": "GIN",
+        "Player ID": "c650740f",
+        "Event": "Saudi eLeague - Fighting – Street Fighter 6 - Tier A [Season 5]",
+        "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-5",
+        "Date": "2026-04-23",
+        "Finish": "17",
+        "Entrants": "31",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bandman",
+        "Player ID": "7f3097b8",
+        "Event": "Saudi eLeague - Fighting – Street Fighter 6 - Tier A [Season 5]",
+        "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-5",
+        "Date": "2026-04-23",
+        "Finish": "17",
+        "Entrants": "31",
+        "Tier": "B"
+      },
+      {
+        "Player": "Fresco",
+        "Player ID": "8c9486ab",
+        "Event": "Saudi eLeague - Fighting – Street Fighter 6 - Tier A [Season 5]",
+        "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-5",
+        "Date": "2026-04-23",
+        "Finish": "17",
+        "Entrants": "31",
+        "Tier": "B"
+      },
+      {
+        "Player": "Aj",
+        "Player ID": "34817db8",
+        "Event": "Saudi eLeague - Fighting – Street Fighter 6 - Tier A [Season 5]",
+        "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-5",
+        "Date": "2026-04-23",
+        "Finish": "17",
+        "Entrants": "31",
+        "Tier": "B"
+      },
+      {
+        "Player": "Big Boy",
+        "Player ID": "2f45d8e6",
+        "Event": "Saudi eLeague - Fighting – Street Fighter 6 - Tier A [Season 5]",
+        "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-5",
+        "Date": "2026-04-23",
+        "Finish": "17",
+        "Entrants": "31",
+        "Tier": "B"
+      },
+      {
+        "Player": "VXN",
+        "Player ID": "52f00483",
+        "Event": "Saudi eLeague - Fighting – Street Fighter 6 - Tier A [Season 5]",
+        "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-5",
+        "Date": "2026-04-23",
+        "Finish": "17",
+        "Entrants": "31",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dmc",
+        "Player ID": "74fa5614",
+        "Event": "Saudi eLeague - Fighting – Street Fighter 6 - Tier A [Season 5]",
+        "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-5",
+        "Date": "2026-04-23",
+        "Finish": "17",
+        "Entrants": "31",
+        "Tier": "B"
+      },
+      {
+        "Player": "punisher",
+        "Player ID": "2ef9c6d6",
+        "Event": "Saudi eLeague - Fighting – Street Fighter 6 - Tier A [Season 5]",
+        "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-5",
+        "Date": "2026-04-23",
+        "Finish": "25",
+        "Entrants": "31",
+        "Tier": "B"
+      },
+      {
+        "Player": "Spiritus",
+        "Player ID": "97c1b120",
+        "Event": "Saudi eLeague - Fighting – Street Fighter 6 - Tier A [Season 5]",
+        "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-5",
+        "Date": "2026-04-23",
+        "Finish": "25",
+        "Entrants": "31",
+        "Tier": "B"
+      },
+      {
+        "Player": "Alshammari",
+        "Player ID": "3d2bc078",
+        "Event": "Saudi eLeague - Fighting – Street Fighter 6 - Tier A [Season 5]",
+        "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-5",
+        "Date": "2026-04-23",
+        "Finish": "25",
+        "Entrants": "31",
+        "Tier": "B"
+      },
+      {
+        "Player": "Torb",
+        "Player ID": "2d2c0ee0",
+        "Event": "Saudi eLeague - Fighting – Street Fighter 6 - Tier A [Season 5]",
+        "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-5",
+        "Date": "2026-04-23",
+        "Finish": "25",
+        "Entrants": "31",
+        "Tier": "B"
+      },
+      {
+        "Player": "FABIO",
+        "Player ID": "d7a6f7bd",
+        "Event": "Saudi eLeague - Fighting – Street Fighter 6 - Tier A [Season 5]",
+        "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-5",
+        "Date": "2026-04-23",
+        "Finish": "25",
+        "Entrants": "31",
+        "Tier": "B"
+      },
+      {
+        "Player": "D7mah7",
+        "Player ID": "d2336444",
+        "Event": "Saudi eLeague - Fighting – Street Fighter 6 - Tier A [Season 5]",
+        "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-5",
+        "Date": "2026-04-23",
+        "Finish": "25",
+        "Entrants": "31",
+        "Tier": "B"
+      },
+      {
+        "Player": "SlowDP",
+        "Player ID": "4cf0d68f",
+        "Event": "Saudi eLeague - Fighting – Street Fighter 6 - Tier A [Season 5]",
+        "Event ID": "saudi-eleague-fighting-street-fighter-6-tier-a-season-5",
+        "Date": "2026-04-23",
+        "Finish": "25",
+        "Entrants": "31",
         "Tier": "B"
       }
     ],
