@@ -4,6 +4,7 @@ layout: article.njk
 date: 2026-04-27 07:01:00
 tags:
   - news
+  - esports
   - kilzyou
   - ag global
   - sponsorship
