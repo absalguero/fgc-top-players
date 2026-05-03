@@ -19437,7 +19437,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "evo-japan-2025": {
     "name": "EVO Japan 2025",
@@ -33888,7 +33888,7 @@
       },
       {
         "Player": "taketake-piano",
-        "Player ID": "taketake-piano",
+        "Player ID": "b2c85b6d",
         "Event": "Esports World Cup 2025 Last Change Qualifier (LCQ)",
         "Event ID": "",
         "Date": "2025-08-14",
@@ -41057,7 +41057,7 @@
         "Tier": "B"
       },
       {
-        "Player": "Motchan もっちゃん",
+        "Player": "Motchan",
         "Player ID": "6d639ec7",
         "Event": "DNECUP 2025",
         "Event ID": "dnecup-2025-in-tokushima",
@@ -52827,7 +52827,7 @@
         "Tier": "B"
       },
       {
-        "Player": "ランガサミ/rangasamy",
+        "Player": "rangasamy",
         "Player ID": "5c2e0d10",
         "Event": "Red Bull LEGENDUS STREET FIGHTER 6 頂",
         "Event ID": "red-bull-legendus-street-fighter-6",
@@ -53277,7 +53277,7 @@
         "Tier": "B"
       },
       {
-        "Player": "Motchan もっちゃん",
+        "Player": "Motchan",
         "Player ID": "6d639ec7",
         "Event": "Red Bull LEGENDUS STREET FIGHTER 6 頂",
         "Event ID": "red-bull-legendus-street-fighter-6",
@@ -59928,7 +59928,7 @@
       },
       {
         "Player": "taketake-piano",
-        "Player ID": "taketake-piano",
+        "Player ID": "b2c85b6d",
         "Event": "Japan World Warrior Regional Final 2026",
         "Event ID": "",
         "Date": "2026-02-08",
@@ -65945,6 +65945,656 @@
         "Finish": "25",
         "Entrants": "31",
         "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "evo-japan-2026": {
+    "name": "Evo Japan 2026",
+    "date": "2026-04-29",
+    "slug": "evo-japan-2026",
+    "Tier": "S+",
+    "Entrants": "7683",
+    "results": [
+      {
+        "Player": "Yamaguchi",
+        "Player ID": "6bfc4c78",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "1",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Punk",
+        "Player ID": "1b9e2ed9",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "2",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Higuchi",
+        "Player ID": "fee94c73",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "3",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Hope",
+        "Player ID": "ea6104e7",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "4",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Shuto",
+        "Player ID": "b66813f3",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "5",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "naooonn",
+        "Player ID": "d8af4bf6",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "5",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "NuckleDu",
+        "Player ID": "71b98b1d",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "7",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "taketake-piano",
+        "Player ID": "b2c85b6d",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "7",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "rangasamy",
+        "Player ID": "5c2e0d10",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "9",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Kilzyou",
+        "Player ID": "dcd53ca7",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "9",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "taizen",
+        "Player ID": "f0932bb9",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "9",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "cosa",
+        "Player ID": "2e561d93",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "9",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Brayan_Job",
+        "Player ID": "fbf421ef",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "13",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "あくたがわ",
+        "Player ID": "2754067c",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "13",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "watyawacha",
+        "Player ID": "80b73efd",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "13",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Blaz",
+        "Player ID": "37844e8a",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "13",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Lemochin",
+        "Player ID": "29060a92",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "17",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "kobayan",
+        "Player ID": "ef64257e",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "17",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Lexx",
+        "Player ID": "ec4d302b",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "17",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Vxbao",
+        "Player ID": "50096866",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "17",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Booce_Lee",
+        "Player ID": "84a88e6f",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "17",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Yuto",
+        "Player ID": "8b55a8c8",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "17",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Naruo",
+        "Player ID": "da5656bb",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "17",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "NL",
+        "Player ID": "bebd6de0",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "17",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Mizuha",
+        "Player ID": "ed773e44",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "25",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "サトル",
+        "Player ID": "bfc02017",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "25",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Hibiki",
+        "Player ID": "362536f6",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "25",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Kazunoko",
+        "Player ID": "52cd5765",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "25",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Ryukichi",
+        "Player ID": "9f36f82b",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "25",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "yukari",
+        "Player ID": "761fa9e6",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "25",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "HotDog29",
+        "Player ID": "e9050ed0",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "25",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Nauman",
+        "Player ID": "245de7b9",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "25",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Motchan",
+        "Player ID": "6d639ec7",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "33",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "れれれれれーげん",
+        "Player ID": "7f82fe11",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "33",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Oil King",
+        "Player ID": "92c9115f",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "33",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Tokido",
+        "Player ID": "a4c7c2d4",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "33",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "ひなお",
+        "Player ID": "1e05762a",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "33",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "kingsvega",
+        "Player ID": "c0e4c985",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "33",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "JAK",
+        "Player ID": "ca35d13c",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "33",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "gachikun",
+        "Player ID": "7fc0306f",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "33",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Rainpro",
+        "Player ID": "2ab0ced8",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "33",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Kinta L",
+        "Player ID": "caa7b8dc",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "33",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Zhen",
+        "Player ID": "0186079f",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "33",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Wawa",
+        "Player ID": "69331197",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "33",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "pugera",
+        "Player ID": "9594efe4",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "33",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "えびはら",
+        "Player ID": "f6137578",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "33",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "CrossoverRD",
+        "Player ID": "67ff45df",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "33",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "へかとん",
+        "Player ID": "08c23bb0",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "33",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "eguto",
+        "Player ID": "f2b64d1e",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "49",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Hamood",
+        "Player ID": "cd6cefbc",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "49",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Itabashi Zangief",
+        "Player ID": "c46d6f76",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "49",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Bonchan",
+        "Player ID": "c69131b6",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "49",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "高木",
+        "Player ID": "a6f5628d",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "49",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "KEY",
+        "Player ID": "72205a43",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "49",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Kawano",
+        "Player ID": "84491299",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "49",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "rana",
+        "Player ID": "a9939fcb",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "49",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "小走り",
+        "Player ID": "f1984a9f",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "49",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "SS熊本 テイエム",
+        "Player ID": "6999c8ca",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "49",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "gamein99",
+        "Player ID": "e2f0b505",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "49",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "tako",
+        "Player ID": "975aaa22",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "49",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Takoyarou",
+        "Player ID": "78c6807c",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "49",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Jr.",
+        "Player ID": "126a661a",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "49",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Sahara.",
+        "Player ID": "a0062bed",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "49",
+        "Entrants": "7683",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Thunder DeLangis",
+        "Player ID": "60c77e9c",
+        "Event": "Evo Japan 2026",
+        "Event ID": "evo-japan-2026-presented-by-levtech",
+        "Date": "2026-04-30",
+        "Finish": "49",
+        "Entrants": "7683",
+        "Tier": "S+"
       }
     ],
     "isArchived": false
