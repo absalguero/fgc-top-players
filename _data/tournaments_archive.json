@@ -66598,5 +66598,655 @@
       }
     ],
     "isArchived": false
+  },
+  "brussels-challenge-major-edition-2026": {
+    "name": "Brussels Challenge Major Edition 2026",
+    "date": "2026-05-08",
+    "slug": "brussels-challenge-major-edition-2026",
+    "Tier": "B",
+    "Entrants": "129",
+    "results": [
+      {
+        "Player": "Takamura",
+        "Player ID": "b2a30117",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "1",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mister Crimson",
+        "Player ID": "60eb8f41",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "2",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Senor Power",
+        "Player ID": "fada6833",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "3",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ritchy",
+        "Player ID": "4a3b14ea",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "4",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "JuniorLeo",
+        "Player ID": "dce6f793",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "5",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "s4ltyKiD",
+        "Player ID": "c0dbe56d",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "5",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dims",
+        "Player ID": "20ac3561",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "7",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "RASS",
+        "Player ID": "3c086d43",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "7",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Fuhajin",
+        "Player ID": "41a6ead4",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "9",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Railgun",
+        "Player ID": "dccbf1c6",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "9",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "小路KOG",
+        "Player ID": "17aece0a",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "9",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "HSN",
+        "Player ID": "e011173b",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "9",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "TessTary",
+        "Player ID": "8af98400",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "13",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Fararjeh",
+        "Player ID": "4c8f3024",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "13",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Fenritti",
+        "Player ID": "3fe7b0ec",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "13",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "gamein99",
+        "Player ID": "e2f0b505",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "13",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "MasterMT",
+        "Player ID": "34751341",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "17",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Lima Von Aida",
+        "Player ID": "ab47195b",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "17",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "HeyyPepito",
+        "Player ID": "6ce590e5",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "17",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Odys",
+        "Player ID": "759a02c6",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "17",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Montagne",
+        "Player ID": "aa20513a",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "17",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Moat Squire",
+        "Player ID": "3f3ca218",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "17",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Tchang",
+        "Player ID": "6527aad9",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "17",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "KDL",
+        "Player ID": "2f1091ca",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "17",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kaky",
+        "Player ID": "fe3b0b17",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "25",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Greg Eijun",
+        "Player ID": "7ceeb57a",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "25",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kam",
+        "Player ID": "43e6d8e6",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "25",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "KenpachiBE",
+        "Player ID": "kenpachibe",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "25",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "XernaStoleMyRide",
+        "Player ID": "6d8c882c",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "25",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "nariod15",
+        "Player ID": "6de2e7e4",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "25",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ryan Hart",
+        "Player ID": "da7ce01e",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "25",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Tevezbxl",
+        "Player ID": "b19eb144",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "25",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jean-Kloot",
+        "Player ID": "5a11dfc8",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "33",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Xan",
+        "Player ID": "98784542",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "33",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "SlaryTheNoob",
+        "Player ID": "44a3b09a",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "33",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Doud",
+        "Player ID": "b14be004",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "33",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Chomp",
+        "Player ID": "38776900",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "33",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Leijie",
+        "Player ID": "d1e5bcd8",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "33",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "GentleKef",
+        "Player ID": "6e606345",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "33",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Leovath",
+        "Player ID": "94e19ae5",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "33",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Yopherie",
+        "Player ID": "fe7405ba",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "33",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Keru",
+        "Player ID": "e9a55e2c",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "33",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Oniro",
+        "Player ID": "8f61927d",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "33",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Toshiaki",
+        "Player ID": "766c4fdb",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "33",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "NS",
+        "Player ID": "42b821f1",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "33",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bebop77",
+        "Player ID": "7c43e178",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "33",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Suku",
+        "Player ID": "2bf59e78",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "33",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pulgaa",
+        "Player ID": "ba220076",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "33",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mandatory",
+        "Player ID": "31ff0fb8",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "49",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Almeh",
+        "Player ID": "05066f56",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "49",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "BeardManPro",
+        "Player ID": "c4b2efe2",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "49",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Fuliodam",
+        "Player ID": "e98184e9",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "49",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Elikia26",
+        "Player ID": "da15a43c",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "49",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ora Beniz",
+        "Player ID": "66dfc63c",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "49",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Queute",
+        "Player ID": "64f4a0c5",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "49",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Willox",
+        "Player ID": "6f0de2fc",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "49",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Acegodshingo",
+        "Player ID": "a8ce6800",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "49",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Sata",
+        "Player ID": "271ace9e",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "49",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Thorkell",
+        "Player ID": "39524db1",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "49",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dizflash",
+        "Player ID": "52c2e000",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "49",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Un1d",
+        "Player ID": "500e9162",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "49",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Makura",
+        "Player ID": "8d5ffbae",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "49",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Sai",
+        "Player ID": "7980b745",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "49",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "BuuFighterZ",
+        "Player ID": "ac7a792c",
+        "Event": "Brussels Challenge Major Edition 2026",
+        "Event ID": "brussels-challenge-major-edition-2026",
+        "Date": "2026-05-09",
+        "Finish": "49",
+        "Entrants": "129",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
   }
 }
