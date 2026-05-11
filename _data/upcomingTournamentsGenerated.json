@@ -1,33 +1,4 @@
 {
-  "brussels-challenge-major-edition-2026": {
-    "name": "Brussels Challenge Major Edition 2026",
-    "slug": "brussels-challenge-major-edition-2026",
-    "startAt": 1778256000,
-    "endAt": 1778443200,
-    "startDate": "2026-05-08",
-    "endDate": "2026-05-10",
-    "dates": "May 8-10, 2026",
-    "location": "Rue Stroobants 51, 1140 Evere, Belgique",
-    "venueName": "",
-    "url": "https://www.start.gg/tournament/brussels-challenge-major-edition-2026",
-    "tier": "A",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "Brussels Challenge Major Edition 2026 is scheduled for May 8-10, 2026 in Rue Stroobants 51, 1140 Evere, Belgique. Featuring Street Fighter 6. Registered top players include Kilzyou, xiaohai, Mister Crimson, Vxbao, EndingWalker, Takamura.",
-    "notablePlayers": [
-      "Kilzyou",
-      "xiaohai",
-      "Mister Crimson",
-      "Vxbao",
-      "EndingWalker",
-      "Takamura",
-      "Xian"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
   "road-to-ewc-dreamhack-atlanta": {
     "name": "Road to EWC: DreamHack Atlanta",
     "slug": "road-to-ewc-dreamhack-atlanta",

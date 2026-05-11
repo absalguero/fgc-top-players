@@ -1,25 +1,4 @@
 {
-  "brussels-challenge-major-edition-2026": {
-    "name": "Brussels Challenge Major Edition 2026",
-    "slug": "brussels-challenge-major-edition-2026",
-    "startAt": 1778184000, 
-    "endAt": 1778443140,
-    "startDate": "2026-05-08",
-    "endDate": "2026-05-10",
-    "dates": "May 8-10, 2026",
-    "location": "Rue Stroobants 51, 1140 Evere, Belgium",
-    "venueName": "Proximus Lounge",
-    "url": "https://www.start.gg/tournament/brussels-challenge-major-edition-2026/details",
-    "tier": "B",
-    "prizes": "",
-    "game": "Street Fighter 6",
-    "streamLink": "https://www.twitch.tv/reversalgg",
-    "scheduleLink": "https://x.com/BX_challenge/status/2046621501198094501",
-    "description": "<strong>Brussels Challenge Major Edition 2026</strong> is one of Europe's premier community-run fighting game tournaments, returning to <strong>Brussels, Belgium</strong> from May 8 through May 10, 2026. Organized by <strong>CCL</strong>, the event has grown from its roots as a single-day Street Fighter showcase in 2017 into a multi-game major that draws top competitors from across the European region and beyond.</p><p>For the FGC, Brussels Challenge Major is a fixture of the European spring circuit, known for its competitive depth, passionate crowd, and consistent ability to surface top regional talent alongside established international names.</p><h3>Game Lineup</h3><p>The 2026 edition features a strong multi-game slate anchored by <strong>Street Fighter 6</strong>, <strong>Fatal Fury: City of the Wolves</strong>, and <strong>Samurai Shodown</strong>, with additional titles rounding out the weekend.</p><h3>A Proven European Stage</h3><p>Brussels Challenge has built a reputation as one of the most welcoming major events on the European calendar, combining a serious competitive environment with strong production and community atmosphere. Past editions have featured top European players across titles including <em>Tekken 8</em>, <em>Guilty Gear Strive</em>, <em>The King of Fighters XV</em>, and <em>Granblue Fantasy Versus: Rising</em>.</p><h3>Registration</h3><p>Registration for Brussels Challenge Major Edition 2026 is handled through the event's start.gg page. Players can enter individual game brackets directly, with rules following standard double-elimination format.",
-    "notablePlayers": [],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
   "road-to-ewc-dreamhack-atlanta": {
     "name": "Road to EWC: DreamHack Atlanta",
     "slug": "road-to-ewc-dreamhack-atlanta",
