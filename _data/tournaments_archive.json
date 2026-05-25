@@ -20428,7 +20428,7 @@
       },
       {
         "Player": "Betty",
-        "Player ID": "falconsnl",
+        "Player ID": "85b08dcc",
         "Event": "HERO ESPORTS Asian Champions League 2025",
         "Event ID": "hero-esports-asian-champions-league-2",
         "Date": "2025-05-16",
@@ -22037,7 +22037,7 @@
         "Tier": "S+"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "bam-15-battle-arena-melbourne-15": {
     "name": "BAM 15: Battle Arena Melbourne 15",
@@ -68145,6 +68145,656 @@
         "Finish": "17",
         "Entrants": "24",
         "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "combo-breaker-2026": {
+    "name": "COMBO BREAKER 2026",
+    "date": "2026-05-21",
+    "slug": "combo-breaker-2026",
+    "Tier": "S+",
+    "Entrants": "1452",
+    "results": [
+      {
+        "Player": "xiaohai",
+        "Player ID": "dc3d34bc",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "1",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "ひなお",
+        "Player ID": "1e05762a",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "2",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Jr.",
+        "Player ID": "126a661a",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "3",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "kobayan",
+        "Player ID": "ef64257e",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "4",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Fuudo",
+        "Player ID": "173c6283",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "5",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Oil King",
+        "Player ID": "92c9115f",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "5",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Micky",
+        "Player ID": "09e5dcc1",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "7",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Vxbao",
+        "Player ID": "50096866",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "7",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "GuyGuy",
+        "Player ID": "f1e574a7",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "9",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "cosa",
+        "Player ID": "2e561d93",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "9",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Shigematsu",
+        "Player ID": "761fa9e6",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "9",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "CrossoverRD",
+        "Player ID": "67ff45df",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "9",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "MenaRD",
+        "Player ID": "31a13177",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "13",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Kilzyou",
+        "Player ID": "dcd53ca7",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "13",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "NuckleDu",
+        "Player ID": "71b98b1d",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "13",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "HotDog29",
+        "Player ID": "e9050ed0",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "13",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Ryukichi",
+        "Player ID": "9f36f82b",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "17",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "高木",
+        "Player ID": "a6f5628d",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "17",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Enzo",
+        "Player ID": "9cc42fd3",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "17",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Bonchan",
+        "Player ID": "c69131b6",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "17",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Psycho",
+        "Player ID": "895e9636",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "17",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "KEI.B",
+        "Player ID": "36b29fd8",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "17",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Kharsonist",
+        "Player ID": "dd8aaab4",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "17",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "NYChrisG",
+        "Player ID": "dab1e1cc",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "17",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "gachikun",
+        "Player ID": "7fc0306f",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "25",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Dual Kevin",
+        "Player ID": "88d3f20e",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "25",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "EndingWalker",
+        "Player ID": "90c33661",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "25",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "DCQ",
+        "Player ID": "ae2f4ff8",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "25",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Kawano",
+        "Player ID": "84491299",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "25",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "kingsvega",
+        "Player ID": "c0e4c985",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "25",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "JPKING",
+        "Player ID": "f3b70305",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "25",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Craime",
+        "Player ID": "a5ce82ae",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "25",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Higuchi",
+        "Player ID": "fee94c73",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "33",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Momochi",
+        "Player ID": "7b2d35d2",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "33",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "GO1",
+        "Player ID": "fe93cbdc",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "33",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Phenom",
+        "Player ID": "ac09a1a3",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "33",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Zhen",
+        "Player ID": "0186079f",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "33",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Tokido",
+        "Player ID": "a4c7c2d4",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "33",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "harms",
+        "Player ID": "08e8bae1",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "33",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Jiewa",
+        "Player ID": "be8eb9f8",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "33",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "AdrianRD",
+        "Player ID": "cb90c04c",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "33",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "ChrisT",
+        "Player ID": "9f399abf",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "33",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Nephew",
+        "Player ID": "b1fe7f8b",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "33",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Chris Wong",
+        "Player ID": "a3a19505",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "33",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Hibiki",
+        "Player ID": "362536f6",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "33",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Uriel Velorio",
+        "Player ID": "55790db9",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "33",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "あでりい",
+        "Player ID": "b10fd170",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "33",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "wabiichi",
+        "Player ID": "e14bf28c",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "33",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Blaz",
+        "Player ID": "37844e8a",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "49",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "kincho",
+        "Player ID": "c5bc27ca",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "49",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Itabashi Zangief",
+        "Player ID": "c46d6f76",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "49",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Betty",
+        "Player ID": "85b08dcc",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "49",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Ramsey",
+        "Player ID": "bb472734",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "49",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Lexx",
+        "Player ID": "ec4d302b",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "49",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Hikaru",
+        "Player ID": "4965ba08",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "49",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Zaferino",
+        "Player ID": "6b445ad8",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "49",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "MATSU56",
+        "Player ID": "725ea610",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "49",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "ElChakotay",
+        "Player ID": "acfa1207",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "49",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Rainpro",
+        "Player ID": "2ab0ced8",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "49",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "vWsym",
+        "Player ID": "c42ab9f6",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "49",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Bloo",
+        "Player ID": "62f3840c",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "49",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Ryusei",
+        "Player ID": "6f9ebc42",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "49",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Tachikawa",
+        "Player ID": "c68eeb1f",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "49",
+        "Entrants": "1452",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Shine",
+        "Player ID": "b3bd73c6",
+        "Event": "COMBO BREAKER 2026",
+        "Event ID": "combo-breaker-2026",
+        "Date": "2026-05-22",
+        "Finish": "49",
+        "Entrants": "1452",
+        "Tier": "S+"
       }
     ],
     "isArchived": false
