@@ -49,6 +49,29 @@
     "isArchived": false,
     "excludeFromSite": false
   },
+  "grapht-cup-2026-osaka": {
+    "name": "GRAPHT CUP 2026 大阪予選 Osaka",
+    "slug": "grapht-cup-2026-osaka",
+    "startAt": 1781315940,
+    "endAt": 1781341200,
+    "startDate": "2026-06-13",
+    "endDate": "2026-06-13",
+    "dates": "Jun 13, 2026",
+    "location": "日本、〒556-0011 大阪府大阪市浪速区難波中２丁目１０−７０",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/grapht-cup-2026-osaka",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "GRAPHT CUP 2026 大阪予選 Osaka is scheduled for Jun 13, 2026 in 日本、〒556-0011 大阪府大阪市浪速区難波中２丁目１０−７０. Featuring Street Fighter 6. Registered top players include らおやむやむハイハイ謝謝.",
+    "notablePlayers": [
+      "らおやむやむハイハイ謝謝"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
   "the-mixup-2026-round-8": {
     "name": "The MIXUP 2026 - Round 8",
     "slug": "the-mixup-2026-round-8",
@@ -72,6 +95,29 @@
     "isArchived": false,
     "excludeFromSite": false
   },
+  "big-bang-7": {
+    "name": "BIG BANG 7",
+    "slug": "big-bang-7",
+    "startAt": 1781967600,
+    "endAt": 1782104400,
+    "startDate": "2026-06-20",
+    "endDate": "2026-06-21",
+    "dates": "Jun 20-21, 2026",
+    "location": "Blvd. Adolfo López Mateos #1702, La Martinica, 37500 León de los Aldama, Gto., Mexico",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/big-bang-7",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "BIG BANG 7 is scheduled for Jun 20-21, 2026 in Blvd. Adolfo López Mateos #1702, La Martinica, 37500 León de los Aldama, Gto., Mexico. Featuring Street Fighter 6. Registered top players include MJ_Gama.",
+    "notablePlayers": [
+      "MJ_Gama"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
   "chimarr-o-vs-2026": {
     "name": "Chimarrão Vs. 2026",
     "slug": "chimarr-o-vs-2026",
@@ -91,6 +137,41 @@
     "description": "Chimarrão Vs. 2026 is scheduled for Jun 27-28, 2026 in Av. Protásio Alves, 2966 - Petrópolis, Porto Alegre - RS, 90410-007, Brazil. Featuring Street Fighter 6. Registered top players include Brayan_Job.",
     "notablePlayers": [
       "Brayan_Job"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
+  "bam-16-battle-arena-melbourne-16": {
+    "name": "BAM 16: Battle Arena Melbourne 16",
+    "slug": "bam-16-battle-arena-melbourne-16",
+    "startAt": 1783663200,
+    "endAt": 1783850400,
+    "startDate": "2026-07-10",
+    "endDate": "2026-07-12",
+    "dates": "Jul 10-12, 2026",
+    "location": "111 Queens Parade, Fitzroy North VIC 3068, Australia",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/bam-16-battle-arena-melbourne-16",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "BAM 16: Battle Arena Melbourne 16 is scheduled for Jul 10-12, 2026 in 111 Queens Parade, Fitzroy North VIC 3068, Australia. Featuring Street Fighter 6. Registered top players include Punk, kobayan, Higuchi, Sahara., kincho, gachikun.",
+    "notablePlayers": [
+      "Punk",
+      "kobayan",
+      "Higuchi",
+      "Sahara.",
+      "kincho",
+      "gachikun",
+      "Tokido",
+      "Ryukichi",
+      "pugera",
+      "Kawano",
+      "moke",
+      "Dogura",
+      "Samurai"
     ],
     "isArchived": false,
     "excludeFromSite": false
