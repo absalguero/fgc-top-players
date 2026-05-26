@@ -1,4 +1,26 @@
 {
+  "ghz-hype-night-iii": {
+    "name": "GHZ HYPE NIGHT III",
+    "slug": "ghz-hype-night-iii",
+    "startAt": 1779926400,
+    "endAt": 1780271999,
+    "startDate": "2026-05-28",
+    "endDate": "2026-05-31",
+    "dates": "May 28-31, 2026",
+    "location": "Av. Prol. Javier Prado Este 8680, Ate 15494, Peru",
+    "venueName": "Infinity Gaming - Real Plaza Puruchuco",
+    "url": "https://www.start.gg/tournament/ghz-hype-night-iii/details",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "https://www.twitch.tv/gethypezone",
+    "scheduleLink": "",
+    "description": "<strong>GHZ Hype Night III</strong> returns to Peru as one of South America's premier fighting game tournaments. Scheduled for May 28 through May 31, 2026, the event will take place at <strong>Infinity Gaming - Real Plaza Puruchuco</strong> in Lima, bringing together competitors, creators, and gaming communities from across Latin America and beyond.</p><p>As a major regional destination, the 2026 tournament features a high-stakes lineup on an epic stage. The event is headlined by an open bracket for <strong>Street Fighter 6</strong>, ensuring world-class talent will be in attendance to fight for the trophy.</p><h3>Premier Tournament Lineup</h3><p>Beyond Street Fighter 6, the competitive roster includes heavy-hitting staples and modern favorites. Attendees will clash in <strong>Tekken 8</strong>, <strong>Super Smash Bros. Ultimate</strong>, Riot's tag-team fighter <strong>2XKO</strong>, and SNK's latest acclaimed releases, <strong>The King of Fighters XV</strong> and <strong>Fatal Fury: City of the Wolves</strong>, which both proudly serve as official SNK World Championship (SWC) 2026 MASTER 3 tournaments.</p><h3>More Than a Tournament</h3><p>GHZ Hype Night is designed to be a full destination experience fueled by energy, culture, and real competition. Attendees can take a break from the brackets to enjoy casual play zones, vendor booths, free-play tables, and live community moments alongside top content creators.</p><h3>Registration</h3><p>Registration and bracket sign-ups are managed through Start.gg. Competitors can secure their spots in the tournament until late registration closes on May 27, 2026. General admission passes are available online or at the venue for spectators wishing to experience the live commentators, the official merchandise, and the electrifying main stage.",
+    "notablePlayers": [
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+},
   "blink-respawn-2026": {
     "name": "BLINK RESPAWN 2026",
     "slug": "blink-respawn-2026",
@@ -69,5 +91,39 @@
     ],
     "isArchived": false,
     "excludeFromSite": false
-  }
+  },
+  "evo-2026": {
+    "name": "Evo Vegas 2026",
+    "slug": "evo-2026",
+    "startAt": 1782432000,
+    "endAt": 1782691199,
+    "startDate": "2026-06-26",
+    "endDate": "2026-06-28",
+    "dates": "Jun 26-28, 2026",
+    "location": "300 Convention Center Dr, Las Vegas, NV 89109, USA",
+    "venueName": "Las Vegas Convention Center (West Hall)",
+    "url": "https://evo.gg/",
+    "tier": "S+",
+    "prizes": "$500,000",
+    "game": "Street Fighter 6",
+    "streamLink": "https://www.twitch.tv/evo",
+    "scheduleLink": "",
+    "description": "<strong>Evo 2026</strong> returns to Nevada as the world's most prestigious fighting game tournament. Scheduled for June 26 through June 28, 2026, the event will transform the West Hall of the <strong>Las Vegas Convention Center</strong> into a three-day celebration of competitive fighting games, bringing together competitors, creators, and gaming communities from across the globe.</p><p>As the ultimate destination for the FGC, the 2026 tournament features a high-stakes lineup on the biggest stage. The event is headlined by a massive open bracket for <strong>Street Fighter 6</strong>, guaranteeing that absolute world-class talent will be in attendance to fight for the highly coveted trophy.</p><h3>Premier Tournament Lineup</h3><p>Beyond Street Fighter 6, the historic 12-game competitive roster includes heavy-hitting staples and modern favorites. Attendees will clash in <strong>TEKKEN 8</strong>, <strong>Guilty Gear -Strive-</strong>, Riot's 2v2 fighter <strong>2XKO</strong>, and SNK's <strong>Fatal Fury: City of the Wolves</strong>. The main stage also welcomes <strong>Granblue Fantasy Versus: Rising</strong>, <strong>Under Night In-Birth II Sys:Celes</strong>, <strong>Virtua Fighter 5 R.E.V.O. World Stage</strong>, and fresh additions like <strong>Invincible VS</strong> and <strong>Rivals of Aether II</strong>.</p><h3>More Than a Tournament</h3><p>Evo is designed to be a complete destination experience fueled by energy, culture, and real competition. Attendees can take a break from the brackets to enjoy publisher and developer panels, hands-on experiences at developer booths, a sprawling vendor hall, the legendary Artist Alley, and Evo's iconic 300+ cabinet free-play arcade.</p><h3>Registration</h3><p>Registration and bracket sign-ups are managed through Start.gg and the official Evo website. Competitors can secure their spots in the tournament until late registration closes on May 25, 2026. General admission passes are available online for spectators wishing to experience the electrifying Arena Finals Experience, the live commentators, exclusive merchandise, and the greatest fighting game stage on earth.",
+    "notablePlayers": [
+      "Yamaguchi",
+      "xiaohai",
+      "Punk",
+      "kobayan",
+      "ひなお",
+      "Higuchi",
+      "Blaz",
+      "Sahara.",
+      "Kilzyou",
+      "Micky",
+      "Jr.",
+      "Fuudo"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+}
 }
