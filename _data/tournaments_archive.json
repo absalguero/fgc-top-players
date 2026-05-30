@@ -23337,7 +23337,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "norcal-knockout-2025": {
     "name": "NorCal Knockout 2025",
@@ -23987,7 +23987,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "ceo-2025": {
     "name": "CEO 2025",
