@@ -555,20 +555,20 @@ module.exports = {
 
   "ingrid": {
     overview: "A cosmic-powered fighter who utilizes unorthodox mobility, parries, and projectile reflection to frustrate opponents.",
-    playstyle_summary: "Ingrid excels at counter-play and evasion. She relies on her Sunburst to neutralize zoning and uses her unique, floating movement arcs to create difficult-to-track approach angles and bait mistakes.",
+    playstyle_summary: "Ingrid excels at counter-play and evasion. She relies on her Sun Veil to neutralize zoning and uses her Vanishing Sun teleports to create difficult-to-track approach angles and bait mistakes.",
     archetype: "Evasive / Counter",
-    execution: "Medium",
+    execution: "Very High",
     strengths: [
-      { title: "Anti-Zoning", description: "Excellent at reflecting or neutralizing projectiles to shut down traditional zoners." },
-      { title: "Evasive Movement", description: "Unorthodox jump arcs and spins make her approaches highly ambiguous." },
-      { title: "Counter-Attacks", description: "Strong parry and reversal options to punish predictable offense." }
+      { title: "Anti-Zoning", description: "Sun Veil is excellent at reflecting or neutralizing projectiles to shut down traditional zoners." },
+      { title: "Evasive Movement", description: "Vanishing Sun teleports and unorthodox jump arcs make her approaches highly ambiguous." },
+      { title: "High Damage Potential", description: "With Sun Crest power-ups, her specials and Super Arts gain massive range and explosive burst damage." }
     ],
     weaknesses: [
-      { title: "Low Burst Damage", description: "Requires consistent outplays to win, as she generally lacks massive, high-damage combos." },
-      { title: "Fragility", description: "A below-average health pool leaves her with little room for error." },
-      { title: "Struggles to Initiate", description: "Lacks the reliable, forced entry tools needed to break open highly defensive opponents." }
+      { title: "Execution Heavy", description: "Optimal combo routing and stun setups after beam attacks require precise stock management and strict precision." },
+      { title: "Resource Reliant", description: "She is heavily dependent on accumulating Sun Crests, as without them her screen control and damage output drop significantly." },
+      { title: "Defensive Vulnerability", description: "Slow startup on her primary reversal options leaves her highly susceptible to safe jumps and tight setup pressure." }
     ],
-    radar_stats: { Damage: 2, Health: 2, Mobility: 4, Zoning: 3, "Mix-up": 3 },
+    radar_stats: { Damage: 4, Health: 2, Mobility: 4, Zoning: 4, "Mix-up": 3 },
     topPlayer: null
   }
 };
