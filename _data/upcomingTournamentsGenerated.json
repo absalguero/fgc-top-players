@@ -1,4 +1,28 @@
 {
+  "battle-of-bc-8-7": {
+    "name": "Battle of BC 8",
+    "slug": "battle-of-bc-8-7",
+    "startAt": 1780678800,
+    "endAt": 1780894800,
+    "startDate": "2026-06-05",
+    "endDate": "2026-06-07",
+    "dates": "Jun 5-7, 2026",
+    "location": "Canada Place, 999 Canada Pl, Vancouver, BC V6C 3E1, Canada",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/battle-of-bc-8-7",
+    "tier": "A",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "Battle of BC 8 is scheduled for Jun 5-7, 2026 in Canada Place, 999 Canada Pl, Vancouver, BC V6C 3E1, Canada. Featuring Street Fighter 6. Registered top players include Slice, ChrisCCH.",
+    "notablePlayers": [
+      "Slice",
+      "ChrisCCH"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
   "blink-respawn-2026": {
     "name": "BLINK RESPAWN 2026",
     "slug": "blink-respawn-2026",
@@ -42,11 +66,11 @@
       "Kawano",
       "Phenom",
       "Kyuki",
+      "Booce_Lee",
       "moke",
       "Kusanagi",
       "Docmorales24",
-      "Samurai",
-      "Juicyjoe"
+      "Samurai"
     ],
     "isArchived": false,
     "excludeFromSite": false
@@ -74,6 +98,29 @@
     "isArchived": false,
     "excludeFromSite": false
   },
+  "d-i-y-2026": {
+    "name": "D.I.Y 2026",
+    "slug": "d-i-y-2026",
+    "startAt": 1781359200,
+    "endAt": 1781495940,
+    "startDate": "2026-06-13",
+    "endDate": "2026-06-14",
+    "dates": "Jun 13-14, 2026",
+    "location": "50 Bowery, New York, NY 10013, USA",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/d-i-y-2026",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "D.I.Y 2026 is scheduled for Jun 13-14, 2026 in 50 Bowery, New York, NY 10013, USA. Featuring Street Fighter 6. Registered top players include Kharsonist.",
+    "notablePlayers": [
+      "Kharsonist"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
   "grapht-cup-2026-osaka": {
     "name": "GRAPHT CUP 2026 大阪予選 Osaka",
     "slug": "grapht-cup-2026-osaka",
@@ -90,8 +137,9 @@
     "game": "Street Fighter 6",
     "streamLink": "",
     "scheduleLink": "",
-    "description": "GRAPHT CUP 2026 大阪予選 Osaka is scheduled for Jun 13, 2026 in 日本、〒556-0011 大阪府大阪市浪速区難波中２丁目１０−７０. Featuring Street Fighter 6. Registered top players include らおやむやむハイハイ謝謝.",
+    "description": "GRAPHT CUP 2026 大阪予選 Osaka is scheduled for Jun 13, 2026 in 日本、〒556-0011 大阪府大阪市浪速区難波中２丁目１０−７０. Featuring Street Fighter 6. Registered top players include naooonn, らおやむやむハイハイ謝謝.",
     "notablePlayers": [
+      "naooonn",
       "らおやむやむハイハイ謝謝"
     ],
     "isArchived": false,
@@ -120,25 +168,25 @@
     "isArchived": false,
     "excludeFromSite": false
   },
-  "chimarr-o-vs-2026": {
-    "name": "Chimarrão Vs. 2026",
-    "slug": "chimarr-o-vs-2026",
-    "startAt": 1782565200,
-    "endAt": 1782687600,
-    "startDate": "2026-06-27",
-    "endDate": "2026-06-28",
-    "dates": "Jun 27-28, 2026",
-    "location": "Av. Protásio Alves, 2966 - Petrópolis, Porto Alegre - RS, 90410-007, Brazil",
+  "fight-for-the-throne-2026-fgc-tournament-at-eh-game-expo-3k-prize-pools": {
+    "name": "Fight for the Throne 2026 – FGC Tournament at Eh! Game Expo ($3k+ Prize Pools)",
+    "slug": "fight-for-the-throne-2026-fgc-tournament-at-eh-game-expo-3k-prize-pools",
+    "startAt": 1783087200,
+    "endAt": 1783292400,
+    "startDate": "2026-07-03",
+    "endDate": "2026-07-05",
+    "dates": "Jul 3-5, 2026",
+    "location": "The Tragically Hip Way, Kingston, ON K7K 1A1, Canada",
     "venueName": "",
-    "url": "https://www.start.gg/tournament/chimarr-o-vs-2026",
+    "url": "https://www.start.gg/tournament/fight-for-the-throne-2026-fgc-tournament-at-eh-game-expo-3k-prize-pools",
     "tier": "B",
     "prizes": "TBA",
     "game": "Street Fighter 6",
     "streamLink": "",
     "scheduleLink": "",
-    "description": "Chimarrão Vs. 2026 is scheduled for Jun 27-28, 2026 in Av. Protásio Alves, 2966 - Petrópolis, Porto Alegre - RS, 90410-007, Brazil. Featuring Street Fighter 6. Registered top players include Brayan_Job.",
+    "description": "Fight for the Throne 2026 – FGC Tournament at Eh! Game Expo ($3k+ Prize Pools) is scheduled for Jul 3-5, 2026 in The Tragically Hip Way, Kingston, ON K7K 1A1, Canada. Featuring Street Fighter 6. Registered top players include Kharsonist.",
     "notablePlayers": [
-      "Brayan_Job"
+      "Kharsonist"
     ],
     "isArchived": false,
     "excludeFromSite": false
@@ -167,6 +215,7 @@
       "Sahara.",
       "kincho",
       "gachikun",
+      "naooonn",
       "Tokido",
       "Ryukichi",
       "pugera",
@@ -197,6 +246,29 @@
     "description": "IGM Summer Showdown 2026 is scheduled for Jul 11-12, 2026 in Dún Laoghaire, Dublin, Co. Dublin, A96 K063, Ireland. Featuring Street Fighter 6. Registered top players include LinkNova.",
     "notablePlayers": [
       "LinkNova"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
+  "grapht-cup-2026-b-tokyo": {
+    "name": "GRAPHT CUP 2026 東京予選B Tokyo",
+    "slug": "grapht-cup-2026-b-tokyo",
+    "startAt": 1784336400,
+    "endAt": 1784372400,
+    "startDate": "2026-07-18",
+    "endDate": "2026-07-18",
+    "dates": "Jul 18, 2026",
+    "location": "日本、東京都",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/grapht-cup-2026-b-tokyo",
+    "tier": "A",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "GRAPHT CUP 2026 東京予選B Tokyo is scheduled for Jul 18, 2026 in 日本、東京都. Featuring Street Fighter 6. Registered top players include rangasamy.",
+    "notablePlayers": [
+      "rangasamy"
     ],
     "isArchived": false,
     "excludeFromSite": false

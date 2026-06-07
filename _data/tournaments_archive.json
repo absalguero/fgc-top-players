@@ -69188,5 +69188,655 @@
       }
     ],
     "isArchived": false
+  },
+  "battle-of-bc-8": {
+    "name": "Battle of BC 8",
+    "date": "2026-06-05",
+    "slug": "battle-of-bc-8",
+    "Tier": "B",
+    "Entrants": "129",
+    "results": [
+      {
+        "Player": "ChrisCCH",
+        "Player ID": "15a9ef8f",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "1",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mikex",
+        "Player ID": "78b37b33",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "2",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Slice",
+        "Player ID": "7203c189",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "3",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ludilue",
+        "Player ID": "e4bca512",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "4",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Hali",
+        "Player ID": "7513183a",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "5",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Thunder DeLangis",
+        "Player ID": "60c77e9c",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "5",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "superfriends",
+        "Player ID": "6a2da692",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "7",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "DillonR",
+        "Player ID": "8120e430",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "7",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Wessdance",
+        "Player ID": "481570be",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "9",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Royal",
+        "Player ID": "4f858dca",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "9",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Zykles",
+        "Player ID": "5e0e43b1",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "9",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "AyaeL",
+        "Player ID": "96ac8ba2",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "9",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kpop Hwani",
+        "Player ID": "60dfe75d",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "13",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Gggguest",
+        "Player ID": "1c72e8e5",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "13",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "mind",
+        "Player ID": "d3477ff0",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "13",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "FR_EEK",
+        "Player ID": "5e962bca",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "13",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Lancelot",
+        "Player ID": "e1b00592",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "17",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Shmaw",
+        "Player ID": "62201e57",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "17",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "NEED",
+        "Player ID": "be318d9e",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "17",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Sepulus",
+        "Player ID": "2551e45f",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "17",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Lage",
+        "Player ID": "bdbb305a",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "17",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "LushyLushy",
+        "Player ID": "9540a109",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "17",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "7erabytes",
+        "Player ID": "15292b68",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "17",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "ROWERmyMOWER",
+        "Player ID": "467a6c0f",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "17",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ajinn",
+        "Player ID": "765e182d",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "25",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bruce",
+        "Player ID": "f07f11e8",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "25",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Huge_Biscuit",
+        "Player ID": "a56f5afa",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "25",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Banapple",
+        "Player ID": "7b476a0e",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "25",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jkami",
+        "Player ID": "d6f0334e",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "25",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Frenchy",
+        "Player ID": "d5f09df6",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "25",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "ramune",
+        "Player ID": "26718d21",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "25",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Furnished Coin",
+        "Player ID": "b1d2e841",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "25",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "LIL PK ROCKIN",
+        "Player ID": "7bbf475c",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "33",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Quantum",
+        "Player ID": "4fd4cd79",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "33",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Borbo",
+        "Player ID": "b4fcd0c2",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "33",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Critta",
+        "Player ID": "96a0b9e9",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "33",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jij",
+        "Player ID": "f839f0dd",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "33",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Crumpet",
+        "Player ID": "ee4d3898",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "33",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jack Whelan",
+        "Player ID": "fe7d102f",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "33",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "nawf",
+        "Player ID": "ed818d26",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "33",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "ZacAttack",
+        "Player ID": "2627691f",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "33",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kendryl",
+        "Player ID": "757a2a26",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "33",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Doge",
+        "Player ID": "ded46cba",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "33",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cyla",
+        "Player ID": "276838e9",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "33",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cheesus",
+        "Player ID": "46c2cd6d",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "33",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Zavier#520",
+        "Player ID": "c73c654d",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "33",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Filipe",
+        "Player ID": "439fd184",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "33",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jaxzerra",
+        "Player ID": "9d80be49",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "33",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bruere",
+        "Player ID": "487de83a",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "49",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "luffymaxair",
+        "Player ID": "1e4f9612",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "49",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Utsuro",
+        "Player ID": "7450f89d",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "49",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "AlbinoLobster",
+        "Player ID": "03552dab",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "49",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "JOE ROGAINE",
+        "Player ID": "718f8c2f",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "49",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Leaf",
+        "Player ID": "d0adca57",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "49",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "ThisIsTheRun",
+        "Player ID": "0f760c18",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "49",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "sammy",
+        "Player ID": "929e9f27",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "49",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "AllegedCryptid",
+        "Player ID": "82dcb279",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "49",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "ParsaHP",
+        "Player ID": "3a29725b",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "49",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Miceston",
+        "Player ID": "cfc025f8",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "49",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pryde",
+        "Player ID": "58852faa",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "49",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bingus Bongus",
+        "Player ID": "2330ca30",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "49",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "HOLMGANG",
+        "Player ID": "44e11b63",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "49",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "BEEM",
+        "Player ID": "382ff165",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "49",
+        "Entrants": "129",
+        "Tier": "B"
+      },
+      {
+        "Player": "Flamemaster",
+        "Player ID": "979e18df",
+        "Event": "Battle of BC 8",
+        "Event ID": "battle-of-bc-8-7",
+        "Date": "2026-06-06",
+        "Finish": "49",
+        "Entrants": "129",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
   }
 }
