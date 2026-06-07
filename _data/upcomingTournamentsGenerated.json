@@ -91,9 +91,10 @@
     "game": "Street Fighter 6",
     "streamLink": "",
     "scheduleLink": "",
-    "description": "The MIXUP 2026 - Round 8 is scheduled for Jun 13-14, 2026 in Pl. de la Bourse, 69002 Lyon, France. Featuring Street Fighter 6. Registered top players include Mister Crimson.",
+    "description": "The MIXUP 2026 - Round 8 is scheduled for Jun 13-14, 2026 in Pl. de la Bourse, 69002 Lyon, France. Featuring Street Fighter 6. Registered top players include Mister Crimson, semy28.",
     "notablePlayers": [
-      "Mister Crimson"
+      "Mister Crimson",
+      "semy28"
     ],
     "isArchived": false,
     "excludeFromSite": false
@@ -168,6 +169,29 @@
     "isArchived": false,
     "excludeFromSite": false
   },
+  "czech-arcade-local-round-18": {
+    "name": "Czech Arcade Local — Round 18",
+    "slug": "czech-arcade-local-round-18",
+    "startAt": 1781949600,
+    "endAt": 1781985600,
+    "startDate": "2026-06-20",
+    "endDate": "2026-06-20",
+    "dates": "Jun 20, 2026",
+    "location": "Roztylská 2321/19, 148 00 Praha 11-Chodov, Czechia",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/czech-arcade-local-round-18",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "Czech Arcade Local — Round 18 is scheduled for Jun 20, 2026 in Roztylská 2321/19, 148 00 Praha 11-Chodov, Czechia. Featuring Street Fighter 6. Registered top players include krackerlack.",
+    "notablePlayers": [
+      "krackerlack"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
   "fight-for-the-throne-2026-fgc-tournament-at-eh-game-expo-3k-prize-pools": {
     "name": "Fight for the Throne 2026 – FGC Tournament at Eh! Game Expo ($3k+ Prize Pools)",
     "slug": "fight-for-the-throne-2026-fgc-tournament-at-eh-game-expo-3k-prize-pools",
@@ -220,8 +244,8 @@
       "Ryukichi",
       "pugera",
       "Kawano",
-      "moke",
       "Dogura",
+      "moke",
       "Samurai"
     ],
     "isArchived": false,
