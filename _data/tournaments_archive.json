@@ -148,7 +148,7 @@
       },
       {
         "Player": "Roy",
-        "Player ID": "2.21E+68",
+        "Player ID": "22083e64",
         "Event": "BLINK RESPAWN 2024",
         "Event ID": "blink-respawn-2024",
         "Date": "2024-11-08",
@@ -29548,7 +29548,7 @@
       },
       {
         "Player": "Roy",
-        "Player ID": "2.21E+68",
+        "Player ID": "22083e64",
         "Event": "BLINK RESPAWN 2025",
         "Event ID": "blink-respawn-2025",
         "Date": "2025-07-18",
@@ -67497,7 +67497,7 @@
         "Tier": "S"
       },
       {
-        "Player": "SR NuckleDu",
+        "Player": "NuckleDu",
         "Player ID": "71b98b1d",
         "Event": "Road to EWC: DreamHack Atlanta",
         "Event ID": "road-to-ewc-dreamhack-atlanta",
@@ -70018,7 +70018,7 @@
       },
       {
         "Player": "Septasonium",
-        "Player ID": "f8bb5c81",
+        "Player ID": "255079c9",
         "Event": "Hessen Crash XXIII",
         "Event ID": "hessen-crash-xxiii",
         "Date": "2026-06-06",
@@ -70485,6 +70485,656 @@
         "Finish": "49",
         "Entrants": "96",
         "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "blink-respawn-2026": {
+    "name": "BLINK RESPAWN 2026",
+    "date": "2026-06-04",
+    "slug": "blink-respawn-2026",
+    "Tier": "S",
+    "Entrants": "316",
+    "results": [
+      {
+        "Player": "MenaRD",
+        "Player ID": "31a13177",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "1",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "NoahTheProdigy",
+        "Player ID": "27053e88",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "2",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Punk",
+        "Player ID": "1b9e2ed9",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "3",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Riddles",
+        "Player ID": "03d3a671",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "4",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "CrossoverRD",
+        "Player ID": "67ff45df",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "5",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Higuchi",
+        "Player ID": "fee94c73",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "5",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Booce_Lee",
+        "Player ID": "84a88e6f",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "7",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Dual Kevin",
+        "Player ID": "88d3f20e",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "7",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "kobayan",
+        "Player ID": "ef64257e",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "9",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Nephew",
+        "Player ID": "b1fe7f8b",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "9",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Phenom",
+        "Player ID": "ac09a1a3",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "9",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Tokido",
+        "Player ID": "a4c7c2d4",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "9",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Itabashi Zangief",
+        "Player ID": "c46d6f76",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "13",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Bloo",
+        "Player ID": "62f3840c",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "13",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Sanefox",
+        "Player ID": "855cf2d0",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "13",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "ChrisT",
+        "Player ID": "9f399abf",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "13",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "JIMMY_DR",
+        "Player ID": "79f94c49",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "17",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Kilzyou",
+        "Player ID": "dcd53ca7",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "17",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Frozen",
+        "Player ID": "1d004d65",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "17",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Ryukichi",
+        "Player ID": "9f36f82b",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "17",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Mister Crimson",
+        "Player ID": "60eb8f41",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "17",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "NYChrisG",
+        "Player ID": "dab1e1cc",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "17",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "IWILLKEEELYOU",
+        "Player ID": "b22bc309",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "17",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Itachislegacy",
+        "Player ID": "be913c13",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "17",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Problem X",
+        "Player ID": "1ed98609",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "25",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Tachikawa",
+        "Player ID": "c68eeb1f",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "25",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Juicyjoe",
+        "Player ID": "63aeb4b9",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "25",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "LUGABO",
+        "Player ID": "9242d9e3",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "25",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "orarin",
+        "Player ID": "993a7906",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "25",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Lil'Fox <3",
+        "Player ID": "dd3a29c1",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "25",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Limestone",
+        "Player ID": "83f28f66",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "25",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Gumius",
+        "Player ID": "4006b2e6",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "25",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Yamaguchi",
+        "Player ID": "6bfc4c78",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "33",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Zangief_bolado",
+        "Player ID": "82965d22",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "33",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Caba",
+        "Player ID": "7ef3978a",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "33",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "EndingWalker",
+        "Player ID": "90c33661",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "33",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "KUSANAGI (MX)",
+        "Player ID": "208b0900",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "33",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Mago",
+        "Player ID": "980ad764",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "33",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Yuto",
+        "Player ID": "8b55a8c8",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "33",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Star Platinum",
+        "Player ID": "264468e0",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "33",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Jochy",
+        "Player ID": "df3eee91",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "33",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "pugera",
+        "Player ID": "9594efe4",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "33",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "RobTV",
+        "Player ID": "7db687ab",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "33",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "moke",
+        "Player ID": "47e6da2a",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "33",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Ferreras",
+        "Player ID": "29bf20f3",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "33",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Neshhero",
+        "Player ID": "102fccd1",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "33",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Lilo",
+        "Player ID": "f29ab495",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "33",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "XeroDgX",
+        "Player ID": "912ffeda",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "33",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "cosa",
+        "Player ID": "2e561d93",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "49",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Docmorales24",
+        "Player ID": "4c6d1e01",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "49",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Psycho",
+        "Player ID": "895e9636",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "49",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Samurai",
+        "Player ID": "5b98b446",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "49",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "NuckleDu",
+        "Player ID": "71b98b1d",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "49",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Oscuridad",
+        "Player ID": "cdc5a010",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "49",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "LuiMan20",
+        "Player ID": "7c93fee2",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "49",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Roy",
+        "Player ID": "22083e64",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "49",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Papin",
+        "Player ID": "dd9904b2",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "49",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Tashi",
+        "Player ID": "d8ef8e97",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "49",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Deiver",
+        "Player ID": "5b3716ce",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "49",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Maxi07",
+        "Player ID": "0b389b37",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "49",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Kamaitachi",
+        "Player ID": "4198cfcd",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "49",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Otto_Bt",
+        "Player ID": "50906a4f",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "49",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Joan_Light",
+        "Player ID": "743418f1",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "49",
+        "Entrants": "316",
+        "Tier": "S"
+      },
+      {
+        "Player": "Mitch (DR)",
+        "Player ID": "74c72cb3",
+        "Event": "BLINK RESPAWN 2026",
+        "Event ID": "blink-respawn-2026",
+        "Date": "2026-06-05",
+        "Finish": "49",
+        "Entrants": "316",
+        "Tier": "S"
       }
     ],
     "isArchived": false
