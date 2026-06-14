@@ -1,27 +1,4 @@
 {
-  "the-mixup-2026-round-8": {
-    "name": "The MIXUP 2026 - Round 8",
-    "slug": "the-mixup-2026-round-8",
-    "startAt": 1781334000,
-    "endAt": 1781467200,
-    "startDate": "2026-06-13",
-    "endDate": "2026-06-14",
-    "dates": "Jun 13-14, 2026",
-    "location": "Pl. de la Bourse, 69002 Lyon, France",
-    "venueName": "Palais de la Bourse",
-    "url": "https://themixup.eu/en",
-    "tier": "B",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "https://www.twitch.tv/reversalgg",
-    "scheduleLink": "https://themixup.eu/en/schedule",
-    "description": "<strong>The MIXUP 2026 - Round 8</strong> returns to France as one of Europe's most prestigious fighting game tournaments. Scheduled for June 13 through June 14, 2026, the event will take place at <strong>Espace 140</strong> in Lyon, bringing together top competitors and passionate fans from across the continent and the world.</p><p>As a crucial stop on multiple international circuits, the 2026 tournament features an incredibly high stakes lineup. The main stage will be headlined by massive brackets for <strong>TEKKEN 8</strong>, which serves as a highly coveted TWT Master Event and an Esports World Cup 2026 qualifier, ensuring that global heavyweights will clash for crucial circuit points.</p><h3>Premier Circuit Qualifiers</h3><p>The competitive stakes extend well beyond a single title. Attendees will also battle it out in SNK's <strong>Fatal Fury: City of the Wolves</strong> and <strong>The King of Fighters XV</strong>, both proudly featured as official Master Tier qualifiers for the SWC 2026. Additionally, Riot Games' tag team fighter <strong>2XKO</strong> takes center stage as an official Challenger Tier event in the 2026 Competitive Series.</p><h3>Community and Legacy Events</h3><p>The MIXUP is deeply celebrated for its dedication to the vibrant French arcade community. The weekend will feature dedicated LaDOSETV classic arcade action, including brackets for <em>Super Street Fighter II X</em>, <em>Street Fighter III: 3rd Strike</em>, and <em>Garou: Mark of the Wolves</em>, alongside modern favorites like <em>Guilty Gear Strive</em> and <em>Street Fighter 6</em>.</p><h3>Registration</h3><p>Registration and bracket sign ups are managed through Start.gg and the official MIXUP website. Competitors can secure their passes before registration closes, with spectator tickets available for those looking to experience the intense matches, classic arcade setups, and the electrifying European crowd.",
-    "notablePlayers": [
-      "Mister Crimson"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
   "d-i-y-2026": {
     "name": "D.I.Y 2026",
     "slug": "d-i-y-2026",

@@ -71138,5 +71138,655 @@
       }
     ],
     "isArchived": false
+  },
+  "the-mixup-2026-round-8": {
+    "name": "The MIXUP 2026 - Round 8",
+    "date": "2026-06-13",
+    "slug": "the-mixup-2026-round-8",
+    "Tier": "B",
+    "Entrants": "167",
+    "results": [
+      {
+        "Player": "Mister Crimson",
+        "Player ID": "60eb8f41",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "1",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Beslem",
+        "Player ID": "372f3443",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "2",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "JuniorLeo",
+        "Player ID": "dce6f793",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "3",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ritchy",
+        "Player ID": "4a3b14ea",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "4",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "semy28",
+        "Player ID": "5e5c39f7",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "5",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "M A L D O",
+        "Player ID": "3b542a56",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "5",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "HSN",
+        "Player ID": "e011173b",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "7",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kanou",
+        "Player ID": "2e9387d7",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "7",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "tomoeCunha",
+        "Player ID": "c4d2a4ee",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "9",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kaky",
+        "Player ID": "fe3b0b17",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "9",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Linkexelo",
+        "Player ID": "3e2b11b6",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "9",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Chokeru",
+        "Player ID": "8f66e2fc",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "9",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Akuroi",
+        "Player ID": "37bc0bc1",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "13",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "TKR",
+        "Player ID": "eda7bcdb",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "13",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "CeBonVieuxPoring",
+        "Player ID": "2efe9b7d",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "13",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "RASTACOOL01",
+        "Player ID": "b9ee14a6",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "13",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dims",
+        "Player ID": "20ac3561",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "17",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Akim",
+        "Player ID": "15dda668",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "17",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Fuliodam",
+        "Player ID": "e98184e9",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "17",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dawwed",
+        "Player ID": "15e2acdf",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "17",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "TessTary",
+        "Player ID": "8af98400",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "17",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "BeatBy44_GABOU",
+        "Player ID": "66958144",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "17",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Didimokof",
+        "Player ID": "420e069a",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "17",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rocks",
+        "Player ID": "464552e4",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "17",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Book",
+        "Player ID": "a1dca669",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "25",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Yopherie",
+        "Player ID": "fe7405ba",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "25",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jirolondon",
+        "Player ID": "12b08096",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "25",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Zero",
+        "Player ID": "474f4c9c",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "25",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "FoudiSan",
+        "Player ID": "4ce4e5ac",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "25",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "aizor",
+        "Player ID": "b4a53597",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "25",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Yuzeko",
+        "Player ID": "1529fbae",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "25",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Soscratch69",
+        "Player ID": "a7133b5b",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "25",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Lanikeu",
+        "Player ID": "5e9bc79b",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "33",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Xan",
+        "Player ID": "98784542",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "33",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Tokoko",
+        "Player ID": "c65d8121",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "33",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kam",
+        "Player ID": "43e6d8e6",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "33",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "LizardRoad",
+        "Player ID": "0b3812be",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "33",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "MIKEY",
+        "Player ID": "adf95d6c",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "33",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Barbossa",
+        "Player ID": "5e9665ea",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "33",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Woovier",
+        "Player ID": "4de79ca9",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "33",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Poyo",
+        "Player ID": "626b7842",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "33",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "FunKDreamer",
+        "Player ID": "39b745db",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "33",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Tips",
+        "Player ID": "92170002",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "33",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Krisy",
+        "Player ID": "f5a48341",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "33",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "MaxT",
+        "Player ID": "0f85a97a",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "33",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "iKaRi",
+        "Player ID": "0220fe09",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "33",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ullie",
+        "Player ID": "da7aa7ac",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "33",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Felicz",
+        "Player ID": "c6ad560d",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "33",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Brams",
+        "Player ID": "d5b734b6",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "49",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kenzo",
+        "Player ID": "9c1be5d8",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "49",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Redo",
+        "Player ID": "99e4157d",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "49",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Nkogo",
+        "Player ID": "cb5f70b8",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "49",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Maleficent Kurh",
+        "Player ID": "233c26b2",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "49",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Akiseruo",
+        "Player ID": "d8d4e923",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "49",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Goomink",
+        "Player ID": "b4a0e8c4",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "49",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Playiku",
+        "Player ID": "97af2944",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "49",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Lazoy",
+        "Player ID": "a0c912d3",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "49",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "FL8",
+        "Player ID": "6f2d5572",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "49",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Benmoh",
+        "Player ID": "cad2ce37",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "49",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "HikenNoGief",
+        "Player ID": "63f43b96",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "49",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mugen",
+        "Player ID": "262db501",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "49",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "MonkeyFred",
+        "Player ID": "04d02895",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "49",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "FRAYKEEN",
+        "Player ID": "058b5450",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "49",
+        "Entrants": "167",
+        "Tier": "B"
+      },
+      {
+        "Player": "HAKO",
+        "Player ID": "f9a8851e",
+        "Event": "The MIXUP 2026 - Round 8",
+        "Event ID": "the-mixup-2026-round-8",
+        "Date": "2026-06-14",
+        "Finish": "49",
+        "Entrants": "167",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
   }
 }

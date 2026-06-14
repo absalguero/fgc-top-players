@@ -1,29 +1,4 @@
 {
-  "the-mixup-2026-round-8": {
-    "name": "The MIXUP 2026 - Round 8",
-    "slug": "the-mixup-2026-round-8",
-    "startAt": 1781334000,
-    "endAt": 1781467200,
-    "startDate": "2026-06-13",
-    "endDate": "2026-06-14",
-    "dates": "Jun 13-14, 2026",
-    "location": "Pl. de la Bourse, 69002 Lyon, France",
-    "venueName": "Espace 140",
-    "url": "https://www.start.gg/tournament/the-mixup-2026-round-8",
-    "tier": "A",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "The MIXUP 2026 - Round 8 is scheduled for Jun 13-14, 2026 in Pl. de la Bourse, 69002 Lyon, France. Featuring Street Fighter 6. Registered top players include GO1, Mister Crimson, semy28.",
-    "notablePlayers": [
-      "GO1",
-      "Mister Crimson",
-      "semy28"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
   "d-i-y-2026": {
     "name": "D.I.Y 2026",
     "slug": "d-i-y-2026",
@@ -163,11 +138,11 @@
       "NYChrisG",
       "cosa",
       "Shuto",
+      "Mister Crimson",
       "Tokido",
       "CrossoverRD",
       "Shigematsu",
       "HotDog29",
-      "Mister Crimson",
       "Caba",
       "DCQ",
       "Ryukichi",
@@ -261,8 +236,7 @@
       "Itabashi Zangief",
       "kingsvega",
       "Kawano",
-      "Bonchan",
-      "Tachikawa"
+      "Bonchan"
     ],
     "isArchived": false,
     "excludeFromSite": false
@@ -386,8 +360,8 @@
       "NuckleDu",
       "Oil King",
       "cosa",
-      "CrossoverRD",
       "Mister Crimson",
+      "CrossoverRD",
       "DCQ",
       "Ryukichi",
       "pugera",
@@ -397,7 +371,9 @@
       "NL",
       "Zhen",
       "Kawano",
-      "Bonchan"
+      "Bonchan",
+      "Ritchy",
+      "Beslem"
     ],
     "isArchived": false,
     "excludeFromSite": false
