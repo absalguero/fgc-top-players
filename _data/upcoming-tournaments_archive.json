@@ -1,4 +1,33 @@
 {
+  "d-i-y-2026": {
+    "name": "D.I.Y 2026",
+    "slug": "d-i-y-2026",
+    "startAt": 1781334000,
+    "endAt": 1781467200,
+    "startDate": "2026-06-13",
+    "endDate": "2026-06-14",
+    "dates": "Jun 13-14, 2026",
+    "location": "50 Bowery, New York, NY 10013, USA",
+    "venueName": "50 Bowery",
+    "url": "https://www.start.gg/tournament/d-i-y-2026/details",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "https://www.twitch.tv/diy_fgc",
+    "scheduleLink": "https://x.com/diyfgc/status/2064829042889556260",
+    "description": "<p><strong>D.I.Y 2026</strong> is a grassroots fighting game tournament arriving in New York City to provide a no-frills, highly competitive event for the community. Moving away from corporate aesthetics, the independent gathering offers a back-to-basics bracket experience, drawing a strong pool of talent for its featured <strong>Street Fighter 6</strong> competition.</p><h3>Game Lineup</h3><p>The weekend operates on a streamlined schedule where all brackets begin and conclude on the same day. <strong>Street Fighter 6</strong> stands out as a major highlight of Sunday's programming, drawing competitors looking to test their skills in Capcom's flagship title. Sunday will also feature brackets for <strong>Guilty Gear -Strive-</strong> and <strong>Street Fighter III: 3rd Strike</strong>. Saturday's lineup offers a robust schedule of its own, hosting tournaments for <strong>Fatal Fury: City of the Wolves</strong>, <strong>2XKO</strong>, and <strong>Tekken 8</strong>.</p><h3>Registration and Prizes</h3><p>Players can purchase either single-day or full-weekend competitor passes until the June 1st deadline. Spectator passes are also available for five dollars for those attending to watch the action unfold. Across the featured titles, including the highly anticipated Street Fighter 6 bracket, the prize pool is distributed among the top four finalists in a 50, 25, 15, and 10 percent split. Additionally, the top eight players will receive custom medals, and the first-place winner is awarded a skateboard.</p>",
+    "notablePlayers": [
+      "Kharsonist",
+      "GuyGuy",
+      "KAMI",
+      "AdrianRD",
+      "COMPLEX90",
+      "iDom",
+      "Naji"
+    ],
+    "isArchived": true,
+    "excludeFromSite": false
+},
   "the-mixup-2026-round-8": {
     "name": "The MIXUP 2026 - Round 8",
     "slug": "the-mixup-2026-round-8",
