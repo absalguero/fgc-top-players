@@ -1,4 +1,29 @@
 {
+  "big-bang-7": {
+    "name": "BIG BANG 7",
+    "slug": "big-bang-7",
+    "startAt": 1781942400,
+    "endAt": 1782115199,
+    "startDate": "2026-06-20",
+    "endDate": "2026-06-21",
+    "dates": "Jun 20-21, 2026",
+    "location": "Blvd. Adolfo López Mateos #1702, La Martinica, 37500 León de los Aldama, Gto., Mexico",
+    "venueName": "Hotel Stadium",
+    "url": "https://www.start.gg/tournament/big-bang-7/details",
+    "tier": "B",
+    "prizes": "TBD",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "<strong>BIG BANG 7</strong> returns to Mexico as one of the region's premier multi-game fighting game events. Scheduled for June 20 through June 21, 2026, the tournament brings fierce local and international competition to León, Guanajuato, creating an action-packed weekend for the Latin American fighting game community.</p><p>As a key stop for competitive players, the event features an open bracket for <strong>Street Fighter 6</strong> alongside a massive lineup of official circuit stops, guaranteeing that top-tier talent will be in attendance to fight for regional dominance.</p><h3>Premier Tournament Lineup</h3><p>Beyond Street Fighter 6, BIG BANG 7 hosts major qualifiers and community tournaments. The extensive roster includes official <strong>SNK World Championship 2026 (SWC2026)</strong> qualifiers for <strong>Fatal Fury: City of the Wolves</strong> and <strong>The King of Fighters XV</strong>, alongside a <strong>TEKKEN World Tour (TWT2026) DOJO</strong> event for <strong>TEKKEN 8</strong>. Fighting game fans will also clash in classic and modern titles such as <strong>The King of Fighters '98</strong>, <strong>Guilty Gear -Strive-</strong>, <strong>2XKO</strong>, <strong>Virtua Fighter 5 R.E.V.O. World Stage</strong>, and <strong>Vampire Savior</strong>.</p><h3>Registration and Attendance</h3><p>Competitor registration and bracket sign-ups are handled online through Start.gg, with normal registration closing on June 15, 2026. For fans and community members wishing to experience the high-energy live atmosphere, general admission spectator passes can be purchased directly at the venue on the days of the event for $200 MXN per day.",
+    "notablePlayers": [
+      "LUGABO",
+      "MJ_Gama",
+      "KUSANAGI (MX)"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+},
   "evo-2026": {
     "name": "Evo Vegas 2026",
     "slug": "evo-2026",
@@ -29,6 +54,28 @@
       "Micky",
       "Jr.",
       "Fuudo"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+},
+"nexus-esports-series-2026": {
+    "name": "NEXUS E-Sports Series 2026",
+    "slug": "nexus-esports-series-2026",
+    "startAt": 1783036800,
+    "endAt": 1783295999,
+    "startDate": "2026-07-03",
+    "endDate": "2026-07-05",
+    "dates": "Jul 3-5, 2026",
+    "location": "1st Floor, Unit No. 101, E Square, Plot No. C2, Noida-Greater Noida Expy, Sector 96, Noida, Uttar Pradesh 201304, India",
+    "venueName": "Glued Supercharged",
+    "url": "https://nexusess.com/",
+    "tier": "B",
+    "prizes": "TBD",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "<strong>NEXUS E-Sports Series 2026</strong> returns as India's premier flagship fighting game event. Scheduled from July 3 through July 5, 2026, at Glued Supercharged, the tournament brings high-stakes competitive action to the South Asian circuit, drawing the region's elite competitors under one roof.</p><p>As the ultimate destination for the Indian FGC, the 2026 edition spotlights a highly anticipated open bracket for <strong>Street Fighter 6</strong>. Local warriors and traveling regional talent will battle through intense brackets to prove their dominance in the current meta and claim the top prize.</p><h3>Massive Multi-Game Arena</h3><p>Beyond the primary Street Fighter 6 competitive bracket, NESS 2026 boasts a massive lineup of major international circuit stops. The weekend features heavy-hitting <strong>SNK World Championship 2026 (SWC2026) Master 3</strong> qualifiers for both <strong>Fatal Fury: City of the Wolves</strong> and <strong>The King of Fighters XV</strong>. Additionally, the venue hosts an official <strong>TEKKEN World Tour 2026 Challenger Event</strong> for <strong>TEKKEN 8</strong>, alongside community brackets for Riot Games' 2v2 fighter, <strong>2XKO</strong>.</p><h3>Registration and Visitor Passes</h3><p>Bracket sign-ups are managed online via Start.gg, with registration officially closing on June 28, 2026. For fans looking to witness the top-tier competition live, 1-Day and 3-Day spectator visitor passes are available exclusively via pre-booking through the official tournament communities on Discord and WhatsApp.",
+    "notablePlayers": [
     ],
     "isArchived": false,
     "excludeFromSite": false
