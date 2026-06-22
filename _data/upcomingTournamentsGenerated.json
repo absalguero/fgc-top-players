@@ -1,27 +1,4 @@
 {
-  "big-bang-7": {
-    "name": "BIG BANG 7",
-    "slug": "big-bang-7",
-    "startAt": 1781967600,
-    "endAt": 1782104400,
-    "startDate": "2026-06-20",
-    "endDate": "2026-06-21",
-    "dates": "Jun 20-21, 2026",
-    "location": "Blvd. Adolfo López Mateos #1702, La Martinica, 37500 León de los Aldama, Gto., Mexico",
-    "venueName": "",
-    "url": "https://www.start.gg/tournament/big-bang-7",
-    "tier": "B",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "BIG BANG 7 is scheduled for Jun 20-21, 2026 in Blvd. Adolfo López Mateos #1702, La Martinica, 37500 León de los Aldama, Gto., Mexico. Featuring Street Fighter 6. Registered top players include MJ_Gama.",
-    "notablePlayers": [
-      "MJ_Gama"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
   "evo-2026": {
     "name": "Evo 2026",
     "slug": "evo-2026",
@@ -108,8 +85,30 @@
       "Fenritti",
       "Armperor",
       "Jiewa",
-      "Kusanagi",
-      "Shine"
+      "Kusanagi"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
+  "the-ziegge-6-1": {
+    "name": "The Ziegge #6",
+    "slug": "the-ziegge-6-1",
+    "startAt": 1782586800,
+    "endAt": 1782615600,
+    "startDate": "2026-06-27",
+    "endDate": "2026-06-27",
+    "dates": "Jun 27, 2026",
+    "location": "Cristóbal Colón 50a-mz 001, Colón Echegaray, 53300 Naucalpan de Juárez, Méx., México",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/the-ziegge-6-1",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "The Ziegge #6 is scheduled for Jun 27, 2026 in Cristóbal Colón 50a-mz 001, Colón Echegaray, 53300 Naucalpan de Juárez, Méx., México. Featuring Street Fighter 6. Registered top players include lSecto.",
+    "notablePlayers": [
+      "lSecto"
     ],
     "isArchived": false,
     "excludeFromSite": false
