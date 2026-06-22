@@ -1,27 +1,4 @@
 {
-  "bars-birthday-bonanza-2026": {
-    "name": "Bars Birthday Bonanza 2026",
-    "slug": "bars-birthday-bonanza-2026",
-    "startAt": 1781985600,
-    "endAt": 1782010800,
-    "startDate": "2026-06-20",
-    "endDate": "2026-06-20",
-    "dates": "Jun 20, 2026",
-    "location": "175 Rockaway Ave, Valley Stream, NY 11580, USA",
-    "venueName": "",
-    "url": "https://www.start.gg/tournament/bars-birthday-bonanza-2026",
-    "tier": "B",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "Bars Birthday Bonanza 2026 is scheduled for Jun 20, 2026 in 175 Rockaway Ave, Valley Stream, NY 11580, USA. Featuring Street Fighter 6. Registered top players include GuyGuy.",
-    "notablePlayers": [
-      "GuyGuy"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
   "big-bang-7": {
     "name": "BIG BANG 7",
     "slug": "big-bang-7",
@@ -41,29 +18,6 @@
     "description": "BIG BANG 7 is scheduled for Jun 20-21, 2026 in Blvd. Adolfo López Mateos #1702, La Martinica, 37500 León de los Aldama, Gto., Mexico. Featuring Street Fighter 6. Registered top players include MJ_Gama.",
     "notablePlayers": [
       "MJ_Gama"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
-  "czech-arcade-local-round-18": {
-    "name": "Czech Arcade Local — Round 18",
-    "slug": "czech-arcade-local-round-18",
-    "startAt": 1781949600,
-    "endAt": 1781985600,
-    "startDate": "2026-06-20",
-    "endDate": "2026-06-20",
-    "dates": "Jun 20, 2026",
-    "location": "Roztylská 2321/19, 148 00 Praha 11-Chodov, Czechia",
-    "venueName": "",
-    "url": "https://www.start.gg/tournament/czech-arcade-local-round-18",
-    "tier": "B",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "Czech Arcade Local — Round 18 is scheduled for Jun 20, 2026 in Roztylská 2321/19, 148 00 Praha 11-Chodov, Czechia. Featuring Street Fighter 6. Registered top players include krackerlack.",
-    "notablePlayers": [
-      "krackerlack"
     ],
     "isArchived": false,
     "excludeFromSite": false
@@ -96,8 +50,8 @@
       "MenaRD",
       "Kilzyou",
       "Sahara.",
-      "Micky",
       "Jr.",
+      "Micky",
       "Vxbao",
       "Fuudo",
       "Leshar",
@@ -123,33 +77,39 @@
       "DCQ",
       "Ryukichi",
       "pugera",
-      "Yuto",
       "Booce_Lee",
-      "Momochi",
-      "Phenom",
+      "Yuto",
       "GuyGuy",
       "Enzo",
+      "Phenom",
+      "Momochi",
       "Itabashi Zangief",
       "jojotaro",
       "kingsvega",
       "あくたがわ",
       "ChrisT",
       "Kharsonist",
-      "Hibiki",
       "Lexx",
+      "Hibiki",
       "iDom",
-      "EndingWalker",
       "Brayan_Job",
+      "EndingWalker",
       "Zhen",
       "Kawano",
       "JAK",
       "AngryBird",
       "Bonchan",
       "Craime",
-      "Torimeshi",
       "Xerna",
       "Big Bird",
-      "eguto"
+      "eguto",
+      "Torimeshi",
+      "Dogura",
+      "Fenritti",
+      "Armperor",
+      "Jiewa",
+      "Kusanagi",
+      "Shine"
     ],
     "isArchived": false,
     "excludeFromSite": false
@@ -213,7 +173,8 @@
       "Itabashi Zangief",
       "kingsvega",
       "Kawano",
-      "Bonchan"
+      "Bonchan",
+      "Dogura"
     ],
     "isArchived": false,
     "excludeFromSite": false
@@ -280,10 +241,12 @@
     "game": "Street Fighter 6",
     "streamLink": "",
     "scheduleLink": "",
-    "description": "GRAPHT CUP 2026 東京予選B Tokyo is scheduled for Jul 18, 2026 in 日本、東京都. Featuring Street Fighter 6. Registered top players include kincho, rangasamy.",
+    "description": "GRAPHT CUP 2026 東京予選B Tokyo is scheduled for Jul 18, 2026 in 日本、東京都. Featuring Street Fighter 6. Registered top players include kincho, rangasamy, Kushina, らおやむやむハイハイ謝謝.",
     "notablePlayers": [
       "kincho",
-      "rangasamy"
+      "rangasamy",
+      "Kushina",
+      "らおやむやむハイハイ謝謝"
     ],
     "isArchived": false,
     "excludeFromSite": false
@@ -349,8 +312,12 @@
       "Zhen",
       "Kawano",
       "Bonchan",
+      "Dogura",
+      "Takamura",
       "Ritchy",
-      "Beslem"
+      "Beslem",
+      "Armperor",
+      "Jiewa"
     ],
     "isArchived": false,
     "excludeFromSite": false

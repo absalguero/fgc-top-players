@@ -25287,7 +25287,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "edinbrawl-iv": {
     "name": "EDINBRAWL IV",
@@ -72434,6 +72434,296 @@
         "Date": "2026-06-14",
         "Finish": "49",
         "Entrants": "112",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "big-bang-7": {
+    "name": "BIG BANG 7",
+    "date": "2026-06-19",
+    "slug": "big-bang-7",
+    "Tier": "B",
+    "Entrants": "28",
+    "results": [
+      {
+        "Player": "LUGABO",
+        "Player ID": "9242d9e3",
+        "Event": "BIG BANG 7",
+        "Event ID": "big-bang-7",
+        "Date": "2026-06-20",
+        "Finish": "1",
+        "Entrants": "28",
+        "Tier": "B"
+      },
+      {
+        "Player": "lSecto",
+        "Player ID": "9546ed0d",
+        "Event": "BIG BANG 7",
+        "Event ID": "big-bang-7",
+        "Date": "2026-06-20",
+        "Finish": "2",
+        "Entrants": "28",
+        "Tier": "B"
+      },
+      {
+        "Player": "Liquid_o",
+        "Player ID": "bd0126eb",
+        "Event": "BIG BANG 7",
+        "Event ID": "big-bang-7",
+        "Date": "2026-06-20",
+        "Finish": "3",
+        "Entrants": "28",
+        "Tier": "B"
+      },
+      {
+        "Player": "MJ_Gama",
+        "Player ID": "4484e542",
+        "Event": "BIG BANG 7",
+        "Event ID": "big-bang-7",
+        "Date": "2026-06-20",
+        "Finish": "4",
+        "Entrants": "28",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rey del Tekino",
+        "Player ID": "3ffd81ac",
+        "Event": "BIG BANG 7",
+        "Event ID": "big-bang-7",
+        "Date": "2026-06-20",
+        "Finish": "5",
+        "Entrants": "28",
+        "Tier": "B"
+      },
+      {
+        "Player": "Moñañu",
+        "Player ID": "19951b0a",
+        "Event": "BIG BANG 7",
+        "Event ID": "big-bang-7",
+        "Date": "2026-06-20",
+        "Finish": "5",
+        "Entrants": "28",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jazdero",
+        "Player ID": "af303b7c",
+        "Event": "BIG BANG 7",
+        "Event ID": "big-bang-7",
+        "Date": "2026-06-20",
+        "Finish": "7",
+        "Entrants": "28",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ninja Huasteco",
+        "Player ID": "52e46eb9",
+        "Event": "BIG BANG 7",
+        "Event ID": "big-bang-7",
+        "Date": "2026-06-20",
+        "Finish": "7",
+        "Entrants": "28",
+        "Tier": "B"
+      },
+      {
+        "Player": "ZeKKen",
+        "Player ID": "ee31ff5a",
+        "Event": "BIG BANG 7",
+        "Event ID": "big-bang-7",
+        "Date": "2026-06-20",
+        "Finish": "9",
+        "Entrants": "28",
+        "Tier": "B"
+      },
+      {
+        "Player": "Yeriko",
+        "Player ID": "933516f3",
+        "Event": "BIG BANG 7",
+        "Event ID": "big-bang-7",
+        "Date": "2026-06-20",
+        "Finish": "9",
+        "Entrants": "28",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jean-Carlo",
+        "Player ID": "b5f07796",
+        "Event": "BIG BANG 7",
+        "Event ID": "big-bang-7",
+        "Date": "2026-06-20",
+        "Finish": "9",
+        "Entrants": "28",
+        "Tier": "B"
+      },
+      {
+        "Player": "EL Dogor",
+        "Player ID": "3ea88070",
+        "Event": "BIG BANG 7",
+        "Event ID": "big-bang-7",
+        "Date": "2026-06-20",
+        "Finish": "9",
+        "Entrants": "28",
+        "Tier": "B"
+      },
+      {
+        "Player": "MrDino023",
+        "Player ID": "7b0d3b8a",
+        "Event": "BIG BANG 7",
+        "Event ID": "big-bang-7",
+        "Date": "2026-06-20",
+        "Finish": "13",
+        "Entrants": "28",
+        "Tier": "B"
+      },
+      {
+        "Player": "Fieldborne",
+        "Player ID": "7605395f",
+        "Event": "BIG BANG 7",
+        "Event ID": "big-bang-7",
+        "Date": "2026-06-20",
+        "Finish": "13",
+        "Entrants": "28",
+        "Tier": "B"
+      },
+      {
+        "Player": "Provinay",
+        "Player ID": "0e9932a3",
+        "Event": "BIG BANG 7",
+        "Event ID": "big-bang-7",
+        "Date": "2026-06-20",
+        "Finish": "13",
+        "Entrants": "28",
+        "Tier": "B"
+      },
+      {
+        "Player": "EGHCO",
+        "Player ID": "ee9946fa",
+        "Event": "BIG BANG 7",
+        "Event ID": "big-bang-7",
+        "Date": "2026-06-20",
+        "Finish": "13",
+        "Entrants": "28",
+        "Tier": "B"
+      },
+      {
+        "Player": "Morielo",
+        "Player ID": "ea1cf0ba",
+        "Event": "BIG BANG 7",
+        "Event ID": "big-bang-7",
+        "Date": "2026-06-20",
+        "Finish": "17",
+        "Entrants": "28",
+        "Tier": "B"
+      },
+      {
+        "Player": "Oswald",
+        "Player ID": "70773df8",
+        "Event": "BIG BANG 7",
+        "Event ID": "big-bang-7",
+        "Date": "2026-06-20",
+        "Finish": "17",
+        "Entrants": "28",
+        "Tier": "B"
+      },
+      {
+        "Player": "El RulO",
+        "Player ID": "3137f501",
+        "Event": "BIG BANG 7",
+        "Event ID": "big-bang-7",
+        "Date": "2026-06-20",
+        "Finish": "17",
+        "Entrants": "28",
+        "Tier": "B"
+      },
+      {
+        "Player": "stotorm",
+        "Player ID": "bd5601d5",
+        "Event": "BIG BANG 7",
+        "Event ID": "big-bang-7",
+        "Date": "2026-06-20",
+        "Finish": "17",
+        "Entrants": "28",
+        "Tier": "B"
+      },
+      {
+        "Player": "SilentHazard",
+        "Player ID": "ed294083",
+        "Event": "BIG BANG 7",
+        "Event ID": "big-bang-7",
+        "Date": "2026-06-20",
+        "Finish": "17",
+        "Entrants": "28",
+        "Tier": "B"
+      },
+      {
+        "Player": "ChinoSLP",
+        "Player ID": "32d2f3d8",
+        "Event": "BIG BANG 7",
+        "Event ID": "big-bang-7",
+        "Date": "2026-06-20",
+        "Finish": "17",
+        "Entrants": "28",
+        "Tier": "B"
+      },
+      {
+        "Player": "PsicRogelio",
+        "Player ID": "1edc2a01",
+        "Event": "BIG BANG 7",
+        "Event ID": "big-bang-7",
+        "Date": "2026-06-20",
+        "Finish": "17",
+        "Entrants": "28",
+        "Tier": "B"
+      },
+      {
+        "Player": "Drakzo",
+        "Player ID": "1f1e7cf9",
+        "Event": "BIG BANG 7",
+        "Event ID": "big-bang-7",
+        "Date": "2026-06-20",
+        "Finish": "17",
+        "Entrants": "28",
+        "Tier": "B"
+      },
+      {
+        "Player": "OrphanDragonRemi",
+        "Player ID": "orphandragonremi",
+        "Event": "BIG BANG 7",
+        "Event ID": "big-bang-7",
+        "Date": "2026-06-20",
+        "Finish": "25",
+        "Entrants": "28",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cirujano_Mx",
+        "Player ID": "aa41745d",
+        "Event": "BIG BANG 7",
+        "Event ID": "big-bang-7",
+        "Date": "2026-06-20",
+        "Finish": "25",
+        "Entrants": "28",
+        "Tier": "B"
+      },
+      {
+        "Player": "Diego san luis",
+        "Player ID": "7b31acd5",
+        "Event": "BIG BANG 7",
+        "Event ID": "big-bang-7",
+        "Date": "2026-06-20",
+        "Finish": "25",
+        "Entrants": "28",
+        "Tier": "B"
+      },
+      {
+        "Player": "Sr hide",
+        "Player ID": "e17b9e3d",
+        "Event": "BIG BANG 7",
+        "Event ID": "big-bang-7",
+        "Date": "2026-06-20",
+        "Finish": "25",
+        "Entrants": "28",
         "Tier": "B"
       }
     ],
