@@ -53387,7 +53387,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "knox-out-25": {
     "name": "KNOX-OUT '25",
