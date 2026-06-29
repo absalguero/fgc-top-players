@@ -1,4 +1,38 @@
 {
+  "evo-2026": {
+    "name": "Evo Vegas 2026",
+    "slug": "evo-2026",
+    "startAt": 1782432000,
+    "endAt": 1782691199,
+    "startDate": "2026-06-26",
+    "endDate": "2026-06-28",
+    "dates": "Jun 26-28, 2026",
+    "location": "300 Convention Center Dr, Las Vegas, NV 89109, USA",
+    "venueName": "Las Vegas Convention Center (West Hall)",
+    "url": "https://evo.gg/",
+    "tier": "S+",
+    "prizes": "$500,000",
+    "game": "Street Fighter 6",
+    "streamLink": "https://www.twitch.tv/evo",
+    "scheduleLink": "https://x.com/Evo/status/2070572701706850314",
+    "description": "<strong>Evo 2026</strong> returns to Nevada as the world's most prestigious fighting game tournament. Scheduled for June 26 through June 28, 2026, the event will transform the West Hall of the <strong>Las Vegas Convention Center</strong> into a three-day celebration of competitive fighting games, bringing together competitors, creators, and gaming communities from across the globe.</p><p>As the ultimate destination for the FGC, the 2026 tournament features a high-stakes lineup on the biggest stage. The event is headlined by a massive open bracket for <strong>Street Fighter 6</strong>, guaranteeing that absolute world-class talent will be in attendance to fight for the highly coveted trophy.</p><h3>Premier Tournament Lineup</h3><p>Beyond Street Fighter 6, the historic 12-game competitive roster includes heavy-hitting staples and modern favorites. Attendees will clash in <strong>TEKKEN 8</strong>, <strong>Guilty Gear -Strive-</strong>, Riot's 2v2 fighter <strong>2XKO</strong>, and SNK's <strong>Fatal Fury: City of the Wolves</strong>. The main stage also welcomes <strong>Granblue Fantasy Versus: Rising</strong>, <strong>Under Night In-Birth II Sys:Celes</strong>, <strong>Virtua Fighter 5 R.E.V.O. World Stage</strong>, and fresh additions like <strong>Invincible VS</strong> and <strong>Rivals of Aether II</strong>.</p><h3>More Than a Tournament</h3><p>Evo is designed to be a complete destination experience fueled by energy, culture, and real competition. Attendees can take a break from the brackets to enjoy publisher and developer panels, hands-on experiences at developer booths, a sprawling vendor hall, the legendary Artist Alley, and Evo's iconic 300+ cabinet free-play arcade.</p><h3>Registration</h3><p>Registration and bracket sign-ups are managed through Start.gg and the official Evo website. Competitors can secure their spots in the tournament until late registration closes on May 25, 2026. General admission passes are available online for spectators wishing to experience the electrifying Arena Finals Experience, the live commentators, exclusive merchandise, and the greatest fighting game stage on earth.",
+    "notablePlayers": [
+      "Yamaguchi",
+      "xiaohai",
+      "Punk",
+      "kobayan",
+      "ひなお",
+      "Higuchi",
+      "Blaz",
+      "Sahara.",
+      "Kilzyou",
+      "Micky",
+      "Jr.",
+      "Fuudo"
+    ],
+    "isArchived": true,
+    "excludeFromSite": false
+},
   "big-bang-7": {
     "name": "BIG BANG 7",
     "slug": "big-bang-7",

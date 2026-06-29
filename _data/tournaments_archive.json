@@ -72728,5 +72728,655 @@
       }
     ],
     "isArchived": false
+  },
+  "evo-2026": {
+    "name": "Evo 2026",
+    "date": "2026-06-25",
+    "slug": "evo-2026",
+    "Tier": "S+",
+    "Entrants": "2416",
+    "results": [
+      {
+        "Player": "MenaRD",
+        "Player ID": "31a13177",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "1",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Shigematsu",
+        "Player ID": "761fa9e6",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "2",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Kilzyou",
+        "Player ID": "dcd53ca7",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "3",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Craime",
+        "Player ID": "a5ce82ae",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "4",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Dogura",
+        "Player ID": "2464d654",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "5",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "タンタンメン",
+        "Player ID": "8b487f7d",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "5",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "CrossoverRD",
+        "Player ID": "67ff45df",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "7",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Zhen",
+        "Player ID": "0186079f",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "7",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Micky",
+        "Player ID": "09e5dcc1",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "9",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Dual Kevin",
+        "Player ID": "88d3f20e",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "9",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "John Takeuchi",
+        "Player ID": "ec195ece",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "9",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "HAITEI RAOYUE",
+        "Player ID": "9d27019b",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "9",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "gachikun",
+        "Player ID": "7fc0306f",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "13",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Enzo",
+        "Player ID": "9cc42fd3",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "13",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "pugera",
+        "Player ID": "9594efe4",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "13",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "iDom",
+        "Player ID": "f0979e4c",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "13",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "kobayan",
+        "Player ID": "ef64257e",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "17",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Blaz",
+        "Player ID": "37844e8a",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "17",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Shuto",
+        "Player ID": "b66813f3",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "17",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "NoahTheProdigy",
+        "Player ID": "27053e88",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "17",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "DCQ",
+        "Player ID": "ae2f4ff8",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "17",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Tokido",
+        "Player ID": "a4c7c2d4",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "17",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "YAS",
+        "Player ID": "fabefccb",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "17",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "jojotaro",
+        "Player ID": "ce244111",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "17",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Yamaguchi",
+        "Player ID": "6bfc4c78",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "25",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Jr.",
+        "Player ID": "126a661a",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "25",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "EndingWalker",
+        "Player ID": "90c33661",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "25",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Kawano",
+        "Player ID": "84491299",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "25",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "kingsvega",
+        "Player ID": "c0e4c985",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "25",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Riddles",
+        "Player ID": "03d3a671",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "25",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Noble",
+        "Player ID": "befd4e60",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "25",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Esuta",
+        "Player ID": "b59a41d8",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "25",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "ひなお",
+        "Player ID": "1e05762a",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "33",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Nephew",
+        "Player ID": "b1fe7f8b",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "33",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "あくたがわ",
+        "Player ID": "2754067c",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "33",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Torimeshi",
+        "Player ID": "5be8e15c",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "33",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Oil King",
+        "Player ID": "92c9115f",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "33",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Brayan_Job",
+        "Player ID": "fbf421ef",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "33",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "NYChrisG",
+        "Player ID": "dab1e1cc",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "33",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Daigo Umehara",
+        "Player ID": "7f5507aa",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "33",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Akumasaki",
+        "Player ID": "bb0da18c",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "33",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "JAK",
+        "Player ID": "ca35d13c",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "33",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "matsu56",
+        "Player ID": "725ea610",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "33",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Chris Wong",
+        "Player ID": "a3a19505",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "33",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Ryusei",
+        "Player ID": "6f9ebc42",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "33",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Nauman",
+        "Player ID": "245de7b9",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "33",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "ACQUA",
+        "Player ID": "20f90017",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "33",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Keekuma",
+        "Player ID": "c921a066",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "33",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Punk",
+        "Player ID": "1b9e2ed9",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "49",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Fuudo",
+        "Player ID": "173c6283",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "49",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "kincho",
+        "Player ID": "c5bc27ca",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "49",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Booce_Lee",
+        "Player ID": "84a88e6f",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "49",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "HotDog29",
+        "Player ID": "e9050ed0",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "49",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Hibiki",
+        "Player ID": "362536f6",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "49",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Lexx",
+        "Player ID": "ec4d302b",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "49",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Shine",
+        "Player ID": "b3bd73c6",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "49",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Hali",
+        "Player ID": "7513183a",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "49",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Machabo",
+        "Player ID": "acbbf204",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "49",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "KEI.B",
+        "Player ID": "36b29fd8",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "49",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "orarin",
+        "Player ID": "993a7906",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "49",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Otani",
+        "Player ID": "9a7fe756",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "49",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "kuromame",
+        "Player ID": "ab0f03bd",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "49",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "LeviHakai",
+        "Player ID": "3ce9e105",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "49",
+        "Entrants": "2416",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Tw_aze",
+        "Player ID": "4508cf7f",
+        "Event": "Evo 2026",
+        "Event ID": "evo-2026",
+        "Date": "2026-06-26",
+        "Finish": "49",
+        "Entrants": "2416",
+        "Tier": "S+"
+      }
+    ],
+    "isArchived": false
   }
 }
