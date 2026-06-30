@@ -22,7 +22,7 @@ The tension inside the Las Vegas Convention Center reached a fever pitch as the 
 **Key Takeaways:**
 * **The Result:** MenaRD won the EVO 2026 Street Fighter 6 championship, achieving an unprecedented consecutive title defense following his 2025 victory.
 * **The Defining Moment:** A critical mid-match character switch back to Blanka during the Grand Finals reset halted a determined comeback attempt and secured the tournament.
-* **The Implication:** This victory catapults MenaRD back to the number one spot on the FGC Top Players rankings and awards crucial qualification points for the Esports World Cup and Capcom Cup 13.
+* **The Implication:** This victory catapults MenaRD back to the number one spot on the FGC Top Players rankings. Because his own postseason spots were secure, his performance triggered a qualification roll-down that allowed Shigematsu to punch his ticket to both major championships.
 
 </div>
 
@@ -48,6 +48,6 @@ The rest of the Top 8 provided competitive storylines that gave the tournament a
 
 ## The Aftermath: What This Result Changes
 
-This victory alters the qualification landscape for the upcoming championship circuit and immediately catapults MenaRD back to the number one spot on the FGC Top Players global rankings. By capturing the title in Las Vegas, MenaRD secures a premier qualification spot for both the Esports World Cup 2026 in Paris and Capcom Cup 13. The win denies other top-tier organizations an automatic qualifying position, forcing rivals to scramble for the remaining leaderboard points in upcoming regional qualifiers.
+This victory alters the qualification landscape for the upcoming championship circuit and immediately catapults MenaRD back to the number one spot on the FGC Top Players global rankings. Because he had already punched his ticket to both the Esports World Cup 2026 and Capcom Cup 13 at Blink Respawn, his performance created an alternate path for the rest of the bracket. The automatic qualification spots rolled down, allowing Shigematsu to secure an invitation to both global finals. The pass-down effect also extended to fourth-place finisher Craime, who picked up an Esports World Cup ticket because third-place finisher Kilzyou had previously qualified.
 
 From a legacy perspective, MenaRD has achieved what many thought impossible in the volatile modern era of fighting games. Winning a single EVO title requires navigating thousands of entrants, but defending that title back-to-back places him in a tier of his own. He is now the face of competitive Street Fighter 6, having won the largest open bracket events in consecutive years. As the competitive scene looks forward to the next major stop on the tour, the entire international community is left chasing the benchmark set by the Dominican superstar.
