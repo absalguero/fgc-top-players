@@ -15,9 +15,10 @@
     "game": "Street Fighter 6",
     "streamLink": "",
     "scheduleLink": "",
-    "description": "Fight for the Throne 2026 – FGC Tournament at Eh! Game Expo ($3k+ Prize Pools) is scheduled for Jul 3-5, 2026 in The Tragically Hip Way, Kingston, ON K7K 1A1, Canada. Featuring Street Fighter 6. Registered top players include Kharsonist.",
+    "description": "Fight for the Throne 2026 – FGC Tournament at Eh! Game Expo ($3k+ Prize Pools) is scheduled for Jul 3-5, 2026 in The Tragically Hip Way, Kingston, ON K7K 1A1, Canada. Featuring Street Fighter 6. Registered top players include Kharsonist, Zykles.",
     "notablePlayers": [
-      "Kharsonist"
+      "Kharsonist",
+      "Zykles"
     ],
     "isArchived": false,
     "excludeFromSite": false
@@ -59,8 +60,7 @@
       "Yuto",
       "Kawano",
       "Itabashi Zangief",
-      "Bonchan",
-      "Chris Wong"
+      "Bonchan"
     ],
     "isArchived": false,
     "excludeFromSite": false
@@ -204,6 +204,52 @@
       "Ritchy",
       "Beslem",
       "Jiewa"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
+  "get-on-my-level-2026-canadian-fighting-game-championships": {
+    "name": "Get On My Level 2026 - Canadian Fighting Game Championships",
+    "slug": "get-on-my-level-2026-canadian-fighting-game-championships",
+    "startAt": 1785506400,
+    "endAt": 1785729300,
+    "startDate": "2026-07-31",
+    "endDate": "2026-08-02",
+    "dates": "Jul 31-Aug 2, 2026",
+    "location": "5875 Airport Rd, Mississauga, ON L4V 1N1, Canada",
+    "venueName": "Better Living Centre",
+    "url": "https://www.start.gg/tournament/get-on-my-level-2026-canadian-fighting-game-championships",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "Get On My Level 2026 - Canadian Fighting Game Championships is scheduled for Jul 31-Aug 2, 2026 in 5875 Airport Rd, Mississauga, ON L4V 1N1, Canada. Featuring Street Fighter 6. Registered top players include Zykles.",
+    "notablePlayers": [
+      "Zykles"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
+  "umad-2026": {
+    "name": "UMAD 2026",
+    "slug": "umad-2026",
+    "startAt": 1787346000,
+    "endAt": 1787543940,
+    "startDate": "2026-08-21",
+    "endDate": "2026-08-23",
+    "dates": "Aug 21-23, 2026",
+    "location": "550 Rue Richmond, Montréal, QC H3J 1V3, Canada",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/umad-2026",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "UMAD 2026 is scheduled for Aug 21-23, 2026 in 550 Rue Richmond, Montréal, QC H3J 1V3, Canada. Featuring Street Fighter 6. Registered top players include Zykles.",
+    "notablePlayers": [
+      "Zykles"
     ],
     "isArchived": false,
     "excludeFromSite": false

@@ -7457,7 +7457,7 @@
         "Tier": "B"
       },
       {
-        "Player": "Prince",
+        "Player": "Prince (IN)",
         "Player ID": "b734dac1",
         "Event": "The Versus Festival: Habba Edition 2025",
         "Event ID": "the-versus-festival-habba-edition",
@@ -73375,6 +73375,756 @@
         "Finish": "49",
         "Entrants": "2416",
         "Tier": "S+"
+      }
+    ],
+    "isArchived": false
+  },
+  "fight-for-the-throne-2026-fgc-tournament-at-eh-game-expo-dollar3k-prize-pools": {
+    "name": "Fight for the Throne 2026 – FGC Tournament at Eh! Game Expo ($3k+ Prize Pools)",
+    "date": "2026-07-03",
+    "slug": "fight-for-the-throne-2026-fgc-tournament-at-eh-game-expo-dollar3k-prize-pools",
+    "Tier": "B",
+    "Entrants": "17",
+    "results": [
+      {
+        "Player": "Zykles",
+        "Player ID": "5e0e43b1",
+        "Event": "Fight for the Throne 2026 – FGC Tournament at Eh! Game Expo ($3k+ Prize Pools)",
+        "Event ID": "fight-for-the-throne-2026-fgc-tournament-at-eh-game-expo-3k-prize-pools",
+        "Date": "2026-07-04",
+        "Finish": "1",
+        "Entrants": "17",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kharsonist",
+        "Player ID": "dd8aaab4",
+        "Event": "Fight for the Throne 2026 – FGC Tournament at Eh! Game Expo ($3k+ Prize Pools)",
+        "Event ID": "fight-for-the-throne-2026-fgc-tournament-at-eh-game-expo-3k-prize-pools",
+        "Date": "2026-07-04",
+        "Finish": "2",
+        "Entrants": "17",
+        "Tier": "B"
+      },
+      {
+        "Player": "LILBOWT",
+        "Player ID": "041dbfc0",
+        "Event": "Fight for the Throne 2026 – FGC Tournament at Eh! Game Expo ($3k+ Prize Pools)",
+        "Event ID": "fight-for-the-throne-2026-fgc-tournament-at-eh-game-expo-3k-prize-pools",
+        "Date": "2026-07-04",
+        "Finish": "3",
+        "Entrants": "17",
+        "Tier": "B"
+      },
+      {
+        "Player": "BreakAwayBlue",
+        "Player ID": "b66e9444",
+        "Event": "Fight for the Throne 2026 – FGC Tournament at Eh! Game Expo ($3k+ Prize Pools)",
+        "Event ID": "fight-for-the-throne-2026-fgc-tournament-at-eh-game-expo-3k-prize-pools",
+        "Date": "2026-07-04",
+        "Finish": "4",
+        "Entrants": "17",
+        "Tier": "B"
+      },
+      {
+        "Player": "alfoam",
+        "Player ID": "25a1d3b7",
+        "Event": "Fight for the Throne 2026 – FGC Tournament at Eh! Game Expo ($3k+ Prize Pools)",
+        "Event ID": "fight-for-the-throne-2026-fgc-tournament-at-eh-game-expo-3k-prize-pools",
+        "Date": "2026-07-04",
+        "Finish": "5",
+        "Entrants": "17",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cyla",
+        "Player ID": "276838e9",
+        "Event": "Fight for the Throne 2026 – FGC Tournament at Eh! Game Expo ($3k+ Prize Pools)",
+        "Event ID": "fight-for-the-throne-2026-fgc-tournament-at-eh-game-expo-3k-prize-pools",
+        "Date": "2026-07-04",
+        "Finish": "5",
+        "Entrants": "17",
+        "Tier": "B"
+      },
+      {
+        "Player": "MalishisBad",
+        "Player ID": "d030b1bd",
+        "Event": "Fight for the Throne 2026 – FGC Tournament at Eh! Game Expo ($3k+ Prize Pools)",
+        "Event ID": "fight-for-the-throne-2026-fgc-tournament-at-eh-game-expo-3k-prize-pools",
+        "Date": "2026-07-04",
+        "Finish": "7",
+        "Entrants": "17",
+        "Tier": "B"
+      },
+      {
+        "Player": "Swey",
+        "Player ID": "da21d895",
+        "Event": "Fight for the Throne 2026 – FGC Tournament at Eh! Game Expo ($3k+ Prize Pools)",
+        "Event ID": "fight-for-the-throne-2026-fgc-tournament-at-eh-game-expo-3k-prize-pools",
+        "Date": "2026-07-04",
+        "Finish": "7",
+        "Entrants": "17",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jumbley",
+        "Player ID": "a51702a2",
+        "Event": "Fight for the Throne 2026 – FGC Tournament at Eh! Game Expo ($3k+ Prize Pools)",
+        "Event ID": "fight-for-the-throne-2026-fgc-tournament-at-eh-game-expo-3k-prize-pools",
+        "Date": "2026-07-04",
+        "Finish": "9",
+        "Entrants": "17",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bo Bracko",
+        "Player ID": "dbca5268",
+        "Event": "Fight for the Throne 2026 – FGC Tournament at Eh! Game Expo ($3k+ Prize Pools)",
+        "Event ID": "fight-for-the-throne-2026-fgc-tournament-at-eh-game-expo-3k-prize-pools",
+        "Date": "2026-07-04",
+        "Finish": "9",
+        "Entrants": "17",
+        "Tier": "B"
+      },
+      {
+        "Player": "jak_d_ripr",
+        "Player ID": "0827c2d3",
+        "Event": "Fight for the Throne 2026 – FGC Tournament at Eh! Game Expo ($3k+ Prize Pools)",
+        "Event ID": "fight-for-the-throne-2026-fgc-tournament-at-eh-game-expo-3k-prize-pools",
+        "Date": "2026-07-04",
+        "Finish": "9",
+        "Entrants": "17",
+        "Tier": "B"
+      },
+      {
+        "Player": "AuVerity",
+        "Player ID": "a1119bb0",
+        "Event": "Fight for the Throne 2026 – FGC Tournament at Eh! Game Expo ($3k+ Prize Pools)",
+        "Event ID": "fight-for-the-throne-2026-fgc-tournament-at-eh-game-expo-3k-prize-pools",
+        "Date": "2026-07-04",
+        "Finish": "9",
+        "Entrants": "17",
+        "Tier": "B"
+      },
+      {
+        "Player": "Omega Raider",
+        "Player ID": "ff2f9b60",
+        "Event": "Fight for the Throne 2026 – FGC Tournament at Eh! Game Expo ($3k+ Prize Pools)",
+        "Event ID": "fight-for-the-throne-2026-fgc-tournament-at-eh-game-expo-3k-prize-pools",
+        "Date": "2026-07-04",
+        "Finish": "13",
+        "Entrants": "17",
+        "Tier": "B"
+      },
+      {
+        "Player": "Omega zero",
+        "Player ID": "omega-zero",
+        "Event": "Fight for the Throne 2026 – FGC Tournament at Eh! Game Expo ($3k+ Prize Pools)",
+        "Event ID": "fight-for-the-throne-2026-fgc-tournament-at-eh-game-expo-3k-prize-pools",
+        "Date": "2026-07-04",
+        "Finish": "13",
+        "Entrants": "17",
+        "Tier": "B"
+      },
+      {
+        "Player": "toch",
+        "Player ID": "8de6c462",
+        "Event": "Fight for the Throne 2026 – FGC Tournament at Eh! Game Expo ($3k+ Prize Pools)",
+        "Event ID": "fight-for-the-throne-2026-fgc-tournament-at-eh-game-expo-3k-prize-pools",
+        "Date": "2026-07-04",
+        "Finish": "13",
+        "Entrants": "17",
+        "Tier": "B"
+      },
+      {
+        "Player": "Simkin",
+        "Player ID": "e1a7d049",
+        "Event": "Fight for the Throne 2026 – FGC Tournament at Eh! Game Expo ($3k+ Prize Pools)",
+        "Event ID": "fight-for-the-throne-2026-fgc-tournament-at-eh-game-expo-3k-prize-pools",
+        "Date": "2026-07-04",
+        "Finish": "13",
+        "Entrants": "17",
+        "Tier": "B"
+      },
+      {
+        "Player": "JMart69",
+        "Player ID": "13127454",
+        "Event": "Fight for the Throne 2026 – FGC Tournament at Eh! Game Expo ($3k+ Prize Pools)",
+        "Event ID": "fight-for-the-throne-2026-fgc-tournament-at-eh-game-expo-3k-prize-pools",
+        "Date": "2026-07-04",
+        "Finish": "17",
+        "Entrants": "17",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "nexus-e-sports-series": {
+    "name": "NEXUS E-Sports Series",
+    "date": "2026-07-01",
+    "slug": "nexus-e-sports-series",
+    "Tier": "B",
+    "Entrants": "56",
+    "results": [
+      {
+        "Player": "Prince (IN)",
+        "Player ID": "b734dac1",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "1",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "devilsim",
+        "Player ID": "6c339a13",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "2",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "b_HAUNT",
+        "Player ID": "e9c3a48e",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "3",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "GamingMasterYT7",
+        "Player ID": "784a87d7",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "4",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "GupShup",
+        "Player ID": "79d9670f",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "5",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kairiyup",
+        "Player ID": "271a0908",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "5",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "ClosingRegent",
+        "Player ID": "c0744889",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "7",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kunnu",
+        "Player ID": "cff8053b",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "7",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "ParryParryMango",
+        "Player ID": "d5cad083",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "9",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mininja",
+        "Player ID": "4e634f82",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "9",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "Enigma",
+        "Player ID": "a19474ea",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "9",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "KnightWing",
+        "Player ID": "554f827a",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "9",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "that_Razor",
+        "Player ID": "b926b6ff",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "13",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "DONSHADOWBLAZE",
+        "Player ID": "5840e9f6",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "13",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "SpartanKiller",
+        "Player ID": "c19a7ef2",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "13",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "HowlerTheWolf",
+        "Player ID": "f73c16ff",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "13",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "Gamer Gobind",
+        "Player ID": "b063cb10",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "17",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "Walnut",
+        "Player ID": "a01e0e89",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "17",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "pyra",
+        "Player ID": "6b98436c",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "17",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "SAK",
+        "Player ID": "0d2abc62",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "17",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kinara",
+        "Player ID": "c9c65287",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "17",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "Maharaja",
+        "Player ID": "b649d99d",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "17",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "Junkraj1802",
+        "Player ID": "3f8f6ab2",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "17",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "Wolf",
+        "Player ID": "a9bd675f",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "17",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "SK99",
+        "Player ID": "feea8ed0",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "25",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "Arhaan",
+        "Player ID": "7d983328",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "25",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "FlamZy",
+        "Player ID": "ca221a0b",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "25",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "Vishu",
+        "Player ID": "f5d7046c",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "25",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "Loveneet",
+        "Player ID": "213dbfb7",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "25",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "Sudzman",
+        "Player ID": "494375cf",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "25",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "ChunuGoli",
+        "Player ID": "c3b36403",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "25",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "Flying Turtle",
+        "Player ID": "a0f2bb72",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "25",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "Morning star",
+        "Player ID": "033b2ffb",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "33",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "srkGame",
+        "Player ID": "7ce4f9e9",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "33",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "Redex360op",
+        "Player ID": "2a4f5b88",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "33",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "Deathstroke",
+        "Player ID": "258177f3",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "33",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "GGG",
+        "Player ID": "42ae4dcf",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "33",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bablu Don",
+        "Player ID": "c8751464",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "33",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "@BhagadBilla",
+        "Player ID": "bhagadbilla",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "33",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "vinay",
+        "Player ID": "b9c609e3",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "33",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kabutar",
+        "Player ID": "242ca3ed",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "33",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "Utkarsh",
+        "Player ID": "f30cbb9c",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "33",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "Magma",
+        "Player ID": "11fcd078",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "33",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "faheemdx",
+        "Player ID": "5d9cd568",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "33",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "Uday Kumar",
+        "Player ID": "5e7c5753",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "33",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "manmeet",
+        "Player ID": "78c32a81",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "33",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "VkeyPrime",
+        "Player ID": "f831de37",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "33",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ranaji",
+        "Player ID": "f9ef7fd2",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "33",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "Book",
+        "Player ID": "a1dca669",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "49",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "Biscuit Deluxe",
+        "Player ID": "760bfe7c",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "49",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "williwaw",
+        "Player ID": "3068b154",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "49",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "HyperSam",
+        "Player ID": "8414ca0a",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "49",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "Desi Samurai",
+        "Player ID": "9a17844d",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "49",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "Shikaarisaab77",
+        "Player ID": "shikaarisaab77",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "49",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "AD",
+        "Player ID": "ba558fb2",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "49",
+        "Entrants": "56",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pheonix69",
+        "Player ID": "9981fc55",
+        "Event": "NEXUS E-Sports Series",
+        "Event ID": "nexus-e-sports-series",
+        "Date": "2026-07-02",
+        "Finish": "49",
+        "Entrants": "56",
+        "Tier": "B"
       }
     ],
     "isArchived": false

@@ -1,49 +1,4 @@
 {
-    "fight-for-the-throne-2026-fgc-tournament-at-eh-game-expo-3k-prize-pools": {
-    "name": "Fight for the Throne 2026 – FGC Tournament at Eh! Game Expo ($3k+ Prize Pools)",
-    "slug": "fight-for-the-throne-2026-fgc-tournament-at-eh-game-expo-3k-prize-pools",
-    "startAt": 1783087200,
-    "endAt": 1783292400,
-    "startDate": "2026-07-03",
-    "endDate": "2026-07-05",
-    "dates": "Jul 3-5, 2026",
-    "location": "The Tragically Hip Way, Kingston, ON K7K 1A1, Canada",
-    "venueName": "Eh! Game Expo",
-    "url": "https://www.start.gg/tournament/fight-for-the-throne-2026-fgc-tournament-at-eh-game-expo-3k-prize-pools",
-    "tier": "B",
-    "prizes": "$3,000+",
-    "game": "Street Fighter 6",
-    "streamLink": "https://www.twitch.tv/battlecityottawa",
-    "scheduleLink": "",
-    "description": "<strong>Fight for the Throne 2026</strong> returns as a premier highlight of the Canadian fighting game calendar, hosted live as a featured attraction of the Eh! Game Expo. Scheduled from July 3 through July 5, 2026, in Kingston, Ontario, this high-stakes tournament brings explosive competitive action to the regional circuit, drawing Eastern Canada's elite players and traveling challengers under one roof.</p><p>Serving as a major destination for the regional FGC, the 2026 edition spotlights a highly anticipated open bracket for <strong>Street Fighter 6</strong>. Local warriors and established veterans will battle through intense double-elimination brackets to prove their dominance in the current meta and take home the crown.</p><h3>Championship Glory and Expo Attractions</h3><p>Boasting <strong>$3,000+ in combined prize pools</strong>, Fight for the Throne 2026 pairs high-level tournament intensity with the massive scale of a full gaming expo. Beyond the primary Street Fighter 6 competitive brackets, attendees can immerse themselves in a weekend festival celebrating gaming culture, complete with casual freeplay setups, community side events, exhibitor booths, and indie developer showcases across the expo floor.</p><h3>Registration and Attendee Info</h3><p>Bracket sign-ups and competitor registrations are managed officially online via Start.gg. Players looking to guarantee their seeding in the brackets, as well as spectators eager to witness the high-level tournament drama unfold live, can purchase their tournament passes and expo admission directly through the official registration page.",
-    "notablePlayers": [
-      "Kharsonist"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
-},
-"nexus-esports-series-2026": {
-    "name": "NEXUS E-Sports Series 2026",
-    "slug": "nexus-esports-series-2026",
-    "startAt": 1783036800,
-    "endAt": 1783295999,
-    "startDate": "2026-07-03",
-    "endDate": "2026-07-05",
-    "dates": "Jul 3-5, 2026",
-    "location": "1st Floor, Unit No. 101, E Square, Plot No. C2, Noida-Greater Noida Expy, Sector 96, Noida, Uttar Pradesh 201304, India",
-    "venueName": "Glued Supercharged",
-    "url": "https://nexusess.com/",
-    "tier": "B",
-    "prizes": "TBD",
-    "game": "Street Fighter 6",
-    "streamLink": "https://www.youtube.com/watch?v=_afWm6v3Y8U",
-    "scheduleLink": "",
-    "description": "<strong>NEXUS E-Sports Series 2026</strong> returns as India's premier flagship fighting game event. Scheduled from July 3 through July 5, 2026, at Glued Supercharged, the tournament brings high-stakes competitive action to the South Asian circuit, drawing the region's elite competitors under one roof.</p><p>As the ultimate destination for the Indian FGC, the 2026 edition spotlights a highly anticipated open bracket for <strong>Street Fighter 6</strong>. Local warriors and traveling regional talent will battle through intense brackets to prove their dominance in the current meta and claim the top prize.</p><h3>Massive Multi-Game Arena</h3><p>Beyond the primary Street Fighter 6 competitive bracket, NESS 2026 boasts a massive lineup of major international circuit stops. The weekend features heavy-hitting <strong>SNK World Championship 2026 (SWC2026) Master 3</strong> qualifiers for both <strong>Fatal Fury: City of the Wolves</strong> and <strong>The King of Fighters XV</strong>. Additionally, the venue hosts an official <strong>TEKKEN World Tour 2026 Challenger Event</strong> for <strong>TEKKEN 8</strong>, alongside community brackets for Riot Games' 2v2 fighter, <strong>2XKO</strong>.</p><h3>Registration and Visitor Passes</h3><p>Bracket sign-ups are managed online via Start.gg, with registration officially closing on June 28, 2026. For fans looking to witness the top-tier competition live, 1-Day and 3-Day spectator visitor passes are available exclusively via pre-booking through the official tournament communities on Discord and WhatsApp.",
-    "notablePlayers": [
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
-},
 "battle-arena-melbourne-2026": {
     "name": "Battle Arena Melbourne 2026",
     "slug": "battle-arena-melbourne-2026",
