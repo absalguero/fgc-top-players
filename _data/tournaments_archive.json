@@ -28327,7 +28327,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "only-the-best-2025": {
     "name": "Only The Best 2025",
@@ -28957,7 +28957,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "topanga-championship-6": {
     "name": "Topanga Championship 6",
@@ -29257,7 +29257,7 @@
         "Tier": "S"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "blink-respawn-2025": {
     "name": "BLINK RESPAWN 2025",
@@ -60908,7 +60908,7 @@
       },
       {
         "Player": "DakCorgi",
-        "Player ID": "",
+        "Player ID": "c3d317d5",
         "Event": "Capcom Cup 12",
         "Event ID": "",
         "Date": "2026-03-14",
@@ -74124,6 +74124,2096 @@
         "Date": "2026-07-02",
         "Finish": "49",
         "Entrants": "56",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "only-the-best-2026": {
+    "name": "Only The Best 2026",
+    "date": "2026-07-10",
+    "slug": "only-the-best-2026",
+    "Tier": "B",
+    "Entrants": "41",
+    "results": [
+      {
+        "Player": "ShadyImpostor",
+        "Player ID": "16544efd",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "1",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bryzee",
+        "Player ID": "678ee45c",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "2",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "Garnet",
+        "Player ID": "d9919a1d",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "3",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "chuu!",
+        "Player ID": "b4270e56",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "4",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "KUZE",
+        "Player ID": "88ad7714",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "5",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "Peepohold",
+        "Player ID": "d0ae9e5c",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "5",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "ShuuyaWilly",
+        "Player ID": "634ad1f8",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "7",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cloud57",
+        "Player ID": "c70b0bb6",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "7",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "Plagio .-.",
+        "Player ID": "392b2152",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "9",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "Armix",
+        "Player ID": "9982eafd",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "9",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "Tonko",
+        "Player ID": "d793bd46",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "9",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "RolandFhtagn",
+        "Player ID": "f9369c16",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "9",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "osiris",
+        "Player ID": "1db597fc",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "13",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dabi",
+        "Player ID": "d310d9d7",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "13",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jeremyray",
+        "Player ID": "42b1d853",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "13",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "Riccarlino",
+        "Player ID": "cb1ee86e",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "13",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "Totto",
+        "Player ID": "20a8824c",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "17",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "N2NStepped",
+        "Player ID": "6270eac9",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "17",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "LeDeath-Kurosama",
+        "Player ID": "71dc91c7",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "17",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "Serpico",
+        "Player ID": "9ec6f2cc",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "17",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bless",
+        "Player ID": "0a7e2bb8",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "17",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "m0d",
+        "Player ID": "140a37f9",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "17",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "RottoClone",
+        "Player ID": "e9dd2264",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "17",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "Abomition",
+        "Player ID": "470d27de",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "17",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jhin",
+        "Player ID": "d31bff56",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "25",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "Gleap",
+        "Player ID": "513da0be",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "25",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "ManiDiPaperino",
+        "Player ID": "ced7ba88",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "25",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "Phantom_MI",
+        "Player ID": "ff035f78",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "25",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "Noponleon",
+        "Player ID": "a5ebe6ab",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "25",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "Daxter",
+        "Player ID": "57b4a25c",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "25",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "Juste90",
+        "Player ID": "d31cdb88",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "25",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "OmneZex",
+        "Player ID": "46133df8",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "25",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "TwiF",
+        "Player ID": "cb873b1b",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "33",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dav",
+        "Player ID": "c04bfe80",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "33",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "LordFire",
+        "Player ID": "5032a6e9",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "33",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "tsuwamono",
+        "Player ID": "25dc5862",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "33",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mr__Marameo",
+        "Player ID": "37726f32",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "33",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cammen",
+        "Player ID": "0afb7029",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "33",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dr. Kappa",
+        "Player ID": "560107ae",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "33",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "Matteo Ciroldi",
+        "Player ID": "70090500",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "33",
+        "Entrants": "41",
+        "Tier": "B"
+      },
+      {
+        "Player": "Lying Figure",
+        "Player ID": "1487f142",
+        "Event": "Only The Best 2026",
+        "Event ID": "only-the-best-2026",
+        "Date": "2026-07-11",
+        "Finish": "33",
+        "Entrants": "41",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "igm-summer-showdown-2026": {
+    "name": "IGM Summer Showdown 2026",
+    "date": "2026-07-10",
+    "slug": "igm-summer-showdown-2026",
+    "Tier": "B",
+    "Entrants": "36",
+    "results": [
+      {
+        "Player": "LinkNova",
+        "Player ID": "ea574546",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "1",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "damigod",
+        "Player ID": "3e038b05",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "2",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "CriticaLizard",
+        "Player ID": "fc7430e7",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "3",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Torpan",
+        "Player ID": "39c1b468",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "4",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Caldee",
+        "Player ID": "235f5775",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "5",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "deskmenu",
+        "Player ID": "ff4f650a",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "5",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Skyozer",
+        "Player ID": "fbaf8995",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "7",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Roozu",
+        "Player ID": "152833da",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "7",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "peon2",
+        "Player ID": "c8fc0ebe",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "9",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Neilo",
+        "Player ID": "bdda0289",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "9",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "gilga",
+        "Player ID": "7d578a4e",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "9",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mopsy",
+        "Player ID": "cb3c9249",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "9",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Tammie",
+        "Player ID": "a0769b7a",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "13",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "TakC",
+        "Player ID": "b535c966",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "13",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Nutrient",
+        "Player ID": "df9e7cac",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "13",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "QuirkyTurtle",
+        "Player ID": "ad6007b1",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "13",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "CamaradaPH",
+        "Player ID": "20976ddb",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "17",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Crab",
+        "Player ID": "6e0d79ed",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "17",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Brrrrk",
+        "Player ID": "346f3459",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "17",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Horripilation Andy",
+        "Player ID": "3e8964f8",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "17",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mr Potato",
+        "Player ID": "85b5b597",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "17",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Destino",
+        "Player ID": "39572e6a",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "17",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Wolfieon",
+        "Player ID": "26485024",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "17",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pennma",
+        "Player ID": "1f51c706",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "17",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Yreval",
+        "Player ID": "b2ffe6e7",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "25",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bamshizzler",
+        "Player ID": "6f1c51ad",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "25",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Shane D",
+        "Player ID": "8c012d15",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "25",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Peli",
+        "Player ID": "b8be32d2",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "25",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "morv",
+        "Player ID": "74f706c7",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "25",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Captain_Daz",
+        "Player ID": "7370238c",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "25",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "chatlh",
+        "Player ID": "a1cb94a8",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "25",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "chickinparm",
+        "Player ID": "339f5472",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "25",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "SeanistheDM",
+        "Player ID": "4652e985",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "33",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "BluE-WinG",
+        "Player ID": "992dbcfa",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "33",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Omigli",
+        "Player ID": "61019bd0",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "33",
+        "Entrants": "36",
+        "Tier": "B"
+      },
+      {
+        "Player": "Terridawg",
+        "Player ID": "18321745",
+        "Event": "IGM Summer Showdown 2026",
+        "Event ID": "igm-summer-showdown-2026",
+        "Date": "2026-07-11",
+        "Finish": "33",
+        "Entrants": "36",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "bam-16-battle-arena-melbourne-16": {
+    "name": "BAM 16: Battle Arena Melbourne 16",
+    "date": "2026-07-09",
+    "slug": "bam-16-battle-arena-melbourne-16",
+    "Tier": "S",
+    "Entrants": "230",
+    "results": [
+      {
+        "Player": "ひなお",
+        "Player ID": "1e05762a",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "1",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "cosa",
+        "Player ID": "2e561d93",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "2",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Micky",
+        "Player ID": "09e5dcc1",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "3",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Booce_Lee",
+        "Player ID": "84a88e6f",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "4",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "NL",
+        "Player ID": "bebd6de0",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "5",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "gachikun",
+        "Player ID": "7fc0306f",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "5",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Tokido",
+        "Player ID": "a4c7c2d4",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "7",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "NoahTheProdigy",
+        "Player ID": "27053e88",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "7",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Kilzyou",
+        "Player ID": "dcd53ca7",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "9",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "2BASSA",
+        "Player ID": "d8c5c1e8",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "9",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "kincho",
+        "Player ID": "c5bc27ca",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "9",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Kawano",
+        "Player ID": "84491299",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "9",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Higuchi",
+        "Player ID": "fee94c73",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "13",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Ryukichi",
+        "Player ID": "9f36f82b",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "13",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "NuckleDu",
+        "Player ID": "71b98b1d",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "13",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "DakCorgi",
+        "Player ID": "c3d317d5",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "13",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Dual Kevin",
+        "Player ID": "88d3f20e",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "17",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Shuto",
+        "Player ID": "b66813f3",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "17",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Dogura",
+        "Player ID": "2464d654",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "17",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Jr.",
+        "Player ID": "126a661a",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "17",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "kobayan",
+        "Player ID": "ef64257e",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "17",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Chris Wong",
+        "Player ID": "a3a19505",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "17",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Wabiichi",
+        "Player ID": "e14bf28c",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "17",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "moke",
+        "Player ID": "47e6da2a",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "17",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "taizen",
+        "Player ID": "f0932bb9",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "25",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "KEI.B",
+        "Player ID": "36b29fd8",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "25",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "タンタンメン",
+        "Player ID": "8b487f7d",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "25",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "HotDog29",
+        "Player ID": "e9050ed0",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "25",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Tachikawa",
+        "Player ID": "c68eeb1f",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "25",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "elieatscrayons",
+        "Player ID": "f2735ee9",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "25",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Jazzy",
+        "Player ID": "b49a1cf3",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "25",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "DOORKNOBS",
+        "Player ID": "bef7ec03",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "25",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Enzo",
+        "Player ID": "9cc42fd3",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "33",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "pugera",
+        "Player ID": "9594efe4",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "33",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Itabashi Zangief",
+        "Player ID": "c46d6f76",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "33",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Sahara.",
+        "Player ID": "a0062bed",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "33",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "MOV",
+        "Player ID": "7b5563a0",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "33",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Eltannousss",
+        "Player ID": "8d722992",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "33",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Ryusei",
+        "Player ID": "6f9ebc42",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "33",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "NARIKUN",
+        "Player ID": "4802c21b",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "33",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Samurai",
+        "Player ID": "5b98b446",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "33",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "YAS",
+        "Player ID": "fabefccb",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "33",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Momochi",
+        "Player ID": "7b2d35d2",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "33",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "kuromame",
+        "Player ID": "ab0f03bd",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "33",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Koopa",
+        "Player ID": "eb434c23",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "33",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Antwerp",
+        "Player ID": "5a229d33",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "33",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "kingsvega",
+        "Player ID": "c0e4c985",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "33",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Mago",
+        "Player ID": "980ad764",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "33",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Mondubammy",
+        "Player ID": "1021a2f2",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "49",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Yuto",
+        "Player ID": "8b55a8c8",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "49",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Yude",
+        "Player ID": "493706e5",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "49",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Keekuma",
+        "Player ID": "c921a066",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "49",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Zero Emotions",
+        "Player ID": "4d0261b6",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "49",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "orarin",
+        "Player ID": "993a7906",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "49",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "gugubird",
+        "Player ID": "7007ae06",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "49",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "June Meline",
+        "Player ID": "310a1a67",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "49",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Johnny",
+        "Player ID": "18f9cd76",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "49",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "chill",
+        "Player ID": "5d55b502",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "49",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "FREESER",
+        "Player ID": "01b59b4f",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "49",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Rumours",
+        "Player ID": "446b52d1",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "49",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "ZEDDDDDDDDDD",
+        "Player ID": "04f145be",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "49",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "ROF",
+        "Player ID": "448d4eb8",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "49",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Yashi846",
+        "Player ID": "f2cd9f79",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "49",
+        "Entrants": "230",
+        "Tier": "S"
+      },
+      {
+        "Player": "Kendrick",
+        "Player ID": "1ef06b6b",
+        "Event": "BAM 16: Battle Arena Melbourne 16",
+        "Event ID": "bam-16-battle-arena-melbourne-16",
+        "Date": "2026-07-10",
+        "Finish": "49",
+        "Entrants": "230",
+        "Tier": "S"
+      }
+    ],
+    "isArchived": false
+  },
+  "dream-con-championship-series-2026": {
+    "name": "Dream Con Championship Series 2026",
+    "date": "2026-07-09",
+    "slug": "dream-con-championship-series-2026",
+    "Tier": "B",
+    "Entrants": "96",
+    "results": [
+      {
+        "Player": "Sledge",
+        "Player ID": "c276aed2",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "1",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Stealth",
+        "Player ID": "81fbeef0",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "2",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "big mo dilly",
+        "Player ID": "af88c91a",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "3",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "xNightMareEffecT",
+        "Player ID": "7e43b07e",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "4",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Chino",
+        "Player ID": "c38d57c0",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "5",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Chip",
+        "Player ID": "13e5fc49",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "5",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Frostbite",
+        "Player ID": "e5017733",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "7",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Teiga",
+        "Player ID": "1d4a9adc",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "7",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "SICKLE",
+        "Player ID": "92472c1a",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "9",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "HomieswithJesus",
+        "Player ID": "45e68baa",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "9",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jueks",
+        "Player ID": "91696708",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "9",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "aldofight",
+        "Player ID": "75ac8924",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "9",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pàtryk",
+        "Player ID": "7b4ecb5c",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "13",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Remembered",
+        "Player ID": "f4059e60",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "13",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "2D",
+        "Player ID": "b593251d",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "13",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Møkū",
+        "Player ID": "03ff73cf",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "13",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Doleorian",
+        "Player ID": "91f92e7b",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "17",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "2eZ",
+        "Player ID": "2a656c8a",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "17",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "ThaRuffProphet",
+        "Player ID": "693174ed",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "17",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "BlackDiamondGMZ",
+        "Player ID": "2fc653a4",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "17",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Vaxtrum",
+        "Player ID": "217086b9",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "17",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "PaytonFGC",
+        "Player ID": "c85d2aee",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "17",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "LegendaryyPred",
+        "Player ID": "35188f31",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "17",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Insanity",
+        "Player ID": "1833ce39",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "17",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Chaos_King",
+        "Player ID": "16acb594",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "25",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Prometheus",
+        "Player ID": "6614bd4b",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "25",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ketchupp",
+        "Player ID": "128068e1",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "25",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mo",
+        "Player ID": "94ebe515",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "25",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Diddy Sinatra",
+        "Player ID": "cc5bc5a4",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "25",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "TECH",
+        "Player ID": "51bad29d",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "25",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "ApexScrub",
+        "Player ID": "1a403160",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "25",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "JayGeorgeM_20z",
+        "Player ID": "97a29763",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "25",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Yang Wen-Li",
+        "Player ID": "88697d54",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "33",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "GhostInABox",
+        "Player ID": "6289f51d",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "33",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Forever King",
+        "Player ID": "d8baa430",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "33",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Coachtex",
+        "Player ID": "f70fcb58",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "33",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "meyerpark",
+        "Player ID": "62af5a87",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "33",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "QuadtheGod",
+        "Player ID": "62c59539",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "33",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Shadow 20z",
+        "Player ID": "38603155",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "33",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "KingSteevenson",
+        "Player ID": "96d7d54b",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "33",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Gooby Goop",
+        "Player ID": "gooby-goop",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "33",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "THUG",
+        "Player ID": "22a09f5d",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "33",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "kirbymasterplays",
+        "Player ID": "dd847118",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "33",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Harmon.the.boy",
+        "Player ID": "0be71b1e",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "33",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ashlielol",
+        "Player ID": "ashlielol",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "33",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Master Shin Ryu",
+        "Player ID": "87a6db10",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "33",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Phenomenon",
+        "Player ID": "f2787d19",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "33",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Oldhead_Choso",
+        "Player ID": "2d188e7c",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "33",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Aaronkiri",
+        "Player ID": "82fc715e",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "49",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "FirstClassWill",
+        "Player ID": "8036bac7",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "49",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "StrykerCrown",
+        "Player ID": "f77d57a0",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "49",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "GrantIV",
+        "Player ID": "grantiv",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "49",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "LowElo",
+        "Player ID": "39c22bd7",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "49",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "SirTwan",
+        "Player ID": "d5d085f8",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "49",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Moe2Smoove",
+        "Player ID": "7584aeee",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "49",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "SGN_NECALLI",
+        "Player ID": "2870fd7f",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "49",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Flacko",
+        "Player ID": "5d5fe922",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "49",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pink Giratina",
+        "Player ID": "0a619c6b",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "49",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Yungy",
+        "Player ID": "97ef2123",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "49",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "LTG1995z",
+        "Player ID": "b8903c4d",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "49",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "DevBone",
+        "Player ID": "8762f262",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "49",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "Striker",
+        "Player ID": "2e0a21e3",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "49",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "CrispyFajita",
+        "Player ID": "b0fa99d7",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "49",
+        "Entrants": "96",
+        "Tier": "B"
+      },
+      {
+        "Player": "DragonSpirit",
+        "Player ID": "6ab29fd3",
+        "Event": "Dream Con Championship Series 2026",
+        "Event ID": "dream-con-championship-series-2026",
+        "Date": "2026-07-10",
+        "Finish": "49",
+        "Entrants": "96",
         "Tier": "B"
       }
     ],
