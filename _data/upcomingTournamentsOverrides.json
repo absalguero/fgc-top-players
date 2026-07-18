@@ -1,4 +1,25 @@
 {
+  "beast-in-the-east-9": {
+    "name": "Beast in the East 9",
+    "slug": "beast-in-the-east-9",
+    "startAt": 1784246400,
+    "endAt": 1784505600,
+    "startDate": "2026-07-17",
+    "endDate": "2026-07-19",
+    "dates": "Jul 17-19, 2026",
+    "location": "1610 Coliseum Dr, Hampton, VA 23666",
+    "venueName": "Hampton Roads Convention Center",
+    "url": "https://bitegaming.org/",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "<p><strong>Beast in the East</strong>, known as BITE, returns for its ninth edition as Hampton Roads' largest gaming festival, running a full weekend of tournaments, free-play arcade cabinets, vendor booths, panels, and live performances at the Hampton Roads Convention Center. The festival blends fighting games with a well-known dance game scene, running titles like DDR, Pump It Up, and StepManiaX alongside its FGC lineup.</p><h3>Street Fighter 6 Bracket</h3><p><strong>Street Fighter 6</strong> runs as part of a fighting game lineup that in past years has included <em>Tekken 8</em>, <em>Fatal Fury: City of the Wolves</em>, <em>Guilty Gear -STRIVE-</em>, <em>Granblue Fantasy Versus: Rising</em>, and legacy titles such as <em>Street Fighter III: 3rd Strike</em> and <em>Super Street Fighter II Turbo</em>, alongside Tekken, Soulcalibur, and Virtua Fighter side brackets. Tournament brackets run through start.gg, with matches held on optimized PC setups across the convention center's exhibit space.</p><h3>Registration and Venue</h3><p>A weekend badge covering full tournament, arcade, and vendor access runs $85, with tournament registration handled separately through the event's start.gg page. The official hotel is the Embassy Suites by Hilton Hampton Roads Convention Center, connected to the venue by a covered walkway. Attendees can fly into either Norfolk International Airport or Newport News/Williamsburg International Airport.</p>",
+    "notablePlayers": [],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
 "s-factor-x3": {
     "name": "S Factor X3",
     "slug": "s-factor-x3",
