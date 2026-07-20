@@ -76218,5 +76218,2435 @@
       }
     ],
     "isArchived": false
+  },
+  "beast-in-the-east-9": {
+    "name": "Beast in the East 9",
+    "date": "2026-07-17",
+    "slug": "beast-in-the-east-9",
+    "Tier": "B",
+    "Entrants": "89",
+    "results": [
+      {
+        "Player": "ThatKidAusten",
+        "Player ID": "6422cf7b",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "1",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "Child233",
+        "Player ID": "a2f47cca",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "2",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "Docmorales24",
+        "Player ID": "4c6d1e01",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "3",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ludovic",
+        "Player ID": "6c95b6ad",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "4",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "UncleWreck",
+        "Player ID": "ed89aea2",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "5",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "John A Falcon",
+        "Player ID": "50187a51",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "5",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "UltraLightBeam",
+        "Player ID": "55db5964",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "7",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "DollaBillDaG",
+        "Player ID": "3b3a6f11",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "7",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "Shinku 101",
+        "Player ID": "766d340f",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "9",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "TropicTrickster",
+        "Player ID": "493cba3e",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "9",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "Vesetnet",
+        "Player ID": "0526ef48",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "9",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "Plaquita",
+        "Player ID": "f0802c11",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "9",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "OmegaJSM",
+        "Player ID": "5d5d2307",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "13",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "SEATEA",
+        "Player ID": "03ef7c01",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "13",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "CowOfBunga",
+        "Player ID": "f68054d2",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "13",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "Black Yokai",
+        "Player ID": "6c8d4ca2",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "13",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "VickiViper",
+        "Player ID": "ef66a784",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "17",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pursuit",
+        "Player ID": "96c9bfc9",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "17",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "Y0ungShoto",
+        "Player ID": "12429649",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "17",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ken P",
+        "Player ID": "bcdc37b1",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "17",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "AkumaG",
+        "Player ID": "8253b8fd",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "17",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "AceUnlimited",
+        "Player ID": "16772b52",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "17",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "Koin",
+        "Player ID": "50c35282",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "17",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "EntertheblendeR",
+        "Player ID": "c42f9535",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "17",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jager",
+        "Player ID": "6e894e1c",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "25",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "SurgingStormGG",
+        "Player ID": "d830eb79",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "25",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "mango",
+        "Player ID": "05285181",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "25",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "ColdWeatherr",
+        "Player ID": "eb423244",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "25",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "Olmec",
+        "Player ID": "a2da042c",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "25",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "DankleKankle",
+        "Player ID": "5dbd34a0",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "25",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "ustinodj",
+        "Player ID": "54718e9f",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "25",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "CJ S",
+        "Player ID": "4f9e79ab",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "25",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "RuDaGawd",
+        "Player ID": "9788d23f",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "Slushbucket",
+        "Player ID": "208b14f7",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "SpencertheSavage",
+        "Player ID": "c7ec0387",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "Lozito",
+        "Player ID": "8c2a28f6",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "AzureHalcyon",
+        "Player ID": "5486c279",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "Stuf",
+        "Player ID": "c7bb3e03",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ricky S",
+        "Player ID": "0f21700b",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "bebop306",
+        "Player ID": "c3d8a7d4",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "Buka.",
+        "Player ID": "8270af76",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "BasedJersh",
+        "Player ID": "e6997897",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "Psychout",
+        "Player ID": "12e03335",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "Skate",
+        "Player ID": "2023f8b3",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "Traestarr",
+        "Player ID": "1d70c185",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "Snydz",
+        "Player ID": "93bd570c",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "TricksterPriest",
+        "Player ID": "e18cb721",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "NunieNunez",
+        "Player ID": "nunienunez",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "Losermcmuffin",
+        "Player ID": "c17eccc9",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "Lanimal",
+        "Player ID": "5a2f5fd5",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cerea1ki11er",
+        "Player ID": "cf5b510d",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "gavin_xi",
+        "Player ID": "272c1dfb",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "daRockReaper",
+        "Player ID": "8ae641e6",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "Adwins",
+        "Player ID": "38633c5a",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dirty Llama",
+        "Player ID": "ee89dfd5",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "SneakNC",
+        "Player ID": "32b96072",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "BaBster",
+        "Player ID": "f633b341",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "B1ackMachismo",
+        "Player ID": "ba8140f1",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "Petrichor",
+        "Player ID": "0609e31a",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "Taeng",
+        "Player ID": "4c80312c",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ascent",
+        "Player ID": "b5eb4fe0",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "SilencedGhost",
+        "Player ID": "7a4e0d8d",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "house987",
+        "Player ID": "ebff8f06",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "89",
+        "Tier": "B"
+      },
+      {
+        "Player": "SpaceDandy",
+        "Player ID": "64466ddb",
+        "Event": "Beast in the East 9",
+        "Event ID": "beast-in-the-east-9",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "89",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "boston-blue-beat-beach-episode-2026": {
+    "name": "Boston Blue Beat: Beach Episode 2026",
+    "date": "2026-07-17",
+    "slug": "boston-blue-beat-beach-episode-2026",
+    "Tier": "B",
+    "Entrants": "95",
+    "results": [
+      {
+        "Player": "Mashedpotatoes",
+        "Player ID": "e2863ef5",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "1",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "JaviG",
+        "Player ID": "cb18e01f",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "2",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "morg",
+        "Player ID": "f5fbbe04",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "3",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ding",
+        "Player ID": "66248944",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "4",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "KINGMAN",
+        "Player ID": "1fd4b7bd",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "5",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "L30",
+        "Player ID": "9aeca8ca",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "5",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ortega",
+        "Player ID": "b8d2e608",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "7",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Erebus",
+        "Player ID": "1ae330ae",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "7",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Resident_",
+        "Player ID": "ae945531",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "9",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "NoaNoH",
+        "Player ID": "0c054a27",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "9",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bass",
+        "Player ID": "2b573037",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "9",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Wallaby",
+        "Player ID": "222451f7",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "9",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Redthunder",
+        "Player ID": "1ec3d22a",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "13",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "NellBomb",
+        "Player ID": "9c8b9dc3",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "13",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Alex Smith",
+        "Player ID": "5dcfd81b",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "13",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "alsatian",
+        "Player ID": "4aae2d7c",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "13",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Winters",
+        "Player ID": "0e0ecd15",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "17",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "BlackDiamondGMZ",
+        "Player ID": "2fc653a4",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "17",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Levity",
+        "Player ID": "e3dcd129",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "17",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Zippy",
+        "Player ID": "ed3fca70",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "17",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pilch",
+        "Player ID": "91b003ec",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "17",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "808",
+        "Player ID": "22cb2127",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "17",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Sulk Hogan",
+        "Player ID": "6f083e44",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "17",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jonthehero",
+        "Player ID": "bfda4877",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "17",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Grand Pastor J",
+        "Player ID": "f5748e85",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "25",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jim_Nasium",
+        "Player ID": "7c3dce0c",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "25",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "MonkeyBizness",
+        "Player ID": "d7bf9798",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "25",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "dreamsuitee",
+        "Player ID": "f0d3a40d",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "25",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Hanamai",
+        "Player ID": "d5c65385",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "25",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "FailedPacing",
+        "Player ID": "252ce9af",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "25",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Chippy",
+        "Player ID": "54a2d470",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "25",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "dawa",
+        "Player ID": "70aeef33",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "25",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "magnolia",
+        "Player ID": "bc2e941f",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "/^-ᆺ-マ",
+        "Player ID": "7c80a6aa",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "VolcanicAkuma",
+        "Player ID": "bb1eaaa2",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jaouisha",
+        "Player ID": "ffe5454d",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Nacho51",
+        "Player ID": "69abb023",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "catdaddy",
+        "Player ID": "d3dce39b",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Flayne",
+        "Player ID": "0de74478",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Paully",
+        "Player ID": "e35fb79d",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "BurpoMode",
+        "Player ID": "0424825d",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Flying_Beagle",
+        "Player ID": "84dc5a56",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Fl_ffy",
+        "Player ID": "a27ab51b",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Nogarremi",
+        "Player ID": "3afd8bfc",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Davman9165",
+        "Player ID": "ff57bf57",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "cat_fancier",
+        "Player ID": "2d27a81f",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "SnakeofTalins",
+        "Player ID": "3d0fbeab",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jamishio",
+        "Player ID": "b5bc20e5",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Trinhaucracy",
+        "Player ID": "54bdb6f2",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Splatoon Enjoyer",
+        "Player ID": "4c4385f9",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jam Stunna",
+        "Player ID": "2a3065a9",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "SpaceBoy",
+        "Player ID": "c6744150",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Magnatoon",
+        "Player ID": "664afcb6",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "MarJeezy",
+        "Player ID": "2753e9fd",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Zero",
+        "Player ID": "84a74f7e",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "semi",
+        "Player ID": "6abfa0f8",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Carlito",
+        "Player ID": "c913151c",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Megi",
+        "Player ID": "e16b5c2c",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Nushinator",
+        "Player ID": "c5e12ea0",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Hawk",
+        "Player ID": "68044ace",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Hizzle",
+        "Player ID": "d1a89cf5",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "MDiggy",
+        "Player ID": "cc5c8a39",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Xen",
+        "Player ID": "5b9d95ee",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "95",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cheesasaurus",
+        "Player ID": "2bcbd887",
+        "Event": "Boston Blue Beat: Beach Episode 2026",
+        "Event ID": "boston-blue-beat-beach-episode-2026",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "95",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "the-fight-2026": {
+    "name": "THE FIGHT 2026",
+    "date": "2026-07-17",
+    "slug": "the-fight-2026",
+    "Tier": "B",
+    "Entrants": "47",
+    "results": [
+      {
+        "Player": "Limestone",
+        "Player ID": "83f28f66",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "1",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "JustShadow",
+        "Player ID": "3b70c4bc",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "2",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "ioRoS",
+        "Player ID": "32a40c83",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "3",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "Px-Zaito240",
+        "Player ID": "0b655753",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "4",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "JUAN2425",
+        "Player ID": "d2ca2c2c",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "5",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kendenryu",
+        "Player ID": "0aef9891",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "5",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "Nueve",
+        "Player ID": "28bd7e7a",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "7",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "ItsWifaner",
+        "Player ID": "df0c0f47",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "7",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "Josluba",
+        "Player ID": "33059624",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "9",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bencok99",
+        "Player ID": "5f097862",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "9",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "Steve_p",
+        "Player ID": "f116bdbe",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "9",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "KingGeedorah",
+        "Player ID": "1d3c8964",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "9",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ulrik",
+        "Player ID": "8e1cbc39",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "13",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "Garudoz",
+        "Player ID": "94f71fa8",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "13",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mathius2151",
+        "Player ID": "db24c9c6",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "13",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "jvegagir",
+        "Player ID": "eead94ab",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "13",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "Siryx",
+        "Player ID": "42c3504f",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "17",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "200dcilantro",
+        "Player ID": "122b6fc7",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "17",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "Touiji",
+        "Player ID": "118004cb",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "17",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "TSDGXCFGC Fredy castro",
+        "Player ID": "0e753b3e",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "17",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "RagingDemon",
+        "Player ID": "fc039fb4",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "17",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "MD Fragminn",
+        "Player ID": "c27e025b",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "17",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kyota",
+        "Player ID": "6e269238",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "17",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "SolidSkan",
+        "Player ID": "f0146eca",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "17",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "rembecuadro",
+        "Player ID": "3300e7f8",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "25",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "Yamibakura",
+        "Player ID": "yamibakura",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "25",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "Gustavote",
+        "Player ID": "f89f52fb",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "25",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "Will14m",
+        "Player ID": "9f656903",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "25",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "Predator_X",
+        "Player ID": "db90254a",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "25",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "LeitherGT_COL",
+        "Player ID": "d717feb5",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "25",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "Juanxjk",
+        "Player ID": "9a7375e5",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "25",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "Deacon Zarathos",
+        "Player ID": "9ed04897",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "25",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cast_Kenneth",
+        "Player ID": "6577a7da",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "Skyresk",
+        "Player ID": "b10d1f4d",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "RyuMasta",
+        "Player ID": "3142e7b9",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "GrayHoodie",
+        "Player ID": "41ced678",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "Roar",
+        "Player ID": "71760bf6",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "HB",
+        "Player ID": "88e97803",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pipepala",
+        "Player ID": "9c2679fb",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "PezKoito",
+        "Player ID": "44a5ec05",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "Capitán Caracol",
+        "Player ID": "9f6b6bea",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "Gappy",
+        "Player ID": "bae84a1c",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mudfrieza",
+        "Player ID": "fe350901",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "G1DE0N",
+        "Player ID": "919e0c7d",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "BLACKJUNGLE",
+        "Player ID": "8f1ac7d4",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pinya",
+        "Player ID": "c031668e",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "47",
+        "Tier": "B"
+      },
+      {
+        "Player": "David",
+        "Player ID": "a6458319",
+        "Event": "THE FIGHT 2026",
+        "Event ID": "the-fight-2026",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "47",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "s-factor-x3": {
+    "name": "S Factor X3",
+    "date": "2026-07-17",
+    "slug": "s-factor-x3",
+    "Tier": "B",
+    "Entrants": "335",
+    "results": [
+      {
+        "Player": "LUGABO",
+        "Player ID": "9242d9e3",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "1",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "MJ_Gama",
+        "Player ID": "4484e542",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "2",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "lSecto",
+        "Player ID": "9546ed0d",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "3",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Hokuto",
+        "Player ID": "3fec3c89",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "4",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "KUSANAGI (MX)",
+        "Player ID": "208b0900",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "5",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jazdero",
+        "Player ID": "af303b7c",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "5",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rookie",
+        "Player ID": "50102a2e",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "7",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Excelancer",
+        "Player ID": "e3e4f8d6",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "7",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Liquid_o",
+        "Player ID": "bd0126eb",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "9",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pepikof",
+        "Player ID": "b710f17d",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "9",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "evankapibara",
+        "Player ID": "07666c4b",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "9",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "RoYeR",
+        "Player ID": "de57804f",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "9",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ozz",
+        "Player ID": "4795112e",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "13",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cast_Kenneth",
+        "Player ID": "6577a7da",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "13",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rey del Tekino",
+        "Player ID": "3ffd81ac",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "13",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "MrLeono",
+        "Player ID": "8c171b67",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "13",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "HitoHendrix",
+        "Player ID": "c7524955",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "17",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "AxL-",
+        "Player ID": "43824b1a",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "17",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "lordjirall",
+        "Player ID": "1de7d591",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "17",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Angel Ortiz",
+        "Player ID": "5167d264",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "17",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "JBernii",
+        "Player ID": "276af02a",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "17",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Moñañu",
+        "Player ID": "19951b0a",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "17",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "JCD",
+        "Player ID": "884c82d7",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "17",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "LLORCO",
+        "Player ID": "59a9b780",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "17",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "MrDino023",
+        "Player ID": "7b0d3b8a",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "25",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Milo Scorpius",
+        "Player ID": "7309efb6",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "25",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "zico",
+        "Player ID": "d07bfd28",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "25",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "EGHCO",
+        "Player ID": "ee9946fa",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "25",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Zaul",
+        "Player ID": "cbccc98d",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "25",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "BERSERKER",
+        "Player ID": "adda58b6",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "25",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Schmoo",
+        "Player ID": "08b09b22",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "25",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Synx",
+        "Player ID": "1ed00bd4",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "25",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "ZIDANICO",
+        "Player ID": "20827d1f",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Starlight",
+        "Player ID": "a47dd42d",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "TCF Gama",
+        "Player ID": "e4b5b2a1",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "ZeKKen",
+        "Player ID": "ee31ff5a",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Chano",
+        "Player ID": "aa183120",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "RozuHebi",
+        "Player ID": "d6e04092",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Gustavgen8",
+        "Player ID": "db787dcc",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "ZombieAzteka",
+        "Player ID": "39b56c28",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "ZakXඞ",
+        "Player ID": "dff91c8d",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "peach jelly",
+        "Player ID": "80dd6b64",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Charly_IMP",
+        "Player ID": "d5063a53",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "MykeNava",
+        "Player ID": "632b53ce",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Druller",
+        "Player ID": "647dc25b",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Gabeheart",
+        "Player ID": "b30fefbb",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "KIM_APB",
+        "Player ID": "d08b20e5",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Yeriko",
+        "Player ID": "933516f3",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "33",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Royalclaude",
+        "Player ID": "65935324",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "m0tsi",
+        "Player ID": "f18d8c91",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "AMNE",
+        "Player ID": "1c2a538c",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kaled Keyter",
+        "Player ID": "fe21d098",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "ADRIELLOW",
+        "Player ID": "0aeb02d4",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Aioria",
+        "Player ID": "24c79133",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Trapnest",
+        "Player ID": "e0fbdd2f",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Danielsan",
+        "Player ID": "788c95b0",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ratta Miada",
+        "Player ID": "e2f33cde",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Machapan",
+        "Player ID": "3c1447fa",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "IK-KIL",
+        "Player ID": "9ab37654",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mx Munchies",
+        "Player ID": "80f1f4c3",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jerzegg",
+        "Player ID": "1efb7952",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mangogox",
+        "Player ID": "ea27ab68",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "cubaine",
+        "Player ID": "dd876603",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "335",
+        "Tier": "B"
+      },
+      {
+        "Player": "Luis Pleq",
+        "Player ID": "80187bd2",
+        "Event": "S Factor X3",
+        "Event ID": "s-factor-x3",
+        "Date": "2026-07-18",
+        "Finish": "49",
+        "Entrants": "335",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
   }
 }

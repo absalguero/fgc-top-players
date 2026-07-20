@@ -1,76 +1,4 @@
 {
-  "s-factor-x3": {
-    "name": "S Factor X3",
-    "slug": "s-factor-x3",
-    "startAt": 1784390400,
-    "endAt": 1784525400,
-    "startDate": "2026-07-18",
-    "endDate": "2026-07-19",
-    "dates": "Jul 18-19, 2026",
-    "location": "Zona de los Fuertes, Cívica 5 de Mayo, 72260 Heroica Puebla de Zaragoza, Pue., México",
-    "venueName": "",
-    "url": "https://www.start.gg/tournament/s-factor-x3",
-    "tier": "S",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "S Factor X3 is scheduled for Jul 18-19, 2026 in Zona de los Fuertes, Cívica 5 de Mayo, 72260 Heroica Puebla de Zaragoza, Pue., México. Featuring Street Fighter 6. Registered top players include LUGABO, MJ_Gama.",
-    "notablePlayers": [
-      "LUGABO",
-      "MJ_Gama"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
-  "grapht-cup-2026-b-tokyo": {
-    "name": "GRAPHT CUP 2026 東京予選B Tokyo",
-    "slug": "grapht-cup-2026-b-tokyo",
-    "startAt": 1784336400,
-    "endAt": 1784372400,
-    "startDate": "2026-07-18",
-    "endDate": "2026-07-18",
-    "dates": "Jul 18, 2026",
-    "location": "日本、東京都",
-    "venueName": "",
-    "url": "https://www.start.gg/tournament/grapht-cup-2026-b-tokyo",
-    "tier": "B",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "GRAPHT CUP 2026 東京予選B Tokyo is scheduled for Jul 18, 2026 in 日本、東京都. Featuring Street Fighter 6. Registered top players include kincho, rangasamy.",
-    "notablePlayers": [
-      "kincho",
-      "rangasamy"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
-  "fgc-street-vol-1": {
-    "name": "FGC STREET VOL.1",
-    "slug": "fgc-street-vol-1",
-    "startAt": 1784480400,
-    "endAt": 1784519940,
-    "startDate": "2026-07-19",
-    "endDate": "2026-07-19",
-    "dates": "Jul 19, 2026",
-    "location": "50 Bowery, New York, NY 10013, USA",
-    "venueName": "",
-    "url": "https://www.start.gg/tournament/fgc-street-vol-1",
-    "tier": "B",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "FGC STREET VOL.1 is scheduled for Jul 19, 2026 in 50 Bowery, New York, NY 10013, USA. Featuring Street Fighter 6. Registered top players include GuyGuy, Kharsonist.",
-    "notablePlayers": [
-      "GuyGuy",
-      "Kharsonist"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
   "esports-world-cup-2026-street-fighter-6-lcq": {
     "name": "Esports World Cup 2026: Street Fighter 6 - LCQ",
     "slug": "esports-world-cup-2026-street-fighter-6-lcq",
@@ -124,7 +52,11 @@
       "Hibiki",
       "Momochi",
       "Chris Wong",
-      "YAS"
+      "Nauman",
+      "Bonchan",
+      "Ritchy",
+      "Takamura",
+      "Beslem"
     ],
     "isArchived": false,
     "excludeFromSite": false
@@ -168,9 +100,11 @@
     "game": "Street Fighter 6",
     "streamLink": "",
     "scheduleLink": "",
-    "description": "Get On My Level 2026 - Canadian Fighting Game Championships is scheduled for Jul 31-Aug 2, 2026 in 5875 Airport Rd, Mississauga, ON L4V 1N1, Canada. Featuring Street Fighter 6. Registered top players include Zykles.",
+    "description": "Get On My Level 2026 - Canadian Fighting Game Championships is scheduled for Jul 31-Aug 2, 2026 in 5875 Airport Rd, Mississauga, ON L4V 1N1, Canada. Featuring Street Fighter 6. Registered top players include Docmorales24, Zykles, Slice.",
     "notablePlayers": [
-      "Zykles"
+      "Docmorales24",
+      "Zykles",
+      "Slice"
     ],
     "isArchived": false,
     "excludeFromSite": false
