@@ -31207,7 +31207,7 @@
         "Tier": "A"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "sodium-showdown-xxiii": {
     "name": "Sodium Showdown XXIII",
@@ -31647,7 +31647,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "evo-vegas-2025": {
     "name": "Evo Vegas 2025",
