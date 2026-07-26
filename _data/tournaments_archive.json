@@ -78648,5 +78648,445 @@
       }
     ],
     "isArchived": false
+  },
+  "hip-hopkick-2026": {
+    "name": "Hip-HopKick 2026",
+    "date": "2026-07-24",
+    "slug": "hip-hopkick-2026",
+    "Tier": "B",
+    "Entrants": "43",
+    "results": [
+      {
+        "Player": "Stealth",
+        "Player ID": "81fbeef0",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "1",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Grustle Grindset",
+        "Player ID": "ae0040b6",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "2",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Beluga",
+        "Player ID": "f21b6099",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "3",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Blues",
+        "Player ID": "da9c05e4",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "4",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jamestrombone",
+        "Player ID": "a613d6db",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "5",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "kenziestar",
+        "Player ID": "492cc9c1",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "5",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pickle Stein.EX",
+        "Player ID": "8adc8c9f",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "7",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "ThaRuffProphet",
+        "Player ID": "693174ed",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "7",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Moe",
+        "Player ID": "f58f42fe",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "9",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "clairo armpits",
+        "Player ID": "0fdcd01b",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "9",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "The Freakler",
+        "Player ID": "07cad0df",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "9",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "S.N.FlapJack",
+        "Player ID": "c2eb664f",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "9",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Colboid",
+        "Player ID": "5d15f9c0",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "13",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": ".Lan",
+        "Player ID": "b594114b",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "13",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "YaboiT2",
+        "Player ID": "688648b9",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "13",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "cold ramen",
+        "Player ID": "5b45393c",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "13",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Lambchop",
+        "Player ID": "b4d62303",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "17",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "UncertifiedCritic",
+        "Player ID": "d6fff50a",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "17",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Quote.EX",
+        "Player ID": "cf643131",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "17",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Squiidd_pope",
+        "Player ID": "93fa3196",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "17",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Sighlence",
+        "Player ID": "cb298446",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "17",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "MrMcflufflekons",
+        "Player ID": "995a41b0",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "17",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "PersonalityMain",
+        "Player ID": "6c006936",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "17",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "izzy",
+        "Player ID": "7c8850c9",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "17",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Greasy",
+        "Player ID": "ff711fe7",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "25",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Clarence",
+        "Player ID": "4860f2c4",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "25",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "eetyourveggies",
+        "Player ID": "e9ae48e8",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "25",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jaded",
+        "Player ID": "1a799895",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "25",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "AmeriKame",
+        "Player ID": "1c26bae9",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "25",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "JujuCola",
+        "Player ID": "798716d2",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "25",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Xen",
+        "Player ID": "5b9d95ee",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "25",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jueks",
+        "Player ID": "91696708",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "25",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Goojuice",
+        "Player ID": "7d084dea",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "33",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Tolka",
+        "Player ID": "750462ba",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "33",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "ABLTLDME",
+        "Player ID": "54d61b50",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "33",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mr-MadGear",
+        "Player ID": "f2617b6a",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "33",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "B.G.",
+        "Player ID": "34fa0cee",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "33",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "loos",
+        "Player ID": "97b1f849",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "33",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cat of Culture",
+        "Player ID": "0cb5b6ce",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "33",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "TannTamo",
+        "Player ID": "4d73fc5d",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "33",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mr.Smooth",
+        "Player ID": "b5a2d44d",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "33",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Megatron",
+        "Player ID": "3fe507e1",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "33",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Fidel Stix",
+        "Player ID": "7979f034",
+        "Event": "Hip-HopKick 2026",
+        "Event ID": "hip-hopkick-2026",
+        "Date": "2026-07-25",
+        "Finish": "33",
+        "Entrants": "43",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
   }
 }

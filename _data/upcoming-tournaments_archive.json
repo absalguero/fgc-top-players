@@ -1,4 +1,27 @@
 {
+  "hip-hopkick-2026": {
+    "name": "Hip-HopKick 2026",
+    "slug": "hip-hopkick-2026",
+    "startAt": 1784991600,
+    "endAt": 1785041940,
+    "startDate": "2026-07-25",
+    "endDate": "2026-07-25",
+    "dates": "Jul 25, 2026",
+    "location": "2824 Main St, Dallas, TX 75226, USA",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/hip-hopkick-2026",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "<strong>Hip-HopKick 2026</strong> puts Street Fighter 6 players to the test in a single-day showdown, bringing together competitors for a bracket built around fast-paced, high-stakes matches.</p><p>Registration and the latest information are available on the official <strong>Start.gg</strong> event page.",
+    "notablePlayers": [
+      "Stealth"
+    ],
+    "isArchived": true,
+    "excludeFromSite": false
+  },
   "beast-in-the-east-9": {
     "name": "Beast in the East 9",
     "slug": "beast-in-the-east-9",

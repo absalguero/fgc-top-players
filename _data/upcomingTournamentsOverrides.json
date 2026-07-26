@@ -102,5 +102,74 @@
     "notablePlayers": [],
     "isArchived": false,
     "excludeFromSite": false
-}
+},
+  "umad-2026": {
+    "name": "UMAD 2026",
+    "slug": "umad-2026",
+    "startAt": 1787346000,
+    "endAt": 1787543940,
+    "startDate": "2026-08-21",
+    "endDate": "2026-08-23",
+    "dates": "Aug 21-23, 2026",
+    "location": "550 Rue Richmond, Montréal, QC H3J 1V3, Canada",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/umad-2026",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "<strong>UMAD 2026</strong> (Ultimate Montreal Airdashers) returns for another edition, bringing together the fighting game community for a multi-day celebration of competitive play across a wide lineup of titles, with Street Fighter 6 among the featured games.</p><p>Organized by the Montreal Airdashers, the event is known for its passionate community atmosphere. Registration and the latest information are available on the official <strong>Start.gg</strong> event page.",
+    "notablePlayers": [
+      "Zykles"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
+  "island-paradise-3": {
+    "name": "Island Paradise 3",
+    "slug": "island-paradise-3",
+    "startAt": 1789833600,
+    "endAt": 1789952400,
+    "startDate": "2026-09-19",
+    "endDate": "2026-09-20",
+    "dates": "Sep 19-20, 2026",
+    "location": "15305 S Dixie Hwy, Palmetto Bay, FL 33157, USA",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/island-paradise-3",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "<strong>Island Paradise 3</strong> marks the third edition of the South Florida tournament series, organized by <strong>SoFlo Dojo</strong> and drawing competitors for a weekend of Street Fighter 6 action.</p><p>Registration and the latest information are available on the official <strong>Start.gg</strong> event page.",
+    "notablePlayers": [
+      "Bloo"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
+  "drowning-pools-2026": {
+    "name": "Drowning Pools 2026",
+    "slug": "drowning-pools-2026",
+    "startAt": 1796464800,
+    "endAt": 1796508000,
+    "startDate": "2026-12-05",
+    "endDate": "2026-12-05",
+    "dates": "Dec 5, 2026",
+    "location": "Metropolitan Cathedral, Brownlow Hill, Liverpool L3 5TQ, UK",
+    "venueName": "Britannia Adelphi Hotel",
+    "url": "https://www.start.gg/tournament/drowning-pools-2026",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "<strong>Drowning Pools 2026</strong> brings the Merseyside FGC community together for a day of fighting game competition in Liverpool, with Street Fighter 6 featured alongside a wider multi-game lineup.</p><p>Registration and the latest information are available on the official <strong>Start.gg</strong> event page.",
+    "notablePlayers": [
+      "MysticSmash"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  }
 }
