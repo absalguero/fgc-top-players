@@ -29,4 +29,5 @@ module.exports = [
     { name: "C. Viper" },
     { name: "Alex" },
     { name: "Ingrid" },
+    { name: "Yasmine" },
 ];

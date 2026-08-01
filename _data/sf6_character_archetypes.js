@@ -79,7 +79,7 @@ module.exports = {
   "chun-li": {
     overview: "A technical all-rounder defined by superb normals and stance complexity.",
     playstyle_summary: "Chun-Li dominates footsies, converts stray hits into corner carry, and mixes opponents with stance pressure and high-low confirms.",
-    archetype: "Technical All-Rounder",
+    archetype: "Technical / All-Rounder",
     execution: "Very High",
     strengths: [
       { title: "Normals", description: "Exceptional poke range and hit priority." },
@@ -136,7 +136,7 @@ module.exports = {
   "e-honda": {
     overview: "A powerhouse who breaks zoning and dominates close-range exchanges with armor and command grabs.",
     playstyle_summary: "Honda bulldozes through projectiles, leverages armored specials, and enforces throw/strike conditioning once inside.",
-    archetype: "Pressure Brawler",
+    archetype: "Pressure / Brawler",
     execution: "Medium",
     strengths: [
       { title: "Anti-Zoning", description: "Armored Headbutt and large buttons beat projectiles." },
@@ -269,7 +269,7 @@ module.exports = {
   "kimberly": {
     overview: "A deceptive rushdown fighter who uses mobility and misdirection to overwhelm.",
     playstyle_summary: "Kimberly leverages dash cancels, spray can setups, and teleports for high-tempo, ambiguous offense.",
-    archetype: "Tricky Rushdown",
+    archetype: "Tricky / Rushdown",
     execution: "High",
     strengths: [
       { title: "Speed", description: "Exceptional ground and air mobility." },
@@ -288,7 +288,7 @@ module.exports = {
   "lily": {
     overview: "A stock-based grappler who powers up through Wind Stocks to enhance range and pressure.",
     playstyle_summary: "Lily builds stocks, then uses Condor Spire and Wind-powered specials for armored entries and mixups.",
-    archetype: "Stock Mix-up",
+    archetype: "Stock / Mix-up",
     execution: "Low",
     strengths: [
       { title: "Burst Damage", description: "Top-tier damage output with Wind Stocks." },
@@ -326,7 +326,7 @@ module.exports = {
   "manon": {
     overview: "A graceful hybrid grappler who builds Medal levels to enhance command grab potency.",
     playstyle_summary: "Manon’s strength escalates as she gains Medals, forcing the opponent to make perfect defensive calls.",
-    archetype: "Hybrid Grappler",
+    archetype: "Hybrid / Grappler",
     execution: "Low",
     strengths: [
       { title: "Medal Scaling", description: "Damage and pressure increase per Medal." },
@@ -383,7 +383,7 @@ module.exports = {
   "ryu": {
     overview: "A fundamentals-based shoto built on stable zoning and frame control.",
     playstyle_summary: "Ryu plays pure Street Fighter: footsies, spacing, and consistent reward through Drive Rush confirms and corner fireball control.",
-    archetype: "Balanced Shoto",
+    archetype: "Balanced / Shoto",
     execution: "Medium",
     strengths: [
       { title: "Consistency", description: "Solid at all ranges." },
@@ -569,6 +569,26 @@ module.exports = {
       { title: "Defensive Vulnerability", description: "Slow startup on her primary reversal options leaves her highly susceptible to safe jumps and tight setup pressure." }
     ],
     radar_stats: { Damage: 4, Health: 2, Mobility: 4, Zoning: 4, "Mix-up": 3 },
+    topPlayer: null
+  },
+
+  // --- YEAR 4 ADDITIONS ---
+  "yasmine": {
+    overview: "A karambit-wielding Eskrima rushdown fighter who escalates her offense through a self-triggered power-up state.",
+    playstyle_summary: "Yasmine closes distance behind her boomerang projectile and mobile knife pressure, then leans on Bayani Mode, an enhanced state triggered by landing specific moves, to power up her follow-up attacks and extend her mix-up sequences.",
+    archetype: "Rushdown / Mix-up",
+    execution: "High",
+    strengths: [
+      { title: "Bayani Mode Scaling", description: "Landing key moves like Alon or Talim ng Hangin triggers an enhanced state that boosts the performance and combo potential of her follow-up attacks." },
+      { title: "Layered Approach Tools", description: "Daloy ng Tubig closes distance and extends combos, Pangil sa Likuran is a boomerang projectile that can hit twice (three times on OD), and Mukha ng Langit is a jump-in mix-up between a forward swipe and an upside-down back hit." },
+      { title: "Reversal Option", description: "The Overdrive version of her Lipad ng Agila uppercut kicks is fully invincible, giving her a meter-based way out of pressure outside of Super Arts." }
+    ],
+    weaknesses: [
+      { title: "Bayani Mode Upkeep", description: "The buffed state is temporary unless sustained through her Level 2 Super (Nakatagong Lakas), so her damage and pressure output likely dips once it expires." },
+      { title: "Committal Projectile", description: "Her Pangil sa Likuran boomerang disappears if she gets hit while it is out, so throwing it carelessly can cost her the tool entirely." },
+      { title: "No Meterless Reversal", description: "Her invincible escape option (OD Lipad ng Agila) costs Drive/Super meter, leaving her without a free reversal when resources are low." }
+    ],
+    radar_stats: { Damage: 3, Health: 3, Mobility: 4, Zoning: 2, "Mix-up": 5 },
     topPlayer: null
   }
 };
