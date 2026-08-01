@@ -1,4 +1,25 @@
 {
+  "esports-world-cup-2026-sf6": {
+    "name": "Esports World Cup 2026",
+    "slug": "esports-world-cup-2026-sf6",
+    "startAt": 1785283200,
+    "endAt": 1785628800,
+    "startDate": "2026-07-29",
+    "endDate": "2026-08-01",
+    "dates": "Jul 29-Aug 1, 2026",
+    "location": "1 Place de la Porte de Versailles, 75015 Paris, France",
+    "venueName": "Paris Expo Porte de Versailles",
+    "url": "https://esportsworldcup.com/en/competitions/2026/street-fighter6",
+    "tier": "S+",
+    "prizes": "$1,000,000",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "<p>The <strong>Esports World Cup</strong> brings its Street Fighter 6 championship to Paris for 2026, relocating the tournament from its previous home in Riyadh as the wider EWC festival moves to the French capital for a seven-week run. The Street Fighter 6 bracket takes the stage at the <strong>Allianz Vault</strong>, a dedicated 1v1 arena inside Paris Expo Porte de Versailles built specifically for the intimate, close-quarters format that fighting games and chess events use at EWC.</p><h3>Format and Field</h3><p>Thirty-two players qualified through the Street Fighter League World Championship, Capcom Cup 12, DreamHack Birmingham, DreamHack Atlanta, Evo Japan, Combo Breaker, Evo 2026, and a six-player Last Chance Qualifier compete for a <strong>$1,000,000</strong> prize pool, with $250,000 going to the eventual champion. The event runs as a GSL-style group stage, splitting the field into four groups of eight in double-elimination brackets. The top four finishers from each group advance to the single-elimination Stage 2 bracket that decides the champion.</p><h3>Registration and Venue</h3><p>The Street Fighter 6 tournament is a closed invitational field with no open registration. The event runs alongside Tekken 8 and Fatal Fury: City of the Wolves as part of EWC's fighting game block, with the venue shift to Paris marking a new chapter for the festival after its prior years in Riyadh.</p>",
+    "notablePlayers": ["MenaRD", "Punk", "Yamaguchi", "ひなお", "xiaohai", "Kilzyou", "Shigematsu", "Higuchi", "kobayan", "Micky", "Blaz", "Sahara."],
+    "isArchived": true,
+    "excludeFromSite": false
+  },
   "esports-world-cup-2026-street-fighter-6-lcq": {
     "name": "Esports World Cup 2026: Street Fighter 6 - LCQ",
     "slug": "esports-world-cup-2026-street-fighter-6-lcq",
