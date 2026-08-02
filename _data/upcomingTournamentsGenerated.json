@@ -15,11 +15,59 @@
     "game": "Street Fighter 6",
     "streamLink": "",
     "scheduleLink": "",
-    "description": "Get On My Level 2026 - Canadian Fighting Game Championships is scheduled for Jul 31-Aug 2, 2026 in 5875 Airport Rd, Mississauga, ON L4V 1N1, Canada. Featuring Street Fighter 6. Registered top players include Docmorales24, Zykles, Slice.",
+    "description": "Get On My Level 2026 - Canadian Fighting Game Championships is scheduled for Jul 31-Aug 2, 2026 in 5875 Airport Rd, Mississauga, ON L4V 1N1, Canada. Featuring Street Fighter 6. Registered top players include Slice, Zykles, Docmorales24, Thunder DeLangis.",
     "notablePlayers": [
-      "Docmorales24",
+      "Slice",
       "Zykles",
-      "Slice"
+      "Docmorales24",
+      "Thunder DeLangis"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
+  "komit-arena-2026": {
+    "name": "KOMITÊ ARENA 2026",
+    "slug": "komit-arena-2026",
+    "startAt": 1785585600,
+    "endAt": 1785718800,
+    "startDate": "2026-08-01",
+    "endDate": "2026-08-02",
+    "dates": "Aug 1-2, 2026",
+    "location": "R. Galvão Bueno, 425 - Liberdade, São Paulo - SP, 01506-000, Brasil",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/komit-arena-2026",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "KOMITÊ ARENA 2026 is scheduled for Aug 1-2, 2026 in R. Galvão Bueno, 425 - Liberdade, São Paulo - SP, 01506-000, Brasil. Featuring Street Fighter 6. Registered top players include NotPedro.",
+    "notablePlayers": [
+      "NotPedro"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
+  "ceo-2026": {
+    "name": "CEO 2026",
+    "slug": "ceo-2026",
+    "startAt": 1786716000,
+    "endAt": 1786932000,
+    "startDate": "2026-08-14",
+    "endDate": "2026-08-16",
+    "dates": "Aug 14-16, 2026",
+    "location": "9939 Universal Blvd, Orlando, FL 32819, USA",
+    "venueName": "Daytona Beach Ocean Center",
+    "url": "https://www.start.gg/tournament/ceo-2026",
+    "tier": "S+",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "CEO 2026 is scheduled for Aug 14-16, 2026 in 9939 Universal Blvd, Orlando, FL 32819, USA. Featuring Street Fighter 6. Registered top players include NotPedro, Thunder DeLangis.",
+    "notablePlayers": [
+      "NotPedro",
+      "Thunder DeLangis"
     ],
     "isArchived": false,
     "excludeFromSite": false

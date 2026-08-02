@@ -10898,7 +10898,7 @@
       },
       {
         "Player": "Cyla",
-        "Player ID": "2.77E+14",
+        "Player ID": "276838e9",
         "Event": "Perfect Storm 2025",
         "Event ID": "perfect-storm-2025",
         "Date": "2025-02-15",
@@ -26798,7 +26798,7 @@
       },
       {
         "Player": "Cyla",
-        "Player ID": "2.77E+14",
+        "Player ID": "276838e9",
         "Event": "Get On My Level: Forever - Canadian Fighting Game Championships 2025",
         "Event ID": "get-on-my-level-forever-canadian-fighting-game-championships",
         "Date": "2025-07-05",
@@ -39468,7 +39468,7 @@
       },
       {
         "Player": "Taco",
-        "Player ID": "a9572a46",
+        "Player ID": "7002aaa3",
         "Event": "Island Paradise 2",
         "Event ID": "island-paradise-2",
         "Date": "2025-09-13",
@@ -80715,6 +80715,1556 @@
         "Finish": "25",
         "Entrants": "32",
         "Tier": "S+"
+      }
+    ],
+    "isArchived": false
+  },
+  "metrocade-metrocon-2026": {
+    "name": "METROcade @ METROCON 2026",
+    "date": "2026-08-01",
+    "slug": "metrocade-metrocon-2026",
+    "Tier": "B",
+    "Entrants": "24",
+    "results": [
+      {
+        "Player": "BlueicyDasani",
+        "Player ID": "7b483616",
+        "Event": "METROcade @ METROCON 2026",
+        "Event ID": "metrocade-metrocon-2026",
+        "Date": "2026-08-02",
+        "Finish": "1",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "H.G",
+        "Player ID": "f83bb974",
+        "Event": "METROcade @ METROCON 2026",
+        "Event ID": "metrocade-metrocon-2026",
+        "Date": "2026-08-02",
+        "Finish": "2",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "KV",
+        "Player ID": "050b2bcf",
+        "Event": "METROcade @ METROCON 2026",
+        "Event ID": "metrocade-metrocon-2026",
+        "Date": "2026-08-02",
+        "Finish": "3",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "Taco",
+        "Player ID": "7002aaa3",
+        "Event": "METROcade @ METROCON 2026",
+        "Event ID": "metrocade-metrocon-2026",
+        "Date": "2026-08-02",
+        "Finish": "4",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "NeoLectus",
+        "Player ID": "6b7c623f",
+        "Event": "METROcade @ METROCON 2026",
+        "Event ID": "metrocade-metrocon-2026",
+        "Date": "2026-08-02",
+        "Finish": "5",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "ErgoTokyo",
+        "Player ID": "b6b8ee6d",
+        "Event": "METROcade @ METROCON 2026",
+        "Event ID": "metrocade-metrocon-2026",
+        "Date": "2026-08-02",
+        "Finish": "5",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "RedShirt",
+        "Player ID": "dc86119c",
+        "Event": "METROcade @ METROCON 2026",
+        "Event ID": "metrocade-metrocon-2026",
+        "Date": "2026-08-02",
+        "Finish": "7",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "Peeps",
+        "Player ID": "360c5454",
+        "Event": "METROcade @ METROCON 2026",
+        "Event ID": "metrocade-metrocon-2026",
+        "Date": "2026-08-02",
+        "Finish": "7",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "No More Mr. Nicefire",
+        "Player ID": "e5931fdf",
+        "Event": "METROcade @ METROCON 2026",
+        "Event ID": "metrocade-metrocon-2026",
+        "Date": "2026-08-02",
+        "Finish": "9",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "thebossdude22",
+        "Player ID": "thebossdude22",
+        "Event": "METROcade @ METROCON 2026",
+        "Event ID": "metrocade-metrocon-2026",
+        "Date": "2026-08-02",
+        "Finish": "9",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cole Wnsty",
+        "Player ID": "5df54cba",
+        "Event": "METROcade @ METROCON 2026",
+        "Event ID": "metrocade-metrocon-2026",
+        "Date": "2026-08-02",
+        "Finish": "9",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "Koin",
+        "Player ID": "50c35282",
+        "Event": "METROcade @ METROCON 2026",
+        "Event ID": "metrocade-metrocon-2026",
+        "Date": "2026-08-02",
+        "Finish": "9",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "NeoSketch",
+        "Player ID": "286bdc93",
+        "Event": "METROcade @ METROCON 2026",
+        "Event ID": "metrocade-metrocon-2026",
+        "Date": "2026-08-02",
+        "Finish": "13",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "NiceRiceNinja",
+        "Player ID": "a45f5cc0",
+        "Event": "METROcade @ METROCON 2026",
+        "Event ID": "metrocade-metrocon-2026",
+        "Date": "2026-08-02",
+        "Finish": "13",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "BeachEpisode",
+        "Player ID": "e0ff7d5f",
+        "Event": "METROcade @ METROCON 2026",
+        "Event ID": "metrocade-metrocon-2026",
+        "Date": "2026-08-02",
+        "Finish": "13",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "Gameythegameghost",
+        "Player ID": "e692ee21",
+        "Event": "METROcade @ METROCON 2026",
+        "Event ID": "metrocade-metrocon-2026",
+        "Date": "2026-08-02",
+        "Finish": "13",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "RicharizardR",
+        "Player ID": "4a0892c7",
+        "Event": "METROcade @ METROCON 2026",
+        "Event ID": "metrocade-metrocon-2026",
+        "Date": "2026-08-02",
+        "Finish": "17",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "Nara",
+        "Player ID": "nara",
+        "Event": "METROcade @ METROCON 2026",
+        "Event ID": "metrocade-metrocon-2026",
+        "Date": "2026-08-02",
+        "Finish": "17",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "Brain",
+        "Player ID": "brain",
+        "Event": "METROcade @ METROCON 2026",
+        "Event ID": "metrocade-metrocon-2026",
+        "Date": "2026-08-02",
+        "Finish": "17",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "JamDesu",
+        "Player ID": "jamdesu",
+        "Event": "METROcade @ METROCON 2026",
+        "Event ID": "metrocade-metrocon-2026",
+        "Date": "2026-08-02",
+        "Finish": "17",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "InjuredPond2645",
+        "Player ID": "f00c8f7c",
+        "Event": "METROcade @ METROCON 2026",
+        "Event ID": "metrocade-metrocon-2026",
+        "Date": "2026-08-02",
+        "Finish": "17",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "Can of Yams",
+        "Player ID": "can-of-yams",
+        "Event": "METROcade @ METROCON 2026",
+        "Event ID": "metrocade-metrocon-2026",
+        "Date": "2026-08-02",
+        "Finish": "17",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "POGO",
+        "Player ID": "pogo",
+        "Event": "METROcade @ METROCON 2026",
+        "Event ID": "metrocade-metrocon-2026",
+        "Date": "2026-08-02",
+        "Finish": "17",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "W^2",
+        "Player ID": "w2",
+        "Event": "METROcade @ METROCON 2026",
+        "Event ID": "metrocade-metrocon-2026",
+        "Date": "2026-08-02",
+        "Finish": "17",
+        "Entrants": "24",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "get-on-my-level-2026-canadian-fighting-game-championships": {
+    "name": "Get On My Level 2026 - Canadian Fighting Game Championships",
+    "date": "2026-07-31",
+    "slug": "get-on-my-level-2026-canadian-fighting-game-championships",
+    "Tier": "B",
+    "Entrants": "110",
+    "results": [
+      {
+        "Player": "Riddles",
+        "Player ID": "03d3a671",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "1",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "Slice",
+        "Player ID": "7203c189",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "2",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "Zykles",
+        "Player ID": "5e0e43b1",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "3",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "Thunder DeLangis",
+        "Player ID": "60c77e9c",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "4",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "TropicTrickster",
+        "Player ID": "493cba3e",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "5",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "ramune",
+        "Player ID": "26718d21",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "5",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "CNQ12",
+        "Player ID": "0f564aa3",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "7",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "Docmorales24",
+        "Player ID": "4c6d1e01",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "7",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "anchi.",
+        "Player ID": "20ad71d7",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "9",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cyla",
+        "Player ID": "276838e9",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "9",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "WashYourHands",
+        "Player ID": "494f8989",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "9",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bill Jobs",
+        "Player ID": "5b9597b9",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "9",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "RedDevil05",
+        "Player ID": "66f09b5b",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "13",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "KnozDawg",
+        "Player ID": "49504519",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "13",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "FluxWaveZ",
+        "Player ID": "73a4603b",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "13",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "Joe Stiff",
+        "Player ID": "99d9421a",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "13",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "JAYFOS",
+        "Player ID": "05bb6e3f",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "17",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "Count",
+        "Player ID": "3461c990",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "17",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "LILBOWT",
+        "Player ID": "041dbfc0",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "17",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "Tino",
+        "Player ID": "1125b0ce",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "17",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "Aynim",
+        "Player ID": "e4739053",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "17",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "JD",
+        "Player ID": "a266f2d3",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "17",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "Vital Tide",
+        "Player ID": "4e7bfbfa",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "17",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "Yaayturtle",
+        "Player ID": "b8ed0c9e",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "17",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "Edgoron",
+        "Player ID": "00790a4e",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "25",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "risK",
+        "Player ID": "0b10d51f",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "25",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "Oguriyuki",
+        "Player ID": "26b97f58",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "25",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "Chet",
+        "Player ID": "06576b8d",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "25",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "fent brick",
+        "Player ID": "83b66ee6",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "25",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "Drésan",
+        "Player ID": "46c1eae3",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "25",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "BigTimeBad",
+        "Player ID": "c0a27b8e",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "25",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "Snapshot",
+        "Player ID": "b99617d0",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "25",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "BrothBowl",
+        "Player ID": "15b18d7b",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "25",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "KlodnSkorl",
+        "Player ID": "b908b101",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "25",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "DubZ",
+        "Player ID": "89a60cdc",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "25",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "andy4x2",
+        "Player ID": "ba4d5039",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "25",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "Churara",
+        "Player ID": "36829bcf",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "37",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rick",
+        "Player ID": "77008dec",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "37",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bedtime",
+        "Player ID": "af8e5935",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "37",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "StepIV",
+        "Player ID": "d6cc8edf",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "37",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "smiley",
+        "Player ID": "2c1be48d",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "37",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "LK",
+        "Player ID": "85627096",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "37",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rycar",
+        "Player ID": "d0babfca",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "37",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "Binoo",
+        "Player ID": "5d33a62f",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "37",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "Zambo",
+        "Player ID": "8c2715a7",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "37",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "shiningnuts",
+        "Player ID": "3afa58f2",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "37",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "Coach Cacti",
+        "Player ID": "c126fba0",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "37",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "Voltampt",
+        "Player ID": "74b5805c",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "37",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "Soymilk",
+        "Player ID": "2c40ecd2",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "49",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "EuroStepSam",
+        "Player ID": "50446e2a",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "49",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "I_Jinx",
+        "Player ID": "de0e2ffe",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "49",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "KC",
+        "Player ID": "3e2e68e8",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "49",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "SavageLocust",
+        "Player ID": "218e7d10",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "49",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rassey",
+        "Player ID": "4d54b901",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "49",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "Midnightbliss87",
+        "Player ID": "c0949ce7",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "49",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "de_nuts",
+        "Player ID": "ea0f0a8c",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "49",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "YonkoJah",
+        "Player ID": "e846854c",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "49",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ben",
+        "Player ID": "70f21679",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "49",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "Stalkerbird",
+        "Player ID": "fecd4ace",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "49",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "Swey",
+        "Player ID": "da21d895",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "49",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "jan supremacy",
+        "Player ID": "d6003355",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "49",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "King",
+        "Player ID": "99205b97",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "49",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "Five7Teen",
+        "Player ID": "de6323d3",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "49",
+        "Entrants": "110",
+        "Tier": "B"
+      },
+      {
+        "Player": "LaroJ",
+        "Player ID": "ecb0760b",
+        "Event": "Get On My Level 2026 - Canadian Fighting Game Championships",
+        "Event ID": "get-on-my-level-2026-canadian-fighting-game-championships",
+        "Date": "2026-08-01",
+        "Finish": "49",
+        "Entrants": "110",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "komite-arena-2026": {
+    "name": "KOMITÊ ARENA 2026",
+    "date": "2026-07-31",
+    "slug": "komite-arena-2026",
+    "Tier": "B",
+    "Entrants": "115",
+    "results": [
+      {
+        "Player": "Brayan_Job",
+        "Player ID": "fbf421ef",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "1",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "NotPedro",
+        "Player ID": "9beebe73",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "2",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ferps",
+        "Player ID": "d790bc67",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "3",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mimam",
+        "Player ID": "c45f0467",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "4",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Zangief_bolado",
+        "Player ID": "82965d22",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "5",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Gui_",
+        "Player ID": "3e952944",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "5",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cabelinho3K",
+        "Player ID": "e01a9faa",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "7",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mini Bomba",
+        "Player ID": "161871b5",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "7",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "theforce90",
+        "Player ID": "e3f3f3b3",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "9",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Caio cesar",
+        "Player ID": "ce710b7a",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "9",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dragon_Legend",
+        "Player ID": "38115d60",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "9",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "DARK817",
+        "Player ID": "5bd1b83f",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "9",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kyuki",
+        "Player ID": "3544ca40",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "13",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Breno_Spies",
+        "Player ID": "5214724f",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "13",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "GuillerBR",
+        "Player ID": "9b8d4c59",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "13",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Liru Young",
+        "Player ID": "e606818b",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "13",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Setsuka",
+        "Player ID": "ef69a791",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "17",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Demitrix",
+        "Player ID": "7e8d3f55",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "17",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Matuquete",
+        "Player ID": "ab143e0a",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "17",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "G01ira",
+        "Player ID": "fe85713b",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "17",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "-Hickzx-",
+        "Player ID": "79fb8b1a",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "17",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Caioch",
+        "Player ID": "0c2db0dc",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "17",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "ElSakoGordo",
+        "Player ID": "57e2753f",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "17",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kauê Alves",
+        "Player ID": "5ef1dd67",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "17",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Vini2001",
+        "Player ID": "a08b47ca",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "25",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "RoxDox",
+        "Player ID": "27107532",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "25",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Psikolera",
+        "Player ID": "237c8461",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "25",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jc_mrs",
+        "Player ID": "59e4f21f",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "25",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "NotleLinc",
+        "Player ID": "0b1d97e5",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "25",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "HanpanBR",
+        "Player ID": "f9b7bf8d",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "25",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "JrxSemedo",
+        "Player ID": "84118cd9",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "25",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ori",
+        "Player ID": "14b0a1bb",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "25",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Lemon",
+        "Player ID": "30e4a54b",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "33",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "T.HAWK_TENZEN",
+        "Player ID": "b4cf18e9",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "33",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Sorrow",
+        "Player ID": "b0043ae4",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "33",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Torello",
+        "Player ID": "9cdace58",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "33",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Spike",
+        "Player ID": "31413f28",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "33",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Julião",
+        "Player ID": "b77ccb36",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "33",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "TomzinMilgrau",
+        "Player ID": "851a263e",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "33",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Shimmy Boy",
+        "Player ID": "207f6f6a",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "33",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Fela",
+        "Player ID": "7f7e9d6e",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "33",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Alexis2904",
+        "Player ID": "c4ec5c91",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "33",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mau Mau",
+        "Player ID": "8f979717",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "33",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "GraystainedRain",
+        "Player ID": "69789d4c",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "33",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Normaníaco",
+        "Player ID": "ae340069",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "33",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "VEIO DA LANCHA",
+        "Player ID": "96989cba",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "33",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "GustavoPage2",
+        "Player ID": "bc15ae16",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "33",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Smokii",
+        "Player ID": "b79eb6c0",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "33",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Sangue frio",
+        "Player ID": "9ca08de2",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "49",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "kuesulfi",
+        "Player ID": "01725c1b",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "49",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Raicon",
+        "Player ID": "06c2fa27",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "49",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "daniloichaves",
+        "Player ID": "2b33e363",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "49",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Comalies",
+        "Player ID": "c82fbcf8",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "49",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "LuigiDrett",
+        "Player ID": "6fb7f204",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "49",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kermit",
+        "Player ID": "c1036917",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "49",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "EvilCobra",
+        "Player ID": "a30437a2",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "49",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mugoms",
+        "Player ID": "e95eae41",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "49",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "é o rafaool",
+        "Player ID": "1bbb4a15",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "49",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rugal",
+        "Player ID": "790fbf6d",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "49",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Horus Edinho",
+        "Player ID": "768f37a2",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "49",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Matheus",
+        "Player ID": "28db942a",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "49",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "Sotobello",
+        "Player ID": "ac8c4381",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "49",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "tanab3z",
+        "Player ID": "a3a93d51",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "49",
+        "Entrants": "115",
+        "Tier": "B"
+      },
+      {
+        "Player": "MuriloBds",
+        "Player ID": "1416beb9",
+        "Event": "KOMITÊ ARENA 2026",
+        "Event ID": "komit-arena-2026",
+        "Date": "2026-08-01",
+        "Finish": "49",
+        "Entrants": "115",
+        "Tier": "B"
       }
     ],
     "isArchived": false
