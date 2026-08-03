@@ -25,29 +25,6 @@
     "isArchived": false,
     "excludeFromSite": false
   },
-  "komit-arena-2026": {
-    "name": "KOMITÊ ARENA 2026",
-    "slug": "komit-arena-2026",
-    "startAt": 1785585600,
-    "endAt": 1785718800,
-    "startDate": "2026-08-01",
-    "endDate": "2026-08-02",
-    "dates": "Aug 1-2, 2026",
-    "location": "R. Galvão Bueno, 425 - Liberdade, São Paulo - SP, 01506-000, Brasil",
-    "venueName": "",
-    "url": "https://www.start.gg/tournament/komit-arena-2026",
-    "tier": "B",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "KOMITÊ ARENA 2026 is scheduled for Aug 1-2, 2026 in R. Galvão Bueno, 425 - Liberdade, São Paulo - SP, 01506-000, Brasil. Featuring Street Fighter 6. Registered top players include NotPedro.",
-    "notablePlayers": [
-      "NotPedro"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
   "ceo-2026": {
     "name": "CEO 2026",
     "slug": "ceo-2026",
