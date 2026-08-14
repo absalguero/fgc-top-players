@@ -33917,7 +33917,7 @@
         "Tier": "S"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "vsfighting-xiii": {
     "name": "VSFighting XIII",
@@ -34567,7 +34567,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "cne-showdown-2025": {
     "name": "CNE Showdown 2025",
