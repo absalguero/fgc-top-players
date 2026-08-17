@@ -107,7 +107,7 @@
         "Tier": "S"
       },
       {
-        "Player": "Gran Todakai",
+        "Player": "GranTODAKAI",
         "Player ID": "2c673138",
         "Event": "BLINK RESPAWN 2024",
         "Event ID": "blink-respawn-2024",
@@ -12347,7 +12347,7 @@
         "Tier": "S+"
       },
       {
-        "Player": "Gran Todakai",
+        "Player": "GranTODAKAI",
         "Player ID": "2c673138",
         "Event": "Capcom Cup XI",
         "Event ID": "",
@@ -16888,7 +16888,7 @@
       },
       {
         "Player": "Paladin",
-        "Player ID": "cf6953ab",
+        "Player ID": "cb81045c",
         "Event": "LVL UP EXPO 2025",
         "Event ID": "lvl-up-expo-2025",
         "Date": "2025-04-25",
@@ -29637,7 +29637,7 @@
         "Tier": "S+"
       },
       {
-        "Player": "Gran Todakai",
+        "Player": "GranTODAKAI",
         "Player ID": "2c673138",
         "Event": "BLINK RESPAWN 2025",
         "Event ID": "blink-respawn-2025",
@@ -33887,8 +33887,8 @@
         "Tier": "S"
       },
       {
-        "Player": "taketake-piano",
-        "Player ID": "b2c85b6d",
+        "Player": "takepi",
+        "Player ID": "ab8d7476",
         "Event": "Esports World Cup 2025 Last Change Qualifier (LCQ)",
         "Event ID": "",
         "Date": "2025-08-14",
@@ -34967,7 +34967,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "beast-in-the-east-8": {
     "name": "Beast in the East 8",
@@ -44497,7 +44497,7 @@
         "Tier": "B"
       },
       {
-        "Player": "Gran Todakai",
+        "Player": "GranTODAKAI",
         "Player ID": "2c673138",
         "Event": "First Attack 2025",
         "Event ID": "first-attack-2025",
@@ -59927,8 +59927,8 @@
         "Tier": "B"
       },
       {
-        "Player": "taketake-piano",
-        "Player ID": "b2c85b6d",
+        "Player": "takepi",
+        "Player ID": "ab8d7476",
         "Event": "Japan World Warrior Regional Final 2026",
         "Event ID": "",
         "Date": "2026-02-08",
@@ -66027,8 +66027,8 @@
         "Tier": "S+"
       },
       {
-        "Player": "taketake-piano",
-        "Player ID": "b2c85b6d",
+        "Player": "takepi",
+        "Player ID": "ab8d7476",
         "Event": "Evo Japan 2026",
         "Event ID": "evo-japan-2026-presented-by-levtech",
         "Date": "2026-04-30",
@@ -82265,6 +82265,656 @@
         "Finish": "49",
         "Entrants": "115",
         "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "ceo-2026": {
+    "name": "CEO 2026",
+    "date": "2026-08-13",
+    "slug": "ceo-2026",
+    "Tier": "S+",
+    "Entrants": "1113",
+    "results": [
+      {
+        "Player": "Tokido",
+        "Player ID": "a4c7c2d4",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "1",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Booce_Lee",
+        "Player ID": "84a88e6f",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "2",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Micky",
+        "Player ID": "09e5dcc1",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "3",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Blaz",
+        "Player ID": "37844e8a",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "4",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Kilzyou",
+        "Player ID": "dcd53ca7",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "5",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Craime",
+        "Player ID": "a5ce82ae",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "5",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "kingsvega",
+        "Player ID": "c0e4c985",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "7",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Wabiichi",
+        "Player ID": "e14bf28c",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "7",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Punk",
+        "Player ID": "1b9e2ed9",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "9",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "NoahTheProdigy",
+        "Player ID": "27053e88",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "9",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Kawano",
+        "Player ID": "84491299",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "9",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "kobayan",
+        "Player ID": "ef64257e",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "9",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "zabutonn",
+        "Player ID": "9151fd06",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "13",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "cosa",
+        "Player ID": "2e561d93",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "13",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Oil King",
+        "Player ID": "92c9115f",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "13",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "gachikun",
+        "Player ID": "7fc0306f",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "13",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "tako",
+        "Player ID": "975aaa22",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "17",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "小路KOG",
+        "Player ID": "17aece0a",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "17",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Dual Kevin",
+        "Player ID": "88d3f20e",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "17",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Paladin",
+        "Player ID": "cb81045c",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "17",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "eita",
+        "Player ID": "d91403d8",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "17",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Jr.",
+        "Player ID": "126a661a",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "17",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Mizuha",
+        "Player ID": "ed773e44",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "17",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "YAS",
+        "Player ID": "fabefccb",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "17",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "ScrawtVermillion",
+        "Player ID": "1975133",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "25",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "ChrisT",
+        "Player ID": "9f399abf",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "25",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Noble",
+        "Player ID": "befd4e60",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "25",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "CrossoverRD",
+        "Player ID": "67ff45df",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "25",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Chris Wong",
+        "Player ID": "a3a19505",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "25",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Psycho",
+        "Player ID": "895e9636",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "25",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Dogura",
+        "Player ID": "2464d654",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "25",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "takepi",
+        "Player ID": "ab8d7476",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "25",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Nemo",
+        "Player ID": "6f4013df",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "33",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "GranTODAKAI",
+        "Player ID": "2c673138",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "33",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "JAK",
+        "Player ID": "ca35d13c",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "33",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "CrimsonJaeger",
+        "Player ID": "b254c348",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "33",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Lazyboredom",
+        "Player ID": "a12e3921",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "33",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Bloo",
+        "Player ID": "62f3840c",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "33",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Tachikawa",
+        "Player ID": "c68eeb1f",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "33",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "NotPedro",
+        "Player ID": "9beebe73",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "33",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "iDom",
+        "Player ID": "f0979e4c",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "33",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Squall",
+        "Player ID": "fe7fcd62",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "33",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Akira",
+        "Player ID": "ea580e86",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "33",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Lexx",
+        "Player ID": "ec4d302b",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "33",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Nephew",
+        "Player ID": "b1fe7f8b",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "33",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "EndingWalker",
+        "Player ID": "90c33661",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "33",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Dodger",
+        "Player ID": "b7ae9557",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "33",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Axel",
+        "Player ID": "a24e2e64",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "33",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "moke",
+        "Player ID": "47e6da2a",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "49",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Musa",
+        "Player ID": "62d680d9",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "49",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Thunder DeLangis",
+        "Player ID": "60c77e9c",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "49",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "タンタンメン",
+        "Player ID": "8b487f7d",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "49",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "GuyGuy",
+        "Player ID": "f1e574a7",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "49",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "KAMI",
+        "Player ID": "8ef1da84",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "49",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "pugera",
+        "Player ID": "9594efe4",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "49",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Samurai",
+        "Player ID": "5b98b446",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "49",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Ryusei",
+        "Player ID": "6f9ebc42",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "49",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "ArtificialHolly",
+        "Player ID": "e917d9bf",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "49",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Higuchi",
+        "Player ID": "fee94c73",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "49",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Enzo",
+        "Player ID": "9cc42fd3",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "49",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Azan",
+        "Player ID": "0a1c34c1",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "49",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "NuckleDu",
+        "Player ID": "71b98b1d",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "49",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Fierce",
+        "Player ID": "2d7a14fd",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "49",
+        "Entrants": "1113",
+        "Tier": "S+"
+      },
+      {
+        "Player": "NYChrisG",
+        "Player ID": "dab1e1cc",
+        "Event": "CEO 2026",
+        "Event ID": "ceo-2026",
+        "Date": "2026-08-14",
+        "Finish": "49",
+        "Entrants": "1113",
+        "Tier": "S+"
       }
     ],
     "isArchived": false

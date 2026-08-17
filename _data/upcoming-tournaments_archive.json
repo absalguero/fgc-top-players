@@ -1,4 +1,38 @@
 {
+    "ceo-2026": {
+    "name": "CEO 2026",
+    "slug": "ceo-2026",
+    "startAt": 1786665600,
+    "endAt": 1786924799,
+    "startDate": "2026-08-14",
+    "endDate": "2026-08-16",
+    "dates": "Aug 14-16, 2026",
+    "location": "9939 Universal Blvd, Orlando, FL 32819, USA",
+    "venueName": "Rosen Shingle Creek",
+    "url": "https://ceogaming.org/ceo/",
+    "tier": "S+",
+    "prizes": "$16,300",
+    "game": "Street Fighter 6",
+    "streamLink": "https://www.twitch.tv/capcomfighters",
+    "scheduleLink": "https://x.com/CEOGaming/status/2083987885061968197",
+    "description": "<p>As one of the most iconic spectacles in fighting games, <strong>CEO 2026</strong> brings its signature professional wrestling aesthetic back to Orlando with high-stakes <strong>Street Fighter 6</strong> action at the center. Founded in 2010, the tournament built its reputation around its famous ring stage and championship belt trophies, growing into a cornerstone summer major after hosting over 6,000 attendees in 2025. Global visibility makes the weekend a critical proving ground on the annual calendar, drawing international contenders to compete in front of an energetic crowd.</p><p>The event holds official <strong>Capcom Pro Tour Premier</strong> status, raising the stakes dramatically for the <strong>Street Fighter 6</strong> bracket. The tournament champion secures direct qualification for <strong>Capcom Cup</strong>, while top finishers earn essential CPT ranking points toward global leaderboard standings. Victory inside the ring provides both immediate qualification leverage and one of the most prestigious titles in the community.</p><h3>Convention Floor and Tournament Lineup</h3><p>Beyond the primary championship, the event hosts bracket competition across major titles including <strong>Tekken 8</strong>, <strong>Guilty Gear -Strive-</strong>, and <strong>Mortal Kombat 1</strong>. Attendees can explore a broad exhibitor floor featuring fightstick vendors, artist alley displays, and dedicated arcade spaces running classic titles throughout the weekend. Registration is managed through start.gg, with badge pickup operating on-site before official pool play begins.</p>",
+    "notablePlayers": [
+      "Craime",
+      "Kilzyou",
+      "kobayan",
+      "Higuchi",
+      "xiaohai",
+      "Punk",
+      "Micky",
+      "Dual Kevin",
+      "Blaz",
+      "Sahara.",
+      "gachikun",
+      "Booce_Lee"
+    ],
+    "isArchived": true,
+    "excludeFromSite": false
+  },
 "get-on-my-level-2026-canadian-fighting-game-championships": {
     "name": "Get On My Level 2026 - Canadian Fighting Game Championships",
     "slug": "get-on-my-level-2026-canadian-fighting-game-championships",
