@@ -181,6 +181,27 @@
     "isArchived": false,
     "excludeFromSite": false
   },
+  "socal-knockout-2026": {
+    "name": "SoCal Knockout 2026",
+    "slug": "socal-knockout-2026",
+    "startAt": 1794009600,
+    "endAt": 1794182399,
+    "startDate": "2026-11-07",
+    "endDate": "2026-11-08",
+    "dates": "Nov 7-8, 2026",
+    "location": "3633 Market St, Riverside, CA 92501, USA",
+    "venueName": "Riverside Game Lab",
+    "url": "https://www.start.gg/tournament/socal-knockout-2026/details",
+    "tier": "B",
+    "prizes": "TBD",
+    "game": "Street Fighter 6",
+    "streamLink": "https://twitch.tv/kizziekay310",
+    "scheduleLink": "",
+    "description": "<p><strong>SoCal Knockout 2026</strong> marks the inaugural edition of a collaborative grassroots regional, bringing Northern and Southern California organizing communities together for a dedicated weekend of open-bracket competition. Set at the Riverside Game Lab, the debut gathering establishes a unified proving ground for West Coast talent, centering <strong>Street Fighter 6</strong> as the anchor of the inter-regional showdown.</p><p>The tournament provides crucial regional seeding weight and head-to-head prestige for competitors looking to solidify their standing across the West Coast scene. Players navigate a standard double-elimination structure built to test character mastery and matchup depth in a high-stakes bracket environment.</p><h3>Additional Tournament Brackets</h3><p>Beyond the primary bracket, the weekend hosts an extensive lineup of competitive fighting games, including <strong>TEKKEN 8</strong>, <strong>Guilty Gear -Strive-</strong>, <strong>Granblue Fantasy Versus: Rising</strong>, and legacy anime brackets such as <strong>BlazBlue: Central Fiction</strong>.</p>",
+    "notablePlayers": [],
+    "isArchived": false,
+    "excludeFromSite": false
+},
   "drowning-pools-2026": {
     "name": "Drowning Pools 2026",
     "slug": "drowning-pools-2026",
