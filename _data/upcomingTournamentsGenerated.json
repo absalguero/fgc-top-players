@@ -23,29 +23,6 @@
     "isArchived": false,
     "excludeFromSite": false
   },
-  "bour-pif-arena-12-10-ans": {
-    "name": "Bour'Pif Arena # 12 - 10 ans",
-    "slug": "bour-pif-arena-12-10-ans",
-    "startAt": 1787385600,
-    "endAt": 1787500800,
-    "startDate": "2026-08-22",
-    "endDate": "2026-08-23",
-    "dates": "Aug 22-23, 2026",
-    "location": "Av. de la Grangette, 74200 Thonon-les-Bains, France",
-    "venueName": "",
-    "url": "https://www.start.gg/tournament/bour-pif-arena-12-10-ans",
-    "tier": "B",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "Bour'Pif Arena # 12 - 10 ans is scheduled for Aug 22-23, 2026 in Av. de la Grangette, 74200 Thonon-les-Bains, France. Featuring Street Fighter 6. Registered top players include Mister Crimson.",
-    "notablePlayers": [
-      "Mister Crimson"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
   "island-paradise-3": {
     "name": "Island Paradise 3",
     "slug": "island-paradise-3",
