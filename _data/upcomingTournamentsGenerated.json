@@ -1,24 +1,23 @@
 {
-  "umad-2026": {
-    "name": "UMAD 2026",
-    "slug": "umad-2026",
-    "startAt": 1787346000,
-    "endAt": 1787543940,
-    "startDate": "2026-08-21",
-    "endDate": "2026-08-23",
-    "dates": "Aug 21-23, 2026",
-    "location": "550 Rue Richmond, Montréal, QC H3J 1V3, Canada",
+  "ultimate-fighting-arena-2026-2": {
+    "name": "Ultimate Fighting Arena 2026",
+    "slug": "ultimate-fighting-arena-2026-2",
+    "startAt": 1789124400,
+    "endAt": 1789336740,
+    "startDate": "2026-09-11",
+    "endDate": "2026-09-13",
+    "dates": "Sep 11-13, 2026",
+    "location": "87 Avenue des Magasins Généraux, 93300 Aubervilliers, France",
     "venueName": "",
-    "url": "https://www.start.gg/tournament/umad-2026",
-    "tier": "B",
+    "url": "https://www.start.gg/tournament/ultimate-fighting-arena-2026-2",
+    "tier": "S",
     "prizes": "TBA",
     "game": "Street Fighter 6",
     "streamLink": "",
     "scheduleLink": "",
-    "description": "UMAD 2026 is scheduled for Aug 21-23, 2026 in 550 Rue Richmond, Montréal, QC H3J 1V3, Canada. Featuring Street Fighter 6. Registered top players include Slice, Zykles.",
+    "description": "Ultimate Fighting Arena 2026 is scheduled for Sep 11-13, 2026 in 87 Avenue des Magasins Généraux, 93300 Aubervilliers, France. Featuring Street Fighter 6. Registered top players include wabiichi.",
     "notablePlayers": [
-      "Slice",
-      "Zykles"
+      "wabiichi"
     ],
     "isArchived": false,
     "excludeFromSite": false
