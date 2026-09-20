@@ -138,7 +138,7 @@
       },
       {
         "Player": "Paladin",
-        "Player ID": "cb81045c",
+        "Player ID": "ce49fb29",
         "Event": "BLINK RESPAWN 2024",
         "Event ID": "blink-respawn-2024",
         "Date": "2024-11-08",
@@ -5798,7 +5798,7 @@
       },
       {
         "Player": "Paladin",
-        "Player ID": "cb81045c",
+        "Player ID": "ce49fb29",
         "Event": "CEOtaku 2024",
         "Event ID": "ceotaku-2024",
         "Date": "2024-12-20",
@@ -5828,7 +5828,7 @@
       },
       {
         "Player": "ScrawtVermillion",
-        "Player ID": "1975133",
+        "Player ID": "01975133",
         "Event": "CEOtaku 2024",
         "Event ID": "ceotaku-2024",
         "Date": "2024-12-20",
@@ -8358,7 +8358,7 @@
       },
       {
         "Player": "ScrawtVermillion",
-        "Player ID": "1975133",
+        "Player ID": "01975133",
         "Event": "Frosty Faustings XVII 2025",
         "Event ID": "frosty-faustings-xvii-2025",
         "Date": "2025-01-24",
@@ -15528,7 +15528,7 @@
       },
       {
         "Player": "Uriche",
-        "Player ID": "19686753",
+        "Player ID": "b2305c8f",
         "Event": "Red Bull Kumite 2025 Last Chance Qualifier (LCQ)",
         "Event ID": "red-bull-kumite-2025-paris",
         "Date": "2025-04-05",
@@ -16888,7 +16888,7 @@
       },
       {
         "Player": "Paladin",
-        "Player ID": "cb81045c",
+        "Player ID": "ce49fb29",
         "Event": "LVL UP EXPO 2025",
         "Event ID": "lvl-up-expo-2025",
         "Date": "2025-04-25",
@@ -17128,7 +17128,7 @@
     "results": [
       {
         "Player": "ScrawtVermillion",
-        "Player ID": "1975133",
+        "Player ID": "01975133",
         "Event": "MAX MODE 2025",
         "Event ID": "max-mode-2025",
         "Date": "2025-04-25",
@@ -17628,7 +17628,7 @@
       },
       {
         "Player": "Baki",
-        "Player ID": "8daae380",
+        "Player ID": "3fadc40d",
         "Event": "MAX MODE 2025",
         "Event ID": "max-mode-2025",
         "Date": "2025-04-25",
@@ -21988,7 +21988,7 @@
       },
       {
         "Player": "ScrawtVermillion",
-        "Player ID": "1975133",
+        "Player ID": "01975133",
         "Event": "COMBO BREAKER 2025",
         "Event ID": "combo-breaker-2025",
         "Date": "2025-05-23",
@@ -26268,7 +26268,7 @@
       },
       {
         "Player": "Baki",
-        "Player ID": "8daae380",
+        "Player ID": "3fadc40d",
         "Event": "Ragnarok 2025",
         "Event ID": "ragnarok-2025",
         "Date": "2025-06-29",
@@ -26568,7 +26568,7 @@
       },
       {
         "Player": "ScrawtVermillion",
-        "Player ID": "1975133",
+        "Player ID": "01975133",
         "Event": "Get On My Level: Forever - Canadian Fighting Game Championships 2025",
         "Event ID": "get-on-my-level-forever-canadian-fighting-game-championships",
         "Date": "2025-07-05",
@@ -38707,7 +38707,7 @@
         "Tier": "A"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "f2con-2025": {
     "name": "F2CON 2025",
@@ -39357,7 +39357,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "island-paradise-2": {
     "name": "Island Paradise 2",
@@ -39408,7 +39408,7 @@
       },
       {
         "Player": "ScrawtVermillion",
-        "Player ID": "1975133",
+        "Player ID": "01975133",
         "Event": "Island Paradise 2",
         "Event ID": "island-paradise-2",
         "Date": "2025-09-13",
@@ -39458,7 +39458,7 @@
       },
       {
         "Player": "Paladin",
-        "Player ID": "cb81045c",
+        "Player ID": "ce49fb29",
         "Event": "Island Paradise 2",
         "Event ID": "island-paradise-2",
         "Date": "2025-09-13",
@@ -40007,7 +40007,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "just-frame-2025": {
     "name": "JUST FRAME 2025",
@@ -40307,7 +40307,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "ultimate-fighting-arena-2025": {
     "name": "ULTIMATE FIGHTING ARENA 2025",
@@ -40957,7 +40957,7 @@
         "Tier": "S"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "dnecup-2025": {
     "name": "DNECUP 2025",
@@ -41607,7 +41607,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "saudi-eleague-season-4-major": {
     "name": "Saudi eLeague Season 4 Major",
@@ -41847,7 +41847,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "umad-2025": {
     "name": "UMAD 2025",
@@ -42477,7 +42477,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "roundhouse-2025": {
     "name": "Roundhouse 2025",
@@ -54108,7 +54108,7 @@
       },
       {
         "Player": "Baki",
-        "Player ID": "8daae380",
+        "Player ID": "3fadc40d",
         "Event": "MINDSET 2025",
         "Event ID": "mindset-2025",
         "Date": "2025-11-30",
@@ -57858,7 +57858,7 @@
       },
       {
         "Player": "ScrawtVermillion",
-        "Player ID": "1975133",
+        "Player ID": "01975133",
         "Event": "Frosty Faustings XVIII 2026",
         "Event ID": "frosty-faustings-xviii-2026",
         "Date": "2026-01-30",
@@ -82478,7 +82478,7 @@
       },
       {
         "Player": "Paladin",
-        "Player ID": "cb81045c",
+        "Player ID": "ce49fb29",
         "Event": "CEO 2026",
         "Event ID": "ceo-2026",
         "Date": "2026-08-14",
@@ -82578,7 +82578,7 @@
       },
       {
         "Player": "ScrawtVermillion",
-        "Player ID": "1975133",
+        "Player ID": "01975133",
         "Event": "CEO 2026",
         "Event ID": "ceo-2026",
         "Date": "2026-08-14",
@@ -84584,6 +84584,4806 @@
         "Date": "2026-08-21",
         "Finish": "49",
         "Entrants": "73",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "cream-city-convergence-2026": {
+    "name": "Cream City Convergence 2026",
+    "date": "2026-09-04",
+    "slug": "cream-city-convergence-2026",
+    "Tier": "B",
+    "Entrants": "113",
+    "results": [
+      {
+        "Player": "JAK",
+        "Player ID": "ca35d13c",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "1",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Samurai",
+        "Player ID": "5b98b446",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "2",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Play_guy",
+        "Player ID": "f2a9b3fc",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "3",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kolibri",
+        "Player ID": "49cc5830",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "4",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ramsey",
+        "Player ID": "bb472734",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "5",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "HologramMikeRoss",
+        "Player ID": "ac55ff47",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "5",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "TheFatManatee",
+        "Player ID": "0fd6fda5",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "7",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Threeyes",
+        "Player ID": "2ff67cf3",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "7",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "cubby",
+        "Player ID": "0c30bfef",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "9",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "YungTate",
+        "Player ID": "032e7f24",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "9",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "BlueBit",
+        "Player ID": "050a465c",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "9",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Frosty",
+        "Player ID": "6f42546c",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "9",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "ARRUUMS",
+        "Player ID": "6302dcc2",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "13",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "BP Amoco",
+        "Player ID": "f0380a79",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "13",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "SpongeJordan",
+        "Player ID": "4240b033",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "13",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "AndIHaveaBeard",
+        "Player ID": "9b180fe0",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "13",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Great Fireball",
+        "Player ID": "4c1f0814",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "17",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "tylerw0w",
+        "Player ID": "2db4d79e",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "17",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mewmon",
+        "Player ID": "34769e2e",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "17",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Sharp",
+        "Player ID": "a49f1ac8",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "17",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bari",
+        "Player ID": "12915c75",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "17",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "TCG",
+        "Player ID": "1c438a47",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "17",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Johnny Volcano",
+        "Player ID": "f4b37697",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "17",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "LukeSFH",
+        "Player ID": "e68a2581",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "17",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Zaybak",
+        "Player ID": "14ab0a2a",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "25",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Aarohunter",
+        "Player ID": "33fa012b",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "25",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Wardo Cardo",
+        "Player ID": "2d15fb89",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "25",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "PhillipNCider",
+        "Player ID": "ecef372c",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "25",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "LocalPatzer",
+        "Player ID": "af7ea3a5",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "25",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ham Jams",
+        "Player ID": "41b6b0c4",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "25",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rat",
+        "Player ID": "293cb012",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "25",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Quixote",
+        "Player ID": "611c9f75",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "25",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Flakari",
+        "Player ID": "ce2abf71",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jar",
+        "Player ID": "3f4799c9",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "ARandomCatv",
+        "Player ID": "7e6a515d",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rock 'n Rollback",
+        "Player ID": "58880ea3",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mr Champloo",
+        "Player ID": "5d40c841",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "suffer",
+        "Player ID": "bbedcbbf",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "hoagie",
+        "Player ID": "d37d9ba0",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Toastyfishpants",
+        "Player ID": "2fac4103",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "beta",
+        "Player ID": "28359322",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cobalt",
+        "Player ID": "d5aeb4ed",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Miiich",
+        "Player ID": "beee55ec",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "RyanGoslingCatBoy",
+        "Player ID": "8028986a",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "girasol",
+        "Player ID": "186d2b58",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "MajorMajormajor124",
+        "Player ID": "ad7ce1c7",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rosé Ray",
+        "Player ID": "38428688",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "AlexNoah",
+        "Player ID": "9e151cf8",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "BlackYoshi",
+        "Player ID": "8bc6fc56",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Zenith",
+        "Player ID": "2ee2d6a6",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "AtelierFami",
+        "Player ID": "df3c444b",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dext",
+        "Player ID": "5540829f",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "RudyTecnico",
+        "Player ID": "c83e6238",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "bebop306",
+        "Player ID": "c3d8a7d4",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Shining Spear",
+        "Player ID": "d6f03c3f",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bomb",
+        "Player ID": "18f0695c",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Thirstyfist",
+        "Player ID": "3f1ebdd7",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "AbsoluteManiac",
+        "Player ID": "1fc41072",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Darkknight6682",
+        "Player ID": "4b5487fb",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "espior",
+        "Player ID": "0018698d",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Eddypoo22",
+        "Player ID": "20f7bd49",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Sovano",
+        "Player ID": "67d77721",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "9-D9",
+        "Player ID": "f09d287f",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "113",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bentley",
+        "Player ID": "fc57a7ba",
+        "Event": "Cream City Convergence 2026",
+        "Event ID": "cream-city-convergence-2026",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "113",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "northeast-knockout": {
+    "name": "NorthEast Knockout",
+    "date": "2026-09-04",
+    "slug": "northeast-knockout",
+    "Tier": "B",
+    "Entrants": "117",
+    "results": [
+      {
+        "Player": "GuyGuy",
+        "Player ID": "f1e574a7",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "1",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "NY Mando",
+        "Player ID": "e40b869c",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "2",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bjr",
+        "Player ID": "ff1511a1",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "3",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "LeviHakai",
+        "Player ID": "3ce9e105",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "4",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "Umali",
+        "Player ID": "9f06617b",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "5",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "vinay",
+        "Player ID": "b9c609e3",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "5",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "jonyfraze",
+        "Player ID": "c3832b0b",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "7",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kharsonist",
+        "Player ID": "dd8aaab4",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "7",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "SpaceBoy",
+        "Player ID": "c6744150",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "9",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "Young_matt_teen",
+        "Player ID": "3cc850a5",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "9",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "zzz",
+        "Player ID": "864e9744",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "9",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dijin",
+        "Player ID": "ec985a87",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "9",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "morg",
+        "Player ID": "f5fbbe04",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "13",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "CreakyAxe",
+        "Player ID": "cd059025",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "13",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "/^-ᆺ-マ",
+        "Player ID": "670f3441",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "13",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "LuckyD",
+        "Player ID": "e875a317",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "13",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "Requious",
+        "Player ID": "ecc3a392",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "17",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bass",
+        "Player ID": "2b573037",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "17",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "cokes",
+        "Player ID": "4bf3880f",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "17",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "hiram",
+        "Player ID": "386a9a40",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "17",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "LOU EG",
+        "Player ID": "4ea04595",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "17",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "Azure Dynamo",
+        "Player ID": "420dad7f",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "17",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "Morrasod",
+        "Player ID": "ff5d368a",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "17",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "JustLemillion",
+        "Player ID": "d0108e28",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "17",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "Fem!Shep",
+        "Player ID": "1843ad54",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "25",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "simplySOUF",
+        "Player ID": "857ad296",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "25",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "JAAKUL",
+        "Player ID": "b55ce1f5",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "25",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "depressedmetfan",
+        "Player ID": "1cfb9b6e",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "25",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "viktor vaughn",
+        "Player ID": "1bbdd4da",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "25",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "Squidpai",
+        "Player ID": "a5aad555",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "25",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "BrandyTM05",
+        "Player ID": "854427a7",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "25",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "JerryBerry",
+        "Player ID": "bd22ffcd",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "25",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "alsatian",
+        "Player ID": "4aae2d7c",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "DeAnthrax",
+        "Player ID": "02af5ccf",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "h2",
+        "Player ID": "cd81a2ef",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "KINGMAN",
+        "Player ID": "1fd4b7bd",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "SnakeofTalins",
+        "Player ID": "3d0fbeab",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rojahh",
+        "Player ID": "12daccad",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "kotter",
+        "Player ID": "a614f9c9",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "Whole_Puncher.exe",
+        "Player ID": "c4a93053",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "fancy badger",
+        "Player ID": "0481e78d",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jamishio",
+        "Player ID": "b5bc20e5",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "RIP",
+        "Player ID": "24bb4dc8",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "DoppleGengar",
+        "Player ID": "4f151aa6",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "Oldmansami",
+        "Player ID": "4c51d785",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "magnolia",
+        "Player ID": "bc2e941f",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jim_Nasium",
+        "Player ID": "7c3dce0c",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "Fame",
+        "Player ID": "023ff2f9",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mondo",
+        "Player ID": "9e68ce86",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "CezarLeo",
+        "Player ID": "070b48d6",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "alexnz",
+        "Player ID": "71fbfc83",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "Vincentius1",
+        "Player ID": "d2ce63e0",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "Redthunder",
+        "Player ID": "1ec3d22a",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "PancakeDinnah",
+        "Player ID": "f5701c85",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "Epoqua",
+        "Player ID": "3027a61c",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "Grand Pastor J",
+        "Player ID": "f5748e85",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dstrbnz",
+        "Player ID": "c8ee7197",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "Puyaan",
+        "Player ID": "1df9e287",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "lilgurt",
+        "Player ID": "dc394cea",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "Neskorama",
+        "Player ID": "61955a7c",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "Culturetaste",
+        "Player ID": "afce7f18",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "BlackDiamondGMZ",
+        "Player ID": "2fc653a4",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "TheWarpickle",
+        "Player ID": "eaa91c8e",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "117",
+        "Tier": "B"
+      },
+      {
+        "Player": "CodyDavidHolmes",
+        "Player ID": "4ebdf3ee",
+        "Event": "NorthEast Knockout",
+        "Event ID": "northeast-knockout",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "117",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "treta-championship-2026": {
+    "name": "Treta Championship 2026",
+    "date": "2026-09-04",
+    "slug": "treta-championship-2026",
+    "Tier": "B",
+    "Entrants": "93",
+    "results": [
+      {
+        "Player": "Brayan_Job",
+        "Player ID": "fbf421ef",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "1",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Didimokof",
+        "Player ID": "420e069a",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "2",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "mano knela",
+        "Player ID": "0d144af0",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "3",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "ozzpan",
+        "Player ID": "ffe8d468",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "4",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "AleKOF",
+        "Player ID": "4d701e17",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "5",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Torello",
+        "Player ID": "9cdace58",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "5",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Greensleeves",
+        "Player ID": "6bc7d894",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "7",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Vinicius BR Fist",
+        "Player ID": "b54a36db",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "7",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Glnn",
+        "Player ID": "c6de4c1c",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "9",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mad Reis",
+        "Player ID": "42236b47",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "9",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "DanMineiro",
+        "Player ID": "2773efb7",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "9",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "ElSakoGordo",
+        "Player ID": "57e2753f",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "9",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Alexis2904",
+        "Player ID": "c4ec5c91",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "13",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Matuquete",
+        "Player ID": "ab143e0a",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "13",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "TRT Zero",
+        "Player ID": "91e5c418",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "13",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "joyboy",
+        "Player ID": "f4ec78ba",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "13",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Normaníaco",
+        "Player ID": "ae340069",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "17",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "TKL-TOPTWO",
+        "Player ID": "905c05c3",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "17",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pneu",
+        "Player ID": "f54e89b1",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "17",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Yokai",
+        "Player ID": "379d5737",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "17",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Wakeup lvl 3",
+        "Player ID": "44b7e4f9",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "17",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Accelerator",
+        "Player ID": "a058aba3",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "17",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Tetsuya_Deku_",
+        "Player ID": "09870e14",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "17",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Renatinha",
+        "Player ID": "5fe497d8",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "17",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ciuffo",
+        "Player ID": "d96bfb21",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "25",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "mcsalgado",
+        "Player ID": "d3d87239",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "25",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mathvedron",
+        "Player ID": "62317865",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "25",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Lululokura",
+        "Player ID": "ea9dbf86",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "25",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dserty",
+        "Player ID": "c8756458",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "25",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Gabriolo",
+        "Player ID": "08a25982",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "25",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "DoisLitros",
+        "Player ID": "668c1c7e",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "25",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Brás Cubas",
+        "Player ID": "f9cb4edb",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "25",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Gigiolurez",
+        "Player ID": "4e1231e5",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "EviLCid",
+        "Player ID": "c30e4f69",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Koryx",
+        "Player ID": "f61c6af7",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "BoloSinistro",
+        "Player ID": "00831935",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "NuBuNu",
+        "Player ID": "5b0ecabb",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Vina autista",
+        "Player ID": "2d86b93f",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Lex_T",
+        "Player ID": "4958ce6e",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rel",
+        "Player ID": "e77aeae5",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Spider",
+        "Player ID": "e56c5d79",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "EmanoelBits",
+        "Player ID": "a406f384",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Vini (diddykv)",
+        "Player ID": "82d2e927",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kolyra",
+        "Player ID": "9323338c",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "JOGADOR X",
+        "Player ID": "89f42d59",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "STA TATTOO",
+        "Player ID": "8afbfec3",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ado",
+        "Player ID": "627efaf0",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "SrCorujurso",
+        "Player ID": "635ae984",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "33",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Yukio",
+        "Player ID": "c2309f70",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "TIGAS",
+        "Player ID": "be59d19e",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Seba",
+        "Player ID": "0efd81fd",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "EliTz",
+        "Player ID": "65fb2b9e",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "china aqn",
+        "Player ID": "51fbc2ec",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "rampage_",
+        "Player ID": "803b7a04",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Siadripar",
+        "Player ID": "dd4a6c92",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "BrunoChrosS",
+        "Player ID": "5f19f9a8",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Figs",
+        "Player ID": "0621556f",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Shaco Arrombardo",
+        "Player ID": "2f0beb6f",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Piccolo",
+        "Player ID": "1748545e",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "gusgabardo",
+        "Player ID": "75f689d1",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "O_SAM._@YT",
+        "Player ID": "ca88454d",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "UBB ALEMAO",
+        "Player ID": "20f9a43c",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "RataSusan",
+        "Player ID": "96ccbbb8",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "93",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kratosjhony",
+        "Player ID": "7418b511",
+        "Event": "Treta Championship 2026",
+        "Event ID": "treta-championship-2026",
+        "Date": "2026-09-05",
+        "Finish": "49",
+        "Entrants": "93",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "takedown-2026": {
+    "name": "TAKEDOWN 2026",
+    "date": "2026-09-03",
+    "slug": "takedown-2026",
+    "Tier": "B",
+    "Entrants": "102",
+    "results": [
+      {
+        "Player": "Amu",
+        "Player ID": "4e566942",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "1",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Uchiha_FZ",
+        "Player ID": "7714ae94",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "2",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Stoney-",
+        "Player ID": "662033e2",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "3",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "M.I.K",
+        "Player ID": "827e116f",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "4",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ahmer kyo",
+        "Player ID": "e59a81a9",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "5",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "XenGen",
+        "Player ID": "8490482c",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "5",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Azure",
+        "Player ID": "azure",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "7",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Hazz",
+        "Player ID": "416efdfe",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "7",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "mfAnsari",
+        "Player ID": "e4f01288",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "9",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "MoizJP",
+        "Player ID": "0a685061",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "9",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "xKEiO",
+        "Player ID": "dd9d7262",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "9",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "JOY-BOY",
+        "Player ID": "14a4ea72",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "9",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rehan",
+        "Player ID": "883654fb",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "13",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Babarzaki",
+        "Player ID": "a333f5d5",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "13",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "zodicode",
+        "Player ID": "b707f75a",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "13",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "DEXTER",
+        "Player ID": "db863417",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "13",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "SonicFlash",
+        "Player ID": "sonicflash",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "17",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "UCC",
+        "Player ID": "93a4d6d4",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "17",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Smile",
+        "Player ID": "de0edc69",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "17",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ripher",
+        "Player ID": "f57d2d18",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "17",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rizwanshaikh27",
+        "Player ID": "d6ada706",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "17",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Shoaib Lodhi",
+        "Player ID": "260196b8",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "17",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dark Phantom",
+        "Player ID": "80de4667",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "17",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "URKrauser",
+        "Player ID": "2b9e1d03",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "17",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Silentonlyfanboy",
+        "Player ID": "silentonlyfanboy",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "25",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "NausherwanFGC",
+        "Player ID": "2cbc1b69",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "25",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "A.J",
+        "Player ID": "332b78ee",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "25",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Leviathan",
+        "Player ID": "a2905932",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "25",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "KUSANAGI (PK)",
+        "Player ID": "f7075985",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "25",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Zain_Zainny",
+        "Player ID": "18ebc8a9",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "25",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Chaotic_rezy",
+        "Player ID": "6c642b3e",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "25",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "NabeelCero",
+        "Player ID": "9258d7b7",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "25",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "sami",
+        "Player ID": "3329b31b",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "33",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Daud Fiaz",
+        "Player ID": "daud-fiaz",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "33",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Shoaib Chang",
+        "Player ID": "d01611bd",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "33",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "luky619",
+        "Player ID": "9916c34b",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "33",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kashif yagami",
+        "Player ID": "c2dc789f",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "33",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "IRONTRIGGOR",
+        "Player ID": "18e147c4",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "33",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Metplex",
+        "Player ID": "7b982177",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "33",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "stomachfailurespeedrun",
+        "Player ID": "stomachfailurespeedrun",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "33",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Blazmi",
+        "Player ID": "7525ed2c",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "33",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Claw (Revive DBFZ)",
+        "Player ID": "45d63163",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "33",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rocker",
+        "Player ID": "dcc582ee",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "33",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "VincentBlade",
+        "Player ID": "7196c1a2",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "33",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Meer@Sab",
+        "Player ID": "99101165",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "33",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "REPU",
+        "Player ID": "c3fded30",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "33",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "dacterweeb",
+        "Player ID": "b067f177",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "33",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Arman Gaming Zone",
+        "Player ID": "f802858e",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "33",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "D.A.Y.S",
+        "Player ID": "3705f39b",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "49",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "SHAZI_JFSR",
+        "Player ID": "6cf82531",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "49",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Nightmare",
+        "Player ID": "230183e8",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "49",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dongcorleon",
+        "Player ID": "dongcorleon",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "49",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "noodles",
+        "Player ID": "noodles",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "49",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dua Fatima",
+        "Player ID": "dua-fatima",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "49",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Adil Hussain",
+        "Player ID": "adil-hussain",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "49",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "SelfieSucks!!",
+        "Player ID": "d2913c0f",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "49",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "TnT_Stars",
+        "Player ID": "2bc1e1f5",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "49",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "SYNEX_009",
+        "Player ID": "6bec6168",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "49",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "ABDNAEEM2000",
+        "Player ID": "2d141546",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "49",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kela Master",
+        "Player ID": "kela-master",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "49",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "HM",
+        "Player ID": "a0316b98",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "49",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Larkain",
+        "Player ID": "3a7ba2a6",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "49",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Sunny Babar",
+        "Player ID": "c61feb12",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "49",
+        "Entrants": "102",
+        "Tier": "B"
+      },
+      {
+        "Player": "Quit",
+        "Player ID": "ab38aaf3",
+        "Event": "TAKEDOWN 2026",
+        "Event ID": "takedown-2026",
+        "Date": "2026-09-04",
+        "Finish": "49",
+        "Entrants": "102",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "ultimate-fighting-arena-2026": {
+    "name": "Ultimate Fighting Arena 2026",
+    "date": "2026-09-11",
+    "slug": "ultimate-fighting-arena-2026",
+    "Tier": "S",
+    "Entrants": "512",
+    "results": [
+      {
+        "Player": "NoahTheProdigy",
+        "Player ID": "27053e88",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "1",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Higuchi",
+        "Player ID": "fee94c73",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "2",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "AngryBird",
+        "Player ID": "3471a2f7",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "3",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "タンタンメン",
+        "Player ID": "8b487f7d",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "4",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Ryukichi",
+        "Player ID": "9f36f82b",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "5",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "kobayan",
+        "Player ID": "ef64257e",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "5",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Big Bird",
+        "Player ID": "5e30e23e",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "7",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Lexx",
+        "Player ID": "ec4d302b",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "7",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Leshar",
+        "Player ID": "c377c071",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "9",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "あくたがわ",
+        "Player ID": "2754067c",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "9",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "NL",
+        "Player ID": "bebd6de0",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "9",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Shuto",
+        "Player ID": "b66813f3",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "9",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Wabiichi",
+        "Player ID": "e14bf28c",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "13",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "tako",
+        "Player ID": "975aaa22",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "13",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "EndingWalker",
+        "Player ID": "90c33661",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "13",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "JuniorLeo",
+        "Player ID": "dce6f793",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "13",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "broski",
+        "Player ID": "b84e0fce",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "17",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Rikemansbarnet",
+        "Player ID": "2d28adb5",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "17",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "kingsvega",
+        "Player ID": "c0e4c985",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "17",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "HeyyPepito",
+        "Player ID": "6ce590e5",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "17",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Blaz",
+        "Player ID": "37844e8a",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "17",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "NuckleDu",
+        "Player ID": "71b98b1d",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "17",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Dual Kevin",
+        "Player ID": "88d3f20e",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "17",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Tokido",
+        "Player ID": "a4c7c2d4",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "17",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Mago",
+        "Player ID": "980ad764",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "25",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Shakz",
+        "Player ID": "590e5972",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "25",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Sahara.",
+        "Player ID": "a0062bed",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "25",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "YONANGEL",
+        "Player ID": "06d0de0e",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "25",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Armperor",
+        "Player ID": "f8689c70",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "25",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Samurai",
+        "Player ID": "5b98b446",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "25",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Noble",
+        "Player ID": "befd4e60",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "25",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Daigo Umehara",
+        "Player ID": "7f5507aa",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "25",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Ryusei",
+        "Player ID": "6f9ebc42",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "33",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "orarin",
+        "Player ID": "993a7906",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "33",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Jr.",
+        "Player ID": "126a661a",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "33",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "kincho",
+        "Player ID": "c5bc27ca",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "33",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Abood bboy",
+        "Player ID": "df4316cf",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "33",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Hamood",
+        "Player ID": "cd6cefbc",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "33",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Nemo",
+        "Player ID": "6f4013df",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "33",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "takepi",
+        "Player ID": "ab8d7476",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "33",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Kayne",
+        "Player ID": "cd4f2827",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "33",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "RASS",
+        "Player ID": "3c086d43",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "33",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Mizuha",
+        "Player ID": "ed773e44",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "33",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Amazing",
+        "Player ID": "088f098e",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "33",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Kawano",
+        "Player ID": "84491299",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "33",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Hope",
+        "Player ID": "ea6104e7",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "33",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Kusanagi",
+        "Player ID": "9ad2f6df",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "33",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Cuongster",
+        "Player ID": "c2732fb0",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "33",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Wassim",
+        "Player ID": "9effc2c8",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "49",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Baki",
+        "Player ID": "3fadc40d",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "49",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "JP-Mwouisman",
+        "Player ID": "2b74cb7a",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "49",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "gamein99",
+        "Player ID": "e2f0b505",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "49",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "NotPedro",
+        "Player ID": "9beebe73",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "49",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Ishak",
+        "Player ID": "ba220076",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "49",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "ashumaru",
+        "Player ID": "a5ee8b0f",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "49",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "semy28",
+        "Player ID": "5e5c39f7",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "49",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Linkexelo",
+        "Player ID": "3e2b11b6",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "49",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "uriche",
+        "Player ID": "b2305c8f",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "49",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "YAS",
+        "Player ID": "fabefccb",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "49",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Kushina",
+        "Player ID": "beed3831",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "49",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "EnvyLeJamie",
+        "Player ID": "d0568b05",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "49",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "taizen",
+        "Player ID": "f0932bb9",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "49",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Oil King",
+        "Player ID": "92c9115f",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "49",
+        "Entrants": "512",
+        "Tier": "S"
+      },
+      {
+        "Player": "Tchang",
+        "Player ID": "6527aad9",
+        "Event": "Ultimate Fighting Arena 2026",
+        "Event ID": "ultimate-fighting-arena-2026-2",
+        "Date": "2026-09-12",
+        "Finish": "49",
+        "Entrants": "512",
+        "Tier": "S"
+      }
+    ],
+    "isArchived": false
+  },
+  "ozhadou-nationals-20": {
+    "name": "OzHadou Nationals 20",
+    "date": "2026-09-10",
+    "slug": "ozhadou-nationals-20",
+    "Tier": "B",
+    "Entrants": "79",
+    "results": [
+      {
+        "Player": "Rumours",
+        "Player ID": "446b52d1",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "1",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Antwerp",
+        "Player ID": "5a229d33",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "2",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Koopa",
+        "Player ID": "eb434c23",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "3",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "InstantCoffee",
+        "Player ID": "18043fd7",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "4",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Zonatte",
+        "Player ID": "f4a374d3",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "5",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Xave",
+        "Player ID": "6acc1b4e",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "5",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Zero Emotions",
+        "Player ID": "4d0261b6",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "7",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Fox_",
+        "Player ID": "c117326d",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "7",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "PugBizcuit",
+        "Player ID": "89524e69",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "9",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Vollian",
+        "Player ID": "c0a8bfb4",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "9",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Teq",
+        "Player ID": "cb84b9c4",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "9",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Giga",
+        "Player ID": "0c6e9433",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "9",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bragi",
+        "Player ID": "5a06e905",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "13",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rank E",
+        "Player ID": "17be51dd",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "13",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "donorofcorona",
+        "Player ID": "7c491186",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "13",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "PSIClipse",
+        "Player ID": "22d04957",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "13",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "hitscan",
+        "Player ID": "b8ed7bfe",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "17",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jarop",
+        "Player ID": "35932b45",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "17",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kingmudcrab",
+        "Player ID": "fc569d39",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "17",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Suzu520",
+        "Player ID": "2cd2ba3d",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "17",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "GLPhoenix",
+        "Player ID": "2fd964f2",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "17",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Whale",
+        "Player ID": "f55edc8c",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "17",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bakirah",
+        "Player ID": "6243dab1",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "17",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "AfterDeath",
+        "Player ID": "f67130a8",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "17",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Hinoko",
+        "Player ID": "844c2746",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "25",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ker",
+        "Player ID": "a87e452c",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "25",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "chipotle",
+        "Player ID": "4c501202",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "25",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "shaze",
+        "Player ID": "8e1392b8",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "25",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "IceBurgy",
+        "Player ID": "d5f65cb4",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "25",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "BantheGief",
+        "Player ID": "fe801680",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "25",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "JokerMain",
+        "Player ID": "78ce665b",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "25",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mr. RiceGuy",
+        "Player ID": "8e3d929e",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "25",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bug",
+        "Player ID": "76d9beb3",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "33",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Hurt_Town",
+        "Player ID": "f46082d8",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "33",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "SFJoshy",
+        "Player ID": "9eb41a6c",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "33",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Liam Grayson",
+        "Player ID": "7fc7f9dc",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "33",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "In4war",
+        "Player ID": "9a344788",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "33",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Tomosys",
+        "Player ID": "9a903082",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "33",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "WhyZee",
+        "Player ID": "dc589476",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "33",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Chandarin",
+        "Player ID": "0787e35a",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "33",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Governor",
+        "Player ID": "89eb31d7",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "33",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "croze",
+        "Player ID": "5d516e87",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "33",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "PokkeDex",
+        "Player ID": "b6acfe3a",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "33",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "dreadon",
+        "Player ID": "7007ae06",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "33",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "godsibb",
+        "Player ID": "21fa5db5",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "33",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Sythe",
+        "Player ID": "f1dab879",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "33",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "AwildLLAMA",
+        "Player ID": "0a836ca4",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "33",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Thumbs_Up",
+        "Player ID": "456679cc",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "33",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "KangaToy",
+        "Player ID": "f52304d8",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "49",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "niah",
+        "Player ID": "a9ebbd11",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "49",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bibek",
+        "Player ID": "acf629cb",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "49",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "MostlyPresent",
+        "Player ID": "5321c77f",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "49",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "NAKORURU",
+        "Player ID": "7460a314",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "49",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Presty",
+        "Player ID": "e494f729",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "49",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pixley",
+        "Player ID": "d9fec3cc",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "49",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mollie",
+        "Player ID": "1363f54e",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "49",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Usiop",
+        "Player ID": "fc998d27",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "49",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Danish Koo",
+        "Player ID": "31c46685",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "49",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jojo",
+        "Player ID": "92e0c95b",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "49",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "ylknt",
+        "Player ID": "2b63663c",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "49",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "ActingGoose",
+        "Player ID": "bec1dda1",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "49",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "LightningFlare",
+        "Player ID": "c5292f27",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "49",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cheff",
+        "Player ID": "10b9d23e",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "49",
+        "Entrants": "79",
+        "Tier": "B"
+      },
+      {
+        "Player": "JustABen",
+        "Player ID": "e0d58173",
+        "Event": "OzHadou Nationals 20",
+        "Event ID": "ozhadou-nationals-20",
+        "Date": "2026-09-11",
+        "Finish": "49",
+        "Entrants": "79",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "island-paradise-3": {
+    "name": "Island Paradise 3",
+    "date": "2026-09-18",
+    "slug": "island-paradise-3",
+    "Tier": "B",
+    "Entrants": "64",
+    "results": [
+      {
+        "Player": "Punk",
+        "Player ID": "1b9e2ed9",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "1",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bloo",
+        "Player ID": "62f3840c",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "2",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "NuckleDu",
+        "Player ID": "71b98b1d",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "3",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Positivity",
+        "Player ID": "c36c040b",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "4",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jayson",
+        "Player ID": "fe1f8a2f",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "5",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ehundred",
+        "Player ID": "9d175e26",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "5",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "ScrawtVermillion",
+        "Player ID": "01975133",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "7",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Paladin",
+        "Player ID": "ce49fb29",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "7",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Velicoso",
+        "Player ID": "25bdc169",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "9",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cuby",
+        "Player ID": "2a5d83ae",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "9",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Itachislegacy",
+        "Player ID": "be913c13",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "9",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Vlady",
+        "Player ID": "b622bb84",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "9",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Danny",
+        "Player ID": "0ad4862d",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "13",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "OmegaTomHanks",
+        "Player ID": "ce531f81",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "13",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Piñacolada",
+        "Player ID": "d0f6ab97",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "13",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "TD Blue",
+        "Player ID": "53a37465",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "13",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "PaPa Churro",
+        "Player ID": "fd14cc8e",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "17",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "LeoV",
+        "Player ID": "6015613b",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "17",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "LonzoBalling",
+        "Player ID": "fa143996",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "17",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "PollotheQuik",
+        "Player ID": "9e50a71b",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "17",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Walooiji",
+        "Player ID": "859867a1",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "17",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Darksidezoom",
+        "Player ID": "cc4506a8",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "17",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "lexytron3000",
+        "Player ID": "c4fa534b",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "17",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Wayra",
+        "Player ID": "aacffc82",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "17",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Santi Claws",
+        "Player ID": "6edfec91",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "25",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "kingnothing",
+        "Player ID": "87a262c5",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "25",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "impulse",
+        "Player ID": "6cff4d0a",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "25",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "DanielRGT",
+        "Player ID": "dad33d39",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "25",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Uncle Shank",
+        "Player ID": "6b8213e3",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "25",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Alcorona",
+        "Player ID": "35600772",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "25",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "teamkhris",
+        "Player ID": "51e57527",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "25",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Gomi",
+        "Player ID": "82aed57f",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "25",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Moshpitmessiah",
+        "Player ID": "cbe5c3d0",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "33",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Fern",
+        "Player ID": "22dce3f9",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "33",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "AverageJojo",
+        "Player ID": "5fe75991",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "33",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "WhiteTeePoison09",
+        "Player ID": "3ea87d16",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "33",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Banana_Van",
+        "Player ID": "d8034e1d",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "33",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "SagePlatinum",
+        "Player ID": "6bc0760d",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "33",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Nootnoot",
+        "Player ID": "b0181fde",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "33",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "KiteB4Night",
+        "Player ID": "d3e464a5",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "33",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pinkgun",
+        "Player ID": "2bb3cfdf",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "33",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Z_Guy",
+        "Player ID": "51cb2d9a",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "33",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "HalfLife",
+        "Player ID": "d55021f7",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "33",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Senu",
+        "Player ID": "1a9d333d",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "33",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Labworks1983",
+        "Player ID": "672a6e56",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "33",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "fakebruno",
+        "Player ID": "c28e7541",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "33",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Orwando",
+        "Player ID": "92e89bf8",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "33",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Fierce",
+        "Player ID": "2d7a14fd",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "33",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Saintlll",
+        "Player ID": "f9468dec",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "49",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kyokaxew",
+        "Player ID": "6a7a314c",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "49",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ethereal",
+        "Player ID": "68e18b00",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "49",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "HotPai",
+        "Player ID": "00b42f84",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "49",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "RepentIV",
+        "Player ID": "e33d8183",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "49",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "GrimTG",
+        "Player ID": "7006ef02",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "49",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "noraneko",
+        "Player ID": "f42d5f99",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "49",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Species",
+        "Player ID": "9f2862a9",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "49",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Lamayo",
+        "Player ID": "f9d61fa8",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "49",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Paw Paw",
+        "Player ID": "a37e6146",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "49",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "JL Snow",
+        "Player ID": "0068bc54",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "49",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Obido",
+        "Player ID": "75f4bba9",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "49",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Peeps",
+        "Player ID": "360c5454",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "49",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dominicano",
+        "Player ID": "f17b8745",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "49",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "TalkativeSecret",
+        "Player ID": "a81fce06",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "49",
+        "Entrants": "64",
+        "Tier": "B"
+      },
+      {
+        "Player": "oomfiecoded",
+        "Player ID": "be4f2754",
+        "Event": "Island Paradise 3",
+        "Event ID": "island-paradise-3",
+        "Date": "2026-09-19",
+        "Finish": "49",
+        "Entrants": "64",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "manila-madness-5": {
+    "name": "Manila Madness 5",
+    "date": "2026-09-17",
+    "slug": "manila-madness-5",
+    "Tier": "B",
+    "Entrants": "24",
+    "results": [
+      {
+        "Player": "Book",
+        "Player ID": "a1dca669",
+        "Event": "Manila Madness 5",
+        "Event ID": "manila-madness-5",
+        "Date": "2026-09-18",
+        "Finish": "1",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "Junky284",
+        "Player ID": "66345ab1",
+        "Event": "Manila Madness 5",
+        "Event ID": "manila-madness-5",
+        "Date": "2026-09-18",
+        "Finish": "2",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "U",
+        "Player ID": "a1747b9a",
+        "Event": "Manila Madness 5",
+        "Event ID": "manila-madness-5",
+        "Date": "2026-09-18",
+        "Finish": "3",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "bobps3",
+        "Player ID": "80234413",
+        "Event": "Manila Madness 5",
+        "Event ID": "manila-madness-5",
+        "Date": "2026-09-18",
+        "Finish": "4",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "Champo",
+        "Player ID": "ebbefec3",
+        "Event": "Manila Madness 5",
+        "Event ID": "manila-madness-5",
+        "Date": "2026-09-18",
+        "Finish": "5",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "VeeGPP",
+        "Player ID": "44963fde",
+        "Event": "Manila Madness 5",
+        "Event ID": "manila-madness-5",
+        "Date": "2026-09-18",
+        "Finish": "5",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "SideStepLance",
+        "Player ID": "1ae1873b",
+        "Event": "Manila Madness 5",
+        "Event ID": "manila-madness-5",
+        "Date": "2026-09-18",
+        "Finish": "7",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pao Isláw",
+        "Player ID": "62f75b45",
+        "Event": "Manila Madness 5",
+        "Event ID": "manila-madness-5",
+        "Date": "2026-09-18",
+        "Finish": "7",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "Salty SALMON",
+        "Player ID": "c2f278e7",
+        "Event": "Manila Madness 5",
+        "Event ID": "manila-madness-5",
+        "Date": "2026-09-18",
+        "Finish": "9",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "Champloo",
+        "Player ID": "c7d87d54",
+        "Event": "Manila Madness 5",
+        "Event ID": "manila-madness-5",
+        "Date": "2026-09-18",
+        "Finish": "9",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "AYO_HOLLOW",
+        "Player ID": "d13786bc",
+        "Event": "Manila Madness 5",
+        "Event ID": "manila-madness-5",
+        "Date": "2026-09-18",
+        "Finish": "9",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ransak",
+        "Player ID": "95e052a1",
+        "Event": "Manila Madness 5",
+        "Event ID": "manila-madness-5",
+        "Date": "2026-09-18",
+        "Finish": "9",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "Re:Silent",
+        "Player ID": "dfb6da00",
+        "Event": "Manila Madness 5",
+        "Event ID": "manila-madness-5",
+        "Date": "2026-09-18",
+        "Finish": "13",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "SenGouku",
+        "Player ID": "98eedc04",
+        "Event": "Manila Madness 5",
+        "Event ID": "manila-madness-5",
+        "Date": "2026-09-18",
+        "Finish": "13",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "reverse'raijin",
+        "Player ID": "f4c45d7b",
+        "Event": "Manila Madness 5",
+        "Event ID": "manila-madness-5",
+        "Date": "2026-09-18",
+        "Finish": "13",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kengesagt",
+        "Player ID": "0df260a8",
+        "Event": "Manila Madness 5",
+        "Event ID": "manila-madness-5",
+        "Date": "2026-09-18",
+        "Finish": "13",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "aangxiety",
+        "Player ID": "41ed98bc",
+        "Event": "Manila Madness 5",
+        "Event ID": "manila-madness-5",
+        "Date": "2026-09-18",
+        "Finish": "17",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "maximumalpha",
+        "Player ID": "4815a56d",
+        "Event": "Manila Madness 5",
+        "Event ID": "manila-madness-5",
+        "Date": "2026-09-18",
+        "Finish": "17",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jumpy",
+        "Player ID": "272e09e9",
+        "Event": "Manila Madness 5",
+        "Event ID": "manila-madness-5",
+        "Date": "2026-09-18",
+        "Finish": "17",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "YoshiUchiha",
+        "Player ID": "0d7b98e1",
+        "Event": "Manila Madness 5",
+        "Event ID": "manila-madness-5",
+        "Date": "2026-09-18",
+        "Finish": "17",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "AdNyan",
+        "Player ID": "de59ccc8",
+        "Event": "Manila Madness 5",
+        "Event ID": "manila-madness-5",
+        "Date": "2026-09-18",
+        "Finish": "17",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pringus",
+        "Player ID": "0e059496",
+        "Event": "Manila Madness 5",
+        "Event ID": "manila-madness-5",
+        "Date": "2026-09-18",
+        "Finish": "17",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mike",
+        "Player ID": "33acb4ef",
+        "Event": "Manila Madness 5",
+        "Event ID": "manila-madness-5",
+        "Date": "2026-09-18",
+        "Finish": "17",
+        "Entrants": "24",
+        "Tier": "B"
+      },
+      {
+        "Player": "mekoneko",
+        "Player ID": "ccea71b1",
+        "Event": "Manila Madness 5",
+        "Event ID": "manila-madness-5",
+        "Date": "2026-09-18",
+        "Finish": "17",
+        "Entrants": "24",
         "Tier": "B"
       }
     ],

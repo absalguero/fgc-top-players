@@ -31,6 +31,11 @@ function buildTagsBySlug(collectionApi) {
 }
 
 module.exports = async function (eleventyConfig) {
+  // --- Development Mode Detection (localhost serve/watch) ---
+  const isDev = process.env.ELEVENTY_RUN_MODE === "serve" || 
+                process.env.ELEVENTY_RUN_MODE === "watch" || 
+                process.env.NODE_ENV === "development";
+
   const { default: eleventyPostcss } = await import("eleventy-plugin-postcss");
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin, { createStubs: false });
@@ -39,7 +44,7 @@ module.exports = async function (eleventyConfig) {
   });
   eleventyConfig.addPlugin(eleventyPostcss);
 
-  // --- Add absoluteUrl filter (fixes "filter not found: absoluteUrl") ---
+  // --- Add absoluteUrl filter ---
   eleventyConfig.addFilter("absoluteUrl", (url, base) => {
     try {
       if (!url && !base) return "";
@@ -86,7 +91,7 @@ module.exports = async function (eleventyConfig) {
 
   // Pagination Collection: Generates pages for every tag (e.g. /tags/sf6/1/, /tags/sf6/2/)
   eleventyConfig.addCollection("pagedTags", (collectionApi) => {
-    const pageSize = 10; // Set how many articles per page you want
+    const pageSize = 10;
     const allPosts = collectionApi.getAll().sort((a, b) => b.date - a.date);
     const tagMap = new Map();
 
@@ -116,7 +121,6 @@ module.exports = async function (eleventyConfig) {
 
     tagMap.forEach((posts, tag) => {
       const totalPages = Math.ceil(posts.length / pageSize);
-      // Use the same slugify settings as your buildTagsBySlug function
       const slug = slugify(tag, { lower: true, strict: true });
       const tagPermalinkBase = `/tags/${slug}/`;
 
@@ -135,7 +139,7 @@ module.exports = async function (eleventyConfig) {
           items: pageItems,
           pageNumber: pageNumber,
           totalPages: totalPages,
-          permalink: hrefs[pageNumber], // This feeds the permalink in tag.njk
+          permalink: hrefs[pageNumber],
           hrefs: hrefs,
           hrefPrevious: pageNumber > 0 ? hrefs[pageNumber - 1] : null,
           hrefNext: pageNumber < totalPages - 1 ? hrefs[pageNumber + 1] : null
@@ -143,15 +147,10 @@ module.exports = async function (eleventyConfig) {
       }
     });
 
-    if (process.env.ELEVENTY_ENV === 'development') {
-      console.log('⚠️  DEV MODE: Limiting Tags to first 5 pages.');
-      return pagedTags.slice(0, 5); 
-    }
-
     return pagedTags;
   });
 
-  // Players collection with unique slugs
+  // Players collection: Top 40 only on localhost, full list in production
   eleventyConfig.addCollection("players", function (collectionApi) {
     const root = collectionApi.getAll()[0];
     const playerProfiles = root?.data?.playerProfiles;
@@ -160,7 +159,6 @@ module.exports = async function (eleventyConfig) {
       return [];
     }
 
-    // Build a set of all player slugs that appear in character notable players
     const characterAnalytics = root?.data?.characterAnalytics || [];
     const notablePlayerSlugs = new Set();
     characterAnalytics.forEach((char) => {
@@ -207,24 +205,30 @@ module.exports = async function (eleventyConfig) {
 
     const sortedPlayers = out.sort((a, b) => (a.rank || Infinity) - (b.rank || Infinity));
 
-    if (process.env.ELEVENTY_ENV === 'development') {
-      console.log('⚠️ DEV MODE: Building only top 40 players for speed.');
-      return sortedPlayers.slice(0, 40);
-    }
-
-    return sortedPlayers;
+    // Limit to 40 players in development; return all in production
+    return isDev ? sortedPlayers.slice(0, 40) : sortedPlayers;
   });
 
-  eleventyConfig.addCollection("newsFeed", function (collectionApi) {
-  const allNews = collectionApi.getFilteredByTag("news");
+  // Tournaments collection: Last 5 only on localhost, all in production
+  eleventyConfig.addCollection("tournamentsList", function (collectionApi) {
+    const root = collectionApi.getAll()[0];
+    const events = root?.data?.tournaments?.events || [];
+    const sorted = [...events].sort((a, b) => new Date(b.date) - new Date(a.date));
 
-  if (process.env.ELEVENTY_ENV === 'development') {
-    console.log('⚠️  DEV MODE: Building only the 12 most recent news articles.');
-    return allNews.slice(-12);
-  }
+    return isDev ? sorted.slice(0, 5) : sorted;
+  });
 
-  return allNews;
-});
+  // Upcoming Tournaments collection: Next 5 only on localhost, all in production
+  eleventyConfig.addCollection("upcomingTournamentsList", function (collectionApi) {
+    const root = collectionApi.getAll()[0];
+    const events = root?.data?.upcomingTournaments?.events || 
+                   root?.data?.upcomingTournaments || 
+                   root?.data?.upcoming?.events || 
+                   root?.data?.tournaments?.upcoming || [];
+    const sorted = [...events].sort((a, b) => new Date(a.date) - new Date(b.date));
+
+    return isDev ? sorted.slice(0, 5) : sorted;
+  });
 
   eleventyConfig.setFrontMatterParsingOptions({
     excerpt: true,
@@ -251,7 +255,6 @@ module.exports = async function (eleventyConfig) {
     return encodeURIComponent(string);
   });
 
-  // Filter profiles array to only include items whose slug is in the collection
   eleventyConfig.addFilter("filterProfilesByCollection", (profiles, collection) => {
     if (!Array.isArray(profiles) || !Array.isArray(collection)) return [];
     const slugSet = new Set(collection.map(item => item.slug).filter(Boolean));
@@ -269,18 +272,14 @@ module.exports = async function (eleventyConfig) {
     if (!pid) return null;
     if (!playerCollection || !Array.isArray(playerCollection)) return null;
 
-    // 1. Check if we already built a "Cheat Sheet" (Map) for this specific collection
     let lookupMap = playerCollectionCache.get(playerCollection);
 
-    // 2. If not, build it now (Runs only ONCE per build)
     if (!lookupMap) {
       lookupMap = new Map();
       
       playerCollection.forEach(item => {
-        // We handle item.data (standard 11ty) or item (raw object)
         const d = item.data || item; 
         
-        // Map multiple keys so you can find by ID, Slug, or Name
         if (d.id) lookupMap.set(String(d.id), d);
         if (d.slug) lookupMap.set(String(d.slug), d);
         if (d.name) lookupMap.set(String(d.name), d);
@@ -290,7 +289,6 @@ module.exports = async function (eleventyConfig) {
       console.log(`[Performance] Built fast lookup map for ${playerCollection.length} players.`);
     }
 
-    // 3. Return the result instantly (O(1) speed instead of O(N))
     return lookupMap.get(String(pid));
   });
 
@@ -318,18 +316,15 @@ module.exports = async function (eleventyConfig) {
     return Object.values(obj);
   });
 
-  const yearsCache = new WeakMap(); // Cache storage
+  const yearsCache = new WeakMap();
 
   eleventyConfig.addFilter("extractYears", function (events) {
-    // 1. Safety Check
     if (!Array.isArray(events)) return [];
 
-    // 2. Cache Hit: Return immediately if we already did the math
     if (yearsCache.has(events)) {
       return yearsCache.get(events);
     }
 
-    // 3. Cache Miss: Calculate the years
     const years = new Set();
     events.forEach((ev) => {
       if (ev && ev.date && typeof ev.date === "string") {
@@ -339,8 +334,6 @@ module.exports = async function (eleventyConfig) {
     });
 
     const result = Array.from(years).sort().reverse();
-
-    // 4. Save result to cache
     yearsCache.set(events, result);
 
     return result;
@@ -389,26 +382,21 @@ module.exports = async function (eleventyConfig) {
     });
   });
 
-  // --- RELATED POSTS FILTER (Relevance Score Algorithm) ---
+  // --- RELATED POSTS FILTER ---
   eleventyConfig.addFilter("getRelated", function(collection, currentUrl, currentTags) {
     if (!collection || !currentTags) return [];
 
-    // Tags that are too generic to count towards a high relevance score
     const ignoredTags = new Set([...TAG_SKIP, 'article']);
 
-    // 1. Score every post in the collection
     const scoredPosts = collection.map(post => {
-      // Normalize removing trailing slashes for comparison
-const normalize = url => (url || "").replace(/\/+$/, "");
-if (normalize(post.url) === normalize(currentUrl)) return { score: -1, post };
+      const normalize = url => (url || "").replace(/\/+$/, "");
+      if (normalize(post.url) === normalize(currentUrl)) return { score: -1, post };
 
       let score = 0;
       const otherTags = post.data.tags || [];
 
-      // 2. Calculate score based on matching tags
       currentTags.forEach(tag => {
         const cleanTag = tag.toLowerCase();
-        // Only count the tag if it's not in the ignored list AND the other post has it
         if (!ignoredTags.has(cleanTag) && otherTags.map(t => t.toLowerCase()).includes(cleanTag)) {
           score++;
         }
@@ -417,21 +405,17 @@ if (normalize(post.url) === normalize(currentUrl)) return { score: -1, post };
       return { score, post };
     });
 
-    // 3. Filter for matches, sort by highest score, take top 3
     return scoredPosts
-    .filter(item => item.score > 0)
-    .sort((a, b) => {
-      // Primary Sort: Higher score first
-      if (b.score !== a.score) {
-        return b.score - a.score;
-      }
-      // Secondary Sort (Tie-Breaker): Newer date first
-      return b.post.date - a.post.date;
-    })
-    .slice(0, 3) // Take top 3
-    .map(item => item.post);
+      .filter(item => item.score > 0)
+      .sort((a, b) => {
+        if (b.score !== a.score) {
+          return b.score - a.score;
+        }
+        return b.post.date - a.post.date;
+      })
+      .slice(0, 3)
+      .map(item => item.post);
   });
-  // -----------------------------------------------------
 
   eleventyConfig.addDataExtension("js", { parser: "javascript" });
   eleventyConfig.setTemplateFormats(["md", "njk", "html", "11ty.js"]);

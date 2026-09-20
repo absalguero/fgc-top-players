@@ -1,13 +1,7 @@
 ---
-title: FGC Top Players
+title: FGC Top Players — Street Fighter 6 Rankings, Results & Meta Stats
 bodyClass: "page-home"
-pagination:
-  data: collections.newsFeed
-  size: 6
-  alias: articles
-  reverse: true
-  addAllPagesToCollections: true
-permalink: "{% if pagination.pageNumber == 0 %}/{% else %}/page/{{ pagination.pageNumber + 1 }}/{% endif %}"
+permalink: "/"
 eleventyNavigation:
   key: Home
   order: 1
@@ -17,49 +11,23 @@ navHighlight: "Home"
 
 {% extends "layout.njk" %}
 
-{# --- Calculate Dynamic Metadata Variables --- #}
-{% set pageTitle %}
-  {% if pagination.pageNumber == 0 %}
-    {# SEO OPTIMIZED TITLE #}
-    FGC Top Players — Latest News, Rankings & Stats
-  {% else %}
-    {# ARCHIVE TITLE (Prevents SEO Duplicate Title Errors) #}
-    FGC News Archive (Page {{ pagination.pageNumber + 1 }}) | FGC Top Players
-  {% endif %}
-{% endset %}
-
-{% set pageDesc %}
-  {% if pagination.pageNumber == 0 %}
-    Latest FGC news, tournament results, and rankings across Street Fighter and more—updated regularly.
-  {% else %}
-    FGC news index page {{ pagination.pageNumber + 1 }}. Catch up on recent tournaments, results, and analysis.
-  {% endif %}
-{% endset %}
+{# --- Page Setup & Spotlight Data --- #}
+{% set allPlayers = playerStatsSlim | selectattr('rank', 'defined') | selectattr('rank', 'le', 200) | list %}
+{% set pageTitle = "FGC Top Players — Street Fighter 6 Rankings, Results & Meta Stats" %}
+{% set pageDesc = "Street Fighter 6 competitive analytics hub featuring global player rankings, S-tier character meta stats, and latest verified tournament results." %}
 
 {# --- Block Overrides --- #}
-
-{% block title %}{{ pageTitle | trim }}{% endblock %}
+{% block title %}{{ pageTitle }}{% endblock %}
 
 {% block meta_description %}
-<meta name="description" content="{{ pageDesc | trim }}">
+<meta name="description" content="{{ pageDesc }}">
 {% endblock %}
 
-{% block og_title %}{{ pageTitle | trim }}{% endblock %}
-{% block og_description %}{{ pageDesc | trim }}{% endblock %}
+{% block og_title %}{{ pageTitle }}{% endblock %}
+{% block og_description %}{{ pageDesc }}{% endblock %}
 
-{% block twitter_title %}{{ pageTitle | trim }}{% endblock %}
-{% block twitter_description %}{{ pageDesc | trim }}{% endblock %}
-
-{# --- Extra Head Tags --- #}
-{% block head_extra %}
-  {% if pagination.href.previous %}
-    <link rel="prev" href="{{ pagination.href.previous }}">
-  {% endif %}
-  {% if pagination.href.next %}
-    <link rel="next" href="{{ pagination.href.next }}">
-  {% endif %}
-  <link rel="alternate" type="application/rss+xml" title="FGC Top Players — News Feed" href="/feed.xml">
-{% endblock %}
+{% block twitter_title %}{{ pageTitle }}{% endblock %}
+{% block twitter_description %}{{ pageDesc }}{% endblock %}
 
 {# --- Page-level JSON-LD --- #}
 {% block structured_data %}
@@ -77,14 +45,10 @@ navHighlight: "Home"
       ]
     },
     {
-      "@type": "WebPage",
-      "name": "{{ pageTitle | trim }}",
-      "url": "{{ site.url }}{{ page.url }}",
-      "description": "Latest FGC news, tournament results, and rankings across Street Fighter and more.",
-      "primaryImageOfPage": {
-        "@type": "ImageObject",
-        "url": "{{ site.url }}/images/fgc-top-players-social-card.png"
-      }
+      "@type": "WebSite",
+      "name": "FGC Top Players",
+      "url": "{{ site.url }}/",
+      "description": "{{ pageDesc }}"
     }
   ]
 }
@@ -92,28 +56,20 @@ navHighlight: "Home"
 {% endblock %}
 
 {% block content %}
-<div class="content-container">
+<div class="content-container content-container--wide">
   {% include "banner.njk" %}
 
-  {# --- LOGIC: Are we on Page 1 (Dashboard) or Page 2+ (Archive)? --- #}
-  {% set isHomePage = (pagination.pageNumber == 0) %}
+  <h1 class="sr-only">FGC Top Players — Street Fighter 6 Rankings & Tournament Results</h1>
 
-  {# --- H1 LOGIC --- #}
-  {% if isHomePage %}
-    {# Hidden H1 for SEO/Accessiblity only (Preserves Dashboard Layout) #}
-    <h1 class="sr-only">FGC Top Players — Street Fighter 6 Rankings & Tournament Results</h1>
-  {% else %}
-    {# Visible H1 for Archive Pages #}
-    <h1 class="page-title">
-      Latest FGC News (Page {{ pagination.pageNumber + 1 }})
-    </h1>
-  {% endif %}
-
-  <div class="dashboard-grid {% if isHomePage %}dashboard-grid--home{% else %}dashboard-grid--archive{% endif %}">
+  <div class="dashboard-grid dashboard-grid--home">
     
-    {# === COLUMN 1: TOP 10 PLAYERS (Only on Home) === #}
-    {% if isHomePage %}
-      <aside class="dash-sidebar dash-sidebar--left" aria-label="Top Ranked Players">
+    {# === COLUMN 1 (LEFT): SPOTLIGHT + TOP 10 PLAYERS === #}
+    <aside class="dash-sidebar dash-sidebar--left" aria-label="Top Ranked Competitors">
+      
+      {# Target where playerDirectory.js renders the spotlight #}
+      <div id="spotlight-placement-target"></div>
+
+      <div class="widget-box widget-box--players">
         <header class="widget-header">
           <h3 class="widget-title">Top 10 SF6 Players</h3>
         </header>
@@ -123,7 +79,7 @@ navHighlight: "Home"
           {% for p in playerStatsSlim | sort(false, false, 'rank') %}
             {% if p.rank and count < 10 %}
               {% set count = count + 1 %}
-              
+
               {% set rankClass = "" %}
               {% if p.rank == 1 %}{% set rankClass = "rank-1" %}
               {% elseif p.rank == 2 %}{% set rankClass = "rank-2" %}
@@ -135,13 +91,33 @@ navHighlight: "Home"
 
               <div class="mini-rank-item {{ rankClass }}">
                 <div class="mini-rank-circle">{{ p.rank }}</div>
+                
                 <div class="mini-rank-details">
                   <a href="/players/{{ p.slug }}/" class="rank-name">{{ p.name }}</a>
                   {% if p.country %}
                     <span class="rank-country">
-                      {# FIX: Use direct filename match #}
                       <img src="/images/flags/{{ p.country | lower }}.png" alt="{{ p.country }}" class="country-flag">
+                      {{ p.country }}
                     </span>
+                  {% endif %}
+                </div>
+
+                <div class="mini-rank-metrics">
+                  {% if p.mainCharacter %}
+                    <a href="/characters/{{ (p.characterKey or p.mainCharacter) | slug }}/" class="rank-char-link" title="View {{ p.mainCharacter }} Profile">
+                      {{ p.mainCharacter }}
+                    </a>
+                  {% endif %}
+                  {% if p.rankChange %}
+                    {% if p.rankChange | string | lower in ['new', '+new'] %}
+                      <span class="rank-delta delta-new">NEW</span>
+                    {% elseif (p.rankChange | int) > 0 %}
+                      <span class="rank-delta delta-up"><i class="fas fa-caret-up"></i> {{ p.rankChange }}</span>
+                    {% elseif (p.rankChange | int) < 0 %}
+                      <span class="rank-delta delta-down"><i class="fas fa-caret-down"></i> {{ (p.rankChange | string) | replace('-', '') }}</span>
+                    {% else %}
+                      <span class="rank-delta delta-even">—</span>
+                    {% endif %}
                   {% endif %}
                 </div>
               </div>
@@ -152,159 +128,135 @@ navHighlight: "Home"
         <div class="widget-footer-wrapper">
           <a href="/street-fighter-6-rankings/" class="btn btn--primary btn--small">View Full Rankings</a>
         </div>
-      </aside>
-    {% endif %}
+      </div>
+    </aside>
 
-    {# === COLUMN 2: NEWS FEED (Always visible) === #}
-    <main class="dash-feed">
-      {% if isHomePage %}
-        <h2 class="section-label">Latest FGC News</h2>
-      {% endif %}
+    {# === COLUMN 2 (CENTER): LATEST TOURNAMENT RESULTS (LAST 4) === #}
+    <section class="dash-sidebar dash-sidebar--center" aria-label="Recent Tournament Results">
+      <header class="widget-header">
+        <h3 class="widget-title">Latest SF6 Tournament Results</h3>
+      </header>
 
-      <div class="home-news-list {% if isHomePage %}dashboard-feed-list{% endif %}">
-        {% for article in pagination.items %}
-          {% include "partials/_home_card.njk" %}
+      <div class="mini-event-list">
+        {% set count = 0 %}
+        {% set _allEvents = tournaments.events | default([]) | sort(attribute='date') | reverse %}
+        
+        {% for evt in _allEvents %}
+          {% if count < 4 %}
+            {% set count = count + 1 %}
+            
+            {% set tier = (evt.Tier | default('')) | trim | upper %}
+            {% set tier_mod = '' %}
+            {% if tier == 'S+' %}{% set tier_mod = 'mini-card--s-plus' %}
+            {% elseif tier == 'S' %}{% set tier_mod = 'mini-card--s' %}
+            {% elseif tier == 'A' %}{% set tier_mod = 'mini-card--a' %}
+            {% elseif tier == 'B' %}{% set tier_mod = 'mini-card--b' %}
+            {% endif %}
+
+            {% set dateDisplay = evt.date %}
+            {% if evt.date %}
+              {% set parts = evt.date | string | split('-') %}
+              {% if parts | length == 3 %}
+                {% set monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"] %}
+                {% set mIndex = (parts[1] | int) - 1 %}
+                {% set dateDisplay = monthNames[mIndex] ~ " " ~ (parts[2] | int) ~ ", " ~ parts[0] %}
+              {% endif %}
+            {% endif %}
+
+            <article class="mini-event-card {{ tier_mod }}" onclick="window.location.href='/tournaments/{{ evt.slug }}/';">
+              <header class="mini-card__head">
+                <h4 class="mini-card__title">{{ evt.name }}</h4>
+                <time class="mini-card__date">{{ dateDisplay }}</time>
+              </header>
+
+              <div class="mini-card__meta">
+                {% if evt.Entrants %}
+                  <span class="mini-chip"><i class="fas fa-users"></i> {{ evt.Entrants }}</span>
+                {% endif %}
+                {% if tier in ['S+','S','A','B'] %}
+                  <span class="mini-chip mini-chip--rated">Rated</span>
+                {% endif %}
+              </div>
+
+              {% if evt.results %}
+                <div class="mini-podium">
+                  {% for r in evt.results %}
+                    {% if r.Finish == 1 or r.Finish == 2 or r.Finish == 3 or r.Finish == '1' or r.Finish == '2' or r.Finish == '3' %}
+                      <div class="mini-podium-row place-{{ r.Finish }}">
+                        <span class="p-place">
+                          <i class="fas fa-trophy"></i>
+                        </span>
+                        <span class="p-name">{{ r.Player }}</span>
+                      </div>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              {% endif %}
+            </article>
+          {% endif %}
         {% endfor %}
       </div>
-    </main>
 
-    {# === COLUMN 3: LATEST RESULTS (Only on Home) === #}
-    {% if isHomePage %}
-      <aside class="dash-sidebar dash-sidebar--right" aria-label="Recent Tournament Results">
+      <div class="widget-footer-wrapper">
+        <a href="/tournament-results/" class="btn btn--primary btn--small">View Results Archive</a>
+      </div>
+    </section>
+
+    {# === COLUMN 3 (RIGHT): S-TIER CHARACTERS === #}
+    <aside class="dash-sidebar dash-sidebar--right" aria-label="S-Tier Character Meta">
+      <div class="widget-box widget-box--characters">
         <header class="widget-header">
-          <h3 class="widget-title">Latest Tournament Results</h3>
+          <h3 class="widget-title">S-Tier Characters</h3>
         </header>
 
-        <div class="mini-event-list">
-          {% set count = 0 %}
-          {% set _allEvents = tournaments.events | default([]) | sort(attribute='date') | reverse %}
-          
-          {% for evt in _allEvents %}
-            {% if count < 3 %}
-              {% set count = count + 1 %}
-              
-              {% set tier = (evt.Tier | default('')) | trim | upper %}
-              {% set tier_mod = '' %}
-              {% if tier == 'S+' %}{% set tier_mod = 'mini-card--s-plus' %}
-              {% elseif tier == 'S' %}{% set tier_mod = 'mini-card--s' %}
-              {% elseif tier == 'A' %}{% set tier_mod = 'mini-card--a' %}
-              {% elseif tier == 'B' %}{% set tier_mod = 'mini-card--b' %}
-              {% endif %}
-
-              {# --- FIX: Manual Date Parsing (Reliable) --- #}
-              {% set dateDisplay = evt.date %}
-              {% if evt.date %}
-                {% set parts = evt.date | string | split('-') %}
-                {% if parts | length == 3 %}
-                  {% set monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"] %}
-                  {# Subtract 1 from month part to get array index #}
-                  {% set mIndex = (parts[1] | int) - 1 %}
-                  {% set dateDisplay = monthNames[mIndex] ~ " " ~ (parts[2] | int) ~ ", " ~ parts[0] %}
-                {% endif %}
-              {% endif %}
-
-              <article class="mini-event-card {{ tier_mod }}" onclick="window.location.href='/tournaments/{{ evt.slug }}/';">
-                
-                <header class="mini-card__head">
-                  <h4 class="mini-card__title">{{ evt.name }}</h4>
-                  <time class="mini-card__date">{{ dateDisplay }}</time>
-                </header>
-
-                <div class="mini-card__meta">
-                  {% if evt.Entrants %}
-                    <span class="mini-chip"><i class="fas fa-users"></i> {{ evt.Entrants }}</span>
-                  {% endif %}
-                  {% if tier in ['S+','S','A','B'] %}
-                    <span class="mini-chip mini-chip--rated">Rated</span>
+        <div class="mini-character-list">
+          {% for char in characterAnalytics | sort(true, false, 'CPV') %}
+            {% if char.Tier == 'S' %}
+              <div class="mini-character-item">
+                <div class="mini-char-badge">S</div>
+                <div class="mini-char-details">
+                  <a href="/characters/{{ char.slug | default(char.name | slug) }}/" class="char-name">
+                    {{ char.name }}
+                  </a>
+                  {% if char.TP %}
+                    <span class="char-tp">TP: {{ char.TP }}</span>
                   {% endif %}
                 </div>
-
-                {% if evt.results %}
-                  <div class="mini-podium">
-                    {% for r in evt.results %}
-                      {% if r.Finish == 1 or r.Finish == 2 or r.Finish == 3 %}
-                        <div class="mini-podium-row place-{{ r.Finish }}">
-                          <span class="p-place">
-                             <i class="fas fa-trophy"></i>
-                          </span>
-                          <span class="p-name">{{ r.Player }}</span>
-                        </div>
-                      {% endif %}
-                    {% endfor %}
-                  </div>
-                {% endif %}
-              </article>
+                <div class="mini-char-metrics">
+                  {% set cpvVal = (char.CPV | float) %}
+                  <span class="char-cpv" title="Competitive Performance Viability">
+                    {% if cpvVal >= 99.99 %}99.99{% else %}{{ cpvVal | round(2) }}{% endif %} CPV
+                  </span>
+                  {% if char.TWE %}
+                    <span class="char-t3r" title="Top-3 Rate">{{ char.TWE }} T3R</span>
+                  {% endif %}
+                </div>
+              </div>
             {% endif %}
           {% endfor %}
         </div>
 
         <div class="widget-footer-wrapper">
-          <a href="/tournament-results/" class="btn btn--primary btn--small">View Results Archive</a>
+          <a href="/character-stats/" class="btn btn--primary btn--small">View Character Stats</a>
         </div>
-      </aside>
-    {% endif %}
+      </div>
+    </aside>
 
   </div>
-
-  {# --- Pagination Controls (Logic Only Update) --- #}
-<nav class="pagination-nav" aria-label="Pagination" style="margin-top: 1rem; width: 100%;">
-  
-  {# Previous Page #}
-  {% if pagination.href.previous %}
-    <a href="{{ pagination.href.previous }}" class="pagination-nav__link" rel="prev">&larr; Previous Page</a>
-  {% else %}
-    <span class="pagination-nav__link--disabled">&larr; Previous Page</span>
-  {% endif %}
-
-  {# Sliding Window Variables #}
-  {% set current = pagination.pageNumber %}
-  {% set total = pagination.pages | length %}
-  {% set windowSize = 2 %}
-
-  {% for pageEntry in pagination.pages %}
-    {% set idx = loop.index0 %}
-    {% set num = loop.index %}
-    
-    {# Logic: Show first, last, and pages around current #}
-    {% set showPage = false %}
-    {% if idx == 0 or idx == total - 1 or (idx >= current - windowSize and idx <= current + windowSize) %}
-      {% set showPage = true %}
-    {% endif %}
-
-    {% if showPage %}
-      <a href="{{ pagination.hrefs[idx] }}" 
-         class="pagination-nav__link {% if idx == current %}pagination-nav__link--active{% endif %}" 
-         aria-label="Go to page {{ num }}">
-        {{ num }}
-      </a>
-    {% else %}
-      {# Only show the ellipsis if we are exactly on the boundary of the window #}
-      {% if idx == 1 and current > (windowSize + 1) %}
-        <span class="pagination-spacer">...</span>
-      {% elif idx == (total - 2) and current < (total - windowSize - 2) %}
-        <span class="pagination-spacer">...</span>
-      {% endif %}
-    {% endif %}
-  {% endfor %}
-
-  {# Next Page #}
-  {% if pagination.href.next %}
-    <a href="{{ pagination.href.next }}" class="pagination-nav__link" rel="next">Next Page &rarr;</a>
-  {% else %}
-    <span class="pagination-nav__link--disabled">Next Page &rarr;</span>
-  {% endif %}
-</nav>
-
 </div>
+{% endblock %}
 
+{% block scripts %}
 <script>
-  (function() {
-    const currentPageUrl = window.location.pathname;
-    document.querySelectorAll('.home-news-list a[href^="/news/"]').forEach(link => {
-      link.addEventListener('click', function() {
-        sessionStorage.setItem('newsListingPage', currentPageUrl);
-      });
-    });
-  })();
+  window.playerProfiles = {{ allPlayers | dump | safe }};
+</script>
+<script src="/js/playerDirectory.js" defer></script>
+<script>
+  fetch('/api/player-profiles.json')
+    .then(response => response.json())
+    .then(data => {
+      window.playerProfiles = data;
+    })
+    .catch(error => console.error('Error fetching player profiles:', error));
 </script>
 {% endblock %}

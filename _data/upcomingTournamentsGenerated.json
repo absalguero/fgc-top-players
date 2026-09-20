@@ -1,27 +1,4 @@
 {
-  "ultimate-fighting-arena-2026-2": {
-    "name": "Ultimate Fighting Arena 2026",
-    "slug": "ultimate-fighting-arena-2026-2",
-    "startAt": 1789124400,
-    "endAt": 1789336740,
-    "startDate": "2026-09-11",
-    "endDate": "2026-09-13",
-    "dates": "Sep 11-13, 2026",
-    "location": "87 Avenue des Magasins Généraux, 93300 Aubervilliers, France",
-    "venueName": "",
-    "url": "https://www.start.gg/tournament/ultimate-fighting-arena-2026-2",
-    "tier": "S",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "Ultimate Fighting Arena 2026 is scheduled for Sep 11-13, 2026 in 87 Avenue des Magasins Généraux, 93300 Aubervilliers, France. Featuring Street Fighter 6. Registered top players include wabiichi.",
-    "notablePlayers": [
-      "wabiichi"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
   "island-paradise-3": {
     "name": "Island Paradise 3",
     "slug": "island-paradise-3",
@@ -45,6 +22,29 @@
     "isArchived": false,
     "excludeFromSite": false
   },
+  "chip-damage-series-1": {
+    "name": "Chip Damage Series #1",
+    "slug": "chip-damage-series-1",
+    "startAt": 1794132000,
+    "endAt": 1794168000,
+    "startDate": "2026-11-08",
+    "endDate": "2026-11-08",
+    "dates": "Nov 8, 2026",
+    "location": "Spinnekop 2-3, 1444 GN Purmerend, Nederland",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/chip-damage-series-1",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "Chip Damage Series #1 is scheduled for Nov 8, 2026 in Spinnekop 2-3, 1444 GN Purmerend, Nederland. Featuring Street Fighter 6. Registered top players include semy28.",
+    "notablePlayers": [
+      "semy28"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
   "drowning-pools-2026": {
     "name": "Drowning Pools 2026",
     "slug": "drowning-pools-2026",
@@ -61,9 +61,10 @@
     "game": "Street Fighter 6",
     "streamLink": "",
     "scheduleLink": "",
-    "description": "Drowning Pools 2026 is scheduled for Dec 5, 2026 in Metropolitan Cathedral, Brownlow Hill, Liverpool L3 5TQ, UK. Featuring Street Fighter 6. Registered top players include MysticSmash.",
+    "description": "Drowning Pools 2026 is scheduled for Dec 5, 2026 in Metropolitan Cathedral, Brownlow Hill, Liverpool L3 5TQ, UK. Featuring Street Fighter 6. Registered top players include MysticSmash, LinkNova.",
     "notablePlayers": [
-      "MysticSmash"
+      "MysticSmash",
+      "LinkNova"
     ],
     "isArchived": false,
     "excludeFromSite": false
