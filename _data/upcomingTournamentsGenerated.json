@@ -1,27 +1,4 @@
 {
-  "island-paradise-3": {
-    "name": "Island Paradise 3",
-    "slug": "island-paradise-3",
-    "startAt": 1789833600,
-    "endAt": 1789952400,
-    "startDate": "2026-09-19",
-    "endDate": "2026-09-20",
-    "dates": "Sep 19-20, 2026",
-    "location": "15305 S Dixie Hwy, Palmetto Bay, FL 33157, USA",
-    "venueName": "",
-    "url": "https://www.start.gg/tournament/island-paradise-3",
-    "tier": "B",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "Island Paradise 3 is scheduled for Sep 19-20, 2026 in 15305 S Dixie Hwy, Palmetto Bay, FL 33157, USA. Featuring Street Fighter 6. Registered top players include Bloo.",
-    "notablePlayers": [
-      "Bloo"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
   "chip-damage-series-1": {
     "name": "Chip Damage Series #1",
     "slug": "chip-damage-series-1",
