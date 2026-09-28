@@ -1,23 +1,23 @@
 {
-  "chip-damage-series-1": {
-    "name": "Chip Damage Series #1",
-    "slug": "chip-damage-series-1",
-    "startAt": 1794132000,
-    "endAt": 1794168000,
-    "startDate": "2026-11-08",
-    "endDate": "2026-11-08",
-    "dates": "Nov 8, 2026",
-    "location": "Spinnekop 2-3, 1444 GN Purmerend, Nederland",
+  "just-frame-2026": {
+    "name": "JUST FRAME 2026",
+    "slug": "just-frame-2026",
+    "startAt": 1790442000,
+    "endAt": 1790571600,
+    "startDate": "2026-09-26",
+    "endDate": "2026-09-27",
+    "dates": "Sep 26-27, 2026",
+    "location": "Salmón 5204, Sábalo Country, 82100 Mazatlán, Sin., Mexico",
     "venueName": "",
-    "url": "https://www.start.gg/tournament/chip-damage-series-1",
+    "url": "https://www.start.gg/tournament/just-frame-2026",
     "tier": "B",
     "prizes": "TBA",
     "game": "Street Fighter 6",
     "streamLink": "",
     "scheduleLink": "",
-    "description": "Chip Damage Series #1 is scheduled for Nov 8, 2026 in Spinnekop 2-3, 1444 GN Purmerend, Nederland. Featuring Street Fighter 6. Registered top players include semy28.",
+    "description": "JUST FRAME 2026 is scheduled for Sep 26-27, 2026 in Salmón 5204, Sábalo Country, 82100 Mazatlán, Sin., Mexico. Featuring Street Fighter 6. Registered top players include MJ_Gama.",
     "notablePlayers": [
-      "semy28"
+      "MJ_Gama"
     ],
     "isArchived": false,
     "excludeFromSite": false

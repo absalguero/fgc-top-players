@@ -1,4 +1,32 @@
 {
+  "just-frame-2026": {
+    "name": "JUST FRAME 2026",
+    "slug": "just-frame-2026",
+    "startAt": 1790380800,
+    "endAt": 1790553599,
+    "startDate": "2026-09-26",
+    "endDate": "2026-09-27",
+    "dates": "Sep 26-27, 2026",
+    "location": "Salmón 5204, Sábalo Country, 82100 Mazatlán, Sin., Mexico",
+    "venueName": "Colegio de Ingenieros Civiles de Mazatlán",
+    "url": "https://www.start.gg/tournament/just-frame-2026/details",
+    "tier": "B",
+    "prizes": "TBD",
+    "game": "Street Fighter 6",
+    "streamLink": "https://www.twitch.tv/justframemx",
+    "scheduleLink": "",
+    "description": "<p>Celebrating its fourth annual edition in the coastal hub of Mazatlán, <strong>JUST FRAME 2026</strong> stands as an established gathering point for northwest Mexico's competitive fighting game scene. Since its 2023 debut, the grassroots open has grown into an essential stop on the regional calendar, building upon the prior edition that welcomed 77 attendees across its tournament floor. Highlighting the weekend's competitive program, <strong>Street Fighter 6</strong> serves as the marquee battleground for competitors testing their mettle on the regional stage.</p><p>Brackets for <strong>Street Fighter 6</strong> bring together elite regional talent vying for supremacy in Mexico's competitive landscape. Double-elimination pool play demands sharp execution and composure under pressure, offering contenders crucial circuit prestige and proving ground momentum.</p><h3>Tournament Lineup</h3><p>Beyond the headline clashes on the Capcom side, the venue hosts a diverse roster of competitive brackets. Sanctioned circuit stakes elevate <strong>Fatal Fury: City of the Wolves</strong> and <strong>The King of Fighters XV</strong> through SNK World Championship qualification pathways. Meanwhile, tournament play in <strong>2XKO</strong> and <strong>MARVEL Tōkon: Fighting Souls</strong> rounds out the competitive schedule alongside dedicated open stations for casual matches and off-bracket challenges.</p>",
+    "notablePlayers": [
+      "MJ_Gama",
+      "Moñañu",
+      "Jazdero",
+      "Yeriko",
+      "ZombieAzteka",
+      "EGHCO"
+    ],
+    "isArchived": true,
+    "excludeFromSite": false
+  },
     "takedown-2026": {
         "name": "Takedown 2026",
         "slug": "takedown-2026",

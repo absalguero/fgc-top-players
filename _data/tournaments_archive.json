@@ -43127,7 +43127,7 @@
         "Tier": "A"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "thunderstruck-2025": {
     "name": "Thunderstruck 2025",
@@ -89384,6 +89384,286 @@
         "Date": "2026-09-18",
         "Finish": "17",
         "Entrants": "24",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "just-frame-2026": {
+    "name": "JUST FRAME 2026",
+    "date": "2026-09-25",
+    "slug": "just-frame-2026",
+    "Tier": "B",
+    "Entrants": "27",
+    "results": [
+      {
+        "Player": "MJ_Gama",
+        "Player ID": "4484e542",
+        "Event": "JUST FRAME 2026",
+        "Event ID": "just-frame-2026",
+        "Date": "2026-09-26",
+        "Finish": "1",
+        "Entrants": "27",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jazdero",
+        "Player ID": "af303b7c",
+        "Event": "JUST FRAME 2026",
+        "Event ID": "just-frame-2026",
+        "Date": "2026-09-26",
+        "Finish": "2",
+        "Entrants": "27",
+        "Tier": "B"
+      },
+      {
+        "Player": "Semna",
+        "Player ID": "b887f8c7",
+        "Event": "JUST FRAME 2026",
+        "Event ID": "just-frame-2026",
+        "Date": "2026-09-26",
+        "Finish": "3",
+        "Entrants": "27",
+        "Tier": "B"
+      },
+      {
+        "Player": "ZombieAzteka",
+        "Player ID": "39b56c28",
+        "Event": "JUST FRAME 2026",
+        "Event ID": "just-frame-2026",
+        "Date": "2026-09-26",
+        "Finish": "4",
+        "Entrants": "27",
+        "Tier": "B"
+      },
+      {
+        "Player": "EGHCO",
+        "Player ID": "ee9946fa",
+        "Event": "JUST FRAME 2026",
+        "Event ID": "just-frame-2026",
+        "Date": "2026-09-26",
+        "Finish": "5",
+        "Entrants": "27",
+        "Tier": "B"
+      },
+      {
+        "Player": "Johny",
+        "Player ID": "474ebb4f",
+        "Event": "JUST FRAME 2026",
+        "Event ID": "just-frame-2026",
+        "Date": "2026-09-26",
+        "Finish": "5",
+        "Entrants": "27",
+        "Tier": "B"
+      },
+      {
+        "Player": "Don kyo",
+        "Player ID": "e3ea93c1",
+        "Event": "JUST FRAME 2026",
+        "Event ID": "just-frame-2026",
+        "Date": "2026-09-26",
+        "Finish": "7",
+        "Entrants": "27",
+        "Tier": "B"
+      },
+      {
+        "Player": "Moñañu",
+        "Player ID": "19951b0a",
+        "Event": "JUST FRAME 2026",
+        "Event ID": "just-frame-2026",
+        "Date": "2026-09-26",
+        "Finish": "7",
+        "Entrants": "27",
+        "Tier": "B"
+      },
+      {
+        "Player": "KoopaDTJ",
+        "Player ID": "47dcfa12",
+        "Event": "JUST FRAME 2026",
+        "Event ID": "just-frame-2026",
+        "Date": "2026-09-26",
+        "Finish": "9",
+        "Entrants": "27",
+        "Tier": "B"
+      },
+      {
+        "Player": "Lga-alfredo",
+        "Player ID": "38c9628f",
+        "Event": "JUST FRAME 2026",
+        "Event ID": "just-frame-2026",
+        "Date": "2026-09-26",
+        "Finish": "9",
+        "Entrants": "27",
+        "Tier": "B"
+      },
+      {
+        "Player": "RottenPinky",
+        "Player ID": "5aecfa61",
+        "Event": "JUST FRAME 2026",
+        "Event ID": "just-frame-2026",
+        "Date": "2026-09-26",
+        "Finish": "9",
+        "Entrants": "27",
+        "Tier": "B"
+      },
+      {
+        "Player": "farra",
+        "Player ID": "e6749991",
+        "Event": "JUST FRAME 2026",
+        "Event ID": "just-frame-2026",
+        "Date": "2026-09-26",
+        "Finish": "9",
+        "Entrants": "27",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kilimanjaro",
+        "Player ID": "e7d674c1",
+        "Event": "JUST FRAME 2026",
+        "Event ID": "just-frame-2026",
+        "Date": "2026-09-26",
+        "Finish": "13",
+        "Entrants": "27",
+        "Tier": "B"
+      },
+      {
+        "Player": "Zoticda",
+        "Player ID": "4b557e95",
+        "Event": "JUST FRAME 2026",
+        "Event ID": "just-frame-2026",
+        "Date": "2026-09-26",
+        "Finish": "13",
+        "Entrants": "27",
+        "Tier": "B"
+      },
+      {
+        "Player": "Fieldborne",
+        "Player ID": "7605395f",
+        "Event": "JUST FRAME 2026",
+        "Event ID": "just-frame-2026",
+        "Date": "2026-09-26",
+        "Finish": "13",
+        "Entrants": "27",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cabellocast",
+        "Player ID": "e886e49b",
+        "Event": "JUST FRAME 2026",
+        "Event ID": "just-frame-2026",
+        "Date": "2026-09-26",
+        "Finish": "13",
+        "Entrants": "27",
+        "Tier": "B"
+      },
+      {
+        "Player": "FerV",
+        "Player ID": "81b7ba17",
+        "Event": "JUST FRAME 2026",
+        "Event ID": "just-frame-2026",
+        "Date": "2026-09-26",
+        "Finish": "17",
+        "Entrants": "27",
+        "Tier": "B"
+      },
+      {
+        "Player": "Royalclaude",
+        "Player ID": "65935324",
+        "Event": "JUST FRAME 2026",
+        "Event ID": "just-frame-2026",
+        "Date": "2026-09-26",
+        "Finish": "17",
+        "Entrants": "27",
+        "Tier": "B"
+      },
+      {
+        "Player": "Atheris",
+        "Player ID": "769e783b",
+        "Event": "JUST FRAME 2026",
+        "Event ID": "just-frame-2026",
+        "Date": "2026-09-26",
+        "Finish": "17",
+        "Entrants": "27",
+        "Tier": "B"
+      },
+      {
+        "Player": "Oimetra",
+        "Player ID": "ae6bc5ef",
+        "Event": "JUST FRAME 2026",
+        "Event ID": "just-frame-2026",
+        "Date": "2026-09-26",
+        "Finish": "17",
+        "Entrants": "27",
+        "Tier": "B"
+      },
+      {
+        "Player": "Maximus IC",
+        "Player ID": "30bf740e",
+        "Event": "JUST FRAME 2026",
+        "Event ID": "just-frame-2026",
+        "Date": "2026-09-26",
+        "Finish": "17",
+        "Entrants": "27",
+        "Tier": "B"
+      },
+      {
+        "Player": "WerogamingMX",
+        "Player ID": "43deeb2f",
+        "Event": "JUST FRAME 2026",
+        "Event ID": "just-frame-2026",
+        "Date": "2026-09-26",
+        "Finish": "17",
+        "Entrants": "27",
+        "Tier": "B"
+      },
+      {
+        "Player": "wisp",
+        "Player ID": "23eb1f8f",
+        "Event": "JUST FRAME 2026",
+        "Event ID": "just-frame-2026",
+        "Date": "2026-09-26",
+        "Finish": "17",
+        "Entrants": "27",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pog",
+        "Player ID": "bc8c4e1f",
+        "Event": "JUST FRAME 2026",
+        "Event ID": "just-frame-2026",
+        "Date": "2026-09-26",
+        "Finish": "17",
+        "Entrants": "27",
+        "Tier": "B"
+      },
+      {
+        "Player": "Moskita",
+        "Player ID": "33fcf1b9",
+        "Event": "JUST FRAME 2026",
+        "Event ID": "just-frame-2026",
+        "Date": "2026-09-26",
+        "Finish": "25",
+        "Entrants": "27",
+        "Tier": "B"
+      },
+      {
+        "Player": "PsicRogelio",
+        "Player ID": "1edc2a01",
+        "Event": "JUST FRAME 2026",
+        "Event ID": "just-frame-2026",
+        "Date": "2026-09-26",
+        "Finish": "25",
+        "Entrants": "27",
+        "Tier": "B"
+      },
+      {
+        "Player": "Yeriko",
+        "Player ID": "933516f3",
+        "Event": "JUST FRAME 2026",
+        "Event ID": "just-frame-2026",
+        "Date": "2026-09-26",
+        "Finish": "25",
+        "Entrants": "27",
         "Tier": "B"
       }
     ],
