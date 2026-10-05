@@ -43777,7 +43777,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "evo-france-2025": {
     "name": "Evo France 2025",
@@ -90548,7 +90548,7 @@
       },
       {
         "Player": "Yasha",
-        "Player ID": "yasha",
+        "Player ID": "46b7aff0",
         "Event": "ClashMania 2026",
         "Event ID": "clashmania-2026",
         "Date": "2026-09-06",
@@ -90937,7 +90937,7 @@
         "Tier": "B"
       },
       {
-        "Player": "Frozen",
+        "Player": "Frozen (RU)",
         "Player ID": "3a6a4ad9",
         "Event": "Moscow Slam 2026",
         "Event ID": "moscow-slam-2026",
@@ -92844,6 +92844,656 @@
         "Date": "2026-08-29",
         "Finish": "49",
         "Entrants": "93",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "first-attack-2026": {
+    "name": "First Attack 2026",
+    "date": "2026-10-02",
+    "slug": "first-attack-2026",
+    "Tier": "B",
+    "Entrants": "90",
+    "results": [
+      {
+        "Player": "Craime",
+        "Player ID": "a5ce82ae",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "1",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "GranTODAKAI",
+        "Player ID": "2c673138",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "2",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "NYChrisG",
+        "Player ID": "dab1e1cc",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "3",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Crossover",
+        "Player ID": "67ff45df",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "4",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "HorakyRD",
+        "Player ID": "f11750f7",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "5",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Caba",
+        "Player ID": "7ef3978a",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "5",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Xavi",
+        "Player ID": "e3ae1f78",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "7",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Uriel Velorio",
+        "Player ID": "55790db9",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "7",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mamobelty",
+        "Player ID": "f7ffbaed",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "9",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mr-MadGear",
+        "Player ID": "f2617b6a",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "9",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Akkerfire",
+        "Player ID": "4b60a2a3",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "9",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Threeyes",
+        "Player ID": "2ff67cf3",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "9",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dannyboy (RM)",
+        "Player ID": "d66dc7c3",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "13",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Diegubis",
+        "Player ID": "55ef6537",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "13",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Daiwa",
+        "Player ID": "c02584da",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "13",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "HD-CM",
+        "Player ID": "de227244",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "13",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "LGM88",
+        "Player ID": "14f1aeb8",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "17",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dandy",
+        "Player ID": "be0eb370",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "17",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "fakebruno",
+        "Player ID": "c28e7541",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "17",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "NeuralArch",
+        "Player ID": "de6a3367",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "17",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dekar",
+        "Player ID": "d7cafdc1",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "17",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "ThaRuffProphet",
+        "Player ID": "693174ed",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "17",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "BigButtJackson",
+        "Player ID": "b7109780",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "17",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mockingbird",
+        "Player ID": "a5e55478",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "17",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Fonsi",
+        "Player ID": "628c721e",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "25",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "HighSpeedRail",
+        "Player ID": "9da340b8",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "25",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Crankganggod",
+        "Player ID": "90413f00",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "25",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "LSD-Abduction",
+        "Player ID": "dfa0ad5d",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "25",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Freenix Wright",
+        "Player ID": "a56f6b7b",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "25",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Crash40",
+        "Player ID": "a7c59a5a",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "25",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Nella",
+        "Player ID": "192913ff",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "25",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Javicoriano",
+        "Player ID": "8de7ef97",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "25",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "StaticGorilla",
+        "Player ID": "4e905cd3",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "33",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Launie02",
+        "Player ID": "27dc5c36",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "33",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Natrix",
+        "Player ID": "bd21082a",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "33",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "HuGoKu",
+        "Player ID": "e83fcca3",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "33",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "DandyCaballero",
+        "Player ID": "ef9d4d25",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "33",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Hiko",
+        "Player ID": "62af7674",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "33",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "PairO",
+        "Player ID": "8017b49b",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "33",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Beluga",
+        "Player ID": "f21b6099",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "33",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Aluxy",
+        "Player ID": "d3c4aabd",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "33",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "AngelitoMan",
+        "Player ID": "0beed757",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "33",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Orbital",
+        "Player ID": "6983304c",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "33",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "AJMartinez",
+        "Player ID": "f4ce5773",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "33",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "HaizeK",
+        "Player ID": "d4239a0c",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "33",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "KDS",
+        "Player ID": "462d2136",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "33",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Volcanickenneth",
+        "Player ID": "212e0b95",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "33",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "CMPein",
+        "Player ID": "eaf036f2",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "33",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "SuperGlueRilla",
+        "Player ID": "59ccffc7",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "49",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Shaide",
+        "Player ID": "52263e62",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "49",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "AlexisPR16",
+        "Player ID": "41de3e23",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "49",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "oD Atai",
+        "Player ID": "3463774f",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "49",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "d0ze",
+        "Player ID": "5dddcaa2",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "49",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Daburiii",
+        "Player ID": "e95ea57f",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "49",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "prDarkWolf",
+        "Player ID": "71c98bb0",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "49",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jak PR",
+        "Player ID": "c601e91f",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "49",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "tucapuyo",
+        "Player ID": "5f20a776",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "49",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "JatoTheBlaster",
+        "Player ID": "64ea936a",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "49",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Red Rooster Boss",
+        "Player ID": "d81f0fd0",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "49",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "SEVENTH",
+        "Player ID": "fe633cef",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "49",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Eternal-",
+        "Player ID": "ed419eb0",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "49",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "El Marcianho",
+        "Player ID": "8e0f4780",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "49",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Sonicz",
+        "Player ID": "d87bcd27",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "49",
+        "Entrants": "90",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ajax Fidelity",
+        "Player ID": "cdcd8b0b",
+        "Event": "First Attack 2026",
+        "Event ID": "first-attack-2026-2",
+        "Date": "2026-10-03",
+        "Finish": "49",
+        "Entrants": "90",
         "Tier": "B"
       }
     ],

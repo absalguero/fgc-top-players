@@ -1,25 +1,4 @@
 {
-  "first-attack-2026-2": {
-    "name": "First Attack 2026",
-    "slug": "first-attack-2026-2",
-    "startAt": 1790899200,
-    "endAt": 1791158399,
-    "startDate": "2026-10-02",
-    "endDate": "2026-10-04",
-    "dates": "Oct 2-4, 2026",
-    "location": "100 Convention Blvd, San Juan, 00907, Puerto Rico",
-    "venueName": "Puerto Rico Convention Center",
-    "url": "https://firstattackpr.org/",
-    "tier": "B",
-    "prizes": "$10,000+",
-    "game": "Street Fighter 6",
-    "streamLink": "https://www.twitch.tv/firstattackpr",
-    "scheduleLink": "",
-    "description": "<p>Established in 2013 as a grassroots gathering before expanding into the Caribbean's premier fighting game destination, <strong>First Attack 2026</strong> marks over a decade of international competition in San Juan. Known throughout the fighting game community as the quintessential vacation tournament, the festival blends tropical travel with world-class tournament play, building on a prior edition that drew 536 attendees. At the center of the festival floor, <strong>Street Fighter 6</strong> headlines the weekend as the marquee battleground.</p><p>The <strong>Street Fighter 6</strong> bracket brings together international challengers and top Caribbean talent in an open double-elimination format. With pool play narrowing into a cutthroat Top 8 showcase, competitors battle through high-pressure sets where split-second reads dictate bracket survival. Every match carries serious weight, offering contenders vital proving-ground momentum and regional dominance.</p><h3>Convention Floor & Tournament Lineup</h3><p>Beyond the marquee Capcom action, the event spans more than twenty competitive titles across three full days. Sanctioned circuit designations bring high stakes to <strong>TEKKEN 8</strong> on the TEKKEN World Tour, while <strong>Guilty Gear: Strive</strong> and <strong>MARVEL Tōkon: Fighting Souls</strong> feature as Arc World Tour stops. The lineup also highlights a designated <strong>2XKO</strong> Challenger bracket alongside community competitions in <strong>Super Smash Bros. Ultimate</strong>, <strong>Fatal Fury: City of the Wolves</strong>, and classic retro fighters.</p><h3>Activities & Registration</h3><p>Attendees can explore an active vendor floor and artist alley, participate in cosplay contests, or enter trading card tournaments covering Pokémon, Yu-Gi-Oh, and One Piece. Competitors secure tournament entry directly through start.gg, while spectator passes and weekend badges are handled through the event's ticketing partner.</p>",
-    "notablePlayers": [],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
   "evo-france-2026": {
     "name": "Evo France 2026",
     "slug": "evo-france-2026",
