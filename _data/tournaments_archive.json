@@ -44427,7 +44427,7 @@
         "Tier": "S+"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "first-attack-2025": {
     "name": "First Attack 2025",
@@ -92887,7 +92887,7 @@
         "Tier": "B"
       },
       {
-        "Player": "Crossover",
+        "Player": "CrossoverRD",
         "Player ID": "67ff45df",
         "Event": "First Attack 2026",
         "Event ID": "first-attack-2026-2",
@@ -93495,6 +93495,1306 @@
         "Finish": "49",
         "Entrants": "90",
         "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "roundhouse-2026": {
+    "name": "Roundhouse 2026",
+    "date": "2026-10-09",
+    "slug": "roundhouse-2026",
+    "Tier": "B",
+    "Entrants": "151",
+    "results": [
+      {
+        "Player": "Squall",
+        "Player ID": "fe7fcd62",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "1",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "Play_guy",
+        "Player ID": "f2a9b3fc",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "2",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "JAK",
+        "Player ID": "ca35d13c",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "3",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "SmokingSeabass",
+        "Player ID": "6d4272df",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "4",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "TheFatManatee",
+        "Player ID": "0fd6fda5",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "5",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "GalaxyBrAn",
+        "Player ID": "18b96666",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "5",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "BlueBit",
+        "Player ID": "050a465c",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "7",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "Air Tony",
+        "Player ID": "ea1e2520",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "7",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "Frosty",
+        "Player ID": "6f42546c",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "9",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "blakpanda",
+        "Player ID": "81beaad0",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "9",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "TroubledEnd",
+        "Player ID": "89f19ec8",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "9",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "YungTate",
+        "Player ID": "032e7f24",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "9",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "Great Fireball",
+        "Player ID": "4c1f0814",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "13",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "Darkknight6682",
+        "Player ID": "4b5487fb",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "13",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "man i love glizzys",
+        "Player ID": "ee5ab58a",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "13",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "seantendre",
+        "Player ID": "3e35957a",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "13",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "Muuglek",
+        "Player ID": "49d8e3e8",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "17",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "Negrodamus",
+        "Player ID": "7b2cbd5c",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "17",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "Sturnz",
+        "Player ID": "dd0a8994",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "17",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "ARRUUMS",
+        "Player ID": "6302dcc2",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "17",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "caz",
+        "Player ID": "e37656a9",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "17",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "BananaJin",
+        "Player ID": "73bd6c17",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "17",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rinwada",
+        "Player ID": "34a0b6f0",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "17",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mr Champloo",
+        "Player ID": "5d40c841",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "17",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "JCX",
+        "Player ID": "24def99d",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "25",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "C. YA",
+        "Player ID": "36513805",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "25",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "Spii_D._Mikey",
+        "Player ID": "938e21c5",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "25",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jennjam",
+        "Player ID": "75595a1c",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "25",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "LocalPatzer",
+        "Player ID": "af7ea3a5",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "25",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "TheNom7",
+        "Player ID": "31567316",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "25",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "TheDog",
+        "Player ID": "d212dda8",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "25",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "Latino_Link",
+        "Player ID": "051e6863",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "25",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "navi",
+        "Player ID": "2484dc58",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "33",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "BearToe",
+        "Player ID": "9c92ce2d",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "33",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "ColdPipe",
+        "Player ID": "69540ad8",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "33",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "lizardman",
+        "Player ID": "f2b22f78",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "33",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ramsey",
+        "Player ID": "bb472734",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "33",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mason_The_Ogre",
+        "Player ID": "7de57759",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "33",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "DonShark",
+        "Player ID": "d438eb62",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "33",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "BigSleep",
+        "Player ID": "b6950c38",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "33",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "UNDRSCORE87",
+        "Player ID": "aa76a2aa",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "33",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "RyanGoslingCatBoy",
+        "Player ID": "8028986a",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "33",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "DaSoulTaker1",
+        "Player ID": "893b0c95",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "33",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bari",
+        "Player ID": "12915c75",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "33",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "Unintelligible",
+        "Player ID": "17119522",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "33",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "a2brandon",
+        "Player ID": "67a30384",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "33",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "8-D8",
+        "Player ID": "59cf0188",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "33",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mr Mostafles",
+        "Player ID": "0e49b6a3",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "33",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rylar",
+        "Player ID": "974d033c",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "49",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "Hano",
+        "Player ID": "5cd19861",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "49",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "FuyuKaki",
+        "Player ID": "0dd55ff2",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "49",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "Eddypoo22",
+        "Player ID": "20f7bd49",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "49",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "A$AP R1CKY",
+        "Player ID": "68c4f6cc",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "49",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "suffer",
+        "Player ID": "bbedcbbf",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "49",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "2Kermie",
+        "Player ID": "561d16ac",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "49",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "FLUFFYakaChRiS",
+        "Player ID": "46a0edb0",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "49",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "techout",
+        "Player ID": "8a2a57f1",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "49",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "Saucetin",
+        "Player ID": "a18bcd2d",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "49",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "karatesnacks",
+        "Player ID": "d96225d7",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "49",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "seph",
+        "Player ID": "ff8ab079",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "49",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "Fosh",
+        "Player ID": "2cb33309",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "49",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "RYfT",
+        "Player ID": "a05fc97a",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "49",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "mynameisfury",
+        "Player ID": "67c54642",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "49",
+        "Entrants": "151",
+        "Tier": "B"
+      },
+      {
+        "Player": "OZUL_MAJIN",
+        "Player ID": "43430b88",
+        "Event": "Roundhouse 2026",
+        "Event ID": "roundhouse-2026",
+        "Date": "2026-10-10",
+        "Finish": "49",
+        "Entrants": "151",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "evo-france-2026": {
+    "name": "EVO FRANCE 2026",
+    "date": "2026-10-08",
+    "slug": "evo-france-2026",
+    "Tier": "S+",
+    "Entrants": "1071",
+    "results": [
+      {
+        "Player": "Dual Kevin",
+        "Player ID": "88d3f20e",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "1",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Tachikawa",
+        "Player ID": "c68eeb1f",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "2",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Punk",
+        "Player ID": "1b9e2ed9",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "3",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "kobayan",
+        "Player ID": "ef64257e",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "4",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "ひなお",
+        "Player ID": "1e05762a",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "5",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Problem X",
+        "Player ID": "1ed98609",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "5",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Dogura",
+        "Player ID": "2464d654",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "7",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Lexx",
+        "Player ID": "ec4d302b",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "7",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "gachikun",
+        "Player ID": "7fc0306f",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "9",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Blaz",
+        "Player ID": "37844e8a",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "9",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Chris Wong",
+        "Player ID": "a3a19505",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "9",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Yamaguchi",
+        "Player ID": "6bfc4c78",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "9",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "あくたがわ",
+        "Player ID": "2754067c",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "13",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "cosa",
+        "Player ID": "2e561d93",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "13",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "tako",
+        "Player ID": "975aaa22",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "13",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Leshar",
+        "Player ID": "c377c071",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "13",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Pipokun",
+        "Player ID": "ef0c559a",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "17",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Tokido",
+        "Player ID": "a4c7c2d4",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "17",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Craime",
+        "Player ID": "a5ce82ae",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "17",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "NL",
+        "Player ID": "bebd6de0",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "17",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "AngryBird",
+        "Player ID": "3471a2f7",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "17",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "matsu56",
+        "Player ID": "725ea610",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "17",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "NuckleDu",
+        "Player ID": "71b98b1d",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "17",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Betty",
+        "Player ID": "85b08dcc",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "17",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Momochi",
+        "Player ID": "7b2d35d2",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "25",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Noble",
+        "Player ID": "befd4e60",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "25",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "NYChrisG",
+        "Player ID": "dab1e1cc",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "25",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Big Bird",
+        "Player ID": "5e30e23e",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "25",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Ryukichi",
+        "Player ID": "9f36f82b",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "25",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "kingsvega",
+        "Player ID": "c0e4c985",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "25",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Shuto",
+        "Player ID": "b66813f3",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "25",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Dims",
+        "Player ID": "20ac3561",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "25",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Senor Power",
+        "Player ID": "fada6833",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "33",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Osu",
+        "Player ID": "fbc7a9b5",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "33",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "JPKING",
+        "Player ID": "f3b70305",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "33",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "YAS",
+        "Player ID": "fabefccb",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "33",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Shakz",
+        "Player ID": "590e5972",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "33",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Ryusei",
+        "Player ID": "6f9ebc42",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "33",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "EndingWalker",
+        "Player ID": "90c33661",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "33",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Rikemansbarnet",
+        "Player ID": "2d28adb5",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "33",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Jr.",
+        "Player ID": "126a661a",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "33",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Oil King",
+        "Player ID": "92c9115f",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "33",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Fuudo",
+        "Player ID": "173c6283",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "33",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "ashumaru",
+        "Player ID": "a5ee8b0f",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "33",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Wabiichi",
+        "Player ID": "e14bf28c",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "33",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Zhen",
+        "Player ID": "0186079f",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "33",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "CrossoverRD",
+        "Player ID": "67ff45df",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "33",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Mister Crimson",
+        "Player ID": "60eb8f41",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "33",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Railgun",
+        "Player ID": "dccbf1c6",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "49",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "moke",
+        "Player ID": "47e6da2a",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "49",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Uriche",
+        "Player ID": "19686753",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "49",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Xerna",
+        "Player ID": "91a47593",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "49",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Daryl_972",
+        "Player ID": "b069cf08",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "49",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "JuniorLeo",
+        "Player ID": "dce6f793",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "49",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "eita",
+        "Player ID": "d91403d8",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "49",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "orarin",
+        "Player ID": "993a7906",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "49",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Akainu",
+        "Player ID": "3e909da2",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "49",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Soualiho",
+        "Player ID": "d80e5e58",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "49",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Yammini",
+        "Player ID": "0a418fb3",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "49",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Nyanpi",
+        "Player ID": "ad6a7368",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "49",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Crown",
+        "Player ID": "4092bafd",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "49",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "Riddles",
+        "Player ID": "03d3a671",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "49",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "JhinW",
+        "Player ID": "edf36133",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "49",
+        "Entrants": "1071",
+        "Tier": "S+"
+      },
+      {
+        "Player": "inaba",
+        "Player ID": "6d79d1a3",
+        "Event": "EVO FRANCE 2026",
+        "Event ID": "evo-france-2026",
+        "Date": "2026-10-09",
+        "Finish": "49",
+        "Entrants": "1071",
+        "Tier": "S+"
       }
     ],
     "isArchived": false

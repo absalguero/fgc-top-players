@@ -1,57 +1,23 @@
 {
-  "evo-france-2026": {
-    "name": "EVO FRANCE 2026",
-    "slug": "evo-france-2026",
-    "startAt": 1791529200,
-    "endAt": 1791748800,
+  "roundhouse-2026": {
+    "name": "Roundhouse 2026",
+    "slug": "roundhouse-2026",
+    "startAt": 1791572400,
+    "endAt": 1791777600,
     "startDate": "2026-10-09",
     "endDate": "2026-10-11",
     "dates": "Oct 9-11, 2026",
-    "location": "Parv. de l'Europe, 06000 Nice, France",
+    "location": "1400 Milwaukee Ave, Glenview, IL 60025, USA",
     "venueName": "",
-    "url": "https://www.start.gg/tournament/evo-france-2026",
-    "tier": "S+",
+    "url": "https://www.start.gg/tournament/roundhouse-2026",
+    "tier": "A",
     "prizes": "TBA",
     "game": "Street Fighter 6",
     "streamLink": "",
     "scheduleLink": "",
-    "description": "EVO FRANCE 2026 is scheduled for Oct 9-11, 2026 in Parv. de l'Europe, 06000 Nice, France. Featuring Street Fighter 6. Registered top players include Kharsonist, Samurai, YAS, tako, JuniorLeo, Noble.",
+    "description": "Roundhouse 2026 is scheduled for Oct 9-11, 2026 in 1400 Milwaukee Ave, Glenview, IL 60025, USA. Featuring Street Fighter 6. Registered top players include Play_guy.",
     "notablePlayers": [
-      "Kharsonist",
-      "Samurai",
-      "YAS",
-      "tako",
-      "JuniorLeo",
-      "Noble",
-      "Phenom",
-      "broski",
-      "semy28",
-      "Chris Wong",
-      "Daigo Umehara",
-      "小路KOG"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
-  "gt-fighters-12": {
-    "name": "GT Fighters #12",
-    "slug": "gt-fighters-12",
-    "startAt": 1791669600,
-    "endAt": 1791680400,
-    "startDate": "2026-10-10",
-    "endDate": "2026-10-10",
-    "dates": "Oct 10, 2026",
-    "location": "10 Franklin St, Carleton Place, ON K7C 2V4, Canada",
-    "venueName": "",
-    "url": "https://www.start.gg/tournament/gt-fighters-12",
-    "tier": "B",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "GT Fighters #12 is scheduled for Oct 10, 2026 in 10 Franklin St, Carleton Place, ON K7C 2V4, Canada. Featuring Street Fighter 6. Registered top players include Zykles.",
-    "notablePlayers": [
-      "Zykles"
+      "Play_guy"
     ],
     "isArchived": false,
     "excludeFromSite": false
@@ -79,6 +45,29 @@
     "isArchived": false,
     "excludeFromSite": false
   },
+  "nantarena-26": {
+    "name": "Nantarena 26",
+    "slug": "nantarena-26",
+    "startAt": 1795248000,
+    "endAt": 1795366800,
+    "startDate": "2026-11-21",
+    "endDate": "2026-11-22",
+    "dates": "Nov 21-22, 2026",
+    "location": "Rue Christian Pauc, 44300 Nantes, France",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/nantarena-26",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "Nantarena 26 is scheduled for Nov 21-22, 2026 in Rue Christian Pauc, 44300 Nantes, France. Featuring Street Fighter 6. Registered top players include Dims.",
+    "notablePlayers": [
+      "Dims"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
   "mindset-2026": {
     "name": "MINDSET 2026",
     "slug": "mindset-2026",
@@ -95,9 +84,10 @@
     "game": "Street Fighter 6",
     "streamLink": "",
     "scheduleLink": "",
-    "description": "MINDSET 2026 is scheduled for Nov 27-29, 2026 in 65 Rue Germaine Tillion, 92700 Colombes, France. Featuring Street Fighter 6. Registered top players include JuniorLeo.",
+    "description": "MINDSET 2026 is scheduled for Nov 27-29, 2026 in 65 Rue Germaine Tillion, 92700 Colombes, France. Featuring Street Fighter 6. Registered top players include JuniorLeo, Dims.",
     "notablePlayers": [
-      "JuniorLeo"
+      "JuniorLeo",
+      "Dims"
     ],
     "isArchived": false,
     "excludeFromSite": false
