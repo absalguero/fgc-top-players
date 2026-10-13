@@ -1,27 +1,4 @@
 {
-  "roundhouse-2026": {
-    "name": "Roundhouse 2026",
-    "slug": "roundhouse-2026",
-    "startAt": 1791572400,
-    "endAt": 1791777600,
-    "startDate": "2026-10-09",
-    "endDate": "2026-10-11",
-    "dates": "Oct 9-11, 2026",
-    "location": "1400 Milwaukee Ave, Glenview, IL 60025, USA",
-    "venueName": "",
-    "url": "https://www.start.gg/tournament/roundhouse-2026",
-    "tier": "A",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "Roundhouse 2026 is scheduled for Oct 9-11, 2026 in 1400 Milwaukee Ave, Glenview, IL 60025, USA. Featuring Street Fighter 6. Registered top players include Play_guy.",
-    "notablePlayers": [
-      "Play_guy"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
   "chip-damage-series-1": {
     "name": "Chip Damage Series #1",
     "slug": "chip-damage-series-1",

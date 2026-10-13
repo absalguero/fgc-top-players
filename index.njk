@@ -109,16 +109,17 @@ navHighlight: "Home"
                     </a>
                   {% endif %}
                   {% if p.rankChange %}
-                    {% if p.rankChange | string | lower in ['new', '+new'] %}
-                      <span class="rank-delta delta-new">NEW</span>
-                    {% elseif (p.rankChange | int) > 0 %}
-                      <span class="rank-delta delta-up"><i class="fas fa-caret-up"></i> {{ p.rankChange }}</span>
-                    {% elseif (p.rankChange | int) < 0 %}
-                      <span class="rank-delta delta-down"><i class="fas fa-caret-down"></i> {{ (p.rankChange | string) | replace('-', '') }}</span>
-                    {% else %}
-                      <span class="rank-delta delta-even">—</span>
-                    {% endif %}
-                  {% endif %}
+  {% set rc = (p.rankChange | string | lower) %}
+  {% if 'new' in rc %}
+    <span class="rank-delta delta-new">NEW</span>
+  {% elseif (p.rankChange | int) > 0 %}
+    <span class="rank-delta delta-up"><i class="fas fa-caret-up"></i> {{ (p.rankChange | string) | replace('+', '') | trim }}</span>
+  {% elseif (p.rankChange | int) < 0 %}
+    <span class="rank-delta delta-down"><i class="fas fa-caret-down"></i> {{ (p.rankChange | string) | replace('-', '') | trim }}</span>
+  {% else %}
+    <span class="rank-delta delta-even">—</span>
+  {% endif %}
+{% endif %}
                 </div>
               </div>
             {% endif %}

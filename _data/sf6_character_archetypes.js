@@ -7,7 +7,7 @@ module.exports = {
     execution: "High",
     strengths: [
       { title: "Poison Pressure", description: "Persistent chip forces errors over time." },
-      { title: "Space Control", description: "Excellent mid-range buttons and traps." },
+      { title: "Space Control", description: "Exceptional mid-range buttons and traps." },
       { title: "Corner Presence", description: "Exceptional pressure once poison lands." }
     ],
     weaknesses: [
@@ -116,7 +116,7 @@ module.exports = {
 
   "dhalsim": {
     overview: "A pure zoner relying on spatial denial and evasive repositioning.",
-    playstyle_summary: "Dhalsim’s long limbs and teleport game create a wall of control. He wins by frustrating opponents into mistakes, then punishing with high-damage Yoga Float setups and drills.",
+    playstyle_summary: "Dhalsim's long limbs and teleport game create a wall of control. He wins by frustrating opponents into mistakes, then punishing with high-damage Yoga Float setups and drills.",
     archetype: "Zoner / Keep-Away",
     execution: "Very High",
     strengths: [
@@ -186,7 +186,7 @@ module.exports = {
       { title: "Cornered Vulnerability", description: "Loses options when pushed back." },
       { title: "Predictability", description: "Patterns can be parried with reads." }
     ],
-    radar_stats: { Damage: 4, Health: 3, Mobility: 2, Zoning: 5, "Mix-up": 1 },
+    radar_stats: { Damage: 3, Health: 3, Mobility: 2, Zoning: 5, "Mix-up": 1 },
     topPlayer: null
   },
 
@@ -243,7 +243,7 @@ module.exports = {
       { title: "Defensive Gaps", description: "No true reversal outside OD." },
       { title: "Linear Neutral", description: "Approaches can be predictable." }
     ],
-    radar_stats: { Damage: 4, Health: 3, Mobility: 4, Zoning: 1, "Mix-up": 4 },
+    radar_stats: { Damage: 4, Health: 3, Mobility: 5, Zoning: 1, "Mix-up": 4 },
     topPlayer: null
   },
 
@@ -262,7 +262,7 @@ module.exports = {
       { title: "Commitment", description: "Heavy specials leave him vulnerable if guessed right." },
       { title: "Stubby Lows", description: "Crouching MK has average range." }
     ],
-    radar_stats: { Damage: 4, Health: 3, Mobility: 5, Zoning: 3, "Mix-up": 4 },
+    radar_stats: { Damage: 4, Health: 3, Mobility: 4, Zoning: 3, "Mix-up": 4 },
     topPlayer: null
   },
 
@@ -319,18 +319,18 @@ module.exports = {
       { title: "Honest Neutral", description: "Lacks 'gimmicks' to skip neutral easily." },
       { title: "Super Utility", description: "Level 1 Super has very short range." }
     ],
-    radar_stats: { Damage: 4, Health: 3, Mobility: 3, Zoning: 4, "Mix-up": 3 },
+    radar_stats: { Damage: 4, Health: 3, Mobility: 3, Zoning: 3, "Mix-up": 3 },
     topPlayer: null
   },
 
   "manon": {
     overview: "A graceful hybrid grappler who builds Medal levels to enhance command grab potency.",
-    playstyle_summary: "Manon’s strength escalates as she gains Medals, forcing the opponent to make perfect defensive calls.",
+    playstyle_summary: "Manon's strength escalates as she gains Medals, forcing the opponent to make perfect defensive calls.",
     archetype: "Hybrid / Grappler",
     execution: "Low",
     strengths: [
       { title: "Medal Scaling", description: "Damage and pressure increase per Medal." },
-      { title: "Whiff Punish", description: "Excellent long-range buttons." },
+      { title: "Whiff Punish", description: "Exceptional long-range buttons." },
       { title: "Strike/Throw Game", description: "Lethal once Medals stack." }
     ],
     weaknesses: [
@@ -395,7 +395,7 @@ module.exports = {
       { title: "Meter Dependence", description: "Needs Drive Rush to extend damage." },
       { title: "Predictable Neutral", description: "Straightforward tools struggle to check erratic movement or unconventional approach angles." }
     ],
-    radar_stats: { Damage: 3, Health: 3, Mobility: 3, Zoning: 3, "Mix-up": 2 },
+    radar_stats: { Damage: 4, Health: 3, Mobility: 3, Zoning: 3, "Mix-up": 2 },
     topPlayer: null
   },
 
@@ -434,7 +434,7 @@ module.exports = {
       { title: "Defensive Gaps", description: "No invulnerable reversal without spending Super meter." },
       { title: "Linear Approach", description: "Scissor Kicks and Devil Reverse can be anti-aired if predictable." }
     ],
-    radar_stats: { Damage: 4, Health: 3, Mobility: 3, Zoning: 2, "Mix-up": 5 },
+    radar_stats: { Damage: 4, Health: 3, Mobility: 2, Zoning: 2, "Mix-up": 5 },
     topPlayer: null
   },
 
@@ -495,7 +495,7 @@ module.exports = {
     topPlayer: null
   },
 
-  // --- SPECIAL / REQUESTED ADDITIONS ---
+  // --- SEASON 3 ADDITIONS ---
   "c-viper": {
     overview: "An explosive, high-execution rushdown character defined by Super Jump mobility and rapid-fire feint cancels.",
     playstyle_summary: "C. Viper uses Seismo blasts to bait Parries and check movement, rather than for pure zoning. She dominates by canceling normal moves into Super Jumps (SJC) for explosive damage and uses Thunder Knuckle feints to freeze opponents before resetting pressure with throws.",
@@ -589,6 +589,25 @@ module.exports = {
       { title: "No Meterless Reversal", description: "Her invincible escape option (OD Lipad ng Agila) costs Drive/Super meter, leaving her without a free reversal when resources are low." }
     ],
     radar_stats: { Damage: 3, Health: 3, Mobility: 4, Zoning: 2, "Mix-up": 5 },
+    topPlayer: null
+  },
+
+  "arjun": {
+    overview: "A heavy-hitting powerhouse who controls neutral and block advantage through yogic breathing, delayable earthen traps, and oppressive recoverable damage.",
+    playstyle_summary: "Arjun suffocates opponents with plus-on-block strikes like Arm of Justice and Cruel Shoulder, steadily building up massive recoverable damage on block. He pins opponents down with Breathing Ring projectiles and delayed Divine Pillar traps, forcing patient defensive play before cashing in all accumulated gray health with his Ghastly Interrogation command grab or heavy confirms.",
+    archetype: "Heavy Brawler / Trap Setplay",
+    execution: "Medium",
+    strengths: [
+      { title: "Recoverable Damage Attrition", description: "Inflicts heavy gray damage even on block with moves like Arm of Justice and Indomitable Defense / Moral Breakdown, forcing skewed risk/reward." },
+      { title: "Trap & Space Control", description: "Breathing Ring controls aerial angles, while Divine Pillar can be delayed and swatted across the screen with Cruel Shoulder via Justice Beyond." },
+      { title: "Lethal Cash-Out & Durability", description: "Boasts 10,500 HP, an armored counter in Indomitable Defense that works even in Burnout, and a command grab (Ghastly Interrogation) that converts all accumulated gray health into immediate, lethal damage." }
+    ],
+    weaknesses: [
+      { title: "Sluggish Mobility", description: "Slow forward and backward walk and dash speeds make repositioning and closing distances against disciplined keep-away zoners challenging." },
+      { title: "Cash-Out Dependency", description: "Recoverable damage naturally regenerates over time if he fails to land a clean hit or his Ghastly Interrogation command grab." },
+      { title: "Resource Limits", description: "Lacks a meterless invincible reversal outside of Level 1 Super Art (Howling Destruction), requiring Drive or Super meter to safely escape pressure." }
+    ],
+    radar_stats: { Damage: 4, Health: 4, Mobility: 2, Zoning: 3, "Mix-up": 3 },
     topPlayer: null
   }
 };
