@@ -12,7 +12,7 @@ module.exports = {
   "chun-li": {
     favorable: ["Ed", "Akuma", "Luke"],
     unfavorable: ["JP", "Lily", "C. Viper"],
-    counter_strategy: "Contest her Stance entries with preemptive Drive Rushes or low attacks that go under her far medium buttons. Play for whiff punishes on her heavy normals. If cornered, use delayed tech. Do not wait for her to burn her Drive Gauge, instead, learn to interrupt her Serenity Stream stance transitions with fast 4-frame buttons or Perfect Parries to break her pressure loops."
+    counter_strategy: "Contest her stance entries with preemptive Drive Rushes or low attacks that duck under her far medium pokes. Play for whiff punishes on her heavy normals and use delayed tech when cornered. Interrupt Serenity Stream transitions with fast 4-frame lights or Perfect Parries to break her pressure loops."
   },
   "jamie": {
     favorable: ["Cammy", "Yasmine", "M. Bison"],
@@ -82,7 +82,7 @@ module.exports = {
   "aki": {
     favorable: ["Ed", "Mai", "JP"],
     unfavorable: ["Kimberly", "M. Bison", "Cammy"],
-    counter_strategy: "Parry projectiles to avoid poison application, or land a hit to cleanse the status immediately. Challenge her retreat with long-range buttons. On knockdown, her limited invincible OD reversal options make any okizeme sequence decisive."
+    counter_strategy: "Parry projectiles to avoid poison application, or land a hit to cleanse the status immediately. Challenge her retreat with long-range buttons. On knockdown, prioritize meaty throws—her OD Sinister Slide escape loses cleanly to throws, leaving her reliant on Super meter for a true reversal."
   },
   "rashid": {
     favorable: ["Dhalsim", "Ed", "Lily"],
@@ -92,7 +92,7 @@ module.exports = {
   "ed": {
     favorable: ["Zangief", "Manon", "Jamie"],
     unfavorable: ["Dhalsim", "Kimberly", "Blanka"],
-    counter_strategy: "Respect his Psycho Flicker spacing and do not contest his minus frames with slow buttons. Corner him and rotate between strikes and throws to tax his Drive Gauge. Without meter, his escape options are limited, so keep your okizeme tight."
+    counter_strategy: "Respect his Psycho Flicker spacing and do not contest his minus frames with slow buttons. Corner him and rotate between strikes and throws to tax his Drive Gauge. Because his OD reversal has slow startup, use safe jumps and jab meaties to bait and punish it."
   },
   "akuma": {
     favorable: ["JP", "Ed", "Zangief"],
@@ -147,21 +147,21 @@ module.exports = {
   "ingrid": {
     favorable: ["Lily", "Dhalsim", "JP"],
     unfavorable: ["Kimberly", "M. Bison", "Cammy"],
-    counter_strategy: "Play patiently and avoid throwing predictable projectiles that she can reflect with Sunburst. Wait for her unorthodox floating approaches and punish them with reliable anti-airs. Because she struggles to force entry and has below-average health, let her take the risks. Once you secure a knockdown, utilize throw setups and shimmy pressure to bypass her parries and quickly deplete her health bar."
+    counter_strategy: "Avoid throwing predictable projectiles that she can reflect with Sun Veil, and punish her floaty aerial approaches with reliable anti-airs. Because she has low health and struggles to force entry without Sun Crests, let her take the risks. On knockdown, use throws and shimmies to bypass her parries."
   },
   "yasmine": {
     favorable: ["Akuma", "Ryu", "Marisa"],
     unfavorable: ["E. Honda", "Ingrid", "Jamie"],
-    counter_strategy: "Hold your ground in neutral and force her to approach without a Bayani Mode trigger active, since her follow-up attacks are weaker before Alon or Talim ng Hangin connects. Anti-air her Mukha ng Langit jump-in on reaction. If she throws out Pangil sa Likuran, punish it hard on whiff, as the boomerang disappears entirely if she gets hit while it's active. On knockdown, respect only the Overdrive version of Lipad ng Agila as a real invincible threat; without meter, she has no invincible reversal to escape tight okizeme."
+    counter_strategy: "Hold your ground in neutral and deny her Bayani Mode triggers (Alon and Talim ng Hangin) to keep her follow-up damage low. Anti-air her Mukha ng Langit jump-in mix-up on reaction, and punish whiffed Pangil sa Likuran boomerangs to delete the projectile. On knockdown, bait OD Lipad ng Agila or pressure her freely when she is burned out."
   },
   "arjun": {
-    favorable: ["Dee Jay", "E. Honda", "Cammy"],
-    unfavorable: ["Dhalsim", "JP", "Lily"],
-    counter_strategy: "Exploit his massive hurtbox and slow walk speed by zoning him out with projectiles and long-range pokes. If you must approach, use unpredictable block strings to bait his Indomitable Defense armor, then punish with armor-breaking moves. Avoid throwing predictable projectiles when he has access to his Divine Pillar and Cruel Shoulder setups. On defense, be prepared to jump or backdash to escape his Ghastly Interrogation command grab."
+    favorable: ["Zangief", "E. Honda", "Lily"],
+    unfavorable: ["Dhalsim", "JP", "Guile"],
+    counter_strategy: "Exploit his slow walk speed with full-screen zoning, but hold fireballs once a Divine Pillar is planted so he cannot swat it back with Cruel Shoulder. Parry his heavy pokes to prevent gray health buildup on block. Bait Indomitable Defense armor and punish with throws, and jump or backdash on defense to evade his Ghastly Interrogation cash-out."
   },
   "default": {
     favorable: ["N/A"],
     unfavorable: ["N/A"],
     counter_strategy: "Matchup data is not yet available for this character."
   }
-}
+};

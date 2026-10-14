@@ -153,17 +153,17 @@ module.exports = {
   },
 
   "ed": {
-    overview: "A boxer built for consistent pressure with simplified execution and strong frame advantage.",
-    playstyle_summary: "Ed pushes relentless offense through plus-frame buttons, Flicker jabs, and corner pressure, balancing simplicity with strong reward.",
+    overview: "A boxer built for consistent mid-range control with sharp flicker pressure and strong frame advantage.",
+    playstyle_summary: "Ed pushes relentless offense through plus-frame Psycho Flicker pulls, Kill Rush spacing traps, and corner pressure, balancing mid-range dominance with strong reward.",
     archetype: "Out-boxer / Control",
-    execution: "Low",
+    execution: "Medium",
     strengths: [
-      { title: "Accessibility", description: "Simple inputs enable high efficiency." },
+      { title: "Mid-Range Control", description: "Psycho Flicker strings and Kill Rush dictate mid-range spacing and tempo." },
       { title: "Corner Offense", description: "Strong frame traps and Oki." },
-      { title: "Space Control", description: "Flicker strings control the mid-range effectively." }
+      { title: "Space Control", description: "Long-reaching normals punish whiffs and lock down horizontal approaches." }
     ],
     weaknesses: [
-      { title: "Defense", description: "Limited reversal options." },
+      { title: "Defense", description: "Slow startup on his OD reversal makes it vulnerable to safe jumps." },
       { title: "Scaling", description: "Damage lowers in extended combos." },
       { title: "Meter Usage", description: "Relies on Drive for safe pressure." }
     ],
@@ -509,7 +509,7 @@ module.exports = {
     weaknesses: [
       { title: "Execution Barrier", description: "Optimal routing requires consistent SJC inputs. Dropping them leaves her unsafe." },
       { title: "High Risk", description: "Her most potent offensive sequences and defensive escapes are heavily reliant on meter, making resource management critical." },
-      { title: "Poor Defense", description: "Lacks a reliable meterless reversal, making her vulnerable when cornered without resources." }
+      { title: "Poor Defense", description: "Lacks an invincible reversal outside of Super Arts, making her vulnerable when cornered." }
     ],
     radar_stats: { Damage: 4, Health: 3, Mobility: 5, Zoning: 2, "Mix-up": 4 },
     topPlayer: null
@@ -584,9 +584,9 @@ module.exports = {
       { title: "Reversal Option", description: "The Overdrive version of her Lipad ng Agila uppercut kicks is fully invincible, giving her a meter-based way out of pressure outside of Super Arts." }
     ],
     weaknesses: [
-      { title: "Bayani Mode Upkeep", description: "The buffed state is temporary unless sustained through her Level 2 Super (Nakatagong Lakas), so her damage and pressure output likely dips once it expires." },
+      { title: "Bayani Mode Upkeep", description: "The buffed state is temporary unless sustained through her Level 2 Super (Nakatagong Lakas), so her damage and pressure output dips once it expires." },
       { title: "Committal Projectile", description: "Her Pangil sa Likuran boomerang disappears if she gets hit while it is out, so throwing it carelessly can cost her the tool entirely." },
-      { title: "No Meterless Reversal", description: "Her invincible escape option (OD Lipad ng Agila) costs Drive/Super meter, leaving her without a free reversal when resources are low." }
+      { title: "Drive Gauge Reliance", description: "Sustaining her mix-up strings and accessing her invincible reversal (OD Lipad ng Agila) burns through Drive meter quickly." }
     ],
     radar_stats: { Damage: 3, Health: 3, Mobility: 4, Zoning: 2, "Mix-up": 5 },
     topPlayer: null
@@ -605,9 +605,9 @@ module.exports = {
     weaknesses: [
       { title: "Sluggish Mobility", description: "Slow forward and backward walk and dash speeds make repositioning and closing distances against disciplined keep-away zoners challenging." },
       { title: "Cash-Out Dependency", description: "Recoverable damage naturally regenerates over time if he fails to land a clean hit or his Ghastly Interrogation command grab." },
-      { title: "Resource Limits", description: "Lacks a meterless invincible reversal outside of Level 1 Super Art (Howling Destruction), requiring Drive or Super meter to safely escape pressure." }
+      { title: "Armor & Trap Vulnerability", description: "Indomitable Defense loses cleanly to throws, and slow startup on Divine Pillar setups can be interrupted by fast Drive Rush checks." }
     ],
-    radar_stats: { Damage: 4, Health: 4, Mobility: 2, Zoning: 3, "Mix-up": 3 },
+    radar_stats: { Damage: 4, Health: 4, Mobility: 1, Zoning: 3, "Mix-up": 3 },
     topPlayer: null
   }
 };
