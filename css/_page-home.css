@@ -555,9 +555,27 @@ body.page-home .mini-rank-details img.country-flag {
 }
 
 .mini-rank-metrics .rank-delta {
-  font-size: 0.7rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.25rem;
+  font-size: 0.72rem;
   font-weight: 700;
   font-family: var(--font-mono, monospace);
+  line-height: 1;
+}
+
+.mini-rank-metrics .rank-delta i {
+  width: 0.65rem;
+  text-align: center;
+  font-size: 0.85rem;
+  line-height: 1;
+}
+
+/* Optical alignment for Font Awesome caret glyphs */
+.mini-rank-metrics .delta-up i,
+.mini-rank-metrics .delta-down i {
+  transform: translateY(-0.5px);
 }
 
 .mini-rank-metrics .delta-up { color: #22c55e; }
