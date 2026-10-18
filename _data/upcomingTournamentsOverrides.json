@@ -1,29 +1,4 @@
 {
-  "xtreme-fighters-showdown-2026": {
-        "name": "Xtreme Fighters Showdown 2026",
-        "slug": "xtreme-fighters-showdown-2026",
-        "startAt": 1792108800,
-        "endAt": 1792281599,
-        "startDate": "2026-10-16",
-        "endDate": "2026-10-17",
-        "dates": "Oct 16-17, 2026",
-        "location": "2308 Whitis Ave, Austin, TX 78712, USA",
-        "venueName": "Texas Union - Esports Arena & Shirley Bird Perry Ballroom",
-        "url": "https://www.start.gg/tournament/xtreme-fighters-showdown-2026/details",
-        "tier": "B",
-        "prizes": "$375 USD Pot Bonus",
-        "game": "Street Fighter 6",
-        "streamLink": "https://www.twitch.tv/xfshowdown",
-        "scheduleLink": "",
-        "description": "<p>After building a grassroots following through more than 50 annual online tournaments and seasonal leaderboard series since 2025, <strong>Xtreme Fighters Showdown 2026</strong> marks the organization's inaugural standalone offline event. The two-day gathering unites <strong>Street Fighter 6</strong> with over a dozen other fighting game communities under one roof.</p><p>Operating outside the <strong>Capcom Pro Tour</strong>, the Street Fighter 6 schedule spans multiple formats. The main double-elimination bracket pairs a base pot bonus with entry fee contributions and Matcherino crowdfunding, paying the top three finishers on a 60/25/15 split or expanding to top eight at 64 entrants. Players can also enter a first-to-one, single-elimination One-Shot Showdown or challenge designated bosses in streamed first-to-five exhibition sets.</p><h3>Lineup and Venue Activities</h3><p><strong>Tekken 8</strong> leads the 3D roster as a <strong>Tekken World Tour 2026 Dojo</strong> stop alongside <strong>SOULCALIBUR VI</strong>, <strong>Dead or Alive 6: Last Round</strong>, and <strong>Virtua Fighter 5 R.E.V.O. World Stage</strong>. Additional brackets feature <strong>Guilty Gear: Strive</strong>, <strong>Fatal Fury: City of the Wolves</strong>, <strong>BlazBlue: Central Fiction</strong>, <strong>2XKO</strong>, <strong>MARVEL Tōkon: Fighting Souls</strong>, <strong>Avatar Legends: The Fighting Game</strong>, <strong>Invincible VS</strong>, <strong>Super Smash Bros. Ultimate</strong>, and <strong>Super Smash Bros. Melee</strong>. Floor programming adds a Vendor Hub, Artist Exposition, 10 BYOC tournament slots, arcade play, bowling, karaoke, and a cosplay contest.</p><h3>Registration and Logistics</h3><p>Competitors must register in advance via start.gg. Onsite sales cover spectator passes only, while single-day passes apply exclusively to platform fighter singles. A strict bring-your-own-controller policy mandates wired connections and bans wireless devices. Attendees should also plan around heavy campus traffic and limited garage parking during Saturday's concurrent university football game.</p>",
-        "notablePlayers": [
-            "Chino",
-            "Dandy",
-            "2eZ"
-        ],
-        "isArchived": false,
-        "excludeFromSite": false
-    },
     "electric-clash-2026": {
     "name": "Electric Clash 2026",
     "slug": "electric-clash-2026",

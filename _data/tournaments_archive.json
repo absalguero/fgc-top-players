@@ -94798,5 +94798,185 @@
       }
     ],
     "isArchived": false
+  },
+  "xtreme-fighters-showdown-2026": {
+    "name": "Xtreme Fighters Showdown 2026",
+    "date": "2026-10-16",
+    "slug": "xtreme-fighters-showdown-2026",
+    "Tier": "B",
+    "Entrants": "17",
+    "results": [
+      {
+        "Player": "Dandy",
+        "Player ID": "be0eb370",
+        "Event": "Xtreme Fighters Showdown 2026",
+        "Event ID": "xtreme-fighters-showdown-2026",
+        "Date": "2026-10-17",
+        "Finish": "1",
+        "Entrants": "17",
+        "Tier": "B"
+      },
+      {
+        "Player": "xz0r",
+        "Player ID": "775f0256",
+        "Event": "Xtreme Fighters Showdown 2026",
+        "Event ID": "xtreme-fighters-showdown-2026",
+        "Date": "2026-10-17",
+        "Finish": "2",
+        "Entrants": "17",
+        "Tier": "B"
+      },
+      {
+        "Player": "Chino",
+        "Player ID": "c38d57c0",
+        "Event": "Xtreme Fighters Showdown 2026",
+        "Event ID": "xtreme-fighters-showdown-2026",
+        "Date": "2026-10-17",
+        "Finish": "3",
+        "Entrants": "17",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mr_Kwiggle",
+        "Player ID": "fdfe4605",
+        "Event": "Xtreme Fighters Showdown 2026",
+        "Event ID": "xtreme-fighters-showdown-2026",
+        "Date": "2026-10-17",
+        "Finish": "4",
+        "Entrants": "17",
+        "Tier": "B"
+      },
+      {
+        "Player": "シルバーザ仮面ライダー",
+        "Player ID": "097998a6",
+        "Event": "Xtreme Fighters Showdown 2026",
+        "Event ID": "xtreme-fighters-showdown-2026",
+        "Date": "2026-10-17",
+        "Finish": "5",
+        "Entrants": "17",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cujo Kate",
+        "Player ID": "9f252e7d",
+        "Event": "Xtreme Fighters Showdown 2026",
+        "Event ID": "xtreme-fighters-showdown-2026",
+        "Date": "2026-10-17",
+        "Finish": "5",
+        "Entrants": "17",
+        "Tier": "B"
+      },
+      {
+        "Player": "H0oDLeSs",
+        "Player ID": "83daa16f",
+        "Event": "Xtreme Fighters Showdown 2026",
+        "Event ID": "xtreme-fighters-showdown-2026",
+        "Date": "2026-10-17",
+        "Finish": "7",
+        "Entrants": "17",
+        "Tier": "B"
+      },
+      {
+        "Player": "drdoolitt",
+        "Player ID": "4bed6020",
+        "Event": "Xtreme Fighters Showdown 2026",
+        "Event ID": "xtreme-fighters-showdown-2026",
+        "Date": "2026-10-17",
+        "Finish": "7",
+        "Entrants": "17",
+        "Tier": "B"
+      },
+      {
+        "Player": "Legenddaddy",
+        "Player ID": "27fb2711",
+        "Event": "Xtreme Fighters Showdown 2026",
+        "Event ID": "xtreme-fighters-showdown-2026",
+        "Date": "2026-10-17",
+        "Finish": "9",
+        "Entrants": "17",
+        "Tier": "B"
+      },
+      {
+        "Player": "Toto",
+        "Player ID": "702ce7a2",
+        "Event": "Xtreme Fighters Showdown 2026",
+        "Event ID": "xtreme-fighters-showdown-2026",
+        "Date": "2026-10-17",
+        "Finish": "9",
+        "Entrants": "17",
+        "Tier": "B"
+      },
+      {
+        "Player": "Smurf_N7",
+        "Player ID": "dee68df7",
+        "Event": "Xtreme Fighters Showdown 2026",
+        "Event ID": "xtreme-fighters-showdown-2026",
+        "Date": "2026-10-17",
+        "Finish": "9",
+        "Entrants": "17",
+        "Tier": "B"
+      },
+      {
+        "Player": "MahWallet",
+        "Player ID": "28bde9dc",
+        "Event": "Xtreme Fighters Showdown 2026",
+        "Event ID": "xtreme-fighters-showdown-2026",
+        "Date": "2026-10-17",
+        "Finish": "9",
+        "Entrants": "17",
+        "Tier": "B"
+      },
+      {
+        "Player": "2eZ",
+        "Player ID": "2a656c8a",
+        "Event": "Xtreme Fighters Showdown 2026",
+        "Event ID": "xtreme-fighters-showdown-2026",
+        "Date": "2026-10-17",
+        "Finish": "13",
+        "Entrants": "17",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jahvie_Hero",
+        "Player ID": "2bbacb10",
+        "Event": "Xtreme Fighters Showdown 2026",
+        "Event ID": "xtreme-fighters-showdown-2026",
+        "Date": "2026-10-17",
+        "Finish": "13",
+        "Entrants": "17",
+        "Tier": "B"
+      },
+      {
+        "Player": "NerdintheBay",
+        "Player ID": "676defce",
+        "Event": "Xtreme Fighters Showdown 2026",
+        "Event ID": "xtreme-fighters-showdown-2026",
+        "Date": "2026-10-17",
+        "Finish": "13",
+        "Entrants": "17",
+        "Tier": "B"
+      },
+      {
+        "Player": "ExCheque",
+        "Player ID": "8148fa31",
+        "Event": "Xtreme Fighters Showdown 2026",
+        "Event ID": "xtreme-fighters-showdown-2026",
+        "Date": "2026-10-17",
+        "Finish": "13",
+        "Entrants": "17",
+        "Tier": "B"
+      },
+      {
+        "Player": "ArmoredDeath",
+        "Player ID": "0c3c14bc",
+        "Event": "Xtreme Fighters Showdown 2026",
+        "Event ID": "xtreme-fighters-showdown-2026",
+        "Date": "2026-10-17",
+        "Finish": "17",
+        "Entrants": "17",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
   }
 }
