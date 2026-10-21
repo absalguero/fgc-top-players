@@ -1,50 +1,4 @@
 {
-  "chip-damage-series-1": {
-    "name": "Chip Damage Series #1",
-    "slug": "chip-damage-series-1",
-    "startAt": 1794132000,
-    "endAt": 1794168000,
-    "startDate": "2026-11-08",
-    "endDate": "2026-11-08",
-    "dates": "Nov 8, 2026",
-    "location": "Spinnekop 2-3, 1444 GN Purmerend, Nederland",
-    "venueName": "",
-    "url": "https://www.start.gg/tournament/chip-damage-series-1",
-    "tier": "B",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "Chip Damage Series #1 is scheduled for Nov 8, 2026 in Spinnekop 2-3, 1444 GN Purmerend, Nederland. Featuring Street Fighter 6. Registered top players include semy28.",
-    "notablePlayers": [
-      "semy28"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
-  "nantarena-26": {
-    "name": "Nantarena 26",
-    "slug": "nantarena-26",
-    "startAt": 1795248000,
-    "endAt": 1795366800,
-    "startDate": "2026-11-21",
-    "endDate": "2026-11-22",
-    "dates": "Nov 21-22, 2026",
-    "location": "Rue Christian Pauc, 44300 Nantes, France",
-    "venueName": "",
-    "url": "https://www.start.gg/tournament/nantarena-26",
-    "tier": "B",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "Nantarena 26 is scheduled for Nov 21-22, 2026 in Rue Christian Pauc, 44300 Nantes, France. Featuring Street Fighter 6. Registered top players include Dims.",
-    "notablePlayers": [
-      "Dims"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
   "mindset-2026": {
     "name": "MINDSET 2026",
     "slug": "mindset-2026",
@@ -61,10 +15,9 @@
     "game": "Street Fighter 6",
     "streamLink": "",
     "scheduleLink": "",
-    "description": "MINDSET 2026 is scheduled for Nov 27-29, 2026 in 65 Rue Germaine Tillion, 92700 Colombes, France. Featuring Street Fighter 6. Registered top players include JuniorLeo, Dims.",
+    "description": "MINDSET 2026 is scheduled for Nov 27-29, 2026 in 65 Rue Germaine Tillion, 92700 Colombes, France. Featuring Street Fighter 6. Registered top players include Mister Crimson.",
     "notablePlayers": [
-      "JuniorLeo",
-      "Dims"
+      "Mister Crimson"
     ],
     "isArchived": false,
     "excludeFromSite": false
@@ -85,10 +38,9 @@
     "game": "Street Fighter 6",
     "streamLink": "",
     "scheduleLink": "",
-    "description": "Drowning Pools 2026 is scheduled for Dec 5, 2026 in Metropolitan Cathedral, Brownlow Hill, Liverpool L3 5TQ, UK. Featuring Street Fighter 6. Registered top players include MysticSmash, LinkNova.",
+    "description": "Drowning Pools 2026 is scheduled for Dec 5, 2026 in Metropolitan Cathedral, Brownlow Hill, Liverpool L3 5TQ, UK. Featuring Street Fighter 6. Registered top players include MysticSmash.",
     "notablePlayers": [
-      "MysticSmash",
-      "LinkNova"
+      "MysticSmash"
     ],
     "isArchived": false,
     "excludeFromSite": false

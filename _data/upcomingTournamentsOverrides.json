@@ -20,6 +20,34 @@
     "isArchived": false,
     "excludeFromSite": false
   },
+  "crossover-2026-1": {
+        "name": "CROSSOVER 2026",
+        "slug": "crossover-2026-1",
+        "startAt": 1793404800,
+        "endAt": 1793577599,
+        "startDate": "2026-10-31",
+        "endDate": "2026-11-01",
+        "dates": "Oct 31 - Nov 1, 2026",
+        "location": "Friedenstraße 25D, Hürth-Gleuel, North Rhine-Westphalia, 50354, Germany",
+        "venueName": "Festhalle Hürth-Gleuel",
+        "url": "https://www.start.gg/tournament/crossover-2026-1/details",
+        "tier": "B",
+        "prizes": "TBD",
+        "game": "Street Fighter 6",
+        "streamLink": "",
+        "scheduleLink": "",
+        "description": "<strong>CROSSOVER 2026</strong> marks the fifth annual edition of Germany's largest grassroots fighting game tournament, returning to its 2023 home near Cologne after a two-year Oberhausen run that drew 457 attendees in 2025. Grown from a 2022 regional pilot into a European calendar fixture, the weekend centers on <strong>Street Fighter 6</strong>.</p><p>Operating outside the <strong>Capcom Pro Tour</strong>, the Street Fighter 6 bracket runs as an open double-elimination contest using a first-to-three match format throughout. Regional prestige and a crowd-funded pot built from entry fees drive the stakes.</p><h3>Multi-Game Lineup and Format</h3><p>Seven titles share two stages. International circuit play anchors the broader roster, with <strong>Guilty Gear -Strive-</strong> serving as an <strong>ARC World Tour 2026-2027 Gold</strong> qualifier and <strong>Granblue Fantasy Versus: Rising</strong> designated as a <strong>GBVS World Tour 2026 4-Star</strong> stop. Additional brackets feature <strong>TEKKEN 8</strong>, <strong>TEKKEN 7</strong>, <strong>MARVEL Tōkon: Fighting Souls</strong>, and <strong>Avatar Legends: The Fighting Game</strong>. Competitors register in advance on start.gg, while spectator passes are sold at the door and entrants under 18 require signed parental consent at check-in.</p>",
+        "notablePlayers": [
+            "LinkNova",
+            "semy28",
+            "Railgun",
+            "MasterMT",
+            "Psycho",
+            "fhASSA"
+        ],
+        "isArchived": false,
+        "excludeFromSite": false
+    },
     "headstomper-2026": {
         "name": "Headstomper 2026",
         "slug": "headstomper-2026",
