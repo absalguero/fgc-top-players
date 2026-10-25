@@ -8,13 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // Handle mobile card expansion
         rankingsTableBody.addEventListener('click', (event) => {
             const clickedRow = event.target.closest('tr');
-
-            // If no row was clicked, or the click was on a link, do nothing
             if (!clickedRow || event.target.closest('a')) {
                 return;
             }
-
-            // Otherwise, toggle the card open/closed
             clickedRow.classList.toggle('is-open');
         });
 
@@ -53,28 +49,23 @@ document.addEventListener('DOMContentLoaded', () => {
             return '';
         };
 
-        // Match server-side slugify behavior (uses slugify npm with locale: 'en')
         const createSafeSlug = (name) => {
             if (!name) return '';
             return String(name)
-                // Remove emoji
-                .replace(/[\u{1F600}-\u{1F64F}]/gu, '') // Emoticons
-                .replace(/[\u{1F300}-\u{1F5FF}]/gu, '') // Misc Symbols and Pictographs
-                .replace(/[\u{1F680}-\u{1F6FF}]/gu, '') // Transport and Map
-                .replace(/[\u{1F1E0}-\u{1F1FF}]/gu, '') // Flags
-                .replace(/[\u{2600}-\u{26FF}]/gu, '') // Misc symbols
-                .replace(/[\u{2700}-\u{27BF}]/gu, '') // Dingbats
-                .replace(/\uFE0F/g, '') // Variation selectors
-                // Remove parentheses and special chars
+                .replace(/[\u{1F600}-\u{1F64F}]/gu, '')
+                .replace(/[\u{1F300}-\u{1F5FF}]/gu, '')
+                .replace(/[\u{1F680}-\u{1F6FF}]/gu, '')
+                .replace(/[\u{1F1E0}-\u{1F1FF}]/gu, '')
+                .replace(/[\u{2600}-\u{26FF}]/gu, '')
+                .replace(/[\u{2700}-\u{27BF}]/gu, '')
+                .replace(/\uFE0F/g, '')
                 .replace(/[()'"!:@*+~.]/g, '')
                 .trim()
                 .toLowerCase()
-                // Remove non-ASCII characters (matches slugify with locale: 'en')
                 .replace(/[^\x00-\x7F]/g, '')
-                // Replace spaces and multiple hyphens
                 .replace(/\s+/g, '-')
                 .replace(/-+/g, '-')
-                .replace(/^-+|-+$/g, ''); // Trim hyphens from ends
+                .replace(/^-+|-+$/g, '');
         };
 
         const createRowHtml = (player) => {
@@ -93,13 +84,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 changeContent = `<i class="fas fa-arrow-down"></i> ${change.substring(1)}`;
             }
 
+            // 6M Rating Change formatted identically to the Change column
+            const rawDelta6m = parseInt(String(player['Rating Change 6M'] || '0').replace(/[^0-9.-]+/g, ''), 10) || 0;
+            let change6mClass = '';
+            let change6mContent = `<i class="fas fa-minus"></i>`;
+            if (rawDelta6m > 0) {
+                change6mClass = 'change-up';
+                change6mContent = `<i class="fas fa-arrow-up"></i> ${rawDelta6m}`;
+            } else if (rawDelta6m < 0) {
+                change6mClass = 'change-down';
+                change6mContent = `<i class="fas fa-arrow-down"></i> ${Math.abs(rawDelta6m)}`;
+            }
+
             const rank = parseInt(player.Rank, 10);
             const rankClass = getRankClass(rank);
-            // Use English name for slug generation if available
             const slugSource = player['English Name'] || player.Player;
             let playerSlug = createSafeSlug(slugSource);
 
-            // Fallback if slug is empty (CJK-only name with no English translation)
             if (!playerSlug || playerSlug.trim() === '') {
                 const playerId = player['Player ID'] || '';
                 playerSlug = playerId ? playerId : `player-${rank}`;
@@ -107,7 +108,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const characterSlug = createSafeSlug(player['Main Character']);
 
-            // Trophy/medal icons for top 4
             let rankIcon = '';
             if (rank === 1) {
                 rankIcon = '<i class="fas fa-trophy trophy-1" aria-label="1st"></i>';
@@ -119,7 +119,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 rankIcon = '<i class="fas fa-medal medal-4" aria-label="4th"></i>';
             }
 
-            // Format player name with English name in parentheses if available
             const playerDisplayName = player['English Name']
                 ? `${player.Player} (${player['English Name']})`
                 : player.Player;
@@ -145,12 +144,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     </a>
                 </td>
                 <td data-label="Rating" class="${rankClass}">${player.Rating || '0'}</td>
+                <td data-label="6M" class="${change6mClass}">${change6mContent}</td>
             </tr>`;
         };
 
         const renderTable = (playersToRender) => {
             if (playersToRender.length === 0 && searchTerm) {
-                rankingsTableBody.innerHTML = '<tr><td colspan="6" class="loading-row">No players found.</td></tr>';
+                rankingsTableBody.innerHTML = '<tr><td colspan="7" class="loading-row">No players found.</td></tr>';
             } else {
                 rankingsTableBody.innerHTML = playersToRender.map(createRowHtml).join('');
             }
@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 (p.Country || '').toLowerCase().includes(searchTerm)
             ) : allPlayers;
 
-            const headersMap = { 0: 'Rank', 1: 'Rank Change', 2: 'Player', 3: 'Main Character', 4: 'Country', 5: 'Rating' };
+            const headersMap = { 0: 'Rank', 1: 'Rank Change', 2: 'Player', 3: 'Main Character', 4: 'Country', 5: 'Rating', 6: 'Rating Change 6M' };
             const key = headersMap[currentSortColumn];
             filteredPlayers.sort((a, b) => {
                 let aVal = a[key], bVal = b[key];
@@ -183,16 +183,14 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         const updateSortUI = () => {
-            // Only update desktop headers
             document.querySelectorAll('#rankings-table th[data-column-index]').forEach(h => h.classList.remove('sorted', 'asc', 'desc'));
             document.querySelectorAll(`#rankings-table th[data-column-index="${currentSortColumn}"]`).forEach(h => h.classList.add('sorted', currentSortDirection));
         };
 
         const setupSorting = () => {
-            // --- CHANGE 1: Removed '#rankings-mobile-sort .btn' from selector
             document.querySelectorAll('#rankings-table th').forEach(header => {
                 header.addEventListener('click', (e) => {
-                    const colIndex = parseInt(e.currentTarget.dataset.columnIndex);
+                    const colIndex = parseInt(e.currentTarget.dataset.columnIndex, 10);
                     if (colIndex === currentSortColumn) {
                         currentSortDirection = currentSortDirection === 'asc' ? 'desc' : 'asc';
                     } else {
@@ -206,12 +204,10 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         };
 
-        // --- CHANGE 2: Added this new function ---
         const setupMobileSorting = () => {
             const mobileSortSelect = document.getElementById('mobile-sort-select');
             if (!mobileSortSelect) return;
 
-            // Set initial value to match the default sort
             mobileSortSelect.value = `${currentSortColumn}-${currentSortDirection}`;
 
             mobileSortSelect.addEventListener('change', (e) => {
@@ -223,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 currentSortDataType = selectedOption.dataset.type || 'number';
                 
                 refreshTable();
-                updateSortUI(); // Update desktop headers to stay in sync
+                updateSortUI();
             });
         };
 
@@ -243,45 +239,51 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const fetchData = async () => {
             const createSkeletonRow = () => `<tr class="skeleton-row">
-                <td data-label="Rank" class="rank-cell">
-                    <div class="skeleton skeleton-circle"></div>
-                </td>
-                <td data-label="Change">
-                    <div class="skeleton skeleton-text skeleton-text--short"></div>
-                </td>
-                <td data-label="Player" class="cell-player">
-                    <div class="skeleton skeleton-text"></div>
-                </td>
-                <td data-label="Main Character" class="cell-character">
-                    <div class="skeleton skeleton-text"></div>
-                </td>
-                <td data-label="Country" class="col-country">
-                    <div class="skeleton skeleton-text skeleton-text--short"></div>
-                </td>
-                <td data-label="Rating">
-                    <div class="skeleton skeleton-text skeleton-text--short"></div>
-                </td>
+                <td data-label="Rank" class="rank-cell"><div class="skeleton skeleton-circle"></div></td>
+                <td data-label="Change"><div class="skeleton skeleton-text skeleton-text--short"></div></td>
+                <td data-label="Player" class="cell-player"><div class="skeleton skeleton-text"></div></td>
+                <td data-label="Main Character" class="cell-character"><div class="skeleton skeleton-text"></div></td>
+                <td data-label="Country" class="col-country"><div class="skeleton skeleton-text skeleton-text--short"></div></td>
+                <td data-label="Rating"><div class="skeleton skeleton-text skeleton-text--short"></div></td>
+                <td data-label="6M"><div class="skeleton skeleton-text skeleton-text--short"></div></td>
             </tr>`;
             rankingsTableBody.innerHTML = Array(10).fill(null).map(createSkeletonRow).join('');
 
             try {
-                const dataURL = 'https://docs.google.com/spreadsheets/d/1otrfs8HN3Shq6U2-qrc4GDxTI4ragnqwbTjweecE12Q/gviz/tq?tqx=out:csv&gid=1862929315&range=A:H';
-                const response = await fetch(`${dataURL}&cachebuster=${Date.now()}`);
+                const baseSheetURL = 'https://docs.google.com/spreadsheets/d/1otrfs8HN3Shq6U2-qrc4GDxTI4ragnqwbTjweecE12Q/gviz/tq?tqx=out:csv&gid=1862929315';
+                const dataURL = `${baseSheetURL}&range=A:H&cachebuster=${Date.now()}`;
+                const colKURL = `${baseSheetURL}&range=K:K&cachebuster=${Date.now()}`;
+
+                const [response, colKRes] = await Promise.all([
+                    fetch(dataURL),
+                    fetch(colKURL).catch(() => null)
+                ]);
+
                 if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                 const csvText = await response.text();
                 const rawPlayers = parseCSV(csvText);
+
+                if (colKRes && colKRes.ok) {
+                    const colKText = await colKRes.text();
+                    const colKRows = colKText.trim().split('\n').slice(1).map(r => r.replace(/^"|"$/g, '').trim());
+                    rawPlayers.forEach((p, idx) => {
+                        p['Rating Change 6M'] = colKRows[idx] || '0';
+                    });
+                }
+
                 allPlayers = rawPlayers.filter(p => {
                     const rank = parseInt(p['Rank'], 10);
                     return !isNaN(rank) && rank >= 1 && rank <= maxPlayers;
                 });
+
                 refreshTable();
                 updateSortUI();
                 setupSorting();
-                setupMobileSorting(); // --- CHANGE 3: Call the new function
+                setupMobileSorting();
 
                 if (lastUpdatedEl) {
-                    const dateURL = 'https://docs.google.com/spreadsheets/d/1otrfs8HN3Shq6U2-qrc4GDxTI4ragnqwbTjweecE12Q/gviz/tq?tqx=out:csv&gid=1862929315&range=J1';
-                    fetch(`${dateURL}&cachebuster=${Date.now()}`).then(res => res.text()).then(text => {
+                    const dateURL = `${baseSheetURL}&range=J1&cachebuster=${Date.now()}`;
+                    fetch(dateURL).then(res => res.text()).then(text => {
                         lastUpdatedEl.textContent = `Last Updated: ${text.replace(/"/g, '').trim()}`;
                     }).catch(console.error);
                 }
@@ -300,7 +302,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 } catch (localError) {
                     console.error("Failed to load fallback rankings data:", localError);
                 }
-                rankingsTableBody.innerHTML = '<tr><td colspan="6" class="loading-row error">Failed to load rankings.</td></tr>';
+                rankingsTableBody.innerHTML = '<tr><td colspan="7" class="loading-row error">Failed to load rankings.</td></tr>';
             }
         };
 

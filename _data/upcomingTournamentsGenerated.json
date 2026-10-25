@@ -1,4 +1,27 @@
 {
+  "saucy-presents-kickback-3-saucy-circuit-finale": {
+    "name": "SAUCY Presents: KICKBACK 3 Saucy Circuit Finale",
+    "slug": "saucy-presents-kickback-3-saucy-circuit-finale",
+    "startAt": 1794675600,
+    "endAt": 1794722100,
+    "startDate": "2026-11-14",
+    "endDate": "2026-11-14",
+    "dates": "Nov 14, 2026",
+    "location": "13729 Research Blvd, Austin, TX 78750, USA",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/saucy-presents-kickback-3-saucy-circuit-finale",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "SAUCY Presents: KICKBACK 3 Saucy Circuit Finale is scheduled for Nov 14, 2026 in 13729 Research Blvd, Austin, TX 78750, USA. Featuring Street Fighter 6. Registered top players include Stealth.",
+    "notablePlayers": [
+      "Stealth"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
   "mindset-2026": {
     "name": "MINDSET 2026",
     "slug": "mindset-2026",
@@ -41,6 +64,29 @@
     "description": "Drowning Pools 2026 is scheduled for Dec 5, 2026 in Metropolitan Cathedral, Brownlow Hill, Liverpool L3 5TQ, UK. Featuring Street Fighter 6. Registered top players include MysticSmash.",
     "notablePlayers": [
       "MysticSmash"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+  },
+  "frostfire-2027": {
+    "name": "Frostfire 2027",
+    "slug": "frostfire-2027",
+    "startAt": 1800025200,
+    "endAt": 1800241200,
+    "startDate": "2027-01-15",
+    "endDate": "2027-01-17",
+    "dates": "Jan 15-17, 2027",
+    "location": "1125 Colonel By Dr, Ottawa, ON K1S 5B6, Canada",
+    "venueName": "",
+    "url": "https://www.start.gg/tournament/frostfire-2027",
+    "tier": "B",
+    "prizes": "TBA",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "Frostfire 2027 is scheduled for Jan 15-17, 2027 in 1125 Colonel By Dr, Ottawa, ON K1S 5B6, Canada. Featuring Street Fighter 6. Registered top players include Slice.",
+    "notablePlayers": [
+      "Slice"
     ],
     "isArchived": false,
     "excludeFromSite": false

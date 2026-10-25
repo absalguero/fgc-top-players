@@ -129,12 +129,42 @@ eleventyComputed:
 
     <header class="profile-header {{ rankClass }}">
         <div class="profile-header__grid">
+            {% set cRank = player.countryRank %}
+            {% set countryRankClass = "rank-" + cRank if cRank and cRank <= 5 else ("ranked-6-20" if cRank and cRank > 5 and cRank <= 20 else "") %}
+
+            {% set cRank = player.countryRank %}
+            {% set countryRankClass = "rank-" + cRank if cRank and cRank <= 5 else ("ranked-6-20" if cRank and cRank > 5 and cRank <= 20 else "") %}
+
             <div class="profile-header__row profile-header__row--top">
                 <h1 class="profile-header__name">{{ player.name }}{% if player.englishName %} ({{ player.englishName }}){% endif %}</h1>
+
                 <div class="profile-header__rank-badge {{ rankClass }}">
                     <span class="rank-badge__label">Rank</span>
                     <span class="rank-badge__number">#{{ player.rank or 'N/A' }}</span>
                 </div>
+
+                {% if player.countryRank and player.country and player.country != 'N/A' %}
+                <a href="/player-profiles/?country={{ player.country | lower }}" class="profile-header__rank-badge {{ countryRankClass }}" style="text-decoration: none;" title="Ranked #{{ player.countryRank }} in {{ player.country }}">
+                    <img src="/images/flags/{{ player.country | lower }}.png" alt="{{ player.country }} flag" class="country-flag {{ countryRankClass }}">
+                    <span class="rank-badge__label">{{ player.country }} Rank</span>
+                    <span class="rank-badge__number">#{{ player.countryRank }}</span>
+                </a>
+                {% endif %}
+
+                {% if player.rankChange6m is not null and player.rankChange6m != '' %}
+                <div class="profile-header__rank-badge {{ rankClass }}" title="6-Month Rank Change">
+                    <span class="rank-badge__label">6M</span>
+                    <span class="rank-badge__number">
+                        {% if player.rankChange6m > 0 %}
+                            <span class="change-up"><i class="fas fa-arrow-up"></i> {{ player.rankChange6m }}</span>
+                        {% elif player.rankChange6m < 0 %}
+                            <span class="change-down"><i class="fas fa-arrow-down"></i> {{ player.rankChange6m | abs }}</span>
+                        {% else %}
+                            <i class="fas fa-minus"></i>
+                        {% endif %}
+                    </span>
+                </div>
+                {% endif %}
             </div>
 
             <div class="profile-header__row profile-header__row--bottom">

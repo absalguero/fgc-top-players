@@ -1,25 +1,4 @@
 {
-    "electric-clash-2026": {
-    "name": "Electric Clash 2026",
-    "slug": "electric-clash-2026",
-    "startAt": 1792800000,
-    "endAt": 1793059199,
-    "startDate": "2026-10-24",
-    "endDate": "2026-10-26",
-    "dates": "Oct 24-26, 2026",
-    "location": "6900 Airport Rd, Mississauga, ON L4V 1N2, Canada",
-    "venueName": "The International Centre",
-    "url": "https://www.start.gg/tournament/electric-clash-2026/details",
-    "tier": "B",
-    "prizes": "TBD",
-    "game": "Street Fighter 6",
-    "streamLink": "https://twitch.tv/incendiumgaming",
-    "scheduleLink": "",
-    "description": "<p><strong>Electric Clash 2026</strong> expands Incendium's flagship fighting game tournament into a two day event, partnering with Video Game Live Expo to bring competitive play to The International Centre. The expanded program features four main tournament titles, with <strong>Street Fighter 6</strong> joining established circuit events and a new Marvel fighting game in the lineup.</p><p>The Street Fighter 6 singles bracket uses a double elimination format on PC. Matches are best of three through the early rounds, moving to best of five for Top 8. Players must register for at least one of the featured game tournaments to compete, with a separate entry fee for each game.</p><h3>Featured Tournaments and Convention Access</h3><p>The other main brackets include <strong>Guilty Gear -Strive-</strong>, designated an Arc World Tour 2026-2027 Gold Event, <strong>TEKKEN 8</strong>, a 2026 Tekken World Tour Challenger Event, and <strong>Marvel Tōkon: Fighting Souls</strong>. All four tournaments use double elimination, with game specific match formats. TEKKEN 8 also has a separately announced prize bonus from Bandai Namco Esports. Registration passes include access to the wider VGLX convention, and the event offers food options nearby and free parking.</p>",
-    "notablePlayers": [],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
   "crossover-2026-1": {
         "name": "CROSSOVER 2026",
         "slug": "crossover-2026-1",

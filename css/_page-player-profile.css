@@ -456,3 +456,27 @@ a.sig-perf-card:hover .sig-perf-card__name { color: var(--color-accent-blue) !im
     transform: translateX(-4px) !important;
 }
 }
+
+/* Native hover lift for clickable rank badge & wrap support */
+.profile-header__row--top {
+    flex-wrap: wrap;
+}
+a.profile-header__rank-badge:hover {
+    transform: translateY(-2px);
+}
+
+.profile-header__rank-badge .country-flag {
+    width: 20px;
+    height: 15px;
+    object-fit: cover;
+    border-radius: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    flex-shrink: 0;
+}
+
+.profile-header__rank-badge.rank-1 .country-flag { border-color: var(--color-rank-1-gold); background: var(--color-rank-1-gold); }
+.profile-header__rank-badge.rank-2 .country-flag { border-color: var(--color-rank-2-silver); background: var(--color-rank-2-silver); }
+.profile-header__rank-badge.rank-3 .country-flag { border-color: var(--color-rank-3-bronze); background: var(--color-rank-3-bronze); }
+.profile-header__rank-badge.rank-4 .country-flag { border-color: var(--color-rank-4-cobalt); background: var(--color-rank-4-cobalt); }
+.profile-header__rank-badge.rank-5 .country-flag { border-color: var(--color-rank-5-graphite); background: var(--color-rank-5-graphite); }
+.profile-header__rank-badge.ranked-6-20 .country-flag { border-color: var(--color-rank-amethyst-glow); background: var(--color-rank-amethyst-glow); }

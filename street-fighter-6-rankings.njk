@@ -151,6 +151,9 @@ eleventyNavigation:
     <select id="mobile-sort-select" class="sf6-rankings-sort-select">
       <option value="0-asc" data-type="number">Rank (High to Low)</option>
       <option value="0-desc" data-type="number">Rank (Low to High)</option>
+      <option value="5-desc" data-type="number">Rating (High to Low)</option>
+      <option value="6-desc" data-type="number">6M Change (High to Low)</option>
+      <option value="6-asc" data-type="number">6M Change (Low to High)</option>
       <option value="2-asc" data-type="string">Player (A-Z)</option>
       <option value="4-asc" data-type="string">Country (A-Z)</option>
       <option value="3-asc" data-type="string">Character (A-Z)</option>
@@ -180,6 +183,9 @@ eleventyNavigation:
           </th>
           <th data-column-index="5" data-type="number" data-default-sort="desc">
             <span>Rating <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg></span>
+          </th>
+          <th data-column-index="6" data-type="number" data-default-sort="desc">
+            <span>6M<br>Change <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"/><path d="M19 12L12 19L5 12"/></svg></span>
           </th>
         </tr>
       </thead>

@@ -413,9 +413,41 @@ module.exports = async function () {
 
     // 7. Finalize
     allPlayers.sort((a, b) => (a.rank||999) - (b.rank||999));
+
+    const countryRankCounts = {};
     allPlayers.forEach((p, i, arr) => {
       p.previousPlayer = i > 0 ? { name: arr[i-1].name, slug: arr[i-1].slug, rank: arr[i-1].rank } : null;
       p.nextPlayer = i < arr.length-1 ? { name: arr[i+1].name, slug: arr[i+1].slug, rank: arr[i+1].rank } : null;
+
+      // 1. Country Rank
+      const cKey = (p.country && p.country !== 'N/A') ? p.country.trim().toUpperCase() : null;
+      if (cKey && p.rank) {
+        countryRankCounts[cKey] = (countryRankCounts[cKey] || 0) + 1;
+        p.countryRank = countryRankCounts[cKey];
+      } else {
+        p.countryRank = null;
+      }
+
+      // 2. 6-Month Rank Change (from historicalData closest to 6 months ago)
+      p.rankChange6m = null;
+      if (p.rank && Array.isArray(p.historicalData) && p.historicalData.length > 0) {
+        const validHist = p.historicalData.filter(h => h.rank > 0 && h.date instanceof Date && !isNaN(h.date));
+        if (validHist.length > 0) {
+          // Find historical record closest to sixMonthsAgo (at least 60 days old so brand-new players don't compare against yesterday)
+          let closestRec = null;
+          let minDiff = Infinity;
+          for (const h of validHist) {
+            const diff = Math.abs(h.date - sixMonthsAgo);
+            if (diff < minDiff) {
+              minDiff = diff;
+              closestRec = h;
+            }
+          }
+          if (closestRec && closestRec.rank > 0) {
+            p.rankChange6m = closestRec.rank - p.rank; // Positive = moved up in rank (e.g. #15 -> #5 = +10)
+          }
+        }
+      }
     });
 
     const slugsToFetch = new Set();

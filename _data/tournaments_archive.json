@@ -45077,7 +45077,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "kuaishou-fightclub-championship-vi": {
     "name": "KUAISHOU FIGHTCLUB CHAMPIONSHIP VI",
@@ -94974,6 +94974,596 @@
         "Date": "2026-10-17",
         "Finish": "17",
         "Entrants": "17",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "electric-clash-2026": {
+    "name": "Electric Clash 2026",
+    "date": "2026-10-23",
+    "slug": "electric-clash-2026",
+    "Tier": "B",
+    "Entrants": "34",
+    "results": [
+      {
+        "Player": "Aynim",
+        "Player ID": "e4739053",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "1",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "KINGMAN",
+        "Player ID": "1fd4b7bd",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "2",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "CNQ12",
+        "Player ID": "0f564aa3",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "3",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "Count",
+        "Player ID": "3461c990",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "4",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "SilverRupee",
+        "Player ID": "83d947be",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "5",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bill Jobs",
+        "Player ID": "5b9597b9",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "5",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "Thunder DeLangis",
+        "Player ID": "60c77e9c",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "7",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "MutantEmpire",
+        "Player ID": "cd0f668c",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "7",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "Small dude",
+        "Player ID": "72bea1e5",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "9",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "Classic Rando",
+        "Player ID": "625bda2e",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "9",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pancreas Impaired",
+        "Player ID": "7b501b1f",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "9",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "Voltampt",
+        "Player ID": "74b5805c",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "9",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rebix",
+        "Player ID": "7b57f2f7",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "13",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "Anybug",
+        "Player ID": "d46031d6",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "13",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "MoonbyulBias",
+        "Player ID": "f71b8070",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "13",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "KuzcoMolusco",
+        "Player ID": "73667e3c",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "13",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "Saikyio_Arts_77",
+        "Player ID": "smugkido77",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "17",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "T3MP3ST",
+        "Player ID": "33ac664c",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "17",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "Casstabra",
+        "Player ID": "80c92bb4",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "17",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "unr",
+        "Player ID": "1a3b17b2",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "17",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "Addrak",
+        "Player ID": "a54eed95",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "17",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jarmstrong",
+        "Player ID": "6f08c3be",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "17",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "Sedo",
+        "Player ID": "ee405b47",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "17",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "Delart Sweet",
+        "Player ID": "86a54283",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "17",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "Hotline",
+        "Player ID": "f7a61caf",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "25",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "Zerosteps",
+        "Player ID": "180194ae",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "25",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "snkz",
+        "Player ID": "c8ae6cf9",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "25",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "BONSAI",
+        "Player ID": "6c5e3dac",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "25",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "EuroStepSam",
+        "Player ID": "50446e2a",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "25",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jumbley",
+        "Player ID": "a51702a2",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "25",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "The_BonelessOne",
+        "Player ID": "fde08a65",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "25",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "Darterwolf",
+        "Player ID": "6b0d2a7d",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "25",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "omxga",
+        "Player ID": "c3f62b7c",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "33",
+        "Entrants": "34",
+        "Tier": "B"
+      },
+      {
+        "Player": "JuicyJ",
+        "Player ID": "8d66b815",
+        "Event": "Electric Clash 2026",
+        "Event ID": "electric-clash-2026",
+        "Date": "2026-10-24",
+        "Finish": "33",
+        "Entrants": "34",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "oktoberfist-xi": {
+    "name": "Oktoberfist XI",
+    "date": "2026-10-24",
+    "slug": "oktoberfist-xi",
+    "Tier": "B",
+    "Entrants": "23",
+    "results": [
+      {
+        "Player": "Showl",
+        "Player ID": "df4752e3",
+        "Event": "Oktoberfist XI",
+        "Event ID": "oktoberfist-xi",
+        "Date": "2026-10-25",
+        "Finish": "1",
+        "Entrants": "23",
+        "Tier": "B"
+      },
+      {
+        "Player": "phenakis",
+        "Player ID": "4bdd67d9",
+        "Event": "Oktoberfist XI",
+        "Event ID": "oktoberfist-xi",
+        "Date": "2026-10-25",
+        "Finish": "2",
+        "Entrants": "23",
+        "Tier": "B"
+      },
+      {
+        "Player": "ViewtifulGaz",
+        "Player ID": "f81f9d92",
+        "Event": "Oktoberfist XI",
+        "Event ID": "oktoberfist-xi",
+        "Date": "2026-10-25",
+        "Finish": "3",
+        "Entrants": "23",
+        "Tier": "B"
+      },
+      {
+        "Player": "releasebogus",
+        "Player ID": "51570908",
+        "Event": "Oktoberfist XI",
+        "Event ID": "oktoberfist-xi",
+        "Date": "2026-10-25",
+        "Finish": "4",
+        "Entrants": "23",
+        "Tier": "B"
+      },
+      {
+        "Player": "eteptseisaE",
+        "Player ID": "f31696ed",
+        "Event": "Oktoberfist XI",
+        "Event ID": "oktoberfist-xi",
+        "Date": "2026-10-25",
+        "Finish": "5",
+        "Entrants": "23",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pdaaaawg",
+        "Player ID": "c6d65c68",
+        "Event": "Oktoberfist XI",
+        "Event ID": "oktoberfist-xi",
+        "Date": "2026-10-25",
+        "Finish": "5",
+        "Entrants": "23",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dylan Eccles",
+        "Player ID": "1865468f",
+        "Event": "Oktoberfist XI",
+        "Event ID": "oktoberfist-xi",
+        "Date": "2026-10-25",
+        "Finish": "7",
+        "Entrants": "23",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pizza time",
+        "Player ID": "66db5ba7",
+        "Event": "Oktoberfist XI",
+        "Event ID": "oktoberfist-xi",
+        "Date": "2026-10-25",
+        "Finish": "7",
+        "Entrants": "23",
+        "Tier": "B"
+      },
+      {
+        "Player": "SamsonHunk",
+        "Player ID": "ffdf4d14",
+        "Event": "Oktoberfist XI",
+        "Event ID": "oktoberfist-xi",
+        "Date": "2026-10-25",
+        "Finish": "9",
+        "Entrants": "23",
+        "Tier": "B"
+      },
+      {
+        "Player": "Gorgo",
+        "Player ID": "c8c0fcb0",
+        "Event": "Oktoberfist XI",
+        "Event ID": "oktoberfist-xi",
+        "Date": "2026-10-25",
+        "Finish": "9",
+        "Entrants": "23",
+        "Tier": "B"
+      },
+      {
+        "Player": "dawn",
+        "Player ID": "fd3b7717",
+        "Event": "Oktoberfist XI",
+        "Event ID": "oktoberfist-xi",
+        "Date": "2026-10-25",
+        "Finish": "9",
+        "Entrants": "23",
+        "Tier": "B"
+      },
+      {
+        "Player": "Wonder Ham",
+        "Player ID": "9edbeb95",
+        "Event": "Oktoberfist XI",
+        "Event ID": "oktoberfist-xi",
+        "Date": "2026-10-25",
+        "Finish": "9",
+        "Entrants": "23",
+        "Tier": "B"
+      },
+      {
+        "Player": "Biggummss",
+        "Player ID": "68187f1d",
+        "Event": "Oktoberfist XI",
+        "Event ID": "oktoberfist-xi",
+        "Date": "2026-10-25",
+        "Finish": "13",
+        "Entrants": "23",
+        "Tier": "B"
+      },
+      {
+        "Player": "Logan Taylor.",
+        "Player ID": "99ad97b8",
+        "Event": "Oktoberfist XI",
+        "Event ID": "oktoberfist-xi",
+        "Date": "2026-10-25",
+        "Finish": "13",
+        "Entrants": "23",
+        "Tier": "B"
+      },
+      {
+        "Player": "Wrenevermore",
+        "Player ID": "fb13103a",
+        "Event": "Oktoberfist XI",
+        "Event ID": "oktoberfist-xi",
+        "Date": "2026-10-25",
+        "Finish": "13",
+        "Entrants": "23",
+        "Tier": "B"
+      },
+      {
+        "Player": "BearNoodles",
+        "Player ID": "8e8afe65",
+        "Event": "Oktoberfist XI",
+        "Event ID": "oktoberfist-xi",
+        "Date": "2026-10-25",
+        "Finish": "13",
+        "Entrants": "23",
+        "Tier": "B"
+      },
+      {
+        "Player": "BALLS",
+        "Player ID": "bfd93aa4",
+        "Event": "Oktoberfist XI",
+        "Event ID": "oktoberfist-xi",
+        "Date": "2026-10-25",
+        "Finish": "17",
+        "Entrants": "23",
+        "Tier": "B"
+      },
+      {
+        "Player": "Near",
+        "Player ID": "cff08c1a",
+        "Event": "Oktoberfist XI",
+        "Event ID": "oktoberfist-xi",
+        "Date": "2026-10-25",
+        "Finish": "17",
+        "Entrants": "23",
+        "Tier": "B"
+      },
+      {
+        "Player": "ProfDoggo",
+        "Player ID": "df88555c",
+        "Event": "Oktoberfist XI",
+        "Event ID": "oktoberfist-xi",
+        "Date": "2026-10-25",
+        "Finish": "17",
+        "Entrants": "23",
+        "Tier": "B"
+      },
+      {
+        "Player": "Faber",
+        "Player ID": "c904a0bf",
+        "Event": "Oktoberfist XI",
+        "Event ID": "oktoberfist-xi",
+        "Date": "2026-10-25",
+        "Finish": "17",
+        "Entrants": "23",
+        "Tier": "B"
+      },
+      {
+        "Player": "YihaYorha",
+        "Player ID": "ed8ae7e3",
+        "Event": "Oktoberfist XI",
+        "Event ID": "oktoberfist-xi",
+        "Date": "2026-10-25",
+        "Finish": "17",
+        "Entrants": "23",
+        "Tier": "B"
+      },
+      {
+        "Player": "BayoSuave",
+        "Player ID": "c29e15b4",
+        "Event": "Oktoberfist XI",
+        "Event ID": "oktoberfist-xi",
+        "Date": "2026-10-25",
+        "Finish": "17",
+        "Entrants": "23",
+        "Tier": "B"
+      },
+      {
+        "Player": "Br4nDio",
+        "Player ID": "e18922ca",
+        "Event": "Oktoberfist XI",
+        "Event ID": "oktoberfist-xi",
+        "Date": "2026-10-25",
+        "Finish": "17",
+        "Entrants": "23",
         "Tier": "B"
       }
     ],
