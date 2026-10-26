@@ -1,4 +1,3 @@
-// playerProfiles.js
 "use strict";
 
 const slugify = require("slugify");
@@ -433,7 +432,6 @@ module.exports = async function () {
       if (p.rank && Array.isArray(p.historicalData) && p.historicalData.length > 0) {
         const validHist = p.historicalData.filter(h => h.rank > 0 && h.date instanceof Date && !isNaN(h.date));
         if (validHist.length > 0) {
-          // Find historical record closest to sixMonthsAgo (at least 60 days old so brand-new players don't compare against yesterday)
           let closestRec = null;
           let minDiff = Infinity;
           for (const h of validHist) {
@@ -444,7 +442,7 @@ module.exports = async function () {
             }
           }
           if (closestRec && closestRec.rank > 0) {
-            p.rankChange6m = closestRec.rank - p.rank; // Positive = moved up in rank (e.g. #15 -> #5 = +10)
+            p.rankChange6m = closestRec.rank - p.rank;
           }
         }
       }

@@ -1,4 +1,3 @@
-// characterAnalytics.js
 "use strict";
 
 const slugify = require("slugify");
@@ -79,7 +78,7 @@ function buildCompetitionPositions(items, stats, tieBreaker) {
     }).filter(Boolean);
 
     entries.sort((a, b) => (a.value !== b.value) ? (desc ? b.value - a.value : a.value - b.value) : (tieBreaker ? tieBreaker(a.tb, b.tb) : 0));
-    
+
     const posMap = {};
     let pos = 1;
     for (let i = 0; i < entries.length;) {
@@ -132,7 +131,7 @@ const calculateConfidence = (n, trustThreshold = 10, steepness = 0.35) => {
 /* ---------------------- Main Logic ---------------------- */
 module.exports = async function () {
   try {
-    console.log("Starting Advanced Character Analytics System Generation...");
+    console.log("Advanced Character Analytics System Generation...");
 
     const [rankings, tournaments, profiles] = await Promise.all([
       require("./rankings.js")(),
@@ -151,11 +150,11 @@ module.exports = async function () {
     const TS_USAGE_THRESHOLD = 10;
     const TWE_CREDIBILITY_K = 10;
     const PF_TIER_WEIGHTS = { "S+": 1.0, "S": 0.95, "A": 0.85, "B": 0.75 };
-    
+
     // CPF Config
     const CPF_MIN_ENTRANTS = 32, CPF_MIN_RESULTS = 5, CPF_WORST_Q = 0.33;
     const CPF_K_BASE = 16, CPF_K_TINY_MULT = 3.0;
-    const CPF_WINSOR_LO = 0.10, CPF_WINSOR_HI = 0.0; 
+    const CPF_WINSOR_LO = 0.10, CPF_WINSOR_HI = 0.0;
     const CPF_UNCERT_PENALTY = 0.6, CPF_DIVERSITY_K = 6;
     const T3R_ALPHA0 = 2, T3R_BETA0 = 6;
 
@@ -189,7 +188,7 @@ module.exports = async function () {
       if (!evt?.date || !Array.isArray(evt.results)) return;
       const d = new Date(evt.date);
       if (isNaN(d.getTime()) || d < oneYearAgo) return;
-      
+
       evt.results.forEach(r => {
         const pl = playersMap.get(r.Player);
         if (pl) {
@@ -206,7 +205,7 @@ module.exports = async function () {
 
     /* --- Event Strength & FGPI Estimation --- */
     const eventStrengthMap = new Map();
-    
+
     const estimateFgpi = (pl) => {
       const res = pl?.results || [];
       if (!res.length) return null;
@@ -266,7 +265,7 @@ module.exports = async function () {
         evt.strength = s;
         strs.push(s);
       });
-      
+
       const posS = strs.filter(s => s > 0);
       const sScale = minMaxScale(posS);
       allTournaments.forEach(evt => {
@@ -290,7 +289,6 @@ module.exports = async function () {
       if (perf !== undefined && p.normalizedFGPI !== undefined) expPoints.push({ x: p.normalizedFGPI, y: perf });
     });
     const expModel = calculateLinearRegression(expPoints);
-    console.log(`Expectation Model: y=${expModel.slope.toFixed(4)}x + ${expModel.intercept.toFixed(4)}`);
 
     /* --- Character Aggregation --- */
     const charMap = new Map();
@@ -319,7 +317,6 @@ module.exports = async function () {
         let dV = 0, dT3 = 0, dT8 = 0, dT16 = 0;
         let mV = 0, mT3 = 0, mT8 = 0, mT16 = 0, dMV = 0, dMT3 = 0, dMT8 = 0, dMT16 = 0;
 
-        // --- NEW: Decay-Aware Threat Tracker ---
         let decayedThreatScore = 0;
 
         cd.players.forEach(p => {
@@ -337,23 +334,22 @@ module.exports = async function () {
           const isDisp = isMaj || r.tier === "A" || r.tier === "B";
           const dec = getDecayMultiplier(r.date);
           const tw = PLACEMENT_POINTS[r.tier] || 0.2;
-          
+
           if (isMaj) {
             if (r.placement === 1) { mV++; dMV += dec * tw; }
             if (r.placement <= 3) { mT3++; dMT3 += dec * tw; }
             if (r.placement <= 8) { mT8++; dMT8 += dec * tw; }
             if (r.placement <= 16) { mT16++; dMT16 += dec * tw; }
-            
-            // Calculate Decayed Threat Points specifically for CPV
+
             let pts = 0;
             if (r.placement === 1) pts = 50;
             else if (r.placement <= 3) pts = 25;
             else if (r.placement <= 8) pts = 10;
             else if (r.placement <= 16) pts = 5;
-            
+
             if (pts > 0) decayedThreatScore += (pts * dec);
           }
-          
+
           if (isDisp) {
             if (r.placement === 1) dV += dec * tw;
             if (r.placement <= 3) dT3 += dec * tw;
@@ -362,18 +358,16 @@ module.exports = async function () {
           }
         });
 
-        // T3R
         const t3n = dMT3 + dMT8 + dMT16;
         const bayes = ((T3R_ALPHA0 + dMT3) / (T3R_ALPHA0 + dMT3 + T3R_BETA0 + Math.max(0, t3n - dMT3))) * 100;
         const ue = cd.uniqueEvents.size;
         const T3R = (t3n > 0 && ue > 0) ? bayes * (ue / (ue + TWE_CREDIBILITY_K)) : null;
 
-        // TS (Weighted)
         const perfS_plus = calcPerf(cd.allResults.filter(r => r.tier === "S+"));
         const perfS = calcPerf(cd.allResults.filter(r => r.tier === "S"));
         const perfA = calcPerf(cd.allResults.filter(r => r.tier === "A"));
         const perfB = calcPerf(cd.allResults.filter(r => r.tier === "B"));
-        
+
         const tsPts = [];
         if (perfB > 0) tsPts.push({ x: 1, y: perfB });
         if (perfA > 0) tsPts.push({ x: 2, y: perfA });
@@ -386,7 +380,6 @@ module.exports = async function () {
         const partFact = safeDivide(safeLog10(1 + highTierP), safeLog10(1 + TS_USAGE_THRESHOLD), 0);
         const TS = rawTS * Math.max(0.25, Math.min(1, partFact)) * (tiersRep >= 2 ? (tiersRep - 1) / 3 : 0.33) * 100;
 
-        // CPF
         const cpfVals = [], cpfWts = [];
         cd.allResults.forEach(r => {
           if (!r.entrants || r.entrants < CPF_MIN_ENTRANTS) return;
@@ -396,7 +389,7 @@ module.exports = async function () {
             cpfWts.push(Math.max(0.25, eventStrengthMap.get(r.slug) ?? 1.0));
           }
         });
-        
+
         let cpfObs = null, cpfStd = 0, cpfN = cpfVals.length;
         if (cpfN >= 2) {
           const idcs = [...cpfVals.keys()].sort((i, j) => cpfVals[i] - cpfVals[j]).slice(0, Math.max(2, Math.ceil(CPF_WORST_Q * cpfN)));
@@ -407,7 +400,6 @@ module.exports = async function () {
           cpfStd = wVals.length > 1 ? Math.sqrt(vSum / (wVals.length - 1)) : 0;
         } else if (cpfN === 1) { cpfObs = cpfVals[0]; }
 
-        // CMS & RDI
         const monSc = Array.from({ length: 12 }, () => []);
         const regSc = { NA:[], EU:[], AS:[], ME:[], SA:[], OC:[], AF:[], Other:[] };
         const REGIONS = { NA:["US","CA","MX","DR","PR","PA","CR","TT"], EU:["GB","FR","DE","ES","IT","SE","NO","FI","NL","BE","CH","AT","PT","GR","PL","DK","IE","RU","CZ","HU"], AS:["JP","KR","CN","TW","HK","SG","TH","PH","MY","IN","BD","VN","PK"], ME:["AE","SA","KW","JO","BH","OM","QA","LB","IL"], SA:["BR","CL","AR","PE","CO","VE","UY","EC"], OC:["AU","NZ"], AF:["CM","MA","ZA","EG"] };
@@ -450,7 +442,7 @@ module.exports = async function () {
           playerDeltas: pDeltas, totalPerf: calcPerf(cd.allResults),
           V: dV, T3: dT3, T8: dT8, T16: dT16, displayV: dV, displayT3: dT3, displayT8: dT8, displayT16: dT16,
           MajorV: mV, MajorT3: mT3, MajorT8: mT8, MajorT16: mT16,
-          decayedThreatScore, // --- NEW: Passing this forward
+          decayedThreatScore,
           TS, timeWeightedTWE: T3R, _cpfObs: cpfObs, _cpfStd: cpfStd, _cpfN: cpfN,
           CMS: parseFloat(CMS.toFixed(2)), topRegionRaw: topReg, topRegionScoreRaw: topRegSc, placements3mo: pl3
         });
@@ -465,49 +457,35 @@ module.exports = async function () {
       c.xFactor = getMedian(c.playerDeltas);
     });
 
-    /* --- Final Object Assembly (ROBUST CPV LOGIC) --- */
+    /* --- Final Object Assembly --- */
     const final = [];
     const REG_NAMES = { NA: "North America", EU: "Europe", AS: "Asia", ME: "Middle East", SA: "South America", OC: "Oceania", AF: "Africa", Other: "Other" };
 
     ranked.forEach(d => {
       const rec = charMap.get(d.name);
       const count = rec.players.length;
-      
-      // 1. FGPI (Player Strength)
+
       const fgpiSum = rec.fgpiWeight > 0 ? safeDivide(rec.fgpiWeightedSum, rec.fgpiWeight, 0) : safeDivide(rec.totalFGPI, count, 0);
-      
-      // 2. Stats Calculation
+
       const AF3 = d.placements3mo.length ? parseFloat(safeDivide(d.placements3mo.reduce((a,b)=>a+b,0), d.placements3mo.length, 0).toFixed(2)) : null;
       const AF12 = rec.allResults.length ? parseFloat(safeDivide(rec.allResults.map(r=>r.placement).reduce((a,b)=>a+b,0), rec.allResults.length, 0).toFixed(2)) : null;
 
-      // --- CPV Calculation Logic ---
-
-      // A. Peak Performance (The Ceiling) - Top 3 Average
       const top3FGPI = [...rec.players].map(p => p.normalizedFGPI).sort((a, b) => b - a).slice(0, 3);
       const peakScore = top3FGPI.length ? (top3FGPI.reduce((a, b) => a + b, 0) / top3FGPI.length) : 0;
-
-      // B. Efficiency (Points Per Entrant)
       const efficiency = safeDivide(d.totalPerf, count, 0);
-
-      // C. Tournament Threat (Decayed)
-      // We now use the time-decayed threat sum we calculated in the main loop
       const threatScore = d.decayedThreatScore || 0;
-      
-      // D. Raw Values (Stored for Normalization)
+
       d._rawPeak = peakScore;
       d._rawEff = efficiency;
-      d._rawThreat = Math.log10(threatScore + 10); // Log scale dampens outliers
+      d._rawThreat = Math.log10(threatScore + 10);
       d._rawXF = d.xFactor;
 
-      // E. Confidence (Sigmoid)
-      const confidence = calculateConfidence(count, 10, 0.35); 
-      
-      // Viability Multiplier
+      const confidence = calculateConfidence(count, 10, 0.35);
       d._viabilityMult = 0.40 + (0.60 * confidence);
 
       final.push({
         ...d,
-        FGPI: parseFloat(fgpiSum.toFixed(2)), 
+        FGPI: parseFloat(fgpiSum.toFixed(2)),
         TP: 0,
         AF3, AF12,
         TWE: d.timeWeightedTWE !== null ? parseFloat(d.timeWeightedTWE.toFixed(2)) : null,
@@ -518,7 +496,6 @@ module.exports = async function () {
       });
     });
 
-    // --- Relative Scaling & Final CPV ---
     const getSc = (k) => minMaxScale(final.map(x => x[k]));
     const scPeak = getSc('_rawPeak');
     const scEff = getSc('_rawEff');
@@ -526,19 +503,15 @@ module.exports = async function () {
     const scXF = getSc('_rawXF');
 
     final.forEach(c => {
-        // Normalize 0-100
         const nPeak = scPeak.range > 0 ? ((c._rawPeak - scPeak.min) / scPeak.range) * 100 : 0;
         const nEff = scEff.range > 0 ? ((c._rawEff - scEff.min) / scEff.range) * 100 : 0;
         const nThreat = scThreat.range > 0 ? ((c._rawThreat - scThreat.min) / scThreat.range) * 100 : 0;
         const nXF = scXF.range > 0 ? ((c._rawXF - scXF.min) / scXF.range) * 100 : 50;
 
-        // 40% Peak, 25% Threat, 20% Efficiency, 15% X-Factor
         const rawCPV = (nPeak * 0.40) + (nThreat * 0.25) + (nEff * 0.20) + (nXF * 0.15);
 
-        // Apply Confidence
         c.CPV = parseFloat((rawCPV * c._viabilityMult).toFixed(2));
-        
-        // TP Visual
+
         const rec = charMap.get(c.name);
         c.TP = pScale.range > 0 ? Math.round(((rec.players.length - pScale.min) / pScale.range) * 100) : 0;
 
@@ -546,7 +519,7 @@ module.exports = async function () {
     });
 
     const unranked = analytics.filter(c => !c.hasData).map(c => ({
-      name: c.name, slug: c.slug, hasData: false, CPV: null, Tier: "D", 
+      name: c.name, slug: c.slug, hasData: false, CPV: null, Tier: "D",
       CMS: null, CPF: null, FGPI: null, TP: null, TWE: null, historicalTWE: 0,
       AF3: null, AF12: null, V: 0, T3: 0, T8: 0, T16: 0, MajorV: 0, MajorT3: 0, MajorT8: 0, MajorT16: 0, TS: null,
       displayV: 0, displayT3: 0, displayT8: 0, displayT16: 0, tsComponents: {}, primaryRDI: null
@@ -555,7 +528,7 @@ module.exports = async function () {
     /* --- CPF Shrinkage --- */
     const obsCPF = final.map(c => (c._cpfObs != null && c._cpfN > 0) ? c._cpfObs : null).filter(v => v != null);
     const gCPF = obsCPF.length ? safeDivide(obsCPF.reduce((a,b)=>a+b,0), obsCPF.length, 50) : 50;
-    
+
     final.forEach(c => {
       if (c._cpfObs != null && c._cpfN > 0) {
         const K = (c._cpfN < CPF_MIN_RESULTS ? CPF_K_BASE * CPF_K_TINY_MULT : CPF_K_BASE) * (1 + 1/Math.sqrt(c._cpfN));
@@ -589,7 +562,7 @@ module.exports = async function () {
       const wV = winsorize(vals, 0.02, 0.02);
       const m = wV.reduce((a,b)=>a+b,0)/wV.length;
       const sd = Math.sqrt(wV.reduce((s,x)=>s+(x-m)**2,0)/Math.max(1, wV.length-1)) || 1;
-      
+
       const zS=0.85, zA=0.25;
       final.forEach(c => {
         const z = Number.isFinite(c.CPV) ? (c.CPV - m)/sd : -Infinity;
@@ -604,10 +577,67 @@ module.exports = async function () {
     final.sort((a,b) => (b.CPV||-1)-(a.CPV||-1) || (b.MajorV||0)-(a.MajorV||0) || (b.T8||0)-(a.T8||0));
     let finalOut = [...final, ...unranked];
 
-    finalOut = finalOut.map(c => ({
-      ...c, ...(sf6ArchetypeData[c.slug]||{}), ...(sf6MatchupData[c.slug]||sf6MatchupData.default||{}),
-      radar_stats: sf6ArchetypeData[c.slug]?.radar_stats || null
-    }));
+    // --- Monthly TP History (trailing 12-month window, ending at last completed month) ---
+const monthBuckets = [];
+for (let i = 12; i >= 1; i--) {
+  const start = new Date(now.getFullYear(), now.getMonth() - i, 1);
+  const end = new Date(now.getFullYear(), now.getMonth() - i + 1, 1); // first day of the next month
+  const windowStart = new Date(end.getFullYear() - 1, end.getMonth(), 1);
+  const key = `${start.getFullYear()}-${String(start.getMonth() + 1).padStart(2, "0")}`;
+  monthBuckets.push({ key, date: `${key}-01`, windowStart, end });
+}
+
+// Qualified events with their (player, main character) entries
+const qualEvents = [];
+allTournaments.forEach(evt => {
+  if (!evt?.Tier || !evt?.date || !Array.isArray(evt.results)) return;
+  const d = new Date(evt.date);
+  if (isNaN(d.getTime())) return;
+  const entries = [];
+  evt.results.forEach(r => {
+    const pl = playersMap.get(r.Player);
+    if (pl) entries.push({ player: r.Player, char: pl.mainCharacter });
+  });
+  qualEvents.push({ d, entries });
+});
+
+const monthlyTP = new Map(); // monthKey -> Map(characterName -> 0-100)
+monthBuckets.forEach(b => {
+  const sets = new Map();
+  qualEvents.forEach(({ d, entries }) => {
+    if (d < b.windowStart || d >= b.end) return;
+    entries.forEach(({ player, char }) => {
+      if (!sets.has(char)) sets.set(char, new Set());
+      sets.get(char).add(player);
+    });
+  });
+  const counts = [...sets.values()].map(s => s.size).filter(n => n > 0);
+  const sc = minMaxScale(counts);
+  const scaled = new Map();
+  sets.forEach((set, name) => {
+    scaled.set(name, sc.range > 0 ? Math.round(((set.size - sc.min) / sc.range) * 100) : 0);
+  });
+  monthlyTP.set(b.key, scaled);
+});
+
+    const getPopularityHistory = (charName) =>
+  monthBuckets.map(b => ({
+    date: b.date,
+    value: monthlyTP.get(b.key)?.get(charName) ?? null
+  }));
+
+    // Attach popularity history + archetype/matchup data to each character
+    finalOut = finalOut.map(c => {
+  const popularityHistory = getPopularityHistory(c.name);
+  return {
+    ...c,
+    popularityHistory,
+    hasPopularityData: popularityHistory.some(p => p.value !== null),
+    ...(sf6ArchetypeData[c.slug] || {}),
+    ...(sf6MatchupData[c.slug] || sf6MatchupData.default || {}),
+    radar_stats: sf6ArchetypeData[c.slug]?.radar_stats || null
+  };
+});
 
     finalOut = assignPlayerDataToCharacters(finalOut, profiles);
 
@@ -617,8 +647,8 @@ module.exports = async function () {
     finalOut.forEach(c => { c.primaryRDI_count = c.primaryRDI?.region ? rCounts[c.primaryRDI.region] : 0; });
 
     const pos = buildCompetitionPositions(finalOut, [
-      { key: "CPV", order: "desc" }, { key: "CMS", order: "desc" }, { key: "TWE", order: "desc" }, 
-      { key: "FGPI", order: "desc" }, { key: "CPF", order: "desc" }, { key: "TS", order: "desc" }, 
+      { key: "CPV", order: "desc" }, { key: "CMS", order: "desc" }, { key: "TWE", order: "desc" },
+      { key: "FGPI", order: "desc" }, { key: "CPF", order: "desc" }, { key: "TS", order: "desc" },
       { key: "TP", order: "desc" }, { key: "primaryRDI_count", order: "desc" },
       { key: "AF12", order: "asc" }, { key: "AF3", order: "asc" },
       { key: "MajorV", order: "desc" }, { key: "MajorT3", order: "desc" }, { key: "T8", order: "desc" }, { key: "T16", order: "desc" }
@@ -626,13 +656,14 @@ module.exports = async function () {
 
     const rankLook = (slug, key) => { const v = pos[key]?.[slug]; return (v && v <= 5) ? v : null; };
     finalOut.forEach(c => {
+      c.cpvRank = pos.CPV?.[c.slug] ?? null;
       c.statRanks = { CPV: rankLook(c.slug,'CPV'), CMS: rankLook(c.slug,'CMS'), TWE: rankLook(c.slug,'TWE'), FGPI: rankLook(c.slug,'FGPI'), CPF: rankLook(c.slug,'CPF'), TS: rankLook(c.slug,'TS'), TP: rankLook(c.slug,'TP'), primaryRDI: rankLook(c.slug,'primaryRDI_count'), AF12: rankLook(c.slug,'AF12'), AF3: rankLook(c.slug,'AF3') };
       c.leaderRank = { victories: rankLook(c.slug,'MajorV'), top3: rankLook(c.slug,'MajorT3'), top8: rankLook(c.slug,'T8'), top16: rankLook(c.slug,'T16') };
     });
 
     const unique = new Map();
     finalOut.forEach(c => { if(!unique.has(c.slug)) unique.set(c.slug, c); });
-    console.log(`✅ Generated ${unique.size} character records.`);
+    console.log(`✅ Generated ${unique.size} character records with popularity trends.`);
     return Array.from(unique.values());
 
   } catch (err) { console.error("❌ CRITICAL ERROR:", err); return []; }

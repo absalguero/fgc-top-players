@@ -312,8 +312,8 @@
 }
 
 .matchup-container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
     padding: var(--spacing-md);
 }
@@ -473,4 +473,25 @@
         height: 250px !important; 
         max-height: 250px !important;
     }
+}
+
+/* Mobile/tablet: single-column order tuned for tournament-first reading */
+@media (max-width: 1023px) {
+    .page-character-profile .profile-main-layout {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-lg); /* match whatever gap your columns use today */
+    }
+
+    /* Flatten the columns so cards can be ordered across them */
+    .page-character-profile .profile-section--left-col,
+    .page-character-profile .profile-section--right-col {
+        display: contents;
+    }
+
+    .page-character-profile .profile-card--players { order: 1; }
+    .page-character-profile .profile-section--popularity-history { order: 2; }
+    .page-character-profile .profile-card--matchups { order: 3; }
+    .page-character-profile .profile-card--overview { order: 4; }
+    .page-character-profile .profile-card--chart { order: 5; }
 }

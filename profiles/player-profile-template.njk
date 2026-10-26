@@ -151,11 +151,13 @@ eleventyComputed:
                 </a>
                 {% endif %}
 
-                {% if player.rankChange6m is not null and player.rankChange6m != '' %}
-                <div class="profile-header__rank-badge {{ rankClass }}" title="6-Month Rank Change">
+                {% if player.rankChange6m !== undefined and player.rankChange6m !== null and player.rankChange6m !== '' %}
+                <div class="profile-header__rank-badge" title="6-Month Rank Change">
                     <span class="rank-badge__label">6M</span>
                     <span class="rank-badge__number">
-                        {% if player.rankChange6m > 0 %}
+                        {% if player.rankChange6m == 'New' %}
+                            <span class="change-new"><i class="fas fa-star"></i> New</span>
+                        {% elif player.rankChange6m > 0 %}
                             <span class="change-up"><i class="fas fa-arrow-up"></i> {{ player.rankChange6m }}</span>
                         {% elif player.rankChange6m < 0 %}
                             <span class="change-down"><i class="fas fa-arrow-down"></i> {{ player.rankChange6m | abs }}</span>
@@ -485,14 +487,14 @@ eleventyComputed:
     {% set hasVisibleUpcoming = false %}
     {% for event in player.upcomingTournaments %}
         {# 
-           Keep if:
-           - no endDate, or
-           - endDate is today or in the future
-           AND (optionally) not explicitly archived if you add isArchived later
+            Keep if:
+            - no endDate, or
+            - endDate is today or in the future
+            AND (optionally) not explicitly archived if you add isArchived later
         #}
         {% if (not event.endDate) or (event.endDate >= todayIso) %}
             {# if you later add isArchived, use:
-               and not event.isArchived
+                and not event.isArchived
             #}
             {% set hasVisibleUpcoming = true %}
         {% endif %}

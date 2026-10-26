@@ -57,11 +57,9 @@ eleventyComputed:
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  {# Use dump | safe to handle quotes in names automatically #}
   "name": {{ (character.name ~ " — SF6 Tier, Matchups & CPV") | dump | safe }},
   "url": "{{ canonicalUrl }}",
   "dateModified": "{{ lastMod }}",
-  {# FIX 1: isPartOf should be a URL string for WebPage, not an object #}
   "isPartOf": "{{ site.url }}",
   "about": {
     "@type": "Thing",
@@ -89,7 +87,6 @@ eleventyComputed:
 {
   "@context":"https://schema.org",
   "@type":"Dataset",
-  {# FIX 2: Added dump | safe to name to prevents syntax crashes that hide the 'creator' field #}
   "name": {{ (character.name ~ " — SF6 Competitive Snapshot") | dump | safe }},
   "description":"CPV, momentum (CMS), popularity, Top-3 Rate (T3R), FGPI average, specialization, and top region for {{ character.name }} based on last-12-months tournament data.",
   "url":"{{ canonicalUrl }}",
@@ -132,12 +129,18 @@ eleventyComputed:
     {%- set tierClass = 'tier-' ~ tierBase if tierBase else 'tier-unknown' -%}
 
     <header class="profile-header {{ tierClass }}">
-      <h1 class="profile-header__name">{{ character.name }}</h1>
-      <div class="profile-header__rank-badge tier-badge {{ tierClass }}">
-        <span class="rank-badge__label">Tier</span>
-        <span class="rank-badge__number">{{ character.Tier or 'N/A' }}</span>
-      </div>
-    </header>
+  <h1 class="profile-header__name">{{ character.name }}</h1>
+  <div class="profile-header__rank-badge tier-badge {{ tierClass }}">
+    <span class="rank-badge__label">Tier</span>
+    <span class="rank-badge__number">{{ character.Tier or 'N/A' }}</span>
+  </div>
+  {%- if character.cpvRank -%}
+  <div class="profile-header__rank-badge {{ tierClass }}" title="Ranked #{{ character.cpvRank }} by CPV">
+    <span class="rank-badge__label">Rank</span>
+    <span class="rank-badge__number">#{{ character.cpvRank }}</span>
+  </div>
+  {%- endif -%}
+</header>
 
     <div class="profile-context-note">
       <i class="fas fa-info-circle" aria-hidden="true"></i> All stats are based on performance in tournaments recorded within the last 12 months.
@@ -166,8 +169,6 @@ eleventyComputed:
             {%- set stat_value = 'N/A' -%}
           {%- endif -%}
 
-          {# Check if stat is not calculated (null, undefined, empty string, or already N/A) #}
-          {# Preserve numeric 0 as a valid calculated value #}
           {%- if stat_value is not number and (stat_value == null or stat_value == undefined or stat_value == '' or stat_value == 'N/A') -%}
             {%- set stat_value = 'N/A' -%}
           {%- endif -%}
@@ -208,8 +209,8 @@ eleventyComputed:
 
     <div class="profile-main-layout">
       <div class="profile-section profile-section--left-col">
-        <div class="profile-card">
-          <h2 class="profile-card__header">Character Overview</h2>
+        <div class="profile-card profile-card--overview">
+  <h2 class="profile-card__header">Character Overview</h2>
 
           {%- if character.overview -%}
             <p class="character-overview__intro">{{ character.overview | autoLink(page, collections, playerProfiles) | safe }}</p>
@@ -272,12 +273,47 @@ eleventyComputed:
             {%- endif -%}
           </div>
         </div>
+
+        <div class="profile-card profile-card--matchups">
+  <h2 class="profile-card__header">Key Matchups</h2>
+          <div class="matchup-container">
+            {%- if character.favorable and character.favorable.length > 0 and character.favorable[0] != 'N/A' -%}
+            <div class="trait-section trait-section--strengths">
+              <h3 style="justify-content: center;"><i class="fas fa-plus-circle" aria-hidden="true"></i> Favorable</h3>
+              <div class="matchup-grid">
+                {%- for matchup in character.favorable -%}
+                {% set matchupSlug = matchup | slugify %}
+                {% if matchupSlug == 'a-k-i' %}{% set matchupSlug = 'aki' %}{% endif %}
+                <a href="/characters/{{ matchupSlug }}/" class="matchup-item" title="{{ matchup }}">
+                  <span class="matchup-item__name">{{ matchup }}</span>
+                </a>
+                {%- endfor -%}
+              </div>
+            </div>
+            {%- endif -%}
+    
+            {%- if character.unfavorable and character.unfavorable.length > 0 and character.unfavorable[0] != 'N/A' -%}
+            <div class="trait-section trait-section--weaknesses">
+              <h3 style="justify-content: center;"><i class="fas fa-minus-circle" aria-hidden="true"></i> Unfavorable</h3>
+              <div class="matchup-grid">
+                {%- for matchup in character.unfavorable -%}
+                {% set matchupSlug = matchup | slugify %}
+                {% if matchupSlug == 'a-k-i' %}{% set matchupSlug = 'aki' %}{% endif %}
+                <a href="/characters/{{ matchupSlug }}/" class="matchup-item" title="{{ matchup }}">
+                  <span class="matchup-item__name">{{ matchup }}</span>
+                </a>
+                {%- endfor -%}
+              </div>
+            </div>
+            {%- endif -%}
+          </div>
+        </div>
       </div>
 
       <div class="profile-section profile-section--right-col">
         {%- if character.notablePlayers and character.notablePlayers.length > 0 -%}
-        <div class="profile-card">
-          <h2 class="profile-card__header">Top {{ character.name }} Players</h2>
+        <div class="profile-card profile-card--players">
+  <h2 class="profile-card__header">Top {{ character.name }} Players</h2>
           <div class="notable-players-list" style="display: flex; flex-direction: column; gap: 0.75rem;">
             {%- for player in character.notablePlayers -%}
               {% set playerRankClass = "" %}
@@ -313,6 +349,20 @@ eleventyComputed:
         </div>
         {%- endif -%}
 
+        {# --- Popularity Trend Card --- #}
+        <div class="profile-card profile-section--popularity-history">
+          <h2 class="profile-card__header">Popularity Trend</h2>
+          {%- if character.hasPopularityData -%}
+            <div class="ranking-history-graph" style="height: 250px; position: relative;">
+              <canvas id="popularity-chart" aria-label="{{ character.name }} popularity trend"></canvas>
+            </div>
+          {%- else -%}
+            <p class="chart-no-data" style="margin: 0; padding: 1.5rem 0; text-align: center; color: var(--color-text-muted);">
+              No tournament data yet.
+            </p>
+          {%- endif -%}
+        </div>
+
         {%- if character.radar_stats -%}
         <div class="profile-card profile-card--chart">
           <h2 class="profile-card__header profile-card__header--chart">Combat Profile</h2>
@@ -321,41 +371,6 @@ eleventyComputed:
           </div>
         </div>
         {%- endif -%}
-        
-        <div class="profile-card">
-          <h2 class="profile-card__header">Key Matchups</h2>
-          <div class="matchup-container">
-            {%- if character.favorable and character.favorable.length > 0 and character.favorable[0] != 'N/A' -%}
-            <div class="trait-section trait-section--strengths">
-              <h3 style="justify-content: center;"><i class="fas fa-plus-circle" aria-hidden="true"></i> Favorable</h3>
-              <div class="matchup-grid">
-                {%- for matchup in character.favorable -%}
-                {% set matchupSlug = matchup | slugify %}
-                {% if matchupSlug == 'a-k-i' %}{% set matchupSlug = 'aki' %}{% endif %}
-                <a href="/characters/{{ matchupSlug }}/" class="matchup-item" title="{{ matchup }}">
-                  <span class="matchup-item__name">{{ matchup }}</span>
-                </a>
-                {%- endfor -%}
-              </div>
-            </div>
-            {%- endif -%}
-    
-            {%- if character.unfavorable and character.unfavorable.length > 0 and character.unfavorable[0] != 'N/A' -%}
-            <div class="trait-section trait-section--weaknesses">
-              <h3 style="justify-content: center;"><i class="fas fa-minus-circle" aria-hidden="true"></i> Unfavorable</h3>
-              <div class="matchup-grid">
-                {%- for matchup in character.unfavorable -%}
-                {% set matchupSlug = matchup | slugify %}
-                {% if matchupSlug == 'a-k-i' %}{% set matchupSlug = 'aki' %}{% endif %}
-                <a href="/characters/{{ matchupSlug }}/" class="matchup-item" title="{{ matchup }}">
-                  <span class="matchup-item__name">{{ matchup }}</span>
-                </a>
-                {%- endfor -%}
-              </div>
-            </div>
-            {%- endif -%}
-          </div>
-        </div>
       </div>
     </div>
 
@@ -379,10 +394,14 @@ eleventyComputed:
   {%- block scripts -%}
   <script>
     const characterData = {{ character | dump | safe }};
+    const chartData = characterData;
   </script>
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+  <script src="/js/characterPopularityGraph.js" defer></script>
+
   {%- if character.radar_stats -%}
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
     <script src="/js/characterGraph.js" defer></script>
   {%- endif -%}
   {%- endblock -%}
