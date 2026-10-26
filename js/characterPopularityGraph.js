@@ -27,17 +27,17 @@
         datasets: [{
           label: "Popularity",
           // Noon local time avoids UTC-midnight parsing shifting points into the previous month.
-          // null values (months with no usage) render as gaps.
           data: history.map(item => ({ x: item.date + "T12:00:00", y: item.value })),
           borderColor: "#3b82f6",
           backgroundColor: gradient,
           borderWidth: 2,
           fill: true,
           tension: 0.3,
-          pointRadius: 3,
-          pointHoverRadius: 6,
+          // Hide points and hover rings during null/pre-release months
+          pointRadius: (context) => context.raw.y === null ? 0 : 3,
+          pointHoverRadius: (context) => context.raw.y === null ? 0 : 6,
           spanGaps: false,
-          clip: 8 // lets points at 0 and 100 draw fully instead of being cut at the plot edge
+          clip: 8
         }]
       },
       options: {

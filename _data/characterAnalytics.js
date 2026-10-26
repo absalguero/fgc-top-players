@@ -1,9 +1,63 @@
 "use strict";
 
+const fs = require("fs");
+const path = require("path");
 const slugify = require("slugify");
 const characterMasterList = require("./characterMasterList.js");
 const sf6ArchetypeData = require("./sf6_character_archetypes.js");
 const sf6MatchupData = require("./sf6_matchup_data.js");
+
+/* ------------------------- DLC Release Dates & Auto-Logger ------------------------- */
+const RESULT_CHAR_LOG_PATH = path.join(__dirname, "../resultCharacterLog.json");
+
+// Hardcoded SF6 DLC Release Dates (YYYY-MM-DD)
+const DLC_RELEASE_DATES = {
+  "Rashid": "2023-07-24",
+  "A.K.I.": "2023-09-27",
+  "Ed": "2024-02-27",
+  "Akuma": "2024-05-22",
+  "M. Bison": "2024-06-26",
+  "Terry": "2024-09-24",
+  "Mai": "2025-02-05",
+  "Elena": "2025-06-03",
+  "Sagat": "2025-08-05",
+  "C. Viper": "2025-10-15",
+  "Alex": "2026-03-17",
+  "Ingrid": "2026-05-28",
+  "Yasmine": "2026-08-03",
+  "Arjun": "2026-10-12"
+};
+
+function isCharacterReleasedOnDate(charName, eventDate) {
+  if (!charName || !(eventDate instanceof Date) || isNaN(eventDate.getTime())) return false;
+  const releaseIso = DLC_RELEASE_DATES[charName.trim()];
+  if (!releaseIso) return true; // Base roster character
+  const releaseDate = new Date(releaseIso + "T00:00:00Z");
+  return eventDate >= releaseDate;
+}
+
+function loadResultCharacterLog() {
+  try {
+    if (fs.existsSync(RESULT_CHAR_LOG_PATH)) {
+      return JSON.parse(fs.readFileSync(RESULT_CHAR_LOG_PATH, "utf8")) || {};
+    }
+  } catch (err) {
+    console.warn("[characterAnalytics] Could not read resultCharacterLog.json, starting fresh:", err.message);
+  }
+  return {};
+}
+
+function saveResultCharacterLog(logData) {
+  try {
+    const sortedKeys = Object.keys(logData).sort();
+    const ordered = {};
+    sortedKeys.forEach(k => { ordered[k] = logData[k]; });
+    fs.writeFileSync(RESULT_CHAR_LOG_PATH, JSON.stringify(ordered, null, 2), "utf8");
+  } catch (err) {
+    // Gracefully ignore write errors on read-only CI environments if needed
+    console.warn("[characterAnalytics] Could not write resultCharacterLog.json:", err.message);
+  }
+}
 
 /* ------------------------- Utilities ------------------------- */
 const createSafeSlug = (name) => slugify(name || "", { lower: true, strict: true, remove: /[#<>:"/\\|?*]/g });
@@ -124,8 +178,8 @@ function assignPlayerDataToCharacters(analytics, profiles) {
 }
 
 const calculateConfidence = (n, trustThreshold = 10, steepness = 0.35) => {
-    if (!n || n === 0) return 0;
-    return 1 / (1 + Math.exp(-steepness * (n - trustThreshold)));
+  if (!n || n === 0) return 0;
+  return 1 / (1 + Math.exp(-steepness * (n - trustThreshold)));
 };
 
 /* ---------------------- Main Logic ---------------------- */
@@ -144,6 +198,27 @@ module.exports = async function () {
     const profilesMap = new Map(profiles.map(p => [p.name, p]));
     const now = new Date();
     const oneYearAgo = new Date(new Date(now).setFullYear(now.getFullYear() - 1));
+
+    // Load persistent result -> character snapshot log
+    const resultCharLog = loadResultCharacterLog();
+    let logModified = false;
+
+    const resolveAndLogCharacter = (evtSlug, evtDate, playerName, currentMain) => {
+      const logKey = `${evtSlug}::${playerName}`;
+      // 1. If we already logged the character when this result was first added, use it
+      if (resultCharLog[logKey]) {
+        const loggedChar = resultCharLog[logKey];
+        return isCharacterReleasedOnDate(loggedChar, evtDate) ? loggedChar : null;
+      }
+      // 2. New result: check if the player's current main was released by this tournament's date
+      if (currentMain && isCharacterReleasedOnDate(currentMain, evtDate)) {
+        resultCharLog[logKey] = currentMain;
+        logModified = true;
+        return currentMain;
+      }
+      // If the player's current main is a DLC character that wasn't released yet at the time of this older event, do not credit it
+      return null;
+    };
 
     // --- CONFIGURATION ---
     const PLACEMENT_POINTS = { "S+": 1.2, "S": 0.9, "A": 0.6, "B": 0.3 };
@@ -175,7 +250,7 @@ module.exports = async function () {
 
       playersMap.set(p.Player, {
         name, slug: prof?.slug || createSafeSlug(name),
-        mainCharacter: p["Main Character"],
+        mainCharacter: p["Main Character"].trim(),
         CountryCode: (prof?.countryCode || prof?.country || p.Country || "").toString().trim().toUpperCase() || null,
         rawFgpiScore: fgpi,
         MS: safeNumber(parseNumeric(prof?.stats?.MS), 0),
@@ -184,24 +259,36 @@ module.exports = async function () {
       });
     });
 
-    allTournaments.forEach(evt => {
+    // Sort tournaments chronologically so older events are processed in order
+    const sortedTournaments = [...allTournaments].sort((a, b) => new Date(a.date) - new Date(b.date));
+
+    sortedTournaments.forEach(evt => {
       if (!evt?.date || !Array.isArray(evt.results)) return;
       const d = new Date(evt.date);
-      if (isNaN(d.getTime()) || d < oneYearAgo) return;
+      if (isNaN(d.getTime())) return;
+      const evtSlug = evt.slug || createSafeSlug(evt.name || String(evt.date));
 
       evt.results.forEach(r => {
         const pl = playersMap.get(r.Player);
         if (pl) {
-          pl.results.push({
-            date: d, tier: evt.Tier || "C",
-            placement: safeNumber(parseInt(r.Finish, 10), 9999),
-            entrants: Math.max(1, safeNumber(parseInt(evt.Entrants, 10), 64)),
-            slug: evt.slug || "unknown"
-          });
-          if (evt.Tier) pl.qualifiedResultsCount++;
+          const charAtEvent = resolveAndLogCharacter(evtSlug, d, r.Player, pl.mainCharacter);
+          if (d >= oneYearAgo) {
+            pl.results.push({
+              date: d, tier: evt.Tier || "C",
+              placement: safeNumber(parseInt(r.Finish, 10), 9999),
+              entrants: Math.max(1, safeNumber(parseInt(evt.Entrants, 10), 64)),
+              slug: evtSlug,
+              characterAtEvent: charAtEvent
+            });
+            if (evt.Tier) pl.qualifiedResultsCount++;
+          }
         }
       });
     });
+
+    if (logModified) {
+      saveResultCharacterLog(resultCharLog);
+    }
 
     /* --- Event Strength & FGPI Estimation --- */
     const eventStrengthMap = new Map();
@@ -301,9 +388,15 @@ module.exports = async function () {
       const c = charMap.get(p.mainCharacter);
       if (c) {
         c.players.push(p);
-        c.allResults.push(...p.results);
-        p.results.forEach(r => { if (r && (r.tier === "S+" || r.tier === "S")) c.uniqueEvents.add(r.slug); });
       }
+      p.results.forEach(r => {
+        if (!r.characterAtEvent) return;
+        const targetChar = charMap.get(r.characterAtEvent);
+        if (targetChar) {
+          targetChar.allResults.push(r);
+          if (r.tier === "S+" || r.tier === "S") targetChar.uniqueEvents.add(r.slug);
+        }
+      });
     });
 
     const charsWithP = Array.from(charMap.values()).filter(c => c.players.length);
@@ -411,10 +504,11 @@ module.exports = async function () {
         cd.players.forEach(p => {
           const perf = pPerf.get(p.name) || 0;
           regSc[getReg(p.CountryCode)].push(perf);
-          p.results.forEach(r => {
-             const m = now.getMonth() - r.date.getMonth() + (12 * (now.getFullYear() - r.date.getFullYear()));
-             if (m >= 0 && m < 12) monSc[m].push(calcPerf([r]));
-          });
+        });
+
+        cd.allResults.forEach(r => {
+          const m = now.getMonth() - r.date.getMonth() + (12 * (now.getFullYear() - r.date.getFullYear()));
+          if (m >= 0 && m < 12) monSc[m].push(calcPerf([r]));
         });
 
         const cmsPts = [];
@@ -578,66 +672,74 @@ module.exports = async function () {
     let finalOut = [...final, ...unranked];
 
     // --- Monthly TP History (trailing 12-month window, ending at last completed month) ---
-const monthBuckets = [];
-for (let i = 12; i >= 1; i--) {
-  const start = new Date(now.getFullYear(), now.getMonth() - i, 1);
-  const end = new Date(now.getFullYear(), now.getMonth() - i + 1, 1); // first day of the next month
-  const windowStart = new Date(end.getFullYear() - 1, end.getMonth(), 1);
-  const key = `${start.getFullYear()}-${String(start.getMonth() + 1).padStart(2, "0")}`;
-  monthBuckets.push({ key, date: `${key}-01`, windowStart, end });
-}
+    const monthBuckets = [];
+    for (let i = 12; i >= 1; i--) {
+      const start = new Date(now.getFullYear(), now.getMonth() - i, 1);
+      const end = new Date(now.getFullYear(), now.getMonth() - i + 1, 1); // first day of the next month
+      const windowStart = new Date(end.getFullYear() - 1, end.getMonth(), 1);
+      const key = `${start.getFullYear()}-${String(start.getMonth() + 1).padStart(2, "0")}`;
+      monthBuckets.push({ key, date: `${key}-01`, windowStart, end });
+    }
 
-// Qualified events with their (player, main character) entries
-const qualEvents = [];
-allTournaments.forEach(evt => {
-  if (!evt?.Tier || !evt?.date || !Array.isArray(evt.results)) return;
-  const d = new Date(evt.date);
-  if (isNaN(d.getTime())) return;
-  const entries = [];
-  evt.results.forEach(r => {
-    const pl = playersMap.get(r.Player);
-    if (pl) entries.push({ player: r.Player, char: pl.mainCharacter });
-  });
-  qualEvents.push({ d, entries });
-});
-
-const monthlyTP = new Map(); // monthKey -> Map(characterName -> 0-100)
-monthBuckets.forEach(b => {
-  const sets = new Map();
-  qualEvents.forEach(({ d, entries }) => {
-    if (d < b.windowStart || d >= b.end) return;
-    entries.forEach(({ player, char }) => {
-      if (!sets.has(char)) sets.set(char, new Set());
-      sets.get(char).add(player);
+    // Qualified events with their logged & release-date-verified (player, character) entries
+    const qualEvents = [];
+    sortedTournaments.forEach(evt => {
+      if (!evt?.Tier || !evt?.date || !Array.isArray(evt.results)) return;
+      const d = new Date(evt.date);
+      if (isNaN(d.getTime())) return;
+      const evtSlug = evt.slug || createSafeSlug(evt.name || String(evt.date));
+      const entries = [];
+      evt.results.forEach(r => {
+        const pl = playersMap.get(r.Player);
+        if (pl) {
+          const charAtEvent = resolveAndLogCharacter(evtSlug, d, r.Player, pl.mainCharacter);
+          if (charAtEvent) entries.push({ player: r.Player, char: charAtEvent });
+        }
+      });
+      qualEvents.push({ d, entries });
     });
-  });
-  const counts = [...sets.values()].map(s => s.size).filter(n => n > 0);
-  const sc = minMaxScale(counts);
-  const scaled = new Map();
-  sets.forEach((set, name) => {
-    scaled.set(name, sc.range > 0 ? Math.round(((set.size - sc.min) / sc.range) * 100) : 0);
-  });
-  monthlyTP.set(b.key, scaled);
-});
+
+    if (logModified) {
+      saveResultCharacterLog(resultCharLog);
+    }
+
+    const monthlyTP = new Map(); // monthKey -> Map(characterName -> 0-100)
+    monthBuckets.forEach(b => {
+      const sets = new Map();
+      qualEvents.forEach(({ d, entries }) => {
+        if (d < b.windowStart || d >= b.end) return;
+        entries.forEach(({ player, char }) => {
+          if (!sets.has(char)) sets.set(char, new Set());
+          sets.get(char).add(player);
+        });
+      });
+      const counts = [...sets.values()].map(s => s.size).filter(n => n > 0);
+      const sc = minMaxScale(counts);
+      const scaled = new Map();
+      sets.forEach((set, name) => {
+        scaled.set(name, sc.range > 0 ? Math.round(((set.size - sc.min) / sc.range) * 100) : 0);
+      });
+      monthlyTP.set(b.key, scaled);
+    });
 
     const getPopularityHistory = (charName) =>
-  monthBuckets.map(b => ({
-    date: b.date,
-    value: monthlyTP.get(b.key)?.get(charName) ?? null
-  }));
+      monthBuckets.map(b => ({
+        date: b.date,
+        value: monthlyTP.get(b.key)?.get(charName) ?? null
+      }));
 
     // Attach popularity history + archetype/matchup data to each character
     finalOut = finalOut.map(c => {
-  const popularityHistory = getPopularityHistory(c.name);
-  return {
-    ...c,
-    popularityHistory,
-    hasPopularityData: popularityHistory.some(p => p.value !== null),
-    ...(sf6ArchetypeData[c.slug] || {}),
-    ...(sf6MatchupData[c.slug] || sf6MatchupData.default || {}),
-    radar_stats: sf6ArchetypeData[c.slug]?.radar_stats || null
-  };
-});
+      const popularityHistory = getPopularityHistory(c.name);
+      return {
+        ...c,
+        popularityHistory,
+        hasPopularityData: popularityHistory.some(p => p.value !== null),
+        ...(sf6ArchetypeData[c.slug] || {}),
+        ...(sf6MatchupData[c.slug] || sf6MatchupData.default || {}),
+        radar_stats: sf6ArchetypeData[c.slug]?.radar_stats || null
+      };
+    });
 
     finalOut = assignPlayerDataToCharacters(finalOut, profiles);
 
