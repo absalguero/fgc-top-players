@@ -17,9 +17,9 @@
     const ctx = canvas.getContext("2d");
     if (canvas._chartInstance) canvas._chartInstance.destroy();
 
-    const gradient = ctx.createLinearGradient(0, 0, 0, 200);
-    gradient.addColorStop(0, "rgba(59, 130, 246, 0.4)");
-    gradient.addColorStop(1, "rgba(59, 130, 246, 0.0)");
+    const gradient = ctx.createLinearGradient(0, 0, 0, 300);
+    gradient.addColorStop(0, "rgba(0, 150, 255, 0.4)");
+    gradient.addColorStop(1, "rgba(0, 150, 255, 0)");
 
     const chart = new Chart(ctx, {
       type: "line",
@@ -28,46 +28,56 @@
           label: "Popularity",
           // Noon local time avoids UTC-midnight parsing shifting points into the previous month.
           data: history.map(item => ({ x: item.date + "T12:00:00", y: item.value })),
-          borderColor: "#3b82f6",
+          borderColor: "#0096FF",
           backgroundColor: gradient,
-          borderWidth: 2,
           fill: true,
-          tension: 0.3,
-          // Hide points and hover rings during null/pre-release months
-          pointRadius: (context) => context.raw.y === null ? 0 : 3,
+          borderWidth: 3,
+          tension: 0.4,
+          pointRadius: 0,
           pointHoverRadius: (context) => context.raw.y === null ? 0 : 6,
-          spanGaps: false,
-          clip: 8
+          spanGaps: false
         }]
       },
       options: {
         responsive: true,
         maintainAspectRatio: false,
-        layout: { padding: { top: 8, bottom: 4, right: 8 } },
+        interaction: { mode: 'index', intersect: false },
         plugins: {
           legend: { display: false },
           tooltip: {
+            filter: (tooltipItem) => tooltipItem.raw.y !== null,
             callbacks: {
-              title: (context) => {
-                const date = new Date(context[0].parsed.x);
-                return date.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+              title: (items) => {
+                const d = items?.[0]?.parsed?.x ? new Date(items[0].parsed.x) : null;
+                return d ? d.toLocaleDateString('en-US', { year: 'numeric', month: 'short' }) : '';
               },
-              label: (context) => `TP: ${context.parsed.y}`
+              label: (ctx) => `TP: ${ctx.raw.y}`
             }
           }
         },
         scales: {
+          y: {
+            beginAtZero: true,
+            max: 100,
+            ticks: {
+              stepSize: 20,
+              precision: 0,
+              color: '#A0A0A0',
+              font: { size: 14 }
+            },
+            grid: { color: 'rgba(255,255,255,0.1)' },
+            title: {
+              display: true,
+              text: 'Popularity',
+              color: '#F5F5F5',
+              font: { size: 18, family: "'Oswald', sans-serif" }
+            }
+          },
           x: {
             type: 'time',
             time: { unit: 'month', displayFormats: { month: 'MMM' } },
             ticks: { maxTicksLimit: 8, color: '#A0A0A0', font: { size: 12 }, maxRotation: 0 },
             grid: { display: false }
-          },
-          y: {
-            beginAtZero: true,
-            max: 100,
-            ticks: { stepSize: 20, precision: 0, color: '#A0A0A0', font: { size: 12 } },
-            grid: { color: 'rgba(255, 255, 255, 0.1)' }
           }
         }
       }
