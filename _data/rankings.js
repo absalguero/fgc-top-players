@@ -44,17 +44,44 @@ module.exports = async function() {
         const parseResult = Papa.parse(csvText, {
             header: true,
             skipEmptyLines: true,
-            transformHeader: header => {
+            transformHeader: (header, index) => {
                 const trimmed = header.trim();
-                // Map empty first column to "Rank"
-                if (trimmed === '') return 'Rank';
+
+                // Only map an empty header to "Rank" if it is actually the first column (Column A, index 0)
+                if (trimmed === '') {
+                    return index === 0 ? 'Rank' : `_empty_${index}`;
+                }
+
                 return trimmed;
             },
             download: false, // Don't use browser download
             worker: false, // Don't use Web Workers (not available in Node.js)
         });
 
-        const players = parseResult.data.filter(p => p.Player && p.Player.trim() !== '');
+        const players = parseResult.data
+            .filter(p => p.Player && p.Player.trim() !== '')
+            .map(p => {
+                // Ensure positional fallbacks for Column F (index 5) and Column J/K (index 9/10)
+                // in case gviz merged headers or date cells shifted the header string in Row 1
+                const keys = Object.keys(p);
+                if (p["Rating"] === undefined && keys[5]) {
+                    p["Rating"] = p[keys[5]];
+                }
+                if (
+                    p["Rating Change 6M"] === undefined &&
+                    p["6M Rating Change"] === undefined
+                ) {
+                    // Check Column K (index 10) first, then Column J (index 9)
+                    const colK = keys[10] ? p[keys[10]] : undefined;
+                    const colJ = keys[9] ? p[keys[9]] : undefined;
+                    if (colK !== undefined && String(colK).trim() !== "") {
+                        p["Rating Change 6M"] = colK;
+                    } else if (colJ !== undefined && String(colJ).trim() !== "") {
+                        p["Rating Change 6M"] = colJ;
+                    }
+                }
+                return p;
+            });
 
         if (players.length === 0) throw new Error("No valid player data was found in the sheet.");
         

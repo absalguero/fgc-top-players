@@ -55,6 +55,13 @@ function getRowValue(row, field) {
   return null;
 }
 
+function parseSheetNumber(val) {
+  if (val === null || val === undefined) return NaN;
+  const cleaned = String(val).replace(/,/g, "").replace(/\s+/g, "").trim();
+  if (cleaned === "" || cleaned === "-" || /^n\/?a$/i.test(cleaned)) return NaN;
+  return Number(cleaned);
+}
+
 function getStartggSlugFromRow(row) {
   for (const field of STARTGG_SLUG_FIELDS) {
     const val = getRowValue(row, field);
@@ -410,6 +417,53 @@ module.exports = async function () {
       });
     });
 
+    // Reconstruct six-month-old ratings for every player using named headers first
+    const sixMonthRatings = allPlayers
+      .map(p => {
+        const row = p._rankingRow || {};
+
+        const currentRaw =
+          getRowValue(row, "Rating") ??
+          getRowValue(row, "Current Rating") ??
+          getRowValue(row, "Points");
+
+        const changeRaw =
+          getRowValue(row, "Rating Change 6M") ??
+          getRowValue(row, "6M Rating Change") ??
+          getRowValue(row, "RatingChange6M") ??
+          getRowValue(row, "6M Change");
+
+        const currentRating = parseSheetNumber(currentRaw);
+        const ratingChange = parseSheetNumber(changeRaw);
+
+        if (!Number.isFinite(currentRating) || !Number.isFinite(ratingChange)) {
+          return null;
+        }
+
+        const rating6m = currentRating - ratingChange;
+
+        if (rating6m <= 0) {
+          return null;
+        }
+
+        return {
+          name: p.name,
+          currentRank: Number(p.rank) || 9999,
+          rating6m
+        };
+      })
+      .filter(p => p !== null)
+      .sort((a, b) =>
+        b.rating6m - a.rating6m ||
+        a.currentRank - b.currentRank
+      );
+
+    const sixMonthRankByName = new Map();
+
+    sixMonthRatings.forEach((p, index) => {
+      sixMonthRankByName.set(p.name, index + 1);
+    });
+
     // 7. Finalize
     allPlayers.sort((a, b) => (a.rank||999) - (b.rank||999));
 
@@ -427,24 +481,18 @@ module.exports = async function () {
         p.countryRank = null;
       }
 
-      // 2. 6-Month Rank Change (from historicalData closest to 6 months ago)
+      // 2. 6-Month Rank Change (reconstructed from rating points)
       p.rankChange6m = null;
-      if (p.rank && Array.isArray(p.historicalData) && p.historicalData.length > 0) {
-        const validHist = p.historicalData.filter(h => h.rank > 0 && h.date instanceof Date && !isNaN(h.date));
-        if (validHist.length > 0) {
-          let closestRec = null;
-          let minDiff = Infinity;
-          for (const h of validHist) {
-            const diff = Math.abs(h.date - sixMonthsAgo);
-            if (diff < minDiff) {
-              minDiff = diff;
-              closestRec = h;
-            }
-          }
-          if (closestRec && closestRec.rank > 0) {
-            p.rankChange6m = closestRec.rank - p.rank;
-          }
-        }
+
+      const historicalRank = sixMonthRankByName.get(p.name);
+      const currentRank = Number(p.rank);
+
+      if (
+        historicalRank !== undefined &&
+        Number.isFinite(currentRank) &&
+        currentRank > 0
+      ) {
+        p.rankChange6m = historicalRank - currentRank;
       }
     });
 
