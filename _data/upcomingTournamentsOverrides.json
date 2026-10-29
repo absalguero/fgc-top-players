@@ -115,6 +115,27 @@
     "isArchived": false,
     "excludeFromSite": false
   },
+  "astral-finish-2026": {
+    "name": "Astral Finish 2026",
+    "slug": "astral-finish-2026",
+    "startAt": 1794528000,
+    "endAt": 1794787199,
+    "startDate": "2026-11-13",
+    "endDate": "2026-11-15",
+    "dates": "Nov 13-15, 2026",
+    "location": "Prol. 20 De Noviembre s/n, Zapopan, 45100 Zapopan, Jal., Mexico",
+    "venueName": "Unidad Administrativa Basílica",
+    "url": "https://www.start.gg/tournament/astral-finish-2026/details",
+    "tier": "B",
+    "prizes": "$10,000 MXN Pot Bonus",
+    "game": "Street Fighter 6",
+    "streamLink": "https://www.twitch.tv/af_gdl",
+    "scheduleLink": "https://www.start.gg/tournament/astral-finish-2026/events",
+    "description": "<p><strong>Astral Finish 2026</strong> marks the fifth annual edition of western Mexico's premier fighting game major, expanding into a full three-day festival after drawing 296 attendees and 100 <strong>Street Fighter 6</strong> entrants in 2025. Organized by grassroots collective AF GDL since launching in 2022, the tournament returns to its established home in Jalisco as a central gathering for Mexican and Latin American talent.</p><p>The <strong>Street Fighter 6</strong> singles tournament anchors the weekend with a guaranteed pot bonus added to the entry fee pool. Double-elimination brackets award payouts across the top eight finishers when the bracket reaches 64 or more entrants, allocating 42 percent of the total prize pool to first place, 24 percent to second, and 14 percent to third.</p><h3>Multi-Game Lineup and Community Programming</h3><p>Ten additional main stage brackets run alongside the headliner, highlighted by an <strong>ARC World Tour 2026-2027</strong> Gold qualifier for <strong>Guilty Gear: Strive</strong>. The main roster also includes <strong>Fatal Fury: City of the Wolves</strong>, <strong>2XKO</strong>, <strong>Marvel Tokon: Fighting Souls</strong>, <strong>Granblue Fantasy Versus: Rising</strong>, <strong>Under Night In-Birth II Sys:Celes</strong>, <strong>BlazBlue: Central Fiction</strong>, <strong>Rivals of Aether II</strong>, <strong>Avatar Legends: The Fighting Game</strong>, and a mystery game bracket. Twelve community side tournaments feature legacy Capcom and arcade fighters such as <strong>Super Street Fighter II Turbo</strong>, <strong>Street Fighter II: Champion Edition</strong>, <strong>Vampire Savior</strong>, and <strong>Tekken 8</strong>. Outside the tournament pools, the floor hosts an artist and vendor alley alongside a Sunday cosplay contest.</p><h3>Registration and Logistics</h3><p>Competitors must register online via start.gg before the main bracket deadline on November 4. Entrants under 18 years of age are required to have a parent or legal guardian submit a signed authorization form on-site to claim prize payouts.</p>",
+    "notablePlayers": [],
+    "isArchived": false,
+    "excludeFromSite": false
+},
   "battle-coliseum-2026": {
     "name": "Battle Coliseum 2026",
     "slug": "battle-coliseum-2026",
@@ -136,6 +157,31 @@
     "isArchived": false,
     "excludeFromSite": false
   },
+  "mindset-2026": {
+    "name": "MINDSET 2026",
+    "slug": "mindset-2026",
+    "startAt": 1795737600,
+    "endAt": 1795996799,
+    "startDate": "2026-11-27",
+    "endDate": "2026-11-29",
+    "dates": "Nov 27-29, 2026",
+    "location": "65 Rue Germaine Tillion, 92700 Colombes, France",
+    "venueName": "Kopster Hotel Residence Paris Ouest Colombes",
+    "url": "https://www.start.gg/tournament/mindset-2026/details",
+    "tier": "B",
+    "prizes": "TBD",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "https://www.start.gg/tournament/mindset-2026/events",
+    "description": "<p><strong>MINDSET 2026</strong> marks the third annual installment of the Parisian fighting game major organized by French collective NSxC, expanding to a full three-day schedule after drawing 418 total attendees and 96 <strong>Street Fighter 6</strong> entrants in 2025. Returning to its established hotel venue in northwestern Paris for the third consecutive year, the event has grown rapidly since its 2024 debut drew 219 competitors.</p><p>The <strong>Street Fighter 6</strong> 1v1 bracket headlines the Sunday slate on PC. Matches run in a double-elimination format played first-to-three throughout the entirety of the tournament. Competitors must register online via start.gg prior to the November 9 deadline, and players who fail to report to their station within 10 minutes of being called face match disqualification.</p><h3>Multi-Game Lineup and Circuit Qualifiers</h3><p>Six additional main stage singles brackets accompany the headliner, highlighted by an <strong>ARC World Tour 2026-2027</strong> Gold qualifier for <strong>Guilty Gear: Strive</strong> and a <strong>2XKO</strong> Challenger Event. The primary weekend lineup also includes <strong>Tekken 8</strong> governed by <strong>Tekken World Tour 2026</strong> rules, <strong>Granblue Fantasy Versus: Rising</strong>, <strong>Marvel Tokon: Fighting Souls</strong>, and <strong>Avatar Legends: The Fighting Game</strong>. Friday programming features 2v2 team tournaments for both 2XKO and Marvel Tokon alongside community brackets for <strong>Fatal Fury: City of the Wolves</strong>, <strong>Mortal Kombat XL</strong>, and <strong>Invincible VS</strong>, while a <strong>BlazBlue: Central Fiction</strong> side bracket concludes the schedule on Sunday.</p>",
+    "notablePlayers": [
+        "Mister Crimson",
+        "JuniorLeo",
+        "Dims"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+},
   "drowning-pools-2026": {
     "name": "Drowning Pools 2026",
     "slug": "drowning-pools-2026",
