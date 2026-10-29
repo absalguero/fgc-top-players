@@ -268,6 +268,27 @@
         "isArchived": false,
         "excludeFromSite": false
     },
+    "evo-brazil-2027": {
+    "name": "Evo Brazil 2027",
+    "slug": "evo-brazil-2027",
+    "startAt": 1774483200,
+    "endAt": 1774742399,
+    "startDate": "2027-03-26",
+    "endDate": "2027-03-28",
+    "dates": "Mar 26-28, 2027",
+    "location": "Rua José Bernardo Pinto, 333 - Vila Guilherme, São Paulo - SP, 02055-000, Brazil",
+    "venueName": "Expo Center Norte (Green Pavilion)",
+    "url": "https://www.evobrazil.gg/",
+    "tier": "S",
+    "prizes": "R$1,000,000 Guaranteed Prize Pool",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "<p><strong>Evo Brazil 2027</strong> marks the Evolution Championship Series' inaugural flagship major in South America, building on a regional legacy that began with the Versus: Evo South America events hosted in São Paulo in 2008 and 2009. Anchored by <strong>Street Fighter 6</strong> as the centerpiece of its eight-game main stage roster, the tournament brings top-tier international expansion to one of the fighting game community's deepest competitive regions.</p><p>The main stage runs as an open bracket for Street Fighter 6, pitting South America's premier talent against international challengers early in the 2027 competitive calendar. Competitors across the eight main titles battle for a share of a guaranteed minimum prize floor.</p><h3>Multi-Game Lineup & Regional Meta</h3><p>Alongside Street Fighter 6, the main stage features open brackets for <strong>TEKKEN 8</strong>, <strong>Guilty Gear -Strive-</strong>, <strong>FATAL FURY: City of the Wolves</strong>, <strong>THE KING OF FIGHTERS XV</strong>, <strong>Mortal Kombat 1</strong>, <strong>MARVEL Tōkon: Fighting Souls</strong>, and <strong>Avatar Legends: The Fighting Game</strong>. The inclusion of two SNK titles and the return of Mortal Kombat 1 to an Evo main stage directly reflect the historic competitive strengths of the South American scene.</p><h3>Show Floor & Community Programming</h3><p>Beyond the main stage brackets inside the Green Pavilion, the convention floor hosts dedicated space for community-run side tournaments, a free-play arcade area, the Evo Museum, an Artist Alley, and stage showcases.</p>",
+    "notablePlayers": [],
+    "isArchived": false,
+    "excludeFromSite": false
+},
     "texas-showdown-2027": {
         "name": "Texas Showdown 2027",
         "slug": "texas-showdown-2027",
