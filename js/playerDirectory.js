@@ -33,13 +33,11 @@ document.addEventListener('DOMContentLoaded', () => {
     filterForm.addEventListener('change', (event) => {
       const target = event.target;
       if (!(target instanceof Element)) return;
-      // Only auto-close on mobile (phones only, not tablets)
       if (target.matches(autoCloseSelector) && isMobileQuery.matches) {
         closeFilterForm();
       }
     });
 
-    // Close filter form when search submit button (magnifying glass) is clicked
     const searchSubmitBtn = $('#player-search-submit-btn');
     if (searchSubmitBtn) {
       searchSubmitBtn.addEventListener('click', () => {
@@ -49,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const toNum = (v) => {
+    if (v === null || v === undefined || v === '') return null;
     const n = Number(String(v).trim());
     return Number.isFinite(n) ? n : null;
   };
@@ -60,6 +59,13 @@ document.addEventListener('DOMContentLoaded', () => {
       .replace(/[\u0300-\u036f]/g, '')
       .replace(/[^a-z0-9]+/g, '-')
       .replace(/^-+|-+$/g, '');
+
+  const normName = (s) =>
+    String(s || '')
+      .toLowerCase()
+      .normalize('NFKD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-z0-9]+/g, '');
 
   function normalizeCharacterKey(s) {
     if (!s) return '';
@@ -148,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
           };
         }
       } catch (err) {
-        console.warn('Unable to derive pagination pattern from next link', err);
+        // Ignore pagination pattern error
       }
     }
     const current = window.location.pathname;
@@ -196,7 +202,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const slugVal = getCardSlug(node);
       if (!slugVal) return;
 
-      // Double-check: ensure not already in Set AND not already in DOM
       if (renderedSlugs.has(slugVal)) return;
       const existingCard = gridEl.querySelector(`[data-slug="${slugVal}"]`);
       if (existingCard) return;
@@ -233,30 +238,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       return appended;
     } catch (err) {
-      console.error('Failed to fetch page', pageIndex + 1, err);
       return false;
     }
-  }
-
-  function sortRequiresSupplementalData() {
-    return false;
-  }
-
-  function getDataSortComparator(key) {
-    const toRank = (p) => {
-      const r = toNum(p.rank);
-      return r === null ? 9999 : r;
-    };
-    const byName = (p) => String(p.name || '');
-    return (
-      {
-        'rank-asc': (a, b) => toRank(b) - toRank(a),
-        'rank-desc': (a, b) => toRank(a) - toRank(b),
-        'name-asc': (a, b) => byName(a).localeCompare(byName(b)),
-        'name-desc': (a, b) => byName(b).localeCompare(byName(a)),
-      }[key] ||
-      ((a, b) => toRank(a) - toRank(b))
-    );
   }
 
   function matchesFilters(player, filters) {
@@ -270,38 +253,38 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function getFilteredPlayers(filters) {
-    if (!rawProfiles.length) return [];
-    return rawProfiles.filter((p) => matchesFilters(p, filters));
+    const profiles = Array.isArray(window.playerProfiles) ? window.playerProfiles : rawProfiles;
+    if (!profiles.length) return [];
+    return profiles.filter((p) => matchesFilters(p, filters));
   }
 
   async function ensurePagesForSort() {
     return;
   }
 
-  // Helper to extract the 6M change value regardless of exact property name
   function extract6MValue(p) {
     if (!p || typeof p !== 'object') return null;
     const direct =
-      p.rankChange6m ??
       p.ratingChange6M ??
       p.ratingChange6m ??
+      p['6M Rating Change'] ??
+      p['Rating Change 6M'] ??
+      p.rankChange6m ??
+      p.rankChange6M ??
       p.change6M ??
       p.change6m ??
-      p.rankChange6M ??
       p.sixMonthChange ??
       p.sixMonthRatingChange ??
       p.sixMonthRankChange ??
       p['6M Rank Change'] ??
-      p['6M Rating Change'] ??
       p['6M Change'] ??
       p['6mChange'] ??
       p['6M'];
 
-    if (direct !== undefined && direct !== null) return direct;
+    if (direct !== undefined && direct !== null && direct !== '—') return direct;
 
-    // Fallback: scan any property key containing "6m" or "sixmonth" (case-insensitive)
     for (const k of Object.keys(p)) {
-      if (/6m|sixmonth/i.test(k) && p[k] !== undefined && p[k] !== null) {
+      if (/6m|sixmonth/i.test(k) && p[k] !== undefined && p[k] !== null && p[k] !== '—') {
         return p[k];
       }
     }
@@ -314,7 +297,6 @@ document.addEventListener('DOMContentLoaded', () => {
       : [];
     if (!allProfiles.length) return [];
 
-    // Strictly filter ONLY Top 40 players (rank 1 to 40)
     const list = allProfiles
       .filter((p) => {
         const r = toNum(p.rank);
@@ -344,7 +326,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const r = toNum(player.rank);
     const rankClass = r >= 6 && r <= 20 ? 'ranked-6-20' : `rank-${r ?? ''}`;
 
-    // Trophy/medal icons for top 4
     let rankIcon = '';
     const rankNum = parseInt(player.rank, 10);
     if (rankNum === 1) {
@@ -357,7 +338,6 @@ document.addEventListener('DOMContentLoaded', () => {
       rankIcon = '<i class="fas fa-medal medal-4" aria-label="4th"></i>';
     }
 
-    // Format player name with English name in parentheses if available
     const playerDisplayName = player.englishName
       ? `${player.name} (${player.englishName})`
       : player.name;
@@ -397,9 +377,13 @@ document.addEventListener('DOMContentLoaded', () => {
       return out;
     }
 
-    const s = String(change).trim().toLowerCase();
+    const s = String(change)
+      .replace(/[\u2212\u2013\u2014]/g, '-')
+      .replace(/,/g, '')
+      .trim()
+      .toLowerCase();
 
-    if (!s || s === '—' || s === '–' || s === '-' || s === '0') {
+    if (!s || s === '—' || s === '-' || s === '0') {
       return out;
     }
 
@@ -441,7 +425,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const players = ensureAllPlayers();
     if (!spotlightTarget || !players.length) return false;
 
-    // Strictly Top 40 only
     const topCandidates = players
       .filter((p) => {
         const r = toNum(p.rank);
@@ -454,28 +437,26 @@ document.addEventListener('DOMContentLoaded', () => {
       return false;
     }
 
-    // Check if 6M data is populated on any Top 40 candidate
     const has6MData = topCandidates.some(
       (p) => p.rankChange6m !== null && p.rankChange6m !== undefined && p.rankChange6m !== '—'
     );
 
     const annotated = topCandidates.map((p) => {
-      const rawVal = p.rankChange6m;
+      const rawVal = has6MData ? p.rankChange6m : p.rankChange;
       const parsed = parseRankChange(rawVal);
       return { player: p, ...parsed, abs: Math.abs(parsed.signed) };
     });
 
-    // Prioritize the biggest positive 6M (or fallback) mover in the Top 40
     const movers = annotated.filter((x) => x.signed > 0 && !x.isNew);
     if (movers.length) {
       movers.sort((a, b) => {
-        if (b.abs !== a.abs) return b.abs - a.abs;
+        if (b.signed !== a.signed) return b.signed - a.signed;
         return (toNum(a.player.rank) ?? 9999) - (toNum(b.player.rank) ?? 9999);
       });
       const best = movers[0];
       const displayVal = best.abs.toLocaleString('en-US', {
-  maximumFractionDigits: 1
-});
+        maximumFractionDigits: 1
+      });
       const suffix = has6MData ? ' (6M)' : ' Ranks';
       const arrowHTML = `<i class="fas fa-arrow-up"></i> +${displayVal}${suffix}`;
       const card = createSpotlightCardHTML(best.player, arrowHTML);
@@ -491,7 +472,6 @@ document.addEventListener('DOMContentLoaded', () => {
       return has6MData;
     }
 
-    // Fallback to "New to Top 40!" if no positive numeric movers exist
     const news = annotated.filter((x) => x.isNew);
     if (news.length) {
       const bestNew = news.sort(
@@ -510,7 +490,6 @@ document.addEventListener('DOMContentLoaded', () => {
       return has6MData;
     }
 
-    // Final fallback: #1 Ranked Player
     const top1 = topCandidates[0];
     const card = createSpotlightCardHTML(top1, '');
     spotlightTarget.innerHTML = `
@@ -526,13 +505,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const getItems = () => (gridEl ? Array.from(gridEl.children) : []);
-  const countVisibleItems = () => {
-    let count = 0;
-    getItems().forEach((el) => {
-      if (el.style.display !== 'none') count++;
-    });
-    return count;
-  };
 
   const nameFromNode = (el) =>
     el.getAttribute('data-name') ||
@@ -564,15 +536,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const currentSortKey = () => $('#sort-by')?.value || 'rank-asc';
 
-  const MAX_AUTOLOAD_PAGES = 24;
   let sortFilterQueue = Promise.resolve();
 
   function expectedMatchCount(filters) {
     return getFilteredPlayers(filters).length;
   }
 
-  async function ensureAllMatchesLoaded(filters, summary = null) {
-    // All cards are loaded on page load - no need to fetch additional pages
+  async function ensureAllMatchesLoaded() {
     return;
   }
 
@@ -652,7 +622,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     let totalMatches = expectedMatchCount(filters);
-    if (!Number.isFinite(totalMatches)) {
+    if (!Number.isFinite(totalMatches) || totalMatches === 0) {
       totalMatches = matchCount;
     }
 
@@ -687,7 +657,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const rows = getItems();
     if (!rows.length) return;
 
-    // Always sort on initial load to guarantee consistent ordering
     isInitialLoad = false;
 
     const cmp =
@@ -698,7 +667,6 @@ document.addEventListener('DOMContentLoaded', () => {
         'name-desc': (a, b) => sortNameFromNode(b).localeCompare(sortNameFromNode(a)),
       }[key] || ((a, b) => rankFromNode(a) - rankFromNode(b));
 
-    // Use DocumentFragment to batch DOM updates (1 reflow instead of 182)
     const fragment = document.createDocumentFragment();
     rows.sort(cmp).forEach((el) => fragment.appendChild(el));
     gridEl.appendChild(fragment);
@@ -709,34 +677,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   allPagesLoaded = !getNextLinkAnchor();
-
-  async function fetchAndAppendNextPage() {
-    const nextA = getNextLinkAnchor();
-    if (!nextA) return false;
-
-    const url = nextA.getAttribute('href');
-    if (!url) return false;
-    try {
-      const res = await fetch(url, { credentials: 'same-origin' });
-      if (!res.ok) return false;
-      const html = await res.text();
-      const doc = new DOMParser().parseFromString(html, 'text/html');
-      if (!appendCardsFromDoc(doc)) return false;
-      const fetchedNext = doc.querySelector('[data-next-page-link][rel="next"]');
-      if (fetchedNext) {
-        nextA.setAttribute('href', fetchedNext.getAttribute('href'));
-      } else {
-        nextA.remove();
-      }
-      const pageIndex = pageIndexFromUrl(url);
-      if (pageIndex !== null) fetchedPages.add(pageIndex);
-      document.dispatchEvent(new CustomEvent('archive:items-appended'));
-      return true;
-    } catch (err) {
-      console.error('Failed to append next page', err);
-      return false;
-    }
-  }
 
   function populateFilterOptions() {
     const countrySel = $('#filter-country');
@@ -837,9 +777,7 @@ document.addEventListener('DOMContentLoaded', () => {
       .then(() => {
         updateHistoryFromControls();
       })
-      .catch((err) => {
-        console.error(err);
-      });
+      .catch(() => {});
     return sortFilterQueue;
   }
 
@@ -869,7 +807,6 @@ document.addEventListener('DOMContentLoaded', () => {
     characterSelect?.addEventListener('change', () => queueSortAndFilter());
     sortSelect?.addEventListener('change', () => {
       queueSortAndFilter();
-      // Auto-close is handled by the generic change handler above
     });
 
     const doReset = (e) => {
@@ -891,7 +828,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Read URL parameters and pre-populate filters
   function loadFiltersFromURL(params = new URLSearchParams(window.location.search)) {
     const searchInput = $('#player-search-input');
     const countrySelect = $('#filter-country');
@@ -940,26 +876,165 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const initialParams = new URLSearchParams(window.location.search);
 
-if (spotlightTarget) {
-  spotlightTarget.innerHTML = '';
-  spotlightTarget.hidden = true;
+  if (spotlightTarget) {
+    spotlightTarget.innerHTML = '';
+    spotlightTarget.hidden = true;
 
-  fetch('/api/player-profiles.json')
-    .then((res) => {
-      if (!res.ok) throw new Error('Failed to load player profiles');
-      return res.json();
-    })
-    .then((data) => {
-      if (Array.isArray(data) && data.length) {
-        window.playerProfiles = data;
+    const SHEET_CSV_URL =
+      `https://docs.google.com/spreadsheets/d/1otrfs8HN3Shq6U2-qrc4GDxTI4ragnqwbTjweecE12Q/gviz/tq?tqx=out:csv&gid=1862929315&range=A:Z&cachebuster=${Date.now()}`;
+
+    function parseLiveSheetCSV(csvText) {
+      const rows = [];
+      let row = [];
+      let cur = '';
+      let inQuotes = false;
+
+      for (let i = 0; i < csvText.length; i++) {
+        const ch = csvText[i];
+        const next = csvText[i + 1];
+
+        if (inQuotes) {
+          if (ch === '"' && next === '"') {
+            cur += '"';
+            i++;
+          } else if (ch === '"') {
+            inQuotes = false;
+          } else {
+            cur += ch;
+          }
+        } else {
+          if (ch === '"') {
+            inQuotes = true;
+          } else if (ch === ',') {
+            row.push(cur.trim());
+            cur = '';
+          } else if (ch === '\n' || (ch === '\r' && next === '\n')) {
+            if (ch === '\r') i++;
+            row.push(cur.trim());
+            if (row.some((cell) => cell !== '')) rows.push(row);
+            row = [];
+            cur = '';
+          } else if (ch !== '\r') {
+            cur += ch;
+          }
+        }
+      }
+      if (cur.length > 0 || row.length > 0) {
+        row.push(cur.trim());
+        if (row.some((cell) => cell !== '')) rows.push(row);
+      }
+
+      if (rows.length < 2) return new Map();
+
+      const headers = rows[0].map((h, idx) => (h === '' && idx === 0 ? 'Rank' : h));
+      const norm = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
+
+      const findColIdx = (candidates) => {
+        const targets = candidates.map(norm);
+        return headers.findIndex((h) => targets.includes(norm(h)));
+      };
+
+      const rankIdx = findColIdx(['Rank']);
+      const playerIdx = findColIdx(['Player', 'Name']);
+      const engNameIdx = findColIdx(['English Name', 'EnglishName']);
+      const rankChgIdx = findColIdx(['Rank Change', 'RankChange']);
+      let chg6mIdx = findColIdx([
+        'Rating Change 6M',
+        '6M Rating Change',
+        '6M Rank Change',
+        'Rank Change 6M',
+        '6M Change',
+        '6M'
+      ]);
+
+      const parseCleanNum = (v) => {
+        if (v === undefined || v === null) return null;
+        const cleaned = String(v)
+          .replace(/[\u2212\u2013\u2014]/g, '-')
+          .replace(/[,\s+]/g, '')
+          .trim();
+        if (!cleaned || cleaned === '-' || cleaned === '—' || /^n\/?a$/i.test(cleaned)) return null;
+        const n = Number(cleaned);
+        return Number.isFinite(n) ? n : null;
+      };
+
+      // If header name didn't match, check Column K (index 10) and Column J (index 9) across the top 15 rows
+      if (chg6mIdx === -1) {
+        const hasNumbersInCol = (colIndex) =>
+          rows.slice(1, 15).some((r) => parseCleanNum(r[colIndex]) !== null);
+        if (hasNumbersInCol(10)) chg6mIdx = 10;
+        else if (hasNumbersInCol(9)) chg6mIdx = 9;
+      }
+
+      const liveMap = new Map();
+
+      for (let r = 1; r < rows.length; r++) {
+        const cols = rows[r];
+        const pName = playerIdx >= 0 ? cols[playerIdx] : '';
+        if (!pName) continue;
+
+        const engName = engNameIdx >= 0 ? cols[engNameIdx] : '';
+        const rankVal = rankIdx >= 0 ? parseCleanNum(cols[rankIdx]) : r;
+        const raw6m = chg6mIdx >= 0 ? cols[chg6mIdx] : null;
+        const num6m = parseCleanNum(raw6m);
+
+        const payload = {
+          rank: rankVal ?? r,
+          rankChange: rankChgIdx >= 0 ? cols[rankChgIdx] : null,
+          rankChange6m: num6m
+        };
+
+        const kName = normName(pName);
+        const kEng = normName(engName);
+        const kSlug = slug(engName || pName);
+
+        if (kName) liveMap.set(kName, payload);
+        if (kEng) liveMap.set(kEng, payload);
+        if (kSlug) liveMap.set(kSlug, payload);
+      }
+
+      return liveMap;
+    }
+
+    Promise.all([
+      fetch('/api/player-profiles.json').then((res) => {
+        if (!res.ok) throw new Error('Failed to load player profiles');
+        return res.json();
+      }),
+      fetch(SHEET_CSV_URL)
+        .then((res) => (res.ok ? res.text() : null))
+        .catch(() => null)
+    ])
+      .then(([profilesData, csvText]) => {
+        if (!Array.isArray(profilesData) || !profilesData.length) return;
+
+        if (csvText) {
+          const liveSheetMap = parseLiveSheetCSV(csvText);
+          if (liveSheetMap.size > 0) {
+            profilesData.forEach((p) => {
+              const live =
+                liveSheetMap.get(normName(p.name)) ||
+                liveSheetMap.get(normName(p.englishName)) ||
+                liveSheetMap.get(String(p.slug || '').toLowerCase());
+
+              if (live) {
+                if (live.rank !== null) p.rank = live.rank;
+                if (live.rankChange !== null) p.rankChange = live.rankChange;
+                if (live.rankChange6m !== null) {
+                  p.rankChange6m = live.rankChange6m;
+                  p.ratingChange6m = live.rankChange6m;
+                }
+              }
+            });
+          }
+        }
+
+        window.playerProfiles = profilesData;
         renderSpotlight();
         spotlightTarget.hidden = false;
-      }
-    })
-    .catch((err) => {
-      console.error('Unable to load spotlight data:', err);
-    });
-}
+      })
+      .catch(() => {});
+  }
 
   populateFilterOptions();
   loadFiltersFromURL(initialParams);
