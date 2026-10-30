@@ -13,19 +13,19 @@ const STARTGG_SLUG_FIELDS = [
   "StartGG", "StartGG URL", "Start.gg", "Start.gg URL", "startgg", "Profile", "Profile URL", "Link"
 ];
 
+const SIX_MONTH_CHANGE_FIELDS = [
+  "Rating Change 6M", "6M Rating Change", "6M Rank Change", "Rank Change 6M", "6M Change", "6M"
+];
+
 const EXCLUDED_TOURNAMENT_SLUGS = new Set(
   Object.entries(upcomingOverrides || {})
     .filter(([, v]) => v && v.excludeFromSite)
     .map(([k]) => k)
 );
 
-// --- NEW EXPONENTIAL MULTIPLIERS ---
 const TDR_MULTIPLIERS = { 'S+': 7.0, 'S': 5.0, 'A': 2.5, 'B': 1.0 };
-
-// Momentum/PF Weights
 const PF_TIER_WEIGHTS = { 'S+': 1.0, 'S': 0.95, 'A': 0.85, 'B': 0.75 };
 
-// --- UPDATED PEAK POINTS ---
 const TIER_POINTS = {
   'S+': { victory: 7.0, top3: 3.5, top8: 1.75, top16: 0.9 },
   'S':  { victory: 5.0, top3: 2.5, top8: 1.25, top16: 0.6 },
@@ -57,9 +57,21 @@ function getRowValue(row, field) {
 
 function parseSheetNumber(val) {
   if (val === null || val === undefined) return NaN;
-  const cleaned = String(val).replace(/,/g, "").replace(/\s+/g, "").trim();
+  const cleaned = String(val)
+    .replace(/[\u2212\u2013\u2014]/g, "-")
+    .replace(/[,\s+]/g, "")
+    .trim();
   if (cleaned === "" || cleaned === "-" || /^n\/?a$/i.test(cleaned)) return NaN;
   return Number(cleaned);
+}
+
+function getSheet6MChange(row) {
+  for (const f of SIX_MONTH_CHANGE_FIELDS) {
+    const v = getRowValue(row, f);
+    const num = parseSheetNumber(v);
+    if (Number.isFinite(num)) return num;
+  }
+  return null;
 }
 
 function getStartggSlugFromRow(row) {
@@ -115,7 +127,6 @@ function calculateEWMA(points, span) {
   return ewma;
 }
 
-// --- FGPI Helpers ---
 function calculateLogScore(placement, entrants) {
   if (placement === 1) return 100;
   if (!entrants || entrants < 2) return 0;
@@ -302,15 +313,12 @@ module.exports = async function () {
       let wSum = 0, wTot = 0, peakRaw = [];
       p.results_1yr.forEach(r => {
         if (r.entrants > 1) {
-          // Logarithmic Score
           const logScore = calculateLogScore(r.placement, r.entrants);
-          // New Multipliers
           const tw = TDR_MULTIPLIERS[r.tier] || 0; 
           wSum += logScore * tw; 
           wTot += tw;
         }
         
-        // Peak Score Accumulation
         const pts = TIER_POINTS[r.tier];
         if (pts) {
           let base = 0;
@@ -334,7 +342,6 @@ module.exports = async function () {
       p.fgpi_tournamentsAttended = p.results_1yr.length;
       p.fgpi_majorsAttended = p.results_1yr.filter(r => r.tier.startsWith('S')).length;
       
-      // Z-Score Inputs
       p.fgpi_APM = parseFloat(p.stats.APM)||0; 
       p.fgpi_PF = parseFloat(p.stats.PF)||0; 
       p.fgpi_MS = parseFloat(p.stats.MS)||0;
@@ -354,21 +361,13 @@ module.exports = async function () {
 
     // Final Scoring
     fgpiPlayers.forEach(p => {
-        // Accumulation (6.0)
-        const f_Accumulation = (p.z_fgpi_peakScore * 0.85) + (p.z_fgpi_WAPP * 0.15);
+      const f_Accumulation = (p.z_fgpi_peakScore * 0.85) + (p.z_fgpi_WAPP * 0.15);
+      const f_Consistency = ((-p.z_fgpi_afCombined) + (-p.z_fgpi_afmCombined) + p.z_fgpi_APM + p.z_fgpi_PF) / 4;
+      const successCount = Math.max(1, p.fgpi_tournamentsAttended);
+      const volumeMultiplier = 0.91 + (Math.log10(successCount + 1) * 0.12); 
       
-        // Consistency (2.0)
-        const f_Consistency = ((-p.z_fgpi_afCombined) + (-p.z_fgpi_afmCombined) + p.z_fgpi_APM + p.z_fgpi_PF) / 4;
-      
-        // Volume Multiplier (Tiebreaker)
-        const successCount = Math.max(1, p.fgpi_tournamentsAttended);
-        const volumeMultiplier = 0.91 + (Math.log10(successCount + 1) * 0.12); 
-        
-        let baseScore = (f_Accumulation * 6.0) + (f_Consistency * 2.0);
-        let sc = baseScore * volumeMultiplier; 
-
-        // --- FLAT PENALTIES REMOVED ---
-        p.rawFGPI = sc;
+      let baseScore = (f_Accumulation * 6.0) + (f_Consistency * 2.0);
+      p.rawFGPI = baseScore * volumeMultiplier;
     });
 
     const rawS = fgpiPlayers.map(p => p.rawFGPI).filter(v => v !== null);
@@ -417,53 +416,6 @@ module.exports = async function () {
       });
     });
 
-    // Reconstruct six-month-old ratings for every player using named headers first
-    const sixMonthRatings = allPlayers
-      .map(p => {
-        const row = p._rankingRow || {};
-
-        const currentRaw =
-          getRowValue(row, "Rating") ??
-          getRowValue(row, "Current Rating") ??
-          getRowValue(row, "Points");
-
-        const changeRaw =
-          getRowValue(row, "Rating Change 6M") ??
-          getRowValue(row, "6M Rating Change") ??
-          getRowValue(row, "RatingChange6M") ??
-          getRowValue(row, "6M Change");
-
-        const currentRating = parseSheetNumber(currentRaw);
-        const ratingChange = parseSheetNumber(changeRaw);
-
-        if (!Number.isFinite(currentRating) || !Number.isFinite(ratingChange)) {
-          return null;
-        }
-
-        const rating6m = currentRating - ratingChange;
-
-        if (rating6m <= 0) {
-          return null;
-        }
-
-        return {
-          name: p.name,
-          currentRank: Number(p.rank) || 9999,
-          rating6m
-        };
-      })
-      .filter(p => p !== null)
-      .sort((a, b) =>
-        b.rating6m - a.rating6m ||
-        a.currentRank - b.currentRank
-      );
-
-    const sixMonthRankByName = new Map();
-
-    sixMonthRatings.forEach((p, index) => {
-      sixMonthRankByName.set(p.name, index + 1);
-    });
-
     // 7. Finalize
     allPlayers.sort((a, b) => (a.rank||999) - (b.rank||999));
 
@@ -472,7 +424,6 @@ module.exports = async function () {
       p.previousPlayer = i > 0 ? { name: arr[i-1].name, slug: arr[i-1].slug, rank: arr[i-1].rank } : null;
       p.nextPlayer = i < arr.length-1 ? { name: arr[i+1].name, slug: arr[i+1].slug, rank: arr[i+1].rank } : null;
 
-      // 1. Country Rank
       const cKey = (p.country && p.country !== 'N/A') ? p.country.trim().toUpperCase() : null;
       if (cKey && p.rank) {
         countryRankCounts[cKey] = (countryRankCounts[cKey] || 0) + 1;
@@ -481,19 +432,7 @@ module.exports = async function () {
         p.countryRank = null;
       }
 
-      // 2. 6-Month Rank Change (reconstructed from rating points)
-      p.rankChange6m = null;
-
-      const historicalRank = sixMonthRankByName.get(p.name);
-      const currentRank = Number(p.rank);
-
-      if (
-        historicalRank !== undefined &&
-        Number.isFinite(currentRank) &&
-        currentRank > 0
-      ) {
-        p.rankChange6m = historicalRank - currentRank;
-      }
+      p.rankChange6m = getSheet6MChange(p._rankingRow);
     });
 
     const slugsToFetch = new Set();
@@ -532,12 +471,13 @@ module.exports = async function () {
         });
         p.upcomingTournaments = upc.sort((a, b) => (new Date(a.startDate) - new Date(b.startDate)) || a.name.localeCompare(b.name));
       });
-    } catch (e) { console.error("[playerProfiles] Upcoming error:", e.message); }
+    } catch (e) {
+      // Ignore upcoming tournaments fetch failure gracefully
+    }
 
     return allPlayers;
 
   } catch (error) {
-    console.error("❌ ERROR processing player profiles:", error);
     return [];
   }
 };

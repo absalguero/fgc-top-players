@@ -58,30 +58,39 @@ module.exports = async function() {
             worker: false, // Don't use Web Workers (not available in Node.js)
         });
 
-        const players = parseResult.data
-            .filter(p => p.Player && p.Player.trim() !== '')
-            .map(p => {
-                // Ensure positional fallbacks for Column F (index 5) and Column J/K (index 9/10)
-                // in case gviz merged headers or date cells shifted the header string in Row 1
-                const keys = Object.keys(p);
-                if (p["Rating"] === undefined && keys[5]) {
-                    p["Rating"] = p[keys[5]];
-                }
-                if (
-                    p["Rating Change 6M"] === undefined &&
-                    p["6M Rating Change"] === undefined
-                ) {
-                    // Check Column K (index 10) first, then Column J (index 9)
-                    const colK = keys[10] ? p[keys[10]] : undefined;
-                    const colJ = keys[9] ? p[keys[9]] : undefined;
-                    if (colK !== undefined && String(colK).trim() !== "") {
-                        p["Rating Change 6M"] = colK;
-                    } else if (colJ !== undefined && String(colJ).trim() !== "") {
-                        p["Rating Change 6M"] = colJ;
-                    }
-                }
-                return p;
-            });
+const players = parseResult.data
+    .filter(p => p.Player && p.Player.trim() !== '')
+    .map(p => {
+        const keys = Object.keys(p);
+        const findKey = (regex) => keys.find(k => regex.test(k.trim()));
+
+        const ratingKey = findKey(/^(current\s*)?rating$|^points$/i);
+        if (p["Rating"] === undefined && ratingKey) {
+            p["Rating"] = p[ratingKey];
+        } else if (p["Rating"] === undefined && keys[5]) {
+            p["Rating"] = p[keys[5]];
+        }
+
+        const change6mKey = findKey(/6m|six\s*month/i);
+        if (p["Rating Change 6M"] === undefined && change6mKey) {
+            p["Rating Change 6M"] = p[change6mKey];
+        } else if (
+            p["Rating Change 6M"] === undefined &&
+            p["6M Rating Change"] === undefined
+        ) {
+            const isNumericCell = (v) => v !== undefined && /^[+-]?\d+(\.\d+)?$/.test(String(v).replace(/[, ]/g, '').trim());
+            const colK = keys[10] ? p[keys[10]] : undefined;
+            const colJ = keys[9] ? p[keys[9]] : undefined;
+
+            if (isNumericCell(colK)) {
+                p["Rating Change 6M"] = colK;
+            } else if (isNumericCell(colJ)) {
+                p["Rating Change 6M"] = colJ;
+            }
+        }
+
+        return p;
+    });
 
         if (players.length === 0) throw new Error("No valid player data was found in the sheet.");
         

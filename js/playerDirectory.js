@@ -60,15 +60,17 @@ document.addEventListener('DOMContentLoaded', () => {
       .replace(/[\u0300-\u036f]/g, '')
       .replace(/[^a-z0-9]+/g, '-')
       .replace(/^-+|-+$/g, '');
+
   function normalizeCharacterKey(s) {
     if (!s) return '';
     return String(s)
       .toLowerCase()
-      .replace(/\./g, '-')          
-      .replace(/[^a-z0-9-]+/g, '-') 
-      .replace(/-+/g, '-')          
-      .replace(/^-+|-+$/g, '');     
+      .replace(/\./g, '-')
+      .replace(/[^a-z0-9-]+/g, '-')
+      .replace(/-+/g, '-')
+      .replace(/^-+|-+$/g, '');
   }
+
   window.handleMissingImage = function (imgElement, rank) {
     const container = imgElement?.parentElement;
     if (!container) return;
@@ -76,6 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const sizeClass = (toNum(rank) ?? 0) >= 1000 ? 'rank-badge--4-digits' : '';
     container.innerHTML = `<div class="player-card__rank-badge rank-badge--full-size ${sizeClass}">${rank ?? ''}</div>`;
   };
+
   function smartTitleCase(name) {
     if (!name) return '';
     const raw = String(name).trim();
@@ -95,6 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function formatCharacterName(name) {
     return smartTitleCase(name);
   }
+
   const gridEl = $('#player-card-grid');
   const resultsCountEl = $('#results-count');
   const noResultsEl = $('#no-results-message');
@@ -107,9 +111,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const DEFAULT_SORT_KEY = 'rank-desc';
   let skipHistoryUpdate = false;
   let isInitialLoad = true;
+  let allPagesLoaded = false;
+
   const rawProfiles = Array.isArray(window.playerProfiles)
     ? window.playerProfiles
     : [];
+
   rawProfiles.forEach((p, idx) => {
     if (!p || !p.slug) return;
     playerIndexBySlug.set(p.slug, idx);
@@ -119,11 +126,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!container) return;
     const cards = container.querySelectorAll('.pcard[data-slug]');
     cards.forEach((card) => {
-      const slug = card.getAttribute('data-slug');
-      if (slug) renderedSlugs.add(slug);
+      const slugVal = card.getAttribute('data-slug');
+      if (slugVal) renderedSlugs.add(slugVal);
     });
   }
   registerExistingCards();
+
   const paginationUrlBuilder = (() => {
     const nextA = document.querySelector('[data-next-page-link][rel="next"]');
     if (nextA) {
@@ -185,15 +193,15 @@ document.addEventListener('DOMContentLoaded', () => {
     let appended = false;
     cards.forEach((node) => {
       if (!(node instanceof HTMLElement)) return;
-      const slug = getCardSlug(node);
-      if (!slug) return;
+      const slugVal = getCardSlug(node);
+      if (!slugVal) return;
 
       // Double-check: ensure not already in Set AND not already in DOM
-      if (renderedSlugs.has(slug)) return;
-      const existingCard = gridEl.querySelector(`[data-slug="${slug}"]`);
+      if (renderedSlugs.has(slugVal)) return;
+      const existingCard = gridEl.querySelector(`[data-slug="${slugVal}"]`);
       if (existingCard) return;
 
-      renderedSlugs.add(slug);
+      renderedSlugs.add(slugVal);
       gridEl.appendChild(node);
       appended = true;
     });
@@ -269,21 +277,48 @@ document.addEventListener('DOMContentLoaded', () => {
   async function ensurePagesForSort() {
     return;
   }
-  function ensureAllPlayers() {
-    // Cache the result to avoid re-processing on every call
-    if (window.allPlayers) return window.allPlayers;
 
+  // Helper to extract the 6M change value regardless of exact property name
+  function extract6MValue(p) {
+    if (!p || typeof p !== 'object') return null;
+    const direct =
+      p.rankChange6m ??
+      p.ratingChange6M ??
+      p.ratingChange6m ??
+      p.change6M ??
+      p.change6m ??
+      p.rankChange6M ??
+      p.sixMonthChange ??
+      p.sixMonthRatingChange ??
+      p.sixMonthRankChange ??
+      p['6M Rank Change'] ??
+      p['6M Rating Change'] ??
+      p['6M Change'] ??
+      p['6mChange'] ??
+      p['6M'];
+
+    if (direct !== undefined && direct !== null) return direct;
+
+    // Fallback: scan any property key containing "6m" or "sixmonth" (case-insensitive)
+    for (const k of Object.keys(p)) {
+      if (/6m|sixmonth/i.test(k) && p[k] !== undefined && p[k] !== null) {
+        return p[k];
+      }
+    }
+    return null;
+  }
+
+  function ensureAllPlayers() {
     const allProfiles = Array.isArray(window.playerProfiles)
       ? window.playerProfiles
       : [];
     if (!allProfiles.length) return [];
 
-    // Assume playerProfiles is already sorted by rank from server
-    // Just filter for valid ranks and take top 40
+    // Strictly filter ONLY Top 40 players (rank 1 to 40)
     const list = allProfiles
       .filter((p) => {
         const r = toNum(p.rank);
-        return r !== null && r > 0;
+        return r !== null && r >= 1 && r <= 40;
       })
       .sort((a, b) => (toNum(a.rank) ?? 9999) - (toNum(b.rank) ?? 9999))
       .slice(0, 40)
@@ -297,12 +332,14 @@ document.addEventListener('DOMContentLoaded', () => {
         characterKey: p.characterKey || '',
         characterFileName: p.characterFileName || '',
         photoUrl: p.photoUrl || '',
-        rankChange: p.rankChange ?? null
+        rankChange: p.rankChange ?? null,
+        rankChange6m: extract6MValue(p),
       }));
 
     window.allPlayers = list;
     return list;
   }
+
   function createSpotlightCardHTML(player, statHTML) {
     const r = toNum(player.rank);
     const rankClass = r >= 6 && r <= 20 ? 'ranked-6-20' : `rank-${r ?? ''}`;
@@ -349,6 +386,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </a>
     `;
   }
+
   function parseRankChange(change) {
     const out = { signed: 0, isNew: false };
 
@@ -370,26 +408,30 @@ document.addEventListener('DOMContentLoaded', () => {
       out.signed = 999;
       return out;
     }
-    const signedNum = s.match(/^([+-]?)\s*(\d+)$/);
+
+    const signedNum = s.match(/^([+-]?)\s*(\d+(?:\.\d+)?)$/);
     if (signedNum) {
       const sign = signedNum[1] === '-' ? -1 : 1;
-      const n = parseInt(signedNum[2], 10);
+      const n = parseFloat(signedNum[2]);
       out.signed = sign * n;
       return out;
     }
-    const upPhrase = s.match(/(?:up|rise|gained|gain|climb|climbed)\s+(\d+)/);
+
+    const upPhrase = s.match(/(?:up|rise|gained|gain|climb|climbed)\s+(\d+(?:\.\d+)?)/);
     if (upPhrase) {
-      out.signed = parseInt(upPhrase[1], 10);
+      out.signed = parseFloat(upPhrase[1]);
       return out;
     }
-    const downPhrase = s.match(/(?:down|fell|fall|drop|dropped|declined)\s+(\d+)/);
+
+    const downPhrase = s.match(/(?:down|fell|fall|drop|dropped|declined)\s+(\d+(?:\.\d+)?)/);
     if (downPhrase) {
-      out.signed = -parseInt(downPhrase[1], 10);
+      out.signed = -parseFloat(downPhrase[1]);
       return out;
     }
-    const anyNum = s.match(/(\d+)/);
+
+    const anyNum = s.match(/([+-]?\d+(?:\.\d+)?)/);
     if (anyNum) {
-      out.signed = parseInt(anyNum[1], 10);
+      out.signed = parseFloat(anyNum[1]);
     }
 
     return out;
@@ -397,22 +439,59 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function renderSpotlight() {
     const players = ensureAllPlayers();
-    if (!spotlightTarget || !players.length) return;
+    if (!spotlightTarget || !players.length) return false;
+
+    // Strictly Top 40 only
     const topCandidates = players
       .filter((p) => {
         const r = toNum(p.rank);
-        return r !== null && r > 0 && r <= 40;
+        return r !== null && r >= 1 && r <= 40;
       })
       .sort((a, b) => (toNum(a.rank) ?? 9999) - (toNum(b.rank) ?? 9999));
 
     if (!topCandidates.length) {
       spotlightTarget.innerHTML = '';
-      return;
+      return false;
     }
+
+    // Check if 6M data is populated on any Top 40 candidate
+    const has6MData = topCandidates.some(
+      (p) => p.rankChange6m !== null && p.rankChange6m !== undefined && p.rankChange6m !== '—'
+    );
+
     const annotated = topCandidates.map((p) => {
-      const parsed = parseRankChange(p.rankChange);
+      const rawVal = p.rankChange6m;
+      const parsed = parseRankChange(rawVal);
       return { player: p, ...parsed, abs: Math.abs(parsed.signed) };
     });
+
+    // Prioritize the biggest positive 6M (or fallback) mover in the Top 40
+    const movers = annotated.filter((x) => x.signed > 0 && !x.isNew);
+    if (movers.length) {
+      movers.sort((a, b) => {
+        if (b.abs !== a.abs) return b.abs - a.abs;
+        return (toNum(a.player.rank) ?? 9999) - (toNum(b.player.rank) ?? 9999);
+      });
+      const best = movers[0];
+      const displayVal = best.abs.toLocaleString('en-US', {
+  maximumFractionDigits: 1
+});
+      const suffix = has6MData ? ' (6M)' : ' Ranks';
+      const arrowHTML = `<i class="fas fa-arrow-up"></i> +${displayVal}${suffix}`;
+      const card = createSpotlightCardHTML(best.player, arrowHTML);
+      spotlightTarget.innerHTML = `
+        <div class="spotlight-row">
+          <div class="spotlight-title-container">
+            <h2 class="spotlight-heading">Player Spotlight</h2>
+            <div class="spotlight-subheading"><span class="player-rise-pill">Player on the Rise</span></div>
+          </div>
+          ${card}
+        </div>
+      `;
+      return has6MData;
+    }
+
+    // Fallback to "New to Top 40!" if no positive numeric movers exist
     const news = annotated.filter((x) => x.isNew);
     if (news.length) {
       const bestNew = news.sort(
@@ -428,31 +507,10 @@ document.addEventListener('DOMContentLoaded', () => {
           ${card}
         </div>
       `;
-      return;
+      return has6MData;
     }
-    const movers = annotated.filter((x) => x.signed > 0);
-    if (movers.length) {
-      movers.sort((a, b) => {
-        if (b.abs !== a.abs) return b.abs - a.abs;
-        return (toNum(a.player.rank) ?? 9999) - (toNum(b.player.rank) ?? 9999);
-      });
-      const best = movers[0];
-      const arrowHTML =
-        best.signed > 0
-          ? `<i class="fas fa-arrow-up"></i> ${best.abs} Ranks`
-          : `<i class="fas fa-arrow-down"></i> ${best.abs} Ranks`;
-      const card = createSpotlightCardHTML(best.player, arrowHTML);
-      spotlightTarget.innerHTML = `
-        <div class="spotlight-row">
-          <div class="spotlight-title-container">
-            <h2 class="spotlight-heading">Player Spotlight</h2>
-            <div class="spotlight-subheading"><span class="player-rise-pill">Please on the Rise</span></div>
-          </div>
-          ${card}
-        </div>
-      `;
-      return;
-    }
+
+    // Final fallback: #1 Ranked Player
     const top1 = topCandidates[0];
     const card = createSpotlightCardHTML(top1, '');
     spotlightTarget.innerHTML = `
@@ -464,7 +522,9 @@ document.addEventListener('DOMContentLoaded', () => {
         ${card}
       </div>
     `;
+    return has6MData;
   }
+
   const getItems = () => (gridEl ? Array.from(gridEl.children) : []);
   const countVisibleItems = () => {
     let count = 0;
@@ -678,7 +738,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-
   function populateFilterOptions() {
     const countrySel = $('#filter-country');
     const charSel = $('#filter-character');
@@ -686,7 +745,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ? window.playerProfiles
       : [];
 
-    const countries = new Map(); 
+    const countries = new Map();
     const characters = new Map();
 
     profiles.forEach((p) => {
@@ -745,6 +804,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (matchKey) charSel.value = matchKey;
     }
   }
+
   function pruneSortOptions() {
     const sortSel = document.querySelector('#sort-by');
     if (!sortSel) return;
@@ -830,6 +890,7 @@ document.addEventListener('DOMContentLoaded', () => {
       queueSortAndFilter({ triggerAutoload: false });
     });
   }
+
   // Read URL parameters and pre-populate filters
   function loadFiltersFromURL(params = new URLSearchParams(window.location.search)) {
     const searchInput = $('#player-search-input');
@@ -843,7 +904,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (sortSelect) {
-      const availableSorts = Array.from(sortSelect.options).map(opt => opt.value);
+      const availableSorts = Array.from(sortSelect.options).map((opt) => opt.value);
       const sortParam = params.get('sort');
       if (sortParam && availableSorts.includes(sortParam)) {
         sortSelect.value = sortParam;
@@ -857,7 +918,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (countryParam) {
         const normalizedCountry = slug(countryParam);
         const options = Array.from(countrySelect.options);
-        const match = options.find(opt => opt.value === normalizedCountry);
+        const match = options.find((opt) => opt.value === normalizedCountry);
         countrySelect.value = match ? normalizedCountry : 'all';
       } else {
         countrySelect.value = 'all';
@@ -869,7 +930,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (characterParam) {
         const normalizedChar = normalizeCharacterKey(characterParam);
         const options = Array.from(characterSelect.options);
-        const match = options.find(opt => normalizeCharacterKey(opt.value) === normalizedChar);
+        const match = options.find((opt) => normalizeCharacterKey(opt.value) === normalizedChar);
         characterSelect.value = match ? match.value : 'all';
       } else {
         characterSelect.value = 'all';
@@ -878,7 +939,28 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const initialParams = new URLSearchParams(window.location.search);
-  renderSpotlight();
+
+if (spotlightTarget) {
+  spotlightTarget.innerHTML = '';
+  spotlightTarget.hidden = true;
+
+  fetch('/api/player-profiles.json')
+    .then((res) => {
+      if (!res.ok) throw new Error('Failed to load player profiles');
+      return res.json();
+    })
+    .then((data) => {
+      if (Array.isArray(data) && data.length) {
+        window.playerProfiles = data;
+        renderSpotlight();
+        spotlightTarget.hidden = false;
+      }
+    })
+    .catch((err) => {
+      console.error('Unable to load spotlight data:', err);
+    });
+}
+
   populateFilterOptions();
   loadFiltersFromURL(initialParams);
   bindUI();
