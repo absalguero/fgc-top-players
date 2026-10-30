@@ -133,75 +133,9 @@ navHighlight: "Home"
     </aside>
 
     {# === COLUMN 2 (CENTER): LATEST TOURNAMENT RESULTS (LAST 4) === #}
-    <section class="dash-sidebar dash-sidebar--center" aria-label="Recent Tournament Results">
-      <header class="widget-header">
-        <h3 class="widget-title">Latest SF6 Tournament Results</h3>
-      </header>
-
-      <div class="mini-event-list">
-        {% set count = 0 %}
-        {% set _allEvents = tournaments.events | default([]) | sort(attribute='date') | reverse %}
-        
-        {% for evt in _allEvents %}
-          {% if count < 4 %}
-            {% set count = count + 1 %}
-            
-            {% set tier = (evt.Tier | default('')) | trim | upper %}
-            {% set tier_mod = '' %}
-            {% if tier == 'S+' %}{% set tier_mod = 'mini-card--s-plus' %}
-            {% elseif tier == 'S' %}{% set tier_mod = 'mini-card--s' %}
-            {% elseif tier == 'A' %}{% set tier_mod = 'mini-card--a' %}
-            {% elseif tier == 'B' %}{% set tier_mod = 'mini-card--b' %}
-            {% endif %}
-
-            {% set dateDisplay = evt.date %}
-            {% if evt.date %}
-              {% set parts = evt.date | string | split('-') %}
-              {% if parts | length == 3 %}
-                {% set monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"] %}
-                {% set mIndex = (parts[1] | int) - 1 %}
-                {% set dateDisplay = monthNames[mIndex] ~ " " ~ (parts[2] | int) ~ ", " ~ parts[0] %}
-              {% endif %}
-            {% endif %}
-
-            <article class="mini-event-card {{ tier_mod }}" onclick="window.location.href='/tournaments/{{ evt.slug }}/';">
-              <header class="mini-card__head">
-                <h4 class="mini-card__title">{{ evt.name }}</h4>
-                <time class="mini-card__date">{{ dateDisplay }}</time>
-              </header>
-
-              <div class="mini-card__meta">
-                {% if evt.Entrants %}
-                  <span class="mini-chip"><i class="fas fa-users"></i> {{ evt.Entrants }}</span>
-                {% endif %}
-                {% if tier in ['S+','S','A','B'] %}
-                  <span class="mini-chip mini-chip--rated">Rated</span>
-                {% endif %}
-              </div>
-
-              {% if evt.results %}
-                <div class="mini-podium">
-                  {% for r in evt.results %}
-                    {% if r.Finish == 1 or r.Finish == 2 or r.Finish == 3 or r.Finish == '1' or r.Finish == '2' or r.Finish == '3' %}
-                      <div class="mini-podium-row place-{{ r.Finish }}">
-                        <span class="p-place">
-                          <i class="fas fa-trophy"></i>
-                        </span>
-                        <span class="p-name">{{ r.Player }}</span>
-                      </div>
-                    {% endif %}
-                  {% endfor %}
-                </div>
-              {% endif %}
-            </article>
-          {% endif %}
-        {% endfor %}
-      </div>
-
-      <div class="widget-footer-wrapper">
-        <a href="/tournament-results/" class="btn btn--primary btn--small">View Results Archive</a>
-      </div>
-    </section>
+<section class="dash-sidebar dash-sidebar--center" aria-label="Recent Tournament Results">
+  {% include "latest-results-widget.njk" %}
+</section>
 
     {# === COLUMN 3 (RIGHT): S-TIER CHARACTERS === #}
     <aside class="dash-sidebar dash-sidebar--right" aria-label="S-Tier Character Meta">

@@ -1,27 +1,4 @@
 {
-  "le-dojo-club-93": {
-    "name": "LE DOJO CLUB #93",
-    "slug": "le-dojo-club-93",
-    "startAt": 1793295000,
-    "endAt": 1793309400,
-    "startDate": "2026-10-29",
-    "endDate": "2026-10-29",
-    "dates": "Oct 29, 2026",
-    "location": "18 Rue Soleillet, 75020 Paris, France",
-    "venueName": "",
-    "url": "https://www.start.gg/tournament/le-dojo-club-93",
-    "tier": "B",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "LE DOJO CLUB #93 is scheduled for Oct 29, 2026 in 18 Rue Soleillet, 75020 Paris, France. Featuring Street Fighter 6. Registered top players include JuniorLeo.",
-    "notablePlayers": [
-      "JuniorLeo"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
   "crossover-2026-1": {
     "name": "CROSSOVER 2026",
     "slug": "crossover-2026-1",
