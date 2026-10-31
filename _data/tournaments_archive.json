@@ -95568,5 +95568,445 @@
       }
     ],
     "isArchived": false
+  },
+  "crossover-2026": {
+    "name": "CROSSOVER 2026",
+    "date": "2026-10-30",
+    "slug": "crossover-2026",
+    "Tier": "B",
+    "Entrants": "43",
+    "results": [
+      {
+        "Player": "Railgun",
+        "Player ID": "dccbf1c6",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "1",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "semy28",
+        "Player ID": "5e5c39f7",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "2",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "LinkNova",
+        "Player ID": "ea574546",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "3",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "fhASSA",
+        "Player ID": "e0ada59d",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "4",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Septasonium",
+        "Player ID": "f8bb5c81",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "5",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Toshiaki",
+        "Player ID": "766c4fdb",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "5",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Psycho",
+        "Player ID": "895e9636",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "7",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "HerrZarku",
+        "Player ID": "ced093c1",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "7",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "MasterMT",
+        "Player ID": "34751341",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "9",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "releasebogus",
+        "Player ID": "51570908",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "9",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kyubai",
+        "Player ID": "27a2381a",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "9",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cross99",
+        "Player ID": "0d52a36c",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "9",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "scaryglue",
+        "Player ID": "4784f501",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "13",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "KakinMitashi",
+        "Player ID": "kakinmitashi",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "13",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Gigalodon",
+        "Player ID": "6ddc1e15",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "13",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "spectograf",
+        "Player ID": "69c9b5de",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "13",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Arkiro",
+        "Player ID": "6ec83583",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "17",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "DilarasArtworks",
+        "Player ID": "87058745",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "17",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Crappy",
+        "Player ID": "d844ebdb",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "17",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "mimimi555",
+        "Player ID": "9731747c",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "17",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jetfandam",
+        "Player ID": "6b6af6fa",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "17",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "OCV",
+        "Player ID": "8a0cc95c",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "17",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "StylePoints",
+        "Player ID": "f0d766b2",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "17",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "coal91",
+        "Player ID": "4a7fae03",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "17",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Naklaron",
+        "Player ID": "c822ebe8",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "25",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "BenThoBox",
+        "Player ID": "b6237bf6",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "25",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Merlin",
+        "Player ID": "70b42e68",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "25",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "SaiBot",
+        "Player ID": "7f6c6266",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "25",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Fumbleking Nero",
+        "Player ID": "070472b0",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "25",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Monke",
+        "Player ID": "00c52e15",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "25",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "xkan28",
+        "Player ID": "e4a06704",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "25",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "slowdoberman",
+        "Player ID": "cee4d493",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "25",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "IronPower",
+        "Player ID": "e07f0603",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "33",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Erdbeerkuchen",
+        "Player ID": "cf1e82c6",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "33",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Obsidian0209",
+        "Player ID": "0fb54b5f",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "33",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "fruityQ",
+        "Player ID": "5c8d96f2",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "33",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Lucidus",
+        "Player ID": "08c06b43",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "33",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ryunato",
+        "Player ID": "96fd4790",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "33",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Takaya",
+        "Player ID": "4893d127",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "33",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Hasenwyrd",
+        "Player ID": "27ce2195",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "33",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Sakugaari",
+        "Player ID": "f0124aa4",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "33",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "OliveRat",
+        "Player ID": "6d0ee596",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "33",
+        "Entrants": "43",
+        "Tier": "B"
+      },
+      {
+        "Player": "Taren",
+        "Player ID": "4de47152",
+        "Event": "CROSSOVER 2026",
+        "Event ID": "crossover-2026-1",
+        "Date": "2026-10-31",
+        "Finish": "33",
+        "Entrants": "43",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
   }
 }

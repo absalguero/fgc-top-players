@@ -206,7 +206,9 @@ module.exports = async function (eleventyConfig) {
     const sortedPlayers = out.sort((a, b) => (a.rank || Infinity) - (b.rank || Infinity));
 
     // Limit to 40 players in development; return all in production
-    return isDev ? sortedPlayers.slice(0, 40) : sortedPlayers;
+    return isDev
+      ? sortedPlayers.filter((p, idx) => idx < 40 || (p.characterRank && p.characterRank <= 3))
+      : sortedPlayers;
   });
 
   // Tournaments collection: Last 5 only on localhost, all in production

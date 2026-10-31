@@ -77,6 +77,12 @@ document.addEventListener('DOMContentLoaded', () => {
       .replace(/^-+|-+$/g, '');
   }
 
+  function getCharacterHubSlug(charName) {
+    const raw = slug(String(charName || '').replace(/\.png|\.jpg/gi, ''));
+    if (raw === 'a-k-i') return 'aki';
+    return raw;
+  }
+
   window.handleMissingImage = function (imgElement, rank) {
     const container = imgElement?.parentElement;
     if (!container) return;
@@ -89,8 +95,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!name) return '';
     const raw = String(name).trim();
     const lc = raw.toLowerCase();
-    if (lc === 'a.k.i.' || lc === 'aki') return 'A.K.I.';
+    if (lc === 'a.k.i.' || lc === 'aki' || lc === 'a-k-i') return 'A.K.I.';
     if (lc === 'jp') return 'JP';
+    if (lc === 'e. honda' || lc === 'e-honda' || lc === 'ehonda') return 'E. Honda';
+    if (lc === 'm. bison' || lc === 'm-bison' || lc === 'mbison') return 'M. Bison';
+    if (lc === 'c. viper' || lc === 'c-viper' || lc === 'cviper') return 'C. Viper';
     return raw
       .split(/(\s|-)/)
       .map((part) => {
@@ -109,15 +118,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const resultsCountEl = $('#results-count');
   const noResultsEl = $('#no-results-message');
   const spotlightTarget = $('#spotlight-placement-target');
-  const PAGE_SIZE = 48;
   const renderedSlugs = new Set();
-  const fetchedPages = new Set([0]);
   let suppressAppendHandlers = false;
   const playerIndexBySlug = new Map();
   const DEFAULT_SORT_KEY = 'rank-desc';
   let skipHistoryUpdate = false;
-  let isInitialLoad = true;
-  let allPagesLoaded = false;
 
   const rawProfiles = Array.isArray(window.playerProfiles)
     ? window.playerProfiles
@@ -138,108 +143,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   registerExistingCards();
 
-  const paginationUrlBuilder = (() => {
-    const nextA = document.querySelector('[data-next-page-link][rel="next"]');
-    if (nextA) {
-      try {
-        const url = new URL(nextA.getAttribute('href') || '', window.location.origin);
-        const match = url.pathname.match(/^(.*\/page\/)(\d+)(\/?)$/);
-        if (match) {
-          const prefix = match[1];
-          const suffix = match[3] || '/';
-          const base = window.location.pathname;
-          return (index) => {
-            if (index === 0) return base;
-            return `${prefix}${index + 1}${suffix}`;
-          };
-        }
-      } catch (err) {
-        // Ignore pagination pattern error
-      }
-    }
-    const current = window.location.pathname;
-    const match = current.match(/^(.*\/page\/)(\d+)(\/?)$/);
-    if (match) {
-      const prefix = match[1];
-      const suffix = match[3] || '/';
-      return (index) => `${prefix}${index + 1}${suffix}`;
-    }
-    const base = current.endsWith('/') ? current : `${current}/`;
-    return (index) => (index === 0 ? base : `${base}page/${index + 1}/`);
-  })();
-
-  function pageIndexFromUrl(url) {
-    if (!url) return null;
-    try {
-      const parsed = new URL(url, window.location.origin);
-      const match = parsed.pathname.match(/\/page\/(\d+)\/?$/);
-      if (match) {
-        const pageNumber = parseInt(match[1], 10);
-        if (Number.isFinite(pageNumber) && pageNumber > 0) {
-          return pageNumber - 1;
-        }
-      } else if (parsed.pathname === window.location.pathname) {
-        return 0;
-      }
-    } catch {
-      // fall through
-    }
-    return null;
-  }
-
-  function getCardSlug(node) {
-    return node?.getAttribute?.('data-slug') || null;
-  }
-
-  function appendCardsFromDoc(doc) {
-    if (!doc || !gridEl) return false;
-    const newGrid = doc.querySelector('#player-card-grid');
-    if (!newGrid) return false;
-    const cards = Array.from(newGrid.children);
-    let appended = false;
-    cards.forEach((node) => {
-      if (!(node instanceof HTMLElement)) return;
-      const slugVal = getCardSlug(node);
-      if (!slugVal) return;
-
-      if (renderedSlugs.has(slugVal)) return;
-      const existingCard = gridEl.querySelector(`[data-slug="${slugVal}"]`);
-      if (existingCard) return;
-
-      renderedSlugs.add(slugVal);
-      gridEl.appendChild(node);
-      appended = true;
-    });
-    return appended;
-  }
-
-  async function fetchPageByIndex(pageIndex) {
-    if (pageIndex <= 0) return false;
-    if (fetchedPages.has(pageIndex)) return true;
-    if (typeof paginationUrlBuilder !== 'function') return false;
-
-    const path = paginationUrlBuilder(pageIndex);
-    if (!path) return false;
-    let url;
-    try {
-      url = new URL(path, window.location.origin).toString();
-    } catch {
-      url = path;
-    }
-    try {
-      const res = await fetch(url, { credentials: 'same-origin' });
-      if (!res.ok) return false;
-      const html = await res.text();
-      const doc = new DOMParser().parseFromString(html, 'text/html');
-      const appended = appendCardsFromDoc(doc);
-      fetchedPages.add(pageIndex);
-      if (appended) {
-        document.dispatchEvent(new CustomEvent('archive:items-appended'));
-      }
-      return appended;
-    } catch (err) {
-      return false;
-    }
+  function sameCharKey(a, b) {
+    if (!a || !b) return false;
+    const na = normalizeCharacterKey(a);
+    const nb = normalizeCharacterKey(b);
+    if (na === nb) return true;
+    const sa = na === 'a-k-i' ? 'aki' : na;
+    const sb = nb === 'a-k-i' ? 'aki' : nb;
+    return sa === sb;
   }
 
   function matchesFilters(player, filters) {
@@ -248,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const key = normalizeCharacterKey(player.characterKey || player.mainCharacter || '');
     const matchQ = !filters.q || name.includes(filters.q);
     const matchCountry = filters.country === 'all' || countrySlug === filters.country;
-    const matchChar = filters.character === 'all' || key === filters.character;
+    const matchChar = filters.character === 'all' || sameCharKey(key, filters.character);
     return matchQ && matchCountry && matchChar;
   }
 
@@ -256,10 +167,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const profiles = Array.isArray(window.playerProfiles) ? window.playerProfiles : rawProfiles;
     if (!profiles.length) return [];
     return profiles.filter((p) => matchesFilters(p, filters));
-  }
-
-  async function ensurePagesForSort() {
-    return;
   }
 
   function extract6MValue(p) {
@@ -322,51 +229,6 @@ document.addEventListener('DOMContentLoaded', () => {
     return list;
   }
 
-  function createSpotlightCardHTML(player, statHTML) {
-    const r = toNum(player.rank);
-    const rankClass = r >= 6 && r <= 20 ? 'ranked-6-20' : `rank-${r ?? ''}`;
-
-    let rankIcon = '';
-    const rankNum = parseInt(player.rank, 10);
-    if (rankNum === 1) {
-      rankIcon = '<i class="fas fa-trophy trophy-1" aria-label="1st"></i>';
-    } else if (rankNum === 2) {
-      rankIcon = '<i class="fas fa-trophy trophy-2" aria-label="2nd"></i>';
-    } else if (rankNum === 3) {
-      rankIcon = '<i class="fas fa-trophy trophy-3" aria-label="3rd"></i>';
-    } else if (rankNum === 4) {
-      rankIcon = '<i class="fas fa-medal medal-4" aria-label="4th"></i>';
-    }
-
-    const playerDisplayName = player.englishName
-      ? `${player.name} (${player.englishName})`
-      : player.name;
-
-    const characterInfo = player.mainCharacter
-      ? `<div class="spotlight-v2__info-item"><i class="fas fa-user-ninja"></i> ${player.mainCharacter}</div>`
-      : '';
-    const countryInfo = player.country
-      ? `<div class="spotlight-v2__info-item"><img src="/images/flags/${String(player.country).toLowerCase()}.png" alt="${player.country}" class="spotlight-v2__flag"> ${player.country}</div>`
-      : '';
-
-    return `
-      <a href="/players/${player.slug}/" class="spotlight-v2-redesigned ${rankClass}">
-        <div class="spotlight-v2__row-1">
-          <div class="spotlight-v2__rank-badge">
-            ${rankIcon}
-            <span class="spotlight-v2__rank-number">#${player.rank ?? ''}</span>
-          </div>
-          <div class="spotlight-v2__name">${playerDisplayName}</div>
-        </div>
-        ${statHTML ? `<div class="spotlight-v2__stat is-climber">${statHTML}</div>` : ''}
-        <div class="spotlight-v2__row-3">
-          ${characterInfo}
-          ${countryInfo}
-        </div>
-      </a>
-    `;
-  }
-
   function parseRankChange(change) {
     const out = { signed: 0, isNew: false };
 
@@ -421,87 +283,328 @@ document.addEventListener('DOMContentLoaded', () => {
     return out;
   }
 
+  function createMoverCardHTML(player, pillLabel, pillIcon, statHTML) {
+    const r = toNum(player.rank);
+    const rankClass = r >= 6 && r <= 20 ? 'ranked-6-20' : `rank-${r ?? ''}`;
+
+    let rankIcon = '';
+    const rankNum = parseInt(player.rank, 10);
+    if (rankNum === 1) {
+      rankIcon = '<i class="fas fa-trophy trophy-1" aria-label="1st"></i>';
+    } else if (rankNum === 2) {
+      rankIcon = '<i class="fas fa-trophy trophy-2" aria-label="2nd"></i>';
+    } else if (rankNum === 3) {
+      rankIcon = '<i class="fas fa-trophy trophy-3" aria-label="3rd"></i>';
+    } else if (rankNum === 4) {
+      rankIcon = '<i class="fas fa-medal medal-4" aria-label="4th"></i>';
+    }
+
+    const playerDisplayName = player.englishName
+      ? `${player.name} (${player.englishName})`
+      : player.name;
+
+    const characterInfo = player.mainCharacter
+      ? `<div class="spotlight-v2__info-item"><i class="fas fa-user-ninja"></i> ${formatCharacterName(player.mainCharacter)}</div>`
+      : '';
+    const countryInfo = player.country
+      ? `<div class="spotlight-v2__info-item"><img src="/images/flags/${String(player.country).toLowerCase()}.png" alt="${player.country}" class="spotlight-v2__flag"> ${player.country}</div>`
+      : '';
+
+    return `
+      <div class="mover-slot">
+        <div class="spotlight-subheading"><span class="player-rise-pill"><i class="${pillIcon}"></i> ${pillLabel}</span></div>
+        <a href="/players/${player.slug}/" class="spotlight-v2-redesigned ${rankClass}">
+          <div class="spotlight-v2__row-1">
+            <div class="spotlight-v2__rank-badge">
+              ${rankIcon}
+              <span class="spotlight-v2__rank-number">#${player.rank ?? ''}</span>
+            </div>
+            <div class="spotlight-v2__name">${playerDisplayName}</div>
+          </div>
+          ${statHTML ? `<div class="spotlight-v2__stat is-climber">${statHTML}</div>` : ''}
+          <div class="spotlight-v2__row-3">
+            ${characterInfo}
+            ${countryInfo}
+          </div>
+        </a>
+      </div>
+    `;
+  }
+
   function renderSpotlight() {
-    const players = ensureAllPlayers();
-    if (!spotlightTarget || !players.length) return false;
+    const allProfiles = Array.isArray(window.playerProfiles) ? window.playerProfiles : [];
+    if (!spotlightTarget || !allProfiles.length) return false;
 
-    const topCandidates = players
-      .filter((p) => {
-        const r = toNum(p.rank);
-        return r !== null && r >= 1 && r <= 40;
-      })
-      .sort((a, b) => (toNum(a.rank) ?? 9999) - (toNum(b.rank) ?? 9999));
+    ensureAllPlayers();
 
-    if (!topCandidates.length) {
+    const ranked = allProfiles
+      .map((p) => ({
+        ...p,
+        rank: toNum(p.rank),
+        slug: p.slug || slug(p.name),
+        rankChange6m: extract6MValue(p)
+      }))
+      .filter((p) => p.rank !== null && p.rank >= 1)
+      .sort((a, b) => a.rank - b.rank);
+
+    const top40 = ranked.filter((p) => p.rank <= 40);
+    const top200 = ranked.filter((p) => p.rank <= 200);
+    if (!top40.length) {
       spotlightTarget.innerHTML = '';
       return false;
     }
 
-    const has6MData = topCandidates.some(
-      (p) => p.rankChange6m !== null && p.rankChange6m !== undefined && p.rankChange6m !== '—'
-    );
+    // 1. 6M Hot Streak (Top 40 biggest 6M rating gain)
+    const movers6M = top40
+      .map((p) => ({ player: p, ...parseRankChange(p.rankChange6m) }))
+      .filter((x) => x.signed > 0 && !x.isNew)
+      .sort((a, b) => b.signed - a.signed || a.player.rank - b.player.rank);
 
-    const annotated = topCandidates.map((p) => {
-      const rawVal = has6MData ? p.rankChange6m : p.rankChange;
-      const parsed = parseRankChange(rawVal);
-      return { player: p, ...parsed, abs: Math.abs(parsed.signed) };
-    });
+    const best6M = movers6M[0];
+    const card6M = best6M
+      ? createMoverCardHTML(
+          best6M.player,
+          '6M Hot Streak',
+          'fas fa-fire',
+          `<i class="fas fa-arrow-up"></i> +${Math.abs(best6M.signed).toLocaleString('en-US', { maximumFractionDigits: 1 })} (6M)`
+        )
+      : '';
 
-    const movers = annotated.filter((x) => x.signed > 0 && !x.isNew);
-    if (movers.length) {
-      movers.sort((a, b) => {
-        if (b.signed !== a.signed) return b.signed - a.signed;
-        return (toNum(a.player.rank) ?? 9999) - (toNum(b.player.rank) ?? 9999);
-      });
-      const best = movers[0];
-      const displayVal = best.abs.toLocaleString('en-US', {
-        maximumFractionDigits: 1
-      });
-      const suffix = has6MData ? ' (6M)' : ' Ranks';
-      const arrowHTML = `<i class="fas fa-arrow-up"></i> +${displayVal}${suffix}`;
-      const card = createSpotlightCardHTML(best.player, arrowHTML);
-      spotlightTarget.innerHTML = `
-        <div class="spotlight-row">
-          <div class="spotlight-title-container">
-            <h2 class="spotlight-heading">Player Spotlight</h2>
-            <div class="spotlight-subheading"><span class="player-rise-pill">Player on the Rise</span></div>
-          </div>
-          ${card}
-        </div>
-      `;
-      return has6MData;
-    }
+    // 2. Biggest Jump (Top 200 biggest short-term rank jump, excluding 6M winner)
+    const moversWeekly = top200
+      .filter((p) => !best6M || p.slug !== best6M.player.slug)
+      .map((p) => ({ player: p, ...parseRankChange(p.rankChange) }))
+      .filter((x) => x.signed > 0 && !x.isNew)
+      .sort((a, b) => b.signed - a.signed || a.player.rank - b.player.rank);
 
-    const news = annotated.filter((x) => x.isNew);
-    if (news.length) {
-      const bestNew = news.sort(
-        (a, b) => (toNum(a.player.rank) ?? 9999) - (toNum(b.player.rank) ?? 9999)
-      )[0];
-      const card = createSpotlightCardHTML(bestNew.player, `<i class="fas fa-star"></i> New to Top 40!`);
-      spotlightTarget.innerHTML = `
-        <div class="spotlight-row">
-          <div class="spotlight-title-container">
-            <h2 class="spotlight-heading">Player Spotlight</h2>
-            <div class="spotlight-subheading"><span class="player-rise-pill">Player on the Rise</span></div>
-          </div>
-          ${card}
-        </div>
-      `;
-      return has6MData;
-    }
+    const bestWeekly = moversWeekly[0];
+    const cardWeekly = bestWeekly
+      ? createMoverCardHTML(
+          bestWeekly.player,
+          'Biggest Jump (Top 200)',
+          'fas fa-bolt',
+          `<i class="fas fa-arrow-up"></i> +${Math.round(Math.abs(bestWeekly.signed))} Ranks`
+        )
+      : '';
 
-    const top1 = topCandidates[0];
-    const card = createSpotlightCardHTML(top1, '');
     spotlightTarget.innerHTML = `
       <div class="spotlight-row">
         <div class="spotlight-title-container">
           <h2 class="spotlight-heading">Player Spotlight</h2>
-          <div class="spotlight-subheading"><span class="player-rise-pill">Top Ranked</span></div>
         </div>
-        ${card}
+        <div class="movers-strip">
+          ${card6M}
+          ${cardWeekly}
+        </div>
       </div>
     `;
-    return has6MData;
+    spotlightTarget.hidden = false;
+    return Boolean(best6M);
+  }
+
+  // Unified Snapshot Bar for Country, Character, or Both Country + Character
+  function renderFilterSnapshot(filters) {
+    if (!gridEl) return;
+    let barEl = $('#regional-power-bar');
+
+    const countrySlug = filters?.country || 'all';
+    const charKey = filters?.character || 'all';
+    const hasCountry = countrySlug !== 'all';
+    const hasChar = charKey !== 'all';
+
+    if (!hasCountry && !hasChar) {
+      if (barEl) barEl.hidden = true;
+      return;
+    }
+
+    const allProfiles = Array.isArray(window.playerProfiles) ? window.playerProfiles : [];
+    if (!allProfiles.length) {
+      if (barEl) barEl.hidden = true;
+      return;
+    }
+
+    const matchingPlayers = allProfiles
+      .filter((p) => {
+        const r = toNum(p.rank);
+        if (r === null) return false;
+        const pCountry = slug(p.country || '');
+        const pChar = normalizeCharacterKey(p.characterKey || p.mainCharacter || '');
+        if (hasCountry && pCountry !== countrySlug) return false;
+        if (hasChar && !sameCharKey(pChar, charKey)) return false;
+        return true;
+      })
+      .sort((a, b) => toNum(a.rank) - toNum(b.rank));
+
+    if (!matchingPlayers.length) {
+      if (barEl) barEl.hidden = true;
+      return;
+    }
+
+    if (!barEl) {
+      barEl = document.createElement('div');
+      barEl.id = 'regional-power-bar';
+      barEl.className = 'regional-power-bar';
+      gridEl.parentElement.insertBefore(barEl, gridEl);
+    }
+
+    const leader = matchingPlayers[0];
+    const leaderName = leader.englishName ? `${leader.name} (${leader.englishName})` : leader.name;
+    const top200Count = matchingPlayers.filter((p) => toNum(p.rank) <= 200).length;
+
+    const clearBtnHTML = `
+      <button type="button" class="regional-badge regional-badge--clear" data-clear-snapshot title="Clear active filters" aria-label="Clear active filters">
+        <i class="fas fa-times"></i>
+        <span class="regional-badge__label">Clear</span>
+      </button>
+    `;
+
+    // CASE 1: Both Country AND Character Selected
+    if (hasCountry && hasChar) {
+      const countryCode = String(leader.country || countrySlug).toUpperCase();
+      const charDisplay = formatCharacterName(leader.mainCharacter || charKey);
+      const charHubSlug = getCharacterHubSlug(leader.mainCharacter || charKey);
+
+      barEl.innerHTML = `
+        <div class="regional-badge regional-badge--country">
+          <img src="/images/flags/${countryCode.toLowerCase()}.png" alt="${countryCode}" class="regional-badge__flag">
+          <span class="regional-badge__label">${countryCode} &bull; ${charDisplay}</span>
+        </div>
+
+        <a href="/players/${leader.slug}/" class="regional-badge regional-badge--gold" title="View #1 ${countryCode} ${charDisplay} Player">
+          <i class="fas fa-trophy"></i>
+          <span class="regional-badge__label">#1 ${countryCode} ${charDisplay}:</span>
+          <span class="regional-badge__value">${leaderName} <em>(#${leader.rank})</em></span>
+        </a>
+
+        <div class="regional-badge">
+          <i class="fas fa-users"></i>
+          <span class="regional-badge__label">Top 200:</span>
+          <span class="regional-badge__value">${top200Count} ${top200Count === 1 ? 'Player' : 'Players'}</span>
+        </div>
+
+        <a href="/characters/${charHubSlug}/" class="regional-badge regional-badge--blue" title="View ${charDisplay} Character Page">
+          <i class="fas fa-user-ninja"></i>
+          <span class="regional-badge__value">${charDisplay} Stats &rarr;</span>
+        </a>
+
+        ${clearBtnHTML}
+      `;
+    }
+    // CASE 2: Country Only Selected
+    else if (hasCountry) {
+      const countryCode = String(leader.country || countrySlug).toUpperCase();
+
+      const charCounts = new Map();
+      matchingPlayers.forEach((p) => {
+        if (!p.mainCharacter || p.mainCharacter === 'N/A') return;
+        const c = formatCharacterName(p.mainCharacter);
+        const hubSlug = getCharacterHubSlug(p.mainCharacter);
+        const prev = charCounts.get(c) || { count: 0, hubSlug };
+        charCounts.set(c, { count: prev.count + 1, hubSlug });
+      });
+      const topCharEntry = [...charCounts.entries()].sort((a, b) => b[1].count - a[1].count)[0];
+
+      barEl.innerHTML = `
+        <div class="regional-badge regional-badge--country">
+          <img src="/images/flags/${countryCode.toLowerCase()}.png" alt="${countryCode}" class="regional-badge__flag">
+          <span class="regional-badge__label">${countryCode} Snapshot</span>
+        </div>
+
+        <a href="/players/${leader.slug}/" class="regional-badge regional-badge--gold" title="View #1 ${countryCode} Player">
+          <i class="fas fa-trophy"></i>
+          <span class="regional-badge__label">#1 ${countryCode}:</span>
+          <span class="regional-badge__value">${leaderName} <em>(#${leader.rank})</em></span>
+        </a>
+
+        <div class="regional-badge">
+          <i class="fas fa-users"></i>
+          <span class="regional-badge__label">Top 200:</span>
+          <span class="regional-badge__value">${top200Count} ${top200Count === 1 ? 'Player' : 'Players'}</span>
+        </div>
+
+        ${topCharEntry ? `
+        <a href="/characters/${topCharEntry[1].hubSlug}/" class="regional-badge regional-badge--blue" title="View ${topCharEntry[0]} Character Page">
+          <i class="fas fa-user-ninja"></i>
+          <span class="regional-badge__label">Top Main:</span>
+          <span class="regional-badge__value">${topCharEntry[0]} (${topCharEntry[1].count})</span>
+        </a>` : ''}
+
+        ${clearBtnHTML}
+      `;
+    }
+    // CASE 3: Character Only Selected
+    else if (hasChar) {
+      const charDisplay = formatCharacterName(leader.mainCharacter || charKey);
+      const charHubSlug = getCharacterHubSlug(leader.mainCharacter || charKey);
+
+      const countryCounts = new Map();
+      matchingPlayers.forEach((p) => {
+        if (!p.country || p.country === 'N/A') return;
+        const cCode = String(p.country).toUpperCase();
+        countryCounts.set(cCode, (countryCounts.get(cCode) || 0) + 1);
+      });
+      const topCountry = [...countryCounts.entries()].sort((a, b) => b[1] - a[1])[0];
+
+      barEl.innerHTML = `
+        <div class="regional-badge regional-badge--country">
+          <i class="fas fa-user-ninja"></i>
+          <span class="regional-badge__label">${charDisplay} Snapshot</span>
+        </div>
+
+        <a href="/players/${leader.slug}/" class="regional-badge regional-badge--gold" title="View #1 ${charDisplay} Player">
+          <i class="fas fa-crown"></i>
+          <span class="regional-badge__label">#1 ${charDisplay}:</span>
+          <span class="regional-badge__value">${leaderName} <em>(#${leader.rank})</em></span>
+        </a>
+
+        <div class="regional-badge">
+          <i class="fas fa-users"></i>
+          <span class="regional-badge__label">Top 200:</span>
+          <span class="regional-badge__value">${top200Count} ${top200Count === 1 ? 'Player' : 'Players'}</span>
+        </div>
+
+        ${topCountry ? `
+        <button type="button" class="regional-badge regional-badge--interactive" data-filter-country="${slug(topCountry[0])}" title="Filter ${charDisplay} players in ${topCountry[0]}">
+          <img src="/images/flags/${topCountry[0].toLowerCase()}.png" alt="${topCountry[0]}" class="regional-badge__flag">
+          <span class="regional-badge__label">Most Popular In:</span>
+          <span class="regional-badge__value">${topCountry[0]} (${topCountry[1]})</span>
+        </button>` : ''}
+
+        <a href="/characters/${charHubSlug}/" class="regional-badge regional-badge--blue" title="View ${charDisplay} Character Page">
+          <i class="fas fa-chart-line"></i>
+          <span class="regional-badge__value">${charDisplay} Stats &rarr;</span>
+        </a>
+
+        ${clearBtnHTML}
+      `;
+    }
+
+    const countryBtn = barEl.querySelector('[data-filter-country]');
+    if (countryBtn) {
+      countryBtn.addEventListener('click', () => {
+        const countrySel = $('#filter-country');
+        const targetCountry = countryBtn.getAttribute('data-filter-country');
+        if (countrySel && targetCountry) {
+          countrySel.value = targetCountry;
+          queueSortAndFilter();
+        }
+      });
+    }
+
+    const clearBtn = barEl.querySelector('[data-clear-snapshot]');
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => {
+        const searchInput = $('#player-search-input');
+        const countrySel = $('#filter-country');
+        const charSel = $('#filter-character');
+        if (searchInput) searchInput.value = '';
+        if (countrySel) countrySel.value = 'all';
+        if (charSel) charSel.value = 'all';
+        queueSortAndFilter();
+      });
+    }
+
+    barEl.hidden = false;
   }
 
   const getItems = () => (gridEl ? Array.from(gridEl.children) : []);
@@ -540,10 +643,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function expectedMatchCount(filters) {
     return getFilteredPlayers(filters).length;
-  }
-
-  async function ensureAllMatchesLoaded() {
-    return;
   }
 
   function collectCurrentFilters() {
@@ -609,7 +708,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const matchQ = !q || name.includes(q);
       const matchCountry = country === 'all' || elCountry === country;
-      const matchChar = character === 'all' || elChar === character;
+      const matchChar = character === 'all' || sameCharKey(elChar, character);
 
       const isMatch = matchQ && matchCountry && matchChar;
       if (isMatch) {
@@ -630,7 +729,20 @@ document.addEventListener('DOMContentLoaded', () => {
       if (visible === 0) {
         resultsCountEl.textContent = 'No players';
       } else {
-        const label = `${visible} players`;
+        const contextParts = [];
+        if (country !== 'all') contextParts.push(country.toUpperCase());
+        if (character !== 'all') {
+          const charSel = $('#filter-character');
+          const selectedText = charSel?.options[charSel.selectedIndex]?.text;
+          contextParts.push(
+            selectedText && selectedText !== 'All Characters'
+              ? selectedText
+              : formatCharacterName(character)
+          );
+        }
+        const contextStr = contextParts.length ? ` ${contextParts.join(' • ')}` : '';
+        const noun = visible === 1 ? 'player' : 'players';
+        const label = `${visible}${contextStr} ${noun}`;
         const extra =
           hasActiveFilters && totalMatches > visible
             ? ` (showing ${visible} of ${totalMatches})`
@@ -642,13 +754,8 @@ document.addEventListener('DOMContentLoaded', () => {
       noResultsEl.style.display = visible === 0 ? 'block' : 'none';
     }
 
-    const summary = { visible, totalMatches, filters };
-
-    if (triggerAutoload) {
-      await ensureAllMatchesLoaded(filters, summary);
-    }
-
-    return summary;
+    renderFilterSnapshot(filters);
+    return { visible, totalMatches, filters };
   }
 
   async function sortGrid() {
@@ -656,8 +763,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const key = currentSortKey();
     const rows = getItems();
     if (!rows.length) return;
-
-    isInitialLoad = false;
 
     const cmp =
       {
@@ -672,12 +777,6 @@ document.addEventListener('DOMContentLoaded', () => {
     gridEl.appendChild(fragment);
   }
 
-  function getNextLinkAnchor() {
-    return document.querySelector('[data-next-page-link][rel="next"]');
-  }
-
-  allPagesLoaded = !getNextLinkAnchor();
-
   function populateFilterOptions() {
     const countrySel = $('#filter-country');
     const charSel = $('#filter-character');
@@ -689,12 +788,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const characters = new Map();
 
     profiles.forEach((p) => {
-      if (p.country) {
+      if (p.country && p.country !== 'N/A') {
         const cKey = slug(p.country);
         const cLabel = String(p.country).toUpperCase();
         countries.set(cKey, cLabel);
       }
-      if (p.mainCharacter) {
+      if (p.mainCharacter && p.mainCharacter !== 'N/A') {
         const k = normalizeCharacterKey(p.characterKey || p.mainCharacter);
         const label = formatCharacterName(p.mainCharacter);
         characters.set(k, label);
@@ -740,7 +839,7 @@ document.addEventListener('DOMContentLoaded', () => {
           .join('');
       const matchKey = entries
         .map((e) => e[0])
-        .find((k) => normalizeCharacterKey(k) === currentCharNorm);
+        .find((k) => sameCharKey(k, currentCharNorm));
       if (matchKey) charSel.value = matchKey;
     }
   }
@@ -769,8 +868,6 @@ document.addEventListener('DOMContentLoaded', () => {
     sortFilterQueue = sortFilterQueue
       .then(async () => {
         const filters = collectCurrentFilters();
-        const sortKey = currentSortKey();
-        await ensurePagesForSort(sortKey, filters);
         await sortGrid();
         await applyFilters(triggerAutoload, filters);
       })
@@ -866,7 +963,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (characterParam) {
         const normalizedChar = normalizeCharacterKey(characterParam);
         const options = Array.from(characterSelect.options);
-        const match = options.find((opt) => normalizeCharacterKey(opt.value) === normalizedChar);
+        const match = options.find((opt) => sameCharKey(opt.value, normalizedChar));
         characterSelect.value = match ? match.value : 'all';
       } else {
         characterSelect.value = 'all';
@@ -876,164 +973,215 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const initialParams = new URLSearchParams(window.location.search);
 
-  if (spotlightTarget) {
-    spotlightTarget.innerHTML = '';
-    spotlightTarget.hidden = true;
+  // --- Fast Spotlight & Live Sheet Sync (Stale-While-Revalidate) ---
+  function parseLiveSheetCSV(csvText) {
+    const rows = [];
+    let row = [];
+    let cur = '';
+    let inQuotes = false;
 
-    const SHEET_CSV_URL =
-      `https://docs.google.com/spreadsheets/d/1otrfs8HN3Shq6U2-qrc4GDxTI4ragnqwbTjweecE12Q/gviz/tq?tqx=out:csv&gid=1862929315&range=A:Z&cachebuster=${Date.now()}`;
+    for (let i = 0; i < csvText.length; i++) {
+      const ch = csvText[i];
+      const next = csvText[i + 1];
 
-    function parseLiveSheetCSV(csvText) {
-      const rows = [];
-      let row = [];
-      let cur = '';
-      let inQuotes = false;
-
-      for (let i = 0; i < csvText.length; i++) {
-        const ch = csvText[i];
-        const next = csvText[i + 1];
-
-        if (inQuotes) {
-          if (ch === '"' && next === '"') {
-            cur += '"';
-            i++;
-          } else if (ch === '"') {
-            inQuotes = false;
-          } else {
-            cur += ch;
-          }
+      if (inQuotes) {
+        if (ch === '"' && next === '"') {
+          cur += '"';
+          i++;
+        } else if (ch === '"') {
+          inQuotes = false;
         } else {
-          if (ch === '"') {
-            inQuotes = true;
-          } else if (ch === ',') {
-            row.push(cur.trim());
-            cur = '';
-          } else if (ch === '\n' || (ch === '\r' && next === '\n')) {
-            if (ch === '\r') i++;
-            row.push(cur.trim());
-            if (row.some((cell) => cell !== '')) rows.push(row);
-            row = [];
-            cur = '';
-          } else if (ch !== '\r') {
-            cur += ch;
-          }
+          cur += ch;
+        }
+      } else {
+        if (ch === '"') {
+          inQuotes = true;
+        } else if (ch === ',') {
+          row.push(cur.trim());
+          cur = '';
+        } else if (ch === '\n' || (ch === '\r' && next === '\n')) {
+          if (ch === '\r') i++;
+          row.push(cur.trim());
+          if (row.some((cell) => cell !== '')) rows.push(row);
+          row = [];
+          cur = '';
+        } else if (ch !== '\r') {
+          cur += ch;
         }
       }
-      if (cur.length > 0 || row.length > 0) {
-        row.push(cur.trim());
-        if (row.some((cell) => cell !== '')) rows.push(row);
-      }
-
-      if (rows.length < 2) return new Map();
-
-      const headers = rows[0].map((h, idx) => (h === '' && idx === 0 ? 'Rank' : h));
-      const norm = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
-
-      const findColIdx = (candidates) => {
-        const targets = candidates.map(norm);
-        return headers.findIndex((h) => targets.includes(norm(h)));
-      };
-
-      const rankIdx = findColIdx(['Rank']);
-      const playerIdx = findColIdx(['Player', 'Name']);
-      const engNameIdx = findColIdx(['English Name', 'EnglishName']);
-      const rankChgIdx = findColIdx(['Rank Change', 'RankChange']);
-      let chg6mIdx = findColIdx([
-        'Rating Change 6M',
-        '6M Rating Change',
-        '6M Rank Change',
-        'Rank Change 6M',
-        '6M Change',
-        '6M'
-      ]);
-
-      const parseCleanNum = (v) => {
-        if (v === undefined || v === null) return null;
-        const cleaned = String(v)
-          .replace(/[\u2212\u2013\u2014]/g, '-')
-          .replace(/[,\s+]/g, '')
-          .trim();
-        if (!cleaned || cleaned === '-' || cleaned === '—' || /^n\/?a$/i.test(cleaned)) return null;
-        const n = Number(cleaned);
-        return Number.isFinite(n) ? n : null;
-      };
-
-      // If header name didn't match, check Column K (index 10) and Column J (index 9) across the top 15 rows
-      if (chg6mIdx === -1) {
-        const hasNumbersInCol = (colIndex) =>
-          rows.slice(1, 15).some((r) => parseCleanNum(r[colIndex]) !== null);
-        if (hasNumbersInCol(10)) chg6mIdx = 10;
-        else if (hasNumbersInCol(9)) chg6mIdx = 9;
-      }
-
-      const liveMap = new Map();
-
-      for (let r = 1; r < rows.length; r++) {
-        const cols = rows[r];
-        const pName = playerIdx >= 0 ? cols[playerIdx] : '';
-        if (!pName) continue;
-
-        const engName = engNameIdx >= 0 ? cols[engNameIdx] : '';
-        const rankVal = rankIdx >= 0 ? parseCleanNum(cols[rankIdx]) : r;
-        const raw6m = chg6mIdx >= 0 ? cols[chg6mIdx] : null;
-        const num6m = parseCleanNum(raw6m);
-
-        const payload = {
-          rank: rankVal ?? r,
-          rankChange: rankChgIdx >= 0 ? cols[rankChgIdx] : null,
-          rankChange6m: num6m
-        };
-
-        const kName = normName(pName);
-        const kEng = normName(engName);
-        const kSlug = slug(engName || pName);
-
-        if (kName) liveMap.set(kName, payload);
-        if (kEng) liveMap.set(kEng, payload);
-        if (kSlug) liveMap.set(kSlug, payload);
-      }
-
-      return liveMap;
+    }
+    if (cur.length > 0 || row.length > 0) {
+      row.push(cur.trim());
+      if (row.some((cell) => cell !== '')) rows.push(row);
     }
 
-    Promise.all([
-      fetch('/api/player-profiles.json').then((res) => {
-        if (!res.ok) throw new Error('Failed to load player profiles');
-        return res.json();
-      }),
-      fetch(SHEET_CSV_URL)
-        .then((res) => (res.ok ? res.text() : null))
-        .catch(() => null)
-    ])
-      .then(([profilesData, csvText]) => {
-        if (!Array.isArray(profilesData) || !profilesData.length) return;
+    if (rows.length < 2) return new Map();
 
-        if (csvText) {
-          const liveSheetMap = parseLiveSheetCSV(csvText);
-          if (liveSheetMap.size > 0) {
-            profilesData.forEach((p) => {
-              const live =
-                liveSheetMap.get(normName(p.name)) ||
-                liveSheetMap.get(normName(p.englishName)) ||
-                liveSheetMap.get(String(p.slug || '').toLowerCase());
+    const headers = rows[0].map((h, idx) => (h === '' && idx === 0 ? 'Rank' : h));
+    const norm = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
 
-              if (live) {
-                if (live.rank !== null) p.rank = live.rank;
-                if (live.rankChange !== null) p.rankChange = live.rankChange;
-                if (live.rankChange6m !== null) {
-                  p.rankChange6m = live.rankChange6m;
-                  p.ratingChange6m = live.rankChange6m;
-                }
-              }
-            });
+    const findColIdx = (candidates) => {
+      const targets = candidates.map(norm);
+      return headers.findIndex((h) => targets.includes(norm(h)));
+    };
+
+    const rankIdx = findColIdx(['Rank']);
+    const playerIdx = findColIdx(['Player', 'Name']);
+    const engNameIdx = findColIdx(['English Name', 'EnglishName']);
+    const countryIdx = findColIdx(['Country', 'Region']);
+    const charIdx = findColIdx(['Main Character', 'Character', 'Main']);
+    const rankChgIdx = findColIdx(['Rank Change', 'RankChange']);
+    let chg6mIdx = findColIdx([
+      'Rating Change 6M',
+      '6M Rating Change',
+      '6M Rank Change',
+      'Rank Change 6M',
+      '6M Change',
+      '6M'
+    ]);
+
+    const parseCleanNum = (v) => {
+      if (v === undefined || v === null) return null;
+      const cleaned = String(v)
+        .replace(/[\u2212\u2013\u2014]/g, '-')
+        .replace(/[,\s+]/g, '')
+        .trim();
+      if (!cleaned || cleaned === '-' || cleaned === '—' || /^n\/?a$/i.test(cleaned)) return null;
+      const n = Number(cleaned);
+      return Number.isFinite(n) ? n : null;
+    };
+
+    if (chg6mIdx === -1) {
+      const hasNumbersInCol = (colIndex) =>
+        rows.slice(1, 15).some((r) => parseCleanNum(r[colIndex]) !== null);
+      if (hasNumbersInCol(10)) chg6mIdx = 10;
+      else if (hasNumbersInCol(9)) chg6mIdx = 9;
+    }
+
+    const liveMap = new Map();
+
+    for (let r = 1; r < rows.length; r++) {
+      const cols = rows[r];
+      const pName = playerIdx >= 0 ? cols[playerIdx] : '';
+      if (!pName) continue;
+
+      const engName = engNameIdx >= 0 ? cols[engNameIdx] : '';
+      const rankVal = rankIdx >= 0 ? parseCleanNum(cols[rankIdx]) : r;
+      const raw6m = chg6mIdx >= 0 ? cols[chg6mIdx] : null;
+      const num6m = parseCleanNum(raw6m);
+
+      const payload = {
+        rank: rankVal ?? r,
+        rankChange: rankChgIdx >= 0 ? cols[rankChgIdx] : null,
+        rankChange6m: num6m,
+        country: countryIdx >= 0 ? cols[countryIdx] : null,
+        mainCharacter: charIdx >= 0 ? cols[charIdx] : null
+      };
+
+      const kName = normName(pName);
+      const kEng = normName(engName);
+      const kSlug = slug(engName || pName);
+
+      if (kName) liveMap.set(kName, payload);
+      if (kEng) liveMap.set(kEng, payload);
+      if (kSlug) liveMap.set(kSlug, payload);
+    }
+
+    return liveMap;
+  }
+
+  function applyLiveSheetToProfiles(profilesData, csvText) {
+    if (!csvText || !Array.isArray(profilesData)) return false;
+    const liveSheetMap = parseLiveSheetCSV(csvText);
+    if (!liveSheetMap.size) return false;
+
+    profilesData.forEach((p) => {
+      const live =
+        liveSheetMap.get(normName(p.name)) ||
+        liveSheetMap.get(normName(p.englishName)) ||
+        liveSheetMap.get(String(p.slug || '').toLowerCase());
+
+      if (live) {
+        if (live.rank !== null) p.rank = live.rank;
+        if (live.rankChange !== null) p.rankChange = live.rankChange;
+        if (live.rankChange6m !== null) {
+          p.rankChange6m = live.rankChange6m;
+          p.ratingChange6m = live.rankChange6m;
+        }
+        if ((!p.country || p.country === 'N/A') && live.country && live.country !== 'N/A') {
+          p.country = live.country;
+        }
+        if ((!p.mainCharacter || p.mainCharacter === 'N/A') && live.mainCharacter && live.mainCharacter !== 'N/A') {
+          p.mainCharacter = live.mainCharacter;
+        }
+      }
+    });
+    return true;
+  }
+
+  if (spotlightTarget) {
+    const CACHE_KEY = 'fgc_live_sheet_csv_v1';
+    const CACHE_TTL = 5 * 60 * 1000; // 5 minutes session cache for instant navigation
+    let cachedCSV = null;
+    try {
+      const rawCache = sessionStorage.getItem(CACHE_KEY);
+      if (rawCache) {
+        const parsed = JSON.parse(rawCache);
+        if (parsed && Date.now() - parsed.ts < CACHE_TTL) {
+          cachedCSV = parsed.csv;
+        }
+      }
+    } catch {
+      // ignore storage errors
+    }
+
+    // Step 1: If window.playerProfiles is already preloaded, render immediately (0ms wait)
+    if (Array.isArray(window.playerProfiles) && window.playerProfiles.length) {
+      if (cachedCSV) applyLiveSheetToProfiles(window.playerProfiles, cachedCSV);
+      renderSpotlight();
+      renderFilterSnapshot(collectCurrentFilters());
+    }
+
+    // Step 2: Fetch local /api/player-profiles.json (~30ms) and render right away without waiting on Google Sheets
+    const profilesPromise = fetch('/api/player-profiles.json')
+      .then((res) => (res.ok ? res.json() : null))
+      .then((profilesData) => {
+        if (Array.isArray(profilesData) && profilesData.length) {
+          if (cachedCSV) applyLiveSheetToProfiles(profilesData, cachedCSV);
+          window.playerProfiles = profilesData;
+          populateFilterOptions();
+          loadFiltersFromURL(initialParams);
+          renderSpotlight();
+          applyFilters(false);
+        }
+        return profilesData;
+      })
+      .catch(() => null);
+
+    // Step 3: Fetch live Google Sheet CSV in the background and refresh Spotlight silently
+    if (!cachedCSV) {
+      const SHEET_CSV_URL =
+        `https://docs.google.com/spreadsheets/d/1otrfs8HN3Shq6U2-qrc4GDxTI4ragnqwbTjweecE12Q/gviz/tq?tqx=out:csv&gid=1862929315&range=A:Z&cachebuster=${Math.floor(Date.now() / 60000)}`;
+
+      Promise.all([
+        profilesPromise,
+        fetch(SHEET_CSV_URL).then((res) => (res.ok ? res.text() : null)).catch(() => null)
+      ]).then(([profilesData, freshCSV]) => {
+        const targetProfiles = profilesData || window.playerProfiles;
+        if (freshCSV && Array.isArray(targetProfiles) && targetProfiles.length) {
+          try {
+            sessionStorage.setItem(CACHE_KEY, JSON.stringify({ ts: Date.now(), csv: freshCSV }));
+          } catch {
+            // ignore quota errors
+          }
+          if (applyLiveSheetToProfiles(targetProfiles, freshCSV)) {
+            window.playerProfiles = targetProfiles;
+            renderSpotlight();
+            renderFilterSnapshot(collectCurrentFilters());
           }
         }
-
-        window.playerProfiles = profilesData;
-        renderSpotlight();
-        spotlightTarget.hidden = false;
-      })
-      .catch(() => {});
+      });
+    }
   }
 
   populateFilterOptions();
@@ -1045,5 +1193,10 @@ document.addEventListener('DOMContentLoaded', () => {
     loadFiltersFromURL(params);
     queueSortAndFilter();
   });
+
+  // Prevent the initial pre-fetch pass from overwriting ?country=... or ?character=... in the URL
+  if (!Array.isArray(window.playerProfiles) || !window.playerProfiles.length) {
+    skipHistoryUpdate = true;
+  }
   queueSortAndFilter();
 });

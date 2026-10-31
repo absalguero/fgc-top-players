@@ -114,35 +114,88 @@
 .rank-badge__label { font-size: 0.85rem; font-weight: 600; opacity: 0.9; text-transform: uppercase; letter-spacing: 0.5px; }
 .rank-badge__number { font-size: 1.3rem; line-height: 1; }
 
-/* Metadata (Char/Country) */
-.profile-header__metadata { display: flex; align-items: center; gap: var(--spacing-md); flex-wrap: wrap; }
-.profile-header__character, .profile-header__country {
-    display: inline-flex; align-items: center; gap: 0.5rem; padding: 0 1rem; height: 40px;
-    background: rgba(0, 150, 255, 0.1); border: 1px solid var(--color-accent-blue); border-radius: var(--border-radius);
-    color: var(--color-accent-blue); text-decoration: none; transition: all 0.2s ease; font-weight: 600; white-space: nowrap;
+/* --- Metadata (Char/Country) & Compare Button Matched to Top Row --- */
+.profile-header__metadata { 
+    display: flex; 
+    align-items: center; 
+    gap: 0.5rem; 
+    flex-wrap: wrap; 
 }
-.profile-header__character:hover, .profile-header__country:hover {
-    background: var(--color-accent-blue); border-color: var(--color-accent-blue);
-    color: var(--color-text-on-dark); transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0, 150, 255, 0.3);
+
+.profile-header__character, 
+.profile-header__country {
+    display: inline-flex; 
+    align-items: center; 
+    gap: 0.4rem; 
+    padding: 0 0.8rem; 
+    height: 38px; /* Matches top row honors shelf badge height */
+    background: rgba(0, 150, 255, 0.1); 
+    border: 1px solid var(--color-accent-blue); 
+    border-radius: var(--border-radius);
+    color: var(--color-accent-blue); 
+    text-decoration: none; 
+    transition: all 0.2s ease; 
+    font-weight: 700; 
+    font-size: 0.82rem; /* Matches top row font size */
+    white-space: nowrap;
 }
-.profile-header__character i { font-size: 1rem; opacity: 0.8; }
+
+.profile-header__character:hover, 
+.profile-header__country:hover {
+    background: var(--color-accent-blue); 
+    border-color: var(--color-accent-blue);
+    color: var(--color-text-on-dark); 
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 12px rgba(0, 150, 255, 0.3);
+}
+
+.profile-header__character i { 
+    font-size: 0.9rem; 
+    opacity: 0.8; 
+}
+
 .profile-header__country .country-flag {
-    width: 20px; height: 15px; object-fit: cover; border-radius: 2px; border: 1px solid rgba(255, 255, 255, 0.2); flex-shrink: 0;
+    width: 20px; 
+    height: 15px; 
+    object-fit: cover; 
+    border-radius: 2px; 
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    flex-shrink: 0;
 }
 
 /* Actions (Compare/Socials) */
 .profile-header__actions { display: flex; align-items: center; gap: var(--spacing-md); flex-wrap: wrap; flex-shrink: 0; }
+
+
+/* Compare Button matched to the exact same 38px height and font-size */
 .profile-header__compare-btn {
-    display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0 1.2rem; height: 40px;
-    background: rgba(0, 150, 255, 0.1); border: 2px solid var(--color-accent-blue); border-radius: var(--border-radius);
-    color: var(--color-accent-blue); text-decoration: none; font-weight: 700; font-size: 0.95rem; transition: all 0.2s ease; white-space: nowrap;
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 0.4rem; 
+    padding: 0 0.9rem; 
+    height: 38px; /* Matched to 38px */
+    background: rgba(0, 150, 255, 0.1); 
+    border: 2px solid var(--color-accent-blue); 
+    border-radius: var(--border-radius);
+    color: var(--color-accent-blue); 
+    text-decoration: none; 
+    font-weight: 700; 
+    font-size: 0.82rem; /* Matched to 0.82rem */
+    transition: all 0.2s ease; 
+    white-space: nowrap;
 }
+
 .profile-header__compare-btn:hover {
-    background: var(--color-accent-blue); color: var(--color-text-on-dark); transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0, 150, 255, 0.3);
+    background: var(--color-accent-blue); 
+    color: var(--color-text-on-dark); 
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 12px rgba(0, 150, 255, 0.3);
 }
+
 .profile-header__socials { display: flex; align-items: center; gap: 0.5rem; flex-shrink: 0; }
 .profile-header__socials .social-link {
-    display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px;
+    display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px;
     border: 1px solid var(--color-accent-blue); border-radius: 50%; background: rgba(0, 150, 255, 0.1);
     transition: all 0.2s ease; flex-shrink: 0; cursor: pointer; padding: 0; font-family: inherit;
 }
@@ -394,10 +447,33 @@ a.sig-perf-card:hover .sig-perf-card__name { color: var(--color-accent-blue) !im
     .profile-header__name { font-size: 2rem; }
     .page-player-profile .profile-header .profile-header__name-rank h1 { font-size: 3rem; }
     .profile-header__grid { gap: var(--spacing-sm); padding: var(--spacing-md); }
-    .profile-header__row--top { flex-wrap: wrap; gap: var(--spacing-sm); }
-    .profile-header__row--bottom { flex-direction: column; align-items: center; gap: var(--spacing-sm); }
-    .profile-header__metadata, .profile-header__actions { width: 100%; justify-content: center; }
-    .profile-header__rank-badge, .profile-header__character, .profile-header__country, .profile-header__compare-btn, .profile-header__socials .social-link { height: 44px; }
+    .profile-header__row--top { 
+        flex-direction: column; 
+        align-items: center; 
+        gap: var(--spacing-sm); 
+        text-align: center;
+    }
+    
+    .profile-header__badges-shelf {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    
+    .profile-header__row--bottom { 
+        flex-direction: column; 
+        align-items: center; 
+        gap: var(--spacing-sm); 
+    }
+    
+    .profile-header__metadata, .profile-header__actions { 
+        width: 100%; 
+        justify-content: center; 
+    }
+    .profile-header__rank-badge, .profile-header__character, .profile-header__country, .profile-header__compare-btn { height: 38px; }
+.profile-header__socials .social-link { height: 44px; width: 44px; }
     .profile-header__socials .social-link { width: 44px; }
     
     /* Pagination */

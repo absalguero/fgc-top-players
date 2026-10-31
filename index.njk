@@ -185,13 +185,5 @@ navHighlight: "Home"
 <script>
   window.playerProfiles = {{ allPlayers | dump | safe }};
 </script>
-<script src="/js/playerDirectory.js" defer></script>
-<script>
-  fetch('/api/player-profiles.json')
-    .then(response => response.json())
-    .then(data => {
-      window.playerProfiles = data;
-    })
-    .catch(error => console.error('Error fetching player profiles:', error));
-</script>
+<script src="/js/homeSpotlight.js" defer></script>
 {% endblock %}

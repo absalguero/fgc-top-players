@@ -88,7 +88,12 @@ const createSafeSlug = (name) => {
   return slugify(s, { lower: true, strict: false, locale: 'en', remove: /[*+~.()'"!:@]/g });
 };
 
-const getCharacterFileName = (c) => c ? c.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, '-') : '';
+const getCharacterFileName = (c) => {
+  if (!c) return '';
+  const primary = String(c).split(/[\/,&]/)[0].trim();
+  const slugged = primary.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, '-');
+  return slugged === 'a-k-i' ? 'aki' : slugged;
+};
 const getTierName = (t) => t?.startsWith('S') ? 'Major' : (t === 'A' ? 'National' : (t === 'B' ? 'Regional' : 'Event'));
 
 function deriveStartEndFromDates(dates) {
@@ -155,20 +160,45 @@ module.exports = async function () {
 
     // 1. Initialize Players
     const slugCounts = {};
-    let allPlayers = rankingsData.players.map(p => {
-      const src = p['English Name'] || p.Player;
+    let allPlayers = rankingsData.players.map((p, idx) => {
+      const playerName = getRowValue(p, "Player") || p.Player;
+      const englishName = getRowValue(p, "English Name") || p['English Name'] || null;
+      const parsedRank = parseSheetNumber(getRowValue(p, "Rank") ?? p.Rank);
+      const rank = Number.isFinite(parsedRank) && parsedRank > 0 ? parsedRank : idx + 1;
+
+      const src = englishName || playerName;
       let slug = createSafeSlug(src);
-      if (!slug) slug = p['Player ID'] ? p['Player ID'] : `player-${parseInt(p.Rank, 10)}`;
+      if (!slug) slug = getRowValue(p, "Player ID") || `player-${rank}`;
       
       if (slugCounts[slug]) slug = `${slug}-${++slugCounts[slug]}`;
       else slugCounts[slug] = 1;
 
+      const rawChar = getRowValue(p, "Main Character") || getRowValue(p, "Character") || getRowValue(p, "Main") || "";
+      const cleanChar = String(rawChar).trim();
+      const rawCountry = getRowValue(p, "Country") || p.Country || "";
+      const cleanCountry = String(rawCountry).trim();
+
       return {
-        name: p.Player, englishName: p['English Name'], rank: parseInt(p.Rank, 10),
-        slug, _rankingRow: p, startggSlug: null, rankChange: p['Rank Change'],
-        photoUrl: `/images/players/${slug}.png`, country: p.Country, countryCode: p.CountryCode?.toLowerCase(),
-        mainCharacter: p['Main Character'], game: "sf6", socials: {}, notableWins: [1,2,3].map(i => p[`Notable Win ${i}`]).filter(Boolean),
-        results: [], historicalData: [], trophies_1yr: {}, stats_1yr: {}, stats_recent: {}, leaderRank: {}
+        name: playerName,
+        englishName,
+        rank,
+        slug,
+        _rankingRow: p,
+        startggSlug: null,
+        rankChange: getRowValue(p, "Rank Change") ?? p['Rank Change'],
+        photoUrl: `/images/players/${slug}.png`,
+        country: cleanCountry && cleanCountry.toUpperCase() !== 'N/A' ? cleanCountry : null,
+        countryCode: (getRowValue(p, "CountryCode") || p.CountryCode)?.toLowerCase() || null,
+        mainCharacter: cleanChar && cleanChar.toUpperCase() !== 'N/A' ? cleanChar : null,
+        game: "sf6",
+        socials: {},
+        notableWins: [1, 2, 3].map(i => getRowValue(p, `Notable Win ${i}`)).filter(Boolean),
+        results: [],
+        historicalData: [],
+        trophies_1yr: {},
+        stats_1yr: {},
+        stats_recent: {},
+        leaderRank: {}
       };
     });
 
@@ -177,11 +207,20 @@ module.exports = async function () {
       const dt = new Date(ev.date);
       ev.results.forEach(res => {
         const pl = allPlayers.find(p => p.name === res.Player);
-        if (pl) pl.results.push({
-          tournament: ev.name, slug: ev.slug, date: dt, placement: parseInt(res.Finish, 10),
-          entrants: parseInt(ev.Entrants, 10) || 0, tier: ev.Tier || 'B', 
-          icon: [1,2,3].includes(parseInt(res.Finish)) ? `<i class="fas fa-trophy trophy-${res.Finish}"></i>` : (parseInt(res.Finish)===4 ? '<i class="fas fa-medal medal-4"></i>' : '')
-        });
+        if (pl) {
+          const finish = parseInt(res.Finish, 10);
+          const resChar = res['Main Character'] || res.Character || res.char || null;
+          pl.results.push({
+            tournament: ev.name,
+            slug: ev.slug,
+            date: dt,
+            placement: finish,
+            character: resChar ? String(resChar).trim() : null,
+            entrants: parseInt(ev.Entrants, 10) || 0,
+            tier: ev.Tier || 'B', 
+            icon: [1, 2, 3].includes(finish) ? `<i class="fas fa-trophy trophy-${finish}"></i>` : (finish === 4 ? '<i class="fas fa-medal medal-4"></i>' : '')
+          });
+        }
       });
     });
 
@@ -207,6 +246,10 @@ module.exports = async function () {
     for (const p of allPlayers) {
       p.results.sort((a, b) => b.date - a.date);
       p.historicalData.sort((a, b) => b.date - a.date);
+      if (!p.mainCharacter) {
+        const latestWithChar = p.results.find(r => r.character && r.character.toUpperCase() !== 'N/A');
+        if (latestWithChar) p.mainCharacter = latestWithChar.character;
+      }
       p.characterFileName = getCharacterFileName(p.mainCharacter);
       
       p.results_1yr = p.results.filter(r => r.date >= oneYearAgo);
@@ -417,13 +460,16 @@ module.exports = async function () {
     });
 
     // 7. Finalize
-    allPlayers.sort((a, b) => (a.rank||999) - (b.rank||999));
+    allPlayers.sort((a, b) => (a.rank||99999) - (b.rank||99999));
 
     const countryRankCounts = {};
+    const charRankCounts = {};
+
     allPlayers.forEach((p, i, arr) => {
       p.previousPlayer = i > 0 ? { name: arr[i-1].name, slug: arr[i-1].slug, rank: arr[i-1].rank } : null;
       p.nextPlayer = i < arr.length-1 ? { name: arr[i+1].name, slug: arr[i+1].slug, rank: arr[i+1].rank } : null;
 
+      // 1. Country Rank
       const cKey = (p.country && p.country !== 'N/A') ? p.country.trim().toUpperCase() : null;
       if (cKey && p.rank) {
         countryRankCounts[cKey] = (countryRankCounts[cKey] || 0) + 1;
@@ -432,6 +478,18 @@ module.exports = async function () {
         p.countryRank = null;
       }
 
+      // 2. Character Specialist Rank (Normalized so A.K.I. / AKI / spacing always group together)
+      const charKey = (p.mainCharacter && p.mainCharacter !== 'N/A')
+        ? getCharacterFileName(p.mainCharacter)
+        : null;
+      if (charKey && p.rank) {
+        charRankCounts[charKey] = (charRankCounts[charKey] || 0) + 1;
+        p.characterRank = charRankCounts[charKey];
+      } else {
+        p.characterRank = null;
+      }
+
+      // 3. 6-Month Change
       p.rankChange6m = getSheet6MChange(p._rankingRow);
     });
 

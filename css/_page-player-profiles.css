@@ -688,3 +688,260 @@
     color: var(--color-text-secondary);
     font-style: italic;
 }
+
+/* --- 2-Card Horizontal Spotlight Strip --- */
+.page-player-profiles .spotlight-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  margin: 0.5rem 0 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.page-player-profiles .spotlight-row .spotlight-heading {
+  margin-bottom: 0;
+}
+
+.page-player-profiles .movers-strip {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  align-items: flex-start !important; /* Locks pills and box tops to the exact same line */
+  justify-content: center !important;
+  gap: 1.5rem !important;
+}
+
+.page-player-profiles .mover-slot {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 0.5rem !important;
+  margin: 0 !important;
+}
+
+.page-player-profiles .mover-slot .spotlight-subheading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px; /* Fixed pill row height so card tops always start at the exact same pixel */
+  margin: 0 !important;
+}
+
+.page-player-profiles .mover-slot .player-rise-pill {
+  font-size: 0.85rem;
+  line-height: 1;
+  padding: 0.35rem 0.85rem;
+  margin: 0 !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+}
+
+.page-player-profiles .mover-slot .spotlight-v2-redesigned {
+  width: 300px !important;
+  min-height: 116px !important; /* Ensures both gold boxes have identical height */
+  justify-content: center !important;
+}
+
+/* --- Regional Snapshot Badge Bar (Strictly Centered Vertically) --- */
+.page-player-profiles .regional-power-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  max-width: 1200px;
+  margin: 0.5rem auto 1rem auto;
+  padding: 0.65rem 1rem;
+  background: var(--color-bg-light);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.page-player-profiles .regional-power-bar[hidden] {
+  display: none !important;
+}
+
+.page-player-profiles .regional-badge,
+.page-player-profiles button.regional-badge,
+.page-player-profiles a.regional-badge {
+  box-sizing: border-box !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.45rem !important;
+  height: 40px !important;
+  min-height: 40px !important;
+  max-height: 40px !important;
+  padding: 0 0.95rem !important;
+  margin: 0 !important;
+  font-family: var(--font-heading) !important;
+  font-size: 0.88rem !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--border-radius) !important;
+  color: var(--color-text-primary);
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  vertical-align: middle !important;
+  appearance: none;
+  -webkit-appearance: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.page-player-profiles .regional-badge i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  line-height: 1;
+  margin: 0;
+}
+
+.page-player-profiles .regional-badge--country {
+  background: var(--color-bg-card-gradient-start);
+  border-color: var(--color-border);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.page-player-profiles .regional-badge__flag {
+  width: 20px;
+  height: 15px;
+  object-fit: cover;
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  display: block;
+  flex-shrink: 0;
+}
+
+.page-player-profiles .regional-badge__label,
+.page-player-profiles .regional-badge__value {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.page-player-profiles .regional-badge__label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.85;
+}
+
+.page-player-profiles .regional-badge__value {
+  font-size: 0.92rem;
+  font-weight: 700;
+  gap: 0.25rem;
+}
+
+.page-player-profiles .regional-badge__value em {
+  font-style: normal;
+  opacity: 0.85;
+  font-size: 0.82rem;
+  line-height: 1;
+}
+
+.page-player-profiles .regional-badge--gold {
+  background: linear-gradient(135deg, rgba(255, 193, 7, 0.18), rgba(181, 148, 80, 0.22));
+  border-color: var(--color-rank-1-gold);
+  color: var(--color-rank-1-gold);
+}
+
+.page-player-profiles .regional-badge--gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.25);
+}
+
+.page-player-profiles .regional-badge--blue {
+  background: rgba(0, 150, 255, 0.1);
+  border-color: var(--color-accent-blue);
+  color: var(--color-accent-blue);
+  cursor: pointer;
+}
+
+.page-player-profiles .regional-badge--blue:hover {
+  background: var(--color-accent-blue);
+  color: var(--color-text-on-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 150, 255, 0.3);
+}
+
+/* --- Elite Honors Badge Shelf --- */
+.profile-header__row--top {
+    justify-content: space-between !important;
+    align-items: center !important;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+.profile-header__badges-shelf {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+/* Compact badge styling for the shelf */
+.profile-header__badges-shelf .profile-header__rank-badge {
+    height: 38px;
+    padding: 0 0.8rem;
+    font-size: 0.82rem;
+}
+
+.profile-header__badges-shelf .rank-badge__number {
+    font-size: 1.1rem;
+}
+
+@media (max-width: 767px) {
+    .profile-header__row--top {
+        flex-direction: column;
+        align-items: center; /* Centers the name group and shelf horizontally */
+        gap: var(--spacing-sm);
+        text-align: center;
+    }
+    
+    .profile-header__badges-shelf {
+        width: 100%;
+        justify-content: center; /* Centers the badges on mobile screens */
+    }
+}
+
+/* Interactive Country Drill-Down & Quick-Clear Button in Snapshot Bar */
+.page-player-profiles button.regional-badge--interactive {
+  cursor: pointer;
+}
+
+.page-player-profiles button.regional-badge--interactive:hover {
+  border-color: var(--color-accent-blue);
+  background: rgba(0, 150, 255, 0.12);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 150, 255, 0.25);
+}
+
+.page-player-profiles button.regional-badge--clear {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.18);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  padding: 0 0.75rem !important;
+}
+
+.page-player-profiles button.regional-badge--clear:hover {
+  background: rgba(239, 68, 68, 0.15);
+  border-color: #ef4444;
+  color: #f87171;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.25);
+}
