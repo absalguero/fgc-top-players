@@ -330,8 +330,13 @@ module.exports = async function () {
 
     const fgpiVals = Array.from(playersMap.values()).map(p => p.rawFgpiScore).filter(v => Number.isFinite(v));
     const fgpiScale = minMaxScale(fgpiVals);
+    // Scale normalizedFGPI across 0.01..99.99 so active players never receive 0.00
     playersMap.forEach(p => {
-      p.normalizedFGPI = fgpiVals.length ? (fgpiScale.range > 0.001 ? safeDivide((p.rawFgpiScore - fgpiScale.min) * 99.99, fgpiScale.range, 50) : 50) : 50;
+      p.normalizedFGPI = fgpiVals.length
+        ? (fgpiScale.range > 0.001
+            ? 0.01 + safeDivide((p.rawFgpiScore - fgpiScale.min) * 99.98, fgpiScale.range, 50)
+            : 50)
+        : 50;
     });
 
     const recomputeStrengths = () => {
@@ -579,7 +584,7 @@ module.exports = async function () {
 
       final.push({
         ...d,
-        FGPI: parseFloat(fgpiSum.toFixed(2)),
+        FGPI: parseFloat(Math.max(0.01, fgpiSum).toFixed(2)),
         TP: 0,
         AF3, AF12,
         TWE: d.timeWeightedTWE !== null ? parseFloat(d.timeWeightedTWE.toFixed(2)) : null,
@@ -607,7 +612,8 @@ module.exports = async function () {
         c.CPV = parseFloat((rawCPV * c._viabilityMult).toFixed(2));
 
         const rec = charMap.get(c.name);
-        c.TP = pScale.range > 0 ? Math.round(((rec.players.length - pScale.min) / pScale.range) * 100) : 0;
+        // Scale represented characters (rec.players.length >= 1) on 1..100 so 1+ player is never 0
+        c.TP = pScale.range > 0 ? 1 + Math.round(((rec.players.length - pScale.min) / pScale.range) * 99) : 100;
 
         delete c._rawPeak; delete c._rawEff; delete c._rawThreat; delete c._rawXF; delete c._viabilityMult; delete c.playerDeltas; delete c.topRegionRaw; delete c.topRegionScoreRaw; delete c.decayedThreatScore;
     });
@@ -637,17 +643,22 @@ module.exports = async function () {
       delete c._cpfObs; delete c._cpfStd; delete c._cpfN;
     });
 
-    const scaleMetric = (list, key, maxVal) => {
+    const scaleMetric = (list, key, maxVal, minVal = 0) => {
       const vals = list.map(x => x[key]).filter(v => Number.isFinite(v));
       const sc = minMaxScale(vals);
+      const span = maxVal - minVal;
       list.forEach(c => {
         if (Number.isFinite(c[key])) {
-          c[key] = parseFloat((sc.range > 0.001 ? Math.min(maxVal, Math.max(0, ((c[key] - sc.min) / sc.range) * maxVal)) : maxVal).toFixed(2));
+          const scaled = sc.range > 0.001
+            ? minVal + (((c[key] - sc.min) / sc.range) * span)
+            : maxVal;
+          c[key] = parseFloat(Math.min(maxVal, Math.max(minVal, scaled)).toFixed(2));
         }
       });
     };
-    scaleMetric(final, 'CPV', 99.99);
-    scaleMetric(final, 'primaryRDI_score', 100);
+    // Scale CPV across 0.01..99.99 so represented characters never show 0.00
+    scaleMetric(final, 'CPV', 99.99, 0.01);
+    scaleMetric(final, 'primaryRDI_score', 100, 0);
     final.forEach(c => { if(c.primaryRDI && c.primaryRDI_score !== undefined) c.primaryRDI.score = c.primaryRDI_score; });
 
     // Tiering
@@ -703,7 +714,7 @@ module.exports = async function () {
       saveResultCharacterLog(resultCharLog);
     }
 
-    const monthlyTP = new Map(); // monthKey -> Map(characterName -> 0-100)
+    const monthlyTP = new Map(); // monthKey -> Map(characterName -> 1..100)
     monthBuckets.forEach(b => {
       const sets = new Map();
       qualEvents.forEach(({ d, entries }) => {
@@ -717,7 +728,8 @@ module.exports = async function () {
       const sc = minMaxScale(counts);
       const scaled = new Map();
       sets.forEach((set, name) => {
-        scaled.set(name, sc.range > 0 ? Math.round(((set.size - sc.min) / sc.range) * 100) : 0);
+        // Scale represented characters (set.size >= 1) on 1..100 so active presence is always >= 1
+        scaled.set(name, sc.range > 0 ? 1 + Math.round(((set.size - sc.min) / sc.range) * 99) : 100);
       });
       monthlyTP.set(b.key, scaled);
     });
@@ -728,13 +740,51 @@ module.exports = async function () {
         value: monthlyTP.get(b.key)?.get(charName) ?? null
       }));
 
+    const applyPreReleaseNulls = (monthlySeries, charName) => {
+      if (!Array.isArray(monthlySeries) || monthlySeries.length === 0) return monthlySeries;
+
+      const datasetStartMonth = monthlySeries[0].date.substring(0, 7);
+      const explicitReleaseIso = charName ? DLC_RELEASE_DATES[charName.trim()] : null;
+      const explicitReleaseMonth = explicitReleaseIso ? explicitReleaseIso.substring(0, 7) : null;
+
+      // Find the first month where the character actually appeared in tournament data (value >= 1)
+      const firstActiveEntry = monthlySeries.find(
+        (m) => m.value !== null && Number(m.value) > 0
+      );
+
+      // If character has neither an explicit DLC date nor any appearances yet, return as-is (all null)
+      const debutMonth =
+        explicitReleaseMonth ||
+        (firstActiveEntry ? firstActiveEntry.date.substring(0, 7) : null);
+
+      if (!debutMonth) {
+        return monthlySeries;
+      }
+
+      return monthlySeries.map((entry) => {
+        const entryMonth = entry.date.substring(0, 7);
+        // Pre-release months -> null; Post-release months with no appearances -> 0
+        if (entryMonth < debutMonth && debutMonth > datasetStartMonth) {
+          return {
+            ...entry,
+            value: null
+          };
+        }
+        return {
+          ...entry,
+          value: entry.value ?? 0
+        };
+      });
+    };
+
     // Attach popularity history + archetype/matchup data to each character
     finalOut = finalOut.map(c => {
-      const popularityHistory = getPopularityHistory(c.name);
+      const rawHistory = getPopularityHistory(c.name);
+      const popularityHistory = applyPreReleaseNulls(rawHistory, c.name);
       return {
         ...c,
         popularityHistory,
-        hasPopularityData: popularityHistory.some(p => p.value !== null),
+        hasPopularityData: popularityHistory.some(p => p.value !== null && p.value > 0),
         ...(sf6ArchetypeData[c.slug] || {}),
         ...(sf6MatchupData[c.slug] || sf6MatchupData.default || {}),
         radar_stats: sf6ArchetypeData[c.slug]?.radar_stats || null

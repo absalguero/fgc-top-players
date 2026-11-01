@@ -415,9 +415,10 @@ module.exports = async function () {
 
     const rawS = fgpiPlayers.map(p => p.rawFGPI).filter(v => v !== null);
     const minR = Math.min(...rawS), maxR = Math.max(...rawS), rng = maxR - minR;
+    // Scale fgpiNormalized across 0.01..99.99 so active players never show 0.00
     fgpiPlayers.forEach(p => {
       if (p.rawFGPI !== null) {
-        const n = rng===0 ? 50 : ((p.rawFGPI - minR)/rng)*99.99;
+        const n = rng === 0 ? 50 : 0.01 + (((p.rawFGPI - minR) / rng) * 99.98);
         p.fgpiNormalized = n;
         p.stats.FGPI = n.toFixed(2); 
       } else { p.fgpiNormalized = null; p.stats.FGPI = null; }

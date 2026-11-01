@@ -24718,7 +24718,7 @@
       },
       {
         "Player": "Septasonium",
-        "Player ID": "255079c9",
+        "Player ID": "f8bb5c81",
         "Event": "Hessen Crash XXII",
         "Event ID": "hessen-crash-xxii-15th-anniversary-edition",
         "Date": "2025-06-21",
@@ -32328,7 +32328,7 @@
       },
       {
         "Player": "Septasonium",
-        "Player ID": "255079c9",
+        "Player ID": "f8bb5c81",
         "Event": "CROSSOVER 2025",
         "Event ID": "crossover-2025",
         "Date": "2025-08-08",
@@ -70068,7 +70068,7 @@
       },
       {
         "Player": "Septasonium",
-        "Player ID": "255079c9",
+        "Player ID": "f8bb5c81",
         "Event": "Hessen Crash XXIII",
         "Event ID": "hessen-crash-xxiii",
         "Date": "2026-06-06",
@@ -96004,6 +96004,96 @@
         "Date": "2026-10-31",
         "Finish": "33",
         "Entrants": "43",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "cpt-2026-world-warrior-china-regional-final-fightclub-championship-7": {
+    "name": "CPT 2026 World Warrior: China Regional Final @ FightClub Championship 7",
+    "date": "2026-10-31",
+    "slug": "cpt-2026-world-warrior-china-regional-final-fightclub-championship-7",
+    "Tier": "B",
+    "Entrants": "8",
+    "results": [
+      {
+        "Player": "Vxbao",
+        "Player ID": "50096866",
+        "Event": "CPT 2026 World Warrior: China Regional Final @ FightClub Championship 7",
+        "Event ID": "",
+        "Date": "2026-11-01",
+        "Finish": "1",
+        "Entrants": "8",
+        "Tier": "B"
+      },
+      {
+        "Player": "XiaoXu",
+        "Player ID": "gtwxiaoxu",
+        "Event": "CPT 2026 World Warrior: China Regional Final @ FightClub Championship 7",
+        "Event ID": "",
+        "Date": "2026-11-01",
+        "Finish": "2",
+        "Entrants": "8",
+        "Tier": "B"
+      },
+      {
+        "Player": "Tiger",
+        "Player ID": "hot",
+        "Event": "CPT 2026 World Warrior: China Regional Final @ FightClub Championship 7",
+        "Event ID": "",
+        "Date": "2026-11-01",
+        "Finish": "3",
+        "Entrants": "8",
+        "Tier": "B"
+      },
+      {
+        "Player": "Zhen",
+        "Player ID": "0186079f",
+        "Event": "CPT 2026 World Warrior: China Regional Final @ FightClub Championship 7",
+        "Event ID": "",
+        "Date": "2026-11-01",
+        "Finish": "4",
+        "Entrants": "8",
+        "Tier": "B"
+      },
+      {
+        "Player": "Plaster King",
+        "Player ID": "",
+        "Event": "CPT 2026 World Warrior: China Regional Final @ FightClub Championship 7",
+        "Event ID": "",
+        "Date": "2026-11-01",
+        "Finish": "5",
+        "Entrants": "8",
+        "Tier": "B"
+      },
+      {
+        "Player": "XiaoZhai",
+        "Player ID": "t1oil-king",
+        "Event": "CPT 2026 World Warrior: China Regional Final @ FightClub Championship 7",
+        "Event ID": "",
+        "Date": "2026-11-01",
+        "Finish": "5",
+        "Entrants": "8",
+        "Tier": "B"
+      },
+      {
+        "Player": "DCQ",
+        "Player ID": "ae2f4ff8",
+        "Event": "CPT 2026 World Warrior: China Regional Final @ FightClub Championship 7",
+        "Event ID": "",
+        "Date": "2026-11-01",
+        "Finish": "7",
+        "Entrants": "8",
+        "Tier": "B"
+      },
+      {
+        "Player": "InvincibleBruce",
+        "Player ID": "jdgyangmian",
+        "Event": "CPT 2026 World Warrior: China Regional Final @ FightClub Championship 7",
+        "Event ID": "",
+        "Date": "2026-11-01",
+        "Finish": "7",
+        "Entrants": "8",
         "Tier": "B"
       }
     ],
