@@ -46,44 +46,101 @@ function getSheet6MChange(row) {
   return null;
 }
 
+/**
+ * Builds a Map of normalized playerName -> previous archived rank
+ * from the most recent snapshot date in 'Historical Data'.
+ */
+function buildPreviousRankMap(historicalRecords) {
+  const prevRankMap = new Map();
+  if (!Array.isArray(historicalRecords) || historicalRecords.length === 0) {
+    return prevRankMap;
+  }
+
+  // Group records by YYYY-MM-DD snapshot date
+  const byDate = new Map();
+  historicalRecords.forEach(rec => {
+    const rawDate = rec.Date || rec.date;
+    const player = String(rec.Player || rec.player || '').trim();
+    const rank = parseInt(rec.Rank ?? rec.rank, 10);
+    if (!rawDate || !player || !Number.isFinite(rank) || rank <= 0) return;
+
+    const d = new Date(rawDate);
+    if (isNaN(d.getTime())) return;
+    const dateKey = d.toISOString().slice(0, 10);
+
+    if (!byDate.has(dateKey)) byDate.set(dateKey, new Map());
+    byDate.get(dateKey).set(player.toLowerCase(), rank);
+  });
+
+  const sortedDates = Array.from(byDate.keys()).sort((a, b) => b.localeCompare(a));
+  if (sortedDates.length === 0) return prevRankMap;
+
+  // Use the latest archived snapshot
+  return byDate.get(sortedDates[0]) || prevRankMap;
+}
+
 module.exports = async function () {
   try {
     const getRankings = require("./rankings.js");
-    const getTournaments = require("./tournaments.js");
+    const getHistoricalData = require("./historical.js");
 
-    const rankingsData = await getRankings();
-    const tournamentsData = await getTournaments();
-    const tournaments = tournamentsData.events || [];
+    const [rankingsData, historicalData] = await Promise.all([
+      getRankings(),
+      getHistoricalData()
+    ]);
 
     if (!rankingsData.players || rankingsData.players.length === 0) {
       return [];
     }
 
-    let allPlayers = rankingsData.players.map((p) => {
-      const slugSource = p['English Name'] || p.Player;
+    const prevRankMap = buildPreviousRankMap(historicalData?.records || []);
+
+    let allPlayers = rankingsData.players.map((p, idx) => {
+      const playerName = getRowValue(p, "Player") || p.Player || '';
+      const englishName = getRowValue(p, "English Name") || p['English Name'] || null;
+      const slugSource = englishName || playerName;
       let playerSlug = createSafeSlug(slugSource);
-      const rankNum = parseInt(p.Rank, 10);
+
+      const parsedRank = parseSheetNumber(getRowValue(p, "Rank") ?? p.Rank);
+      const rankNum = Number.isFinite(parsedRank) && parsedRank > 0 ? parsedRank : idx + 1;
 
       if (!playerSlug || playerSlug.trim() === '') {
-        const playerId = p['Player ID'] || '';
+        const playerId = getRowValue(p, "Player ID") || p['Player ID'] || '';
         playerSlug = playerId ? playerId : `player-${rankNum}`;
       }
 
       const delta6m = getSheet6MChange(p);
+      const sheetRankChange = getRowValue(p, "Rank Change") ?? p['Rank Change'];
+
+      // Calculate rank change from Historical Data if sheet doesn't have an explicit 'Rank Change' column
+      const prevRank = prevRankMap.get(String(playerName).trim().toLowerCase()) ?? null;
+      let computedRankChange = '—';
+
+      if (sheetRankChange !== undefined && sheetRankChange !== null && String(sheetRankChange).trim() !== '') {
+        computedRankChange = String(sheetRankChange).trim();
+      } else if (prevRank !== null && Number.isFinite(rankNum)) {
+        const diff = prevRank - rankNum; // Positive = moved up (e.g. from #5 to #3 is +2)
+        computedRankChange = diff === 0 ? '—' : (diff > 0 ? `+${diff}` : `${diff}`);
+      } else if (prevRankMap.size > 0 && rankNum <= 40) {
+        computedRankChange = 'NEW';
+      }
+
+      const rawChar = getRowValue(p, "Main Character") || getRowValue(p, "Character") || p['Main Character'] || '';
+      const rawCountry = getRowValue(p, "Country") || p.Country || '';
 
       return {
-        name: p.Player,
-        englishName: p['English Name'] || null,
+        name: playerName,
+        englishName,
         rank: rankNum,
+        previousRank: prevRank,
         slug: playerSlug,
-        rankChange: p['Rank Change'] || '—',
+        rankChange: computedRankChange,
         rankChange6m: delta6m !== null ? delta6m : '—',
         photoUrl: `/images/players/${playerSlug}.png`,
-        country: p.Country,
+        country: rawCountry,
         countryCode: p.CountryCode ? p.CountryCode.toLowerCase() : null,
-        mainCharacter: p['Main Character'],
-        game: "sf6",
-        results: [],
+        mainCharacter: rawChar,
+        game: "sf6"
       };
     });
 
@@ -100,36 +157,21 @@ module.exports = async function () {
       }
     });
 
-    tournaments.forEach(event => {
-      if (event.results && Array.isArray(event.results)) {
-        event.results.forEach(result => {
-          const player = allPlayers.find(p => p.name === result.Player);
-          if (player) {
-            player.results.push({
-              date: new Date(event.date),
-            });
-          }
-        });
-      }
-    });
-
-    const slimPlayers = allPlayers.map(player => {
-      if (player.rank && player.rank <= 200) {
-        return {
-          name: player.name,
-          englishName: player.englishName,
-          rank: player.rank,
-          slug: player.slug,
-          rankChange: player.rankChange,
-          rankChange6m: player.rankChange6m,
-          photoUrl: player.photoUrl,
-          country: player.country,
-          countryCode: player.countryCode,
-          mainCharacter: player.mainCharacter,
-        };
-      }
-      return null;
-    }).filter(Boolean);
+    const slimPlayers = allPlayers
+      .filter(player => player.rank && player.rank <= 200)
+      .map(player => ({
+        name: player.name,
+        englishName: player.englishName,
+        rank: player.rank,
+        previousRank: player.previousRank,
+        slug: player.slug,
+        rankChange: player.rankChange,
+        rankChange6m: player.rankChange6m,
+        photoUrl: player.photoUrl,
+        country: player.country,
+        countryCode: player.countryCode,
+        mainCharacter: player.mainCharacter
+      }));
 
     const normalizedRank = (value) => {
       const num = parseInt(value, 10);

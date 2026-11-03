@@ -109,17 +109,17 @@ navHighlight: "Home"
                     </a>
                   {% endif %}
                   {% if p.rankChange %}
-  {% set rc = (p.rankChange | string | lower) %}
-  {% if 'new' in rc %}
-    <span class="rank-delta delta-new">NEW</span>
-  {% elseif (p.rankChange | int) > 0 %}
-    <span class="rank-delta delta-up"><i class="fas fa-caret-up"></i> {{ (p.rankChange | string) | replace('+', '') | trim }}</span>
-  {% elseif (p.rankChange | int) < 0 %}
-    <span class="rank-delta delta-down"><i class="fas fa-caret-down"></i> {{ (p.rankChange | string) | replace('-', '') | trim }}</span>
-  {% else %}
-    <span class="rank-delta delta-even">—</span>
-  {% endif %}
-{% endif %}
+                    {% set rc = (p.rankChange | string | lower) %}
+                    {% if 'new' in rc %}
+                      <span class="rank-delta delta-new">NEW</span>
+                    {% elseif (p.rankChange | int) > 0 %}
+                      <span class="rank-delta delta-up"><i class="fas fa-caret-up"></i> {{ (p.rankChange | string) | replace('+', '') | trim }}</span>
+                    {% elseif (p.rankChange | int) < 0 %}
+                      <span class="rank-delta delta-down"><i class="fas fa-caret-down"></i> {{ (p.rankChange | string) | replace('-', '') | trim }}</span>
+                    {% else %}
+                      <span class="rank-delta delta-even">—</span>
+                    {% endif %}
+                  {% endif %}
                 </div>
               </div>
             {% endif %}
@@ -133,9 +133,9 @@ navHighlight: "Home"
     </aside>
 
     {# === COLUMN 2 (CENTER): LATEST TOURNAMENT RESULTS (LAST 4) === #}
-<section class="dash-sidebar dash-sidebar--center" aria-label="Recent Tournament Results">
-  {% include "latest-results-widget.njk" %}
-</section>
+    <section class="dash-sidebar dash-sidebar--center" aria-label="Recent Tournament Results">
+      {% include "latest-results-widget.njk" %}
+    </section>
 
     {# === COLUMN 3 (RIGHT): S-TIER CHARACTERS === #}
     <aside class="dash-sidebar dash-sidebar--right" aria-label="S-Tier Character Meta">
@@ -184,6 +184,161 @@ navHighlight: "Home"
 {% block scripts %}
 <script>
   window.playerProfiles = {{ allPlayers | dump | safe }};
+
+  (function syncLiveHomepageTop10() {
+    const listEl = document.querySelector('.widget-box--players .mini-rank-list');
+    if (!listEl) return;
+
+    const CSV_URL = 'https://docs.google.com/spreadsheets/d/1otrfs8HN3Shq6U2-qrc4GDxTI4ragnqwbTjweecE12Q/gviz/tq?tqx=out:csv&gid=1862929315&range=A1:K15&cachebuster=' + Date.now();
+
+    const profileByName = new Map();
+    if (Array.isArray(window.playerProfiles)) {
+      window.playerProfiles.forEach(p => {
+        if (p && p.name) profileByName.set(p.name.trim().toLowerCase(), p);
+      });
+    }
+
+    function slugifySimple(str) {
+      return String(str || '')
+        .normalize('NFKD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .toLowerCase()
+        .replace(/[^a-z0-9\s-]/g, '')
+        .trim()
+        .replace(/\s+/g, '-')
+        .replace(/-+/g, '-');
+    }
+
+    function parseCSVLine(line) {
+      const result = [];
+      let cur = '', inQuotes = false;
+      for (let i = 0; i < line.length; i++) {
+        const ch = line[i];
+        if (ch === '"') {
+          if (inQuotes && line[i + 1] === '"') { cur += '"'; i++; }
+          else inQuotes = !inQuotes;
+        } else if (ch === ',' && !inQuotes) {
+          result.push(cur.trim());
+          cur = '';
+        } else {
+          cur += ch;
+        }
+      }
+      result.push(cur.trim());
+      return result;
+    }
+
+    function escapeHtml(s) {
+      return String(s || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    fetch(CSV_URL)
+      .then(res => res.ok ? res.text() : Promise.reject('CSV fetch failed'))
+      .then(csvText => {
+        const lines = csvText.split(/\r?\n/).filter(l => l.trim() !== '');
+        if (lines.length < 2) return;
+
+        const headers = parseCSVLine(lines[0]).map((h, idx) => {
+          const clean = h.trim().toLowerCase();
+          return (clean === '' && idx === 0) ? 'rank' : clean;
+        });
+
+        const idxRank = headers.indexOf('rank') !== -1 ? headers.indexOf('rank') : 0;
+        const idxChange = headers.findIndex(h => h.includes('rank change') || h === 'change');
+        const idxPlayer = headers.indexOf('player') !== -1 ? headers.indexOf('player') : 2;
+        const idxCountry = headers.indexOf('country') !== -1 ? headers.indexOf('country') : 3;
+        const idxChar = headers.findIndex(h => h.includes('character') || h === 'main');
+
+        const top10 = [];
+        for (let i = 1; i < lines.length && top10.length < 10; i++) {
+          const cols = parseCSVLine(lines[i]);
+          const name = cols[idxPlayer] || '';
+          const liveRank = parseInt(cols[idxRank], 10);
+          if (!name || !Number.isFinite(liveRank) || liveRank <= 0 || liveRank > 10) continue;
+
+          const existing = profileByName.get(name.toLowerCase()) || {};
+          const country = (cols[idxCountry] && cols[idxCountry].toUpperCase() !== 'N/A')
+            ? cols[idxCountry]
+            : (existing.country || '');
+          const mainCharacter = (idxChar !== -1 && cols[idxChar] && cols[idxChar].toUpperCase() !== 'N/A')
+            ? cols[idxChar]
+            : (existing.mainCharacter || '');
+
+          // Compute live rank change vs archived previousRank (or build-time rank if moved between builds)
+          let rankChange = idxChange !== -1 && cols[idxChange] ? cols[idxChange] : '';
+          if (!rankChange) {
+            const baselineRank = Number.isFinite(existing.previousRank)
+              ? existing.previousRank
+              : (Number.isFinite(existing.rank) ? existing.rank : null);
+            if (baselineRank !== null) {
+              const diff = baselineRank - liveRank;
+              rankChange = diff === 0 ? (existing.rankChange || '—') : (diff > 0 ? `+${diff}` : `${diff}`);
+            } else {
+              rankChange = existing.rankChange || 'NEW';
+            }
+          }
+
+          const playerSlug = existing.slug || slugifySimple(existing.englishName || name);
+          const charSlug = slugifySimple(existing.characterKey || mainCharacter);
+
+          top10.push({ rank: liveRank, name, playerSlug, country, mainCharacter, charSlug, rankChange });
+        }
+
+        if (top10.length === 0) return;
+        top10.sort((a, b) => a.rank - b.rank);
+
+        listEl.innerHTML = top10.map(p => {
+          const rankClass = p.rank <= 5 ? `rank-${p.rank}` : 'rank-6-10';
+          const countryHtml = p.country
+            ? `<span class="rank-country">
+                 <img src="/images/flags/${escapeHtml(p.country.toLowerCase())}.png" alt="${escapeHtml(p.country)}" class="country-flag">
+                 ${escapeHtml(p.country)}
+               </span>`
+            : '';
+
+          const charHtml = p.mainCharacter
+            ? `<a href="/characters/${escapeHtml(p.charSlug)}/" class="rank-char-link" title="View ${escapeHtml(p.mainCharacter)} Profile">
+                 ${escapeHtml(p.mainCharacter)}
+               </a>`
+            : '';
+
+          let deltaHtml = '';
+          const rcRaw = String(p.rankChange || '').trim();
+          if (rcRaw) {
+            const rcLower = rcRaw.toLowerCase();
+            const rcNum = parseInt(rcRaw.replace('+', ''), 10);
+            if (rcLower.includes('new')) {
+              deltaHtml = `<span class="rank-delta delta-new">NEW</span>`;
+            } else if (Number.isFinite(rcNum) && rcNum > 0) {
+              deltaHtml = `<span class="rank-delta delta-up"><i class="fas fa-caret-up"></i> ${Math.abs(rcNum)}</span>`;
+            } else if (Number.isFinite(rcNum) && rcNum < 0) {
+              deltaHtml = `<span class="rank-delta delta-down"><i class="fas fa-caret-down"></i> ${Math.abs(rcNum)}</span>`;
+            } else {
+              deltaHtml = `<span class="rank-delta delta-even">—</span>`;
+            }
+          }
+
+          return `
+            <div class="mini-rank-item ${rankClass}">
+              <div class="mini-rank-circle">${p.rank}</div>
+              <div class="mini-rank-details">
+                <a href="/players/${escapeHtml(p.playerSlug)}/" class="rank-name">${escapeHtml(p.name)}</a>
+                ${countryHtml}
+              </div>
+              <div class="mini-rank-metrics">
+                ${charHtml}
+                ${deltaHtml}
+              </div>
+            </div>
+          `;
+        }).join('');
+      })
+      .catch(() => {});
+  })();
 </script>
 <script src="/js/homeSpotlight.js" defer></script>
 {% endblock %}

@@ -1,28 +1,4 @@
 {
-  "crossover-2026-1": {
-    "name": "CROSSOVER 2026",
-    "slug": "crossover-2026-1",
-    "startAt": 1793437200,
-    "endAt": 1793563200,
-    "startDate": "2026-10-31",
-    "endDate": "2026-11-01",
-    "dates": "Oct 31-Nov 1, 2026",
-    "location": "Friedenstraße 25D, 50354 Hürth-Gleuel, Deutschland",
-    "venueName": "",
-    "url": "https://www.start.gg/tournament/crossover-2026-1",
-    "tier": "B",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "CROSSOVER 2026 is scheduled for Oct 31-Nov 1, 2026 in Friedenstraße 25D, 50354 Hürth-Gleuel, Deutschland. Featuring Street Fighter 6. Registered top players include LinkNova, semy28.",
-    "notablePlayers": [
-      "LinkNova",
-      "semy28"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
   "headstomper-2026": {
     "name": "Headstomper 2026",
     "slug": "headstomper-2026",
