@@ -32,19 +32,17 @@ function initRankingChart() {
   console.log('Historical data points:', points.length);
 
   const noData = document.querySelector('.chart-no-data');
+  const chartCard = canvas.closest('.profile-section--ranking-history');
   if (!points.length) {
-    if (noData) noData.style.display = 'block';
-    canvas.style.display = 'none';
+    if (chartCard) chartCard.style.display = 'none';
     return;
   } else {
+    if (chartCard) chartCard.style.display = '';
     if (noData) noData.style.display = 'none';
     canvas.style.display = 'block';
   }
 
   const ctx = canvas.getContext('2d');
-  const gradient = ctx.createLinearGradient(0, 0, 0, 300);
-  gradient.addColorStop(0, 'rgba(0, 150, 255, 0.4)');
-  gradient.addColorStop(1, 'rgba(0, 150, 255, 0)');
   if (canvas._chartInstance) canvas._chartInstance.destroy();
 
   const chart = new Chart(ctx, {
@@ -54,8 +52,15 @@ function initRankingChart() {
         label: 'Ranking',
         data: points,
         borderColor: '#0096FF',
-        backgroundColor: gradient,
-        fill: true,
+        backgroundColor: (context) => {
+          const { ctx: chartCtx, chartArea } = context.chart;
+          if (!chartArea) return 'rgba(0, 150, 255, 0.2)';
+          const grad = chartCtx.createLinearGradient(0, chartArea.top, 0, chartArea.bottom);
+          grad.addColorStop(0, 'rgba(0, 150, 255, 0.4)');
+          grad.addColorStop(1, 'rgba(0, 150, 255, 0.0)');
+          return grad;
+        },
+        fill: { value: 41 }, // Explicitly fills down to y = 41 (physical bottom of the reversed y-axis)
         borderWidth: 3,
         tension: 0.4,
         pointRadius: 0,

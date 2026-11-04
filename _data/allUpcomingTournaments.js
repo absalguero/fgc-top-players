@@ -12,12 +12,27 @@ const TIER_SORT_ORDER = ["S+", "S", "A", "B"];
 function buildRankingPlayers(rankings) {
   if (!rankings || !Array.isArray(rankings.players)) return [];
   return rankings.players
-    .filter((row) => row && row.Player && row["Player ID"])
-    .map((row) => ({
-      name: row.Player,
-      startggSlug: row["Player ID"],
-      rank: Number(row.Rank),
-    }));
+    .map((row, idx) => {
+      if (!row || !row.Player) return null;
+      const rawSlug =
+        row["Player ID"] ||
+        row["Slug"] ||
+        row["StartGG Slug"] ||
+        row["startgg_slug"] ||
+        row["StartGG"] ||
+        null;
+      if (!rawSlug) return null;
+
+      const parsedRank = Number(String(row.Rank || "").replace(/[^0-9.-]/g, ""));
+      const rank = Number.isFinite(parsedRank) && parsedRank > 0 ? parsedRank : idx + 1;
+
+      return {
+        name: String(row.Player).trim(),
+        startggSlug: String(rawSlug).trim(),
+        rank,
+      };
+    })
+    .filter((p) => p && p.rank <= 200);
 }
 
 function readJsonFile(filePath) {
@@ -232,6 +247,31 @@ function sortObjectByStartDate(obj) {
   return Object.fromEntries(entries);
 }
 
+/**
+ * Strips generated entries down to ONLY name, url, tier, and notablePlayers
+ * for upcomingTournamentsGenerated.json.
+ */
+function formatForGeneratedJson(sortedDynamicTournaments) {
+  const minimal = {};
+  Object.entries(sortedDynamicTournaments || {}).forEach(([slug, data]) => {
+    if (!data || typeof data !== "object") return;
+    const cleanSlug = data.slug || slug;
+    const url =
+      data.startggUrl ||
+      data.url ||
+      data.website ||
+      `https://www.start.gg/tournament/${cleanSlug}/details`;
+
+    minimal[slug] = {
+      name: data.name || cleanSlug,
+      url,
+      tier: data.tier || "B",
+      notablePlayers: Array.isArray(data.notablePlayers) ? data.notablePlayers : [],
+    };
+  });
+  return minimal;
+}
+
 module.exports = async function () {
   let dynamicTournaments = {};
   const rawOverrides = readJsonFile(OVERRIDES_PATH);
@@ -243,7 +283,7 @@ module.exports = async function () {
 
     if (players.length) {
       const { tournamentsBySlug } = await collectUpcomingForPlayers(players, {
-        topN: 100,
+        topN: 200,
         offlineOnly: true,
       });
       dynamicTournaments = tournamentsBySlug || {};
@@ -262,13 +302,16 @@ module.exports = async function () {
       delete dynamicTournaments[slug];
     }
   });
+
+  // Sort chronologically first while start dates are still attached, then strip to 4 fields
   Object.values(dynamicTournaments).forEach(ensureDerivedDates);
-  dynamicTournaments = sortObjectByStartDate(dynamicTournaments);
+  const sortedDynamic = sortObjectByStartDate(dynamicTournaments);
+  const minimalGenerated = formatForGeneratedJson(sortedDynamic);
 
   try {
     await fs.promises.writeFile(
       GENERATED_PATH,
-      JSON.stringify(dynamicTournaments, null, 2),
+      JSON.stringify(minimalGenerated, null, 2),
       "utf8"
     );
   } catch (error) {
@@ -278,17 +321,16 @@ module.exports = async function () {
     );
   }
 
-// Merge with correct priority: archive > overrides > dynamic
-  // Start with dynamic as base
-  let tournaments = { ...dynamicTournaments };
+  // --- Site Data (Excludes dynamicTournaments completely!) ---
+  // Only manual overrides and archived events are returned to Eleventy for the live site.
+  let tournaments = {};
 
-  // Filter out excluded entries from overrides before merging
   const filteredOverrides = { ...overrides };
   excludedSlugs.forEach((slug) => {
     delete filteredOverrides[slug];
   });
 
-  // Apply overrides (middle priority)
+  // Apply overrides
   tournaments = mergeOverrides(tournaments, filteredOverrides);
 
   // Apply archive (highest priority)
@@ -303,14 +345,16 @@ module.exports = async function () {
   });
 
   const sorted = sortObjectByStartDate(tournaments);
-  Object.values(sorted).forEach(ensureDerivedDates);if (process.env.ELEVENTY_ENV === 'development') {
-    console.log('⚠️  DEV MODE: filtering for valid Rated Tournaments first...');
-    const validEntries = Object.entries(sorted).filter(([key, tournament]) => {
+  Object.values(sorted).forEach(ensureDerivedDates);
+
+  if (process.env.ELEVENTY_ENV === "development") {
+    console.log("⚠️  DEV MODE: filtering for valid Rated Tournaments first...");
+    const validEntries = Object.entries(sorted).filter(([, tournament]) => {
       return tournament.tier !== undefined && !tournament.isArchived;
     });
 
     const limitedEntries = validEntries.slice(0, 6);
-    
+
     console.log(`⚠️  DEV MODE: Returning ${limitedEntries.length} valid tournaments.`);
     return Object.fromEntries(limitedEntries);
   }

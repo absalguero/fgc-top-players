@@ -276,11 +276,12 @@ eleventyComputed:
                         </div>
                     </div>
                     <div class="stat-item__value">
-                        {% if player.stats.PR %}
-                            {% if player.rank and player.rank < player.stats.PR %}
+                        {% set peakVal = player.stats.PR or player.peakRank or player.rank %}
+                        {% if peakVal %}
+                            {% if player.rank and player.rank < peakVal %}
                                 #{{ player.rank }}
                             {% else %}
-                                #{{ player.stats.PR }}
+                                #{{ peakVal }}
                             {% endif %}
                         {% else %}
                             N/A

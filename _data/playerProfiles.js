@@ -33,6 +33,19 @@ const TIER_POINTS = {
   'B':  { victory: 1.0, top3: 0.5, top8: 0.25, top16: 0.1 }
 };
 
+// Official Spreadsheet Base Points (Placements 1 to 50)
+const BASE_POINTS_BY_FINISH = [
+  0,
+  1000, 650, 450, 350, 250, 200, 180, 160, 140, 120, // 1 - 10
+  100,  90,  80,  70,  60,  50,  48,  46,  44,  42,  // 11 - 20
+  40,   38,  36,  34,  32,  30,  28,  26,  24,  22,  // 21 - 30
+  20,   19,  18,  17,  16,  15,  14,  13,  12,  11,  // 31 - 40
+  10,   9,   8,   7,   6,   5,   4,   3,   2,   1    // 41 - 50
+];
+
+const EVENT_CAP = 5;
+const TRACKING_EPOCH_ISO = "2025-11-10"; // Official start date for PR & TR tracking
+
 const TOOLTIP_TEXT = {
   FGPI: "Fighting Game Performance Index", TDR: "Tournament Difficulty Rating", PF: "Performance Floor",
   MS: "Momentum Score", AF12: "Avg. Finish (12 mo.)", AF6: "Avg. Finish (6 mo.)",
@@ -45,6 +58,7 @@ const TOOLTIP_TEXT = {
 const getAverage = (arr) => arr.length ? arr.reduce((a, b) => a + b, 0) / arr.length : null;
 const normalizeSlugValue = (v) => v ? String(v).trim().toLowerCase() : null;
 const normalizeFieldKey = (k) => k ? String(k).normalize("NFKC").trim().toLowerCase().replace(/[^a-z0-9]+/g, "") : null;
+const normalizePlayerKey = (name) => String(name || "").normalize("NFKC").trim().toLowerCase();
 
 function getRowValue(row, field) {
   if (!row) return null;
@@ -59,10 +73,25 @@ function parseSheetNumber(val) {
   if (val === null || val === undefined) return NaN;
   const cleaned = String(val)
     .replace(/[\u2212\u2013\u2014]/g, "-")
-    .replace(/[,\s+]/g, "")
+    .replace(/[,\s+#]/g, "")
     .trim();
   if (cleaned === "" || cleaned === "-" || /^n\/?a$/i.test(cleaned)) return NaN;
   return Number(cleaned);
+}
+
+function getPlayerRankFromRow(row, fallbackIndex) {
+  const candidates = [
+    getRowValue(row, "Rank"),
+    row?.Rank,
+    row?.rank,
+    row?._empty_0,
+    row ? Object.values(row)[0] : null
+  ];
+  for (const c of candidates) {
+    const n = parseSheetNumber(c);
+    if (Number.isFinite(n) && n > 0) return Math.round(n);
+  }
+  return fallbackIndex + 1;
 }
 
 function getSheet6MChange(row) {
@@ -140,31 +169,208 @@ function calculateLogScore(placement, entrants) {
   return Math.max(0, score);
 }
 
+/**
+ * Exact Spreadsheet Formulas for Base Points, Tier+Entrants Multiplier, and Decay Factor
+ */
+function getSheetBasePoints(finish) {
+  const f = parseInt(finish, 10);
+  if (!Number.isFinite(f) || f < 1 || f > 50) return 0;
+  return BASE_POINTS_BY_FINISH[f] || 0;
+}
+
+function getSheetEventMultiplier(tier, entrants) {
+  const t = String(tier || 'B').trim().toUpperCase();
+  const n = parseInt(entrants, 10) || 0;
+
+  if (t === 'S+') {
+    if (n >= 2048) return 13;
+    if (n >= 1025) return 11;
+    if (n >= 513)  return 9;
+    return 7;
+  }
+  if (t === 'S') {
+    if (n >= 512) return 7;
+    if (n >= 257) return 5.5;
+    return 4;
+  }
+  if (t === 'A') {
+    if (n >= 256) return 4;
+    if (n >= 129) return 3;
+    return 2;
+  }
+  // Default: B Tier
+  if (n >= 128) return 1;
+  if (n >= 65)  return 0.75;
+  if (n >= 33)  return 0.5;
+  return 0.25;
+}
+
+function roundUp4(val) {
+  return Math.ceil((val - 1e-12) * 10000) / 10000;
+}
+
+function getSheetDecayFactor(eventDate, checkDate) {
+  const diffDays = (checkDate.getTime() - eventDate.getTime()) / 86400000;
+  if (diffDays < 0) return 0;
+  const k2 = Math.floor(diffDays / 30.4375);
+  if (k2 > 12) return 0;
+  const raw = 1 - (1 / 12) * k2;
+  return raw <= 0 ? 0 : roundUp4(raw);
+}
+
+/**
+ * Reconstructs weekly ranks using the exact Google Sheet formula.
+ */
+function computeLifetimeWeeklyRanks(allPlayers, tournaments, now, oneYearAgo) {
+  const MS_PER_DAY = 86400000;
+  const MS_PER_WEEK = 7 * MS_PER_DAY;
+
+  const eventsWithDates = (tournaments || [])
+    .map(ev => {
+      const dt = new Date(ev.date);
+      const tier = ev.Tier || 'B';
+      const entrants = parseInt(ev.Entrants, 10) || 0;
+      return {
+        date: dt,
+        multiplier: getSheetEventMultiplier(tier, entrants),
+        results: Array.isArray(ev.results) ? ev.results : []
+      };
+    })
+    .filter(ev => !isNaN(ev.date.getTime()))
+    .sort((a, b) => a.date - b.date);
+
+  const weeklyRanksByKey = new Map();
+  allPlayers.forEach(p => {
+    const k = normalizePlayerKey(p.name);
+    if (k) weeklyRanksByKey.set(k, []);
+  });
+
+  if (eventsWithDates.length > 0) {
+    const epochDate = new Date(TRACKING_EPOCH_ISO + "T00:00:00Z");
+    const earliestEventDate = eventsWithDates[0].date;
+    const startCheckpoint = earliestEventDate > epochDate ? earliestEventDate : epochDate;
+    const totalWeeks = Math.max(1, Math.floor((now.getTime() - startCheckpoint.getTime()) / MS_PER_WEEK));
+
+    const checkpoints = [];
+    for (let w = totalWeeks; w >= 0; w--) {
+      checkpoints.push(new Date(now.getTime() - (w * MS_PER_WEEK)));
+    }
+
+    checkpoints.forEach(checkDate => {
+      const windowStart = new Date(checkDate.getTime() - (370 * MS_PER_DAY));
+      const playerScores = new Map();
+
+      for (let i = 0; i < eventsWithDates.length; i++) {
+        const ev = eventsWithDates[i];
+        if (ev.date > checkDate) break;
+        if (ev.date < windowStart) continue;
+
+        const decay = getSheetDecayFactor(ev.date, checkDate);
+        if (decay <= 0) continue;
+
+        ev.results.forEach(res => {
+          const pKey = normalizePlayerKey(res.Player);
+          if (!pKey || !weeklyRanksByKey.has(pKey)) return;
+
+          const basePts = getSheetBasePoints(res.Finish);
+          if (basePts <= 0) return;
+
+          const pts = basePts * ev.multiplier * decay;
+          if (!playerScores.has(pKey)) playerScores.set(pKey, []);
+          playerScores.get(pKey).push(pts);
+        });
+      }
+
+      const rankedThisWeek = [];
+      playerScores.forEach((scores, pKey) => {
+        scores.sort((a, b) => b - a);
+        const total = scores.slice(0, EVENT_CAP).reduce((a, b) => a + b, 0);
+        if (total > 0) rankedThisWeek.push({ key: pKey, score: total });
+      });
+
+      rankedThisWeek.sort((a, b) => b.score - a.score);
+      rankedThisWeek.forEach((entry, idx) => {
+        weeklyRanksByKey.get(entry.key).push({
+          date: checkDate,
+          rank: idx + 1
+        });
+      });
+    });
+  }
+
+  // Assign Lifetime Peak Rank (PR), Lifetime Weeks in Top 40 (TR), and Last-12-Months Chart Points
+  allPlayers.forEach((p, idx) => {
+    const pKey = normalizePlayerKey(p.name);
+    const fullHistory = (pKey && weeklyRanksByKey.get(pKey)) ? weeklyRanksByKey.get(pKey) : [];
+
+    const candidateRanks = fullHistory
+      .map(h => Number(h.rank))
+      .filter(r => Number.isFinite(r) && r > 0);
+
+    const liveRank = Number.isFinite(Number(p.rank)) && Number(p.rank) > 0 ? Number(p.rank) : (idx + 1);
+    p.rank = liveRank;
+    candidateRanks.push(liveRank);
+
+    // 1. Guaranteed Peak Rank for ALL players (1..200+)
+    const bestRank = Math.min(...candidateRanks);
+    p.stats_1yr.peakRank = bestRank;
+    p.peakRank = bestRank;
+
+    // 2. Lifetime Weeks in Top 40
+    let top40Weeks = fullHistory.filter(h => h.rank > 0 && h.rank <= 40).length;
+    if (liveRank <= 40 && top40Weeks === 0) {
+      top40Weeks = 1;
+    }
+    p.stats_recent.weeksInTop40 = top40Weeks;
+
+    // 3. Trailing 12-Month Top 40 History for the Ranking History Chart
+    const recent12MoHistory = fullHistory
+      .filter(h => h.date >= oneYearAgo && h.rank > 0 && h.rank <= 40)
+      .sort((a, b) => a.date - b.date)
+      .map(h => ({
+        date: h.date.toISOString().slice(0, 10),
+        rank: h.rank
+      }));
+
+    if (liveRank > 0 && liveRank <= 40) {
+      const todayIso = now.toISOString().slice(0, 10);
+      const lastEntry = recent12MoHistory[recent12MoHistory.length - 1];
+      if (!lastEntry || lastEntry.date !== todayIso) {
+        recent12MoHistory.push({ date: todayIso, rank: liveRank });
+      } else {
+        lastEntry.rank = liveRank;
+      }
+    }
+
+    p.historicalData = recent12MoHistory;
+  });
+}
+
 // --- Main Processor ---
 module.exports = async function () {
   try {
     const getRankings = require("./rankings.js");
     const getTournaments = require("./tournaments.js");
-    const getHistoricalData = require("./historical.js");
 
-    const [rankingsData, tournamentsData, historicalData] = await Promise.all([
-      getRankings(), getTournaments(), getHistoricalData()
+    const [rankingsData, tournamentsData] = await Promise.all([
+      getRankings(), getTournaments()
     ]);
 
     const tournaments = tournamentsData.events || [];
     if (!rankingsData.players || rankingsData.players.length === 0) return [];
 
     const now = new Date();
-    const oneYearAgo = new Date(); oneYearAgo.setFullYear(oneYearAgo.getFullYear() - 1);
-    const sixMonthsAgo = new Date(); sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
+    const oneYearAgo = new Date(now);
+    oneYearAgo.setFullYear(now.getFullYear() - 1);
+    const sixMonthsAgo = new Date(now);
+    sixMonthsAgo.setMonth(now.getMonth() - 6);
 
     // 1. Initialize Players
     const slugCounts = {};
     let allPlayers = rankingsData.players.map((p, idx) => {
-      const playerName = getRowValue(p, "Player") || p.Player;
+      const playerName = String(getRowValue(p, "Player") || p.Player || "").trim();
       const englishName = getRowValue(p, "English Name") || p['English Name'] || null;
-      const parsedRank = parseSheetNumber(getRowValue(p, "Rank") ?? p.Rank);
-      const rank = Number.isFinite(parsedRank) && parsedRank > 0 ? parsedRank : idx + 1;
+      const rank = getPlayerRankFromRow(p, idx);
 
       const src = englishName || playerName;
       let slug = createSafeSlug(src);
@@ -202,11 +408,17 @@ module.exports = async function () {
       };
     });
 
-    // 2. Process Data Links
+    // 2. Process Data Links (Case-insensitive matching)
+    const playerByKey = new Map();
+    allPlayers.forEach(p => {
+      const k = normalizePlayerKey(p.name);
+      if (k && !playerByKey.has(k)) playerByKey.set(k, p);
+    });
+
     tournaments.forEach(ev => {
       const dt = new Date(ev.date);
       ev.results.forEach(res => {
-        const pl = allPlayers.find(p => p.name === res.Player);
+        const pl = playerByKey.get(normalizePlayerKey(res.Player));
         if (pl) {
           const finish = parseInt(res.Finish, 10);
           const resChar = res['Main Character'] || res.Character || res.char || null;
@@ -224,10 +436,8 @@ module.exports = async function () {
       });
     });
 
-    historicalData.records.forEach(rec => {
-      const pl = allPlayers.find(p => p.name === rec.Player);
-      if (pl) pl.historicalData.push({ date: new Date(rec.Date), rank: parseInt(rec.Rank, 10) });
-    });
+    // Compute exact spreadsheet-based weekly ranks, Peak Rank (PR), and Weeks in Top 40 (TR)
+    computeLifetimeWeeklyRanks(allPlayers, tournaments, now, oneYearAgo);
 
     // Event Strength
     const evStr = tournaments.map(ev => ({ 
@@ -245,7 +455,6 @@ module.exports = async function () {
     // 3. Player Stats Calculation
     for (const p of allPlayers) {
       p.results.sort((a, b) => b.date - a.date);
-      p.historicalData.sort((a, b) => b.date - a.date);
       if (!p.mainCharacter) {
         const latestWithChar = p.results.find(r => r.character && r.character.toUpperCase() !== 'N/A');
         if (latestWithChar) p.mainCharacter = latestWithChar.character;
@@ -303,13 +512,9 @@ module.exports = async function () {
         placementIcon: best.icon || `${best.placement}`, tierName: getTierName(best.tier)
       };
 
-      // Historical & Recent
-      const hist = p.historicalData.filter(h => h.rank > 0);
-      p.stats_1yr.peakRank = hist.length ? Math.min(...hist.map(h => h.rank)) : null;
-      
+      // Recent Finish (6M)
       const recRes = p.results.filter(r => r.date >= sixMonthsAgo);
       p.stats_recent.avgFinish = recRes.length >= 2 ? getAverage(recRes.map(r => r.placement)) : null;
-      p.stats_recent.weeksInTop40 = p.historicalData.filter(h => h.rank && h.rank <= 40).length;
 
       // Momentum Score
       if (r1y.length >= 2) {
@@ -327,13 +532,14 @@ module.exports = async function () {
       p.isQualified = r1y.length >= 4;
       
       const recMaj = recRes.filter(r => r.tier.startsWith('S')).map(r => r.placement);
+      const guaranteedPR = p.stats_1yr.peakRank || p.rank || null;
       p.stats = {
         V: p.trophies_1yr.victories, T3: p.trophies_1yr.top3, T8: p.trophies_1yr.top8, T16: p.trophies_1yr.top16,
         AF12: p.stats_1yr.avgFinish?.toFixed(2)??null, AF6: p.stats_recent.avgFinish?.toFixed(2)??null,
         AFM12: p.stats_1yr.avgFinishMajors?.toFixed(2)??null, AFM6: (recMaj.length>=2 ? getAverage(recMaj).toFixed(2) : null),
         APP: p.stats_1yr.avgPercentile?.toFixed(2)??null, APM: p.stats_1yr.avgPercentileMajors?.toFixed(2)??null,
         PF: null, MS: p.stats_1yr.momentumScore?.toFixed(2)??null, TDR: p.stats_1yr.TDR?.toFixed(2)??null,
-        PR: p.stats_1yr.peakRank, TR: p.stats_recent.weeksInTop40, FGPI: null
+        PR: guaranteedPR, TR: p.stats_recent.weeksInTop40, FGPI: null
       };
       p.tooltips = TOOLTIP_TEXT; p.statRanks = {}; p.rawFGPI = null;
     }
@@ -415,7 +621,6 @@ module.exports = async function () {
 
     const rawS = fgpiPlayers.map(p => p.rawFGPI).filter(v => v !== null);
     const minR = Math.min(...rawS), maxR = Math.max(...rawS), rng = maxR - minR;
-    // Scale fgpiNormalized across 0.01..99.99 so active players never show 0.00
     fgpiPlayers.forEach(p => {
       if (p.rawFGPI !== null) {
         const n = rng === 0 ? 50 : 0.01 + (((p.rawFGPI - minR) / rng) * 99.98);
@@ -479,7 +684,7 @@ module.exports = async function () {
         p.countryRank = null;
       }
 
-      // 2. Character Specialist Rank (Normalized so A.K.I. / AKI / spacing always group together)
+      // 2. Character Specialist Rank
       const charKey = (p.mainCharacter && p.mainCharacter !== 'N/A')
         ? getCharacterFileName(p.mainCharacter)
         : null;
@@ -537,6 +742,7 @@ module.exports = async function () {
     return allPlayers;
 
   } catch (error) {
+    console.error("❌ ERROR in playerProfiles data loader:", error);
     return [];
   }
 };
