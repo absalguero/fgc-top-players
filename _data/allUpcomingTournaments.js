@@ -1,39 +1,12 @@
+"use strict";
+
 const fs = require("fs");
 const path = require("path");
 const { DateTime } = require("luxon");
 const archive = require("./upcoming-tournaments_archive.json");
-const { collectUpcomingForPlayers } = require("./lib/startggUpcoming");
-const loadRankings = require("./rankings.js");
 
-const GENERATED_PATH = path.join(__dirname, "upcomingTournamentsGenerated.json");
 const OVERRIDES_PATH = path.join(__dirname, "upcomingTournamentsOverrides.json");
 const TIER_SORT_ORDER = ["S+", "S", "A", "B"];
-
-function buildRankingPlayers(rankings) {
-  if (!rankings || !Array.isArray(rankings.players)) return [];
-  return rankings.players
-    .map((row, idx) => {
-      if (!row || !row.Player) return null;
-      const rawSlug =
-        row["Player ID"] ||
-        row["Slug"] ||
-        row["StartGG Slug"] ||
-        row["startgg_slug"] ||
-        row["StartGG"] ||
-        null;
-      if (!rawSlug) return null;
-
-      const parsedRank = Number(String(row.Rank || "").replace(/[^0-9.-]/g, ""));
-      const rank = Number.isFinite(parsedRank) && parsedRank > 0 ? parsedRank : idx + 1;
-
-      return {
-        name: String(row.Player).trim(),
-        startggSlug: String(rawSlug).trim(),
-        rank,
-      };
-    })
-    .filter((p) => p && p.rank <= 200);
-}
 
 function readJsonFile(filePath) {
   try {
@@ -49,38 +22,19 @@ function readJsonFile(filePath) {
   return {};
 }
 
-function mergeOverrides(base, overrides) {
-  const result = { ...base };
-  Object.entries(overrides || {}).forEach(([slug, override]) => {
-    const merged = {
-      ...(result[slug] || {}),
-      ...override,
-    };
-    ensureDerivedDates(merged);
-    result[slug] = merged;
-  });
-  return result;
-}
-
 function normalizeOverrides(rawOverrides) {
-  const manualOnlySlugs = new Set();
   const excludedSlugs = new Set();
   const normalized = {};
   Object.entries(rawOverrides || {}).forEach(([slug, value]) => {
-    if (value && typeof value === "object" && value.manualOnly) {
-      manualOnlySlugs.add(slug);
-      if (value.excludeFromSite) {
-        excludedSlugs.add(slug);
-      }
-      const { manualOnly, excludeFromSite, ...rest } = value;
-      normalized[slug] = rest;
-    } else if (value && typeof value === "object" && value.excludeFromSite) {
+    if (!value || typeof value !== "object") return;
+    if (value.excludeFromSite) {
       excludedSlugs.add(slug);
-    } else {
-      normalized[slug] = value;
+      return;
     }
+    const { manualOnly, excludeFromSite, ...rest } = value;
+    normalized[slug] = rest;
   });
-  return { normalized, manualOnlySlugs, excludedSlugs };
+  return { normalized, excludedSlugs };
 }
 
 function getStartTimestamp(data) {
@@ -210,6 +164,19 @@ function ensureDerivedDates(entry) {
   return entry;
 }
 
+function mergeOverrides(base, overrides) {
+  const result = { ...base };
+  Object.entries(overrides || {}).forEach(([slug, override]) => {
+    const merged = {
+      ...(result[slug] || {}),
+      ...override,
+    };
+    ensureDerivedDates(merged);
+    result[slug] = merged;
+  });
+  return result;
+}
+
 function sortObjectByStartDate(obj) {
   if (!obj || typeof obj !== "object") return {};
   const entries = Object.entries(obj);
@@ -247,96 +214,13 @@ function sortObjectByStartDate(obj) {
   return Object.fromEntries(entries);
 }
 
-/**
- * Strips generated entries down to ONLY name, url, tier, and notablePlayers
- * for upcomingTournamentsGenerated.json.
- */
-function formatForGeneratedJson(sortedDynamicTournaments) {
-  const minimal = {};
-  Object.entries(sortedDynamicTournaments || {}).forEach(([slug, data]) => {
-    if (!data || typeof data !== "object") return;
-    const cleanSlug = data.slug || slug;
-    const url =
-      data.startggUrl ||
-      data.url ||
-      data.website ||
-      `https://www.start.gg/tournament/${cleanSlug}/details`;
-
-    minimal[slug] = {
-      name: data.name || cleanSlug,
-      url,
-      tier: data.tier || "B",
-      notablePlayers: Array.isArray(data.notablePlayers) ? data.notablePlayers : [],
-    };
-  });
-  return minimal;
-}
-
 module.exports = async function () {
-  let dynamicTournaments = {};
   const rawOverrides = readJsonFile(OVERRIDES_PATH);
-  const { normalized: overrides, manualOnlySlugs, excludedSlugs } = normalizeOverrides(rawOverrides);
+  const { normalized: overrides, excludedSlugs } = normalizeOverrides(rawOverrides);
 
-  try {
-    const rankingsData = await loadRankings();
-    const players = buildRankingPlayers(rankingsData);
-
-    if (players.length) {
-      const { tournamentsBySlug } = await collectUpcomingForPlayers(players, {
-        topN: 200,
-        offlineOnly: true,
-      });
-      dynamicTournaments = tournamentsBySlug || {};
-    }
-  } catch (error) {
-    console.error("[allUpcomingTournaments] Failed to generate dynamic tournaments:", error.message);
-  }
-
-  manualOnlySlugs.forEach((slug) => {
-    if (dynamicTournaments[slug]) {
-      delete dynamicTournaments[slug];
-    }
-  });
-  excludedSlugs.forEach((slug) => {
-    if (dynamicTournaments[slug]) {
-      delete dynamicTournaments[slug];
-    }
-  });
-
-  // Sort chronologically first while start dates are still attached, then strip to 4 fields
-  Object.values(dynamicTournaments).forEach(ensureDerivedDates);
-  const sortedDynamic = sortObjectByStartDate(dynamicTournaments);
-  const minimalGenerated = formatForGeneratedJson(sortedDynamic);
-
-  try {
-    await fs.promises.writeFile(
-      GENERATED_PATH,
-      JSON.stringify(minimalGenerated, null, 2),
-      "utf8"
-    );
-  } catch (error) {
-    console.warn(
-      `[allUpcomingTournaments] Could not persist generated tournaments to ${GENERATED_PATH}:`,
-      error.message
-    );
-  }
-
-  // --- Site Data (Excludes dynamicTournaments completely!) ---
-  // Only manual overrides and archived events are returned to Eleventy for the live site.
-  let tournaments = {};
-
-  const filteredOverrides = { ...overrides };
-  excludedSlugs.forEach((slug) => {
-    delete filteredOverrides[slug];
-  });
-
-  // Apply overrides
-  tournaments = mergeOverrides(tournaments, filteredOverrides);
-
-  // Apply archive (highest priority)
+  // Merge strictly from overrides and archive (nothing auto-generated hits the site)
+  let tournaments = mergeOverrides({}, overrides);
   tournaments = mergeOverrides(tournaments, archive);
-
-  Object.values(tournaments).forEach(ensureDerivedDates);
 
   excludedSlugs.forEach((slug) => {
     if (tournaments[slug]) {
@@ -348,15 +232,11 @@ module.exports = async function () {
   Object.values(sorted).forEach(ensureDerivedDates);
 
   if (process.env.ELEVENTY_ENV === "development") {
-    console.log("⚠️  DEV MODE: filtering for valid Rated Tournaments first...");
     const validEntries = Object.entries(sorted).filter(([, tournament]) => {
       return tournament.tier !== undefined && !tournament.isArchived;
     });
-
-    const limitedEntries = validEntries.slice(0, 6);
-
-    console.log(`⚠️  DEV MODE: Returning ${limitedEntries.length} valid tournaments.`);
-    return Object.fromEntries(limitedEntries);
+    return Object.fromEntries(validEntries.slice(0, 6));
   }
+
   return sorted;
 };

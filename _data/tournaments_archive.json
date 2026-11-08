@@ -16908,7 +16908,7 @@
       },
       {
         "Player": "Protagonist",
-        "Player ID": "5.87E+52",
+        "Player ID": "58668e48",
         "Event": "LVL UP EXPO 2025",
         "Event ID": "lvl-up-expo-2025",
         "Date": "2025-04-25",
@@ -21498,7 +21498,7 @@
       },
       {
         "Player": "Psycho",
-        "Player ID": "895e9636",
+        "Player ID": "946a3003",
         "Event": "COMBO BREAKER 2025",
         "Event ID": "combo-breaker-2025",
         "Date": "2025-05-23",
@@ -22748,7 +22748,7 @@
       },
       {
         "Player": "Smoib",
-        "Player ID": "26390c97",
+        "Player ID": "f2d72a7c",
         "Event": "Headstomper 2025",
         "Event ID": "headstomper-2025",
         "Date": "2025-05-31",
@@ -29298,7 +29298,7 @@
       },
       {
         "Player": "Psycho",
-        "Player ID": "895e9636",
+        "Player ID": "946a3003",
         "Event": "BLINK RESPAWN 2025",
         "Event ID": "blink-respawn-2025",
         "Date": "2025-07-18",
@@ -32727,7 +32727,7 @@
         "Tier": "B"
       },
       {
-        "Player": "Psycho",
+        "Player": "Psycho (DE)",
         "Player ID": "895e9636",
         "Event": "CROSSOVER 2025",
         "Event ID": "crossover-2025",
@@ -36038,7 +36038,7 @@
       },
       {
         "Player": "Psycho",
-        "Player ID": "895e9636",
+        "Player ID": "946a3003",
         "Event": "Esports World Cup 2025",
         "Event ID": "",
         "Date": "2025-08-23",
@@ -46817,7 +46817,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "risc-2025-rumble-in-nrg-spectrum-castle": {
     "name": "R.I.S.C. 2025 (Rumble in NRG Spectrum Castle)",
@@ -47467,7 +47467,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "tec-in-place-4": {
     "name": "Tec In Place #4",
@@ -47607,7 +47607,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "tidal-waves-5": {
     "name": "Tidal Waves #5",
@@ -47987,7 +47987,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "clash-of-the-olympians-2025": {
     "name": "CLASH OF THE OLYMPIANS 2025",
@@ -68368,7 +68368,7 @@
       },
       {
         "Player": "Psycho",
-        "Player ID": "895e9636",
+        "Player ID": "946a3003",
         "Event": "COMBO BREAKER 2026",
         "Event ID": "combo-breaker-2026",
         "Date": "2026-05-22",
@@ -71098,7 +71098,7 @@
       },
       {
         "Player": "Psycho",
-        "Player ID": "895e9636",
+        "Player ID": "946a3003",
         "Event": "BLINK RESPAWN 2026",
         "Event ID": "blink-respawn-2026",
         "Date": "2026-06-05",
@@ -82568,7 +82568,7 @@
       },
       {
         "Player": "Psycho",
-        "Player ID": "895e9636",
+        "Player ID": "946a3003",
         "Event": "CEO 2026",
         "Event ID": "ceo-2026",
         "Date": "2026-08-14",
@@ -95637,7 +95637,7 @@
         "Tier": "B"
       },
       {
-        "Player": "Psycho",
+        "Player": "Psycho (DE)",
         "Player ID": "895e9636",
         "Event": "CROSSOVER 2026",
         "Event ID": "crossover-2026-1",
@@ -96094,6 +96094,1306 @@
         "Date": "2026-11-01",
         "Finish": "7",
         "Entrants": "8",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "headstomper-2026": {
+    "name": "Headstomper 2026",
+    "date": "2026-11-06",
+    "slug": "headstomper-2026",
+    "Tier": "B",
+    "Entrants": "108",
+    "results": [
+      {
+        "Player": "Rikemansbarnet",
+        "Player ID": "2d28adb5",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "1",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "LinkNova",
+        "Player ID": "ea574546",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "2",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "ANDREJ",
+        "Player ID": "77bf091f",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "3",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Matt Hazard",
+        "Player ID": "71d51138",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "4",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Fang",
+        "Player ID": "bc06df88",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "5",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Oakhogdweller",
+        "Player ID": "1e701e35",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "5",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "maumas",
+        "Player ID": "fdd16a53",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "7",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kwiddo",
+        "Player ID": "d143ac4c",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "7",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Gusing",
+        "Player ID": "f41b0cb6",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "9",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "ixion_90",
+        "Player ID": "b71fbeea",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "9",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Leo",
+        "Player ID": "f131e5f3",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "9",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "GurkSlukarN",
+        "Player ID": "33af3e6a",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "9",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rotbah",
+        "Player ID": "db29001d",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "13",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "The Arpeggiator",
+        "Player ID": "d65210c6",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "13",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Nezumi",
+        "Player ID": "f4d624ce",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "13",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bellarina",
+        "Player ID": "ef693dc1",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "13",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Warttih",
+        "Player ID": "a5f59cc4",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "17",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Lima Von Aida",
+        "Player ID": "ab47195b",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "17",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Groof",
+        "Player ID": "d59f0431",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "17",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Wainan",
+        "Player ID": "1453fa62",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "17",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "yosh",
+        "Player ID": "3891a40e",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "17",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mathew",
+        "Player ID": "d768472e",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "17",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "ParmeSean",
+        "Player ID": "dde9270e",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "17",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jenxey",
+        "Player ID": "a7f0a716",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "17",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Smoib",
+        "Player ID": "f2d72a7c",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "25",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "nam",
+        "Player ID": "d8ee9783",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "25",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "KongoBongo",
+        "Player ID": "82cc501f",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "25",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "BansheeBomb",
+        "Player ID": "ef43f35b",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "25",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Sorgmantel",
+        "Player ID": "ee3c8ae1",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "25",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Trickster",
+        "Player ID": "11520ec3",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "25",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Evil_Yves",
+        "Player ID": "3a87bd0c",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "25",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Farton Porongas",
+        "Player ID": "1b0e1c9a",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "25",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Nidhug",
+        "Player ID": "62dc4fee",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "33",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "kaltyir",
+        "Player ID": "72df87e6",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "33",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "CADropper",
+        "Player ID": "5687e754",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "33",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jollebrolle",
+        "Player ID": "debf0560",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "33",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "HejaBajen",
+        "Player ID": "f76c0bd1",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "33",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Roozu",
+        "Player ID": "152833da",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "33",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "ThunderBear",
+        "Player ID": "d9184259",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "33",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Skroll",
+        "Player ID": "89dbc314",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "33",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kajis",
+        "Player ID": "abe2079c",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "33",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jufee",
+        "Player ID": "fdf2d7e3",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "33",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "overzealous",
+        "Player ID": "02eea0da",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "33",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "PolarChibi",
+        "Player ID": "f3bc4a42",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "33",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "dysfori",
+        "Player ID": "90f3dd6c",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "33",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Maven",
+        "Player ID": "ff8db16a",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "33",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "king uwu rawr",
+        "Player ID": "2c5403b4",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "33",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Poborskay",
+        "Player ID": "b1111c0c",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "33",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "YAZBAT",
+        "Player ID": "bc944860",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "49",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Turbop",
+        "Player ID": "83f36102",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "49",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "spoon",
+        "Player ID": "e261d136",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "49",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "RyyK",
+        "Player ID": "7b62d07b",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "49",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "TunikaG",
+        "Player ID": "c62d6593",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "49",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Gojs",
+        "Player ID": "5c98f526",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "49",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Crafekster",
+        "Player ID": "c81301ee",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "49",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Arch",
+        "Player ID": "6ff3557a",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "49",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "ShorePlain",
+        "Player ID": "0713c396",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "49",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ducster",
+        "Player ID": "bb91b645",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "49",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Stuart Little",
+        "Player ID": "0b7dc71b",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "49",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Datrex",
+        "Player ID": "e6127607",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "49",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Tung",
+        "Player ID": "ce470950",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "49",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "YatogamiNL",
+        "Player ID": "bb9e1354",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "49",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "tree",
+        "Player ID": "794913f5",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "49",
+        "Entrants": "108",
+        "Tier": "B"
+      },
+      {
+        "Player": "Shimmy Åkesson",
+        "Player ID": "16eaeab8",
+        "Event": "Headstomper 2026",
+        "Event ID": "headstomper-2026",
+        "Date": "2026-11-07",
+        "Finish": "49",
+        "Entrants": "108",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "socal-knockout-2026": {
+    "name": "SoCal Knockout 2026",
+    "date": "2026-11-06",
+    "slug": "socal-knockout-2026",
+    "Tier": "B",
+    "Entrants": "127",
+    "results": [
+      {
+        "Player": "axlshingo",
+        "Player ID": "437a975e",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "1",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pendesune",
+        "Player ID": "fecf523b",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "2",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Flappy",
+        "Player ID": "cf541744",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "3",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "SeeJay",
+        "Player ID": "38f71f63",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "4",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Freezie",
+        "Player ID": "300a2d8c",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "5",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "TreeWiz",
+        "Player ID": "77fc0194",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "5",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "chumpslayer",
+        "Player ID": "f1815d2f",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "7",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "NinjaBlaze",
+        "Player ID": "779a0784",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "7",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "LouisCampbell",
+        "Player ID": "63ce7800",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "9",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "SIDA",
+        "Player ID": "85d07830",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "9",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "SushiHeaven",
+        "Player ID": "ce06e2b0",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "9",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dodger",
+        "Player ID": "b7ae9557",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "9",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Young_Gouki",
+        "Player ID": "94187955",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "13",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "SodaCan",
+        "Player ID": "fb9a1c7b",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "13",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Gnarly (US)",
+        "Player ID": "faef9301",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "13",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Samaro",
+        "Player ID": "f2c47951",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "13",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Catalyst",
+        "Player ID": "feb0d4a6",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "17",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Exia",
+        "Player ID": "f490f867",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "17",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cheez",
+        "Player ID": "ff0ebebe",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "17",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Flaquito",
+        "Player ID": "70d77226",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "17",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "King Eric",
+        "Player ID": "0937cb76",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "17",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Zensei",
+        "Player ID": "70cb12a4",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "17",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Yamakookie",
+        "Player ID": "6cdaf69e",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "17",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Chef Dchong",
+        "Player ID": "0d2b8494",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "17",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Fistoffury",
+        "Player ID": "5a7016d6",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "25",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Silvert",
+        "Player ID": "d179b7a4",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "25",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "C. YA",
+        "Player ID": "36513805",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "25",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Hexfactor",
+        "Player ID": "edeb38cc",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "25",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "JettSett",
+        "Player ID": "d45479e1",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "25",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Knee_Khan",
+        "Player ID": "082ea9be",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "25",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Tengoman",
+        "Player ID": "00c09e43",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "25",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mr Tamales",
+        "Player ID": "0e1f0072",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "25",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Charlie",
+        "Player ID": "facce731",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "33",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Daily Tayne",
+        "Player ID": "05d9449e",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "33",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "DabbleKing",
+        "Player ID": "8d694119",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "33",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dr1ftwood",
+        "Player ID": "f0e908c7",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "33",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Hannibowl",
+        "Player ID": "8b7fc1f5",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "33",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "rpscrubley",
+        "Player ID": "608071c5",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "33",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Strakaman",
+        "Player ID": "3fabbe94",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "33",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "DommaLlama",
+        "Player ID": "16b5e483",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "33",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Faddy",
+        "Player ID": "265fe341",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "33",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jgo",
+        "Player ID": "39d75a6b",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "33",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "BigWheat",
+        "Player ID": "d6f86ada",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "33",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Protagonist",
+        "Player ID": "58668e48",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "33",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "El Cubano Loco",
+        "Player ID": "7b12aa23",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "33",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "DjNova",
+        "Player ID": "aaabcd30",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "33",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "KingofMilktea",
+        "Player ID": "9ea91a8d",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "33",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Fightprovoker",
+        "Player ID": "3f067738",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "33",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "AuraBlueLite",
+        "Player ID": "0d71db21",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "49",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Firkins",
+        "Player ID": "2fc9f6eb",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "49",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "whoopbiddy",
+        "Player ID": "7a94b9ad",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "49",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "GilbsSkills",
+        "Player ID": "55ba8fa7",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "49",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "BigMacCombo98",
+        "Player ID": "4d08742f",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "49",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Quattro",
+        "Player ID": "f3b295aa",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "49",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "MikeRossWatchUmamusume",
+        "Player ID": "46bd7880",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "49",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "wRath",
+        "Player ID": "fa58c8c9",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "49",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Wukong",
+        "Player ID": "863c9f42",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "49",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jack",
+        "Player ID": "fe25d091",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "49",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "ravenous",
+        "Player ID": "b49d4680",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "49",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Seanwhy",
+        "Player ID": "7c100905",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "49",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "KAITO",
+        "Player ID": "91f16a9d",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "49",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ryze",
+        "Player ID": "ad3647a0",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "49",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "OnlineGuile",
+        "Player ID": "00f73b0f",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "49",
+        "Entrants": "127",
+        "Tier": "B"
+      },
+      {
+        "Player": "n0thingman",
+        "Player ID": "1568b826",
+        "Event": "SoCal Knockout 2026",
+        "Event ID": "socal-knockout-2026",
+        "Date": "2026-11-07",
+        "Finish": "49",
+        "Entrants": "127",
         "Tier": "B"
       }
     ],

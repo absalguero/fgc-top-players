@@ -1,189 +1,71 @@
 {
-  "headstomper-2026": {
-    "name": "Headstomper 2026",
-    "slug": "headstomper-2026",
-    "startAt": 1793919600,
-    "endAt": 1794178740,
-    "startDate": "2026-11-06",
-    "endDate": "2026-11-08",
-    "dates": "Nov 6-8, 2026",
-    "location": "Hyllie stationsväg 29, 215 32 Malmö, Sverige",
-    "venueName": "",
-    "url": "https://www.start.gg/tournament/headstomper-2026",
+  "guildhouse-weekly-246-norcal-smash-and-fgc": {
+    "name": "Guildhouse Weekly 246 - Norcal Smash and FGC",
+    "date": "Nov 3-5, 2026",
+    "url": "https://www.start.gg/tournament/guildhouse-weekly-246-norcal-smash-and-fgc",
     "tier": "B",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "Headstomper 2026 is scheduled for Nov 6-8, 2026 in Hyllie stationsväg 29, 215 32 Malmö, Sverige. Featuring Street Fighter 6. Registered top players include LinkNova.",
     "notablePlayers": [
-      "LinkNova"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
+      "TreeWiz"
+    ]
   },
   "chip-damage-series-1": {
     "name": "Chip Damage Series #1",
-    "slug": "chip-damage-series-1",
-    "startAt": 1794132000,
-    "endAt": 1794168000,
-    "startDate": "2026-11-08",
-    "endDate": "2026-11-08",
-    "dates": "Nov 8, 2026",
-    "location": "Spinnekop 2-3, 1444 GN Purmerend, Nederland",
-    "venueName": "",
+    "date": "Nov 8, 2026",
     "url": "https://www.start.gg/tournament/chip-damage-series-1",
     "tier": "B",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "Chip Damage Series #1 is scheduled for Nov 8, 2026 in Spinnekop 2-3, 1444 GN Purmerend, Nederland. Featuring Street Fighter 6. Registered top players include semy28.",
     "notablePlayers": [
-      "semy28"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
+      "semy28",
+      "krackerlack"
+    ]
+  },
+  "electric-city-showdown-s4-finale": {
+    "name": "Electric City Showdown S4 FINALE",
+    "date": "Nov 14, 2026",
+    "url": "https://www.start.gg/tournament/electric-city-showdown-s4-finale",
+    "tier": "B",
+    "notablePlayers": [
+      "big mo"
+    ]
   },
   "saucy-presents-kickback-3-saucy-circuit-finale": {
     "name": "SAUCY Presents: KICKBACK 3 Saucy Circuit Finale",
-    "slug": "saucy-presents-kickback-3-saucy-circuit-finale",
-    "startAt": 1794675600,
-    "endAt": 1794722100,
-    "startDate": "2026-11-14",
-    "endDate": "2026-11-14",
-    "dates": "Nov 14, 2026",
-    "location": "13729 Research Blvd, Austin, TX 78750, USA",
-    "venueName": "",
+    "date": "Nov 14, 2026",
     "url": "https://www.start.gg/tournament/saucy-presents-kickback-3-saucy-circuit-finale",
     "tier": "B",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "SAUCY Presents: KICKBACK 3 Saucy Circuit Finale is scheduled for Nov 14, 2026 in 13729 Research Blvd, Austin, TX 78750, USA. Featuring Street Fighter 6. Registered top players include Stealth.",
     "notablePlayers": [
-      "Stealth"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
+      "Stealth",
+      "Sledge"
+    ]
   },
   "nantarena-26": {
     "name": "Nantarena 26",
-    "slug": "nantarena-26",
-    "startAt": 1795248000,
-    "endAt": 1795366800,
-    "startDate": "2026-11-21",
-    "endDate": "2026-11-22",
-    "dates": "Nov 21-22, 2026",
-    "location": "Rue Christian Pauc, 44300 Nantes, France",
-    "venueName": "",
+    "date": "Nov 21-22, 2026",
     "url": "https://www.start.gg/tournament/nantarena-26",
     "tier": "B",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "Nantarena 26 is scheduled for Nov 21-22, 2026 in Rue Christian Pauc, 44300 Nantes, France. Featuring Street Fighter 6. Registered top players include Dims.",
     "notablePlayers": [
       "Dims"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
+    ]
   },
-  "mindset-2026": {
-    "name": "MINDSET 2026",
-    "slug": "mindset-2026",
-    "startAt": 1795795200,
-    "endAt": 1795968000,
-    "startDate": "2026-11-27",
-    "endDate": "2026-11-29",
-    "dates": "Nov 27-29, 2026",
-    "location": "65 Rue Germaine Tillion, 92700 Colombes, France",
-    "venueName": "",
-    "url": "https://www.start.gg/tournament/mindset-2026",
+  "bx-dojo-4": {
+    "name": "BX Dojo #4",
+    "date": "Nov 21, 2026",
+    "url": "https://www.start.gg/tournament/bx-dojo-4",
     "tier": "B",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "MINDSET 2026 is scheduled for Nov 27-29, 2026 in 65 Rue Germaine Tillion, 92700 Colombes, France. Featuring Street Fighter 6. Registered top players include Mister Crimson, JuniorLeo, Dims.",
     "notablePlayers": [
-      "Mister Crimson",
-      "JuniorLeo",
-      "Dims"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
+      "M A L D O",
+      "HeyyPepito",
+      "Ritchy",
+      "Takamura",
+      "Senor Power"
+    ]
   },
-  "drowning-pools-2026": {
-    "name": "Drowning Pools 2026",
-    "slug": "drowning-pools-2026",
-    "startAt": 1796464800,
-    "endAt": 1796508000,
-    "startDate": "2026-12-05",
-    "endDate": "2026-12-05",
-    "dates": "Dec 5, 2026",
-    "location": "Metropolitan Cathedral, Brownlow Hill, Liverpool L3 5TQ, UK",
-    "venueName": "Britannia Adelphi Hotel",
-    "url": "https://www.start.gg/tournament/drowning-pools-2026",
+  "autplayed-2027": {
+    "name": "AUTplayed 2027",
+    "date": "Jan 23-24, 2027",
+    "url": "https://www.start.gg/tournament/autplayed-2027",
     "tier": "B",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "Drowning Pools 2026 is scheduled for Dec 5, 2026 in Metropolitan Cathedral, Brownlow Hill, Liverpool L3 5TQ, UK. Featuring Street Fighter 6. Registered top players include LinkNova, MysticSmash.",
     "notablePlayers": [
-      "LinkNova",
-      "MysticSmash"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
-  "frostfire-2027": {
-    "name": "Frostfire 2027",
-    "slug": "frostfire-2027",
-    "startAt": 1800025200,
-    "endAt": 1800241200,
-    "startDate": "2027-01-15",
-    "endDate": "2027-01-17",
-    "dates": "Jan 15-17, 2027",
-    "location": "1125 Colonel By Dr, Ottawa, ON K1S 5B6, Canada",
-    "venueName": "",
-    "url": "https://www.start.gg/tournament/frostfire-2027",
-    "tier": "B",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "Frostfire 2027 is scheduled for Jan 15-17, 2027 in 1125 Colonel By Dr, Ottawa, ON K1S 5B6, Canada. Featuring Street Fighter 6. Registered top players include Slice.",
-    "notablePlayers": [
-      "Slice"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
-  "red-line-fight-8-legendary-edition": {
-    "name": "RED LINE FIGHT 8: Legendary Edition",
-    "slug": "red-line-fight-8-legendary-edition",
-    "startAt": 1801315800,
-    "endAt": 1801425600,
-    "startDate": "2027-01-30",
-    "endDate": "2027-01-31",
-    "dates": "Jan 30-31, 2027",
-    "location": "Viale Piemonte, 41, 20093 Cologno Monzese MI, Italia",
-    "venueName": "",
-    "url": "https://www.start.gg/tournament/red-line-fight-8-legendary-edition",
-    "tier": "B",
-    "prizes": "TBA",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "",
-    "description": "RED LINE FIGHT 8: Legendary Edition is scheduled for Jan 30-31, 2027 in Viale Piemonte, 41, 20093 Cologno Monzese MI, Italia. Featuring Street Fighter 6. Registered top players include semy28.",
-    "notablePlayers": [
-      "semy28"
-    ],
-    "isArchived": false,
-    "excludeFromSite": false
+      "krackerlack"
+    ]
   }
 }

@@ -714,30 +714,26 @@ module.exports = async function () {
     });
 
     try {
-      const upcInput = allPlayers.filter(p => p.startggSlug).map(p => ({ name: p.name, startggSlug: p.startggSlug, profileSlug: p.slug, rank: p.rank }));
-      const { playerUpcomingMap } = await collectUpcomingForPlayers(upcInput, { topN: 100, offlineOnly: true });
-      const manualMap = {};
-      Object.entries(upcomingOverrides||{}).forEach(([k, v]) => {
-        const ev = normalizeManualEvent(k, v);
-        if (!ev) return;
-        const targets = v.playerSlugs || (v.notablePlayers?.map(n => createSafeSlug(n))) || [];
-        targets.forEach(ts => { 
-          const s = ts?.trim().toLowerCase(); 
-          if (s) { manualMap[s] = manualMap[s] || []; manualMap[s].push(ev); }
-        });
-      });
-      allPlayers.forEach(p => {
-        const upc = (playerUpcomingMap[p.slug] || []).filter(e => !EXCLUDED_TOURNAMENT_SLUGS.has(e.slug));
-        const man = manualMap[p.slug] || [];
-        man.forEach(m => {
-          const idx = upc.findIndex(u => u.slug === m.slug);
-          if (idx >= 0) upc[idx] = m; else upc.push(m);
-        });
-        p.upcomingTournaments = upc.sort((a, b) => (new Date(a.startDate) - new Date(b.startDate)) || a.name.localeCompare(b.name));
-      });
-    } catch (e) {
-      // Ignore upcoming tournaments fetch failure gracefully
-    }
+   const manualMap = {};
+   Object.entries(upcomingOverrides || {}).forEach(([k, v]) => {
+     const ev = normalizeManualEvent(k, v);
+     if (!ev) return;
+     const targets = v.playerSlugs || (v.notablePlayers?.map(n => createSafeSlug(n))) || [];
+     targets.forEach(ts => {
+       const s = ts?.trim().toLowerCase();
+       if (s) {
+         manualMap[s] = manualMap[s] || [];
+         manualMap[s].push(ev);
+       }
+     });
+   });
+   allPlayers.forEach(p => {
+     const man = (manualMap[p.slug] || []).filter(e => !EXCLUDED_TOURNAMENT_SLUGS.has(e.slug));
+     p.upcomingTournaments = man.sort((a, b) => (new Date(a.startDate) - new Date(b.startDate)) || a.name.localeCompare(b.name));
+   });
+ } catch (e) {
+   // Ignore upcoming tournaments processing failure gracefully
+ }
 
     return allPlayers;
 

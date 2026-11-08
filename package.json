@@ -10,7 +10,9 @@
     "dev": "npm run dev:eleventy",
     "pagefind:watch": "onchange \"_site/**/*\" --exclude \"_site/pagefind/**\" --await-write-finish 200 --kill --initial -- npm run pagefind",
     "dev:search": "concurrently -k -n eleventy,pagefind -c auto \"npm:dev:eleventy\" \"npm:pagefind:watch\"",
-    "start": "npm run dev"
+    "start": "npm run dev",
+    "scout": "node scripts/scoutUpcoming.js",
+    "scout:all": "node scripts/scoutUpcoming.js --all"
   },
   "repository": {
     "type": "git",
