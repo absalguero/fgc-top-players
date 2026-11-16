@@ -1598,7 +1598,7 @@
       },
       {
         "Player": "PepeBogard",
-        "Player ID": "2318750",
+        "Player ID": "02318750",
         "Event": "Astral Finish 2024",
         "Event ID": "astral-finish-2024",
         "Date": "2024-11-16",
@@ -2048,7 +2048,7 @@
     "results": [
       {
         "Player": "Broly",
-        "Player ID": "1d46266e",
+        "Player ID": "e98d292d",
         "Event": "BATTLE COLISEUM 2024",
         "Event ID": "battle-coliseum-2024",
         "Date": "2024-11-16",
@@ -20318,7 +20318,7 @@
       },
       {
         "Player": "XiaoXu",
-        "Player ID": "gtwxiaoxu",
+        "Player ID": "3fcb095e",
         "Event": "HERO ESPORTS Asian Champions League 2025",
         "Event ID": "hero-esports-asian-champions-league-2",
         "Date": "2025-05-16",
@@ -20378,7 +20378,7 @@
       },
       {
         "Player": "XiaoZhai",
-        "Player ID": "t1oil-king",
+        "Player ID": "ba4aa5ee",
         "Event": "HERO ESPORTS Asian Champions League 2025",
         "Event ID": "hero-esports-asian-champions-league-2",
         "Date": "2025-05-16",
@@ -20678,7 +20678,7 @@
       },
       {
         "Player": "Yagami",
-        "Player ID": "hotkuroasing",
+        "Player ID": "54282862",
         "Event": "HERO ESPORTS Asian Champions League 2025",
         "Event ID": "hero-esports-asian-champions-league-2",
         "Date": "2025-05-16",
@@ -21968,7 +21968,7 @@
       },
       {
         "Player": "rave",
-        "Player ID": "a",
+        "Player ID": "f4b4929e",
         "Event": "COMBO BREAKER 2025",
         "Event ID": "combo-breaker-2025",
         "Date": "2025-05-23",
@@ -42708,7 +42708,7 @@
       },
       {
         "Player": "Tar",
-        "Player ID": "tar",
+        "Player ID": "73f17c3e",
         "Event": "Roundhouse 2025",
         "Event ID": "roundhouse-2025",
         "Date": "2025-09-27",
@@ -45678,7 +45678,7 @@
       },
       {
         "Player": "XiaoXu",
-        "Player ID": "gtwxiaoxu",
+        "Player ID": "3fcb095e",
         "Event": "KUAISHOU FIGHTCLUB CHAMPIONSHIP VI",
         "Event ID": "vi-kuaishou-fightclub-championship-vi-chengdu",
         "Date": "2025-10-30",
@@ -48517,7 +48517,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "drowning-pools-2025": {
     "name": "Drowning Pools 2025",
@@ -49167,7 +49167,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "midwest-mixfest-25": {
     "name": "Midwest Mixfest '25",
@@ -49817,7 +49817,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "battle-coliseum-2025": {
     "name": "BATTLE COLISEUM 2025",
@@ -50467,7 +50467,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "astral-finish-2025": {
     "name": "Astral Finish 2025",
@@ -51117,7 +51117,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "beepro-cup-2025": {
     "name": "BeePro Cup 2025",
@@ -55618,7 +55618,7 @@
       },
       {
         "Player": "Momovan",
-        "Player ID": "0c859e15",
+        "Player ID": "188cd4be",
         "Event": "Thaiger Uppercut (TGU) 2025",
         "Event ID": "tgu-2025",
         "Date": "2025-11-28",
@@ -58378,7 +58378,7 @@
       },
       {
         "Player": "XiaoZhai",
-        "Player ID": "t1oil-king",
+        "Player ID": "ba4aa5ee",
         "Event": "GTW 2026 New Year Championship",
         "Event ID": "",
         "Date": "2026-02-07",
@@ -60388,7 +60388,7 @@
       },
       {
         "Player": "juice",
-        "Player ID": "df82bb68",
+        "Player ID": "ed97d2c5",
         "Event": "MAX MODE 2026",
         "Event ID": "max-mode-2026",
         "Date": "2026-02-27",
@@ -96028,7 +96028,7 @@
       },
       {
         "Player": "XiaoXu",
-        "Player ID": "gtwxiaoxu",
+        "Player ID": "3fcb095e",
         "Event": "CPT 2026 World Warrior: China Regional Final @ FightClub Championship 7",
         "Event ID": "",
         "Date": "2026-11-01",
@@ -96068,7 +96068,7 @@
       },
       {
         "Player": "XiaoZhai",
-        "Player ID": "t1oil-king",
+        "Player ID": "ba4aa5ee",
         "Event": "CPT 2026 World Warrior: China Regional Final @ FightClub Championship 7",
         "Event ID": "",
         "Date": "2026-11-01",
@@ -97394,6 +97394,1956 @@
         "Date": "2026-11-07",
         "Finish": "49",
         "Entrants": "127",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "midwest-mixfest-26": {
+    "name": "Midwest Mixfest '26",
+    "date": "2026-11-13",
+    "slug": "midwest-mixfest-26",
+    "Tier": "B",
+    "Entrants": "126",
+    "results": [
+      {
+        "Player": "Shine",
+        "Player ID": "b3bd73c6",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "1",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "ARRUUMS",
+        "Player ID": "6302dcc2",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "2",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Khangaroo",
+        "Player ID": "f5521e9c",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "3",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Docmorales24",
+        "Player ID": "4c6d1e01",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "4",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Tar",
+        "Player ID": "73f17c3e",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "5",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "FGMarathon",
+        "Player ID": "bc0f952d",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "5",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "blakpanda",
+        "Player ID": "81beaad0",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "7",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Red Queen",
+        "Player ID": "e42dd7fc",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "7",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Play_guy",
+        "Player ID": "f2a9b3fc",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "9",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "rave",
+        "Player ID": "f4b4929e",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "9",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Plight",
+        "Player ID": "525cd1a0",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "9",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Boeken77",
+        "Player ID": "8e639990",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "9",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Nagoob",
+        "Player ID": "43ec08b6",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "13",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "TroubledEnd",
+        "Player ID": "89f19ec8",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "13",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "cill",
+        "Player ID": "a31afda8",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "13",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "GrizzlayBear",
+        "Player ID": "a0162bc0",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "13",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jon_Rahmen",
+        "Player ID": "dd821336",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "17",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Vaxtrum",
+        "Player ID": "217086b9",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "17",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "LukeSFH",
+        "Player ID": "e68a2581",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "17",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bakarina",
+        "Player ID": "e3fb2e70",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "17",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Fiebs",
+        "Player ID": "ced1f1c0",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "17",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "lizardman",
+        "Player ID": "f2b22f78",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "17",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Grublet",
+        "Player ID": "18383861",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "17",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Darksidezoom",
+        "Player ID": "cc4506a8",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "17",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "NGamer3k",
+        "Player ID": "9a1695e4",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "25",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mr Champloo",
+        "Player ID": "5d40c841",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "25",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "MBiggums",
+        "Player ID": "166fa36c",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "25",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Chocobo Racing",
+        "Player ID": "91a6ecab",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "25",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "majestic",
+        "Player ID": "7bbc1a5b",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "25",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "PsiSmasher",
+        "Player ID": "aa22cf8e",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "25",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Drama",
+        "Player ID": "514645b8",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "25",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "caz",
+        "Player ID": "e37656a9",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "25",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "ADDICT",
+        "Player ID": "f7b574d9",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "33",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Overhaul",
+        "Player ID": "81c6529c",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "33",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "0wen2",
+        "Player ID": "3ecbc46f",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "33",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "beta",
+        "Player ID": "28359322",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "33",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "B.Duff",
+        "Player ID": "52f0e203",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "33",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Isaiah",
+        "Player ID": "52748554",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "33",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "man i love glizzys",
+        "Player ID": "ee5ab58a",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "33",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "seph",
+        "Player ID": "ff8ab079",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "33",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "BLORTH",
+        "Player ID": "f7704ae3",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "33",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "PheNOM (US)",
+        "Player ID": "9eda5e41",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "33",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Blonde Bombshell",
+        "Player ID": "a41bc6f6",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "33",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Juice",
+        "Player ID": "ed97d2c5",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "33",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bingus",
+        "Player ID": "6b41ba25",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "33",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "IDChronicle",
+        "Player ID": "bc758a50",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "33",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "TheDarkestLink",
+        "Player ID": "48f63a52",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "33",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Fosh",
+        "Player ID": "2cb33309",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "33",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Miscotto",
+        "Player ID": "e37a92a0",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "49",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "FRANX",
+        "Player ID": "5f845ade",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "49",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "dunham",
+        "Player ID": "fed2263e",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "49",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Godspelmessenger",
+        "Player ID": "aba1fd07",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "49",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Atsuya",
+        "Player ID": "6d731b78",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "49",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "puffa",
+        "Player ID": "33e85cc6",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "49",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Quinn",
+        "Player ID": "b9536aaf",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "49",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Vtuber Enjoyer",
+        "Player ID": "dab4b063",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "49",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Gunpaw",
+        "Player ID": "dabf27c1",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "49",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "LunaRaven7",
+        "Player ID": "8859e9bd",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "49",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "AquaKnight",
+        "Player ID": "7b19c3ce",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "49",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Aarohunter",
+        "Player ID": "33fa012b",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "49",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jar",
+        "Player ID": "3f4799c9",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "49",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Travnks",
+        "Player ID": "d543a160",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "49",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "Lazy Fair",
+        "Player ID": "8a20511c",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "49",
+        "Entrants": "126",
+        "Tier": "B"
+      },
+      {
+        "Player": "DNBcool",
+        "Player ID": "bdbe495a",
+        "Event": "Midwest Mixfest '26",
+        "Event ID": "midwest-mixfest-26",
+        "Date": "2026-11-14",
+        "Finish": "49",
+        "Entrants": "126",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "astral-finish-2026": {
+    "name": "Astral Finish 2026",
+    "date": "2026-11-13",
+    "slug": "astral-finish-2026",
+    "Tier": "B",
+    "Entrants": "75",
+    "results": [
+      {
+        "Player": "KUSANAGI (MX)",
+        "Player ID": "208b0900",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "2",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "AxL-",
+        "Player ID": "43824b1a",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "3",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "MJ_Gama",
+        "Player ID": "4484e542",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "4",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Uriel Velorio",
+        "Player ID": "55790db9",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "4",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "lSecto",
+        "Player ID": "9546ed0d",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "5",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jazdero",
+        "Player ID": "af303b7c",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "5",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Moñañu",
+        "Player ID": "19951b0a",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "7",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rey del Tekino",
+        "Player ID": "3ffd81ac",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "7",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Caelum",
+        "Player ID": "25fed002",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "9",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "DIO",
+        "Player ID": "2d34fad8",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "9",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "ZombieAzteka",
+        "Player ID": "39b56c28",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "9",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Izana",
+        "Player ID": "8be778f6",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "9",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "MrDino023",
+        "Player ID": "7b0d3b8a",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "13",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Honguito",
+        "Player ID": "91b6a15a",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "13",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Hokuto",
+        "Player ID": "3fec3c89",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "13",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "DiegoMaquinito",
+        "Player ID": "a5597c9c",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "13",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "RicaTumbado",
+        "Player ID": "a4b2c2ce",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "17",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "EGHCO",
+        "Player ID": "ee9946fa",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "17",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Onozayim",
+        "Player ID": "c5274030",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "17",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Castro",
+        "Player ID": "aa96c909",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "17",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Koga",
+        "Player ID": "b603d277",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "17",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "MARMOTA EKUN",
+        "Player ID": "24a321e9",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "17",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "TT/Lingas",
+        "Player ID": "d63e076a",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "17",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mauhvenom",
+        "Player ID": "22e10f38",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "17",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Niño",
+        "Player ID": "c4df9888",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "25",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Aldrich",
+        "Player ID": "1e082ee5",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "25",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Papá Tulinos",
+        "Player ID": "5a502265",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "25",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Adexios",
+        "Player ID": "7ca22d44",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "25",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "FuerzaDON",
+        "Player ID": "1e917a9f",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "25",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "blackmoreyaya",
+        "Player ID": "f8bc79ec",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "25",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Whisky",
+        "Player ID": "3c817ca4",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "25",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Iñaqui",
+        "Player ID": "44d5f87f",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "25",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "PepeBogard",
+        "Player ID": "02318750",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "33",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "LAB",
+        "Player ID": "65a4f9c0",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "33",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dios3000",
+        "Player ID": "86f30bb7",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "33",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Aioria",
+        "Player ID": "24c79133",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "33",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Milo Scorpius",
+        "Player ID": "7309efb6",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "33",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jean-Carlo",
+        "Player ID": "b5f07796",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "33",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kolbe",
+        "Player ID": "fb569999",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "33",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Broly",
+        "Player ID": "e98d292d",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "33",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Darkluigui",
+        "Player ID": "cbcdf94b",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "33",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "yge9999",
+        "Player ID": "40da7028",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "33",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Chowder Hat",
+        "Player ID": "40713eca",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "33",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "MykeNava",
+        "Player ID": "632b53ce",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "33",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Spooky_Zoldyck",
+        "Player ID": "0116c023",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "33",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "El divino Xmas",
+        "Player ID": "2be01f4d",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "33",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Chacmander",
+        "Player ID": "7efe0ccc",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "33",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Daubeny",
+        "Player ID": "85de832c",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "33",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Sailor Boo",
+        "Player ID": "086af393",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "49",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "PsicRogelio",
+        "Player ID": "1edc2a01",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "49",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "yaeru",
+        "Player ID": "307e7018",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "49",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "yisusloco1",
+        "Player ID": "082ffb94",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "49",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Yeriko",
+        "Player ID": "933516f3",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "49",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "KinnikuGabo",
+        "Player ID": "e9f55797",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "49",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Arzenan",
+        "Player ID": "da6e35b8",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "49",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Rado Luna",
+        "Player ID": "34ca1a3c",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "49",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Steel",
+        "Player ID": "2c612854",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "49",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Sheldon Sempai",
+        "Player ID": "9025f702",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "49",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "tedwinterstar12",
+        "Player ID": "5bad56cb",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "49",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "ZanVG",
+        "Player ID": "239ccb34",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "49",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Magic Pixel Mexican",
+        "Player ID": "37008263",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "49",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "KIM_APB",
+        "Player ID": "d08b20e5",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "49",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "El Zigg",
+        "Player ID": "04443ff1",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "49",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "Fieldborne",
+        "Player ID": "7605395f",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
+        "Finish": "49",
+        "Entrants": "75",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "thaiger-uppercut-tgu-2026": {
+    "name": "Thaiger Uppercut (TGU) 2026",
+    "date": "2026-11-12",
+    "slug": "thaiger-uppercut-tgu-2026",
+    "Tier": "B",
+    "Entrants": "158",
+    "results": [
+      {
+        "Player": "NYChrisG",
+        "Player ID": "dab1e1cc",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "1",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "b3lLz",
+        "Player ID": "35dc4778",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "2",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "XiaoZhai",
+        "Player ID": "ba4aa5ee",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "3",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "Music4friends",
+        "Player ID": "561aa0f6",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "4",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ayane",
+        "Player ID": "4cb7e298",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "5",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "XiaoXu",
+        "Player ID": "3fcb095e",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "5",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "SUNHUI",
+        "Player ID": "b0c5745d",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "7",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "Xiao Hu",
+        "Player ID": "d013deba",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "7",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "kotetsu",
+        "Player ID": "d66faf09",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "9",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "Vita",
+        "Player ID": "777de3c4",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "9",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "Yendor",
+        "Player ID": "3713605b",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "9",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "びこ太郎",
+        "Player ID": "44ae4ca1",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "9",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "Xian",
+        "Player ID": "86cbcadc",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "13",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "Akainu",
+        "Player ID": "3e909da2",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "13",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "Cornman",
+        "Player ID": "838289d2",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "13",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "Burnoutfighter",
+        "Player ID": "f3daa040",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "13",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "b_HAUNT",
+        "Player ID": "e9c3a48e",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "17",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "nezu",
+        "Player ID": "61922d24",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "17",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "Book",
+        "Player ID": "a1dca669",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "17",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "Gyanbu",
+        "Player ID": "f87e3c10",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "17",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "特务T",
+        "Player ID": "9b2005d7",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "17",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "Soju",
+        "Player ID": "5218977e",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "17",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "ppman",
+        "Player ID": "937f946e",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "17",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "XiaoPang",
+        "Player ID": "b88536e8",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "17",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "fubarduck",
+        "Player ID": "889bc450",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "25",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "Acidrock",
+        "Player ID": "0b258672",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "25",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "happymanth",
+        "Player ID": "ac0236f0",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "25",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "JoJo0928",
+        "Player ID": "eb0fed36",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "25",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "MindRPG",
+        "Player ID": "f30ea99c",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "25",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "LinLin",
+        "Player ID": "1a64a714",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "25",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "もよ",
+        "Player ID": "c86ef324",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "25",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "Azaradin",
+        "Player ID": "b2b63242",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "25",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "AmNoobZ",
+        "Player ID": "4270e4c1",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "33",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "amato",
+        "Player ID": "f63d55be",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "33",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "shiranui26",
+        "Player ID": "803c086f",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "33",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "HiFightTH",
+        "Player ID": "51ff7c08",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "33",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "SunGouki",
+        "Player ID": "b05872cf",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "33",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "dippinbloo_",
+        "Player ID": "ac6922ee",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "33",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "PapaComin",
+        "Player ID": "96f8f6c5",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "33",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "Winto",
+        "Player ID": "dac04ddc",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "33",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "Lucifia",
+        "Player ID": "8a29d2a3",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "33",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "Takahashi",
+        "Player ID": "171e3ff0",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "33",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "TheReaperSama",
+        "Player ID": "359e1c11",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "33",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "ZinogreKun",
+        "Player ID": "456ee78e",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "33",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "Meonji",
+        "Player ID": "72299f0b",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "33",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "Diden",
+        "Player ID": "f409f03e",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "33",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "JeonDDing",
+        "Player ID": "f6aa8a2b",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "33",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "JWong",
+        "Player ID": "9e56356b",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "33",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "Maydic",
+        "Player ID": "7ea6bd2b",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "49",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "Yagami",
+        "Player ID": "54282862",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "49",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "Pikachuwin",
+        "Player ID": "79ff74f6",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "49",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "XaeroTH",
+        "Player ID": "510ce2fd",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "49",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "graceful",
+        "Player ID": "fc679096",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "49",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "MechaMEK",
+        "Player ID": "7c4884c7",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "49",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "Juvetic",
+        "Player ID": "eb92a76d",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "49",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "l3lackHB",
+        "Player ID": "d715a4aa",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "49",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "Nekon",
+        "Player ID": "772ed7ec",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "49",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "Jinkouyuki",
+        "Player ID": "d7770fa2",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "49",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "Workingdolls",
+        "Player ID": "86c703c1",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "49",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "DR",
+        "Player ID": "8dbed913",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "49",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "CandyB",
+        "Player ID": "017ad619",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "49",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "Momovan",
+        "Player ID": "188cd4be",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "49",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "Suthee001",
+        "Player ID": "11064e25",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "49",
+        "Entrants": "158",
+        "Tier": "B"
+      },
+      {
+        "Player": "ToonSoSad",
+        "Player ID": "5c9c0027",
+        "Event": "Thaiger Uppercut (TGU) 2026",
+        "Event ID": "tgu-2026",
+        "Date": "2026-11-13",
+        "Finish": "49",
+        "Entrants": "158",
         "Tier": "B"
       }
     ],

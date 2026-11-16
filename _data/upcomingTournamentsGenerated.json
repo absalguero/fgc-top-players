@@ -1,30 +1,11 @@
 {
-  "guildhouse-weekly-246-norcal-smash-and-fgc": {
-    "name": "Guildhouse Weekly 246 - Norcal Smash and FGC",
-    "date": "Nov 3-5, 2026",
-    "url": "https://www.start.gg/tournament/guildhouse-weekly-246-norcal-smash-and-fgc",
+  "battle-city-weekly-the-chamber-of-sages": {
+    "name": "Battle City Weekly: The Chamber of Sages",
+    "date": "Nov 13-14, 2026",
+    "url": "https://www.start.gg/tournament/battle-city-weekly-the-chamber-of-sages",
     "tier": "B",
     "notablePlayers": [
-      "TreeWiz"
-    ]
-  },
-  "chip-damage-series-1": {
-    "name": "Chip Damage Series #1",
-    "date": "Nov 8, 2026",
-    "url": "https://www.start.gg/tournament/chip-damage-series-1",
-    "tier": "B",
-    "notablePlayers": [
-      "semy28",
-      "krackerlack"
-    ]
-  },
-  "electric-city-showdown-s4-finale": {
-    "name": "Electric City Showdown S4 FINALE",
-    "date": "Nov 14, 2026",
-    "url": "https://www.start.gg/tournament/electric-city-showdown-s4-finale",
-    "tier": "B",
-    "notablePlayers": [
-      "big mo"
+      "Slice"
     ]
   },
   "saucy-presents-kickback-3-saucy-circuit-finale": {
@@ -33,17 +14,7 @@
     "url": "https://www.start.gg/tournament/saucy-presents-kickback-3-saucy-circuit-finale",
     "tier": "B",
     "notablePlayers": [
-      "Stealth",
-      "Sledge"
-    ]
-  },
-  "nantarena-26": {
-    "name": "Nantarena 26",
-    "date": "Nov 21-22, 2026",
-    "url": "https://www.start.gg/tournament/nantarena-26",
-    "tier": "B",
-    "notablePlayers": [
-      "Dims"
+      "Stealth"
     ]
   },
   "bx-dojo-4": {
@@ -52,20 +23,53 @@
     "url": "https://www.start.gg/tournament/bx-dojo-4",
     "tier": "B",
     "notablePlayers": [
-      "M A L D O",
-      "HeyyPepito",
+      "Kilzyou",
+      "Mister Crimson",
       "Ritchy",
-      "Takamura",
-      "Senor Power"
+      "Takamura"
     ]
   },
-  "autplayed-2027": {
-    "name": "AUTplayed 2027",
-    "date": "Jan 23-24, 2027",
-    "url": "https://www.start.gg/tournament/autplayed-2027",
+  "rmit-games-day-36": {
+    "name": "RMIT Games Day #36",
+    "date": "Nov 22, 2026",
+    "url": "https://www.start.gg/tournament/rmit-games-day-36",
     "tier": "B",
     "notablePlayers": [
-      "krackerlack"
+      "AmamiyaLen"
+    ]
+  },
+  "the-next-dimension-omega-ii": {
+    "name": "The Next Dimension: Omega II",
+    "date": "Dec 12, 2026",
+    "url": "https://www.start.gg/tournament/the-next-dimension-omega-ii",
+    "tier": "B",
+    "notablePlayers": [
+      "NY Mando"
+    ]
+  },
+  "hi-tech-sf6-01": {
+    "name": "Hi-tech SF6 #01",
+    "date": "Dec 19-20, 2026",
+    "url": "https://www.start.gg/tournament/hi-tech-sf6-01",
+    "tier": "B",
+    "notablePlayers": [
+      "Shigematsu",
+      "タンタンメン",
+      "kingsvega",
+      "watyawacha",
+      "Ryusei",
+      "Pipokun",
+      "Betty",
+      "Lemochin"
+    ]
+  },
+  "the-versus-festival-japan-habba-2027": {
+    "name": "The Versus Festival: Japan Habba 2027",
+    "date": "Jan 9-10, 2027",
+    "url": "https://www.start.gg/tournament/the-versus-festival-japan-habba-2027",
+    "tier": "B",
+    "notablePlayers": [
+      "タンタンメン"
     ]
   }
 }

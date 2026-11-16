@@ -14,6 +14,7 @@ const { collectUpcomingForPlayers } = require(path.join(DATA_DIR, "lib", "startg
 const loadRankings = require(path.join(DATA_DIR, "rankings.js"));
 
 const TIER_SORT_ORDER = ["S+", "S", "A", "B"];
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 function readJsonFile(filePath) {
   try {
@@ -77,6 +78,52 @@ function getStartTimestamp(data) {
   return Number.POSITIVE_INFINITY;
 }
 
+async function collectInRateLimitedBatches(players, batchSize = 50, delayMs = 40000) {
+  const combinedTournamentsBySlug = {};
+  const totalBatches = Math.ceil(players.length / batchSize);
+
+  for (let i = 0; i < players.length; i += batchSize) {
+    const batchNum = Math.floor(i / batchSize) + 1;
+    const chunk = players.slice(i, i + batchSize);
+    console.log(`⏳ Fetching batch ${batchNum}/${totalBatches} (Players ${i + 1}–${i + chunk.length})...`);
+
+    const { tournamentsBySlug } = await collectUpcomingForPlayers(chunk, {
+      topN: 200,
+      offlineOnly: true,
+    });
+
+    // Merge results and deduplicate notablePlayers across batches
+    Object.entries(tournamentsBySlug || {}).forEach(([slug, data]) => {
+      if (!combinedTournamentsBySlug[slug]) {
+        combinedTournamentsBySlug[slug] = {
+          ...data,
+          notablePlayers: [...(data.notablePlayers || [])],
+        };
+      } else {
+        const existing = combinedTournamentsBySlug[slug];
+        const mergedPlayers = new Set([
+          ...(existing.notablePlayers || []),
+          ...(data.notablePlayers || []),
+        ]);
+        existing.notablePlayers = Array.from(mergedPlayers);
+
+        // Keep highest calculated tier if later batch upgrades it
+        const tierRank = { "S+": 4, S: 3, A: 2, B: 1 };
+        if ((tierRank[data.tier] || 0) > (tierRank[existing.tier] || 0)) {
+          existing.tier = data.tier;
+        }
+      }
+    });
+
+    if (i + batchSize < players.length) {
+      console.log(`⏸️  Cooling down ${delayMs / 1000}s to respect start.gg's 80 req/min limit...`);
+      await sleep(delayMs);
+    }
+  }
+
+  return combinedTournamentsBySlug;
+}
+
 async function runScout() {
   const includeKnown = process.argv.includes("--all");
   console.log("🔍 Scouting start.gg for upcoming offline SF6 events (Top 200 players)...");
@@ -90,12 +137,7 @@ async function runScout() {
     return;
   }
 
-  const { tournamentsBySlug } = await collectUpcomingForPlayers(players, {
-    topN: 200,
-    offlineOnly: true,
-  });
-
-  const rawDiscovered = tournamentsBySlug || {};
+  const rawDiscovered = await collectInRateLimitedBatches(players, 50, 40000);
   const overrides = readJsonFile(OVERRIDES_PATH);
   const archive = readJsonFile(ARCHIVE_PATH);
 
@@ -107,7 +149,7 @@ async function runScout() {
 
   const entries = Object.entries(rawDiscovered).filter(([slug, data]) => {
     if (includeKnown) return true;
-    
+
     const cleanSlug = data.slug || slug;
     const normSlug = normalizeSlug(cleanSlug);
     const normName = normalizeSlug(data.name);
