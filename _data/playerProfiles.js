@@ -44,7 +44,7 @@ const BASE_POINTS_BY_FINISH = [
 ];
 
 const EVENT_CAP = 5;
-const TRACKING_EPOCH_ISO = "2025-11-10"; // Official start date for PR & TR tracking
+const TRACKING_EPOCH_ISO = "2025-11-11"; // Official start date for PR & TR tracking
 
 const TOOLTIP_TEXT = {
   FGPI: "Fighting Game Performance Index", TDR: "Tournament Difficulty Rating", PF: "Performance Floor",

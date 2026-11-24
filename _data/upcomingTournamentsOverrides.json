@@ -1,25 +1,4 @@
 {
-  "battle-coliseum-2026": {
-    "name": "Battle Coliseum 2026",
-    "slug": "battle-coliseum-2026",
-    "startAt": 1795132800,
-    "endAt": 1795391999,
-    "startDate": "2026-11-20",
-    "endDate": "2026-11-22",
-    "dates": "Nov 20-22, 2026",
-    "location": "Av. Manuel Bandeira, 360, Vila Leopoldina, São Paulo, SP 05317-020, Brazil",
-    "venueName": "STATE Innovation Center",
-    "url": "https://www.start.gg/tournament/battle-coliseum-2026/details",
-    "tier": "B",
-    "prizes": "TBD",
-    "game": "Street Fighter 6",
-    "streamLink": "",
-    "scheduleLink": "https://www.start.gg/tournament/battle-coliseum-2026/events",
-    "description": "<p>Organized by Fighting Games Club SP, <strong>Battle Coliseum 2026</strong> builds on a Brazilian tournament series that brought together regional competitors and international players for its 2025 edition. Returning to São Paulo, the event features an expanded multi-game program spanning established fighting game franchises and newer competitive releases. <strong>Street Fighter 6</strong> remains part of the main tournament lineup, bringing Brazil's competitive scene together with players from across the region.</p><p>The Street Fighter 6 tournament uses a double elimination format, with matches played on PC. Sets are best of three games through the early rounds, with the top eight moving to best of five. No Capcom Pro Tour designation or associated qualification reward is confirmed for this edition.</p><h3>Multi-Game Competition</h3><p>The wider lineup includes <strong>TEKKEN 8</strong>, <strong>Guilty Gear -Strive-</strong>, <strong>Granblue Fantasy Versus: Rising</strong>, <strong>2XKO</strong>, <strong>Fatal Fury: City of the Wolves</strong>, <strong>Marvel Tōkon: Fighting Souls</strong>, <strong>Mortal Kombat 1</strong>, <strong>The King of Fighters XV</strong>, <strong>Under Night In-Birth II Sys:Celes</strong>, <strong>Avatar Legends: The Fighting Game</strong>, and <strong>Brawlhalla</strong>. Several brackets carry external circuit designations, including an Arc World Tour Platinum event for Guilty Gear -Strive- and a five star World Tour event for Granblue Fantasy Versus: Rising. The schedule also includes the Brazilian Mortal Kombat 1 championship finals and an open Mortal Kombat 1 tournament with a listed prize pool. Competitors register through start.gg, where event details and tournament rules are published.</p>",
-    "notablePlayers": [],
-    "isArchived": false,
-    "excludeFromSite": false
-  },
   "mindset-2026": {
     "name": "MINDSET 2026",
     "slug": "mindset-2026",

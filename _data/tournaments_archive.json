@@ -50367,7 +50367,7 @@
         "Tier": "B"
       },
       {
-        "Player": "FABIO",
+        "Player": "FABIO (BR)",
         "Player ID": "6f527d39",
         "Event": "BATTLE COLISEUM 2025",
         "Event ID": "battle-coliseum-2025",
@@ -51767,7 +51767,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "emirates-showdown-2025": {
     "name": "Emirates Showdown 2025",
@@ -52417,7 +52417,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "saudi-eleague-season-4-championship": {
     "name": "Saudi eLeague Season 4 Championship",
@@ -52737,7 +52737,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "red-bull-legendus-street-fighter-6": {
     "name": "Red Bull LEGENDUS STREET FIGHTER 6 頂",
@@ -54037,7 +54037,7 @@
         "Tier": "B"
       }
     ],
-    "isArchived": false
+    "isArchived": true
   },
   "mindset-2025": {
     "name": "MINDSET 2025",
@@ -82057,7 +82057,7 @@
         "Tier": "B"
       },
       {
-        "Player": "Spike",
+        "Player": "Spike (BR)",
         "Player ID": "31413f28",
         "Event": "KOMITÊ ARENA 2026",
         "Event ID": "komit-arena-2026",
@@ -99344,6 +99344,656 @@
         "Date": "2026-11-13",
         "Finish": "49",
         "Entrants": "158",
+        "Tier": "B"
+      }
+    ],
+    "isArchived": false
+  },
+  "battle-coliseum-2026": {
+    "name": "Battle Coliseum 2026",
+    "date": "2026-11-19",
+    "slug": "battle-coliseum-2026",
+    "Tier": "B",
+    "Entrants": "134",
+    "results": [
+      {
+        "Player": "Brayan_Job",
+        "Player ID": "fbf421ef",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "1",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "NotPedro",
+        "Player ID": "9beebe73",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "2",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ferps",
+        "Player ID": "d790bc67",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "3",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Zangief_bolado",
+        "Player ID": "82965d22",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "4",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Maroto",
+        "Player ID": "e892f6a6",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "5",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "vicg",
+        "Player ID": "1758a7ec",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "5",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Chaolin",
+        "Player ID": "45f2bb0b",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "7",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "DARK817",
+        "Player ID": "5bd1b83f",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "7",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "tundi",
+        "Player ID": "3cf97dce",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "9",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Maxi07",
+        "Player ID": "0b389b37",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "9",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Breno_Spies",
+        "Player ID": "5214724f",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "9",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Demitrix",
+        "Player ID": "7e8d3f55",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "9",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "TomzinMilgrau",
+        "Player ID": "851a263e",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "13",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Gaia",
+        "Player ID": "3e952944",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "13",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Dragon_Legend",
+        "Player ID": "38115d60",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "13",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Stetik",
+        "Player ID": "f74448ff",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "13",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ori",
+        "Player ID": "14b0a1bb",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "17",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "tuliomamute",
+        "Player ID": "4ae74754",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "17",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mini Bomba",
+        "Player ID": "161871b5",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "17",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "RoxDox",
+        "Player ID": "27107532",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "17",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Normaníaco",
+        "Player ID": "ae340069",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "17",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Vini2001",
+        "Player ID": "a08b47ca",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "17",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Caio cesar",
+        "Player ID": "ce710b7a",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "17",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ghost_",
+        "Player ID": "acceaf36",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "17",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "BERNARDINHO",
+        "Player ID": "e8c6cbfd",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "25",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Spike (BR)",
+        "Player ID": "31413f28",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "25",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "EDERGUI",
+        "Player ID": "4e56f257",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "25",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Junio Júnior",
+        "Player ID": "1b79d8a8",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "25",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "NotleLinc",
+        "Player ID": "0b1d97e5",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "25",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "gut0w",
+        "Player ID": "18758218",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "25",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Malakabadoz",
+        "Player ID": "aea56ec8",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "25",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Artchie",
+        "Player ID": "4f4ccc17",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "25",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "m3n3c4t",
+        "Player ID": "95bd5e47",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "33",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "ElSakoGordo",
+        "Player ID": "57e2753f",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "33",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Tikotron3826",
+        "Player ID": "a4176fb5",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "33",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "REDSTORM-IMBATÍVEL",
+        "Player ID": "1ad99591",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "33",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "(SJC) Kevin_Evo",
+        "Player ID": "5f9196bb",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "33",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "PauloSF",
+        "Player ID": "dd397fec",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "33",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Bruno",
+        "Player ID": "e375751d",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "33",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Mau Mau",
+        "Player ID": "8f979717",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "33",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "ozzpan",
+        "Player ID": "ffe8d468",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "33",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "FABIO (BR)",
+        "Player ID": "6f527d39",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "33",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Alexis2904",
+        "Player ID": "c4ec5c91",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "33",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Vinicius BR Fist",
+        "Player ID": "b54a36db",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "33",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Trinki76",
+        "Player ID": "c56a171a",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "33",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "haggenn",
+        "Player ID": "b92f5400",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "33",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "mano knela",
+        "Player ID": "0d144af0",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "33",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "lpdouglas",
+        "Player ID": "2dfa1ef7",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "33",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Tetsuya_Deku_",
+        "Player ID": "09870e14",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "49",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Gustta",
+        "Player ID": "c58d54c2",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "49",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Didimokof",
+        "Player ID": "420e069a",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "49",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Lioky",
+        "Player ID": "55a4d79c",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "49",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Nick",
+        "Player ID": "459a15cc",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "49",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "BrunoChrosS",
+        "Player ID": "5f19f9a8",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "49",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "ricniclas",
+        "Player ID": "2201e5e9",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "49",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "TheOwlsGo",
+        "Player ID": "26052579",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "49",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Ryuji",
+        "Player ID": "dccead9c",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "49",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Buru",
+        "Player ID": "3e95df9a",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "49",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "é o rafaool",
+        "Player ID": "1bbb4a15",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "49",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "EviLCid",
+        "Player ID": "c30e4f69",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "49",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "BETO_ARKDEMIA",
+        "Player ID": "900e66fb",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "49",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "okamin__",
+        "Player ID": "aac75386",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "49",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "JEFO",
+        "Player ID": "18efad0b",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "49",
+        "Entrants": "134",
+        "Tier": "B"
+      },
+      {
+        "Player": "Kunomori",
+        "Player ID": "e4e90566",
+        "Event": "Battle Coliseum 2026",
+        "Event ID": "battle-coliseum-2026",
+        "Date": "2026-11-20",
+        "Finish": "49",
+        "Entrants": "134",
         "Tier": "B"
       }
     ],
