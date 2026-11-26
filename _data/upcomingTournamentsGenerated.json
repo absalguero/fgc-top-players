@@ -1,41 +1,68 @@
 {
-  "battle-city-weekly-the-chamber-of-sages": {
-    "name": "Battle City Weekly: The Chamber of Sages",
-    "date": "Nov 13-14, 2026",
-    "url": "https://www.start.gg/tournament/battle-city-weekly-the-chamber-of-sages",
+  "stun-city-11-25-2025-sf6-russell-rumble": {
+    "name": "Stun City 11/25/2025 - SF6 RUSSELL RUMBLE",
+    "date": "Nov 25, 2026",
+    "url": "https://www.start.gg/tournament/stun-city-11-25-2025-sf6-russell-rumble",
     "tier": "B",
     "notablePlayers": [
-      "Slice"
+      "Aynim"
     ]
   },
-  "saucy-presents-kickback-3-saucy-circuit-finale": {
-    "name": "SAUCY Presents: KICKBACK 3 Saucy Circuit Finale",
-    "date": "Nov 14, 2026",
-    "url": "https://www.start.gg/tournament/saucy-presents-kickback-3-saucy-circuit-finale",
+  "next-level-battle-circuit-461": {
+    "name": "Next Level Battle Circuit 461",
+    "date": "Nov 25, 2026",
+    "url": "https://www.start.gg/tournament/next-level-battle-circuit-461",
     "tier": "B",
     "notablePlayers": [
-      "Stealth"
+      "iDom"
     ]
   },
-  "bx-dojo-4": {
-    "name": "BX Dojo #4",
-    "date": "Nov 21, 2026",
-    "url": "https://www.start.gg/tournament/bx-dojo-4",
+  "online-warrior-2026-130-street-fighter-6": {
+    "name": "ONLINE WARRIOR 2026 (#130) - STREET FIGHTER 6",
+    "date": "Nov 26-27, 2026",
+    "url": "https://www.start.gg/tournament/online-warrior-2026-130-street-fighter-6",
     "tier": "B",
     "notablePlayers": [
-      "Kilzyou",
-      "Mister Crimson",
-      "Ritchy",
-      "Takamura"
+      "NL",
+      "Noble",
+      "Armperor"
     ]
   },
-  "rmit-games-day-36": {
-    "name": "RMIT Games Day #36",
-    "date": "Nov 22, 2026",
-    "url": "https://www.start.gg/tournament/rmit-games-day-36",
+  "le-dojo-club-96": {
+    "name": "LE DOJO CLUB #96",
+    "date": "Nov 26, 2026",
+    "url": "https://www.start.gg/tournament/le-dojo-club-96",
     "tier": "B",
     "notablePlayers": [
-      "AmamiyaLen"
+      "JuniorLeo",
+      "Beslem"
+    ]
+  },
+  "maximum-impact-glasgow-november-2026": {
+    "name": "Maximum Impact Glasgow - November 2026",
+    "date": "Nov 28, 2026",
+    "url": "https://www.start.gg/tournament/maximum-impact-glasgow-november-2026",
+    "tier": "B",
+    "notablePlayers": [
+      "Showl"
+    ]
+  },
+  "gt-fighters-13": {
+    "name": "GT Fighters #13",
+    "date": "Nov 28, 2026",
+    "url": "https://www.start.gg/tournament/gt-fighters-13",
+    "tier": "B",
+    "notablePlayers": [
+      "Zykles"
+    ]
+  },
+  "york-street-battles-124": {
+    "name": "York Street Battles #124",
+    "date": "Dec 12, 2026",
+    "url": "https://www.start.gg/tournament/york-street-battles-124",
+    "tier": "B",
+    "notablePlayers": [
+      "Rumours"
     ]
   },
   "the-next-dimension-omega-ii": {
@@ -47,20 +74,42 @@
       "NY Mando"
     ]
   },
+  "posada-gamer-2026": {
+    "name": "Posada Gamer 2026",
+    "date": "Dec 12-13, 2026",
+    "url": "https://www.start.gg/tournament/posada-gamer-2026",
+    "tier": "B",
+    "notablePlayers": [
+      "Uriel Velorio"
+    ]
+  },
+  "double-perfect-2026": {
+    "name": "Double Perfect 2026",
+    "date": "Dec 12, 2026",
+    "url": "https://www.start.gg/tournament/double-perfect-2026",
+    "tier": "B",
+    "notablePlayers": [
+      "Sledge"
+    ]
+  },
   "hi-tech-sf6-01": {
     "name": "Hi-tech SF6 #01",
     "date": "Dec 19-20, 2026",
     "url": "https://www.start.gg/tournament/hi-tech-sf6-01",
-    "tier": "B",
+    "tier": "A",
     "notablePlayers": [
       "Shigematsu",
       "タンタンメン",
       "kingsvega",
-      "watyawacha",
+      "Noble",
+      "zabutonn",
       "Ryusei",
       "Pipokun",
       "Betty",
-      "Lemochin"
+      "watyawacha",
+      "2BASSA",
+      "Lemochin",
+      "すりーぷ"
     ]
   },
   "the-versus-festival-japan-habba-2027": {
@@ -70,6 +119,24 @@
     "tier": "B",
     "notablePlayers": [
       "タンタンメン"
+    ]
+  },
+  "autplayed-2027": {
+    "name": "AUTplayed 2027",
+    "date": "Jan 23-24, 2027",
+    "url": "https://www.start.gg/tournament/autplayed-2027",
+    "tier": "B",
+    "notablePlayers": [
+      "krackerlack"
+    ]
+  },
+  "sts-street-scientific-tourney-11": {
+    "name": "STS Street! | Scientific Tourney 11",
+    "date": "Feb 13, 2027",
+    "url": "https://www.start.gg/tournament/sts-street-scientific-tourney-11",
+    "tier": "B",
+    "notablePlayers": [
+      "Flappy"
     ]
   }
 }

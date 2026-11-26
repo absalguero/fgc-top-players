@@ -17,9 +17,7 @@
     "scheduleLink": "https://www.start.gg/tournament/mindset-2026/events",
     "description": "<p><strong>MINDSET 2026</strong> marks the third annual installment of the Parisian fighting game major organized by French collective NSxC, expanding to a full three-day schedule after drawing 418 total attendees and 96 <strong>Street Fighter 6</strong> entrants in 2025. Returning to its established hotel venue in northwestern Paris for the third consecutive year, the event has grown rapidly since its 2024 debut drew 219 competitors.</p><p>The <strong>Street Fighter 6</strong> 1v1 bracket headlines the Sunday slate on PC. Matches run in a double-elimination format played first-to-three throughout the entirety of the tournament. Competitors must register online via start.gg prior to the November 9 deadline, and players who fail to report to their station within 10 minutes of being called face match disqualification.</p><h3>Multi-Game Lineup and Circuit Qualifiers</h3><p>Six additional main stage singles brackets accompany the headliner, highlighted by an <strong>ARC World Tour 2026-2027</strong> Gold qualifier for <strong>Guilty Gear: Strive</strong> and a <strong>2XKO</strong> Challenger Event. The primary weekend lineup also includes <strong>Tekken 8</strong> governed by <strong>Tekken World Tour 2026</strong> rules, <strong>Granblue Fantasy Versus: Rising</strong>, <strong>Marvel Tokon: Fighting Souls</strong>, and <strong>Avatar Legends: The Fighting Game</strong>. Friday programming features 2v2 team tournaments for both 2XKO and Marvel Tokon alongside community brackets for <strong>Fatal Fury: City of the Wolves</strong>, <strong>Mortal Kombat XL</strong>, and <strong>Invincible VS</strong>, while a <strong>BlazBlue: Central Fiction</strong> side bracket concludes the schedule on Sunday.</p>",
     "notablePlayers": [
-        "Mister Crimson",
-        "JuniorLeo",
-        "Dims"
+        "Kilzyou", "Mister Crimson", "Beslem", "M A L D O", "Kanou", "Dims", "Kayne", "TessTary", "JuniorLeo", "Kam", "Soualiho", "Tchang"
     ],
     "isArchived": false,
     "excludeFromSite": false
@@ -47,6 +45,87 @@
     "isArchived": false,
     "excludeFromSite": false
   },
+    "double-perfect-2026": {
+    "name": "Double Perfect 2026",
+    "slug": "double-perfect-2026",
+    "startAt": 1797033600,
+    "endAt": 1797119999,
+    "startDate": "2026-12-12",
+    "endDate": "2026-12-12",
+    "dates": "Dec 12, 2026",
+    "location": "2413 Jacaman Rd Ste 3, Laredo, TX 78041, USA",
+    "venueName": "Level Up Elite Gaming Lounge",
+    "url": "https://www.start.gg/tournament/double-perfect-2026/details",
+    "tier": "B",
+    "prizes": "$1,000 Pot Bonus",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "<p><strong>Double Perfect 2026</strong> marks a dedicated push by the Laredo FGC to revive South Texas's competitive <strong>Street Fighter 6</strong> scene. Rooted in a local legacy dating back to the Street Fighter IV era, this standalone tournament brings regional contenders together for a focused one-day bracket.</p><p>Competitive integrity anchors the entire event. Every match runs on standardized, high-performance PC setups, while skill-based seeding separates players from the same city early on to preserve regional rivalries for the deeper rounds. With a pot bonus distributed across the Top 8, every bracket run carries direct financial stakes.</p>",
+    "notablePlayers": [
+        "Mr-MadGear",
+        "Sledge",
+        "EGHCO"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+},
+    "posada-gamer-2026": {
+    "name": "Posada Gamer 2026",
+    "slug": "posada-gamer-2026",
+    "startAt": 1797033600,
+    "endAt": 1797206399,
+    "startDate": "2026-12-12",
+    "endDate": "2026-12-13",
+    "dates": "Dec 12-13, 2026",
+    "location": "Av. Mariano Otero 3000, Cd del Sol, 45088 Zapopan, Jal., México",
+    "venueName": "La Perla, Centro de Vida",
+    "url": "https://www.start.gg/tournament/posada-gamer-2026/details",
+    "tier": "B",
+    "prizes": "TBD",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "",
+    "description": "<p><strong>Posada Gamer 2026</strong> closes out Jalisco's competitive calendar as a premier year-end showcase organized by Jalisco Esports. Returning to Zapopan after its 2025 edition drew 185 attendees, the event serves as the culmination of the region's year-round Road to Posada Gamer weekly series. Built on a strong foundation as a <strong>Super Smash Bros. Ultimate</strong> superregional, the tournament pairs that platform-fighter draw with a featured <strong>Street Fighter 6</strong> main bracket.</p><p>Both headlining titles bring together top Mexican talent looking to close the year with a regional crown. For <strong>Street Fighter 6</strong> competitors, the main bracket delivers a high-stakes proving ground where Jalisco's sharpest locals clash with traveling contenders. <strong>Super Smash Bros. Ultimate</strong> shares top billing across the weekend with dedicated Singles and Doubles brackets.</p><h3>Pre-Event Action and Crew Battles</h3><p>Competition ramps up ahead of the main tournament with two dedicated pre-event days featuring <strong>Super Smash Bros. Ultimate</strong> singles, a pre-event Top 8, and crew battles. That early action sets the tone at the venue before the main <strong>Street Fighter 6</strong> and Smash brackets get underway.</p>",
+    "notablePlayers": [
+        "Uriel Velorio",
+        "AxL-",
+        "Vicaron"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+},
+"the-versus-festival-japan-habba-2027": {
+    "name": "The Versus Festival: Japan Habba 2027",
+    "slug": "the-versus-festival-japan-habba-2027",
+    "startAt": 1799452800,
+    "endAt": 1799625599,
+    "startDate": "2027-01-09",
+    "endDate": "2027-01-10",
+    "dates": "Jan 9-10, 2027",
+    "location": "Jayamahal Main Rd, Jayamahal, Bengaluru, Karnataka 560006, India",
+    "venueName": "Chamara Vajra",
+    "url": "https://japanhabba.org/",
+    "tier": "B",
+    "prizes": "TBD",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "https://www.start.gg/tournament/the-versus-festival-japan-habba-2027",
+    "description": "<p><strong>The Versus Festival: Japan Habba 2027</strong> brings India's premier fighting game showcase back in its full format after a two-year hiatus. Anchored inside the 21st edition of Japan Habba, the country's largest Japanese cultural festival organized by the Japan Habba Society since 2008, the event returns to Bengaluru's Palace Grounds with <strong>Street Fighter 6</strong> headlining its competitive arena.</p><p>For regional and traveling competitors alike, the <strong>Street Fighter 6</strong> bracket serves as a marquee early-year clash in South Asia. Top Indian contenders face international invitees from Japan, Oceania, and North America, creating a rare cross-regional proving ground on an open double-elimination stage. With international FGC veterans and rising global talent sharing the bracket, deep runs carry serious regional prestige.</p><h3>Multi-Game Fighting Lineup</h3><p>Beyond the flagship Capcom title, the festival runs a packed multi-game roster across the weekend. Competitors can test their skills in <strong>Super Smash Bros. Ultimate</strong>, <strong>Fatal Fury: City of the Wolves</strong>, <strong>Under Night In-Birth II Sys:Celes</strong>, <strong>Marvel Tokon: Fighting Souls</strong>, and <strong>Avatar Legends: The Fighting Game</strong>, alongside a <strong>Pokemon Champions</strong> VGC tournament.</p><h3>Festival Grounds and Cultural Programming</h3><p>Spectators stepping away from the tournament setups have access to a full-scale cultural convention spanning five stages and over 150 exhibitor booths. Programming includes live musical and idol performances on the flagship Butai stage, international anime and video game industry panels, a vetted artist alley, a dedicated Hobby Zone, traditional workshops, and an expansive Japanese food court.</p>",
+    "notablePlayers": [
+        "Koopa",
+        "FREESER",
+        "GamingMasterYT7",
+        "b_HAUNT",
+        "milkshake",
+        "GupShup",
+        "Enigma",
+        "Justin Wong",
+        "Sherryjenix"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+},
   "evo-singapore-2027": {
         "name": "Evo Singapore 2027",
         "slug": "evo-singapore-2027",
@@ -92,6 +171,32 @@
         "Edgoron",
         "Pragmatwit",
         "Phi Long"
+    ],
+    "isArchived": false,
+    "excludeFromSite": false
+},
+    "autplayed-2027": {
+    "name": "AUTplayed 2027",
+    "slug": "autplayed-2027",
+    "startAt": 1800662400,
+    "endAt": 1800835199,
+    "startDate": "2027-01-23",
+    "endDate": "2027-01-24",
+    "dates": "Jan 23-24, 2027",
+    "location": "Am Stadtpark 1, 1030 Wien, Austria",
+    "venueName": "Hilton Hotel Stadtpark Vienna",
+    "url": "https://www.autplayed.com/",
+    "tier": "B",
+    "prizes": "TBD",
+    "game": "Street Fighter 6",
+    "streamLink": "",
+    "scheduleLink": "https://www.start.gg/tournament/autplayed-2027/details",
+    "description": "<p><strong>AUTplayed 2027</strong> anchors Central Europe's early-year fighting game calendar as Austria's premier major, organized by Virtual Dojo Vienna. Returning to Vienna after its 5th anniversary edition in 2026 drew 301 attendees, the two-day showcase brings <strong>Street Fighter 6</strong> back to its main stage alongside a deep roster of anime and classic fighters.</p><p>The <strong>Street Fighter 6</strong> bracket serves as a key regional proving ground for competitors traveling from across Europe. Players battle through double-elimination pools in first-to-two sets before the format shifts to first-to-three for Winners, Losers, and Grand Finals, rewarding adaptation and consistency when the bracket tightens.</p><h3>Multi-Game Lineup and Circuit Stops</h3><p>Beyond Capcom's flagship, the weekend features <strong>Guilty Gear -STRIVE-</strong> as an official <strong>ARC World Tour 2026-2027</strong> Gold Event, awarding crucial ranking points toward qualification for the Finals in New York. The main lineup also includes <strong>BlazBlue: Central Fiction</strong>, <strong>Granblue Fantasy Versus: Rising</strong>, <strong>Under Night In-Birth II Sys:Celes</strong>, <strong>Melty Blood: Type Lumina</strong>, <strong>Marvel Tokon: Fighting Souls</strong>, and <strong>Avatar Legends: The Fighting Game</strong>, supported by community brackets for <strong>2XKO</strong>, <strong>Street Fighter III: 3rd Strike</strong>, and <strong>Ultimate Marvel vs. Capcom 3</strong>.</p>",
+    "notablePlayers": [
+        "Lil'Fox <3",
+        "Jaeger",
+        "Peepohold",
+        "krackerlack"
     ],
     "isArchived": false,
     "excludeFromSite": false
