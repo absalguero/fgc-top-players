@@ -98062,6 +98062,16 @@
         "Event": "Astral Finish 2026",
         "Event ID": "astral-finish-2026",
         "Date": "2026-11-14",
+        "Finish": "1",
+        "Entrants": "75",
+        "Tier": "B"
+      },
+      {
+        "Player": "MJ_Gama",
+        "Player ID": "4484e542",
+        "Event": "Astral Finish 2026",
+        "Event ID": "astral-finish-2026",
+        "Date": "2026-11-14",
         "Finish": "2",
         "Entrants": "75",
         "Tier": "B"
@@ -98073,16 +98083,6 @@
         "Event ID": "astral-finish-2026",
         "Date": "2026-11-14",
         "Finish": "3",
-        "Entrants": "75",
-        "Tier": "B"
-      },
-      {
-        "Player": "MJ_Gama",
-        "Player ID": "4484e542",
-        "Event": "Astral Finish 2026",
-        "Event ID": "astral-finish-2026",
-        "Date": "2026-11-14",
-        "Finish": "4",
         "Entrants": "75",
         "Tier": "B"
       },
